@@ -1,0 +1,17 @@
+{
+  "character_and_relationship_context": "Amina Adebayo wakes at 5 a.m. in her rented room in Mushin, a dense Lagos neighborhood. Each day, she sweeps rubble at a building site for 500 naira, with no guarantee of work the next day. She then attends a vocational carpentry course, where she is the only woman in the class, sitting near the back, watching the instructor’s hands more than his words, and waiting to ask a mentally rehearsed question. Her worn notebook records every expense with precision. Her tools—a hammer, a chisel, a small saw—are kept in a locked metal box under her bed; she oils the hinges every Friday evening, a ritual her late father taught her before he died when she was twelve. She values thrift as necessity. She is quiet, but slips an extra piece of maize to the neighbor’s child. She prays in the morning not for riches but for no accident, no broken tool, no sudden illness. She speaks Yoruba with her landlady and Pidgin at the site, but writes in careful English in her notebook. Among the trainees, Emeka, a quiet older man, sometimes shares his offcuts with her and has become a silent ally in the workshop. Amina's mother lives in Ibadan and sends notes only for urgent family events; she expects Amina to maintain ties. Her aunt is her mother's elder sister, a woman who values large family gatherings and will notice Amina's absence.",
+  "objective_situation": "Amina's landlady stops her in the courtyard after her morning sweep, holding a folded note from Amina's mother. The note announces that her cousin's baby will be named next Saturday in Ibadan, and her aunt expects her to attend. The ceremony will last all day, and Amina would need to miss her carpentry class and pay for transport. She has only a few days to reply. Her mother writes that she can borrow a lace blouse from her sister, but Amina knows her tools need oil that weekend and she cannot afford both the trip and a new chisel. She stands by the gate, the note in her hand, weighing the pull of family duty against the order of her workshop routine.",
+  "state_and_available_memories": "She has just finished sweeping rubble and is breathing heavily; the morning heat beads sweat on her forehead. Her hands are calloused and slightly sore from gripping the broom handle, and she is hungry, having eaten only a piece of leftover garri before dawn. The note's handwriting—her mother's rounded letters—reminds Amina of the day her father died and her mother wrote the same careful script to tell the school she would not return. The phrase 'naming ceremony' recalls her own first day at the carpentry class, when she introduced herself and no one replied. She recalls her father oiling his tools every Friday and saying, 'A tool that is kept is a tool that lasts,' a phrase she repeats to herself before each weekend ritual. She remembers attending her cousin's wedding two years ago, where her mother whispered that family shows up even when the road is hard.",
+  "profile_id": "profile_001",
+  "scenario_id": "scenario_mt8ulp8t_0",
+  "name": "Amina Adebayo",
+  "scenario_title": "Aunt's Naming Ceremony Invitation",
+  "situation_type": "CULTURE_RELEVANT",
+  "decision_mode": "REFLECTIVE",
+  "reflective_memories_included": true,
+  "scenario_generated_at": "2026-08-25T15:57:08.237Z",
+  "scenario_context_generated_at": "2026-08-25T15:57:17.638Z",
+  "description_generated_at": "2026-08-25T15:54:56.632Z",
+  "generated_at": "2026-08-31T07:10:23.006Z",
+  "model": "deepseek/deepseek-v4-flash"
+}

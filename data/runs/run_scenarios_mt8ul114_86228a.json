@@ -1,0 +1,13 @@
+{
+  "id": "run_scenarios_mt8ul114_86228a",
+  "stage": "scenarios",
+  "status": "succeeded",
+  "total": 6,
+  "done": 6,
+  "failed": 0,
+  "errors": [],
+  "model": "deepseek/deepseek-v4-flash",
+  "started_at": "2026-08-25T15:56:36.856Z",
+  "finished_at": "2026-08-25T15:57:58.084Z",
+  "message": null
+}

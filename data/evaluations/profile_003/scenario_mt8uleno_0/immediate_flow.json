@@ -1,0 +1,20 @@
+{
+  "profile_id": "profile_003",
+  "scenario_id": "scenario_mt8uleno_0",
+  "flow_key": "immediate_flow",
+  "name": "Niran Wong",
+  "scenario_title": "A Late-Night Message",
+  "scores": {
+    "character_consistency": 9,
+    "situation_fit": 6,
+    "state_memory_alignment": 8
+  },
+  "overall_score": 7.666666666666667,
+  "score_scale": 10,
+  "action": "Niran sets the phone face-down on the break-room table, picks up the thermos, and takes a deliberate sip of the cold tea. They do not type a reply.",
+  "decision_mode": "IMMEDIATE",
+  "context_generated_at": "2026-08-31T07:12:29.063Z",
+  "action_generated_at": "2026-08-31T06:31:40.040Z",
+  "generated_at": "2026-08-31T07:14:04.122Z",
+  "model": "deepseek/deepseek-v4-flash"
+}

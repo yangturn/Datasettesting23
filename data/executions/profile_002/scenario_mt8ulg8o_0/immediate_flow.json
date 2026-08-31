@@ -1,0 +1,49 @@
+{
+  "flow_key": "immediate_flow",
+  "profile_id": "profile_002",
+  "scenario_id": "scenario_mt8ulg8o_0",
+  "name": "Elin Johansson",
+  "scenario_title": "After-Work Invitation",
+  "steps": {
+    "attributes": {
+      "output": {
+        "values_culture_and_background": "She prioritizes business and family obligations over spontaneous social activities. She values discipline and avoids recklessness.",
+        "roles_and_commitments": "Owner and operator of a printing plant inherited from her father. Primary caregiver for her mother, who has dementia, coordinating nursing aides and providing weekly visits.",
+        "capabilities_and_constraints": "She has a degree in business administration and speaks English as a second language. She is constrained by the demands of running the business and caring for her mother, which leave limited time for socializing."
+      },
+      "generated_at": "2026-08-31T06:30:32.832Z",
+      "model": "deepseek/deepseek-v4-flash"
+    },
+    "consolidate": {
+      "output": {
+        "initial_context": "RELEVANT CHARACTER BACKGROUND\n\nElin Johansson owns and operates a printing plant inherited from her father, who started the company in 1987 with one press in a rented garage. She took over at age twenty-nine after earning a business administration degree from a university in Gothenburg. The business was debt-free under her father, and she has reinvested to make incremental environmental improvements: replacing solvent-based inks with soy-based ones and installing a closed-loop water system. She keeps the old company sign while upgrading the pressroom lighting to LEDs, reflecting a tension between innovation and loyalty to her father's legacy. Elin writes quarterly revenue targets by hand on a whiteboard, and when numbers are not met, she stays late to cold-call packaging buyers at cosmetics and food companies, keeping a list of responses and sending samples wrapped in unbleached kraft paper tied with cotton twine.\n\nElin is also the primary caregiver for her mother, who has dementia and lives ten minutes away in the house Elin grew up in. She coordinates a rotating team of three part-time nurses using a shared color-coded calendar, texts thank-yous after each visit, and visits every Thursday to bring groceries and refill the weekly pill organizer. Her mother does not always remember Elin's name, and Elin does not talk to her about the business.\n\nShe lives and works in a small city in southern Sweden with thin winter light and pale summer nights. She is known at the bakery for buying cardamom buns for press operators on Saturday mornings, and at the bank for renegotiating the company's credit line twice this year. She is not known for socializing; her friendships are mostly professional, formed at chamber of commerce breakfasts. She competes with herself and with a nearby digital print shop that undercuts her prices, but she does not speak of it, instead refining her pitch about biodegradable coatings.\n\nElin compartmentalizes: the factory is for growth, the home is for care, and the time between is for driving. She drives a five-year-old Volvo with a holder for a large takeaway coffee, and she never texts while moving because she cannot afford recklessness with the presses, the nurses, or the quarterly numbers. She prioritizes business and family obligations over spontaneous social activities. When work is under control, she occasionally stays late to clean solvent tanks or update the customer list; she rarely leaves early for social plans and has declined three similar last-minute pub invitations in the past year.\n\nLukas runs a packaging supplier and has exchanged referrals with Elin at two chamber breakfasts. They have never met outside business events. Last quarter he introduced her to a cosmetics buyer who later placed a small order. Elin has a degree in business administration and speaks English as a second language. She is constrained by the demands of running the business and caring for her mother, which leave limited time for socializing.\n\nOBJECTIVE SITUATION\n\nElin is packing up her things in the office at the printing plant when her phone buzzes. The message is from Lukas, a fellow business owner she knows from chamber of commerce breakfasts. Lukas says a few people are meeting at a pub near the square in half an hour and invites her to join. Elin has no pressing tasks remaining at the factory. Her mother's evening aide has confirmed the shift for that day.\n\nPRE-APPRAISAL STATE AND ACCESSIBLE MEMORIES\n\nHer shoulders ache from hauling a carton of samples to shipping. The factory intercom is silent. Through the window she sees the empty parking lot. She pauses, thinking about the warm pub noise and the cold car seat waiting in the lot. Two memories come to mind: the chamber's Christmas gathering where Lukas told a story about a misprinted label and she laughed more than she expected; and that same evening, her mother's aide texted a photo of her mother smiling."
+      },
+      "generated_at": "2026-08-31T06:31:01.795Z",
+      "model": "deepseek/deepseek-v4-flash"
+    },
+    "appraisal": {
+      "output": {
+        "initial_interpretation": "The invitation is an unexpected opening in her otherwise compartmentalized evening: Lukas is offering a warm, sociable break after a long day, and with no factory tasks and her mother's aide confirmed, it seems genuinely possible rather than reckless.",
+        "initial_emotional_reaction": "Her tired shoulders, the silent factory, and the cold parking lot make the warmed pub appealing. She feels a small lift of surprise and pleasure at being remembered, along with a familiar wariness about stepping outside her usual routine.",
+        "activated_concerns": "Her commitments to the plant and to her mother remain active even though the immediate schedule is clear. She is pulled between protecting the boundaries that keep her obligations manageable, preserving the professional goodwill with Lukas, and allowing herself a rare moment of warmth and connection.",
+        "automatic_theory_of_mind": "She assumes Lukas is being casually inclusive: he knows her from chamber events, enjoyed her company at the Christmas gathering, and likely sees this as a low-key chance to mix business with friendliness. She does not expect him to be demanding, but she senses he may not fully understand her caregiving constraints because their contact has been mostly professional.",
+        "initial_action_tendency": "Her first impulse is to accept—to text Lukas that she is coming, leave the empty factory, and walk through the cold to the warm pub. At the same time, a reflexive hesitation about abandoning her usual compartmentalized evening pulls her toward declining, so she is suspended between the two impulses without having decided."
+      },
+      "generated_at": "2026-08-31T06:31:32.546Z",
+      "model": "deepseek/deepseek-v4-flash"
+    },
+    "decision": {
+      "output": {
+        "action": "Elin picks up her phone, types a brief reply to Lukas, and sends: 'Thanks for the invite, but I can’t make it tonight. Hope you all have a good time.' She then grabs her coat and keys, locks the office, and heads to the parking lot.",
+        "explanation": "The immediate response is driven by Elin's established habit of prioritizing her compartmentalized routine over spontaneous socializing, reinforced by the activated concern for protecting the boundaries that keep her obligations manageable. The reflexive hesitation from the initial appraisal—a wariness about stepping outside her usual evening pattern—overrides the first impulse to accept. Her past behavior of declining similar last-minute invitations, combined with the automatic assumption that Lukas may not fully grasp her caregiving constraints, makes a polite decline the most plausible immediate action without reflective deliberation."
+      },
+      "generated_at": "2026-08-31T06:31:59.474Z",
+      "model": "deepseek/deepseek-v4-flash"
+    }
+  },
+  "scenario_generated_at": "2026-08-25T15:56:56.568Z",
+  "scenario_context_generated_at": "2026-08-25T15:57:15.385Z",
+  "description_generated_at": "2026-08-25T15:54:53.077Z",
+  "started_at": "2026-08-31T06:30:19.835Z",
+  "updated_at": "2026-08-31T06:31:59.474Z"
+}

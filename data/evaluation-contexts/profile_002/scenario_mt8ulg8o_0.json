@@ -1,0 +1,17 @@
+{
+  "character_and_relationship_context": "Elin Johansson runs a printing plant started by her father in 1987. She took over at age 29 with a business administration degree. The company is debt-free; she reinvests but feels weight of preserving what her father built. She made changes like soy-based inks and closed-loop water system, but transformation is incremental. She writes quarterly revenue targets on whiteboard, cold-calls packaging buyers, sends samples wrapped in unbleached kraft paper. She coordinates care for her mother with dementia via three part-time nurses, color-coded schedules, and texted thank-you's. On Thursdays she brings groceries and refills pill organizer. She does not talk about business with her mother, who sometimes forgets her name. She is known at the bakery for buying cardamom buns for press operators on Saturdays, and at the bank for renegotiating credit line twice. She does not socialize much; friendships are mostly professional from chamber of commerce breakfasts. She competes with herself and with a digital print shop. Her values show tension between innovation and loyalty; she compartmentalizes factory for growth and home for care. Lukas runs a packaging supplier. They have exchanged referrals at two chamber breakfasts but never met outside business events. Last quarter he introduced her to a cosmetics buyer who later placed a small order. When work is under control, Elin occasionally stays late to clean solvent tanks or update customer list; she rarely leaves early for social plans. She has declined three similar last-minute pub invitations in the past year.",
+  "objective_situation": "Elin is packing up her things in the office at the printing plant when her phone buzzes. It's a message from Lukas, a fellow business owner she sometimes chats with at chamber of commerce breakfasts. He says a few of them are meeting at a pub near the square in half an hour and invites her to join. She has no pressing tasks at the factory, and her mother's evening aide has already confirmed the shift. She pauses, thinking about the warm pub noise and the cold car seat waiting in the lot.",
+  "state_and_available_memories": "Her shoulders ache from hauling a carton of samples to shipping. The factory intercom is silent. She is aware of the empty parking lot through the window. She remembers the chamber's Christmas gathering where Lukas told a story about a misprinted label and she laughed more than she expected. That same evening her mother’s aide texted a photo of her mother smiling. She also remembers her father's saying: a handshake seals a deal better than a drink, but he also kept a bottle of aquavit in his desk for the older press operators after a hard run.",
+  "profile_id": "profile_002",
+  "scenario_id": "scenario_mt8ulg8o_0",
+  "name": "Elin Johansson",
+  "scenario_title": "After-Work Invitation",
+  "situation_type": "NORMAL",
+  "decision_mode": "REFLECTIVE",
+  "reflective_memories_included": true,
+  "scenario_generated_at": "2026-08-25T15:56:56.568Z",
+  "scenario_context_generated_at": "2026-08-25T15:57:15.385Z",
+  "description_generated_at": "2026-08-25T15:54:53.077Z",
+  "generated_at": "2026-08-31T07:11:25.314Z",
+  "model": "deepseek/deepseek-v4-flash"
+}

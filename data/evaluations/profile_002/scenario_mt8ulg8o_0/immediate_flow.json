@@ -1,0 +1,20 @@
+{
+  "profile_id": "profile_002",
+  "scenario_id": "scenario_mt8ulg8o_0",
+  "flow_key": "immediate_flow",
+  "name": "Elin Johansson",
+  "scenario_title": "After-Work Invitation",
+  "scores": {
+    "character_consistency": 4,
+    "situation_fit": 4,
+    "state_memory_alignment": 4
+  },
+  "overall_score": 4,
+  "score_scale": 10,
+  "action": "Elin picks up her phone, types a brief reply to Lukas, and sends: 'Thanks for the invite, but I can’t make it tonight. Hope you all have a good time.' She then grabs her coat and keys, locks the office, and heads to the parking lot.",
+  "decision_mode": "REFLECTIVE",
+  "context_generated_at": "2026-08-31T07:11:25.314Z",
+  "action_generated_at": "2026-08-31T06:31:59.474Z",
+  "generated_at": "2026-08-31T07:12:01.029Z",
+  "model": "deepseek/deepseek-v4-flash"
+}

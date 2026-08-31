@@ -1,0 +1,61 @@
+{
+  "flow_key": "full_flow",
+  "profile_id": "profile_001",
+  "scenario_id": "scenario_mt8ulp8t_0",
+  "name": "Amina Adebayo",
+  "scenario_title": "Aunt's Naming Ceremony Invitation",
+  "steps": {
+    "attributes": {
+      "output": {
+        "values_culture_and_background": "Amina values thrift as a necessity, not a virtue, and treats caution as her only reliable wealth. She values self-reliance, having learned to depend only on the order she imposes since her father's death. She is quietly generous, giving extra food to a neighbor's child despite feeling every kobo as a loss. She values precision and ritual, following her father's teaching that a tool that is kept is a tool that lasts. Her faith is quiet but present; she prays for safety and stability, not riches. She has internalized the norm from her mother that family shows up even when the road is hard, although she has previously prioritized skill-building over a family wedding.",
+        "roles_and_commitments": "Amina is a daughter expected to maintain family ties, particularly for urgent events communicated by her mother. She is a trainee in a vocational carpentry course. She is the sole provider for herself, responsible for her own rent, food, and tools. She has an informal commitment to her late father's ritual of oiling tools every Friday evening.",
+        "capabilities_and_constraints": "Amina has demonstrated carpentry skills and knowledge, including measuring and cutting, and possesses basic tools (hammer, chisel, small saw) kept in a locked metal box. She is the only woman in her carpentry class. She has limited finances, earning about 500 naira per day from sweeping rubble with no guaranteed work. She budgets carefully, tracking expenses in a notebook. She can write in English learned in school. She faces the practical constraint of needing to afford both travel and tool maintenance, as she cannot afford both the trip and a new chisel. She has a routine of oiling her tools every Friday evening, which she must maintain."
+      },
+      "generated_at": "2026-08-31T06:30:59.902Z",
+      "model": "deepseek/deepseek-v4-flash"
+    },
+    "consolidate": {
+      "output": {
+        "initial_context": "RELEVANT CHARACTER BACKGROUND\n\nAmina Adebayo is a young woman living alone in a rented room in Mushin, Lagos. Since her father died of fever when she was twelve, she has relied solely on herself and the order she imposes: double-checking measurements, triple-checking the lock on her tool box, counting each day's coins in her palm until she can translate them into rent or food or an extra lesson. She earns approximately 500 naira per day sweeping rubble at a building site, with no guarantee of work the next day. In the afternoons, she attends a vocational carpentry course, the only woman in the class. She sits at the back, watching the instructor's hands closely and rehearsing questions mentally before asking. She owns a hammer, chisel, and small saw kept in a locked metal box under her bed. Every Friday evening she oils the hinges of the box, a ritual her father taught her: a tool that is kept is a tool that lasts. She budgets meticulously, recording every expense—50 naira for water, 100 for groundnuts, 200 for a notebook leaf—in a notebook written in careful English. She values thrift not as a virtue but as a necessity; caution is her only reliable wealth. Despite this, she has a quiet generosity: she slips an extra piece of maize to a neighbor's child, though she feels each kobo as a potential loss against an uncertain future. Her faith is quiet; she prays each morning for no accident on the site, no broken tool, no sudden illness that would unravel her days. She speaks Yoruba with her landlady and Pidgin at the site. She does not laugh easily but has smiled privately at a fellow trainee, Emeka, a quiet older man who sometimes shares his offcuts with her and has become a silent ally in the workshop.\n\nAmina is a daughter whose mother lives in Ibadan and sends notes only for urgent family events; her mother expects her to maintain ties. Her aunt, her mother's elder sister, values large family gatherings and would notice her absence. Amina has previously skipped a family wedding to attend an extra carpentry session, later sending a small gift. She regularly postpones minor personal purchases, such as replacing a worn sandal, to keep her tool fund intact. She is the sole provider for herself, responsible for her own rent, food, and tool maintenance. She is committed to her late father's ritual of oiling her tools every Friday evening.\n\nOBJECTIVE SITUATION\n\nAfter her morning sweep of the building site, Amina returns to her rented room in Mushin. Her landlady stops her in the courtyard and hands her a folded note from her mother. The note announces that her cousin's baby will be named next Saturday in Ibadan. Her aunt expects her to attend the ceremony, which will last all day. Amina would need to miss her afternoon carpentry class and pay for transport to Ibadan. She has only a few days to reply. Her mother writes that she can borrow a lace blouse from her sister. Her tools need oil that weekend, and she cannot afford both the trip and a new chisel. Amina stands by the gate holding the note.\n\nPRE-APPRAISAL STATE AND ACCESSIBLE MEMORIES\n\nAmina has just finished sweeping rubble. She is breathing heavily; the morning heat beads sweat on her forehead. Her hands are calloused and slightly sore from gripping the broom handle. She is hungry, having eaten only a piece of leftover garri before dawn.\n\nThe handwriting on the note—her mother's rounded letters—immediately brings to mind the day her father died. Her mother had written the same careful script to inform the school that she would not return.\n\nThe phrase \"naming ceremony\" triggers a memory of her first day at the carpentry class, when she introduced herself and no one replied."
+      },
+      "generated_at": "2026-08-31T06:31:48.945Z",
+      "model": "deepseek/deepseek-v4-flash"
+    },
+    "appraisal": {
+      "output": {
+        "initial_interpretation": "The note is a demand from her family that threatens her carefully maintained routine and progress. It brings back the memory of her father's death and the isolation of her first day at carpentry class, making the ceremony feel like a burden that pulls her away from her own survival and aspirations.",
+        "initial_emotional_reaction": "She feels a mix of fatigue, hunger, and physical soreness from the morning's work, overlayed with stress from the unexpected obligation. The handwriting triggers sadness and a sense of loss, while the memory of being ignored at class stirs hurt and resentment, leaving her emotionally drained and wary.",
+        "activated_concerns": "Her immediate concerns are her need to maintain her tools (the Friday oiling ritual her father taught), her commitment to the carpentry class (her only path to a better future), her tight budget (cannot afford both transport to Ibadan and a new chisel), her family obligations (her mother's expectation and her aunt's likely disappointment), and her own physical well-being (hunger and exhaustion).",
+        "automatic_theory_of_mind": "She assumes her mother expects her to attend, as the note is written in her careful hand and includes practical advice about borrowing a blouse. She assumes her aunt will notice her absence and may view it as a failure of family duty, given her aunt's value on large gatherings.",
+        "initial_action_tendency": "Her first impulse is to hold the note without replying, to retreat into her room, eat what little food she has, and rest, feeling the pull of obligation but instinctively protecting her own schedule and resources. She is not yet ready to decide, leaning toward delaying the response."
+      },
+      "generated_at": "2026-08-31T06:32:10.734Z",
+      "model": "deepseek/deepseek-v4-flash"
+    },
+    "reappraisal": {
+      "output": {
+        "initial_tendency": "To hold the note without replying, retreat into her room, eat the little food she has, and rest, feeling the pull of obligation but instinctively protecting her own schedule and resources; leaning toward delaying the response.",
+        "reflective_update": "Reflection brings back her father oiling his tools and saying, 'A tool that is kept is a tool that lasts,' which reinforces her sense that her tools, her class, and her careful budget are not luxuries but the roots of her independence. At the same time, she recalls her mother whispering at her cousin's wedding that family shows up even when the road is hard. That memory makes the naming ceremony feel less like an intrusion and more like a continuation of the family bonds her mother has tried to maintain, especially after her father's death. She now sees the same handwriting that once told her she would not return to school asking her to be present for a new life, which complicates her instinct to turn away.",
+        "change_from_initial": "SOFTENED",
+        "reconsidered_interpretation": "The note is still a practical and financial burden, but it is no longer only a demand pulling her away from her own survival. Her father's tool ritual reaffirms that her carpentry path deserves protection, while her mother's remembered words make the ceremony a genuine family claim. The initial interpretation of the ceremony as a threat is qualified: it remains a serious conflict, but it is also a meaningful obligation she cannot dismiss without acknowledging what her mother and aunt expect of her.",
+        "motivational_conflict": "Her commitment to her own future—through her tools, her Friday ritual, and her carpentry class—pulls her toward protecting her time and money, but her mother's remembered standard of family loyalty and her aunt's expectation of presence pull her toward attending. She cannot afford both the trip to Ibadan and a new chisel, and she is unwilling to abandon either her craft or her family without more thought.",
+        "revised_action_tendency": "She is still inclined to hold off on a final answer, but she now leans toward seriously considering how she might attend rather than simply retreating. She is more open to borrowing the lace blouse as her mother suggested and calculating whether the transport can be managed without sacrificing her tool maintenance, while keeping the Friday oiling ritual intact. She remains unresolved, but the impulse to ignore the obligation has weakened."
+      },
+      "generated_at": "2026-08-31T06:32:31.926Z",
+      "model": "deepseek/deepseek-v4-flash"
+    },
+    "decision": {
+      "output": {
+        "action": "Amina folds the note carefully, puts it in her pocket, and then asks her landlady, 'Mama, how much is the transport to Ibadan these days?'",
+        "explanation": "The initial tendency to retreat and delay was softened by the reflective reappraisal. The memory of her father's tool ritual reaffirmed her commitment to her carpentry path, while her mother's whispered words at the wedding made the family obligation feel like a genuine claim rather than a mere demand. This motivational conflict left her unresolved, but the impulse to ignore the obligation weakened. Instead of withdrawing into her room, she now actively seeks practical information (the transport cost) to evaluate whether she can attend without sacrificing her tool maintenance or Friday ritual. Asking the landlady is a concrete step toward seriously considering attendance, reflecting the revised inclination to weigh how she might manage the trip while protecting her own goals."
+      },
+      "generated_at": "2026-08-31T06:32:50.093Z",
+      "model": "deepseek/deepseek-v4-flash"
+    }
+  },
+  "scenario_generated_at": "2026-08-25T15:57:08.237Z",
+  "scenario_context_generated_at": "2026-08-25T15:57:17.638Z",
+  "description_generated_at": "2026-08-25T15:54:56.632Z",
+  "started_at": "2026-08-31T06:30:19.833Z",
+  "updated_at": "2026-08-31T06:32:50.093Z"
+}

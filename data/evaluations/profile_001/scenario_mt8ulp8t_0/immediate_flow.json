@@ -1,0 +1,20 @@
+{
+  "profile_id": "profile_001",
+  "scenario_id": "scenario_mt8ulp8t_0",
+  "flow_key": "immediate_flow",
+  "name": "Amina Adebayo",
+  "scenario_title": "Aunt's Naming Ceremony Invitation",
+  "scores": {
+    "character_consistency": 8,
+    "situation_fit": 8,
+    "state_memory_alignment": 8
+  },
+  "overall_score": 8,
+  "score_scale": 10,
+  "action": "Amina lets out a short, sharp breath, then presses the note flat against her chest with both hands. She looks down at the pavement, shakes her head slightly, and mutters under her breath, 'This weekend...' before turning to the landlady with a tight smile and saying, 'Ah, I see am. I go think about am, ma,' then quickly walks toward her room, still holding the note.",
+  "decision_mode": "REFLECTIVE",
+  "context_generated_at": "2026-08-31T07:10:23.006Z",
+  "action_generated_at": "2026-08-31T06:31:20.078Z",
+  "generated_at": "2026-08-31T07:10:58.952Z",
+  "model": "deepseek/deepseek-v4-flash"
+}

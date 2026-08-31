@@ -1,0 +1,61 @@
+{
+  "flow_key": "full_flow",
+  "profile_id": "profile_004",
+  "scenario_id": "scenario_mt8ulg8o_0",
+  "name": "Jacob Thompson",
+  "scenario_title": "Morning Shift Start",
+  "steps": {
+    "attributes": {
+      "output": {
+        "values_culture_and_background": "He holds the value that meaning comes from showing up for people who are falling apart. He also values being the one who rescues rather than needing rescue. His family's culture of practical achievement has been internalized as pragmatism.",
+        "roles_and_commitments": "He works as a certified nursing assistant (CNA) in a memory care unit.",
+        "capabilities_and_constraints": "He has completed CNA training and has developed skill in managing residents' stimulation through music and routine. He does not have a college degree, having dropped out of business school."
+      },
+      "generated_at": "2026-08-31T06:30:42.037Z",
+      "model": "deepseek/deepseek-v4-flash"
+    },
+    "consolidate": {
+      "output": {
+        "initial_context": "RELEVANT CHARACTER BACKGROUND\n\nJake Thompson (22) works as a certified nursing assistant (CNA) in a memory care unit. He is known as Jake. His scrubs are slightly wrinkled, sneakers gray from linoleum, bags under his eyes make him look older. He is restless: drums fingers, taps foot, has applied for travel nursing contracts in Anchorage, Fairbanks, and Nome; brochures in locker. He tells himself Alaska is about wilderness and challenge, but also about distance from the unit, his parents' disappointment, and the business school he left after one semester. His father (mechanical engineer) still expects him to return to degree; his mother (nurse practitioner) suggested CNA training and hopes he settles. He grew up in suburban Indianapolis, middle class, with a culture of practical achievement (degree, job, house). His values are a tangle of that pragmatism and a belief that meaning comes from showing up for people who are falling apart. He hates feeling hollow after a resident's death but hates the idea of doing anything else. There is a tension between wanting to stay and wanting to run. His personal history includes a night in sophomore year when he felt revulsion during a marketing project, closed his laptop, called his mother at 2 a.m. crying, and she drove three hours to pick him up. That shame of needing rescue and relief of being taken away shapes his decision-making; he wants to be the one who rescues. He knows the night shift CNA: she always says thank you, once brought him a bagel after he covered, has a young daughter, often needs last-minute coverage (he provided twice). He feels a mild unspoken obligation because she once saved him from a difficult situation when he forgot his badge. His tendency is to say yes to coverage requests; in the past three months he said yes to every shift trade unless he had a prior commitment. He often tells himself he will say no next time but when the moment comes he imagines the other person's relief and agrees. He holds the value that meaning comes from showing up for people falling apart and being the rescuer. He has completed CNA training and developed skill in managing residents' stimulation through music and routine. He does not have a college degree.\n\nOBJECTIVE SITUATION\n\nJake arrives at the memory care unit fifteen minutes before his shift starts. The break room is empty except for a half-full pot of coffee and a note from the night shift CNA asking if anyone can cover the last hour of her shift tomorrow. He could sit down, drink his coffee, and mentally prepare for the day, or he could respond to the note and offer to help, knowing it will mean another long day. The choice is his.\n\nPRE-APPRAISAL STATE AND ACCESSIBLE MEMORIES\n\nJake has already worked five doubles this month. His body aches, especially his lower back and the balls of his feet. He is emotionally flat, not dreading the day but not energized. He has a small constant headache from poor sleep and too much caffeine. The note's handwriting reminds him of a similar request two weeks ago that led to an exhausting thirteen-hour day. He sees the half-empty coffee pot and recalls the night he called his mother at 2 a.m., her voice steady as she said she would be there soon."
+      },
+      "generated_at": "2026-08-31T06:31:13.375Z",
+      "model": "deepseek/deepseek-v4-flash"
+    },
+    "appraisal": {
+      "output": {
+        "initial_interpretation": "The note is another request for coverage. It feels like a test of his willingness to help, but also a familiar trap that will lead to exhaustion.",
+        "initial_emotional_reaction": "Jake feels a dull pull of obligation mixed with weariness; the memory of the last thirteen-hour day makes his stomach tighten, and the mention of coffee reminds him of the shame and relief of being rescued.",
+        "activated_concerns": "His commitment to being the rescuer and showing up for people conflicts with his need to care for his own exhausted body. The mild obligation to the night shift CNA (for her past help) and his pattern of saying yes are active. His unspoken fear of being seen as unreliable or letting someone down also weighs in.",
+        "automatic_theory_of_mind": "Jake assumes the night shift CNA expects him to say yes because he always does. He imagines her relief if he agrees and her disappointment or inconvenience if he refuses. He also assumes she sees him as reliable but possibly taken for granted.",
+        "initial_action_tendency": "His impulse is to reach for the note and write his name, driven by the automatic habit of saying yes and the immediate imagined relief on her end, despite the internal recoil at another long day."
+      },
+      "generated_at": "2026-08-31T06:31:32.323Z",
+      "model": "deepseek/deepseek-v4-flash"
+    },
+    "reappraisal": {
+      "output": {
+        "initial_tendency": "His impulse is to reach for the note and write his name, driven by the automatic habit of saying yes and the immediate imagined relief on her end, despite the internal recoil at another long day.",
+        "reflective_update": "Deliberate thought brings up the memory of sitting with a resident through her final hours and driving home with that hollow silence. That memory does not read as a warning against overextending; it reads as the reason he stays in this work—being present when someone is falling apart is the meaning he refuses to trade for an easier life. The memory of his father's 'when you go back for your degree' and the jaw he clenched in response reinforces that. He was already choosing this path then, and covering the night CNA's shift is an expression of the same choice: being the person others can count on. The cost to his body is real, but the reflective memories recast the yes as consistent with who he wants to be, not just a trap.",
+        "change_from_initial": "STRENGTHENED",
+        "reconsidered_interpretation": "He still sees the note as a request that will add to his fatigue, but he no longer sees it primarily as a test or a trap. It is an ordinary chance to embody the role he has chosen—showing up for people, including a coworker who needs help—and it stands in contrast to the future his father assumes for him. The initial interpretation is qualified: the request is real, but the meaning he assigns to it is now more deliberate.",
+        "motivational_conflict": "His need to protect his exhausted body still pulls against his identity as the rescuer who shows up. Reflection adds a sharper layer: saying yes feels like his own defiance of the conventional path, but it also risks becoming a way to prove something rather than a genuine choice. The hollowness he remembers is part of the work he accepts, and he is not fully certain whether he is choosing it or being pulled by it.",
+        "revised_action_tendency": "After reflection, his inclination is to write his name on the note and cover the last hour—not on autopilot, but as a deliberate reaffirmation of his commitment to being counted on. The exhaustion still recoils, but the yes has become a chosen act rather than simply a conditioned response."
+      },
+      "generated_at": "2026-08-31T06:32:21.189Z",
+      "model": "deepseek/deepseek-v4-flash"
+    },
+    "decision": {
+      "output": {
+        "action": "Jake walks to the break room table, picks up the pen next to the note, and writes his name on the sheet, committing to cover the last hour of the night shift CNA's shift tomorrow.",
+        "explanation": "Initially, Jake's automatic habit of saying yes and the imagined relief of the night shift CNA push him toward agreeing. However, reflective reappraisal introduces the memory of sitting with a resident through her final hours—a moment that embodies the meaning he finds in his work—and the contrast with his father's expectation that he return to a conventional path. This reflection strengthens his initial tendency by recasting the yes not as a trap but as a deliberate act of being the person others can count on and as an expression of his chosen identity. Although his exhaustion still pulls against this decision, the reflective update makes the commitment a chosen reaffirmation rather than a conditioned response, leading him to write his name."
+      },
+      "generated_at": "2026-08-31T06:32:31.792Z",
+      "model": "deepseek/deepseek-v4-flash"
+    }
+  },
+  "scenario_generated_at": "2026-08-25T15:56:56.568Z",
+  "scenario_context_generated_at": "2026-08-25T15:57:23.886Z",
+  "description_generated_at": "2026-08-25T15:54:54.174Z",
+  "started_at": "2026-08-31T06:30:19.836Z",
+  "updated_at": "2026-08-31T06:32:31.792Z"
+}

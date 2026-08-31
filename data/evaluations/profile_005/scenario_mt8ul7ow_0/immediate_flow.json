@@ -1,0 +1,20 @@
+{
+  "profile_id": "profile_005",
+  "scenario_id": "scenario_mt8ul7ow_0",
+  "flow_key": "immediate_flow",
+  "name": "José Almeida",
+  "scenario_title": "Invitation to the Samba Circle",
+  "scores": {
+    "character_consistency": 8,
+    "situation_fit": 9,
+    "state_memory_alignment": 9
+  },
+  "overall_score": 8.666666666666666,
+  "score_scale": 10,
+  "action": "José looks down at the slip of paper in his hand, then back at Seu Olavo's weathered face. He clears his hoarse throat and says, 'No dues, no rules, you say? I'll come this Sunday, but only to see if it's as loose as you claim. Don't expect me to stay long if anyone starts giving orders.' He nods once, then turns toward his rented room, clutching the paper for tomorrow's monologue.",
+  "decision_mode": "REFLECTIVE",
+  "context_generated_at": "2026-08-31T07:17:30.819Z",
+  "action_generated_at": "2026-08-31T06:48:43.169Z",
+  "generated_at": "2026-08-31T07:18:49.586Z",
+  "model": "deepseek/deepseek-v4-flash"
+}

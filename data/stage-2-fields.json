@@ -1,0 +1,37 @@
+{
+  "_comment": "Editable configuration for Stage 2. Each scenario takes two model calls. Call 1 creates the situation from the Stage 1 description alone, steered toward one of NORMAL / CULTURE_RELEVANT / TIME_SENSITIVE (cycled per person at a fixed 50/25/25 split, hardcoded as SITUATION_TYPE_CYCLE in src/server/generation/scenarios.ts) — objective external facts only; \"situation\".guidance is the list of things it must establish. Call 2 takes the person AND that situation and, for each entry in \"context_sections\", generates decision-relevant character context: one short sentence or clause per item, at most \"context_max_items_per_field\" items, one per line. Add, remove, or reshape entries here and both calls follow.",
+  "context_max_items_per_field": 3,
+  "default_per_person": 2,
+  "max_per_person": 10,
+  "situation": {
+    "label": "Situation",
+    "guidance": "- where and when it happens,\n- the single event that forces a response now,\n- who is involved and what they are asking for,\n- what is materially at stake in answering either way,\n- one deadline, only if the event naturally carries one."
+  },
+  "context_sections": [
+    {
+      "key": "relationship_profiles",
+      "label": "Relationship profiles",
+      "guidance": "Generate the character's existing relationship with each person who matters to the decision. Include relevant history, expectations, obligations, trust, or unresolved tension. Do not infer hidden motives or predict anyone's behavior."
+    },
+    {
+      "key": "tendencies",
+      "label": "Tendencies",
+      "guidance": "Generate established patterns in how the character has behaved under comparable conditions. Support each tendency with repeated or representative past behavior. Do not use trait labels or predict the present action."
+    },
+    {
+      "key": "current_state",
+      "label": "Current emotion/state",
+      "guidance": "Generate the character's emotional, physical, and mental condition immediately before the decision. It may arise from recent events not included in the description, provided they fit the situation. Do not interpret the dilemma or begin deciding."
+    },
+    {
+      "key": "immediate_memories",
+      "label": "Immediate memories",
+      "guidance": "Generate specific experiences that are directly cued by a person, phrase, place, object, or event in the current situation. State the remembered event and its present cue without interpreting its meaning."
+    },
+    {
+      "key": "reflective_memories",
+      "label": "Reflective memories",
+      "guidance": "Generate older experiences, recurring patterns across multiple events, or established beliefs that could become relevant through deliberate reflection. Do not draw a conclusion or state what the character should do."
+    }
+  ]
+}

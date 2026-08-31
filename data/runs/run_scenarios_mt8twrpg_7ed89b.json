@@ -1,0 +1,13 @@
+{
+  "id": "run_scenarios_mt8twrpg_7ed89b",
+  "stage": "scenarios",
+  "status": "succeeded",
+  "total": 4,
+  "done": 4,
+  "failed": 0,
+  "errors": [],
+  "model": "deepseek/deepseek-v4-flash",
+  "started_at": "2026-08-25T15:37:45.028Z",
+  "finished_at": "2026-08-25T15:38:39.092Z",
+  "message": "Deleted 21 previous scenarios."
+}

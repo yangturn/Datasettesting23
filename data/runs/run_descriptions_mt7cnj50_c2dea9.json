@@ -1,0 +1,13 @@
+{
+  "id": "run_descriptions_mt7cnj50_c2dea9",
+  "stage": "descriptions",
+  "status": "succeeded",
+  "total": 3,
+  "done": 3,
+  "failed": 0,
+  "errors": [],
+  "model": "qwen/qwen3.7-flash",
+  "started_at": "2026-08-24T14:46:54.372Z",
+  "finished_at": "2026-08-24T14:47:47.484Z",
+  "message": null
+}

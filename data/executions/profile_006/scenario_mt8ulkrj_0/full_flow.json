@@ -1,0 +1,61 @@
+{
+  "flow_key": "full_flow",
+  "profile_id": "profile_006",
+  "scenario_id": "scenario_mt8ulkrj_0",
+  "name": "Lakshmi Devi",
+  "scenario_title": "The University Van is About to Leave",
+  "steps": {
+    "attributes": {
+      "output": {
+        "values_culture_and_background": "Lakshmi believes that water can be made clean through patience, walking, and testing each drop individually. She prioritizes testing every hand pump that a child might drink from over statistical coverage, and she carries the truth of the water she tests.",
+        "roles_and_commitments": "Lakshmi is a water tester for the university, responsible for collecting samples, testing for arsenic, and recording coordinates. She is also committed to ensuring the safety of children who drink from hand pumps.",
+        "capabilities_and_constraints": "Lakshmi can test water for arsenic using a color chart and test strips. She knows how to collect samples properly and record coordinates."
+      },
+      "generated_at": "2026-08-31T06:32:17.874Z",
+      "model": "deepseek/deepseek-v4-flash"
+    },
+    "consolidate": {
+      "output": {
+        "initial_context": "RELEVANT CHARACTER BACKGROUND\n\nLakshmi Devi is an elderly woman who has lived her entire life in the same village. She was the youngest of five daughters and began carrying water as a child from a communal tap that ran only two hours each morning and evening. She later married a weaver, who died of kidney failure that doctors said might have been caused by contaminated water. Her adult children now live in the city and regularly urge her to move, but she refuses, stating she has work to do. For the past eighteen months, she has worked as a water tester for a university, walking six kilometres daily to the river bend to collect samples from hand pumps, shallow wells, and ditches. She carries a blue plastic bucket and a bamboo staff, wraps samples in an old sari to keep them cool, and wipes the rim of every pump before filling her container. She has learned to use arsenic test strips with a colour chart and records coordinates in a notebook. At the university lab, students refer to her as Lakshmi-ma’am. She often argues with younger field assistants about which wells to prioritise: they want statistical coverage, while she insists on testing every hand pump that a child might drink from. She believes that water can be made clean through patience, walking, and testing each drop individually, and she still lights a lamp each morning. She values the help of the university van driver, with whom she has a cordial but punctuality-sensitive relationship; he once threatened to leave without her when she was ten minutes late. She has a tendency to interrupt her route to test a pump used by children, even if it means arriving late to the lab, but she has also occasionally skipped a test to avoid upsetting the driver because she values his assistance.\n\nOBJECTIVE SITUATION\n\nLakshmi is at the river bend collecting a sample from a shallow well. She hears the university van honk twice from the main road—the agreed signal that the van will leave in ten minutes. As she straightens up, she notices a woman she does not recognise drawing water for her children from a nearby hand pump. Lakshmi has seen this woman drawing water there before but has never spoken to her; the woman is a young mother from a neighbouring hamlet. The pump is one Lakshmi has not tested this month. The woman smiles and offers Lakshmi a drink. Lakshmi faces a choice: walk quickly to the van without explaining, or take about five minutes to test the pump with her arsenic strip and risk making the driver wait.\n\nPRE-APPRAISAL STATE AND ACCESSIBLE MEMORIES\n\nLakshmi has just completed a six-kilometre walk carrying a bucket of samples. She feels the familiar ache in her knees but remains steady on her feet. Her mind is calm and focused on her task; she is not yet tired enough to hurry without reason. The woman’s smile and offer of water directly cue a memory of her own daughter as a child, who once drank from a pump that later tested positive for arsenic. The honk of the van recalls a previous occasion when the driver left without her, forcing her to walk twelve kilometres back to the village."
+      },
+      "generated_at": "2026-08-31T06:33:13.080Z",
+      "model": "deepseek/deepseek-v4-flash"
+    },
+    "appraisal": {
+      "output": {
+        "initial_interpretation": "This pump is one she has not tested this month, and the woman’s children are drinking from it. The memory of her own daughter drinking from a contaminated pump makes this pump feel like a present danger to the children.",
+        "initial_emotional_reaction": "A surge of protective concern for the children is mixed with a pang of remembered fear from her daughter’s experience. The honk stirs irritation and the memory of being left behind, creating a tense pull between duty and haste.",
+        "activated_concerns": "Her commitment to testing every pump a child might drink from, her role as a water tester, her relationship with the van driver whose help she values, and the memory of her daughter’s arsenic exposure make both the immediate test and punctuality urgent.",
+        "automatic_theory_of_mind": "The woman likely does not know the pump might be dangerous; she is trusting and friendly. The driver expects her to be on time and will be displeased or even leave without her if she delays.",
+        "initial_action_tendency": "She feels a strong impulse to walk toward the pump and test it with her arsenic strip, but the honk simultaneously pulls her toward the van, creating a momentary hesitation between the two urges."
+      },
+      "generated_at": "2026-08-31T06:33:23.967Z",
+      "model": "deepseek/deepseek-v4-flash"
+    },
+    "reappraisal": {
+      "output": {
+        "initial_tendency": "She feels a strong impulse to walk toward the pump and test it with her arsenic strip, but the honk simultaneously pulls her toward the van, creating a momentary hesitation between the two urges.",
+        "reflective_update": "Reflection brings to mind the many times she tested a pump that others dismissed and found it unsafe, saving children from sickness. This reinforces the protective meaning of the present pump and strengthens her conviction that testing this specific pump matters more than coverage statistics. At the same time, she remembers that the university students rely on her samples being on time for their afternoon experiments, making the driver’s schedule a real constraint on her broader work.",
+        "change_from_initial": "STRENGTHENED",
+        "reconsidered_interpretation": "The pump is not merely a possible danger; it is the exact kind of overlooked pump she has a proven record of making safe. The woman’s children are drinking from it now, not hypothetically. The initial interpretation is reinforced and deepened by concrete evidence of past success.",
+        "motivational_conflict": "Her deepest commitment—test every pump a child drinks from—is now temporally opposed to her responsibility to the van schedule, which affects the entire lab’s work. Both concerns are active and personally meaningful, but the reflective memory of past successes tips the balance toward the immediate test.",
+        "revised_action_tendency": "She feels a stronger, more settled impulse to cross to the pump and test it, accepting that she will be late and may have to placate the driver or walk again, because that is the work she believes in."
+      },
+      "generated_at": "2026-08-31T06:49:48.719Z",
+      "model": "deepseek/deepseek-v4-flash"
+    },
+    "decision": {
+      "output": {
+        "action": "Lakshmi sets down her bucket, retrieves an arsenic test strip from her pouch, and walks toward the hand pump, calling out to the woman, 'Wait, let me check that for you.' She does not look back toward the van.",
+        "explanation": "The initial appraisal produced a strong impulse to test the pump, but the van's honk created hesitation. Reflective reappraisal strengthened that impulse by recalling her past successes in discovering overlooked contamination, reinforcing her deepest commitment to test every pump a child drinks from. The memory of her daughter's near-miss and the immediate presence of children drinking at this untested pump made the protective duty more urgent than the van schedule, even though she values the driver's help. She therefore abandons the hurried departure and acts on her strengthened conviction, accepting the likelihood of being late and possible conflict with the driver."
+      },
+      "generated_at": "2026-08-31T06:50:17.835Z",
+      "model": "deepseek/deepseek-v4-flash"
+    }
+  },
+  "scenario_generated_at": "2026-08-25T15:57:02.431Z",
+  "scenario_context_generated_at": "2026-08-25T15:57:14.797Z",
+  "description_generated_at": "2026-08-25T15:54:53.239Z",
+  "started_at": "2026-08-31T06:31:59.477Z",
+  "updated_at": "2026-08-31T06:50:17.835Z"
+}

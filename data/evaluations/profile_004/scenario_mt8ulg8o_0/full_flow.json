@@ -1,0 +1,20 @@
+{
+  "profile_id": "profile_004",
+  "scenario_id": "scenario_mt8ulg8o_0",
+  "flow_key": "full_flow",
+  "name": "Jacob Thompson",
+  "scenario_title": "Morning Shift Start",
+  "scores": {
+    "character_consistency": 9,
+    "situation_fit": 8,
+    "state_memory_alignment": 5
+  },
+  "overall_score": 7.333333333333333,
+  "score_scale": 10,
+  "action": "Jake walks to the break room table, picks up the pen next to the note, and writes his name on the sheet, committing to cover the last hour of the night shift CNA's shift tomorrow.",
+  "decision_mode": "REFLECTIVE",
+  "context_generated_at": "2026-08-31T07:15:12.711Z",
+  "action_generated_at": "2026-08-31T06:32:31.792Z",
+  "generated_at": "2026-08-31T07:16:33.738Z",
+  "model": "deepseek/deepseek-v4-flash"
+}

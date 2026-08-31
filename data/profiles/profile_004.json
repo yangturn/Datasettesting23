@@ -1,0 +1,17 @@
+{
+  "name": "Jacob Thompson",
+  "headline": "22-year-old certified nursing assistant in Cleveland",
+  "description": "Jake dropped out of business school to become a CNA, and now works twelve-hour shifts in a memory care unit, playing Bruce Springsteen for residents who remember the 1980s. He is already applying for travel nursing contracts in Alaska, restless for a bigger challenge.",
+  "id": "profile_004",
+  "seed": {
+    "region": "the US Midwest",
+    "gender": "a man",
+    "age_band": "early twenties",
+    "socioeconomic": "comfortably middle class",
+    "life_stage": "changing direction entirely",
+    "domain": "healthcare or caregiving",
+    "temperament": "restless and impulsive"
+  },
+  "generated_at": "2026-08-25T15:54:05.647Z",
+  "model": "deepseek/deepseek-v4-flash"
+}

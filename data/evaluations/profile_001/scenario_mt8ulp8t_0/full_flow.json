@@ -1,0 +1,20 @@
+{
+  "profile_id": "profile_001",
+  "scenario_id": "scenario_mt8ulp8t_0",
+  "flow_key": "full_flow",
+  "name": "Amina Adebayo",
+  "scenario_title": "Aunt's Naming Ceremony Invitation",
+  "scores": {
+    "character_consistency": 8,
+    "situation_fit": 8,
+    "state_memory_alignment": 6
+  },
+  "overall_score": 7.333333333333333,
+  "score_scale": 10,
+  "action": "Amina folds the note carefully, puts it in her pocket, and then asks her landlady, 'Mama, how much is the transport to Ibadan these days?'",
+  "decision_mode": "REFLECTIVE",
+  "context_generated_at": "2026-08-31T07:10:23.006Z",
+  "action_generated_at": "2026-08-31T06:32:50.093Z",
+  "generated_at": "2026-08-31T07:10:36.332Z",
+  "model": "deepseek/deepseek-v4-flash"
+}

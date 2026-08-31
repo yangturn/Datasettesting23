@@ -1,0 +1,17 @@
+{
+  "name": "Amina Adebayo",
+  "headline": "18-year-old apprentice carpenter in Lagos",
+  "description": "Amina lives in a rented room in Mushin and wakes at 5 a.m. to sweep a building site for 500 naira, then attends a vocational carpentry course in the afternoon. She carries a worn notebook for every expense and keeps her few tools locked in a metal box, always double-checking her measurements before cutting.",
+  "id": "profile_001",
+  "seed": {
+    "region": "West Africa",
+    "gender": "a woman",
+    "age_band": "late teens",
+    "socioeconomic": "poor, with unstable income",
+    "life_stage": "still studying or training",
+    "domain": "manual trades or construction",
+    "temperament": "cautious and methodical"
+  },
+  "generated_at": "2026-08-25T15:54:05.647Z",
+  "model": "deepseek/deepseek-v4-flash"
+}

@@ -1,0 +1,20 @@
+{
+  "profile_id": "profile_005",
+  "scenario_id": "scenario_mt8ul7ow_0",
+  "flow_key": "full_flow",
+  "name": "José Almeida",
+  "scenario_title": "Invitation to the Samba Circle",
+  "scores": {
+    "character_consistency": 8,
+    "situation_fit": 8,
+    "state_memory_alignment": 8
+  },
+  "overall_score": 8,
+  "score_scale": 10,
+  "action": "José shifts his weight, looks from his satchel to Olavo, then says, 'Tell me more about this roda. Who else is in it? I have notes to finish, but I could come by one Sunday to see.'",
+  "decision_mode": "REFLECTIVE",
+  "context_generated_at": "2026-08-31T07:17:30.819Z",
+  "action_generated_at": "2026-08-31T06:49:08.028Z",
+  "generated_at": "2026-08-31T07:18:19.016Z",
+  "model": "deepseek/deepseek-v4-flash"
+}

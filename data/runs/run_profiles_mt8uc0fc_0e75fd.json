@@ -1,0 +1,13 @@
+{
+  "id": "run_profiles_mt8uc0fc_0e75fd",
+  "stage": "profiles",
+  "status": "succeeded",
+  "total": 6,
+  "done": 6,
+  "failed": 0,
+  "errors": [],
+  "model": "deepseek/deepseek-v4-flash",
+  "started_at": "2026-08-25T15:49:36.168Z",
+  "finished_at": "2026-08-25T15:50:09.029Z",
+  "message": null
+}

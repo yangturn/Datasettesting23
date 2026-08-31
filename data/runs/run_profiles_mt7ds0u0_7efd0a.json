@@ -1,0 +1,13 @@
+{
+  "id": "run_profiles_mt7ds0u0_7efd0a",
+  "stage": "profiles",
+  "status": "succeeded",
+  "total": 2,
+  "done": 2,
+  "failed": 0,
+  "errors": [],
+  "model": "qwen/qwen3.7-flash",
+  "started_at": "2026-08-24T15:18:23.545Z",
+  "finished_at": "2026-08-24T15:18:45.465Z",
+  "message": "Replaced the population, deleting 3."
+}

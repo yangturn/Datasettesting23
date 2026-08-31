@@ -1,0 +1,20 @@
+{
+  "profile_id": "profile_002",
+  "scenario_id": "scenario_mt8ulg8o_0",
+  "flow_key": "full_flow",
+  "name": "Elin Johansson",
+  "scenario_title": "After-Work Invitation",
+  "scores": {
+    "character_consistency": 6,
+    "situation_fit": 8,
+    "state_memory_alignment": 7
+  },
+  "overall_score": 7,
+  "score_scale": 10,
+  "action": "She types a quick reply to Lukas saying she'll join, then grabs her coat and locks the office door.",
+  "decision_mode": "REFLECTIVE",
+  "context_generated_at": "2026-08-31T07:11:25.314Z",
+  "action_generated_at": "2026-08-31T06:48:53.213Z",
+  "generated_at": "2026-08-31T07:11:59.559Z",
+  "model": "deepseek/deepseek-v4-flash"
+}

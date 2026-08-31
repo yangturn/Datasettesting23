@@ -1,0 +1,20 @@
+{
+  "profile_id": "profile_006",
+  "scenario_id": "scenario_mt8ulkrj_0",
+  "flow_key": "immediate_flow",
+  "name": "Lakshmi Devi",
+  "scenario_title": "The University Van is About to Leave",
+  "scores": {
+    "character_consistency": 9,
+    "situation_fit": 7,
+    "state_memory_alignment": 8
+  },
+  "overall_score": 8,
+  "score_scale": 10,
+  "action": "Lakshmi begins walking toward the woman and the untested hand pump, reaching into her bag for the arsenic strip. She calls out over her shoulder toward the road, 'Wait! Testing first!' without slowing her pace.",
+  "decision_mode": "IMMEDIATE",
+  "context_generated_at": "2026-08-31T07:20:07.250Z",
+  "action_generated_at": "2026-08-31T06:33:32.434Z",
+  "generated_at": "2026-08-31T07:22:18.455Z",
+  "model": "deepseek/deepseek-v4-flash"
+}

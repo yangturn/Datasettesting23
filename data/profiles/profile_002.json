@@ -1,0 +1,17 @@
+{
+  "name": "Elin Johansson",
+  "headline": "35-year-old owner of a printing shop in Stockholm",
+  "description": "Elin inherited her father's offset printing company after his death and now runs it while coordinating part-time nurses for her mother, who has dementia. She is ambitiously pivoting the business into eco-friendly packaging, setting quarterly revenue targets and cold-calling corporate clients in her second language.",
+  "id": "profile_002",
+  "seed": {
+    "region": "the Nordic countries",
+    "gender": "a woman",
+    "age_band": "thirties",
+    "socioeconomic": "wealthy, with inherited money",
+    "life_stage": "caring for an ageing parent",
+    "domain": "small business ownership",
+    "temperament": "ambitious and competitive"
+  },
+  "generated_at": "2026-08-25T15:54:05.647Z",
+  "model": "deepseek/deepseek-v4-flash"
+}

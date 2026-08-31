@@ -1,0 +1,13 @@
+{
+  "id": "run_evaluations_mtguaidq_9c9271",
+  "stage": "evaluations",
+  "status": "succeeded",
+  "total": 18,
+  "done": 18,
+  "failed": 0,
+  "errors": [],
+  "model": "deepseek/deepseek-v4-flash",
+  "started_at": "2026-08-31T06:10:35.534Z",
+  "finished_at": "2026-08-31T06:16:00.268Z",
+  "message": "Built 6 context(s) (4 reflective, 2 immediate) and scored 12 prediction(s)."
+}

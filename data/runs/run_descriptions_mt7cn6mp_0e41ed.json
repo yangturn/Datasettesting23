@@ -1,0 +1,13 @@
+{
+  "id": "run_descriptions_mt7cn6mp_0e41ed",
+  "stage": "descriptions",
+  "status": "cancelled",
+  "total": 3,
+  "done": 0,
+  "failed": 0,
+  "errors": [],
+  "model": "qwen/qwen3.7-flash",
+  "started_at": "2026-08-24T14:46:38.163Z",
+  "finished_at": "2026-08-24T14:46:45.165Z",
+  "message": "Cancelled. Everything generated before the cancel was kept."
+}

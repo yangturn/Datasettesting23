@@ -1,0 +1,17 @@
+{
+  "name": "Lakshmi Devi",
+  "headline": "71-year-old water quality monitor in Karnataka",
+  "description": "Lakshmi grew up carrying buckets from a communal tap; now, after her children moved away, she volunteers for a university project testing groundwater arsenic, walking six kilometres each day to collect samples. She believes that if every drop is tested and made clean, the next generation will not suffer as she did.",
+  "id": "profile_006",
+  "seed": {
+    "region": "South Asia",
+    "gender": "a woman",
+    "age_band": "seventies or older",
+    "socioeconomic": "working class",
+    "life_stage": "starting out in work",
+    "domain": "science or research",
+    "temperament": "idealistic and principled"
+  },
+  "generated_at": "2026-08-25T15:54:05.647Z",
+  "model": "deepseek/deepseek-v4-flash"
+}

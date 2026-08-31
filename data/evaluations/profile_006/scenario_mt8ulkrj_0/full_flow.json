@@ -1,0 +1,20 @@
+{
+  "profile_id": "profile_006",
+  "scenario_id": "scenario_mt8ulkrj_0",
+  "flow_key": "full_flow",
+  "name": "Lakshmi Devi",
+  "scenario_title": "The University Van is About to Leave",
+  "scores": {
+    "character_consistency": 9,
+    "situation_fit": 7,
+    "state_memory_alignment": 8
+  },
+  "overall_score": 8,
+  "score_scale": 10,
+  "action": "Lakshmi sets down her bucket, retrieves an arsenic test strip from her pouch, and walks toward the hand pump, calling out to the woman, 'Wait, let me check that for you.' She does not look back toward the van.",
+  "decision_mode": "IMMEDIATE",
+  "context_generated_at": "2026-08-31T07:20:07.250Z",
+  "action_generated_at": "2026-08-31T06:50:17.835Z",
+  "generated_at": "2026-08-31T07:21:13.015Z",
+  "model": "deepseek/deepseek-v4-flash"
+}

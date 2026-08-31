@@ -1,0 +1,20 @@
+{
+  "profile_id": "profile_004",
+  "scenario_id": "scenario_mt8ulg8o_0",
+  "flow_key": "immediate_flow",
+  "name": "Jacob Thompson",
+  "scenario_title": "Morning Shift Start",
+  "scores": {
+    "character_consistency": 9,
+    "situation_fit": 8,
+    "state_memory_alignment": 7
+  },
+  "overall_score": 8,
+  "score_scale": 10,
+  "action": "He picks up his phone, types 'I can do it,' and hits send without looking away from the screen. Then he sets the phone face-down on the break room table, pours himself a cup of coffee, and sits down heavily.",
+  "decision_mode": "REFLECTIVE",
+  "context_generated_at": "2026-08-31T07:15:12.711Z",
+  "action_generated_at": "2026-08-31T06:33:14.687Z",
+  "generated_at": "2026-08-31T07:16:35.390Z",
+  "model": "deepseek/deepseek-v4-flash"
+}

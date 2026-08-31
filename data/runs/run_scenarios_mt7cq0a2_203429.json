@@ -1,0 +1,13 @@
+{
+  "id": "run_scenarios_mt7cq0a2_203429",
+  "stage": "scenarios",
+  "status": "succeeded",
+  "total": 3,
+  "done": 3,
+  "failed": 0,
+  "errors": [],
+  "model": "qwen/qwen3.7-flash",
+  "started_at": "2026-08-24T14:48:49.898Z",
+  "finished_at": "2026-08-24T14:50:32.330Z",
+  "message": null
+}

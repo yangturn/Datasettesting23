@@ -1,0 +1,49 @@
+{
+  "flow_key": "immediate_flow",
+  "profile_id": "profile_006",
+  "scenario_id": "scenario_mt8ulkrj_0",
+  "name": "Lakshmi Devi",
+  "scenario_title": "The University Van is About to Leave",
+  "steps": {
+    "attributes": {
+      "output": {
+        "values_culture_and_background": "She believes water can be made clean through patience and testing each drop. She prioritizes testing hand pumps that children might drink from over statistical coverage. She has a strong sense of duty to her village's water safety.",
+        "roles_and_commitments": "She is a water sample collector for the university. She is a self-appointed guardian of the village wells, committed to testing every hand pump that a child might use.",
+        "capabilities_and_constraints": "She can perform arsenic strip tests, read color charts, record coordinates, and walk six kilometers daily carrying samples. She is not too old to carry water."
+      },
+      "generated_at": "2026-08-31T06:32:43.488Z",
+      "model": "deepseek/deepseek-v4-flash"
+    },
+    "consolidate": {
+      "output": {
+        "initial_context": "RELEVANT CHARACTER BACKGROUND\n\nLakshmi Devi is a water sample collector for a university, born in the same village where she now works. She is the youngest of five daughters. Her earliest memory is of the communal tap — a rusted iron pipe that ran for two hours in the morning and two hours at dusk. She carried a brass lota to school and later a plastic jerrycan after she married and moved to her husband’s home. Her husband, a weaver, died of kidney failure when their youngest child was twelve; the doctors said it might have been the water. She remembers his swollen ankles and the smell of the village pond in the dry season. Her children now live in the city: a son who sells mobile phones and a daughter who works in a call centre. They call every Sunday and beg her to move; she tells them she has work to do, saying “The university people need me,” though she knows it is really the other way around.\n\nFor the past eighteen months she has walked six kilometres from the village to the river bend and back each day, carrying a blue plastic bucket in one hand and a bamboo staff in the other. She collects samples from hand pumps, shallow wells, and the ditch where children sometimes play, wrapping each sample in old sari cloth to keep it cool. On the return leg she stops at every pump to wipe the rim before filling her container. Her movements are slow but precise. University students tease her affectionately — “Lakshmi-ma’am, you bring us cleaner water than we can collect ourselves” — and she laughs, but does not slow down.\n\nShe has learned to read the arsenic-strip colour chart, to record coordinates in a thick notebook with a pencil tied to a string, and to argue with younger field assistants about which wells to prioritise: they want statistical coverage, while she wants every hand pump that a child might drink from. She believes water can be made clean — not through prayer alone, though she lights a lamp every morning, but through patience, walking, and testing each drop one by one. When asked why she bothers at her age, she says, “I am not too old to carry water. I have carried it all my life. Now I carry the truth of it.”\n\nShe is a self-appointed guardian of the village wells, committed to testing every hand pump a child might use. She can perform arsenic strip tests, read colour charts, record coordinates, and walk six kilometres daily carrying samples. She is not too old to carry water.\n\nShe has a cordial but punctuality-sensitive relationship with the university van driver; he once threatened to leave without her when she was ten minutes late. She values his help and has sometimes skipped a test to keep him from honking again. At other times she has interrupted her route to test a hand pump used by children, even when it meant arriving late to the lab.\n\nOBJECTIVE SITUATION\n\nLakshmi is at the river bend collecting a sample from a shallow well when she hears the university van honk twice from the main road — the agreed signal that they are leaving in ten minutes. As she straightens up, she notices a woman she does not recognize drawing water for her children from a nearby hand pump that Lakshmi has not tested this month. The woman smiles and offers her a drink. Lakshmi can either walk quickly to the van without explaining, or take five minutes to test the pump with her arsenic strip and risk making the driver wait.\n\nThe unknown woman is a young mother from a neighboring hamlet; Lakshmi has seen her drawing water there before but never spoken to her.\n\nPRE-APPRAISAL STATE AND ACCESSIBLE MEMORIES\n\nShe has just walked six kilometres carrying a bucket of samples and feels a familiar ache in her knees, but she is still steady on her feet. Her mind is calm and focused on the task; she is not yet tired enough to hurry without reason.\n\nThe woman’s smile and offer of water remind her of her own daughter as a child, who once drank from a pump that later tested positive for arsenic. The honk of the van recalls a previous occasion when the driver left without her, forcing her to walk twelve kilometres back to the village."
+      },
+      "generated_at": "2026-08-31T06:33:05.994Z",
+      "model": "deepseek/deepseek-v4-flash"
+    },
+    "appraisal": {
+      "output": {
+        "initial_interpretation": "The honk means the van is about to leave, and the woman at the untested pump with her children means possible arsenic in the water they are about to drink. To Lakshmi, this is not an ordinary delay; it looks like a child in danger and a driver waiting on her at the same time.",
+        "initial_emotional_reaction": "The honk stirs a familiar sharp urgency and the memory of being left behind; the woman’s smile and the children at the pump bring a protective dread, softened by warmth, because the scene reminds her of her own daughter. Her knees ache but her attention narrows on the pump.",
+        "activated_concerns": "Her commitment to test every hand pump a child might use is immediately pressed against her sensitivity to the driver’s punctuality; the memory of her daughter drinking from a pump that later tested positive makes the untested pump feel personal and urgent, while the van’s impatience makes her worry about losing transport and the lab’s schedule.",
+        "automatic_theory_of_mind": "She assumes the van driver expects her to come now and will not wait long; she senses the woman is unaware of any danger, offering water kindly and trusting the pump as safe, with no idea that Lakshmi sees it as a possible arsenic risk.",
+        "initial_action_tendency": "Her first impulse is to step toward the woman and the pump, reach for her arsenic strip, and test the water before letting the children drink, while the honk tugs at her to hurry or at least signal the driver. She feels pulled toward the pump even as her body tenses to move toward the road."
+      },
+      "generated_at": "2026-08-31T06:33:24.444Z",
+      "model": "deepseek/deepseek-v4-flash"
+    },
+    "decision": {
+      "output": {
+        "action": "Lakshmi begins walking toward the woman and the untested hand pump, reaching into her bag for the arsenic strip. She calls out over her shoulder toward the road, 'Wait! Testing first!' without slowing her pace.",
+        "explanation": "Her immediate impulse to test the pump overtakes the urgency of the van honk. The sight of the children and the woman’s smile activates her core commitment to test every pump a child might use, reinforced by the painful memory of her own daughter drinking contaminated water. The honk triggers anxiety about being left behind, but the protective dread for the children is stronger, so she acts on her initial action tendency: moving toward the pump and signaling the driver only as an afterthought."
+      },
+      "generated_at": "2026-08-31T06:33:32.434Z",
+      "model": "deepseek/deepseek-v4-flash"
+    }
+  },
+  "scenario_generated_at": "2026-08-25T15:57:02.431Z",
+  "scenario_context_generated_at": "2026-08-25T15:57:14.797Z",
+  "description_generated_at": "2026-08-25T15:54:53.239Z",
+  "started_at": "2026-08-31T06:32:27.916Z",
+  "updated_at": "2026-08-31T06:33:32.434Z"
+}

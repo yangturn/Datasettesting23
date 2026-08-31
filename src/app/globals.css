@@ -1,26 +1,137 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/*
+ * Colors follow VS Code's "Dark Modern" / "Light Modern" themes.
+ *
+ * Theming is attribute-driven: an inline script in the root layout resolves the
+ * stored preference (light | dark | system) to a concrete `data-theme` value on
+ * <html> before first paint. Dark is the default, so the bare `:root` block
+ * carries the dark values — that is also what renders if JS never runs.
+ *
+ * Raw values live under `--palette-*` and are mapped to Tailwind's `--color-*`
+ * namespace in the `@theme inline` block below. The two namespaces are kept
+ * distinct on purpose — reusing `--color-*` for both makes `@theme` emit a
+ * self-referential `--color-x: var(--color-x)` that only resolves by source-order
+ * luck.
+ */
+@custom-variant dark (&:where([data-theme="dark"], [data-theme="dark"] *));
+
+/* ------------------------------------------------- dark (default) ------- */
+
+:root,
+[data-theme="dark"] {
+  color-scheme: dark;
+
+  /* surfaces — editor, sidebar, widget, list hover */
+  --palette-canvas: #1f1f1f;
+  --palette-surface: #181818;
+  --palette-surface-raised: #252526;
+  --palette-surface-hover: #2a2d2e;
+
+  /* borders */
+  --palette-line: #2b2b2b;
+  --palette-line-strong: #3c3c3c;
+
+  /* text */
+  --palette-ink: #cccccc;
+  --palette-ink-muted: #9d9d9d;
+  --palette-ink-subtle: #7a7a7a;
+
+  /* accent — textLink.foreground / focusBorder */
+  --palette-accent: #4daafc;
+  --palette-accent-hover: #6cb8fd;
+  --palette-accent-ink: #1f1f1f;
+  --palette-accent-surface: #04395e;
+
+  /* status — editor error/warning + terminal green */
+  --palette-success: #89d185;
+  --palette-warning: #cca700;
+  --palette-danger: #f14c4c;
+
+  /* categorical — one per Stage 3 flow arm */
+  --palette-arm-baseline: #858585;
+  --palette-arm-existing: #d18616;
+  --palette-arm-proposed: #89d185;
 }
 
+/* ------------------------------------------------------------ light ---- */
+
+[data-theme="light"] {
+  color-scheme: light;
+
+  /* surfaces */
+  --palette-canvas: #ffffff;
+  --palette-surface: #f8f8f8;
+  --palette-surface-raised: #ffffff;
+  --palette-surface-hover: #f2f2f2;
+
+  /* borders */
+  --palette-line: #e5e5e5;
+  --palette-line-strong: #cecece;
+
+  /* text */
+  --palette-ink: #3b3b3b;
+  --palette-ink-muted: #616161;
+  --palette-ink-subtle: #8b8b8b;
+
+  /* accent */
+  --palette-accent: #005fb8;
+  --palette-accent-hover: #0258a8;
+  --palette-accent-ink: #ffffff;
+  --palette-accent-surface: #e4ecf8;
+
+  /* status */
+  --palette-success: #388a34;
+  --palette-warning: #bf8803;
+  --palette-danger: #e51400;
+
+  /* categorical */
+  --palette-arm-baseline: #767676;
+  --palette-arm-existing: #b5730a;
+  --palette-arm-proposed: #388a34;
+}
+
+/* ------------------------------------------------- expose to tailwind ---- */
+
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
+  --color-canvas: var(--palette-canvas);
+  --color-surface: var(--palette-surface);
+  --color-surface-raised: var(--palette-surface-raised);
+  --color-surface-hover: var(--palette-surface-hover);
+
+  --color-line: var(--palette-line);
+  --color-line-strong: var(--palette-line-strong);
+
+  --color-ink: var(--palette-ink);
+  --color-ink-muted: var(--palette-ink-muted);
+  --color-ink-subtle: var(--palette-ink-subtle);
+
+  --color-accent: var(--palette-accent);
+  --color-accent-hover: var(--palette-accent-hover);
+  --color-accent-ink: var(--palette-accent-ink);
+  --color-accent-surface: var(--palette-accent-surface);
+
+  --color-success: var(--palette-success);
+  --color-warning: var(--palette-warning);
+  --color-danger: var(--palette-danger);
+
+  --color-arm-baseline: var(--palette-arm-baseline);
+  --color-arm-existing: var(--palette-arm-existing);
+  --color-arm-proposed: var(--palette-arm-proposed);
+
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
+/* ------------------------------------------------------------- base ----- */
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--palette-canvas);
+  color: var(--palette-ink);
+  font-family: var(--font-geist-sans), system-ui, sans-serif;
+}
+
+*:focus-visible {
+  outline: 1px solid var(--palette-accent);
+  outline-offset: 2px;
 }

@@ -1,0 +1,13 @@
+{
+  "id": "run_executions_mtgso72w_7d1e2d",
+  "stage": "executions",
+  "status": "succeeded",
+  "total": 8,
+  "done": 8,
+  "failed": 0,
+  "errors": [],
+  "model": "deepseek/deepseek-v4-flash",
+  "started_at": "2026-08-31T05:25:14.842Z",
+  "finished_at": "2026-08-31T05:29:06.211Z",
+  "message": "Skipped 10 cell(s) already complete."
+}

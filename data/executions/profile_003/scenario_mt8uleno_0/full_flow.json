@@ -1,0 +1,61 @@
+{
+  "flow_key": "full_flow",
+  "profile_id": "profile_003",
+  "scenario_id": "scenario_mt8uleno_0",
+  "name": "Niran Wong",
+  "scenario_title": "A Late-Night Message",
+  "steps": {
+    "attributes": {
+      "output": {
+        "values_culture_and_background": "Duty to family is paramount. Loyalty to family comes before labels. Endurance is a form of love. Niran believes friendships are a luxury they have not permitted themselves.",
+        "roles_and_commitments": "Parent to their only child. Night-shift worker at distribution centre. No ongoing commitment to former colleagues.",
+        "capabilities_and_constraints": "Meticulous attention to detail and accuracy. Ability to endure physically demanding work and isolation. Reserved and does not initiate social contact. Limited social network in Calgary."
+      },
+      "generated_at": "2026-08-31T06:30:50.212Z",
+      "model": "deepseek/deepseek-v4-flash"
+    },
+    "consolidate": {
+      "output": {
+        "initial_context": "RELEVANT CHARACTER BACKGROUND\n\nNiran Wong spent 37 years as a senior accountant for Thailand's Ministry of Finance, known for meticulous accuracy and a quiet reputation for catching errors before reports reached the deputy director. They retired early and moved to Calgary to be near their only child, a geotechnical engineer, selling the family home in Thon Buri. Niran now works the night shift at a distribution centre (concrete floor, 5°C), starting at 11 p.m. The night crew are young and unsure of Niran's pronouns; Niran simply says \"Niran\" and lets the confusion sit. Their child calls them \"Por\" in private, and loyalty to family comes before loyalty to labels.\n\nDuty is the architecture of Niran's life: duty to their daughter (endures cold and late hours), duty to supervisors (straightens pallets meticulously), and duty to themselves (cannot complain, as that would imply regret). The same order that soothes them also isolates them. In Bangkok, order was shared—everyone knew the filing system. Here, the precision is solitary; no one else notices when a pallet is off by one box. On breaks, Niran sits alone, sipping black tea from a thermos. If a co-worker asks about Thailand, Niran answers with a fact (\"The mangoes are sweeter there\") and never mentions loneliness. Since moving, Niran has not initiated contact with any former colleagues, focusing entirely on family and the new job. In Bangkok, they maintained friendly but bounded work relationships, never extending them beyond office hours. The colleague who just messaged was a lunch companion in the ministry courtyard; conversations never strayed beyond work and polite topics. They exchanged farewells at Niran's retirement party with no promises to keep in touch. He still works in Bangkok.\n\nNiran's values include duty to family as paramount, endurance as a form of love, and friendship as a luxury they have not permitted themselves. Roles: parent, night-shift worker, no ongoing commitment to former colleagues. Capabilities: meticulous attention to detail, ability to endure physically demanding work and isolation, reserved, does not initiate social contact, limited social network in Calgary.\n\n\nOBJECTIVE SITUATION\n\nIt is 2 a.m. during Niran's break. Niran's phone buzzes with a message from the former colleague in Bangkok, who writes: \"I will be in Calgary for a conference next week. Can we have dinner? It has been too long.\" Niran stares at the message, thumb hovering. They have not spoken to him since leaving Thailand. The break room is empty, and the tea in their thermos is growing cold.\n\n\nPRE-APPRAISAL STATE AND ACCESSIBLE MEMORIES\n\nNiran is midway through a night shift, physically tired but alert, their body acclimated to the 2 a.m. break routine. The empty break room feels quieter than usual, and the tea has gone lukewarm. They had been thinking of nothing in particular, just the ambient hum of the warehouse. Reading the message, they recall the jasmine-scented courtyard at the ministry and the colleague's habit of ordering khao man gai every lunch. They remember his sincere toast at the retirement party and the slight awkwardness of saying goodbye. The name on the screen brings back the precise weight of the ministry's afternoon heat against the window."
+      },
+      "generated_at": "2026-08-31T06:31:32.114Z",
+      "model": "deepseek/deepseek-v4-flash"
+    },
+    "appraisal": {
+      "output": {
+        "initial_interpretation": "The message is an unexpected reach from a past life, a world Niran left behind. It feels like a request to re-enter a relationship they had already closed, disrupting the precise, solitary order they have built in Calgary.",
+        "initial_emotional_reaction": "Surprise, followed by a faint warmth from the courtyard memory, undercut by unease. The cold tea and empty break room amplify a sense of dislocation; the invitation feels like a gentle pressure to acknowledge loss.",
+        "activated_concerns": "Duty to family (the daughter for whom Niran endures the cold and isolation), the role of a parent who must not appear to have regrets, and the silent rule that friendship is a luxury not permitted. The invitation challenges the boundary between the past and the present, and between duty and personal comfort.",
+        "automatic_theory_of_mind": "The colleague probably means well, genuinely wanting to reconnect after the years, but he cannot see how completely Niran has let go of that life. He may assume the old ease still exists, not realizing how unfamiliar the request feels now.",
+        "initial_action_tendency": "To hesitate, thumb hovering, fighting a reflexive impulse to put the phone down and let the moment pass without answering. The body wants to avoid the engagement, to preserve the quiet isolation of the break and the duty-filled night ahead."
+      },
+      "generated_at": "2026-08-31T06:31:48.794Z",
+      "model": "deepseek/deepseek-v4-flash"
+    },
+    "reappraisal": {
+      "output": {
+        "initial_tendency": "To hesitate, thumb hovering, fighting a reflexive impulse to put the phone down and let the moment pass without answering.",
+        "reflective_update": "The reflective memory of the farewell dinner, where only one person followed through, reinforces Niran's sense that letting go is normal and expected. The pattern of major moves shows that this is how Niran operates—without regret, without maintaining old ties. The invitation feels like an anomaly in an otherwise consistent life pattern.",
+        "change_from_initial": "STRENGTHENED",
+        "reconsidered_interpretation": "The message is not merely a disruption but a test of Niran's established life pattern. The initial interpretation that it threatens the solitary order is reinforced, but now framed as a predictable challenge to a deliberate choice.",
+        "motivational_conflict": "A faint warmth from the memory of the courtyard competes with the stronger pull of duty to family and the proven pattern of letting go. The desire to avoid awkwardness or disappointment if the evening fails to rekindle the old ease also weighs against the brief pleasure of reconnection.",
+        "revised_action_tendency": "To let the message sit unanswered for now, prioritizing the present duty and the consistency of the life built for family over an uncertain reconnection from a deliberately closed past."
+      },
+      "generated_at": "2026-08-31T06:32:11.872Z",
+      "model": "deepseek/deepseek-v4-flash"
+    },
+    "decision": {
+      "output": {
+        "action": "Niran lets out a long, quiet breath, turns the phone face-down on the break-room table, leaves the message unanswered, and takes a slow sip of the cold tea before standing and heading back to the floor.",
+        "explanation": "Niran's initial tendency was to hesitate and avoid engaging with the message, and the reflective reappraisal strengthened that impulse. The memory of the farewell dinner—where only one person followed through—reinforced the established pattern of letting go of old ties after major moves. The invitation felt like an anomaly in a life deliberately ordered around duty to family and the present. Though the courtyard memory brought a faint warmth, the stronger pull was the consistency of the life Niran has built and the silent rule that friendship is a luxury not permitted. So Niran did not reply or reopen the past; instead, they set the phone aside and returned to the familiar obligations of the night shift."
+      },
+      "generated_at": "2026-08-31T06:32:27.909Z",
+      "model": "deepseek/deepseek-v4-flash"
+    }
+  },
+  "scenario_generated_at": "2026-08-25T15:56:54.516Z",
+  "scenario_context_generated_at": "2026-08-25T15:57:08.495Z",
+  "description_generated_at": "2026-08-25T15:54:51.252Z",
+  "started_at": "2026-08-31T06:30:19.836Z",
+  "updated_at": "2026-08-31T06:32:27.909Z"
+}

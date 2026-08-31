@@ -1,0 +1,18 @@
+{
+  "id": "run_profiles_mt8u6l0b_951645",
+  "stage": "profiles",
+  "status": "succeeded",
+  "total": 6,
+  "done": 0,
+  "failed": 6,
+  "errors": [
+    {
+      "id": "profiles 1-6",
+      "error": "fetch failed"
+    }
+  ],
+  "model": "deepseek/deepseek-v4-flash",
+  "started_at": "2026-08-25T15:45:22.907Z",
+  "finished_at": "2026-08-25T15:45:27.965Z",
+  "message": "Replaced the population, deleting 4 profile(s) and the 4 description(s) and 4 scenario(s) derived from them."
+}

@@ -1,0 +1,26 @@
+{
+  "id": "run_descriptions_mt7c1esu_e3d291",
+  "stage": "descriptions",
+  "status": "succeeded",
+  "total": 3,
+  "done": 0,
+  "failed": 3,
+  "errors": [
+    {
+      "id": "profile_001",
+      "error": "OpenRouter 403 Forbidden: {\"error\":{\"message\":\"This model is not available in your region.\",\"code\":403}}"
+    },
+    {
+      "id": "profile_003",
+      "error": "OpenRouter 403 Forbidden: {\"error\":{\"message\":\"This model is not available in your region.\",\"code\":403}}"
+    },
+    {
+      "id": "profile_002",
+      "error": "OpenRouter 403 Forbidden: {\"error\":{\"message\":\"This model is not available in your region.\",\"code\":403}}"
+    }
+  ],
+  "model": "google/gemini-2.5-flash",
+  "started_at": "2026-08-24T14:29:42.318Z",
+  "finished_at": "2026-08-24T14:29:43.801Z",
+  "message": null
+}

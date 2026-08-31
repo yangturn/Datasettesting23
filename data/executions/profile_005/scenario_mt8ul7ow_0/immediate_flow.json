@@ -1,0 +1,49 @@
+{
+  "flow_key": "immediate_flow",
+  "profile_id": "profile_005",
+  "scenario_id": "scenario_mt8ul7ow_0",
+  "name": "José Almeida",
+  "scenario_title": "Invitation to the Samba Circle",
+  "steps": {
+    "attributes": {
+      "output": {
+        "values_culture_and_background": "José values independence above all else, refuses to join organized groups (calls the artists' union a 'guild of gatekeepers'), and distrusts institutions after a priest embezzled funds from his childhood parish. He was raised in a working-class São Paulo neighborhood by a bricklayer father and a seamstress mother, and worked ten years on a factory assembly line, which taught him to see power dynamics. He yearns for community but rejects formal structures.",
+        "roles_and_commitments": "José has been a daily public speaker on Praça da Sé for six months, delivering monologues without a microphone. He has no formal memberships in unions or groups. He maintains informal ties with regular listeners, such as saving a seat for an elderly woman who brings him coffee.",
+        "capabilities_and_constraints": "José can project his voice without amplification, deliver cutting retorts, mimic voices and cadences, and test rhythm by reading headlines aloud. He lives on a small pension in a rented room with no phone or social media, limiting his outreach and financial flexibility."
+      },
+      "generated_at": "2026-08-31T06:32:28.774Z",
+      "model": "deepseek/deepseek-v4-flash"
+    },
+    "consolidate": {
+      "output": {
+        "initial_context": "RELEVANT CHARACTER BACKGROUND\n\nJosé Almeida is in his late forties, with a graying beard and calloused hands from ten years tightening refrigerator compressors on a factory assembly line. He retired with a small pension and developed a deep aversion to routine. The factory taught him to see how repetition dulls dissent, how supervisors enforce obedience, and how the loudest voice often has the most to hide. He grew up in a working-class neighborhood in São Paulo’s Zona Leste; his father was a bricklayer, his mother a seamstress. They were devout Catholics but stopped attending mass after a priest embezzled parish funds, a memory that sharpens his skepticism. He values independence above all else—he refuses to join the artists’ union, calling it a “guild of gatekeepers”—yet he also craves connection: he knows the names of regular listeners and saves a seat for an elderly woman who brings him coffee. This tension defines him: he distrusts institutions but yearns for a community that shares his rage. For six months, he has performed daily monologues on Praça da Sé, arriving each morning at nine, unfolding a wooden crate, and speaking without introduction or microphone. He mimics voices, mocks corruption, and delivers cutting retorts to hecklers. He sleeps in a rented room nearby with a single bulb, a cot, and stacks of annotated newspapers. He has no phone or social media. When invited to organized groups, he has always declined after attending a single meeting, finding their rules or hierarchies suffocating. He routinely accepts small gestures of companionship—like the elderly woman’s coffee—without committing to ongoing arrangements. He has occasionally recited spontaneous verses at street festivals, but only when a crowd urged him and no formal stage existed.\n\nOBJECTIVE SITUATION\n\nAfter his morning monologue, a regular listener—a retired musician whom José calls Seu Olavo—invites him to join a roda de samba that meets every Sunday in a nearby square. Olavo says they need someone to recite verses between songs, and that the group is informal, with no dues or rules. José has never joined any group, but he misses the rhythm of factory whistles and the old sambas his mother hummed. He looks at his satchel, then at the afternoon stretching ahead.\n\nPRE-APPRAISAL STATE AND ACCESSIBLE MEMORIES\n\nJosé’s voice is slightly hoarse from the morning’s performance, and his left knee aches from standing on the cobblestones. He is carrying a slip of paper scrawled with notes for tomorrow’s monologue, which he had planned to write out this afternoon. A mild hunger gnaws at him, as he skipped breakfast to reread an editorial on rising utility prices. The phrase “roda de samba” triggers a memory of his mother humming “Morena dos Olhos d’Água” while sewing late into the night. Seu Olavo’s weathered hands remind José of the factory foreman who used to tap out rhythms on the assembly line during breaks."
+      },
+      "generated_at": "2026-08-31T06:32:42.450Z",
+      "model": "deepseek/deepseek-v4-flash"
+    },
+    "appraisal": {
+      "output": {
+        "initial_interpretation": "Seu Olavo is offering a chance to be part of a group that has no rules or dues—a roda de samba that needs his verses. It feels like a test of his independence versus the pull of the old rhythms he grew up with.",
+        "initial_emotional_reaction": "He feels a mixture of wariness and a faint, reluctant warmth, triggered by the memory of his mother humming and Olavo’s hands reminding him of factory break-time camaraderie—but also a low throb of hunger and a mental pull toward his planned writing.",
+        "activated_concerns": "On one hand, his deep aversion to any formal organization or hierarchy; on the other, a craving for the kind of unscripted connection and shared rhythm that the roda seems to promise, and the practical concern of unfinished work for tomorrow’s monologue.",
+        "automatic_theory_of_mind": "Seu Olavo likely expects him to say yes—he seems earnest, offering an informal space without rules, and has observed José’s performances. Olavo probably thinks this is a good fit for José’s style.",
+        "initial_action_tendency": "He hesitates, instinctively wanting to step back and protect his solitude, but his hand lingers near his satchel as if weighing the invitation against his plans."
+      },
+      "generated_at": "2026-08-31T06:33:34.886Z",
+      "model": "deepseek/deepseek-v4-flash"
+    },
+    "decision": {
+      "output": {
+        "action": "José looks down at the slip of paper in his hand, then back at Seu Olavo's weathered face. He clears his hoarse throat and says, 'No dues, no rules, you say? I'll come this Sunday, but only to see if it's as loose as you claim. Don't expect me to stay long if anyone starts giving orders.' He nods once, then turns toward his rented room, clutching the paper for tomorrow's monologue.",
+        "explanation": "José's immediate response is driven by the tension between his deep aversion to organized groups and his visceral pull toward the informal, rhythm-based connection that the roda evokes—particularly via the memory of his mother's humming and Seu Olavo's hands, which trigger a faint, reluctant warmth. His initial tendency to protect solitude competes with his craving for unscripted community, but the word 'informal' tips the balance enough to agree on a tentative basis, while his reflexive distrust prompts him to voice a condition. Hunger and the uncompleted monologue notes also push him to end the conversation quickly and retreat to his usual routine."
+      },
+      "generated_at": "2026-08-31T06:48:43.169Z",
+      "model": "deepseek/deepseek-v4-flash"
+    }
+  },
+  "scenario_generated_at": "2026-08-25T15:56:45.488Z",
+  "scenario_context_generated_at": "2026-08-25T15:57:58.081Z",
+  "description_generated_at": "2026-08-25T15:54:52.130Z",
+  "started_at": "2026-08-31T06:31:40.043Z",
+  "updated_at": "2026-08-31T06:48:43.169Z"
+}

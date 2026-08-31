@@ -1,0 +1,21 @@
+{
+  "id": "scenario_mt8uleno_0",
+  "profile_id": "profile_003",
+  "name": "Niran Wong",
+  "headline": "62-year-old warehouse supervisor in Toronto",
+  "title": "A Late-Night Message",
+  "situation_type": "TIME_SENSITIVE",
+  "life_domain": "ROMANTIC",
+  "situation": "It is 2 a.m. during Niran's break. Their phone buzzes—a message from a former colleague in Bangkok, a man Niran once shared quiet lunches with in the ministry courtyard. He writes: 'I will be in Calgary for a conference next week. Can we have dinner? It has been too long.' Niran stares at the message, thumb hovering. They have not spoken to him since leaving Thailand. The break room is empty, the tea in their thermos growing cold.",
+  "context": {
+    "relationship_profiles": "The colleague was a lunch companion in the ministry courtyard, but conversations never strayed beyond work and polite topics. They exchanged farewells at Niran's retirement party, with no promises to keep in touch. Niran knows he still works in Bangkok; their paths diverged cleanly when Niran left.",
+    "tendencies": "Since moving to Calgary, Niran has not initiated contact with any former colleagues, focusing instead on family and the new job. On breaks at the distribution centre, they typically sit alone and do not seek conversation. In Bangkok, they maintained friendly but bounded work relationships, never extending them beyond office hours.",
+    "current_state": "Niran is midway through a night shift, physically tired but alert, their body acclimated to the 2 a.m. break routine. The empty break room feels quieter than usual, and the tea in the thermos has gone lukewarm. They have been thinking of nothing in particular, just the ambient hum of the warehouse.",
+    "immediate_memories": "Reading the message, they recall the jasmine-scented courtyard and the colleague's habit of ordering khao man gai every lunch. They remember his sincere toast at the retirement party, and the slight awkwardness of saying goodbye. The name on the screen brings back the precise weight of the ministry's afternoon heat against the window.",
+    "reflective_memories": "Niran thinks of the farewell dinner where everyone promised to stay in touch, but only one person has ever messaged since. They recognize a pattern: each major move—from their childhood home to Bangkok, then to Calgary—has meant letting go of old connections without regret. Duty to family has always been solitary, and friendships feel like a luxury they have not permitted themselves."
+  },
+  "context_generated_at": "2026-08-25T15:57:08.495Z",
+  "description_generated_at": "2026-08-25T15:54:51.252Z",
+  "generated_at": "2026-08-25T15:56:54.516Z",
+  "model": "deepseek/deepseek-v4-flash"
+}

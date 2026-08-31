@@ -1,0 +1,61 @@
+{
+  "flow_key": "full_flow",
+  "profile_id": "profile_002",
+  "scenario_id": "scenario_mt8ulg8o_0",
+  "name": "Elin Johansson",
+  "scenario_title": "After-Work Invitation",
+  "steps": {
+    "attributes": {
+      "output": {
+        "values_culture_and_background": "Elin values efficiency, waste reduction, and innovation, but also loyalty to her father's legacy. She carefully compartmentalizes work and family care. She avoids recklessness and prioritizes responsibilities over socializing. Her friendships are mostly professional.",
+        "roles_and_commitments": "Owner of a printing plant, primary caregiver for her mother with dementia, coordinator of a team of part-time nurses, member of the chamber of commerce, and committed to meeting quarterly revenue targets and preserving the business her father built.",
+        "capabilities_and_constraints": "Has a degree in business administration, experience in printing operations, cold-calling, and financial management. Speaks English as a second language with an accent. Has limited time for social activities due to business and caregiving responsibilities. Has a pattern of declining last-minute social invitations and rarely leaves work early for social plans."
+      },
+      "generated_at": "2026-08-31T06:31:56.278Z",
+      "model": "deepseek/deepseek-v4-flash"
+    },
+    "consolidate": {
+      "output": {
+        "initial_context": "RELEVANT CHARACTER BACKGROUND\n\nElin Johansson is the owner of a printing plant inherited from her father, who started the company in 1987. She took over at age 29 with a degree in business administration from a university in Gothenburg. The business was debt-free, and she reinvests in incremental improvements—replacing solvent-based inks with soy-based ones, installing a closed-loop water system, and upgrading pressroom lighting to LEDs while keeping the old sign out front. She values efficiency, waste reduction, and innovation, but also loyalty to her father's legacy, creating a tension between building something new and preserving the old. She works early, checks presses, and focuses on reducing waste. She cold-calls packaging buyers at cosmetics and food companies in accented English, sends samples wrapped in unbleached kraft paper, and tracks responses on a list. She sets quarterly revenue targets, writes them on a whiteboard, and if unmet, stays late to make calls. She is known at a local bakery (buys cardamom buns for press operators on Saturdays) and at the bank (renegotiated credit line twice this year). Her friendships are mostly professional, formed through chamber of commerce breakfasts. She competes with a digital print shop two streets over. She avoids recklessness and prioritizes responsibilities over socializing. \n\nElin is also the primary caregiver for her mother, a retired accountant with dementia who lives ten minutes away in the house Elin grew up in. She coordinates a rotating team of three part-time nurses, keeps their schedules on a color-coded shared calendar, calls the nursing agency daily to confirm shifts, and texts a thank-you after each visit. She visits her mother on Thursdays with groceries and refills the pill organizer. Her mother does not always remember Elin's name. Elin compartmentalizes: the factory is for growth, the home is for care, and the time between is for driving. Her car is a five-year-old Volvo; she does not text while moving. \n\nLukas runs a packaging supplier. They have exchanged referrals at two chamber breakfasts and never met outside business events. Last quarter he introduced her to a cosmetics buyer who later placed a small order. \n\nElin's typical tendency when work is under control: she occasionally stays late to clean solvent tanks or update the customer list; she rarely leaves early for social plans. She has declined three similar last-minute pub invitations in the past year. \n\nHer roles and commitments: owner of a printing plant, primary caregiver for her mother, coordinator of part-time nurses, member of the chamber of commerce, committed to meeting quarterly revenue targets and preserving her father's legacy. Her capabilities include a degree in business administration, experience in printing operations, cold-calling, and financial management. Constraints include limited time due to business and caregiving, and a pattern of declining last-minute social invitations.\n\nOBJECTIVE SITUATION\n\nElin is packing up her things in the office at the printing plant. Her phone buzzes with a message from Lukas, a fellow business owner she sometimes chats with at chamber of commerce breakfasts. He says a few of them are meeting at a pub near the square in half an hour and invites her to join. She has no pressing tasks at the factory, and her mother's evening aide has already confirmed the shift. She pauses, thinking about the warm pub noise and the cold car seat waiting in the lot.\n\nPRE-APPRAISAL STATE AND ACCESSIBLE MEMORIES\n\nElin's shoulders ache from hauling a carton of samples to shipping. The factory intercom is silent. Through the window, she is aware of the empty parking lot. \n\nThe invitation from Lukas directly cues a memory of the chamber's Christmas gathering, where Lukas told a story about a misprinted label and she laughed more than she expected. That same evening, her mother’s aide texted a photo of her mother smiling."
+      },
+      "generated_at": "2026-08-31T06:32:10.478Z",
+      "model": "deepseek/deepseek-v4-flash"
+    },
+    "appraisal": {
+      "output": {
+        "initial_interpretation": "Lukas is inviting her to join a casual informal gathering of business contacts, a rare social opportunity that might strengthen network ties or lead to future referrals.",
+        "initial_emotional_reaction": "A flicker of pleasant anticipation at the thought of warm pub noise and relaxed conversation, undercut by residual physical tiredness and the familiar pull of duty.",
+        "activated_concerns": "Her commitment to building business relationships and the memory of enjoying Lukas' company at the Christmas gathering, balanced against her pattern of prioritizing responsibilities and avoiding last-minute social plans, and the unspoken duty to return home or check on her mother.",
+        "automatic_theory_of_mind": "Lukas likely sees her as a competent peer he is comfortable inviting, and he probably expects nothing more than casual company; he is unaware of her internal conflict between work and caregiving.",
+        "initial_action_tendency": "To hesitate, considering the invitation while standing in the quiet office, tempted to accept but also primed to politely decline as she has done before."
+      },
+      "generated_at": "2026-08-31T06:32:26.571Z",
+      "model": "deepseek/deepseek-v4-flash"
+    },
+    "reappraisal": {
+      "output": {
+        "initial_tendency": "To hesitate, considering the invitation while standing in the quiet office, tempted to accept but also primed to politely decline as she has done before.",
+        "reflective_update": "The memory of her father's aquavit tradition reframes the invitation: he valued informal camaraderie alongside formal deals. This suggests that accepting might honor his legacy of balancing work and personal bonds, rather than being a frivolous distraction. The Christmas gathering with Lukas also reinforces that such encounters can strengthen business relationships.",
+        "change_from_initial": "SOFTENED",
+        "reconsidered_interpretation": "What initially seemed like a casual, optional social break is now seen as an opportunity to build rapport in a way her father would have endorsed—through personal connection, not just formal handshakes. The invitation aligns with her values of loyalty to his legacy and building network ties, making it more than a simple leisure choice.",
+        "motivational_conflict": "The tension between her habitual prioritization of work and caregiving responsibilities and the new recognition that informal networking can be a legitimate, value-aligned use of her time. Her duty to her mother remains, but the aide is confirmed, reducing the immediate conflict.",
+        "revised_action_tendency": "After reflection, Elin is more open to accepting the invitation. She still feels the weight of her usual pattern and caregiving duties, but the reflective memory weakens the automatic decline, leaving her genuinely weighing the social and business benefits against her residual tiredness and lingering sense of obligation."
+      },
+      "generated_at": "2026-08-31T06:33:38.009Z",
+      "model": "deepseek/deepseek-v4-flash"
+    },
+    "decision": {
+      "output": {
+        "action": "She types a quick reply to Lukas saying she'll join, then grabs her coat and locks the office door.",
+        "explanation": "Initial appraisal triggered hesitation due to habitual prioritization of duties and tiredness. Reflective reappraisal introduced the memory of her father's aquavit tradition, reframing the invitation as a legitimate networking opportunity that honors his legacy. This softened her automatic decline tendency. The confirmed aide reduced caregiving conflict. Thus she overcomes her usual pattern and accepts, though her brevity and immediate departure reflect residual practicality and lack of spontaneity."
+      },
+      "generated_at": "2026-08-31T06:48:53.213Z",
+      "model": "deepseek/deepseek-v4-flash"
+    }
+  },
+  "scenario_generated_at": "2026-08-25T15:56:56.568Z",
+  "scenario_context_generated_at": "2026-08-25T15:57:15.385Z",
+  "description_generated_at": "2026-08-25T15:54:53.077Z",
+  "started_at": "2026-08-31T06:30:19.835Z",
+  "updated_at": "2026-08-31T06:48:53.213Z"
+}

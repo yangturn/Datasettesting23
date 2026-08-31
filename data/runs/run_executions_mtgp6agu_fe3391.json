@@ -1,0 +1,18 @@
+{
+  "id": "run_executions_mtgp6agu_fe3391",
+  "stage": "executions",
+  "status": "succeeded",
+  "total": 30,
+  "done": 25,
+  "failed": 1,
+  "errors": [
+    {
+      "id": "profile_003 · full_flow",
+      "error": "attributes: Model did not return schema-valid JSON after 2 attempts: [\n  {\n    \"expected\": \"string\",\n    \"code\": \"invalid_type\",\n    \"path\": [\n      \"roles_and_commitments\"\n    ],\n    \"message\": \"Invalid input: expected string, received undefined\"\n  }\n]"
+    }
+  ],
+  "model": "deepseek/deepseek-v4-flash",
+  "started_at": "2026-08-31T03:47:20.575Z",
+  "finished_at": "2026-08-31T03:50:49.801Z",
+  "message": null
+}

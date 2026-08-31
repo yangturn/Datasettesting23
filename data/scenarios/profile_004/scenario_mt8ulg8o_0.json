@@ -1,0 +1,21 @@
+{
+  "id": "scenario_mt8ulg8o_0",
+  "profile_id": "profile_004",
+  "name": "Jacob Thompson",
+  "headline": "22-year-old certified nursing assistant in Cleveland",
+  "title": "Morning Shift Start",
+  "situation_type": "NORMAL",
+  "life_domain": "PERSONAL_ROUTINES",
+  "situation": "Jake arrives at the memory care unit fifteen minutes before his shift starts, as usual. The break room is empty except for a half-full pot of coffee and a note from the night shift CNA asking if anyone can cover the last hour of her shift tomorrow. Jake has already worked five doubles this month, and his body aches. He could sit down, drink his coffee, and mentally prepare for the day, or he could respond to the note and offer to help, knowing it will mean another long day. The choice is his.",
+  "context": {
+    "relationship_profiles": "He knows the night shift CNA as someone who always says thank you and once brought him a bagel after he covered for her. She has a young daughter and often needs last-minute coverage, which he has provided twice before. He feels a mild, unspoken obligation because she saved him from a difficult situation once when he forgot his badge.",
+    "tendencies": "When he sees a note asking for coverage, he usually writes his name on it before finishing his coffee, even if he is tired. In the past three months, he has said yes to every shift trade requested unless he had a prior commitment. He often tells himself he will say no next time, but when the moment comes, he imagines the other person’s relief and agrees.",
+    "current_state": "His body aches from the five doubles, especially his lower back and the balls of his feet. He is emotionally flat, not dreading the day but not energized by it. He has a small, constant headache from poor sleep and too much caffeine.",
+    "immediate_memories": "The note’s handwriting reminds him of a similar request two weeks ago that led to an exhausting thirteen-hour day. He sees the half-empty coffee pot and recalls the night he called his mother at 2 a.m., her voice steady as she said she would be there soon.",
+    "reflective_memories": "He remembers the hollow feeling after sitting with a resident through her final hours, then driving home in silence. He also remembers the night his father said ‘when you go back for your degree’ and how he clenched his jaw instead of answering."
+  },
+  "context_generated_at": "2026-08-25T15:57:23.886Z",
+  "description_generated_at": "2026-08-25T15:54:54.174Z",
+  "generated_at": "2026-08-25T15:56:56.568Z",
+  "model": "deepseek/deepseek-v4-flash"
+}

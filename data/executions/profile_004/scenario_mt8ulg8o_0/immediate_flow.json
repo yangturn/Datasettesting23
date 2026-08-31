@@ -1,0 +1,49 @@
+{
+  "flow_key": "immediate_flow",
+  "profile_id": "profile_004",
+  "scenario_id": "scenario_mt8ulg8o_0",
+  "name": "Jacob Thompson",
+  "scenario_title": "Morning Shift Start",
+  "steps": {
+    "attributes": {
+      "output": {
+        "values_culture_and_background": "He believes meaning comes from showing up for people who are falling apart. He is driven by a desire to be the one who rescues, not the one who needs rescue. His family culture values practical achievement, but he has internalized a new belief in caregiving as meaningful.",
+        "roles_and_commitments": "He is a certified nursing assistant (CNA) on the memory care unit. He feels an unspoken obligation to the night shift CNA because she once helped him; he has covered for her twice before.",
+        "capabilities_and_constraints": "He has demonstrated skill in memory care, including calibrating stimulation for residents and knowing their individual responses. He has the capacity to work extended shifts."
+      },
+      "generated_at": "2026-08-31T06:32:03.861Z",
+      "model": "deepseek/deepseek-v4-flash"
+    },
+    "consolidate": {
+      "output": {
+        "initial_context": "RELEVANT CHARACTER BACKGROUND\n\nJacob Thompson (Jake) is a 22-year-old CNA on a memory care unit. He often looks older due to bags under his eyes and tired posture. He has demonstrated skill in memory care: he knows which residents respond to music, calibrates stimulation to avoid agitation. He is restless: drums fingers, taps foot, has applied for travel nursing contracts in Anchorage, Fairbanks, and Nome, keeping brochures in his locker. He tells himself the Alaska applications are about wilderness and challenge, but recognizes they are also about distance—from the unit, from his parents' disappointment, and from the business school he left after one semester. His father, a mechanical engineer, still speaks of him returning to finish his degree; his mother, a nurse practitioner, suggested CNA training and quietly hopes he will settle into something stable. He grew up in a middle-class Indianapolis suburb, with a family culture of practical achievement: get the degree, the job, the house. Jake's own values are a tangle of that pragmatism and a growing belief that meaning comes from showing up for people who are falling apart. He hates the hollow feeling after a resident's death but cannot imagine doing anything else. This tension between wanting to stay and wanting to run keeps him moving and applying to distant jobs.\n\nA formative experience: during his sophomore year he felt physical revulsion at a marketing project spreadsheet, closed his laptop, called his mother at 2 a.m., and she drove three hours to pick him up. He felt shame at needing rescue and relief at being taken away. That moment shapes his decision-making: he does not want to need rescue again; he wants to be the rescuer.\n\nHe feels an unspoken obligation to the night shift CNA because she once saved him from a difficult situation when he forgot his badge. She has a young daughter, often needs last-minute coverage, and once brought him a bagel after he covered for her. He has covered for her twice before. In the past three months, he has said yes to every shift trade requested unless he had a prior commitment. He often tells himself he will say no next time, but when the moment comes he imagines the other person's relief and agrees.\n\nOBJECTIVE SITUATION\n\nJake arrives at the memory care unit fifteen minutes before his shift begins. The break room is empty except for a half-full pot of coffee and a note from the night shift CNA asking if anyone can cover the last hour of her shift tomorrow. He has already worked five doubles this month. His body aches. He could sit down, drink his coffee, and mentally prepare for the day, or he could respond to the note and offer to help, knowing it will mean another long day.\n\nPRE-APPRAISAL STATE AND ACCESSIBLE MEMORIES\n\nHis body aches, especially his lower back and the balls of his feet. He is emotionally flat—not dreading the day but not energized by it. He has a small, constant headache from poor sleep and too much caffeine.\n\nThe note's handwriting reminds him of a similar request two weeks ago that led to an exhausting thirteen-hour day. The half-empty coffee pot brings to mind the night he called his mother at 2 a.m., her voice steady as she said she would be there soon."
+      },
+      "generated_at": "2026-08-31T06:32:31.112Z",
+      "model": "deepseek/deepseek-v4-flash"
+    },
+    "appraisal": {
+      "output": {
+        "initial_interpretation": "The note is another request for coverage from the night shift CNA, repeating a pattern that has drained him physically. It feels like an immediate demand on his dwindling energy.",
+        "initial_emotional_reaction": "A sinking weariness and low-grade resentment mixed with a habitual sense of duty. The body aches and headache amplify a feeling of being pulled toward obligation despite exhaustion.",
+        "activated_concerns": "His own need for rest and recovery from five doubles this month clashes with his felt obligation to the night shift CNA, rooted in her past help and his role as someone who shows up for others. The memory of his mother's rescue reinforces a desire to be the rescuer now, while also reminding him of the shame of needing rescue himself.",
+        "automatic_theory_of_mind": "He assumes the night shift CNA genuinely needs the coverage and expects him to help again, given his history of saying yes. Her unspoken relief and gratitude feel almost certain in his mind.",
+        "initial_action_tendency": "His first impulse is to reach for his phone to text back 'I can do it', but a counter-impulse of avoidance—to ignore the note and sit down with his coffee—pulls him back. He stands frozen between the two urges."
+      },
+      "generated_at": "2026-08-31T06:32:46.549Z",
+      "model": "deepseek/deepseek-v4-flash"
+    },
+    "decision": {
+      "output": {
+        "action": "He picks up his phone, types 'I can do it,' and hits send without looking away from the screen. Then he sets the phone face-down on the break room table, pours himself a cup of coffee, and sits down heavily.",
+        "explanation": "The immediate action tendency to say yes dominates, driven by his deeply ingrained habit of covering for the night shift CNA and his felt obligation to be the rescuer. The counter-impulse to rest is overwhelmed by the automatic replay of past agreements and the anticipated relief his response will bring. His body aches and headache are present but do not override the stronger, rehearsed pattern of compliance."
+      },
+      "generated_at": "2026-08-31T06:33:14.687Z",
+      "model": "deepseek/deepseek-v4-flash"
+    }
+  },
+  "scenario_generated_at": "2026-08-25T15:56:56.568Z",
+  "scenario_context_generated_at": "2026-08-25T15:57:23.886Z",
+  "description_generated_at": "2026-08-25T15:54:54.174Z",
+  "started_at": "2026-08-31T06:30:19.837Z",
+  "updated_at": "2026-08-31T06:33:14.687Z"
+}

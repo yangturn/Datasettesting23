@@ -1,0 +1,49 @@
+{
+  "flow_key": "immediate_flow",
+  "profile_id": "profile_003",
+  "scenario_id": "scenario_mt8uleno_0",
+  "name": "Niran Wong",
+  "scenario_title": "A Late-Night Message",
+  "steps": {
+    "attributes": {
+      "output": {
+        "values_culture_and_background": "Niran values duty to family above all else and maintains strictly bounded work relationships, never extending them beyond office hours.",
+        "roles_and_commitments": "Niran is a devoted parent whose primary commitment is to their daughter's wellbeing, and a diligent warehouse worker with a duty to their supervisors.",
+        "capabilities_and_constraints": "Niran has the capability to endure physical discomfort and solitary work with precision. They are constrained by a fixed overnight work schedule that limits social availability."
+      },
+      "generated_at": "2026-08-31T06:30:51.878Z",
+      "model": "deepseek/deepseek-v4-flash"
+    },
+    "consolidate": {
+      "output": {
+        "initial_context": "RELEVANT CHARACTER BACKGROUND\n\nNiran Wong is a former senior accountant for Thailand's Ministry of Finance, a post held for thirty-seven years. In Bangkok, colleagues knew Niran as meticulous and reserved, the one who caught rounding errors before reports went to the deputy director. Niran took pride in a quiet reputation for accuracy, for never being wrong. Work relationships were friendly but bounded, never extending beyond office hours; the colleague who messaged was a lunch companion in the ministry courtyard, with conversations limited to work and polite topics. They exchanged farewells at Niran's retirement party with no promises to keep in touch. Niran knows he still works in Bangkok; their paths diverged cleanly when Niran left.\n\nNiran's only child, a geotechnical engineer, accepted a position in Calgary. After a year of video calls and time-zone calculations, Niran retired early, sold the family home in Thon Buri, and moved to Canada. Since arriving, Niran has not initiated contact with any former colleagues, focusing instead on family and the new job at a distribution centre. Niran works the night shift, a world of stained concrete floors and constant five-degree-Celsius air. The night crew are mostly young—students, part-timers, new immigrants—who call Niran \"Auntie\" or \"Uncle\" uncertainly; Niran says \"Niran\" and lets the confusion sit. Loyalty to family comes before loyalty to labels; their child calls them \"Por\" in private, and that is enough.\n\nDuty is the architecture of Niran's life: duty to their daughter, which is why they endure the cold and the 11 p.m. start time; duty to their supervisors, which is why they never leave a pallet unstraightened; duty to themselves, which means they cannot complain—complaining would imply they regret the choice, and they do not. A tension exists: the same order that soothes them also isolates them. In Bangkok, order was shared—everyone in the office knew the filing system. Here, the precision is solitary; no one else notices when a pallet is stacked with thirty-two boxes instead of thirty-three. Niran has the capability to endure physical discomfort and solitary work with precision, but is constrained by a fixed overnight work schedule that limits social availability.\n\nOBJECTIVE SITUATION\n\nIt is 2 a.m. during Niran's break at the distribution centre. Their phone buzzes with a message from the former colleague in Bangkok, who writes: 'I will be in Calgary for a conference next week. Can we have dinner? It has been too long.' Niran stares at the message, thumb hovering. They have not spoken to him since leaving Thailand. The break room is empty, the tea in their thermos growing cold.\n\nPRE-APPRAISAL STATE AND ACCESSIBLE MEMORIES\n\nNiran is midway through a night shift, physically tired but alert, their body acclimated to the 2 a.m. break routine. The empty break room feels quieter than usual, and the tea has gone lukewarm. They have been thinking of nothing in particular, just the ambient hum of the warehouse. Reading the message, they recall the jasmine-scented courtyard and the colleague's habit of ordering khao man gai every lunch. They remember his sincere toast at the retirement party, and the slight awkwardness of saying goodbye. The name on the screen brings back the precise weight of the ministry's afternoon heat against the window."
+      },
+      "generated_at": "2026-08-31T06:31:19.057Z",
+      "model": "deepseek/deepseek-v4-flash"
+    },
+    "appraisal": {
+      "output": {
+        "initial_interpretation": "The message from the former colleague is an unexpected reminder of the life Niran left behind in Bangkok. It appears to be an invitation to reconnect, but Niran's current life is centered on family and the night shift, making this feel like a bridge to a past that feels distant and sealed off.",
+        "initial_emotional_reaction": "Surprise, mixed with a slight warmth from the memory of the courtyard and the colleague's lunch habits, but also a sense of awkwardness and emotional distance because they have not spoken since leaving. The solitude of the empty break room and the cold tea amplify a feeling of isolation and the weight of how much has changed.",
+        "activated_concerns": "Duty to maintaining the current life structured around family and work; the value of precision and order that Niran finds in solitude; the bounded nature of past relationships that never extended beyond office hours; the desire to avoid regret or complaint about the choices made; the pull of the sincere farewell that might make a refusal feel rude or ungrateful.",
+        "automatic_theory_of_mind": "The colleague probably wants a friendly dinner to catch up, expecting that Niran would be happy to see him. He may not realize how thoroughly Niran has separated from that life, or he may assume the old connection remains as it was. The message seems genuine, but Niran suspects the colleague does not understand the distance that now exists.",
+        "initial_action_tendency": "To hesitate, with thumb hovering over the phone, and not immediately respond. The provisional impulse is to delay, to set the phone down and let the moment pass, withdrawing from the unexpected social demand."
+      },
+      "generated_at": "2026-08-31T06:31:35.318Z",
+      "model": "deepseek/deepseek-v4-flash"
+    },
+    "decision": {
+      "output": {
+        "action": "Niran sets the phone face-down on the break-room table, picks up the thermos, and takes a deliberate sip of the cold tea. They do not type a reply.",
+        "explanation": "The immediate tendency to hesitate and withdraw from the unexpected social demand is strongest. The cold tea, empty room, and physical tiredness reinforce the desire to delay. Niran's habitual preference for bounded relationships and the weight of their current solitary duty make an immediate reply feel intrusive. Putting the phone down is a small, controlled action that avoids a decision without being overtly rude, matching their reserved and meticulous nature."
+      },
+      "generated_at": "2026-08-31T06:31:40.040Z",
+      "model": "deepseek/deepseek-v4-flash"
+    }
+  },
+  "scenario_generated_at": "2026-08-25T15:56:54.516Z",
+  "scenario_context_generated_at": "2026-08-25T15:57:08.495Z",
+  "description_generated_at": "2026-08-25T15:54:51.252Z",
+  "started_at": "2026-08-31T06:30:19.836Z",
+  "updated_at": "2026-08-31T06:31:40.040Z"
+}

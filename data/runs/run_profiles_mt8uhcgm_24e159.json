@@ -1,0 +1,13 @@
+{
+  "id": "run_profiles_mt8uhcgm_24e159",
+  "stage": "profiles",
+  "status": "succeeded",
+  "total": 6,
+  "done": 6,
+  "failed": 0,
+  "errors": [],
+  "model": "deepseek/deepseek-v4-flash",
+  "started_at": "2026-08-25T15:53:45.047Z",
+  "finished_at": "2026-08-25T15:54:05.652Z",
+  "message": "Replaced the population, deleting 6 profile(s)."
+}

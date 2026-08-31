@@ -1,0 +1,13 @@
+{
+  "id": "run_scenarios_mt8ukxu1_f3d8a7",
+  "stage": "scenarios",
+  "status": "cancelled",
+  "total": 36,
+  "done": 0,
+  "failed": 0,
+  "errors": [],
+  "model": "deepseek/deepseek-v4-flash",
+  "started_at": "2026-08-25T15:56:32.713Z",
+  "finished_at": "2026-08-25T15:56:34.857Z",
+  "message": "Cancelled. Everything generated before the cancel was kept."
+}

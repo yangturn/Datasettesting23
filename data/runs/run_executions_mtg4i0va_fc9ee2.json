@@ -1,0 +1,13 @@
+{
+  "id": "run_executions_mtg4i0va_fc9ee2",
+  "stage": "executions",
+  "status": "succeeded",
+  "total": 5,
+  "done": 5,
+  "failed": 0,
+  "errors": [],
+  "model": "deepseek/deepseek-v4-flash",
+  "started_at": "2026-08-30T18:08:36.070Z",
+  "finished_at": "2026-08-30T18:11:14.830Z",
+  "message": "Stopped at the 1-scenario limit; 5 scenario(s) with work left for a later run."
+}
