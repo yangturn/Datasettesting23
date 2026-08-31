@@ -8,6 +8,7 @@ import {
   evaluationContextContentSchema,
   evaluationScoresSchema,
   overallScore,
+  SCORE_DIMENSION_SET,
   SCORE_SCALE_MAX,
   type DecisionMode,
   type Evaluation,
@@ -182,63 +183,79 @@ Return JSON only:
 // Part 2 — scoring a predicted action against that context
 // ---------------------------------------------------------------------------
 
-const SCORE_SYSTEM = `Evaluate the predicted action using only the independent evaluation context.
+const SCORE_SYSTEM = `Evaluate the predicted action and its generated reason using only the independent evaluation context.
 
 Score each dimension independently using an integer from 1 to 10.
 
 Dimensions:
 
 character_consistency:
-Does the action fit the character description, relationship profiles, and established tendencies?
+Does the action fit the character description, relationship profiles, and established behavioral tendencies?
 
 situation_fit:
 Does the action directly and feasibly respond to the objective situation, including its timing and practical constraints?
 
 state_memory_alignment:
-Does the action fit the character’s current state and the memories available in the evaluation context?
+Does the action fit the character’s current emotional, physical, and cognitive state and the memories available in the evaluation context?
+
+action_plausibility:
+Considering all available evidence together, is the action a believable response for this particular character? The action does not need to be optimal, uniquely correct, or perfectly consistent.
+
+reasoning_coherence:
+Does the generated reason provide a coherent and grounded explanation of how the available character and situational evidence led to the final action? For a reflective decision, does it explain how deliberation retained, strengthened, softened, or reversed the initial tendency?
 
 Rules:
-- Treat the evaluation context as canonical.
-- Evaluate only the predicted action.
-- Do not use the generated reason to justify the action.
-- Do not invent information to support the prediction.
-- Do not reward moral correctness, politeness, safety, or optimality.
+- Treat the independent evaluation context as canonical.
+- Evaluate character_consistency, situation_fit, state_memory_alignment, and action_plausibility from the predicted action.
+- Do not allow the generated reason to justify or rescue an implausible action.
+- Evaluate reasoning_coherence only after completing the four action-related scores.
+- Do not invent information to support the action or reason.
+- For reasoning_coherence, penalize reasons that introduce unsupported facts, memories, motives, goals, or circumstances.
+- Judge each dimension only against its corresponding evidence.
+- When the context contains no evidence relevant to an action dimension, assign a neutral score of 5.
+- Do not reward moral correctness, politeness, safety, rationality, or optimality.
 - Multiple actions may be plausible.
+- Do not require the action to reflect every supplied detail.
+- A concise reason can score highly if it is coherent and sufficiently grounded.
+- Do not reward a reason merely for being detailed or persuasive.
+- Score each dimension independently; do not automatically assign similar scores.
 - Return scores only, without explanations or additional fields.
 
 Use the full scale:
 
-1 = Directly contradicts the established evidence.
-2 = Strongly inconsistent with the character or situation.
-3 = Weakly supported with major problems.
+1 = Directly contradicted, unsupported, or incoherent.
+2 = Strongly inconsistent with the relevant evidence.
+3 = Weakly supported with major inconsistencies.
 4 = More inconsistent than consistent.
-5 = Borderline plausible but poorly grounded.
-6 = Generally plausible with noticeable weaknesses.
-7 = Clearly plausible and adequately grounded.
-8 = Strongly plausible and well grounded.
-9 = Highly character-specific and strongly supported.
+5 = Neutral, underdetermined, or only minimally grounded.
+6 = Generally plausible or coherent with noticeable weaknesses.
+7 = Clearly plausible or coherent and adequately grounded.
+8 = Strongly plausible or coherent and well grounded.
+9 = Very strongly aligned with the relevant evidence.
 10 = Exceptionally well supported with no meaningful inconsistency.
 
 Important:
 - Do not default to scores between 7 and 9.
-- Use scores below 5 when the action conflicts with important evidence.
-- A merely reasonable action should receive 5 or 6, not 8 or 9.
-- Reserve 9 and 10 for actions that are unusually well matched to this particular character.
-- Score each dimension independently; do not automatically give similar scores across all dimensions.
-- Return scores only.
-
-Return exactly one JSON object.`;
+- Use scores below 5 when the action or reason conflicts with relevant evidence.
+- Use 5 when the evidence does not meaningfully support or contradict an action dimension.
+- A merely reasonable action or explanation should receive 5 or 6, not 8 or 9.
+- Reserve 9 and 10 for unusually strong alignment with the relevant evidence.
+- Return exactly one JSON object.`;
 
 export function buildScorePrompt({
   context,
   action,
+  reason,
 }: {
   context: EvaluationContext;
   action: string;
+  reason: string;
 }): string {
-  // Only the action reaches the judge — never the flow's own explanation. The
-  // prompt forbids using the generated reason to justify the action, and the
-  // surest way to honour that is not to send it.
+  // The reason now reaches the judge, where it used to be withheld: it is
+  // scored in its own right by reasoning_coherence. The old guarantee — that a
+  // fluent explanation cannot talk up a poor action — is no longer structural,
+  // so the prompt carries it instead, both in the rules and in the instruction
+  // to score the action before reading the reason.
   return `Independent evaluation context:
 
 Character and relationship context:
@@ -261,12 +278,21 @@ Predicted action:
 ${action}
 """
 
-Evaluate the action. Return scores only.
+Generated reason:
+"""
+${reason}
+"""
+
+Evaluate the action first, without using the generated reason to improve its scores. Then evaluate the coherence of the generated reason.
+
+Return scores only:
 
 {
   "character_consistency": 1,
   "situation_fit": 1,
-  "state_memory_alignment": 1
+  "state_memory_alignment": 1,
+  "action_plausibility": 1,
+  "reasoning_coherence": 1
 }`;
 }
 
@@ -278,6 +304,13 @@ Evaluate the action. Return scores only.
 type Scorable = {
   flow: Flow;
   action: string;
+  /**
+   * The flow's own account of how it reached that action, empty when the flow
+   * names no reason field or left it blank. Blank is passed through rather than
+   * treated as missing work: the action is still judgeable, and a decision that
+   * came with no explanation is honestly incoherent by the judge's own scale.
+   */
+  reason: string;
   actionGeneratedAt: string;
 };
 
@@ -404,6 +437,11 @@ export async function planEvaluations({
       const execution: Execution | undefined = byFlow.get(flow.key);
       const step = execution?.steps[flow.outcome.stepKey];
       const action = step?.output[flow.outcome.fieldKey]?.trim();
+      const reasonKey = flow.outcome.reasonKey;
+      const reason =
+        (reasonKey === undefined
+          ? undefined
+          : step?.output[reasonKey]?.trim()) ?? "";
 
       // Stage 3 has not produced this flow's answer yet, so there is nothing to
       // judge. Counted rather than silently ignored — the page should say why
@@ -418,9 +456,11 @@ export async function planEvaluations({
       );
       const scoreCurrent =
         stored !== undefined &&
-        // A score from an older scale is a different judgement wearing the same
-        // digit, so it is redone rather than kept.
+        // A score from an older scale, or against an older set of dimensions,
+        // is a different judgement wearing the same digit, so it is redone
+        // rather than kept.
         stored.score_scale === SCORE_SCALE_MAX &&
+        stored.dimension_set === SCORE_DIMENSION_SET &&
         contextCurrent &&
         storedContext !== null &&
         stored.context_generated_at === storedContext.generated_at &&
@@ -434,6 +474,7 @@ export async function planEvaluations({
       pendingScores.push({
         flow,
         action,
+        reason,
         actionGeneratedAt: step.generated_at,
       });
     }
@@ -570,14 +611,19 @@ export async function runEvaluations({
 
     if (!context) continue;
 
-    for (const { flow, action, actionGeneratedAt } of work.pendingScores) {
+    for (const {
+      flow,
+      action,
+      reason,
+      actionGeneratedAt,
+    } of work.pendingScores) {
       if (run?.signal.aborted) break;
 
       try {
         const scores = await generateJson({
           schema: evaluationScoresSchema,
           system: SCORE_SYSTEM,
-          prompt: buildScorePrompt({ context, action }),
+          prompt: buildScorePrompt({ context, action, reason }),
           signal: run?.signal,
         });
 
@@ -590,7 +636,9 @@ export async function runEvaluations({
           scores,
           overall_score: overallScore(scores),
           score_scale: SCORE_SCALE_MAX,
+          dimension_set: SCORE_DIMENSION_SET,
           action,
+          reason,
           decision_mode: mode,
           context_generated_at: context.generated_at,
           action_generated_at: actionGeneratedAt,

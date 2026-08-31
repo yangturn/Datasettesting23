@@ -1,0 +1,13 @@
+{
+  "id": "run_executions_mtgxb8gh_93e0b5",
+  "stage": "executions",
+  "status": "succeeded",
+  "total": 54,
+  "done": 54,
+  "failed": 0,
+  "errors": [],
+  "model": "deepseek/deepseek-v4-pro-0813",
+  "started_at": "2026-08-31T07:35:08.177Z",
+  "finished_at": "2026-08-31T07:42:18.323Z",
+  "message": null
+}

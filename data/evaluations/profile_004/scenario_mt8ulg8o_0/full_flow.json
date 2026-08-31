@@ -5,16 +5,20 @@
   "name": "Jacob Thompson",
   "scenario_title": "Morning Shift Start",
   "scores": {
-    "character_consistency": 9,
-    "situation_fit": 8,
-    "state_memory_alignment": 5
+    "character_consistency": 10,
+    "situation_fit": 9,
+    "state_memory_alignment": 8,
+    "action_plausibility": 9,
+    "reasoning_coherence": 9
   },
-  "overall_score": 7.333333333333333,
+  "overall_score": 9,
   "score_scale": 10,
-  "action": "Jake walks to the break room table, picks up the pen next to the note, and writes his name on the sheet, committing to cover the last hour of the night shift CNA's shift tomorrow.",
+  "dimension_set": 3,
+  "action": "Jake picks up the pen and writes his name on the note before finishing his coffee.",
+  "reason": "His initial tendency was to sign the note immediately, despite a tired part of him wanting to walk away. Reflection made the physical cost of another added hour more visible, but it did not reverse the tendency: signing preserved his reliable pattern, spared the night-shift CNA, and kept him in the role of the person who shows up rather than the one who needs rescuing. The pull of obligation and identity outweighed his flat, depleted state, so he followed the familiar action of writing his name before finishing his coffee.",
   "decision_mode": "REFLECTIVE",
-  "context_generated_at": "2026-08-31T07:15:12.711Z",
-  "action_generated_at": "2026-08-31T06:32:31.792Z",
-  "generated_at": "2026-08-31T07:16:33.738Z",
-  "model": "deepseek/deepseek-v4-flash"
+  "context_generated_at": "2026-08-31T09:48:37.707Z",
+  "action_generated_at": "2026-08-31T08:47:18.653Z",
+  "generated_at": "2026-08-31T09:49:50.830Z",
+  "model": "deepseek/deepseek-v4-pro-0813"
 }

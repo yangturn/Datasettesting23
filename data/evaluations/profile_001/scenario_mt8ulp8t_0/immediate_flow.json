@@ -6,15 +6,19 @@
   "scenario_title": "Aunt's Naming Ceremony Invitation",
   "scores": {
     "character_consistency": 8,
-    "situation_fit": 8,
-    "state_memory_alignment": 8
+    "situation_fit": 7,
+    "state_memory_alignment": 8,
+    "action_plausibility": 8,
+    "reasoning_coherence": 8
   },
-  "overall_score": 8,
+  "overall_score": 7.8,
   "score_scale": 10,
-  "action": "Amina lets out a short, sharp breath, then presses the note flat against her chest with both hands. She looks down at the pavement, shakes her head slightly, and mutters under her breath, 'This weekend...' before turning to the landlady with a tight smile and saying, 'Ah, I see am. I go think about am, ma,' then quickly walks toward her room, still holding the note.",
+  "dimension_set": 3,
+  "action": "Amina folds the note carefully along its crease, tucks it into her pocket, and murmurs, \"Thank you, ma.\" She remains by the gate with one hand pressed over the folded note.",
+  "reason": "Her immediate response follows her initial action tendency to avoid deciding. Folding and tucking the note away is an established habit of order and caution that gives her a moment of delay, while the polite thanks is a familiar social script toward her landlady. She does not answer the unspoken expectation of going to Ibadan because the conflict between family obligation, money, class, and tool care is too immediate.",
   "decision_mode": "REFLECTIVE",
-  "context_generated_at": "2026-08-31T07:10:23.006Z",
-  "action_generated_at": "2026-08-31T06:31:20.078Z",
-  "generated_at": "2026-08-31T07:10:58.952Z",
-  "model": "deepseek/deepseek-v4-flash"
+  "context_generated_at": "2026-08-31T09:41:46.616Z",
+  "action_generated_at": "2026-08-31T08:48:17.802Z",
+  "generated_at": "2026-08-31T09:43:02.013Z",
+  "model": "deepseek/deepseek-v4-pro-0813"
 }

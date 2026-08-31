@@ -117,5 +117,9 @@ export const immediateFlow: Flow = {
   description:
     "The same model without reflection: extract, consolidate, appraise fast, then act. Reflective memories are withheld throughout, and there is no deliberate reappraisal.",
   steps: [attributesStep, consolidateStep, appraisalStep, immediateDecisionStep],
-  outcome: { stepKey: STEP_DECISION, fieldKey: "action" },
+  outcome: {
+    stepKey: STEP_DECISION,
+    fieldKey: "action",
+    reasonKey: "explanation",
+  },
 };

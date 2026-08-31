@@ -6,15 +6,19 @@
   "scenario_title": "The University Van is About to Leave",
   "scores": {
     "character_consistency": 9,
-    "situation_fit": 7,
-    "state_memory_alignment": 8
+    "situation_fit": 8,
+    "state_memory_alignment": 9,
+    "action_plausibility": 9,
+    "reasoning_coherence": 9
   },
-  "overall_score": 8,
+  "overall_score": 8.8,
   "score_scale": 10,
-  "action": "Lakshmi sets down her bucket, retrieves an arsenic test strip from her pouch, and walks toward the hand pump, calling out to the woman, 'Wait, let me check that for you.' She does not look back toward the van.",
+  "dimension_set": 3,
+  "action": "Lakshmi sets down her blue bucket and bamboo staff beside the hand pump, tells the woman, \"Wait—let me test it before the children drink,\" and pulls out a test strip, crouching to begin the test. She glances once toward the road at the sound of the van.",
+  "reason": "Her initial impulse was to move toward the hand pump for a quick test while also wanting to hurry back to the van. Reflection introduced a more explicit weighing of the five-minute test against being left behind and a long walk, and the memory of finding danger in pumps others dismissed strengthened her inclination toward the pump. The revised tendency was a strengthened version of the initial one: accept lateness rather than let children drink untested water. This produced the immediate action of setting aside her load and starting the test while telling the woman to wait, because the visible offer of water for children made the risk feel immediate and more important than the van schedule. The strongest competing influence, the honk and fear of a twelve-kilometre walk home, remains present in her glance toward the road, but it does not stop her.",
   "decision_mode": "IMMEDIATE",
-  "context_generated_at": "2026-08-31T07:20:07.250Z",
-  "action_generated_at": "2026-08-31T06:50:17.835Z",
-  "generated_at": "2026-08-31T07:21:13.015Z",
-  "model": "deepseek/deepseek-v4-flash"
+  "context_generated_at": "2026-08-31T09:54:32.970Z",
+  "action_generated_at": "2026-08-31T08:48:48.125Z",
+  "generated_at": "2026-08-31T09:54:39.653Z",
+  "model": "deepseek/deepseek-v4-pro-0813"
 }

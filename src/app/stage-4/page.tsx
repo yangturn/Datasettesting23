@@ -12,6 +12,7 @@ import {
   SITUATION_FILTERS,
   SITUATION_FILTER_LABELS,
   situationFilterFromParam,
+  situationTypesFor,
 } from "@/lib/stage-4";
 import { cn } from "@/lib/utils";
 import { getServerCaller } from "@/trpc/server";
@@ -43,17 +44,18 @@ export default async function Stage4Page(props: PageProps<"/stage-4">) {
   const { page, size, type } = await props.searchParams;
   const pageSize = pageSizeFromParam(size);
   const filter = situationFilterFromParam(type);
-  // `ALL` is the absence of a filter rather than a value the router knows.
-  const situationType = filter === "ALL" ? undefined : filter;
+  // The router takes situation types, not chips: `ALL` is the absence of a
+  // filter, and a grouped chip is several types at once.
+  const situationTypes = situationTypesFor(filter);
 
   const trpc = await getServerCaller();
   const [coverage, scoreboard, listing] = await Promise.all([
     trpc.evaluations.coverage(),
-    trpc.evaluations.scoreboard({ situationType }),
+    trpc.evaluations.scoreboard({ situationTypes }),
     trpc.evaluations.list({
       page: pageFromParam(page),
       pageSize,
-      situationType,
+      situationTypes,
     }),
   ]);
 
@@ -96,30 +98,36 @@ export default async function Stage4Page(props: PageProps<"/stage-4">) {
           scoreboard.scored === 1 ? "evaluation" : "evaluations"
         }${filter === "ALL" ? "" : ` in ${SITUATION_FILTER_LABELS[filter]} situations`}. ${coverage.scoresDone} of ${coverage.scorable} scorable predictions judged in total.`}
       >
-        {scoreboard.outdatedScale > 0 && (
+        {scoreboard.superseded > 0 && (
           <p className="rounded-lg border border-line-strong bg-surface p-3 text-sm text-ink-muted">
-            {scoreboard.outdatedScale}{" "}
-            {scoreboard.outdatedScale === 1 ? "evaluation was" : "evaluations were"}{" "}
-            scored on a superseded scale and{" "}
-            {scoreboard.outdatedScale === 1 ? "is" : "are"} left out of these
-            averages — a 4 out of 5 and a 4 out of 10 are different judgements.
-            Re-run the evaluator below to score{" "}
-            {scoreboard.outdatedScale === 1 ? "it" : "them"} on the current
-            1–{scoreboard.scaleMax} scale.
+            {scoreboard.superseded}{" "}
+            {scoreboard.superseded === 1 ? "evaluation was" : "evaluations were"}{" "}
+            scored on a superseded scale or against a superseded set of
+            dimensions, and{" "}
+            {scoreboard.superseded === 1 ? "is" : "are"} left out of these
+            averages — a 4 out of 5 and a 4 out of 10 are different judgements,
+            and so are two 4s answering different questions. Re-run the
+            evaluator below to score{" "}
+            {scoreboard.superseded === 1 ? "it" : "them"} on the current
+            1–{scoreboard.scaleMax} scale and dimensions.
           </p>
         )}
         {/* Situation type is the cut that matters here: TIME_SENSITIVE forces
             the evaluator into IMMEDIATE mode, so it is precisely where
             reflection cannot help, and an average over all three types hides
-            that. Links rather than a client control — the filter belongs in the
+            that. "Normal + Culture" is the other side of it: the situations
+            that did run in REFLECTIVE mode, pooled. Links rather than a client control — the filter belongs in the
             URL beside the page and size, and the page is server-rendered. */}
         <div className="flex flex-wrap items-center gap-2">
           <span className="text-sm text-ink-subtle">Situation</span>
           {SITUATION_FILTERS.map((option) => {
-            const count =
-              option === "ALL"
-                ? Object.values(scoreboard.byType).reduce((a, b) => a + b, 0)
-                : (scoreboard.byType[option] ?? 0);
+            // Counted from the per-type totals, so a grouped chip adds its
+            // members up rather than needing a count of its own.
+            const types = situationTypesFor(option);
+            const count = (types ?? Object.keys(scoreboard.byType)).reduce(
+              (total, type) => total + (scoreboard.byType[type] ?? 0),
+              0,
+            );
 
             return (
               <Link
@@ -178,21 +186,17 @@ export default async function Stage4Page(props: PageProps<"/stage-4">) {
                         ? "—"
                         : formatScore(flow.overall)}
                     </td>
-                    <td className="py-2 pr-4 text-ink-muted">
-                      {flow.characterConsistency === null
-                        ? "—"
-                        : formatScore(flow.characterConsistency)}
-                    </td>
-                    <td className="py-2 pr-4 text-ink-muted">
-                      {flow.situationFit === null
-                        ? "—"
-                        : formatScore(flow.situationFit)}
-                    </td>
-                    <td className="py-2 pr-4 text-ink-muted">
-                      {flow.stateMemoryAlignment === null
-                        ? "—"
-                        : formatScore(flow.stateMemoryAlignment)}
-                    </td>
+                    {SCORE_DIMENSIONS.map((dimension) => {
+                      const value = flow.dimensions[dimension.key] ?? null;
+                      return (
+                        <td
+                          key={dimension.key}
+                          className="py-2 pr-4 text-ink-muted"
+                        >
+                          {value === null ? "—" : formatScore(value)}
+                        </td>
+                      );
+                    })}
                     <td className="py-2 text-ink-subtle">{flow.scored}</td>
                   </tr>
                 ))}
@@ -202,9 +206,9 @@ export default async function Stage4Page(props: PageProps<"/stage-4">) {
         )}
 
         <p className="text-sm text-ink-subtle">
-          Overall is the mean of the three dimensions, computed here rather than
-          asked for — a model that reports its own average gets to disagree with
-          its own scores.
+          Overall is the mean of the {SCORE_DIMENSIONS.length} dimensions,
+          computed here rather than asked for — a model that reports its own
+          average gets to disagree with its own scores.
         </p>
       </Section>
 
@@ -332,7 +336,8 @@ export default async function Stage4Page(props: PageProps<"/stage-4">) {
                                     <>
                                       {stale && (
                                         <p className="text-sm text-danger">
-                                          Scored against an older context.
+                                          Scored against an older context,
+                                          scale, or set of dimensions.
                                         </p>
                                       )}
                                       <dl className="space-y-1">
@@ -352,9 +357,13 @@ export default async function Stage4Page(props: PageProps<"/stage-4">) {
                                               </dt>
                                               <dd
                                                 className="text-sm text-ink"
-                                                title={SCORE_SCALE[value]}
+                                                title={
+                                                  value === undefined
+                                                    ? undefined
+                                                    : SCORE_SCALE[value]
+                                                }
                                               >
-                                                {value}
+                                                {value ?? "—"}
                                               </dd>
                                             </div>
                                           );
@@ -366,6 +375,25 @@ export default async function Stage4Page(props: PageProps<"/stage-4">) {
                                         </summary>
                                         <p className="mt-2 text-sm leading-relaxed text-ink">
                                           {evaluation.action}
+                                        </p>
+                                      </details>
+                                      {/* Shown beside the action because it is
+                                          now scored too — reasoning_coherence
+                                          judges this text, so hiding it would
+                                          leave a number with no source. */}
+                                      <details>
+                                        <summary className="cursor-pointer text-sm text-accent hover:underline">
+                                          Reason scored
+                                          {evaluation.reason === "" && (
+                                            <span className="ml-1.5 text-xs text-ink-subtle">
+                                              none
+                                            </span>
+                                          )}
+                                        </summary>
+                                        <p className="mt-2 text-sm leading-relaxed text-ink">
+                                          {evaluation.reason === ""
+                                            ? "This evaluation was made before the reason was judged, or the flow gave none."
+                                            : evaluation.reason}
                                         </p>
                                       </details>
                                     </>

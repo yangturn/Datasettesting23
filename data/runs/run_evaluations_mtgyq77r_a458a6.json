@@ -1,0 +1,13 @@
+{
+  "id": "run_evaluations_mtgyq77r_a458a6",
+  "stage": "evaluations",
+  "status": "succeeded",
+  "total": 18,
+  "done": 18,
+  "failed": 0,
+  "errors": [],
+  "model": "deepseek/deepseek-v4-pro-0813",
+  "started_at": "2026-08-31T08:14:46.023Z",
+  "finished_at": "2026-08-31T08:29:12.913Z",
+  "message": "Built 6 context(s) (4 reflective, 2 immediate) and scored 12 prediction(s)."
+}

@@ -3,7 +3,12 @@ import { z } from "zod";
 
 import { paginate, paginationInputSchema } from "@/lib/pagination";
 import { situationTypeSchema } from "@/lib/stage-2";
-import { decisionModeFor, SCORE_SCALE_MAX } from "@/lib/stage-4";
+import {
+  decisionModeFor,
+  SCORE_DIMENSIONS,
+  SCORE_DIMENSION_SET,
+  SCORE_SCALE_MAX,
+} from "@/lib/stage-4";
 import { FLOWS } from "@/server/flows";
 import {
   callsInWork,
@@ -78,7 +83,13 @@ export const evaluationsRouter = createTRPCRouter({
    * the whole benchmark exists to make.
    */
   scoreboard: publicProcedure
-    .input(z.object({ situationType: situationTypeSchema.optional() }))
+    // A set rather than one type, so a chip can pool several — the reflective
+    // situations read as one arm against TIME_SENSITIVE.
+    .input(
+      z.object({
+        situationTypes: z.array(situationTypeSchema).nonempty().optional(),
+      }),
+    )
     .query(async ({ input }) => {
       const [evaluations, scenarios] = await Promise.all([
         listAllEvaluations(),
@@ -96,21 +107,26 @@ export const evaluationsRouter = createTRPCRouter({
         ]),
       );
 
-      // Averaging across scales would be meaningless, so only evaluations on
-      // the current one are aggregated. The rest are counted and reported, not
-      // silently dropped — they are work that needs redoing, not work that
-      // failed.
+      // Averaging across scales, or across different sets of questions, would
+      // be meaningless, so only evaluations on the current pair are aggregated.
+      // The rest are counted and reported, not silently dropped — they are work
+      // that needs redoing, not work that failed.
       const current = evaluations.filter(
-        (evaluation) => evaluation.score_scale === SCORE_SCALE_MAX,
+        (evaluation) =>
+          evaluation.score_scale === SCORE_SCALE_MAX &&
+          evaluation.dimension_set === SCORE_DIMENSION_SET,
       );
 
-      const inScope = current.filter(
-        (evaluation) =>
-          input.situationType === undefined ||
-          typeByScenario.get(
-            `${evaluation.profile_id}/${evaluation.scenario_id}`,
-          ) === input.situationType,
-      );
+      const inScope = current.filter((evaluation) => {
+        if (input.situationTypes === undefined) return true;
+        const type = typeByScenario.get(
+          `${evaluation.profile_id}/${evaluation.scenario_id}`,
+        );
+        return (
+          type !== undefined &&
+          (input.situationTypes as readonly string[]).includes(type)
+        );
+      });
 
       const flows = FLOWS.map((flow) => {
         const mine = inScope.filter(
@@ -126,9 +142,14 @@ export const evaluationsRouter = createTRPCRouter({
           label: flow.label,
           scored: mine.length,
           overall: mean((e) => e.overall_score),
-          characterConsistency: mean((e) => e.scores.character_consistency),
-          situationFit: mean((e) => e.scores.situation_fit),
-          stateMemoryAlignment: mean((e) => e.scores.state_memory_alignment),
+          // Keyed off the dimension list rather than spelled out, so adding a
+          // dimension is one edit in `SCORE_DIMENSIONS` and not three.
+          dimensions: Object.fromEntries(
+            SCORE_DIMENSIONS.map((dimension) => [
+              dimension.key,
+              mean((e) => e.scores[dimension.key] ?? 0),
+            ]),
+          ) as Record<string, number | null>,
         };
       });
 
@@ -151,8 +172,11 @@ export const evaluationsRouter = createTRPCRouter({
         scored: inScope.length,
         byType,
         scaleMax: SCORE_SCALE_MAX,
-        /** Scored on a superseded scale; excluded above, re-run to include. */
-        outdatedScale: evaluations.length - current.length,
+        /**
+         * Scored on a superseded scale or dimension set; excluded above, re-run
+         * to include.
+         */
+        superseded: evaluations.length - current.length,
       };
     }),
 
@@ -160,7 +184,7 @@ export const evaluationsRouter = createTRPCRouter({
   list: publicProcedure
     .input(
       paginationInputSchema.extend({
-        situationType: situationTypeSchema.optional(),
+        situationTypes: z.array(situationTypeSchema).nonempty().optional(),
       }),
     )
     .query(async ({ input }) => {
@@ -180,8 +204,10 @@ export const evaluationsRouter = createTRPCRouter({
             descriptions.has(scenario.profile_id) &&
             // Applied before the slice, so the page numbers count filtered
             // rows rather than paging through a set the reader cannot see.
-            (input.situationType === undefined ||
-              scenario.situation_type === input.situationType),
+            (input.situationTypes === undefined ||
+              (input.situationTypes as readonly string[]).includes(
+                scenario.situation_type,
+              )),
         )
         .sort((a, b) => b.generated_at.localeCompare(a.generated_at));
 
@@ -227,15 +253,16 @@ export const evaluationsRouter = createTRPCRouter({
                 evaluation,
                 /**
                  * Scored against a context that has since been rebuilt, or on a
-                 * scale that has since changed. Either way the number shown is
-                 * not comparable to the others.
+                 * scale or dimension set that has since changed. Either way the
+                 * number shown is not comparable to the others.
                  */
                 stale:
                   evaluation !== null &&
                   ((context !== null &&
                     evaluation.context_generated_at !==
                       context.generated_at) ||
-                    evaluation.score_scale !== SCORE_SCALE_MAX),
+                    evaluation.score_scale !== SCORE_SCALE_MAX ||
+                    evaluation.dimension_set !== SCORE_DIMENSION_SET),
               };
             }),
           };

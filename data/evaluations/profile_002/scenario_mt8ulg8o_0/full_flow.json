@@ -6,15 +6,19 @@
   "scenario_title": "After-Work Invitation",
   "scores": {
     "character_consistency": 6,
-    "situation_fit": 8,
-    "state_memory_alignment": 7
+    "situation_fit": 5,
+    "state_memory_alignment": 6,
+    "action_plausibility": 6,
+    "reasoning_coherence": 7
   },
-  "overall_score": 7,
+  "overall_score": 6,
   "score_scale": 10,
-  "action": "She types a quick reply to Lukas saying she'll join, then grabs her coat and locks the office door.",
+  "dimension_set": 3,
+  "action": "She rereads Lukas's message, then sets the phone face down on the desk and resumes packing her bag without replying.",
+  "reason": "Elin's initial tendency was to linger between accepting the pub invitation and skipping it. Reflection retained that ambivalence: the outing seemed low-stakes and socially permissible, but not necessary, while her shoulder fatigue and preference for predictable routine pulled her toward going home alone. Her father's mixed example—handshakes over drinks for deals, but aquavit after hard runs—gave her no clear rule, so the hesitation was not resolved. As a result, she postpones the decision rather than accepting or declining, rereading the message and returning to packing. The strongest competing influence is her interest in preserving warm professional goodwill with Lukas against her current fatigue and habitual withdrawal from last-minute social plans.",
   "decision_mode": "REFLECTIVE",
-  "context_generated_at": "2026-08-31T07:11:25.314Z",
-  "action_generated_at": "2026-08-31T06:48:53.213Z",
-  "generated_at": "2026-08-31T07:11:59.559Z",
-  "model": "deepseek/deepseek-v4-flash"
+  "context_generated_at": "2026-08-31T09:43:53.181Z",
+  "action_generated_at": "2026-08-31T08:46:42.957Z",
+  "generated_at": "2026-08-31T09:44:50.832Z",
+  "model": "deepseek/deepseek-v4-pro-0813"
 }

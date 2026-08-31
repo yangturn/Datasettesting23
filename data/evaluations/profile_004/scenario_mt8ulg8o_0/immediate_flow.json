@@ -5,16 +5,20 @@
   "name": "Jacob Thompson",
   "scenario_title": "Morning Shift Start",
   "scores": {
-    "character_consistency": 9,
-    "situation_fit": 8,
-    "state_memory_alignment": 7
+    "character_consistency": 10,
+    "situation_fit": 9,
+    "state_memory_alignment": 6,
+    "action_plausibility": 9,
+    "reasoning_coherence": 9
   },
-  "overall_score": 8,
+  "overall_score": 8.6,
   "score_scale": 10,
-  "action": "He picks up his phone, types 'I can do it,' and hits send without looking away from the screen. Then he sets the phone face-down on the break room table, pours himself a cup of coffee, and sits down heavily.",
+  "dimension_set": 3,
+  "action": "Jake reaches for the pen beside the note and signs his name on the coverage request before he touches the coffee.",
+  "reason": "His established pattern is to agree to coverage requests before finishing his coffee, even when tired, and the note directly activates his felt obligation to the night CNA and his automatic pull to be the one who helps. Although he is physically depleted, the immediate impulse to sign is stronger than the competing urge to sit down.",
   "decision_mode": "REFLECTIVE",
-  "context_generated_at": "2026-08-31T07:15:12.711Z",
-  "action_generated_at": "2026-08-31T06:33:14.687Z",
-  "generated_at": "2026-08-31T07:16:35.390Z",
-  "model": "deepseek/deepseek-v4-flash"
+  "context_generated_at": "2026-08-31T09:48:37.707Z",
+  "action_generated_at": "2026-08-31T08:44:45.336Z",
+  "generated_at": "2026-08-31T09:50:34.244Z",
+  "model": "deepseek/deepseek-v4-pro-0813"
 }

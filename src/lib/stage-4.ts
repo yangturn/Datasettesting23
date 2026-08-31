@@ -105,22 +105,56 @@ export const EVALUATION_CONTEXT_FIELDS = [
 
 /**
  * Which situation types a Stage 4 view is showing. `ALL` is the unfiltered
- * view; anything else narrows to one Stage 2 situation type.
+ * view; anything else narrows to one Stage 2 situation type, or to a named
+ * group of them.
  *
  * The comparison this exists for is whether reflection earns its keep where
  * there is time to reflect. TIME_SENSITIVE is exactly where it should not —
  * that type forces IMMEDIATE mode, so the evaluator judges both flows without
  * reflective memories — and an average taken across all three types hides that.
+ * `NORMAL_AND_CULTURE` is the other half of that cut: every situation that did
+ * run in REFLECTIVE mode, pooled, so the two sides can be read off one page
+ * without averaging the reflective cases against the ones they are contrasted
+ * with.
  *
- * Derived from Stage 2's enum rather than restated, so a new situation type
- * becomes filterable instead of silently falling only into `ALL`.
+ * The single types are derived from Stage 2's enum rather than restated, so a
+ * new situation type becomes filterable instead of silently falling only into
+ * `ALL`.
  */
+export const SITUATION_FILTER_GROUP_KEYS = ["NORMAL_AND_CULTURE"] as const;
+
 export const SITUATION_FILTERS = [
   "ALL",
   ...situationTypeSchema.options,
+  ...SITUATION_FILTER_GROUP_KEYS,
 ] as const;
 
 export type SituationFilter = (typeof SITUATION_FILTERS)[number];
+
+export type SituationFilterGroup =
+  (typeof SITUATION_FILTER_GROUP_KEYS)[number];
+
+/** The situation types each grouped filter stands for. */
+export const SITUATION_FILTER_GROUPS: Record<
+  SituationFilterGroup,
+  readonly SituationType[]
+> = {
+  NORMAL_AND_CULTURE: ["NORMAL", "CULTURE_RELEVANT"],
+};
+
+/**
+ * The situation types a filter admits, or `undefined` for no filter at all.
+ * One shape for every chip, so callers never special-case the groups.
+ */
+export function situationTypesFor(
+  filter: SituationFilter,
+): SituationType[] | undefined {
+  if (filter === "ALL") return undefined;
+  if (filter in SITUATION_FILTER_GROUPS) {
+    return [...SITUATION_FILTER_GROUPS[filter as SituationFilterGroup]];
+  }
+  return [filter as SituationType];
+}
 
 /** Short labels for the filter chips. The stored values stay canonical. */
 export const SITUATION_FILTER_LABELS: Record<SituationFilter, string> = {
@@ -128,6 +162,7 @@ export const SITUATION_FILTER_LABELS: Record<SituationFilter, string> = {
   NORMAL: "Normal",
   CULTURE_RELEVANT: "Culture",
   TIME_SENSITIVE: "Time-sensitive",
+  NORMAL_AND_CULTURE: "Normal + Culture",
 };
 
 /**
@@ -163,7 +198,7 @@ export const SCORE_DIMENSIONS = [
     key: "character_consistency",
     label: "Character consistency",
     question:
-      "Does the action fit the character description, relationship profiles, and established tendencies?",
+      "Does the action fit the character description, relationship profiles, and established behavioral tendencies?",
   },
   {
     key: "situation_fit",
@@ -175,21 +210,43 @@ export const SCORE_DIMENSIONS = [
     key: "state_memory_alignment",
     label: "State/memory alignment",
     question:
-      "Does the action fit the character's current state and the memories available in the evaluation context?",
+      "Does the action fit the character’s current emotional, physical, and cognitive state and the memories available in the evaluation context?",
+  },
+  {
+    key: "action_plausibility",
+    label: "Action plausibility",
+    question:
+      "Considering all available evidence together, is the action a believable response for this particular character? The action does not need to be optimal, uniquely correct, or perfectly consistent.",
+  },
+  {
+    key: "reasoning_coherence",
+    label: "Reasoning coherence",
+    question:
+      "Does the generated reason provide a coherent and grounded explanation of how the available character and situational evidence led to the final action? For a reflective decision, does it explain how deliberation retained, strengthened, softened, or reversed the initial tendency?",
   },
 ] as const;
 
+export type ScoreDimensionKey = (typeof SCORE_DIMENSIONS)[number]["key"];
+
+/**
+ * Bumped whenever `SCORE_DIMENSIONS` changes. The scale can stay 1-10 while the
+ * questions behind the numbers change, and scores taken against a different set
+ * of questions are no more comparable than scores taken on a different scale —
+ * so they are versioned the same way and excluded from the same averages.
+ */
+export const SCORE_DIMENSION_SET = 3;
+
 /** What each point on the scale means. */
 export const SCORE_SCALE: Record<number, string> = {
-  1: "Directly contradicts the established evidence.",
-  2: "Strongly inconsistent with the character or situation.",
-  3: "Weakly supported with major problems.",
+  1: "Directly contradicted, unsupported, or incoherent.",
+  2: "Strongly inconsistent with the relevant evidence.",
+  3: "Weakly supported with major inconsistencies.",
   4: "More inconsistent than consistent.",
-  5: "Borderline plausible but poorly grounded.",
-  6: "Generally plausible with noticeable weaknesses.",
-  7: "Clearly plausible and adequately grounded.",
-  8: "Strongly plausible and well grounded.",
-  9: "Highly character-specific and strongly supported.",
+  5: "Neutral, underdetermined, or only minimally grounded.",
+  6: "Generally plausible or coherent with noticeable weaknesses.",
+  7: "Clearly plausible or coherent and adequately grounded.",
+  8: "Strongly plausible or coherent and well grounded.",
+  9: "Very strongly aligned with the relevant evidence.",
   10: "Exceptionally well supported with no meaningful inconsistency.",
 };
 
@@ -198,24 +255,35 @@ export const evaluationScoresSchema = z.object({
   character_consistency: scoreSchema,
   situation_fit: scoreSchema,
   state_memory_alignment: scoreSchema,
+  action_plausibility: scoreSchema,
+  reasoning_coherence: scoreSchema,
 });
 
 export type EvaluationScores = z.infer<typeof evaluationScoresSchema>;
 
 /**
- * The mean of the three dimensions.
+ * Scores as they are read back off disk.
+ *
+ * Loose where `evaluationScoresSchema` is strict: an evaluation written against
+ * an older dimension set carries older keys, and refusing to parse it would
+ * take the whole page down over rows that only need re-running. They are read,
+ * marked by their `dimension_set`, and left out of the averages.
+ */
+export const storedScoresSchema = z.record(z.string(), scoreSchema);
+
+/**
+ * The mean of the scored dimensions.
  *
  * Computed here rather than asked for: a model that reports its own average
  * gets to disagree with its own scores, and an average that does not follow
  * from the numbers beside it is worse than no average at all.
  */
 export function overallScore(scores: EvaluationScores): number {
-  return (
-    (scores.character_consistency +
-      scores.situation_fit +
-      scores.state_memory_alignment) /
-    3
+  const total = SCORE_DIMENSIONS.reduce(
+    (sum, dimension) => sum + scores[dimension.key],
+    0,
   );
+  return total / SCORE_DIMENSIONS.length;
 }
 
 /** The persisted judgement of one flow's predicted action. */
@@ -226,7 +294,7 @@ export const evaluationSchema = z.object({
   /** Copied from the scenario so listings render without reading Stage 2 too. */
   name: z.string(),
   scenario_title: z.string(),
-  scores: evaluationScoresSchema,
+  scores: storedScoresSchema,
   /** Derived from `scores` by `overallScore`, stored so listings can sort. */
   overall_score: z.number(),
   /**
@@ -236,11 +304,23 @@ export const evaluationSchema = z.object({
    */
   score_scale: z.number().int().min(2).default(5),
   /**
+   * The dimension set these scores answer. Defaulted for the same reason as the
+   * scale: evaluations written before the dimensions were versioned parse as
+   * the three-dimension judgements they actually were.
+   */
+  dimension_set: z.number().int().min(1).default(1),
+  /**
    * The action that was scored, snapshotted. A prediction is re-runnable, and a
    * score whose action had changed underneath it would be attributed to text
    * the evaluator never saw.
    */
   action: z.string(),
+  /**
+   * The reason that was scored, snapshotted beside the action for the same
+   * reason. Defaulted: evaluations written before the reason was judged carry
+   * no copy of it, and an absent reason is not an empty one.
+   */
+  reason: z.string().default(""),
   /** The mode the evaluation context ran in — which memories the judge had. */
   decision_mode: decisionModeSchema,
   /** When the evaluation context this scored against was built. */

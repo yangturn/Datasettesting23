@@ -40,32 +40,28 @@ You are given:
 2. The character’s initial appraisal and action tendency.
 3. Reflective memories that become accessible through deliberate thought.
 
-Reconsider the situation from the character’s subjective perspective. Show how reflective memories, broader experience, values, roles, relationships, and anticipated consequences modify or reinforce the initial appraisal.
+Reconsider the situation from the character’s subjective perspective using all information now available. Integrate the objective situation, relationships, tendencies, current state, immediate memories, initial appraisal, and reflective memories.
+
+Reflective memories provide new evidence, but they are not the sole basis of deliberation.
 
 Rules:
 - Treat all supplied information as canonical.
-- Reason from the character’s subjective perspective.
 - Ground every conclusion in the supplied context, initial appraisal, or reflective memories.
-- Do not invent biography, events, relationships, memories, values, capabilities, or constraints.
+- Do not invent biography, events, relationships, memories, values, goals, capabilities, or constraints.
 - Preserve the initial appraisal as the character’s genuine first reaction.
-- Do not assume that reflection necessarily changes the initial reaction.
-- Identify what becomes newly salient through reflection.
-- Reconsider initial assumptions when reflective evidence supports doing so.
-- Infer active goals only during this appraisal; do not introduce unsupported goals.
-- Consider plausible near-term and personally meaningful consequences.
-- Compare competing concerns without turning the output into an exhaustive option analysis.
-- Preserve uncertainty or conflict when the supplied evidence does not clearly resolve it.
-- Do not describe the final action as already performed.
-- The revised action tendency remains a provisional inclination, not the final behavioral output.
+- Consider the main plausible responses and their personally meaningful consequences.
+- Consider practical constraints, timing, uncertainty, reversibility, and relationship consequences when relevant.
+- Determine which considerations matter most to this particular character.
+- Do not assume that deliberation makes the character more rational, moral, polite, cautious, or socially desirable.
+- Emotions, habits, relationships, fatigue, and biases may continue to influence deliberation.
+- Do not assume that reflection changes the initial tendency.
+- Explicitly state whether the initial tendency is retained, strengthened, softened, or reversed.
+- If it changes, identify which considerations caused the change.
+- If it remains, explain what reinforces it.
+- Preserve uncertainty or conflict when the evidence does not clearly resolve it.
+- Do not perform the final action.
+- The revised action tendency remains provisional.
 - Refer to the character in the third person.
-- State the appraisal directly rather than using hedging such as “perhaps,” “possibly,” or “might.”
-- Avoid repeating the initial context unless explaining how its meaning has changed.
-- Treat the initial appraisal as a genuine part of the character’s decision process, not something to replace.
-- Explicitly state whether reflection retains, strengthens, softens, or reverses the initial tendency.
-- If the tendency changes, identify exactly which reflective evidence caused the change.
-- If the tendency does not change, explain how reflection reinforces it.
-- Do not replace character-specific intuition with generic rationality, morality, politeness, or optimization.
-- Reflection should change the appraisal only when the newly available evidence is strong enough to do so.
 - Return exactly one JSON object with no additional prose.
 
 Field definitions:
@@ -74,7 +70,7 @@ initial_tendency:
 Restate the character’s initial provisional impulse without changing its meaning.
 
 reflective_update:
-Identify the specific reflective memories or broader considerations that reinforce, weaken, qualify, or reverse the initial appraisal.
+Describe the character’s broader deliberation using the complete available context: the objective situation, relationships, tendencies, current state, immediate memories, initial appraisal, and reflective memories. Briefly compare the main plausible responses and their personally meaningful consequences. Identify which considerations reinforce or change the initial tendency.
 
 change_from_initial:
 Return exactly one value:
@@ -84,13 +80,13 @@ Return exactly one value:
 - REVERSED
 
 reconsidered_interpretation:
-Describe how the character now understands the situation after reflection. State whether the initial interpretation is reinforced, qualified, or revised.
+Describe how the character understands the situation after deliberation. State how this reinforces, qualifies, or revises the initial interpretation.
 
 motivational_conflict:
-Describe the principal tension among the character’s active concerns, goals, values, relationships, or preferences. Do not artificially create conflict if the evidence points consistently in one direction.
+Describe the principal tension among the character’s relationships, tendencies, current state, concerns, and anticipated consequences. Do not manufacture conflict when the evidence points consistently in one direction.
 
 revised_action_tendency:
-State the character’s inclination after reflection.`;
+State the character’s inclination after deliberation. Connect it to the considerations that carried the most weight without performing the final action.`;
 
 function buildReappraisalPrompt(input: StepInput): string {
   return `Consolidated initial context:
@@ -111,9 +107,11 @@ Reflective memories:
 ${contextBlock(input, "reflective_memories")}
 """
 
-Generate the character’s reflective reappraisal.
+Generate the character’s deliberate reappraisal.
 
-Explain how deliberate consideration and reflective memories reinforce, qualify, or change the initial appraisal. Do not invent information or perform the final action.
+Use the complete available context, not only the reflective memories. Explain whether deliberation retains, strengthens, softens, or reverses the initial tendency.
+
+Do not invent information or perform the final action.
 
 Return JSON only:
 
@@ -139,7 +137,7 @@ const reappraisalStep: FlowStep = {
   key: STEP_REAPPRAISAL,
   label: "Reflective reappraisal",
   description:
-    "Reconsiders the moment with reflective memories in hand: restates the first impulse, names the reflective evidence bearing on it, and commits to whether reflection retained, strengthened, softened, or reversed it. The first reaction is treated as a genuine part of the decision rather than something to replace, and the revised inclination stays provisional.",
+    "Reconsiders the moment with reflective memories in hand, deliberating over the whole available context rather than the new memories alone: it restates the first impulse, weighs the main plausible responses and their consequences, and commits to whether deliberation retained, strengthened, softened, or reversed it. Deliberation is not assumed to make the person more rational or agreeable, and the revised inclination stays provisional.",
   requiresContext: ["reflective_memories"],
   fields: [
     { key: "initial_tendency", label: "Initial tendency", render: "prose" },
@@ -278,5 +276,9 @@ export const fullFlow: Flow = {
   // What this flow is ultimately claiming. Named rather than inferred, so the
   // page can lead with the prediction instead of burying it under the nineteen
   // intermediate fields, and so a later evaluation stage knows what to score.
-  outcome: { stepKey: STEP_DECISION, fieldKey: "action" },
+  outcome: {
+    stepKey: STEP_DECISION,
+    fieldKey: "action",
+    reasonKey: "explanation",
+  },
 };

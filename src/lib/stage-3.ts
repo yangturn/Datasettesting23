@@ -69,6 +69,13 @@ export type FlowStepMeta = {
 export type FlowOutcome = {
   stepKey: string;
   fieldKey: string;
+  /**
+   * The field beside it holding the flow's own account of how it got there.
+   * Named rather than assumed, so Stage 4 can score the reasoning without
+   * hardcoding one flow's field name, and a flow that offers no reason simply
+   * omits it.
+   */
+  reasonKey?: string;
 };
 
 /** A flow as the page sees it. */

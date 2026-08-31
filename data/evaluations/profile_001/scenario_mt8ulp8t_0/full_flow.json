@@ -5,16 +5,20 @@
   "name": "Amina Adebayo",
   "scenario_title": "Aunt's Naming Ceremony Invitation",
   "scores": {
-    "character_consistency": 8,
-    "situation_fit": 8,
-    "state_memory_alignment": 6
+    "character_consistency": 7,
+    "situation_fit": 7,
+    "state_memory_alignment": 6,
+    "action_plausibility": 8,
+    "reasoning_coherence": 8
   },
-  "overall_score": 7.333333333333333,
+  "overall_score": 7.2,
   "score_scale": 10,
-  "action": "Amina folds the note carefully, puts it in her pocket, and then asks her landlady, 'Mama, how much is the transport to Ibadan these days?'",
+  "dimension_set": 3,
+  "action": "Amina steps back from the gate, folds the note into a small square, and tucks it into her pocket. She says to the landlady, \"Thank you, ma. I will send word before Saturday.\"",
+  "reason": "Her initial action tendency was to delay a definite reply, and reflection retained that impulse because either an immediate yes or an immediate no would force her to sacrifice something irrecoverable: transport money and the Saturday carpentry class, or her standing with her mother and aunt. The note now felt like a collision between her father's lesson to protect her tools and her mother's expectation that family shows up, while hunger, sore hands, and uncertain earnings made an immediate costly commitment feel unsafe. This unresolved tension produced a polite, noncommittal response: she steps back, hides the note to contain the pressure, and tells the landlady only that she will send word before Saturday, preserving time to count her savings. The competing pull of family loyalty remains, but it is not strong enough to make her accept or refuse on the spot.",
   "decision_mode": "REFLECTIVE",
-  "context_generated_at": "2026-08-31T07:10:23.006Z",
-  "action_generated_at": "2026-08-31T06:32:50.093Z",
-  "generated_at": "2026-08-31T07:10:36.332Z",
-  "model": "deepseek/deepseek-v4-flash"
+  "context_generated_at": "2026-08-31T09:41:46.616Z",
+  "action_generated_at": "2026-08-31T08:47:54.493Z",
+  "generated_at": "2026-08-31T09:43:00.011Z",
+  "model": "deepseek/deepseek-v4-pro-0813"
 }
