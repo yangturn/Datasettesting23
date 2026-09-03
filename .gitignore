@@ -13,6 +13,12 @@
 # testing
 /coverage
 
+# BehaviorChain: keep the distributed archive, not the extracted dataset.
+/datasets/behaviorchain/
+
+# Converted profiles, resumable executions, and evaluation reports are local.
+/.cache/behaviorchain/
+
 # next.js
 /.next/
 /out/
