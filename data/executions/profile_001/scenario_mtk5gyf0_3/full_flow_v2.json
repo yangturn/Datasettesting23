@@ -1,0 +1,62 @@
+{
+  "flow_key": "full_flow_v2",
+  "profile_id": "profile_001",
+  "scenario_id": "scenario_mtk5gyf0_3",
+  "name": "Aminata Diallo",
+  "scenario_title": "The Friday Tea Stop",
+  "steps": {
+    "attributes": {
+      "output": {
+        "values_culture_and_background": "She was shaped by repeated household losses from financial miscalculation and by watching her mother and father make sacrifices to survive; she has internalized strict frugality, self-reliance, and the belief that figures and plans should be checked personally before trusting them. She values education as a path to advancement and keeps saving for accounting training. She prioritizes keeping plans private because she believes spoken plans become vulnerable to being borrowed against.",
+        "roles_and_commitments": "She works as a construction laborer on a masonry crew and is the youngest person on the site and the only woman there. She is a daughter who sends monthly remittances to her younger sister, and she is saving to house her sister and help her attend school. She is a student preparing for an accounting course and exam.",
+        "capabilities_and_constraints": "She can do manual construction work, carry loads, and perform arithmetic mentally with care and precision. She can read and study by lamplight and maintain a written record of figures and dates in a notebook. She has limited money, no tap water in her room, and must walk to the community center because she cannot afford bus fare both ways. She keeps a fixed emergency fund hidden under the floorboard.",
+        "personality_and_response_style": "She is precise, meticulous, and habitually double-checks measurements and calculations. She is quiet and reserved, does not respond to teasing with banter, and keeps personal plans private. She is disciplined and self-denying about small comforts, strongly accustomed to delayed gratification and careful accounting of resources."
+      },
+      "generated_at": "2026-09-03T00:45:51.250Z",
+      "model": "openai/gpt-5.4-mini"
+    },
+    "consolidate": {
+      "output": {
+        "initial_context": "RELEVANT CHARACTER BACKGROUND\nAminata Diallo is a young woman living in a rented room in a bustling district on the outskirts of Bamako, in a setting with packed-earth walls, a corrugated tin roof, and no tap water. She rises before dawn, fills a bucket at a communal stand two blocks away, and carries it back carefully so she does not splash her only pair of work trousers. She works six days a week as a construction laborer on a masonry crew, where she is the youngest person on the site and the only woman. Her master mason, Sékou, an older man who lost two fingers to a faulty crane, calls her “la petite comptable” because she mentally recalculates load-bearing estimates before lifting a trowel. He has recently begun checking her arithmetic before approving her estimates, which reflects quiet trust in her work.\n\nHer background has been shaped by repeated household losses caused by financial miscalculation and by watching her mother and father make sacrifices to survive. Her mother lost a market stall to a miscalculated loan and died when Aminata was twelve; her father later sold his tools to pay for a funeral and never used a trowel again. Aminata has internalized strict frugality, self-reliance, and the belief that figures and plans should be checked personally before trusting them. She is disciplined, precise, meticulous, and strongly oriented toward delayed gratification. She does not respond to teasing with banter, tends to remain quiet and reserved, and keeps personal plans private because she believes spoken plans become vulnerable to being borrowed against.\n\nShe counts and records everything: bricks in a pallet, the cost of rice, weeks until her accounting exam. She keeps a small notebook tucked inside her shirt with figures and dates, and under a loose floorboard near her mattress she hides an emergency fund in the same amount each month, never touched and never counted in daylight. She studies by lamplight after long workdays and is saving for accounting training and an exam at a community center on the other side of the city. She values education as a route to advancement. She cannot afford bus fare both ways, so she usually walks. She also sends monthly remittances to her younger sister in the village and is saving to secure a proper room with running water where her sister can live and attend school. Her work, her savings, her remittances, and her study routine all reflect limited resources, careful planning, and persistent self-denial.\n\nHer practical capabilities include manual construction labor, carrying loads, mentally performing arithmetic with care and precision, reading and studying by lamplight, and maintaining written records of figures and dates. Her constraints include limited money, no tap water in her room, physical fatigue from work, and the need to manage travel costs carefully. Her coworkers respect her silence, precision, and refusal to ask for advances on wages.\n\nOBJECTIVE SITUATION\nIt is Friday evening and Aminata is walking home from the construction site. The air is cooling and the street is filling with people. She passes a tea vendor near the corner; the smell of ginger and mint drifts toward her. She has the exact coins for a small cup in one pocket and, in the other, the bus ticket she saved by walking to work that morning. The bus would get her home before dark and leave more time to study before her eyes burn out. She stops briefly, looking at the vendor and then at the empty street stretching home.\n\nPRE-APPRAISAL STATE AND ACCESSIBLE MEMORIES\nHer shoulders ache from carrying cement bags, and her feet are blistered from the long day. She is thirsty but not desperately so, and the smell of tea is enticing. She is aware that darkness will fall in about forty minutes and that the walk home takes thirty.\n\nThe scent of ginger and mint directly cues a memory of her mother brewing tea on a Friday evening after a long week at the market. The bus ticket in her pocket cues the memory of the morning she chose to walk instead of using it, saving it for this moment. She also has the immediate, concrete awareness that she has skipped the tea stop on at least four Fridays this month, each time pocketing the coins, and that she has walked to work every morning this week despite having bus fare saved, leaving the ticket unused. She has never taken the bus home on a Friday, preferring to save the ticket for a weekday when she is more tired."
+      },
+      "generated_at": "2026-09-03T00:45:57.189Z",
+      "model": "openai/gpt-5.4-mini"
+    },
+    "appraisal": {
+      "output": {
+        "initial_interpretation": "This feels like one of those narrow Friday moments where a small comfort is sitting right beside a more useful choice. The tea stand and the bus ticket together make the evening feel split between easing herself now and protecting time and money for later.",
+        "initial_emotional_reaction": "Aminata feels tired, thirsty, and pulled by the warm smell of tea. At the same time, there is a tight, cautious satisfaction in having kept the ticket and the coins, mixed with a small ache of wanting to stop.",
+        "activated_concerns": "Her remaining money, the saved bus ticket, and the extra time she could use for study all feel important. So do her aching body, the fading light, and the habit of not wasting what she has set aside.",
+        "automatic_theory_of_mind": "Aminata reads the vendor as offering a small, ordinary comfort that expects a customer to pause and buy. The street feels like it is moving on without her, while no one else seems to be watching what she chooses.",
+        "initial_action_tendency": "She feels pulled to linger at the corner, looking once more at the tea and the road home, with an impulse to hold back and reconsider before giving up either the coins or the ticket."
+      },
+      "generated_at": "2026-09-03T00:46:00.569Z",
+      "model": "openai/gpt-5.4-mini"
+    },
+    "reappraisal": {
+      "output": {
+        "initial_tendency": "She feels pulled to linger at the corner, looking once more at the tea and the road home, with an impulse to hold back and reconsider before giving up either the coins or the ticket.",
+        "reflective_update": "Aminata’s first pull has not disappeared, but it feels heavier now under what she remembers. The tea smells like comfort and like a small loss she can feel immediately, while the bus ticket in her pocket still stands for time she can protect for study and for getting home before dark. The memory of buying tea and then having to borrow from her emergency fund makes the cup feel less harmless than it did a moment ago; it was not only a treat, it could become the kind of small spending that opens a gap she then has to cover from the money she guards so closely. That memory sits uneasily beside the fact that she has already skipped the tea stop on several Fridays and has been saving the ticket instead of using it on the mornings she walked. At the same time, the recollection of her mother walking long distances to save transport money keeps the practical side of the choice vivid, though it does not make the walk feel lighter. Aminata is tired, thirsty, and tempted by the warmth of the tea, but her habit of checking costs against consequences still presses her toward keeping both the coins and the ticket for when they matter more. The main alternative is still to stop and spend on tea now, but that would mean surrendering one more small margin she has worked to protect; the better-protected course remains to keep moving, even if she has to keep resisting the wanting for a few more steps.",
+        "change_from_initial": "STRENGTHENED",
+        "reconsidered_interpretation": "Aminata now sees the corner less as a balanced choice between comfort and utility and more as a test of whether a small, tempting purchase is worth weakening the careful system she has been building. The tea is still pleasant and the evening still feels narrow, but the situation now reads as another place where a minor indulgence can quietly disturb her fragile margin.",
+        "motivational_conflict": "The unresolved tension is between Aminata’s tired body and immediate craving for warmth and relief, and her disciplined habit of protecting money and time for the uses she has already planned. The tea promises a brief easing of the evening, but her memories of needing to borrow from emergency savings and of her mother’s hard-earned frugality keep making that comfort feel expensive in ways that are not worth it.",
+        "revised_action_tendency": "She feels more firmly inclined to keep holding back from the tea stand and continue home with the ticket still saved, even while she lingers a moment in thought before deciding."
+      },
+      "generated_at": "2026-09-03T00:46:06.404Z",
+      "model": "openai/gpt-5.4-mini"
+    },
+    "decision": {
+      "output": {
+        "action": "Aminata pauses for a moment at the corner, then keeps walking past the tea vendor toward home without buying the tea or using the bus ticket.",
+        "explanation": "Her initial tendency was to linger between the tea and the road home, hesitating over whether to spend the coins or keep the ticket. Reflection STRENGTHENED that restraint by making the small cup feel like a possible source of another avoidable loss, especially against her memory of having to borrow from emergency savings after buying tea before, and by bringing back her habit of checking costs against consequences. Because she is disciplined, frugal, and used to protecting every small margin for study, transport, and future needs, the revised action tendency becomes to keep both the coins and the ticket for later. The remaining conflict is her tired, thirsty body, so the response still includes a brief pause before she commits to leaving the stand and continuing home."
+      },
+      "generated_at": "2026-09-03T00:46:09.140Z",
+      "model": "openai/gpt-5.4-mini"
+    }
+  },
+  "scenario_generated_at": "2026-09-02T13:46:50.556Z",
+  "scenario_context_generated_at": "2026-09-02T13:47:06.079Z",
+  "description_generated_at": "2026-09-02T13:42:55.096Z",
+  "started_at": "2026-09-03T00:45:47.354Z",
+  "updated_at": "2026-09-03T00:46:09.140Z"
+}

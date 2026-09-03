@@ -1,0 +1,22 @@
+{
+  "flow_key": "om_cot",
+  "profile_id": "profile_002",
+  "scenario_id": "scenario_mtk5n38u_3",
+  "name": "Ingrid Lindgren",
+  "scenario_title": "Crayfish Party Invitation",
+  "steps": {
+    "decision": {
+      "output": {
+        "action": "Ingrid accepts Anna Lindqvist's invitation to the kräftskiva and heads to the nearby restaurant.",
+        "explanation": "She is tired, but this invitation comes from a manager she respects and could still strengthen a useful professional relationship over a shared meal, which matches her memory that many valuable business ties began socially. The timing also works because the night nurse is already scheduled, and her slightly lower anxiety after a good morning with her mother makes her more willing to stay out tonight than she usually would after a conference."
+      },
+      "generated_at": "2026-09-03T00:45:49.825Z",
+      "model": "openai/gpt-5.4-mini"
+    }
+  },
+  "scenario_generated_at": "2026-09-02T13:51:36.750Z",
+  "scenario_context_generated_at": "2026-09-02T13:54:05.688Z",
+  "description_generated_at": "2026-09-02T13:43:19.287Z",
+  "started_at": "2026-09-03T00:45:46.627Z",
+  "updated_at": "2026-09-03T00:45:49.825Z"
+}

@@ -1,0 +1,37 @@
+{
+  "flow_key": "her_dual_layered_thinking",
+  "profile_id": "profile_001",
+  "scenario_id": "scenario_mtk5eczl_1",
+  "name": "Aminata Diallo",
+  "scenario_title": "Invitation to a Neighborhood Meal",
+  "steps": {
+    "system_thinking": {
+      "output": {
+        "system_thinking": "I need to portray Aminata as tired, cautious with money, and quietly appreciative of Fatoumata’s friendly invitation. Her immediate internal calculation should center on the tradeoff: the meal costs about a bus fare, and she has a textbook chapter waiting at home, so she will instinctively weigh rest, study, and spending against the value of the group’s company. Her memory of shared meals and family loans should nudge her toward emotional warmth mixed with caution, not toward openness about her deeper plans. She should be visibly restrained—brief pause, a glance toward her tools or the ground, perhaps a small nod—showing she is considering the offer seriously rather than dismissively. Her speech should remain polite and concise, consistent with her usual pattern of declining social outings, but it should not be harsh; if she turns it down, she should do so with gratitude and a practical reason tied to fatigue or studying. The stance should be respectful toward Fatoumata, since Fatoumata has never asked for favors and the group is friendly, while still keeping Aminata’s habitual boundary around optional spending and time."
+      },
+      "generated_at": "2026-09-03T00:46:20.761Z",
+      "model": "openai/gpt-5.4-mini"
+    },
+    "role_response": {
+      "output": {
+        "role_thinking": "I am tired enough that even standing still feels expensive. The smell of the fish makes me think of home, and of sharing, but I can’t let myself spend for something optional when my book is waiting and my exam is close. Fatoumata is being kind, and I don’t want to brush that aside.",
+        "action": "Aminata pauses, glances down at her tools, then gives a small nod. “Thank you, Fatoumata. Not tonight—I’m too tired, and I need to study. Maybe another time.”"
+      },
+      "generated_at": "2026-09-03T00:46:22.857Z",
+      "model": "openai/gpt-5.4-mini"
+    },
+    "decision": {
+      "output": {
+        "action": "Aminata pauses, glances down at her tools, then gives a small nod. “Thank you, Fatoumata. Not tonight—I’m too tired, and I need to study. Maybe another time.”",
+        "explanation": "Aminata feels too tired even to stand still comfortably, and the smell of the fish makes her think of home and sharing. Even so, she cannot let herself spend money on something optional when her book is waiting and her exam is close. She also recognizes that Fatoumata is being kind and does not want to brush that aside, which leads her to decline gently."
+      },
+      "generated_at": "2026-09-03T00:46:24.928Z",
+      "model": "openai/gpt-5.4-mini"
+    }
+  },
+  "scenario_generated_at": "2026-09-02T13:44:49.473Z",
+  "scenario_context_generated_at": "2026-09-02T13:45:17.115Z",
+  "description_generated_at": "2026-09-02T13:42:55.096Z",
+  "started_at": "2026-09-03T00:46:17.862Z",
+  "updated_at": "2026-09-03T00:46:24.928Z"
+}

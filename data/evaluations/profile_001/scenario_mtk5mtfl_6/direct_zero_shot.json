@@ -1,0 +1,24 @@
+{
+  "profile_id": "profile_001",
+  "scenario_id": "scenario_mtk5mtfl_6",
+  "flow_key": "direct_zero_shot",
+  "name": "Aminata Diallo",
+  "scenario_title": "A Walk to See School Bags",
+  "scores": {
+    "character_consistency": 7,
+    "situation_fit": 7,
+    "state_memory_alignment": 8,
+    "action_plausibility": 8,
+    "reasoning_coherence": 8
+  },
+  "overall_score": 7.6,
+  "score_scale": 10,
+  "dimension_set": 4,
+  "action": "Aminata closes her accounting notebook, gets up from her mat, and walks with Fatoumata to the market to help her choose a sturdy school bag.",
+  "reason": "Fatoumata depends on Aminata for guidance, and Aminata has a pattern of setting study aside to avoid disappointing her sister. The bag request also hits a strong memory for her: she remembers the cheap canvas bag she had as a child tearing quickly, which makes her opinion at the market especially relevant.",
+  "decision_mode": "REFLECTION_AVAILABLE",
+  "context_generated_at": "2026-09-03T01:02:08.868Z",
+  "action_generated_at": "2026-09-03T00:45:07.439Z",
+  "generated_at": "2026-09-03T01:10:39.284Z",
+  "model": "deepseek/deepseek-v4-flash"
+}

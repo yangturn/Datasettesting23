@@ -1,9 +1,10 @@
 import "server-only";
 
-import { mkdir, readdir, readFile, rm, writeFile } from "node:fs/promises";
+import { mkdir, readdir, readFile, rm } from "node:fs/promises";
 import path from "node:path";
 
 import { evaluationSchema, type Evaluation } from "@/lib/stage-4";
+import { writeJsonFile } from "@/server/storage/write-json";
 
 /**
  * Evaluations live at
@@ -101,10 +102,9 @@ export async function writeEvaluation(evaluation: Evaluation): Promise<void> {
   }
 
   await mkdir(dir, { recursive: true });
-  await writeFile(
+  await writeJsonFile(
     path.join(dir, `${evaluation.flow_key}.json`),
-    `${JSON.stringify(evaluation, null, 2)}\n`,
-    "utf8",
+    evaluation,
   );
 }
 

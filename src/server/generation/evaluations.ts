@@ -90,7 +90,7 @@ Rules:
 
 Memory-access rule:
 - If decision_mode is IMMEDIATE, include immediate memories and exclude reflective memories.
-- If decision_mode is REFLECTIVE, include both immediate and reflective memories.
+- If decision_mode is REFLECTION_AVAILABLE, include both immediate and reflective memories.
 - Never reconstruct or allude to an excluded reflective memory.
 
 Return exactly one JSON object with no additional prose.`;
@@ -109,12 +109,12 @@ export function buildContextPrompt({
   scenario: Scenario;
   mode: DecisionMode;
 }): string {
-  // Appended only in REFLECTIVE mode. The block is absent rather than empty:
-  // an empty "Reflective memories" heading tells the model that reflective
-  // material exists and was withheld, which is itself information the immediate
-  // context is not supposed to carry.
+  // Appended only in REFLECTION_AVAILABLE mode. The block is absent rather
+  // than empty: an empty "Reflective memories" heading tells the model that
+  // reflective material exists and was withheld, which is itself information
+  // the immediate context is not supposed to carry.
   const reflective =
-    mode === "REFLECTIVE"
+    mode === "REFLECTION_AVAILABLE"
       ? `
 
 Reflective memories:
@@ -148,7 +148,7 @@ Relationship profiles:
 ${contextBlock(scenario, "relationship_profiles")}
 """
 
-Tendencies:
+Established tendencies:
 
 """
 ${contextBlock(scenario, "tendencies")}
@@ -166,9 +166,9 @@ Immediate memories:
 ${contextBlock(scenario, "immediate_memories")}
 """${reflective}
 
-Consolidate exactly the supplied information into a neutral evaluation context.
+Consolidate exactly the permitted supplied information into a neutral independent evaluation context.
 
-Do not perform psychological appraisal, infer missing character information, or predict an action.
+Do not perform psychological appraisal, infer missing character information, describe possible responses, or predict an action.
 
 Return JSON only:
 
@@ -193,33 +193,61 @@ character_consistency:
 Does the action fit the character description, relationship profiles, and established behavioral tendencies?
 
 situation_fit:
-Does the action directly and feasibly respond to the objective situation, including its timing and practical constraints?
+Does the action directly and feasibly respond to the objective situation?
+
+For an IMMEDIATE decision, can the action be initiated within the available response window without requiring unavailable preparation, information, delay, or extended deliberation?
 
 state_memory_alignment:
-Does the action fit the character’s current emotional, physical, and cognitive state and the memories available in the evaluation context?
+Does the action fit the character’s current emotional, physical, and cognitive state and only the memories available under the specified decision mode?
 
 action_plausibility:
 Considering all available evidence together, is the action a believable response for this particular character? The action does not need to be optimal, uniquely correct, or perfectly consistent.
 
 reasoning_coherence:
-Does the generated reason provide a coherent and grounded explanation of how the available character and situational evidence led to the final action? For a reflective decision, does it explain how deliberation retained, strengthened, softened, or reversed the initial tendency?
+Does the generated reason coherently and accurately connect the available character, relationship, situational, state, and memory evidence to the final action?
 
-Rules:
-- Treat the independent evaluation context as canonical.
-- Evaluate character_consistency, situation_fit, state_memory_alignment, and action_plausibility from the predicted action.
-- Do not allow the generated reason to justify or rescue an implausible action.
-- Evaluate reasoning_coherence only after completing the four action-related scores.
-- Do not invent information to support the action or reason.
-- For reasoning_coherence, penalize reasons that introduce unsupported facts, memories, motives, goals, or circumstances.
-- Judge each dimension only against its corresponding evidence.
-- When the context contains no evidence relevant to an action dimension, assign a neutral score of 5.
-- Do not reward moral correctness, politeness, safety, rationality, or optimality.
-- Multiple actions may be plausible.
-- Do not require the action to reflect every supplied detail.
-- A concise reason can score highly if it is coherent and sufficiently grounded.
-- Do not reward a reason merely for being detailed or persuasive.
-- Score each dimension independently; do not automatically assign similar scores.
-- Return scores only, without explanations or additional fields.
+For an IMMEDIATE decision, does the reason focus on the most salient immediate cues, current state, practical constraints, and immediately accessible memories without relying on reflective memories or prolonged deliberation?
+
+For a REFLECTION_AVAILABLE decision, does the reason demonstrate appropriate consideration of relevant reflective memories, broader experience, and competing evidence? Reflection may reinforce, qualify, or change the immediate considerations; it does not need to change the resulting action.
+
+General rules:
+
+* Treat the independent evaluation context as canonical.
+* Evaluate character_consistency, situation_fit, state_memory_alignment, and action_plausibility from the predicted action.
+* Do not allow the generated reason to justify or rescue an implausible action.
+* Complete the four action-related scores before evaluating reasoning_coherence.
+* Do not invent information to support the action or reason.
+* For reasoning_coherence, penalize reasons that introduce unsupported facts, memories, motives, goals, relationships, or circumstances.
+* Judge each dimension only against its corresponding evidence.
+* When the context contains no evidence relevant to an action dimension, assign that dimension a neutral score of 5.
+* Do not reward moral correctness, politeness, safety, rationality, or optimality.
+* Multiple actions may be plausible.
+* Do not require the action to reflect every supplied detail.
+* A concise reason can score highly when it is coherent and sufficiently grounded.
+* Do not reward a reason merely for being detailed, persuasive, or psychologically elaborate.
+* Score each dimension independently; do not automatically assign similar scores.
+* Return scores only, without explanations or additional fields.
+
+Decision-mode evaluation:
+
+IMMEDIATE:
+
+* Emphasize response latency, immediate feasibility, current state, and immediately accessible memories.
+* Penalize an action that requires more time, preparation, information, or deliberation than the situation permits.
+* Do not penalize a reason merely for being concise.
+* Penalize a reason that relies on reflective memories excluded from the evaluation context.
+* Penalize a reason that represents the action as depending on prolonged reflection unavailable before the required response.
+* Do not require discussion of long-term consequences or competing abstract considerations.
+
+REFLECTION_AVAILABLE:
+
+* Evaluate whether the reason meaningfully considers relevant reflective memories and broader evidence when such evidence exists.
+* Do not reward reflection merely for being lengthy or mentioning every supplied memory.
+* Do not require reflection to change the action.
+* Do not penalize the reason for omitting a reflective memory that has no material relevance.
+* Do not penalize the reason when no supplied reflective evidence is materially relevant.
+* If the reason claims that reflection changed or qualified the character’s inclination, the stated change must be supported by the available evidence.
+* A reason may score highly when reflection reinforces the same action rather than changing it.
 
 Use the full scale:
 
@@ -235,55 +263,73 @@ Use the full scale:
 10 = Exceptionally well supported with no meaningful inconsistency.
 
 Important:
-- Do not default to scores between 7 and 9.
-- Use scores below 5 when the action or reason conflicts with relevant evidence.
-- Use 5 when the evidence does not meaningfully support or contradict an action dimension.
-- A merely reasonable action or explanation should receive 5 or 6, not 8 or 9.
-- Reserve 9 and 10 for unusually strong alignment with the relevant evidence.
-- Return exactly one JSON object.`;
+
+* Do not default to scores between 7 and 9.
+* Use scores below 5 when the action or reason conflicts with relevant evidence.
+* Use 5 when the evidence does not meaningfully support or contradict an action dimension.
+* A merely reasonable action or explanation should receive 5 or 6, not 8 or 9.
+* Reserve 9 and 10 for unusually strong alignment with the evidence for that specific dimension.
+* Return exactly one JSON object.`;
 
 export function buildScorePrompt({
   context,
   action,
   reason,
+  mode,
 }: {
   context: EvaluationContext;
   action: string;
   reason: string;
+  mode: DecisionMode;
 }): string {
   // The reason now reaches the judge, where it used to be withheld: it is
   // scored in its own right by reasoning_coherence. The old guarantee — that a
   // fluent explanation cannot talk up a poor action — is no longer structural,
   // so the prompt carries it instead, both in the rules and in the instruction
   // to score the action before reading the reason.
-  return `Independent evaluation context:
+  //
+  // The mode is stated because reasoning_coherence asks different things of an
+  // immediate reason and a reflective one, and the consolidated context does
+  // not say which memories were withheld from the flow being judged.
+  return `Decision mode:
+
+"""
+${mode}
+"""
+
+Independent evaluation context:
 
 Character and relationship context:
+
 """
 ${context.character_and_relationship_context}
 """
 
 Objective situation:
+
 """
 ${context.objective_situation}
 """
 
 State and available memories:
+
 """
 ${context.state_and_available_memories}
 """
 
 Predicted action:
+
 """
 ${action}
 """
 
 Generated reason:
+
 """
 ${reason}
 """
 
-Evaluate the action first, without using the generated reason to improve its scores. Then evaluate the coherence of the generated reason.
+Evaluate the action first without using the generated reason to improve its scores. Then evaluate the coherence of the generated reason under the requirements of the specified decision mode.
 
 Return scores only:
 
@@ -570,6 +616,7 @@ export async function runEvaluations({
           system: CONTEXT_SYSTEM,
           prompt: buildContextPrompt({ description, scenario, mode }),
           signal: run?.signal,
+          temperature: 0,
         });
 
         context = {
@@ -580,7 +627,7 @@ export async function runEvaluations({
           scenario_title: scenario.title,
           situation_type: scenario.situation_type,
           decision_mode: mode,
-          reflective_memories_included: mode === "REFLECTIVE",
+          reflective_memories_included: mode === "REFLECTION_AVAILABLE",
           scenario_generated_at: scenario.generated_at,
           // Non-null because only complete scenarios are planned.
           scenario_context_generated_at: scenario.context_generated_at ?? "",
@@ -623,8 +670,9 @@ export async function runEvaluations({
         const scores = await generateJson({
           schema: evaluationScoresSchema,
           system: SCORE_SYSTEM,
-          prompt: buildScorePrompt({ context, action, reason }),
+          prompt: buildScorePrompt({ context, action, reason, mode }),
           signal: run?.signal,
+          temperature: 0,
         });
 
         const evaluation: Evaluation = {

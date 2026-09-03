@@ -1,12 +1,10 @@
 import "server-only";
 
-import { mkdir, readdir, readFile, rm, writeFile } from "node:fs/promises";
+import { mkdir, readdir, readFile, rm } from "node:fs/promises";
 import path from "node:path";
 
-import {
-  evaluationContextSchema,
-  type EvaluationContext,
-} from "@/lib/stage-4";
+import { evaluationContextSchema, type EvaluationContext } from "@/lib/stage-4";
+import { writeJsonFile } from "@/server/storage/write-json";
 
 /**
  * Evaluation contexts live at
@@ -59,7 +57,9 @@ export async function readEvaluationContext(
 }
 
 /** Every evaluation context on disk, for the planner and the coverage counts. */
-export async function listAllEvaluationContexts(): Promise<EvaluationContext[]> {
+export async function listAllEvaluationContexts(): Promise<
+  EvaluationContext[]
+> {
   let profileIds: string[];
   try {
     profileIds = await readdir(CONTEXTS_DIR);
@@ -109,7 +109,7 @@ export async function writeEvaluationContext(
   }
 
   await mkdir(path.dirname(file), { recursive: true });
-  await writeFile(file, `${JSON.stringify(context, null, 2)}\n`, "utf8");
+  await writeJsonFile(file, context);
 }
 
 /**

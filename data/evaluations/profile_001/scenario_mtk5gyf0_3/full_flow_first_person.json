@@ -1,0 +1,24 @@
+{
+  "profile_id": "profile_001",
+  "scenario_id": "scenario_mtk5gyf0_3",
+  "flow_key": "full_flow_first_person",
+  "name": "Aminata Diallo",
+  "scenario_title": "The Friday Tea Stop",
+  "scores": {
+    "character_consistency": 2,
+    "situation_fit": 8,
+    "state_memory_alignment": 8,
+    "action_plausibility": 6,
+    "reasoning_coherence": 8
+  },
+  "overall_score": 6.4,
+  "score_scale": 10,
+  "dimension_set": 4,
+  "action": "Aminata pauses for a moment beside the tea stall, then turns away from the vendor and continues down the street toward the bus stop, keeping the ticket in her pocket and not buying the tea.",
+  "reason": "Aminata’s initial tendency was to linger at the stall, weighing the small comfort of tea against the money and time it would cost. Reflection strengthened the pull toward discipline by making the bus ticket feel more important than the tea: it was tied to getting home before dark, preserving her strength for studying, and avoiding the kind of small spending mistake that can disrupt her tightly managed savings. Because Aminata is habitually frugal, cautious, and protective of every coin after family experiences with financial loss, the revised action tendency to leave and use the ticket became the most plausible immediate behavior, though she still hesitates briefly because the tea and her mother’s memory retain some pull.",
+  "decision_mode": "REFLECTION_AVAILABLE",
+  "context_generated_at": "2026-09-03T01:38:03.490Z",
+  "action_generated_at": "2026-09-03T00:46:10.392Z",
+  "generated_at": "2026-09-03T01:38:47.795Z",
+  "model": "deepseek/deepseek-v4-flash"
+}

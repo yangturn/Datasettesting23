@@ -1,0 +1,24 @@
+{
+  "profile_id": "profile_001",
+  "scenario_id": "scenario_mtk5mtfl_6",
+  "flow_key": "full_flow_v2",
+  "name": "Aminata Diallo",
+  "scenario_title": "A Walk to See School Bags",
+  "scores": {
+    "character_consistency": 7,
+    "situation_fit": 8,
+    "state_memory_alignment": 7,
+    "action_plausibility": 7,
+    "reasoning_coherence": 8
+  },
+  "overall_score": 7.4,
+  "score_scale": 10,
+  "dimension_set": 4,
+  "action": "Aminata closes her notebook, rises from her mat, and tells Fatoumata, \"Let’s go look.\"",
+  "reason": "Aminata’s first impulse was to keep studying and linger over the remaining problems, but reflection STRENGTHENED her pull toward going with Fatoumata. The memory of carrying torn schoolbooks, her habit of checking what will last, and the family lesson that showing up matters made the bag search feel like a real responsibility rather than a distraction. Even though her sore shoulders, the six unfinished practice problems, and the limited lamp oil still pressed on her, the revised tendency was to accompany Fatoumata and give the careful judgment she was asked for, so she puts the notebook aside and goes with her.",
+  "decision_mode": "REFLECTION_AVAILABLE",
+  "context_generated_at": "2026-09-03T01:02:08.868Z",
+  "action_generated_at": "2026-09-03T00:45:21.666Z",
+  "generated_at": "2026-09-03T01:02:42.281Z",
+  "model": "deepseek/deepseek-v4-flash"
+}

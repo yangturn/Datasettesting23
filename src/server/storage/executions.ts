@@ -1,9 +1,10 @@
 import "server-only";
 
-import { mkdir, readdir, readFile, rm, writeFile } from "node:fs/promises";
+import { mkdir, readdir, readFile, rm } from "node:fs/promises";
 import path from "node:path";
 
 import { executionSchema, type Execution } from "@/lib/stage-3";
+import { writeJsonFile } from "@/server/storage/write-json";
 
 /**
  * Executions live at
@@ -114,11 +115,7 @@ export async function writeExecution(execution: Execution): Promise<void> {
   }
 
   await mkdir(dir, { recursive: true });
-  await writeFile(
-    path.join(dir, `${execution.flow_key}.json`),
-    `${JSON.stringify(execution, null, 2)}\n`,
-    "utf8",
-  );
+  await writeJsonFile(path.join(dir, `${execution.flow_key}.json`), execution);
 }
 
 /**

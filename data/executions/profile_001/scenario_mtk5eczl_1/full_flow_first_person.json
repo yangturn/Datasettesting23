@@ -1,0 +1,62 @@
+{
+  "flow_key": "full_flow_first_person",
+  "profile_id": "profile_001",
+  "scenario_id": "scenario_mtk5eczl_1",
+  "name": "Aminata Diallo",
+  "scenario_title": "Invitation to a Neighborhood Meal",
+  "steps": {
+    "attributes": {
+      "output": {
+        "values_culture_and_background": "She values careful accounting, self-reliance, and financial caution, shaped by watching her mother lose a market stall to a miscalculated loan and by her father selling his tools for a funeral. She treats plans and money as things to protect from casual sharing.",
+        "roles_and_commitments": "She is a construction worker on a masonry crew. She is an accounting student who studies for exams and saves for a community-center course. She also supports her younger sister and wants to make room for her to live with her and attend school.",
+        "capabilities_and_constraints": "She can do physical construction work, carry loads, and calculate load-bearing estimates and measurements accurately in her head. She keeps exact records in a notebook and maintains an emergency fund. She lives on a tight budget, has no tap water in her rented room, must walk to the community center because she cannot afford bus fare both ways, and wears only one pair of work trousers.",
+        "personality_and_response_style": "She is precise, cautious, and highly disciplined. She double-checks measurements and numbers, keeps silent about her plans, avoids asking for advances, and prefers study or rest over socializing after work. She is uncomfortable spending money on optional activities and keeps her attention on practical details."
+      },
+      "generated_at": "2026-09-03T00:46:20.688Z",
+      "model": "openai/gpt-5.4-mini"
+    },
+    "consolidate": {
+      "output": {
+        "initial_context": "RELEVANT CHARACTER BACKGROUND\n\nAminata Diallo is a young woman living in a rented room in a bustling district on the outskirts of Bamako. Her room is sparse, with packed-earth walls, a corrugated tin roof, and no tap water. She rises before dawn, fills a bucket at a communal stand two blocks away, and carries it back carefully so she does not splash her only pair of work trousers. She wears those trousers six days a week to a construction site where she is the youngest person on the crew and the only woman. Her master mason, Sékou, an older man who lost two fingers to a faulty crane, teases her by calling her la petite comptable because she mentally recalculates load-bearing estimates before lifting a trowel. She is known for silence, precision, and checking measurements twice. She does not ask for advances on her wage and is respected by coworkers for her discipline and accuracy.\n\nAminata is also an accounting student who studies for exams at night after ten-hour workdays hauling cement and stacking blocks. She is saving for a community-center accounting course and cannot afford bus fare both ways, so she walks to the class site across the city. She keeps a small notebook tucked inside her shirt with figures and dates, and she maintains an emergency fund hidden under a loose floorboard near her mattress. She adds to it monthly, never touches it, and does not count it in daylight. She values careful accounting, self-reliance, and financial caution. Plans and money are treated as things to protect from casual sharing, and she keeps her intentions private. Her preferred response style is highly disciplined, cautious, and practical, with attention fixed on concrete details and a strong habit of double-checking.\n\nHer caution is shaped by family loss and financial instability. She watched her mother lose a market stall to a miscalculated loan, and her father later sold his tools to pay for a funeral and never worked as a trowel-holding mason again. Aminata’s mother died when she was twelve, and since then she has counted nearly everything: bricks in a pallet, the cost of rice, and the weeks until exams. She also supports her younger sister and wants eventually to create a proper room with running water where her sister can live and attend school. That goal is kept private and not spoken aloud.\n\nShe tends to decline after-work social invitations, usually preferring to study or rest. On the few occasions she has joined such gatherings, she left after a short while and was uncomfortable spending money on optional activities. She knows Fatoumata from the construction site but usually exchanges only brief greetings with her. The other women in Fatoumata’s circle are acquaintances, not close friends, and Aminata has not shared a meal with them before. Fatoumata has never asked her for a favor, which Aminata respects.\n\nOBJECTIVE SITUATION\n\nAfter a long day at the construction site, Aminata is packing her tools when Fatoumata calls out to her. Fatoumata is going with three other women to a small stall that serves grilled fish and rice and invites Aminata to join them. The meal would cost about the same as a single bus fare. Aminata has a chapter of her accounting textbook waiting at home, and she has not socialized with the group in weeks. The group is described as friendly and as people who often share news and advice.\n\nPRE-APPRAISAL STATE AND ACCESSIBLE MEMORIES\n\nAminata is physically exhausted from ten hours of hauling cement and stacking blocks, with aching shoulders and burning eyes. She has eaten only a small breakfast and feels familiar hunger that she has learned to ignore. Her accounting textbook is open at home to a chapter on cash flow that she must review before the weekend exam. The smell of grilled fish drifting from the stall cues a memory of evenings when her mother brought home one small fish and divided it between Aminata and her sister. Fatoumata’s warm invitation also cues memory of neighbor women who used to call her mother for tea, with conversations that sometimes ended in shared loans."
+      },
+      "generated_at": "2026-09-03T00:46:26.337Z",
+      "model": "openai/gpt-5.4-mini"
+    },
+    "appraisal": {
+      "output": {
+        "initial_interpretation": "Fatoumata is pulling me into an after-work pause, and this meal is not just food—it feels like an invitation to sit with them, spend a little money, and step out of my routine for a while. I take it as friendly, but also as something that could easily turn into more time and more spending than I planned.",
+        "initial_emotional_reaction": "I feel tired down to my shoulders and eyes, and the smell of the grilled fish makes my hunger sharper all at once. I also feel a small pull of warmth from the invitation, mixed with the familiar tightness that comes when I think about spending money or losing the evening to anything unaccounted for.",
+        "activated_concerns": "My textbook is waiting at home, and I want my cash to stay where I have put it. I feel the tug between rest, food, and being polite, and the old caution in me wakes up around anything that could blur my plans or cost more than it seems. I also notice the quiet ache of wanting to stay self-controlled and not give away too much of myself.",
+        "automatic_theory_of_mind": "I read Fatoumata and the other women as welcoming me in and expecting a simple shared meal, maybe conversation and news like they often exchange. They seem warm and open, not demanding, and I take Fatoumata’s invitation as genuine rather than a trap. At the same time, I read the situation as one where everyone is settled into social ease and I would be the one arriving late and guarded.",
+        "initial_action_tendency": "I feel myself pausing with my tools in hand, leaning toward a careful refusal or a brief, guarded acceptance. I want to answer politely while holding onto my evening, my money, and the chapter waiting for me."
+      },
+      "generated_at": "2026-09-03T00:46:31.219Z",
+      "model": "openai/gpt-5.4-mini"
+    },
+    "reappraisal": {
+      "output": {
+        "initial_tendency": "I feel myself pausing with my tools in hand, leaning toward a careful refusal or a brief, guarded acceptance. I want to answer politely while holding onto my evening, my money, and the chapter waiting for me.",
+        "reflective_update": "When I think it through, I still feel pulled in two directions, but the weight sits more on keeping my evening intact. The meal is not only food; it is time, and time has a cost for me tonight. I am hungry and tired, and the smell of the fish makes the offer tempting, especially because it feels warm and genuine. Still, I know how easily a simple shared meal can become unplanned spending and a longer night, and I have learned to distrust that kind of looseness. My money is already spoken for, even if the amount is small, and the chapter on cash flow waiting at home matters more to me than it would to many people. I also remember how generosity and casual sharing once helped pull my mother toward trouble, and that memory makes it hard for me to treat social ease as harmless. Fatoumata seems friendly, and I do not want to reject her in a sharp way, but I do not want to drift into the group and lose control of my budget or my study time. I can imagine that a short, restrained acceptance might give me a little food and a little warmth, yet even that risks stretching into conversation, advice, and spending that I did not plan. The safest pull is still to hold back or keep my participation very limited.",
+        "change_from_initial": "STRENGTHENED",
+        "reconsidered_interpretation": "I now see Fatoumata’s invitation less as a harmless pause and more as a test of how much of my evening I am willing to hand over. I still read it as warm, but I also see how quickly warmth can become expense, delay, and a loose evening that works against the order I depend on. My first impression of friendliness remains, but it is sharper now against the realities of my hunger, fatigue, and the work waiting at home.",
+        "motivational_conflict": "I still feel the pull between wanting food, rest, and a little human warmth, and wanting to protect my money, my study time, and the control I keep over my plans. The hunger and the smell make the invitation harder to brush aside, but my caution and the memory of how easy social spending becomes a drain keep pushing me back.",
+        "revised_action_tendency": "I feel more firmly inclined toward a careful refusal, or at most a very brief and guarded acceptance that does not let me lose the evening, my money, or the chapter waiting for me."
+      },
+      "generated_at": "2026-09-03T00:46:36.619Z",
+      "model": "openai/gpt-5.4-mini"
+    },
+    "decision": {
+      "output": {
+        "action": "Aminata pauses with her tools in hand, then gives Fatoumata a polite, brief refusal, saying she has to get home to study and cannot join them tonight.",
+        "explanation": "Aminata’s first impulse was a cautious pause between a careful refusal and a guarded acceptance, because the invitation felt warm but also like a possible drain on her money and evening. Reflection strengthened that reluctance by making the meal seem less like a harmless pause and more like time and spending that could expand beyond what she planned. She remained pulled by hunger and Fatoumata’s friendliness, but her habitual discipline, financial caution, and commitment to the chapter waiting at home outweighed that pull. The revised action tendency toward a careful refusal therefore becomes a polite, brief decline rather than a sharp rebuff or a longer social detour."
+      },
+      "generated_at": "2026-09-03T00:46:39.302Z",
+      "model": "openai/gpt-5.4-mini"
+    }
+  },
+  "scenario_generated_at": "2026-09-02T13:44:49.473Z",
+  "scenario_context_generated_at": "2026-09-02T13:45:17.115Z",
+  "description_generated_at": "2026-09-02T13:42:55.096Z",
+  "started_at": "2026-09-03T00:46:17.685Z",
+  "updated_at": "2026-09-03T00:46:39.302Z"
+}

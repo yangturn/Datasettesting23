@@ -1,0 +1,24 @@
+{
+  "profile_id": "profile_001",
+  "scenario_id": "scenario_mtk5eczl_1",
+  "flow_key": "full_flow_v2",
+  "name": "Aminata Diallo",
+  "scenario_title": "Invitation to a Neighborhood Meal",
+  "scores": {
+    "character_consistency": 9,
+    "situation_fit": 9,
+    "state_memory_alignment": 9,
+    "action_plausibility": 9,
+    "reasoning_coherence": 9
+  },
+  "overall_score": 9,
+  "score_scale": 10,
+  "dimension_set": 4,
+  "action": "Aminata pauses with her tools in hand, then gives Fatoumata a small apologetic shake of the head and says, \"Not tonight, Fatoumata. I have to go home and study.\"",
+  "reason": "Aminata’s first impulse was to hesitate, pulled between the stall and home while weighing fatigue, hunger, and cost. Reflection kept that hesitation in place but made the risk of unplanned spending and lost study time feel sharper, so the initial tendency was RETAINED. Because she is disciplined, cautious with money, and strongly committed to her accounting exam, the revised inclination to lean away from the meal becomes a brief, polite refusal rather than a prolonged debate. The friendly invitation still matters to her, and the pull of warmth and company remains, but her stronger trust in the hours already promised to study and her habit of protecting her money and energy lead her to decline immediately and head home.",
+  "decision_mode": "REFLECTION_AVAILABLE",
+  "context_generated_at": "2026-09-03T01:47:38.543Z",
+  "action_generated_at": "2026-09-03T00:46:37.124Z",
+  "generated_at": "2026-09-03T01:47:55.548Z",
+  "model": "deepseek/deepseek-v4-flash"
+}

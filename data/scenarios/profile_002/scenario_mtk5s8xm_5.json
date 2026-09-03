@@ -1,0 +1,21 @@
+{
+  "id": "scenario_mtk5s8xm_5",
+  "profile_id": "profile_002",
+  "name": "Ingrid Lindgren",
+  "headline": "34-year-old owner of a boutique hotel, caring for her mother in Stockholm, Sweden",
+  "title": "Baking Request",
+  "situation_type": "NORMAL",
+  "life_domain": "FAMILY",
+  "situation": "On a quiet weekday afternoon, Ingrid is at the front desk reviewing invoices when her mother approaches and asks if they can bake cookies together, like they used to when Ingrid was a child. Ingrid has a contractor arriving in thirty minutes to discuss the renovation of suite 7. Her mother's eyes are bright with anticipation. Ingrid must decide whether to agree now and reschedule the contractor, or gently explain that she's busy and promise to bake later in the evening.",
+  "context": {
+    "relationship_profiles": "With her mother, Ingrid is the primary caregiver, patient and attentive, but she also knows that her mother's dementia makes her forget recent promises while vividly recalling distant memories. She has a professional relationship with the contractor, Mr. Eriksson, who has done reliable work on the hotel before and respects her directness.",
+    "tendencies": "When her mother makes a spontaneous request during work hours, Ingrid has sometimes postponed it to a scheduled time, but she has also occasionally dropped everything for a request that seems emotionally urgent, especially if her mother's mood is fragile. She habitually reschedules contractors when she deems a family matter more pressing.",
+    "current_state": "Ingrid is seated at the front desk, her tablet showing an invoice spreadsheet, feeling mildly tired from a late night of paperwork but alert. She is mentally tracking the contractor's arrival time and the tasks for suite 7, a minor renovation she has planned down to the last detail.",
+    "immediate_memories": "The word 'cookies' brings back a clear image of standing on a stool in her mother's old kitchen, measuring flour while her mother hummed, on a rainy afternoon when she was about eight.",
+    "reflective_memories": "She remembers that over the past year, her mother's requests to do things from the past have become rarer, and when they come, her mother's eyes are often less bright than they used to be. She also recalls a time last month when she promised to bake in the evening but her mother had forgotten by then, and was already asleep."
+  },
+  "context_generated_at": "2026-09-02T13:55:45.742Z",
+  "description_generated_at": "2026-09-02T13:43:19.287Z",
+  "generated_at": "2026-09-02T13:55:37.402Z",
+  "model": "deepseek/deepseek-v4-flash"
+}

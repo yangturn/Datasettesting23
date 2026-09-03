@@ -1,0 +1,37 @@
+{
+  "flow_key": "her_dual_layered_thinking",
+  "profile_id": "profile_002",
+  "scenario_id": "scenario_mtk5m42n_2",
+  "name": "Ingrid Lindgren",
+  "scenario_title": "Morning Tea or Hand Soap",
+  "steps": {
+    "system_thinking": {
+      "output": {
+        "system_thinking": "I need to portray Ingrid as slightly tired but disciplined, with her quiet satisfaction about her mother’s calm state not overriding her habitual focus on small operational details. The immediate interpretation is that the forgotten third-floor hand soap is a minor but time-sensitive task, and her memory of the empty dispenser in suite 7 plus her grandfather’s warning about small missed orders snowballing should push her to act now rather than postpone it. Her private role thinking should stay practical and mildly irked by the prospect of another guest complaint, while also feeling the familiar responsibility to prevent avoidable service failures. Observable behavior should be understated: she likely pauses over her tea, then uses the break to place the soap order promptly, with the same efficient, no-nonsense manner she uses for routine operations. If she speaks at all, it should be brief and businesslike—something along the lines of acknowledging she needs to handle one quick order before the day starts—without drama, because her established pattern is to fix small problems early and keep the hotel running smoothly while her mother remains settled nearby."
+      },
+      "generated_at": "2026-09-03T00:46:01.348Z",
+      "model": "openai/gpt-5.4-mini"
+    },
+    "role_response": {
+      "output": {
+        "role_thinking": "I’m tired, but this is exactly the sort of thing that turns into a complaint if I leave it. The empty dispenser in suite 7 is still in my head, and I don’t want another apology over something I should have fixed already. Mother is calm, so I can use these few minutes properly and get it done.",
+        "action": "Ingrid sets her tea down, picks up her phone, and places the order for the third-floor bathroom hand soap before the front desk opens."
+      },
+      "generated_at": "2026-09-03T00:46:03.391Z",
+      "model": "openai/gpt-5.4-mini"
+    },
+    "decision": {
+      "output": {
+        "action": "Ingrid sets her tea down, picks up her phone, and places the order for the third-floor bathroom hand soap before the front desk opens.",
+        "explanation": "Ingrid is tired, but she sees the soap refill as the kind of thing that could turn into a complaint if she leaves it. The memory of the empty dispenser in suite 7 and the irritation of having to apologize for it make her not want another apology over something she should already have fixed. Because her mother is calm, she feels able to use the few minutes properly and get the order done."
+      },
+      "generated_at": "2026-09-03T00:46:05.584Z",
+      "model": "openai/gpt-5.4-mini"
+    }
+  },
+  "scenario_generated_at": "2026-09-02T13:50:51.167Z",
+  "scenario_context_generated_at": "2026-09-02T13:50:59.082Z",
+  "description_generated_at": "2026-09-02T13:43:19.287Z",
+  "started_at": "2026-09-03T00:45:57.980Z",
+  "updated_at": "2026-09-03T00:46:05.584Z"
+}

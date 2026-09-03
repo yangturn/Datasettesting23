@@ -1,0 +1,62 @@
+{
+  "flow_key": "full_flow_v2",
+  "profile_id": "profile_001",
+  "scenario_id": "scenario_mtk5ntqn_7",
+  "name": "Aminata Diallo",
+  "scenario_title": "Invitation to a Neighborhood Celebration",
+  "steps": {
+    "attributes": {
+      "output": {
+        "values_culture_and_background": "She values careful accounting, precision, and self-reliance. She learned to double-check and count everything from losses tied to a miscalculated loan and from watching her father sell his tools after a funeral. She comes from a background where neighborhood relationships can provide practical support such as loans and child care, and she has internalized caution about speaking plans aloud because they can be borrowed against.",
+        "roles_and_commitments": "She is a construction worker on a crew in Bamako and a student in an accounting course. She has an ongoing commitment to saving for her younger sister to live with her and attend school. She maintains an emergency fund that she adds to monthly and does not touch.",
+        "capabilities_and_constraints": "She can calculate load-bearing estimates in her head, keep careful records of figures and dates, and work long physical shifts hauling cement and stacking blocks. She is saving for accounting training and studies at night. She has limited money, cannot afford bus fare both ways to class, and therefore walks long distances. She rents a room without tap water and relies on a communal stand for water.",
+        "personality_and_response_style": "She is quiet, precise, and highly cautious. She tends to double-check measurements, keep her plans private, avoid asking for advances on wages, and stay attentive to details by counting steps, bricks, and costs. She is not drawn to teasing or casual display and shows restraint in social settings."
+      },
+      "generated_at": "2026-09-03T00:44:59.097Z",
+      "model": "openai/gpt-5.4-mini"
+    },
+    "consolidate": {
+      "output": {
+        "initial_context": "RELEVANT CHARACTER BACKGROUND\n\nAminata Diallo is a young woman living in a rented room in a bustling district on the outskirts of Bamako. Her room has packed-earth walls, a corrugated tin roof, and no tap water; she fetches water each morning from a communal stand two blocks away. She works six days a week on a construction crew, where she is the youngest person and the only woman. Her master mason, Sékou, is an older man who lost two fingers to a faulty crane and teases her by calling her \"la petite comptable\" because she mentally recalculates load-bearing estimates before working. She also studies accounting at night in order to save for formal accounting training, walking to the community center on the other side of the city because she cannot afford bus fare both ways. She keeps a small notebook of figures and dates tucked inside her shirt and maintains an emergency fund hidden under a loose floorboard near her mattress, adding the same amount each month and never touching it in daylight.\n\nHer background includes a long-standing practice of careful accounting, precision, and self-reliance. She learned to double-check and count everything after watching her mother lose a market stall to a miscalculated loan, and after her mother died when Aminata was twelve she continued to count bricks, costs, steps, and weeks with habitual exactness. She also watched her father sell his tools to pay for a funeral and never use a trowel again, reinforcing her caution about losses and resources. She values careful recordkeeping, restraint, and practical reliability, and she does not speak about plans openly because she has learned that spoken plans can be borrowed against. She is quiet, highly cautious, and generally reserved in social settings. She avoids asking for advances on wages, tends to keep her intentions private, and is attentive to detail in work and movement. She does not respond with casual display or easy banter, and she is known for restraint rather than conspicuous sociability.\n\nHer roles and commitments include her paid construction work, her accounting studies, her ongoing saving toward a proper room with running water where her younger sister can live with her and attend school, and the monthly maintenance of her emergency fund. Her practical constraints are significant: she is financially stretched, relies on walking long distances, works physically demanding shifts hauling cement and stacking blocks, and studies by a kerosene lamp at night. Her neighborhood context also matters: it is a place where local relationships can provide practical support such as loans and child care, though she treats such arrangements cautiously.\n\nShe has a history of selective participation in social life. She has declined previous coworker invitations when a study deadline was close, but she has also attended work-related gatherings when she judged the goodwill worth the time lost to studying. Among her coworkers, Moussa stands out as the only one who occasionally covers for her when she arrives late from studying, and he has never asked for repayment.\n\nOBJECTIVE SITUATION\n\nAfter a long day at the construction site, Moussa tells Aminata that his family is hosting a celebration tonight for the birth of his first child. He says the whole neighborhood will be there and insists that she come. Aminata is finishing packing her tools while he waits for her answer. She is exhausted, has studying to do, and knows that at such events young women are often expected to sit with the elders and help serve tea while the men talk.\n\nPRE-APPRAISAL STATE AND ACCESSIBLE MEMORIES\n\nAminata’s shoulders ache from stacking blocks all day, her stomach is empty because she skipped lunch to save money, and her study lamp has no extra kerosene. Moussa’s invitation directly cues a recent memory of a similar event last year in which she was asked to serve tea and missed the last bus home, forcing her to walk two hours. That memory is directly accessible in the present because of the proposed celebration and the likely social expectations attached to it."
+      },
+      "generated_at": "2026-09-03T00:45:05.011Z",
+      "model": "openai/gpt-5.4-mini"
+    },
+    "appraisal": {
+      "output": {
+        "initial_interpretation": "Aminata takes Moussa’s invitation as a social obligation dressed up as a friendly ask, with the celebration likely pulling her into the usual role young women are given at such gatherings. It feels to her like an evening that will not simply be a visit, but a demand on her time, her labor, and her way home.",
+        "initial_emotional_reaction": "She feels tired down to her shoulders and sharply reluctant, with a thread of appreciation for Moussa mixed with immediate dread at being trapped out late again. The emptiness in her stomach and the thought of her study lamp make the invitation feel heavier and more irritating.",
+        "activated_concerns": "Her study time, her ability to get home without losing hours on foot, and the little money and energy she has left all feel at stake. She also feels the pull of politeness, neighborhood goodwill, and not dismissing Moussa after he has covered for her before.",
+        "automatic_theory_of_mind": "Aminata reads Moussa as wanting her there because he values her presence at this family celebration and expects her to honor the invitation. She takes it as likely that others there will expect her to sit with the elders and serve tea, and that saying no will look ungracious.",
+        "initial_action_tendency": "Her first impulse is to hesitate and resist, with a quiet urge to refuse or postpone while keeping her tone careful. She feels pulled toward a cautious answer that protects her time and avoids being drawn into the same pattern again."
+      },
+      "generated_at": "2026-09-03T00:45:08.615Z",
+      "model": "openai/gpt-5.4-mini"
+    },
+    "reappraisal": {
+      "output": {
+        "initial_tendency": "Her first impulse is to hesitate and resist, with a quiet urge to refuse or postpone while keeping her tone careful. She feels pulled toward a cautious answer that protects her time and avoids being drawn into the same pattern again.",
+        "reflective_update": "Aminata still feels the weight of her exhaustion, her empty stomach, and the lamp waiting at home with no extra kerosene, so the practical cost of going has not disappeared. The memory of last year’s celebration still matters too: it was not just a short visit, but a night that turned into serving tea and a two-hour walk home. That makes her first reluctance still feel justified. Yet she also remembers how her mother kept showing up for neighborhood gatherings even when tired, and how those ties later became real help when the family needed loans and child care. Moussa has covered for her before without asking for repayment, so brushing him off outright would risk more than a single evening; it could weaken a useful and respectful connection. Deliberation leaves Aminata leaning toward protecting her study time and her body, but with more awareness that a complete refusal may cost her goodwill she may need later. The invitation is no longer just a nuisance to dodge; it is also a small test of how much she can give without giving up the fragile routines she is trying to protect.",
+        "change_from_initial": "SOFTENED",
+        "reconsidered_interpretation": "Aminata now sees Moussa’s invitation as both a social demand and a genuine neighborhood tie that could matter later, not only as pressure to serve tea and lose her evening. The situation still feels risky and tiring, but it also carries the possibility of preserving support in a place where relationships can become practical help.",
+        "motivational_conflict": "Aminata remains caught between self-protection and reciprocity: her body is worn out, her studies are waiting, and last year’s bad experience warns her against being trapped again, but Moussa’s past kindness and the memory of neighborhood gatherings that later brought help make a flat refusal feel costly and ungracious.",
+        "revised_action_tendency": "Her inclination softens toward a careful, limited acceptance or a very guarded refusal, with strong concern for keeping the answer polite and preserving goodwill while still trying to protect her time, energy, and the chance to study."
+      },
+      "generated_at": "2026-09-03T00:45:13.364Z",
+      "model": "openai/gpt-5.4-mini"
+    },
+    "decision": {
+      "output": {
+        "action": "Aminata pauses while finishing with her tools, then looks at Moussa and says, \"I can come for a little while, but I’ll have to leave early.\"",
+        "explanation": "Her first impulse was to hesitate and resist, wanting to refuse or postpone in order to protect her exhausted body, her study time, and her way home. Reflection softened that impulse by making Moussa’s past help and the value of neighborhood ties more salient, while keeping the memory of last year’s long, burdensome celebration firmly in view. Because the revised tendency was a careful, limited acceptance with guarded boundaries, she answers politely rather than flatly refusing, preserving goodwill while signaling that she cannot give the whole evening. This fits her generally reserved, cautious style and her habit of managing obligations without exposing more than necessary."
+      },
+      "generated_at": "2026-09-03T00:45:16.316Z",
+      "model": "openai/gpt-5.4-mini"
+    }
+  },
+  "scenario_generated_at": "2026-09-02T13:52:11.087Z",
+  "scenario_context_generated_at": "2026-09-02T13:54:19.412Z",
+  "description_generated_at": "2026-09-02T13:42:55.096Z",
+  "started_at": "2026-09-03T00:44:55.083Z",
+  "updated_at": "2026-09-03T00:45:16.316Z"
+}

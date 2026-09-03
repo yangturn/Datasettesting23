@@ -1,0 +1,22 @@
+{
+  "flow_key": "om_cot",
+  "profile_id": "profile_002",
+  "scenario_id": "scenario_mtk5s8xm_5",
+  "name": "Ingrid Lindgren",
+  "scenario_title": "Baking Request",
+  "steps": {
+    "decision": {
+      "output": {
+        "action": "She picks up the phone to reschedule Mr. Eriksson's visit.",
+        "explanation": "Ingrid has a strong pattern of putting family matters ahead of contractors, and this request is an emotionally loaded, rare memory from her mother’s past. Her mother’s bright anticipation and the specific cookie memory make the request feel especially urgent, so Ingrid is likely to prioritize it and move the renovation meeting."
+      },
+      "generated_at": "2026-09-03T00:45:35.534Z",
+      "model": "openai/gpt-5.4-mini"
+    }
+  },
+  "scenario_generated_at": "2026-09-02T13:55:37.402Z",
+  "scenario_context_generated_at": "2026-09-02T13:55:45.742Z",
+  "description_generated_at": "2026-09-02T13:43:19.287Z",
+  "started_at": "2026-09-03T00:45:32.378Z",
+  "updated_at": "2026-09-03T00:45:35.534Z"
+}

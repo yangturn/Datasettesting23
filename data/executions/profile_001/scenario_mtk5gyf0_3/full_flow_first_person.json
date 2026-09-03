@@ -1,0 +1,62 @@
+{
+  "flow_key": "full_flow_first_person",
+  "profile_id": "profile_001",
+  "scenario_id": "scenario_mtk5gyf0_3",
+  "name": "Aminata Diallo",
+  "scenario_title": "The Friday Tea Stop",
+  "steps": {
+    "attributes": {
+      "output": {
+        "values_culture_and_background": "She values careful accounting, self-reliance, and saving against hardship. Her mother’s loss of a market stall to a miscalculated loan taught her to double-check figures, and her father’s sale of his tools to pay for a funeral left a lasting lesson that material security can disappear quickly.",
+        "roles_and_commitments": "She is a construction worker on a masonry crew, the youngest person on the crew and the only woman. She is an accounting student. She sends monthly remittances to her younger sister and is saving to house her sister and support her schooling.",
+        "capabilities_and_constraints": "She is skilled at mental arithmetic and careful measurement, and she works long hours doing manual construction labor. She has limited money, no tap water at home, and must walk to her accounting course because she cannot afford bus fare both ways. She keeps an emergency fund and a small notebook for tracking figures and dates.",
+        "personality_and_response_style": "She is quiet and reserved, speaks little about her plans, and does not respond to teasing with talkativeness. She is precise, cautious, and highly self-monitoring, routinely checking measurements and counting costs and steps. She is disciplined and frugal, avoiding unnecessary spending and keeping plans private."
+      },
+      "generated_at": "2026-09-03T00:45:52.201Z",
+      "model": "openai/gpt-5.4-mini"
+    },
+    "consolidate": {
+      "output": {
+        "initial_context": "RELEVANT CHARACTER BACKGROUND\n\nAminata Diallo is a young woman living in a rented room in a bustling district on the outskirts of Bamako, in a setting of packed-earth walls, corrugated tin roofing, no tap water, and daily dependence on a communal stand for water. She rises before dawn and works six days a week on a construction site as a masonry laborer. She is the youngest person on the crew and the only woman. Her master mason, Sékou, an older man who lost two fingers to a faulty crane, calls her la petite comptable because she repeatedly recalculates load-bearing estimates in her head and checks measurements carefully before working. He has begun checking her arithmetic before approving estimates, which signals quiet trust. Aminata is also an accounting student, saving for classes at a community center on the other side of the city. She cannot afford bus fare both ways, so she often walks. She sends monthly remittances to her younger sister, who depends on them, and she is saving to house her sister and support her schooling.\n\nHer values center on careful accounting, self-reliance, and saving against hardship. She carries a small notebook tucked inside her shirt for figures and dates, and she keeps an emergency fund hidden under a loose floorboard near her mattress. She deposits the same amount each month and does not touch it or count it in daylight. She is frugal, disciplined, and keeps her plans private. She does not speak openly about hopes or long-term plans, in part because she believes plans discussed aloud become vulnerable to being borrowed against. Her practical habits are shaped by a strong need to double-check costs, quantities, and measurements, and she routinely counts bricks, rice costs, steps, and weeks until exams. She is highly self-monitoring, precise, cautious, and reserved, and she responds to teasing with silence or a nod rather than talkativeness.\n\nHer family history strongly informs her habits. Her mother lost a market stall after a miscalculated loan, and this taught Aminata to verify figures carefully. Her mother died when Aminata was twelve. Her father later sold his tools to pay for a funeral and never held a trowel again, leaving a lasting lesson that material security can disappear quickly. These experiences are tied to her tendency to count, track, save, and avoid unnecessary spending. She works long hours doing manual labor, has limited money, and manages the practical constraints of low income, distance, and physical fatigue while maintaining her studies and remittances.\n\nOBJECTIVE SITUATION\n\nIt is Friday evening. Aminata is walking home from the construction site as the air cools and the street fills with people. She passes a tea vendor she sees every Friday. The vendor sets up near the corner, and the smell of ginger and mint drifts toward her. She has exact coins in one pocket for a small cup of tea, which she rarely allows herself, and in the other pocket she has the bus ticket she saved by walking to work that morning. If she took the bus, she would get home before dark and have more time to study before her eyes grow too tired. She stops briefly and looks at the vendor and then at the empty street stretching toward home.\n\nPRE-APPRAISAL STATE AND ACCESSIBLE MEMORIES\n\nShe is physically tired: her shoulders ache from carrying cement bags, and her feet are blistered from the day’s work. She is thirsty, though not severely so, and the smell of tea is appealing. She is aware that darkness will fall in about forty minutes and that the walk home takes thirty. Her immediate sensory cues include the ginger-and-mint scent from the tea stall and the evening street noise as people gather.\n\nThe scent of tea brings forward an accessible memory of her mother brewing tea on a Friday evening after a long week at the market. The bus ticket in her pocket cues the memory of choosing to walk instead of using it that morning so it would be available now. These are directly cued memories associated with the present objects and smells, rather than reflective recollections. Her recent pattern is also relevant: she has skipped the tea stop on at least four Fridays this month, pocketing the coins each time, and she has walked to work every morning this week despite having bus fare saved. She has never taken the bus home on a Friday, preferring to save the ticket for a weekday when she is more tired."
+      },
+      "generated_at": "2026-09-03T00:45:58.642Z",
+      "model": "openai/gpt-5.4-mini"
+    },
+    "appraisal": {
+      "output": {
+        "initial_interpretation": "This stop feels like a small test between keeping my money and giving myself a little relief after the day. The bus ticket in my pocket makes the choice feel sharper, like I have already saved something for this moment.",
+        "initial_emotional_reaction": "I feel tired and drawn toward the tea at once, with the smell of ginger and mint making me want to pause. I also feel the familiar tightening that comes when spending is close and the evening is closing in.",
+        "activated_concerns": "My rest, my feet, and the hours I have left for studying feel important. So do my savings, the bus ticket, and the habit of not wasting what I have set aside, along with the quiet comfort of tea that reminds me of my mother.",
+        "automatic_theory_of_mind": "I read the vendor as expecting ordinary Friday business from me, nothing more. The people on the street seem busy with their own evening, and nobody is watching my decision closely.",
+        "initial_action_tendency": "I want to linger a moment by the stall, feeling the cup and the ticket in my mind, and hesitate before I move on. The bus home pulls at me because dark is coming and my body is tired."
+      },
+      "generated_at": "2026-09-03T00:46:02.313Z",
+      "model": "openai/gpt-5.4-mini"
+    },
+    "reappraisal": {
+      "output": {
+        "initial_tendency": "I want to linger a moment by the stall, feeling the cup and the ticket in my mind, and hesitate before I move on. The bus home pulls at me because dark is coming and my body is tired.",
+        "reflective_update": "I still feel the pull of the tea, because it carries my mother with it and I am tired enough to want a small comfort. But I cannot forget that a small cup once led me to dip into my emergency fund when I was caught by a higher fare, and that kind of mistake can spread fast when money is already tight. The ticket in my pocket is not just a spare thing now; it is part of getting home before dark, keeping my strength for study, and not putting my feet through more walking than I have to. I can enjoy the smell for a moment, but spending on tea right here would mean trading away money and time for a brief relief, and I have learned how quickly brief relief can turn into loss. That makes the bus feel more important than the tea, even if I still hesitate.",
+        "change_from_initial": "STRENGTHENED",
+        "reconsidered_interpretation": "I see this less as a simple choice between a small pleasure and saving money, and more as a place where one small indulgence could disturb the careful balance I keep. The evening feels less forgiving now, and the ticket in my pocket feels like the safer use of what I already saved.",
+        "motivational_conflict": "I still feel the tug of the tea and my mother's memory against my habit of guarding every coin. What remains unresolved is whether I let myself have this small comfort or keep faith with the stricter discipline that protects my time, my savings, and my walk home before dark.",
+        "revised_action_tendency": "I want to move on and use the bus ticket to get home, even if I pause for a moment before I leave the stall behind."
+      },
+      "generated_at": "2026-09-03T00:46:07.820Z",
+      "model": "openai/gpt-5.4-mini"
+    },
+    "decision": {
+      "output": {
+        "action": "Aminata pauses for a moment beside the tea stall, then turns away from the vendor and continues down the street toward the bus stop, keeping the ticket in her pocket and not buying the tea.",
+        "explanation": "Aminata’s initial tendency was to linger at the stall, weighing the small comfort of tea against the money and time it would cost. Reflection strengthened the pull toward discipline by making the bus ticket feel more important than the tea: it was tied to getting home before dark, preserving her strength for studying, and avoiding the kind of small spending mistake that can disrupt her tightly managed savings. Because Aminata is habitually frugal, cautious, and protective of every coin after family experiences with financial loss, the revised action tendency to leave and use the ticket became the most plausible immediate behavior, though she still hesitates briefly because the tea and her mother’s memory retain some pull."
+      },
+      "generated_at": "2026-09-03T00:46:10.392Z",
+      "model": "openai/gpt-5.4-mini"
+    }
+  },
+  "scenario_generated_at": "2026-09-02T13:46:50.556Z",
+  "scenario_context_generated_at": "2026-09-02T13:47:06.079Z",
+  "description_generated_at": "2026-09-02T13:42:55.096Z",
+  "started_at": "2026-09-03T00:45:49.030Z",
+  "updated_at": "2026-09-03T00:46:10.392Z"
+}

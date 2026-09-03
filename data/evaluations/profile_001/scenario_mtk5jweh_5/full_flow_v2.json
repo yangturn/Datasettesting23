@@ -1,0 +1,24 @@
+{
+  "profile_id": "profile_001",
+  "scenario_id": "scenario_mtk5jweh_5",
+  "flow_key": "full_flow_v2",
+  "name": "Aminata Diallo",
+  "scenario_title": "The Weekly Count",
+  "scores": {
+    "character_consistency": 6,
+    "situation_fit": 7,
+    "state_memory_alignment": 6,
+    "action_plausibility": 6,
+    "reasoning_coherence": 6
+  },
+  "overall_score": 6.2,
+  "score_scale": 10,
+  "dimension_set": 4,
+  "action": "Aminata pauses for a beat, then says, \"I’ll do it,\" and stays where she is instead of turning to leave.",
+  "reason": "The hurried request, the direct cue of the weekly count, and her habit of treating mismatched numbers as her responsibility make the task immediately salient despite her exhaustion. Her irritation and anxiety keep her from answering too quickly, so she briefly resists being rushed. But the stronger action tendency is to stay and handle the inventory, and that impulse turns into a short, reluctant agreement rather than a longer explanation or refusal.",
+  "decision_mode": "IMMEDIATE",
+  "context_generated_at": "2026-09-03T01:16:23.705Z",
+  "action_generated_at": "2026-09-03T00:45:34.045Z",
+  "generated_at": "2026-09-03T01:17:14.397Z",
+  "model": "deepseek/deepseek-v4-flash"
+}

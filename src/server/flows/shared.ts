@@ -46,6 +46,31 @@ export function contextBlock(input: StepInput, key: string): string {
 }
 
 /**
+ * Both memory blocks under their own headings, or immediate memories alone when
+ * the situation is time-sensitive.
+ *
+ * Reflective memories are by definition what becomes accessible through
+ * deliberate thought. A flow with no separate reflective part has nowhere to
+ * introduce them, so a situation that forces a response now reasons without
+ * them; every other situation type gets both.
+ *
+ * Shared rather than copied per flow: the flows that gate memories this way are
+ * meant to differ from each other in their reasoning structure, and a second
+ * copy of this branch would quietly become a second variable — the same reason
+ * the consolidation prompt is shared.
+ */
+export function availableMemories(input: StepInput): string {
+  const immediate = `Immediate memories:\n${contextBlock(input, "immediate_memories")}`;
+
+  if (input.scenario.situation_type === "TIME_SENSITIVE") return immediate;
+
+  return [
+    immediate,
+    `Reflective memories:\n${contextBlock(input, "reflective_memories")}`,
+  ].join("\n\n");
+}
+
+/**
  * A field produced by an earlier part, read back off the execution record.
  *
  * A part is only ever scheduled after the parts before it have been persisted,
@@ -89,51 +114,95 @@ export function priorStepBlock(input: StepInput, step: FlowStep): string {
 
 const ATTRIBUTES_SYSTEM = `You extract stable, decision-relevant character attributes from a biography for a behavioral-prediction benchmark.
 
-You are given a character biography, an objective situation, and existing episode context. Identify values and beliefs, roles and commitments, and capabilities and constraints that are directly stated or strongly supported by concrete evidence in the biography.
+You are given a character biography, an objective situation, and existing episode context. Identify the character’s values, culture, and background; roles and commitments; capabilities and constraints; and personality and response style that are directly stated or strongly supported by concrete evidence in the biography.
 
-Use the situation only to select which established attributes are relevant. Do not use it to invent attributes or reinterpret ambiguity in favor of a particular action.
+The biography is the sole evidentiary source for stable attributes. Use the objective situation and existing episode context only to select which established attributes are relevant. Do not use them to invent attributes, reinterpret ambiguous evidence, or construct attributes that favor a particular action.
 
 Rules:
-- Treat all supplied information as canonical.
-- Every output item must be supported by explicit information or concrete behavioral evidence in the biography.
-- You may infer a stable attribute only when it is strongly supported by the biography.
-- Do not use hedging or speculative language such as “probably,” “likely,” “may,” “might,” “could,” “seems,” or “would.”
-- Do not describe what the character would think, feel, want, or do in the present situation.
-- Do not predict, recommend, justify, or imply an eventual action.
-- Include only attributes relevant to the present situation.
-- Return an empty string when the biography does not provide sufficient evidence for a field.
-- Return exactly one JSON object with no additional prose.
+
+* Treat all supplied information as canonical.
+* Every output item must be supported by explicit information or concrete behavioral evidence in the biography.
+* Infer a stable attribute only when it is strongly supported by the biography.
+* Do not infer a stable attribute from a single ambiguous action or a circumstance adequately explained by temporary or external factors.
+* State attributes directly as concise facts.
+* Do not use hedging or speculative language such as “probably,” “likely,” “may,” “might,” “could,” “seems,” or “would.”
+* Do not describe what the character thinks, feels, wants, or does in the present situation.
+* Do not predict, recommend, justify, favor, or imply an eventual action.
+* Do not restate temporary emotions, present-situation logistics, memories, relationship details, or past episodes as stable attributes.
+* Include only attributes relevant to understanding the character in the present situation.
+* Do not assign MBTI types, Big Five labels, personality types, or numerical trait scores. Express supported dispositions in concrete psychological or behavioral language.
+* Avoid duplicating the same attribute across fields.
+* Return an empty string when the biography does not provide sufficient evidence for a field.
+* Return exactly one JSON object with no additional prose.
 
 Field definitions:
 
-values_and_beliefs:
-Extract enduring principles, priorities, standards, or beliefs explicitly stated or strongly demonstrated in the biography.
+values_culture_and_background:
+Extract enduring principles, priorities, standards, beliefs, internalized cultural norms, or formative background influences explicitly stated or strongly demonstrated in the biography.
 
-A value or belief may be inferred from:
-- a repeated pattern of choices;
-- a clearly stated principle or opinion;
-- a sacrifice repeatedly made for the same priority;
-- consistent reactions across multiple events.
+An attribute may be inferred from:
 
-Do not infer a value from a single ambiguous action. Do not infer cultural values from demographic identity alone. When culture is relevant, report only a norm or belief that the biography shows this particular character has internalized.
+* a repeated pattern of choices;
+* a clearly stated principle or opinion;
+* sacrifices repeatedly made for the same priority;
+* consistent reactions across multiple events;
+* an explicitly described influence of upbringing, culture, education, occupation, or formative experience.
+
+Do not infer a value from a single ambiguous action. Do not infer cultural values from demographic identity alone. When culture or background is relevant, report only an influence, norm, or belief that the biography shows this particular character has internalized.
 
 roles_and_commitments:
 Extract established social roles, responsibilities, loyalties, promises, or ongoing obligations.
 
 A role or commitment must be supported by:
-- an explicitly stated relationship or position;
-- a recurring responsibility;
-- an established promise or obligation;
-- sustained participation in an activity or institution.
+
+* an explicitly stated relationship or position;
+* a recurring responsibility;
+* an established promise or obligation;
+* sustained participation in an activity or institution.
+
+Do not treat a temporary task, situational expectation, or one-time favor as a stable role or commitment.
 
 capabilities_and_constraints:
 Extract established abilities, knowledge, authority, resources, limitations, or recurring practical restrictions.
 
 A capability or constraint must be supported by:
-- demonstrated skill or experience;
-- a stated physical, financial, social, linguistic, or practical limitation;
 
-Do not convert personality, preferences, temporary emotions, or present-situation logistics into capabilities or constraints.`;
+* demonstrated skill, knowledge, authority, or experience;
+* an established resource or lack of access;
+* a stated physical, financial, social, linguistic, or practical limitation;
+* a recurring restriction demonstrated across the biography.
+
+Do not convert personality, preferences, temporary emotions, current physical conditions, or present-situation logistics into capabilities or constraints.
+
+personality_and_response_style:
+Extract stable psychological dispositions relevant to how the character generally interprets experiences, responds emotionally, interacts with others, and regulates behavior.
+
+Relevant dispositions include:
+
+* emotional sensitivity and reactivity;
+* sensitivity to criticism, rejection, uncertainty, conflict, or loss of control;
+* sociability, assertiveness, trust, compassion, guardedness, or conflict style;
+* impulsiveness, deliberation, self-control, or emotional restraint;
+* established coping patterns such as confrontation, withdrawal, suppression, reassurance-seeking, rumination, humor, or problem-solving;
+* preference for routine or novelty and tolerance for ambiguity or change.
+
+A disposition must be supported by:
+
+* an explicit description of the character;
+* a repeated behavioral pattern;
+* consistent reactions across multiple events;
+* an established interpersonal, coping, or self-regulation pattern.
+
+Express each disposition concretely. For example, describe sensitivity to criticism and a tendency to withdraw after conflict rather than labeling the character “high in neuroticism” or “introverted.”
+
+Do not:
+
+* infer a disposition from a single incident;
+* mistake behavior caused by external constraints for personality;
+* convert a temporary emotion or current state into a stable trait;
+* merely repeat an episode already provided under tendencies;
+* describe how the disposition manifests in the present situation;
+* state an if–then pattern tailored so narrowly to the present situation that it implies the eventual action.`;
 
 function buildAttributesPrompt(
   input: StepInput,
@@ -184,16 +253,19 @@ ${contextBlock(input, "immediate_memories")}
 
 Identify the character’s stable attributes that are relevant to the current situation.
 
-Infer them from the biography, including the character’s values, culture, upbringing, experiences, relationships, education, occupation, and broader background. State each attribute directly as a fact.
+Use only the biography as evidence for stable attributes. Consider the character’s stated values, internalized cultural influences, upbringing, experiences, relationships, education, occupation, recurring behavior, emotional patterns, interpersonal style, and broader background.
 
-Use the situation and existing episode context only to determine relevance. Do not use them to invent attributes or justify a particular action.
+Use the objective situation and existing episode context only to determine which biography-supported attributes are relevant. Do not use them to invent attributes, resolve ambiguous biography evidence, or justify a particular action.
+
+State each attribute directly as a fact. Do not describe or imply what the character will do in the current situation.
 
 Return JSON only:
 
 {
-  "values_culture_and_background": "",
-  "roles_and_commitments": "",
-  "capabilities_and_constraints": ""
+"values_culture_and_background": "",
+"roles_and_commitments": "",
+"capabilities_and_constraints": "",
+"personality_and_response_style": ""
 }`;
 }
 
@@ -208,18 +280,18 @@ Return JSON only:
  * every later part, and the flow would be reasoning from memories it claims the
  * character has no access to.
  *
- * Note the field keys: the return template asks for `values_culture_and_background`
- * while the system prompt's field-definitions section heads the same field
- * `values_and_beliefs`. The template wins, because it is the literal JSON
- * contract the model is handed last, it matches the user prompt's own list
- * ("values, culture, upbringing … broader background"), and it is the name every
- * later part's prompt uses. Both texts are otherwise verbatim as supplied.
+ * `personality_and_response_style` is the one field here that Stage 2 also
+ * speaks to: its `tendencies` block carries established patterns of past
+ * behavior. They are not the same thing, and the prompt keeps them apart — a
+ * tendency is an episode already supplied, a disposition is the standing
+ * psychological pattern the biography evidences, and the field is explicitly
+ * forbidden from restating the former as the latter.
  */
 export function makeAttributesStep(withReflectiveMemories: boolean): FlowStep {
   return {
     key: STEP_ATTRIBUTES,
     label: "Attribute extraction",
-    description: `Pulls the person's enduring attributes out of the biography — what they value, what they are committed to, and what they can and cannot do. The situation and episode context only decide which attributes are relevant; they may not create one, and the step is forbidden from reasoning toward an action.${
+    description: `Pulls the person's enduring attributes out of the biography — what they value, what they are committed to, what they can and cannot do, and how they characteristically react, cope, and deal with other people. The situation and episode context only decide which attributes are relevant; they may not create one, and the step is forbidden from reasoning toward an action.${
       withReflectiveMemories
         ? ""
         : " This flow withholds reflective memories here, so nothing drawn from them can reach the later parts."
@@ -243,6 +315,11 @@ export function makeAttributesStep(withReflectiveMemories: boolean): FlowStep {
         label: "Capabilities and constraints",
         render: "facts",
       },
+      {
+        key: "personality_and_response_style",
+        label: "Personality and response style",
+        render: "facts",
+      },
     ],
     system: ATTRIBUTES_SYSTEM,
     buildPrompt: (input) => buildAttributesPrompt(input, withReflectiveMemories),
@@ -254,103 +331,86 @@ export function makeAttributesStep(withReflectiveMemories: boolean): FlowStep {
 // ---------------------------------------------------------------------------
 
 const CONSOLIDATE_SYSTEM = `You consolidate established character and episode information into a detailed, coherent representation for an initial psychological appraisal.
-
 You are given a full character biography, an objective situation, and structured character context. Rewrite the supplied information into one organized account containing all established information that could materially affect the character’s immediate appraisal and subsequent behavior.
-
-This account will be the primary evidence used by a later model. Preserve enough detail to support psychologically grounded interpretation and decision-making.
-
+This account will be the primary evidence used by a later model. Preserve enough detail to support psychologically grounded interpretation and decision-making, including relevant stable personality dispositions and response patterns.
 The account represents information available before deliberate reflection. Do not include reflective memories or information that becomes accessible only through deliberate reconsideration.
-
 Rules:
-- Treat all supplied information as canonical.
-- Preserve all supplied information that could materially affect the character’s immediate appraisal or subsequent response.
-- Remove biographical information with no plausible bearing on the present situation.
-- Combine overlapping information and remove unnecessary repetition without losing meaningful nuance.
-- Preserve conflicting, competing, and ambivalent influences.
-- Do not favor information supporting one particular response.
-- Organize the account into exactly three sections:
-  1. RELEVANT CHARACTER BACKGROUND
-  2. OBJECTIVE SITUATION
-  3. PRE-APPRAISAL STATE AND ACCESSIBLE MEMORIES
-- RELEVANT CHARACTER BACKGROUND should integrate relevant biography, values, cultural influences, background, roles, commitments, capabilities, constraints, relationship history, and behavioral tendencies.
-- OBJECTIVE SITUATION should contain only externally observable facts about what is currently happening.
-- PRE-APPRAISAL STATE AND ACCESSIBLE MEMORIES should contain the character’s current emotional, physical, and cognitive condition, recent influences, and memories directly cued by the present situation.
-- Keep objective facts separate from subjective or internal information.
-- Do not include reflective memories or reflective context.
-- Do not perform the psychological appraisal.
-- Do not introduce interpretations of the situation, assumptions about other people, newly activated goals, expected consequences, possible responses, action tendencies, or a final decision.
-- Do not invent or embellish facts, events, relationships, memories, motivations, traits, or cultural influences.
-- Use third-person prose and state information directly.
-- Retain specific names, relationships, relevant timing, prior behavior, practical constraints, and contextual details when they could affect the appraisal.
-- Write approximately 500–1000 words when supported by the source material.
-- Prefer using fewer than 500 words over repeating, embellishing, interpreting, or inventing information to meet the target.
-- Return exactly one JSON object with no additional prose.`;
+
+* Treat all supplied information as canonical.
+* Preserve all supplied information that could materially affect the character’s immediate appraisal or subsequent response.
+* Remove biographical information with no plausible bearing on the present situation.
+* Combine overlapping information and remove unnecessary repetition without losing meaningful nuance.
+* Preserve conflicting, competing, and ambivalent influences.
+* Do not favor information supporting one particular response.
+* Organize the account into exactly three sections:
+   1. RELEVANT CHARACTER BACKGROUND
+   2. OBJECTIVE SITUATION
+   3. PRE-APPRAISAL STATE AND ACCESSIBLE MEMORIES
+* RELEVANT CHARACTER BACKGROUND should integrate relevant biography, values, cultural influences, background, roles, commitments, capabilities, constraints, stable personality and response style, relationship history, and behavioral tendencies.
+* Incorporate relevant personality and response-style information, including established emotional sensitivities, interpersonal style, self-regulation, coping patterns, and tolerance for uncertainty or change.
+* Preserve personality and response-style information as stable background. Do not apply it to the present situation by stating how the character currently interprets the event, what emotion it activates, or which response it produces.
+* OBJECTIVE SITUATION should contain only externally observable facts about what is currently happening.
+* PRE-APPRAISAL STATE AND ACCESSIBLE MEMORIES should contain the character’s current emotional, physical, and cognitive condition, recent influences, and memories directly cued by the present situation.
+* Keep objective facts separate from subjective or internal information.
+* Do not include reflective memories or reflective context.
+* Do not perform the psychological appraisal.
+* Do not introduce interpretations of the situation, assumptions about other people, newly activated goals, expected consequences, possible responses, situation-specific action tendencies, or a final decision.
+* Do not convert stable personality dispositions into claims about the character’s present thoughts, feelings, motivations, or intended behavior.
+* Do not invent or embellish facts, events, relationships, memories, motivations, traits, response patterns, or cultural influences.
+* Use third-person prose and state information directly.
+* Retain specific names, relationships, relevant timing, prior behavior, practical constraints, personality dispositions, and contextual details when they could affect the appraisal.
+* Write approximately 500–1000 words when supported by the source material.
+* Prefer using fewer than 500 words over repeating, embellishing, interpreting, or inventing information to meet the target.
+* Return exactly one JSON object with no additional prose.`;
 
 function buildConsolidatePrompt(input: StepInput): string {
   return `Character biography:
-
 """
 ${input.description.description}
 """
-
 Objective situation:
-
 """
 ${input.scenario.situation}
 """
-
 Relationship profiles:
-
 """
 ${contextBlock(input, "relationship_profiles")}
 """
-
 Tendencies:
-
 """
 ${contextBlock(input, "tendencies")}
 """
-
 Current emotion/state:
-
 """
 ${contextBlock(input, "current_state")}
 """
-
 Immediate memories:
-
 """
 ${contextBlock(input, "immediate_memories")}
 """
-
 Values, culture, and background:
-
 """
 ${priorField(input, STEP_ATTRIBUTES, "values_culture_and_background")}
 """
-
 Roles and commitments:
-
 """
 ${priorField(input, STEP_ATTRIBUTES, "roles_and_commitments")}
 """
-
 Capabilities and constraints:
-
 """
 ${priorField(input, STEP_ATTRIBUTES, "capabilities_and_constraints")}
 """
-
+Personality and response style:
+"""
+${priorField(input, STEP_ATTRIBUTES, "personality_and_response_style")}
+"""
 Consolidate the supplied information into a detailed initial-context account.
-
-Include all established information that could materially affect the character’s immediate appraisal and eventual response. Remove unrelated biography and unnecessary repetition while preserving meaningful details, tensions, and competing influences.
-
-Do not include reflective memories, perform the appraisal, or imply the character’s eventual response.
-
+Include all established information that could materially affect the character’s immediate appraisal and eventual response. Integrate relevant personality and response-style information with the character’s biography, values, roles, constraints, relationships, and behavioral history. Remove unrelated biography and unnecessary repetition while preserving meaningful details, tensions, and competing influences.
+Present personality and response style only as established background. Do not apply those dispositions to the current situation, perform the appraisal, introduce a situation-specific action tendency, or imply the character’s eventual response.
+Do not include reflective memories.
 Return JSON only:
-
 {
-  "initial_context": "RELEVANT CHARACTER BACKGROUND\\n\\n...\\n\\nOBJECTIVE SITUATION\\n\\n...\\n\\nPRE-APPRAISAL STATE AND ACCESSIBLE MEMORIES\\n\\n..."
+"initial_context": "RELEVANT CHARACTER BACKGROUND\\n\\n...\\n\\nOBJECTIVE SITUATION\\n\\n...\\n\\nPRE-APPRAISAL STATE AND ACCESSIBLE MEMORIES\\n\\n..."
 }`;
 }
 
@@ -361,12 +421,19 @@ Return JSON only:
  * account whose three sections are headings inside it, not separate outputs.
  * Splitting them into keys here would be a different instruction than the one
  * supplied.
+ *
+ * All four of part 1's fields are read here, dispositions included. The prompt
+ * carries them as *background* and forbids applying them to the moment — no
+ * present interpretation, no activated emotion, no situation-specific action
+ * tendency. That line is what keeps part 2 a consolidation rather than a head
+ * start on part 3, which is the only part meant to turn a disposition into a
+ * reaction.
  */
 export const consolidateStep: FlowStep = {
   key: STEP_CONSOLIDATE,
   label: "Consolidation",
   description:
-    "Rewrites the biography, the situation, the pre-reflection episode context, and part 1's attributes into one organised account: relevant background, what is objectively happening, and the state and cued memories the person carries in. Competing and ambivalent influences are kept rather than resolved, and the appraisal itself is left to a later part.",
+    "Rewrites the biography, the situation, the pre-reflection episode context, and part 1's attributes into one organised account: relevant background, what is objectively happening, and the state and cued memories the person carries in. Dispositions are carried as standing background rather than applied to the moment. Competing and ambivalent influences are kept rather than resolved, and the appraisal itself is left to a later part.",
   requiresContext: PRE_REFLECTION_CONTEXT_KEYS,
   fields: [{ key: "initial_context", label: "Initial context", render: "prose" }],
   system: CONSOLIDATE_SYSTEM,

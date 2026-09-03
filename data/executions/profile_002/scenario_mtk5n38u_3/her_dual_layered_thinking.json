@@ -1,0 +1,37 @@
+{
+  "flow_key": "her_dual_layered_thinking",
+  "profile_id": "profile_002",
+  "scenario_id": "scenario_mtk5n38u_3",
+  "name": "Ingrid Lindgren",
+  "scenario_title": "Crayfish Party Invitation",
+  "steps": {
+    "system_thinking": {
+      "output": {
+        "system_thinking": "I need to portray Ingrid as tired but still mentally engaged, weighing Anna’s invitation through her usual pragmatic lens. Her immediate private thinking should acknowledge the pull of nostalgia from the kräftskiva memory, but it should not romanticize the event; she is likely to judge whether the dinner has clear business value, especially since she has previously accepted social dinners when they served a practical purpose and has otherwise declined them. Given her competitiveness with Anna and respect for Anna’s efficiency, Ingrid’s stance should be measured rather than warm: she can be polite, guarded, and slightly calculating, recognizing that attending could strengthen a professional relationship while also forcing her into an atmosphere she finds performative. Because her mother’s night nurse is already scheduled and the timing works, the main obstacle is not logistics but whether she wants to trade renovation review time for networking and tradition. The response should therefore lean toward a tentative acceptance or conditional acceptance, with Ingrid asking about the guest mix, the expected informality, or whether the gathering would include other managers she might benefit from meeting. Observable behavior should reflect brief hesitation, a thoughtful pause, and then a composed, efficient reply, consistent with her conference demeanor. Her speech should remain short and precise, with no overexplaining: she can acknowledge the invitation, mention that it has been years since she last attended a kräftskiva, and either agree if it seems professionally worthwhile or signal that she may join later depending on timing. The key is that her decision process should visibly balance duty, competitiveness, and a rare openness to a social ritual that has some nostalgic resonance without losing her disciplined, business-first tone."
+      },
+      "generated_at": "2026-09-03T00:45:44.435Z",
+      "model": "openai/gpt-5.4-mini"
+    },
+    "role_response": {
+      "output": {
+        "role_thinking": "I’m tired, but Anna’s invitation is not nothing. It has been years since I last sat through a kräftskiva, and the memory is there whether I want it or not. I can go if there’s a point to it—if the room is useful and it won’t just be noise and performative cheer. I don’t need another pointless dinner, but I also don’t want to dismiss Anna lightly.",
+        "action": "Ingrid pauses a beat, then gives a small nod. “I may come. Who else is going?”"
+      },
+      "generated_at": "2026-09-03T00:45:46.771Z",
+      "model": "openai/gpt-5.4-mini"
+    },
+    "decision": {
+      "output": {
+        "action": "Ingrid pauses a beat, then gives a small nod. “I may come. Who else is going?”",
+        "explanation": "Ingrid is tired, but Anna’s invitation feels like it matters enough to consider. The memory of past kräftskivor lingers for her, and she weighs whether the evening would have a useful point rather than being just noise and performative cheer. She does not want another pointless dinner, but she also does not want to dismiss Anna lightly, so she responds with cautious openness and asks who else will be there."
+      },
+      "generated_at": "2026-09-03T00:45:49.026Z",
+      "model": "openai/gpt-5.4-mini"
+    }
+  },
+  "scenario_generated_at": "2026-09-02T13:51:36.750Z",
+  "scenario_context_generated_at": "2026-09-02T13:54:05.688Z",
+  "description_generated_at": "2026-09-02T13:43:19.287Z",
+  "started_at": "2026-09-03T00:45:40.777Z",
+  "updated_at": "2026-09-03T00:45:49.026Z"
+}

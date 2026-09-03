@@ -1,9 +1,10 @@
 import "server-only";
 
-import { mkdir, readdir, readFile, rm, writeFile } from "node:fs/promises";
+import { mkdir, readdir, readFile, rm } from "node:fs/promises";
 import path from "node:path";
 
 import { profileSchema, type Profile } from "@/lib/profile";
+import { writeJsonFile } from "@/server/storage/write-json";
 
 /**
  * Profiles live as one JSON file per profile under `data/profiles/`, matching
@@ -63,11 +64,7 @@ export async function writeProfile(profile: Profile): Promise<void> {
   }
 
   await mkdir(PROFILES_DIR, { recursive: true });
-  await writeFile(
-    path.join(PROFILES_DIR, `${profile.id}.json`),
-    `${JSON.stringify(profile, null, 2)}\n`,
-    "utf8",
-  );
+  await writeJsonFile(path.join(PROFILES_DIR, `${profile.id}.json`), profile);
 }
 
 /**

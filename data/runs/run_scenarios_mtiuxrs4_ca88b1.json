@@ -1,0 +1,13 @@
+{
+  "id": "run_scenarios_mtiuxrs4_ca88b1",
+  "stage": "scenarios",
+  "status": "succeeded",
+  "total": 40,
+  "done": 40,
+  "failed": 0,
+  "errors": [],
+  "model": "deepseek/deepseek-v4-pro-0813",
+  "started_at": "2026-09-01T16:04:13.156Z",
+  "finished_at": "2026-09-01T16:13:56.566Z",
+  "message": null
+}

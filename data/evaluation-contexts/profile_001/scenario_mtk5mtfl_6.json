@@ -1,0 +1,17 @@
+{
+  "character_and_relationship_context": "Aminata Diallo is a young woman living on the outskirts of Bamako in a rented room with no tap; she carries water from a communal stand each morning. She works as the youngest and only woman on a construction crew, where her master mason, Sékou, calls her \"la petite comptable\" because she recalculates every load-bearing estimate in her head. She double-checks everything, a reflex from watching her mother lose a market stall to a miscalculated loan when Aminata was twelve. Since her mother's death, she has been counting everything: the number of bricks in a pallet, the cost of a bag of rice, the weeks until her next accounting exam. She keeps a small notebook of figures inside her shirt and hides an emergency fund under a loose floorboard near her mattress—the same amount each month, never touched, never counted in daylight. She studies at night after ten hours of construction work, saving for an accounting course at a community center across the city, which she walks to because she cannot afford bus fare both ways. She is also saving for a proper room with running water where her younger sister Fatoumata can live with her and go to school, but she does not speak of this aloud. Her father sold his tools to pay for the funeral and never held a trowel again; Aminata holds hers every day and checks every measurement twice. She trusts only what she has counted. Aminata is Fatoumata's guardian and sole family, having raised her since their mother's death. Fatoumata depends on Aminata for guidance and rarely makes decisions without her approval. When study time conflicts with Fatoumata's requests, Aminata has sometimes finished a set number of problems before leaving, but other times she has set her notebook aside to avoid disappointing her sister.",
+  "objective_situation": "On a Sunday afternoon, Aminata sits on her mat reviewing accounting notes. Her younger sister, Fatoumata, appears at the door and asks if Aminata will walk with her to the market to look at school bags. Fatoumata is not buying one, just wanting Aminata's opinion on which bag looks sturdy enough to last the year. The market is a forty-minute walk each way, and Aminata still has several pages of practice problems she wanted to finish before the lamp oil runs out. She could put down her notebook and go with her sister, or ask Fatoumata to go alone and come back later.",
+  "state_and_available_memories": "Aminata is two hours into reviewing and has six practice problems left; the lamp oil will last another ninety minutes. Her shoulders ache from the week's labor, and she is focused but not urgent. Hearing \"school bags\" reminds her of the cheap canvas bag she carried as a child that tore after two months, forcing her to carry books in her arms. She also recalls walking her mother to the market stall every Saturday before the loan default, when her mother would say that showing up is half the work.",
+  "profile_id": "profile_001",
+  "scenario_id": "scenario_mtk5mtfl_6",
+  "name": "Aminata Diallo",
+  "scenario_title": "A Walk to See School Bags",
+  "situation_type": "NORMAL",
+  "decision_mode": "REFLECTION_AVAILABLE",
+  "reflective_memories_included": true,
+  "scenario_generated_at": "2026-09-02T13:51:24.033Z",
+  "scenario_context_generated_at": "2026-09-02T13:51:58.813Z",
+  "description_generated_at": "2026-09-02T13:42:55.096Z",
+  "generated_at": "2026-09-03T01:02:08.868Z",
+  "model": "deepseek/deepseek-v4-flash"
+}

@@ -1,0 +1,30 @@
+{
+  "id": "run_executions_mtjh2w8x_612827",
+  "stage": "executions",
+  "status": "succeeded",
+  "total": 62,
+  "done": 49,
+  "failed": 4,
+  "errors": [
+    {
+      "id": "profile_007 · immediate_flow",
+      "error": "consolidate: OpenRouter returned no content."
+    },
+    {
+      "id": "profile_007 · immediate_flow",
+      "error": "consolidate: OpenRouter returned no content."
+    },
+    {
+      "id": "profile_007 · full_flow",
+      "error": "consolidate: OpenRouter returned no content."
+    },
+    {
+      "id": "profile_007 · immediate_flow",
+      "error": "consolidate: OpenRouter returned no content."
+    }
+  ],
+  "model": "deepseek/deepseek-v4-pro-0813",
+  "started_at": "2026-09-02T02:24:03.777Z",
+  "finished_at": "2026-09-02T03:02:05.434Z",
+  "message": "Skipped 179 cell(s) already complete."
+}

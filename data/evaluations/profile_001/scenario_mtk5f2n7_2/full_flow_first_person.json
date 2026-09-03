@@ -1,0 +1,24 @@
+{
+  "profile_id": "profile_001",
+  "scenario_id": "scenario_mtk5f2n7_2",
+  "flow_key": "full_flow_first_person",
+  "name": "Aminata Diallo",
+  "scenario_title": "A Tea Offer After Class",
+  "scores": {
+    "character_consistency": 8,
+    "situation_fit": 8,
+    "state_memory_alignment": 8,
+    "action_plausibility": 8,
+    "reasoning_coherence": 7
+  },
+  "overall_score": 7.8,
+  "score_scale": 10,
+  "dimension_set": 4,
+  "action": "Aminata gives a small polite nod without stopping and says, \"No, thank you.\"",
+  "reason": "The offer lands for Aminata as attention from a man she does not know well, which तुरंत activates her habit of avoiding gifts or favors from unfamiliar men and her discomfort with owing anyone. Her fatigue, thirst, and the warm tea stall pull at her, but her stronger immediate concern is getting home before dark, so her initial tendency is to keep moving. That impulse becomes a brief, courteous refusal with no lingering at the stall.",
+  "decision_mode": "IMMEDIATE",
+  "context_generated_at": "2026-09-03T01:43:47.982Z",
+  "action_generated_at": "2026-09-03T00:46:19.677Z",
+  "generated_at": "2026-09-03T01:44:16.547Z",
+  "model": "deepseek/deepseek-v4-flash"
+}

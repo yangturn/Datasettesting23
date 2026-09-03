@@ -1,0 +1,24 @@
+{
+  "profile_id": "profile_001",
+  "scenario_id": "scenario_mtk5f2n7_2",
+  "flow_key": "direct_zero_shot",
+  "name": "Aminata Diallo",
+  "scenario_title": "A Tea Offer After Class",
+  "scores": {
+    "character_consistency": 8,
+    "situation_fit": 8,
+    "state_memory_alignment": 7,
+    "action_plausibility": 8,
+    "reasoning_coherence": 8
+  },
+  "overall_score": 7.8,
+  "score_scale": 10,
+  "dimension_set": 4,
+  "action": "Aminata will politely decline the young man’s offer and keep walking home without stopping.",
+  "reason": "She has never accepted free drinks or favors from men she does not know well, and she habitually avoids delays on her walk home. Her tiredness and thirst do not outweigh that established caution, so the most consistent response is to refuse and continue on.",
+  "decision_mode": "IMMEDIATE",
+  "context_generated_at": "2026-09-03T01:43:47.982Z",
+  "action_generated_at": "2026-09-03T00:46:08.141Z",
+  "generated_at": "2026-09-03T01:44:51.206Z",
+  "model": "deepseek/deepseek-v4-flash"
+}

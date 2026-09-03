@@ -1,0 +1,24 @@
+{
+  "profile_id": "profile_001",
+  "scenario_id": "scenario_mtk5jweh_5",
+  "flow_key": "her_dual_layered_thinking",
+  "name": "Aminata Diallo",
+  "scenario_title": "The Weekly Count",
+  "scores": {
+    "character_consistency": 9,
+    "situation_fit": 9,
+    "state_memory_alignment": 8,
+    "action_plausibility": 9,
+    "reasoning_coherence": 8
+  },
+  "overall_score": 8.6,
+  "score_scale": 10,
+  "dimension_set": 4,
+  "action": "Aminata pauses a beat, looks at Sékou, and gives a small nod. “I’ll stay.”",
+  "reason": "Aminata feels physically exhausted, with heavy legs and burning eyes, but she judges that the inventory count matters. The memory of the bags not matching the pile last time makes her want to verify the numbers, and although she knows staying means a longer walk and less time at her lamp, she believes she can still do it. That calculation leads her to agree to stay so she can know the numbers are right.",
+  "decision_mode": "IMMEDIATE",
+  "context_generated_at": "2026-09-03T01:16:23.705Z",
+  "action_generated_at": "2026-09-03T00:45:29.179Z",
+  "generated_at": "2026-09-03T01:17:51.578Z",
+  "model": "deepseek/deepseek-v4-flash"
+}

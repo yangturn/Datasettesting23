@@ -1,6 +1,6 @@
 import "server-only";
 
-import { mkdir, readdir, readFile, rm, writeFile } from "node:fs/promises";
+import { mkdir, readdir, readFile, rm } from "node:fs/promises";
 import path from "node:path";
 
 import {
@@ -9,6 +9,7 @@ import {
   type Description,
   type Stage1Config,
 } from "@/lib/stage-1";
+import { writeJsonFile } from "@/server/storage/write-json";
 
 /**
  * Descriptions live at `data/descriptions/<profile_id>.json` — keyed by
@@ -98,10 +99,9 @@ export async function writeDescription(
   }
 
   await mkdir(DESCRIPTIONS_DIR, { recursive: true });
-  await writeFile(
+  await writeJsonFile(
     path.join(DESCRIPTIONS_DIR, `${description.profile_id}.json`),
-    `${JSON.stringify(description, null, 2)}\n`,
-    "utf8",
+    description,
   );
 }
 
@@ -122,9 +122,7 @@ export async function clearDescriptions(): Promise<number> {
 
   const files = entries.filter((entry) => entry.endsWith(".json"));
   await Promise.all(
-    files.map((file) =>
-      rm(path.join(DESCRIPTIONS_DIR, file), { force: true }),
-    ),
+    files.map((file) => rm(path.join(DESCRIPTIONS_DIR, file), { force: true })),
   );
 
   return files.length;

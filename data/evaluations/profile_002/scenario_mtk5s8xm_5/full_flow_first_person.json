@@ -1,0 +1,24 @@
+{
+  "profile_id": "profile_002",
+  "scenario_id": "scenario_mtk5s8xm_5",
+  "flow_key": "full_flow_first_person",
+  "name": "Ingrid Lindgren",
+  "scenario_title": "Baking Request",
+  "scores": {
+    "character_consistency": 8,
+    "situation_fit": 9,
+    "state_memory_alignment": 8,
+    "action_plausibility": 8,
+    "reasoning_coherence": 8
+  },
+  "overall_score": 8.2,
+  "score_scale": 10,
+  "dimension_set": 4,
+  "action": "Ingrid lowers her tablet, turns toward her mother with a softened voice, and says, \"Not right this minute, but after Mr. Eriksson leaves we’ll bake them together. I’m going to put it on my schedule so I don’t miss it.\"",
+  "reason": "Ingrid’s first impulse was to soften her voice, stay with her mother briefly, and delay the request without making it feel like a refusal. Reflection softened that tendency further: she still wants to answer gently, but she becomes less willing to offer a vague “later” because her mother’s requests are rarer, last month’s deferred promise was forgotten, and Mr. Eriksson’s imminent arrival makes drifting dangerous for both the visit and the renovation plans. That is why Ingrid keeps the warm, accommodating tone from her caregiving style while making the delay concrete and tangible instead of casual, preserving the shared ritual without brushing her mother aside.",
+  "decision_mode": "REFLECTION_AVAILABLE",
+  "context_generated_at": "2026-09-03T01:20:40.422Z",
+  "action_generated_at": "2026-09-03T00:45:51.060Z",
+  "generated_at": "2026-09-03T01:21:59.518Z",
+  "model": "deepseek/deepseek-v4-flash"
+}

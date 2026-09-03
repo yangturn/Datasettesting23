@@ -1,0 +1,26 @@
+{
+  "id": "run_evaluations_mtk6xka3_0ae882",
+  "stage": "evaluations",
+  "status": "succeeded",
+  "total": 70,
+  "done": 59,
+  "failed": 3,
+  "errors": [
+    {
+      "id": "profile_001",
+      "error": "full_flow_v2: Model did not return schema-valid JSON after 2 attempts: Expected property name or '}' in JSON at position 2 (line 2 column 1)"
+    },
+    {
+      "id": "profile_002",
+      "error": "context: OpenRouter returned no content."
+    },
+    {
+      "id": "profile_002",
+      "error": "context: OpenRouter returned no content."
+    }
+  ],
+  "model": "deepseek/deepseek-v4-flash",
+  "started_at": "2026-09-02T14:27:45.003Z",
+  "finished_at": "2026-09-02T15:48:36.159Z",
+  "message": "Built 12 context(s) (10 reflective, 2 immediate) and scored 47 prediction(s). 14 cell(s) had no Stage 3 prediction to score."
+}

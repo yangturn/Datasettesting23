@@ -1,0 +1,24 @@
+{
+  "profile_id": "profile_001",
+  "scenario_id": "scenario_mtk5hnv3_4",
+  "flow_key": "her_dual_layered_thinking",
+  "name": "Aminata Diallo",
+  "scenario_title": "Evening Invitation After Work",
+  "scores": {
+    "character_consistency": 8,
+    "situation_fit": 8,
+    "state_memory_alignment": 7,
+    "action_plausibility": 8,
+    "reasoning_coherence": 5
+  },
+  "overall_score": 7.2,
+  "score_scale": 10,
+  "dimension_set": 4,
+  "action": "Aminata pauses with her trowel in hand, eyes lowered, then gives a small nod. “Merci, Sékou. C’est gentil à vous et à votre femme, mais je ne pourrai pas ce soir. Je dois rentrer et étudier.”",
+  "reason": "Aminata is tired and hungry, and the smell of the yassa makes her think of home, so she wants to accept. But she feels she cannot lose the evening to the bus and the walk back, and because Sékou has been kind to her, she wants to answer carefully and thank him.",
+  "decision_mode": "REFLECTION_AVAILABLE",
+  "context_generated_at": "2026-09-03T01:24:10.973Z",
+  "action_generated_at": "2026-09-03T00:45:44.094Z",
+  "generated_at": "2026-09-03T01:30:19.394Z",
+  "model": "deepseek/deepseek-v4-flash"
+}

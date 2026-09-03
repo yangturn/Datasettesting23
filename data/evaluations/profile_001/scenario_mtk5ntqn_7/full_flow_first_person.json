@@ -1,0 +1,24 @@
+{
+  "profile_id": "profile_001",
+  "scenario_id": "scenario_mtk5ntqn_7",
+  "flow_key": "full_flow_first_person",
+  "name": "Aminata Diallo",
+  "scenario_title": "Invitation to a Neighborhood Celebration",
+  "scores": {
+    "character_consistency": 8,
+    "situation_fit": 8,
+    "state_memory_alignment": 8,
+    "action_plausibility": 8,
+    "reasoning_coherence": 8
+  },
+  "overall_score": 8,
+  "score_scale": 10,
+  "dimension_set": 4,
+  "action": "Aminata pauses with her tools in hand, then answers quietly that she cannot stay tonight, thanks Moussa for inviting her, and wishes his family a good celebration.",
+  "reason": "Aminata’s first impulse was to hold back and protect her evening, treating the invitation as a socially weighty request that could cost her rest, study time, and a difficult walk home. Reflection softened that impulse rather than reversing it: she gave more weight to Moussa’s past help, neighborhood goodwill, and the importance of his first-child celebration, while still seeing the practical risk as real. Because her revised tendency is to protect her evening but acknowledge Moussa without closing the door sharply, she declines directly but politely, with gratitude and a brief祝 well-wish. That fits her habitual restraint, her careful accounting of costs, and her tendency to answer invitations without joking or overexplaining when she is exhausted and short on resources.",
+  "decision_mode": "REFLECTION_AVAILABLE",
+  "context_generated_at": "2026-09-03T00:53:11.524Z",
+  "action_generated_at": "2026-09-03T00:45:18.260Z",
+  "generated_at": "2026-09-03T00:53:30.853Z",
+  "model": "deepseek/deepseek-v4-flash"
+}

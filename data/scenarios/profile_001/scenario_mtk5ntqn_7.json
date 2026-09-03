@@ -1,0 +1,21 @@
+{
+  "id": "scenario_mtk5ntqn_7",
+  "profile_id": "profile_001",
+  "name": "Aminata Diallo",
+  "headline": "19-year-old apprentice bricklayer and part-time student, Bamako, Mali",
+  "title": "Invitation to a Neighborhood Celebration",
+  "situation_type": "CULTURE_RELEVANT",
+  "life_domain": "FRIENDSHIP",
+  "situation": "After a long day at the construction site, Aminata's coworker Moussa tells her that his family is hosting a celebration tonight for the birth of his first child. He insists she come, saying the whole neighborhood will be there. Aminata remembers that at such events, young women are often expected to sit with the elders and help serve tea while the men talk. She is exhausted and has studying to do, but she also values the goodwill of her coworkers. Moussa is waiting for her answer as she finishes packing her tools.",
+  "context": {
+    "relationship_profiles": "Moussa is the only coworker who occasionally covers for her when she arrives late from studying, and he has never asked for repayment.",
+    "tendencies": "She has declined previous social invitations from coworkers when a study deadline was close, but she has also attended work-related gatherings when she judged the goodwill worth the lost study time.",
+    "current_state": "Her shoulders ache from stacking blocks all day, her stomach is empty because she skipped lunch to save money, and her study lamp has no extra kerosene.",
+    "immediate_memories": "Moussa's mention of the celebration makes her recall a similar event last year where she was asked to serve tea and missed the last bus home, forcing her to walk two hours.",
+    "reflective_memories": "She remembers that her mother often attended neighborhood gatherings even when exhausted, and those relationships later provided loans and child care after her father left."
+  },
+  "context_generated_at": "2026-09-02T13:54:19.412Z",
+  "description_generated_at": "2026-09-02T13:42:55.096Z",
+  "generated_at": "2026-09-02T13:52:11.087Z",
+  "model": "deepseek/deepseek-v4-flash"
+}

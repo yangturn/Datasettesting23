@@ -1,0 +1,22 @@
+{
+  "id": "run_evaluations_mtjve58w_ff7d5f",
+  "stage": "evaluations",
+  "status": "succeeded",
+  "total": 37,
+  "done": 25,
+  "failed": 2,
+  "errors": [
+    {
+      "id": "profile_006",
+      "error": "context: terminated"
+    },
+    {
+      "id": "profile_009",
+      "error": "context: OpenRouter returned no content."
+    }
+  ],
+  "model": "deepseek/deepseek-v4-pro-0813",
+  "started_at": "2026-09-02T09:04:43.280Z",
+  "finished_at": "2026-09-02T10:13:39.784Z",
+  "message": "Built 4 context(s) (3 reflective, 1 immediate) and scored 21 prediction(s)."
+}

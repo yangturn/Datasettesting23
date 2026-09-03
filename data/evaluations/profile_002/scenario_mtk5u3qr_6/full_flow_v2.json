@@ -1,0 +1,24 @@
+{
+  "profile_id": "profile_002",
+  "scenario_id": "scenario_mtk5u3qr_6",
+  "flow_key": "full_flow_v2",
+  "name": "Ingrid Lindgren",
+  "scenario_title": "Sillunch Invitation",
+  "scores": {
+    "character_consistency": 8,
+    "situation_fit": 8,
+    "state_memory_alignment": 8,
+    "action_plausibility": 8,
+    "reasoning_coherence": 8
+  },
+  "overall_score": 8,
+  "score_scale": 10,
+  "dimension_set": 4,
+  "action": "Ingrid tells Maja, \"Yes, I think I can make it — let me just make sure my mother has the afternoon covered, and then I’ll come.\"",
+  "reason": "Ingrid’s first impulse was to answer carefully and lean toward accepting while hedging against the practical obstacles. Reflection strengthened that tendency by giving more weight to the loss of declining again, while also making the day’s constraints feel workable rather than absolute: her mother can manage a few hours with a quick neighbor check-in, even though the night nurse is off and Ingrid is tired from the week. Because Ingrid is typically controlled, dutiful, and cautious about her caregiving routines, she does not commit impulsively; instead, she accepts with qualification and a check on coverage, matching the revised_action_tendency while preserving the remaining concern about her mother’s afternoon.",
+  "decision_mode": "REFLECTION_AVAILABLE",
+  "context_generated_at": "2026-09-03T01:11:35.275Z",
+  "action_generated_at": "2026-09-03T00:45:37.462Z",
+  "generated_at": "2026-09-03T01:12:11.805Z",
+  "model": "deepseek/deepseek-v4-flash"
+}

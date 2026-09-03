@@ -1,0 +1,13 @@
+{
+  "id": "run_profiles_mtiut2tn_7b46cd",
+  "stage": "profiles",
+  "status": "succeeded",
+  "total": 10,
+  "done": 10,
+  "failed": 0,
+  "errors": [],
+  "model": "deepseek/deepseek-v4-pro-0813",
+  "started_at": "2026-09-01T16:00:34.187Z",
+  "finished_at": "2026-09-01T16:00:57.051Z",
+  "message": "Replaced the population, deleting 6 profile(s) and the 6 description(s) and 6 scenario(s) and 32 flow execution(s) and 6 evaluation context(s) and 30 evaluation(s) derived from them."
+}

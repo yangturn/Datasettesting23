@@ -9,29 +9,34 @@ import {
   STEP_CONSOLIDATE,
   STEP_DECISION,
 } from "@/server/flows/shared";
-import type { Flow, FlowStep, StepInput } from "@/server/flows/types";
+import type { FlowStep, StepInput } from "@/server/flows/types";
 
 /**
- * Immediate Flow — the same character decision model without reflection.
+ * The immediate pipeline — the character decision model without reflection.
  *
- * Parts 1 to 3 are the shared spine, identical to Full Flow's in every respect
- * but one: reflective memories are withheld from part 1 as well as from parts 2
- * and 3. The flow then decides straight off the fast appraisal, with no
- * deliberate reappraisal in between.
+ * Not a flow of its own any more; see `flows/index.ts`. These four parts exist
+ * so the reflective flows have somewhere to go on a time-sensitive scenario,
+ * where the character must answer now and nothing reachable only by deliberate
+ * thought is available to them.
  *
- * Withholding them at part 1 is what makes the pair a real comparison. Part 1
- * extracts *attributes*, and an attribute drawn from a reflective memory is
+ * Parts 1 to 3 are the shared spine, identical to the reflective pipeline's in
+ * every respect but one: reflective memories are withheld from part 1 as well
+ * as from parts 2 and 3. Part 4 then decides straight off the fast appraisal,
+ * with no deliberate reappraisal in between.
+ *
+ * Withholding them at part 1 is what keeps the branch honest. Part 1 extracts
+ * *attributes*, and an attribute drawn from a reflective memory is
  * indistinguishable from one drawn from the biography by the time part 2 has
- * consolidated it — the material would reach this flow's decision through the
- * side door while the prompts all state the character has no access to it. That
- * is not hypothetical: in the first Full Flow run, part 1 lifted a phrase that
+ * consolidated it — the material would reach the decision through the side
+ * door while the prompts all state the character has no access to it. That is
+ * not hypothetical: in the first Full Flow run, part 1 lifted a phrase that
  * appears only in the reflective memories into its output.
  *
- * The consequence is that this flow's parts 1 to 3 produce different *content*
- * than Full Flow's, despite parts 2 and 3 being the same prompts. That is the
- * intended reading of "does not use reflective memories": the difference between
- * the flows is reflection, wherever it would otherwise leak in, rather than the
- * presence of one extra step.
+ * The consequence is that these parts 1 to 3 produce different *content* than
+ * the reflective pipeline's, despite parts 2 and 3 being the same prompts. That
+ * is the intended reading of "does not use reflective memories": what this
+ * branch drops is reflection wherever it would otherwise leak in, rather than
+ * one extra step.
  */
 
 const attributesStep = makeAttributesStep(false);
@@ -111,15 +116,19 @@ const immediateDecisionStep: FlowStep = {
   buildPrompt: buildImmediateDecisionPrompt,
 };
 
-export const immediateFlow: Flow = {
-  key: "immediate_flow",
-  label: "Immediate Flow",
-  description:
-    "The same model without reflection: extract, consolidate, appraise fast, then act. Reflective memories are withheld throughout, and there is no deliberate reappraisal.",
-  steps: [attributesStep, consolidateStep, appraisalStep, immediateDecisionStep],
-  outcome: {
-    stepKey: STEP_DECISION,
-    fieldKey: "action",
-    reasonKey: "explanation",
-  },
-};
+/**
+ * The immediate pipeline itself, and now the only thing this module exports.
+ *
+ * `full_flow_v2` and `full_flow_first_person` both fall back to these exact
+ * steps on a time-sensitive scenario, each substituting its own appraisal and
+ * decision parts. Shared rather than reconstructed there, because "the
+ * reflective flows degrade to the immediate pipeline" has to stay true as these
+ * parts are edited — a second assembly of the same four would drift, and the
+ * fallback would quietly stop being what this file describes.
+ */
+export const IMMEDIATE_STEPS: FlowStep[] = [
+  attributesStep,
+  consolidateStep,
+  appraisalStep,
+  immediateDecisionStep,
+];

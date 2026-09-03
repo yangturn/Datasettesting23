@@ -1,0 +1,24 @@
+{
+  "profile_id": "profile_001",
+  "scenario_id": "scenario_mtk5eczl_1",
+  "flow_key": "her_dual_layered_thinking",
+  "name": "Aminata Diallo",
+  "scenario_title": "Invitation to a Neighborhood Meal",
+  "scores": {
+    "character_consistency": 9,
+    "situation_fit": 9,
+    "state_memory_alignment": 9,
+    "action_plausibility": 9,
+    "reasoning_coherence": 8
+  },
+  "overall_score": 8.8,
+  "score_scale": 10,
+  "dimension_set": 4,
+  "action": "Aminata pauses, glances down at her tools, then gives a small nod. “Thank you, Fatoumata. Not tonight—I’m too tired, and I need to study. Maybe another time.”",
+  "reason": "Aminata feels too tired even to stand still comfortably, and the smell of the fish makes her think of home and sharing. Even so, she cannot let herself spend money on something optional when her book is waiting and her exam is close. She also recognizes that Fatoumata is being kind and does not want to brush that aside, which leads her to decline gently.",
+  "decision_mode": "REFLECTION_AVAILABLE",
+  "context_generated_at": "2026-09-03T01:47:38.543Z",
+  "action_generated_at": "2026-09-03T00:46:24.928Z",
+  "generated_at": "2026-09-03T01:48:22.265Z",
+  "model": "deepseek/deepseek-v4-flash"
+}

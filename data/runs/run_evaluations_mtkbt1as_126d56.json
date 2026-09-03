@@ -1,0 +1,13 @@
+{
+  "id": "run_evaluations_mtkbt1as_126d56",
+  "stage": "evaluations",
+  "status": "succeeded",
+  "total": 1,
+  "done": 1,
+  "failed": 0,
+  "errors": [],
+  "model": "deepseek/deepseek-v4-flash",
+  "started_at": "2026-09-02T16:44:11.860Z",
+  "finished_at": "2026-09-02T16:45:08.778Z",
+  "message": "Built 0 context(s) (0 reflective, 0 immediate) and scored 1 prediction(s)."
+}

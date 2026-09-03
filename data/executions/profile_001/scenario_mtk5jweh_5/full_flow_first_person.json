@@ -1,0 +1,50 @@
+{
+  "flow_key": "full_flow_first_person",
+  "profile_id": "profile_001",
+  "scenario_id": "scenario_mtk5jweh_5",
+  "name": "Aminata Diallo",
+  "scenario_title": "The Weekly Count",
+  "steps": {
+    "attributes": {
+      "output": {
+        "values_culture_and_background": "She internalized a habit of strict double-checking and self-reliance after her mother lost a market stall to a miscalculated loan. She values counting and verification as the only trustworthy basis for decisions. She saves money methodically and keeps plans private because she believes spoken plans become exposed and vulnerable to being borrowed against.",
+        "roles_and_commitments": "She is a construction worker on a crew in Bamako and the youngest person on the crew, with the only woman role there. She is a trainee/protégée of master mason Sékou and is trusted for her numbers. She is saving to support her younger sister and provide her a place to live and attend school. She is enrolled in an accounting course she is paying for herself.",
+        "capabilities_and_constraints": "She can do load-bearing estimates in her head, check measurements precisely, and keep careful records in a notebook. She has basic construction skills and works long hours hauling cement and stacking blocks. She has limited money, cannot afford bus fare both ways to class, and relies on walking. She lives in a rented room without running water and fetches water from a communal stand.",
+        "personality_and_response_style": "She is precise, methodical, and cautious. She is quiet and reserved, rarely speaking about her plans. She does not ask for advances on her wage. When faced with requests, she calculates costs before answering. She is attentive to detail and repeatedly checks measurements rather than trusting a first pass."
+      },
+      "generated_at": "2026-09-03T00:45:23.099Z",
+      "model": "openai/gpt-5.4-mini"
+    },
+    "consolidate": {
+      "output": {
+        "initial_context": "RELEVANT CHARACTER BACKGROUND\n\nAminata Diallo is a young construction worker in a bustling district on the outskirts of Bamako. She is the youngest person on her crew and the only woman on the site. She lives alone in a rented room with packed-earth walls and a corrugated tin roof, rises before dawn, and begins each day by carrying water from a communal stand because there is no tap in her room. She wears the same work trousers six days a week and spends long days hauling cement, stacking blocks, and checking measurements on the construction site.\n\nShe is trained by Sékou, an old master mason who lost two fingers to a faulty crane. He has trained her for two years, trusts her numbers, and treats her like a protégée rather than a favored equal. He teases her as “la petite comptable” because she recalculates load-bearing estimates in her head before lifting a trowel. She is also enrolled in an accounting course at a community center on the other side of the city, paying for it herself. She cannot afford the bus fare both ways, so she walks there, as she does for much of her travel. She keeps a small notebook tucked inside her shirt for figures and dates, and she studies at night by the light of a kerosene lamp until her eyes burn.\n\nAminata’s habits and values are shaped by hardship and loss. She internalized strict double-checking and self-reliance after her mother lost a market stall to a miscalculated loan. Her mother died when Aminata was twelve. She has counted everything since then: bricks, rice, weeks until exams, and other concrete quantities. She values counting and verification as the only trustworthy basis for decisions. She saves money methodically, keeps a fixed emergency fund hidden under a loose floorboard near her mattress, and never touches it or counts it in daylight. She keeps plans private because she believes spoken plans become exposed and vulnerable to being borrowed against. She does not speak openly about what she is saving for, even though she is saving not only for school and stability but also for a proper room with running water where her younger sister can live with her and attend school.\n\nHer father once sold his tools to pay for a funeral and never held a trowel again, an event that stands in contrast to her own persistence in holding and using her tools every day. She is quiet and reserved, rarely speaking about her plans. She does not ask for advances on her wage. In work and daily life, she is precise, methodical, cautious, and attentive to detail. When faced with requests, she typically calculates the costs in time before answering. She routinely stays late to double-check measurements even without pay.\n\nOBJECTIVE SITUATION\n\nAt the end of the workday, as the crew packs up, Sékou approaches Aminata at the site. He says the site manager needs someone to stay an extra hour that night to do the weekly inventory count before the next delivery arrives in the morning. The site manager is about to leave and tells Sékou to decide immediately. Sékou asks Aminata directly, “Decide now, little comptable. Do you take it?” There is no overtime pay, only responsibility. Aminata has her accounting notebook waiting at home and a long walk back. She must answer before Sékou turns away.\n\nPRE-APPRAISAL STATE AND ACCESSIBLE MEMORIES\n\nAminata is physically exhausted after ten hours of hauling cement and stacking blocks. Her eyes burn from dust, and she faces a two-hour walk home if she leaves now. Her accounting notebook is at home, and the study session she had planned for tonight is already shortened. She is immediately aware of the time and effort implications of the request, along with the absence of overtime pay.\n\nThe phrase “weekly count” directly cues a recent inventory in which she was the only person who noticed that the cement bags on the delivery sheet did not match the pile. The site manager’s hurried tone also cues a prior experience of sudden financial pressure: her mother’s loan being called in without warning. These are directly accessible memories connected to the present request. Her established habits of calculation, careful verification, silence about plans, and reluctance to ask for advances are currently present as background conditions, not as a decided response."
+      },
+      "generated_at": "2026-09-03T00:45:29.784Z",
+      "model": "openai/gpt-5.4-mini"
+    },
+    "appraisal": {
+      "output": {
+        "initial_interpretation": "This feels like a rushed test of whether I will take on the count because I am the one who notices what others miss. It also lands like an extra burden being pushed onto me at the end of the day, with no time to think and no pay for it.",
+        "initial_emotional_reaction": "I feel tired down to my bones, and the dust in my eyes makes everything sharper and more irritating. I also feel that old tightness in my chest when something is sudden and important and I have to answer before I am ready.",
+        "activated_concerns": "My time, my strength, and the walk home feel heavy right now, along with the study I already planned for tonight. I also feel the pull of being accurate, of not letting a count go wrong, and the sting of having my work treated as responsibility without compensation.",
+        "automatic_theory_of_mind": "I read Sékou as expecting me to say yes because he trusts my numbers. The site manager seems to want an immediate answer and not care much what it costs me, only that someone reliable stays.",
+        "initial_action_tendency": "I want to pause and weigh the hours in my head before I answer, but the pressure makes me lean toward a short, careful refusal or at least a reluctant hesitation."
+      },
+      "generated_at": "2026-09-03T00:45:33.418Z",
+      "model": "openai/gpt-5.4-mini"
+    },
+    "decision": {
+      "output": {
+        "action": "Aminata shakes her head slightly and says, \"Pas ce soir, Sékou.\"",
+        "explanation": "Aminata’s immediate response is shaped by exhaustion, the long walk home, and the lost study time already waiting for her, which make the extra hour feel like an added burden. At the same time, the request’s urgency and the cue to accuracy activate her respect for careful counting, but her initial tendency is still a reluctant refusal rather than agreement. That produces a brief, respectful no instead of a longer explanation or negotiation."
+      },
+      "generated_at": "2026-09-03T00:45:36.460Z",
+      "model": "openai/gpt-5.4-mini"
+    }
+  },
+  "scenario_generated_at": "2026-09-02T13:49:07.913Z",
+  "scenario_context_generated_at": "2026-09-02T13:51:10.578Z",
+  "description_generated_at": "2026-09-02T13:42:55.096Z",
+  "started_at": "2026-09-03T00:45:18.830Z",
+  "updated_at": "2026-09-03T00:45:36.460Z"
+}

@@ -1,0 +1,37 @@
+{
+  "flow_key": "her_dual_layered_thinking",
+  "profile_id": "profile_001",
+  "scenario_id": "scenario_mtk5f2n7_2",
+  "name": "Aminata Diallo",
+  "scenario_title": "A Tea Offer After Class",
+  "steps": {
+    "system_thinking": {
+      "output": {
+        "system_thinking": "I need to portray Aminata as tired, cautious, and polite. She registers the offer as potentially kind, but her established pattern is to avoid accepting gifts or favors from men she does not know well, and she also dislikes stopping on her walk home because she wants to get back before dark. Her immediate physical state—aching legs, thirst, and hunger—makes the warm tea tempting, and the stall’s light and the sweet-tea smell can briefly tug at her with memory, but those sensations should not override her caution. In the next turn, she should likely pause only briefly, keep her posture reserved, and give a respectful refusal or a self-paying alternative rather than accepting the free drink. Her speech should be concise and courteous, acknowledging the man’s offer without encouraging familiarity. The response should reflect that she sees no confirmed harm in him, only insufficient acquaintance and the practical need to continue home."
+      },
+      "generated_at": "2026-09-03T00:46:08.376Z",
+      "model": "openai/gpt-5.4-mini"
+    },
+    "role_response": {
+      "output": {
+        "role_thinking": "My feet hurt, and the tea smells sweet and warm, but I do not know him well enough to take his offer. I should not stop here long. I can be polite and keep going.",
+        "action": "Aminata slows only a little, gives a small nod, and says, \"No, thank you. I should keep walking.\""
+      },
+      "generated_at": "2026-09-03T00:46:11.132Z",
+      "model": "openai/gpt-5.4-mini"
+    },
+    "decision": {
+      "output": {
+        "action": "Aminata slows only a little, gives a small nod, and says, \"No, thank you. I should keep walking.\"",
+        "explanation": "Aminata’s aching feet and the warm, sweet smell of the tea make the offer appealing, but she does not know the young man well enough to accept it. She also feels she should not stop there long, so she decides to be polite and keep going."
+      },
+      "generated_at": "2026-09-03T00:46:12.898Z",
+      "model": "openai/gpt-5.4-mini"
+    }
+  },
+  "scenario_generated_at": "2026-09-02T13:45:22.723Z",
+  "scenario_context_generated_at": "2026-09-02T13:46:42.236Z",
+  "description_generated_at": "2026-09-02T13:42:55.096Z",
+  "started_at": "2026-09-03T00:46:05.390Z",
+  "updated_at": "2026-09-03T00:46:12.898Z"
+}

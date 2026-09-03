@@ -1,0 +1,24 @@
+{
+  "profile_id": "profile_002",
+  "scenario_id": "scenario_mtk5u3qr_6",
+  "flow_key": "direct_zero_shot",
+  "name": "Ingrid Lindgren",
+  "scenario_title": "Sillunch Invitation",
+  "scores": {
+    "character_consistency": 7,
+    "situation_fit": 8,
+    "state_memory_alignment": 7,
+    "action_plausibility": 7,
+    "reasoning_coherence": 7
+  },
+  "overall_score": 7.2,
+  "score_scale": 10,
+  "dimension_set": 4,
+  "action": "Ingrid tells Maja that she will come to the sillunch on Saturday at noon.",
+  "reason": "She has already been declining these invitations, but this call strongly reactivates positive memories of Gamla Stan, snapsvisor, and her mother’s remark about sillunch, while her mother is calm and can manage a few hours. That makes accepting the most character-consistent next step.",
+  "decision_mode": "REFLECTION_AVAILABLE",
+  "context_generated_at": "2026-09-03T01:11:35.275Z",
+  "action_generated_at": "2026-09-03T00:45:18.825Z",
+  "generated_at": "2026-09-03T01:14:49.998Z",
+  "model": "deepseek/deepseek-v4-flash"
+}

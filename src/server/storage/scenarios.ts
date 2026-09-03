@@ -1,6 +1,6 @@
 import "server-only";
 
-import { mkdir, readdir, readFile, rm, writeFile } from "node:fs/promises";
+import { mkdir, readdir, readFile, rm } from "node:fs/promises";
 import path from "node:path";
 
 import {
@@ -9,6 +9,7 @@ import {
   type Scenario,
   type Stage2Config,
 } from "@/lib/stage-2";
+import { writeJsonFile } from "@/server/storage/write-json";
 
 /**
  * Scenarios live at `data/scenarios/<profile_id>/<scenario_id>.json`, so
@@ -82,9 +83,7 @@ export async function listScenariosForProfile(
   );
 
   // Newest first — a re-run's output should be what you see at the top.
-  return scenarios.sort((a, b) =>
-    b.generated_at.localeCompare(a.generated_at),
-  );
+  return scenarios.sort((a, b) => b.generated_at.localeCompare(a.generated_at));
 }
 
 export async function listAllScenarios(): Promise<Scenario[]> {
@@ -105,15 +104,13 @@ export async function listAllScenarios(): Promise<Scenario[]> {
 export async function writeScenario(scenario: Scenario): Promise<void> {
   const dir = profileDir(scenario.profile_id);
   if (!dir || !SAFE_ID.test(scenario.id)) {
-    throw new Error(`Unsafe scenario path: ${scenario.profile_id}/${scenario.id}`);
+    throw new Error(
+      `Unsafe scenario path: ${scenario.profile_id}/${scenario.id}`,
+    );
   }
 
   await mkdir(dir, { recursive: true });
-  await writeFile(
-    path.join(dir, `${scenario.id}.json`),
-    `${JSON.stringify(scenario, null, 2)}\n`,
-    "utf8",
-  );
+  await writeJsonFile(path.join(dir, `${scenario.id}.json`), scenario);
 }
 
 /**

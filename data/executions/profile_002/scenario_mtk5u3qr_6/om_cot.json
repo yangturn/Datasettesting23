@@ -1,0 +1,22 @@
+{
+  "flow_key": "om_cot",
+  "profile_id": "profile_002",
+  "scenario_id": "scenario_mtk5u3qr_6",
+  "name": "Ingrid Lindgren",
+  "scenario_title": "Sillunch Invitation",
+  "steps": {
+    "decision": {
+      "output": {
+        "action": "Ingrid tells Maja that she will come to the sillunch this Saturday at noon.",
+        "explanation": "Her mother is calm and asleep, the hotel work is under control for the moment, and the invitation strongly activates memories of sharing that cellar restaurant and snapsvisor with her mother and Maja. Since she has also felt regret after skipping similar cultural rituals, she is likely to accept rather than send another polite refusal."
+      },
+      "generated_at": "2026-09-03T00:45:20.511Z",
+      "model": "openai/gpt-5.4-mini"
+    }
+  },
+  "scenario_generated_at": "2026-09-02T13:57:03.987Z",
+  "scenario_context_generated_at": "2026-09-02T13:57:39.057Z",
+  "description_generated_at": "2026-09-02T13:43:19.287Z",
+  "started_at": "2026-09-03T00:45:17.520Z",
+  "updated_at": "2026-09-03T00:45:20.511Z"
+}

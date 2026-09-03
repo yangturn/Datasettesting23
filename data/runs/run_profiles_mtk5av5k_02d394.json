@@ -1,0 +1,13 @@
+{
+  "id": "run_profiles_mtk5av5k_02d394",
+  "stage": "profiles",
+  "status": "succeeded",
+  "total": 2,
+  "done": 2,
+  "failed": 0,
+  "errors": [],
+  "model": "deepseek/deepseek-v4-flash",
+  "started_at": "2026-09-02T13:42:06.392Z",
+  "finished_at": "2026-09-02T13:42:29.485Z",
+  "message": null
+}

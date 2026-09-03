@@ -3,6 +3,7 @@ import { z } from "zod";
 
 import { paginate, paginationInputSchema } from "@/lib/pagination";
 import { FLOWS, flowMeta } from "@/server/flows";
+import { flowStepsFor } from "@/server/flows/types";
 import {
   planFlowRun,
   runFlows,
@@ -109,6 +110,11 @@ export const executionsRouter = createTRPCRouter({
             // columns whether or not that flow has run.
             cells: FLOWS.map((flow) => {
               const execution = byFlow.get(flow.key) ?? null;
+              // The steps this scenario actually gets. A flow that branches on
+              // the situation type runs fewer parts here than it declares, and
+              // listing the declared ones would show a finished cell as forever
+              // short of its last part.
+              const steps = flowStepsFor(flow, scenario);
 
               /**
                * True when the execution was built from inputs that have since
@@ -136,7 +142,7 @@ export const executionsRouter = createTRPCRouter({
                 stale,
                 outcome: outcome === "" ? null : outcome,
                 outcomeLabel:
-                  flow.steps
+                  steps
                     .find((step) => step.key === flow.outcome?.stepKey)
                     ?.fields.find(
                       (field) => field.key === flow.outcome?.fieldKey,
@@ -146,7 +152,7 @@ export const executionsRouter = createTRPCRouter({
                  * has run. Steps are listed even when unrun so a half-finished
                  * flow shows where it stopped rather than simply looking short.
                  */
-                steps: flow.steps.map((step) => ({
+                steps: steps.map((step) => ({
                   key: step.key,
                   label: step.label,
                   fields: step.fields,
@@ -155,10 +161,10 @@ export const executionsRouter = createTRPCRouter({
                 // Counted by the same rule the planner schedules by, so the
                 // page cannot report a full grid while the runner reports work
                 // left to do.
-                doneSteps: flow.steps.filter((step) =>
+                doneSteps: steps.filter((step) =>
                   stepIsComplete(execution, step),
                 ).length,
-                stepCount: flow.steps.length,
+                stepCount: steps.length,
               };
             }),
             /** Executions on disk for flows the registry no longer defines. */
@@ -203,12 +209,15 @@ export const executionsRouter = createTRPCRouter({
               scenario.context_generated_at &&
             execution.description_generated_at === description?.generated_at;
 
+          const steps = flowStepsFor(flow, scenario);
+
           return {
             flowKey: flow.key,
+            /** Model calls this flow needs for this particular scenario. */
+            stepCount: steps.length,
             // Steps that a skip-existing run would not have to redo.
             doneSteps: current
-              ? flow.steps.filter((step) => stepIsComplete(execution, step))
-                  .length
+              ? steps.filter((step) => stepIsComplete(execution, step)).length
               : 0,
           };
         });
@@ -221,16 +230,28 @@ export const executionsRouter = createTRPCRouter({
     // "how many calls will this cost" is only answerable for the ones actually
     // selected. A total would have to be scaled, and a scaled total is a guess
     // dressed as a count.
-    const flows = FLOWS.map((flow) => ({
-      key: flow.key,
-      label: flow.label,
-      stepCount: flow.steps.length,
-      /** Model calls this flow needs to cover every runnable scenario. */
-      totalSteps: flow.steps.length * runnable.length,
-      doneSteps: flat
-        .filter((entry) => entry.flowKey === flow.key)
-        .reduce((total, entry) => total + entry.doneSteps, 0),
-    }));
+    const flows = FLOWS.map((flow) => {
+      const entries = flat.filter((entry) => entry.flowKey === flow.key);
+
+      return {
+        key: flow.key,
+        label: flow.label,
+        /**
+         * Parts the flow declares. A branching flow runs fewer on some
+         * scenarios, so this describes the flow rather than promising a cost —
+         * `totalSteps` is the figure that actually counts calls.
+         */
+        stepCount: flow.steps.length,
+        /**
+         * Model calls this flow needs to cover every runnable scenario, summed
+         * per scenario rather than multiplied out: a flow that branches runs a
+         * different number of parts on different scenarios, and a product would
+         * overstate the cost of every run it appears in.
+         */
+        totalSteps: entries.reduce((total, entry) => total + entry.stepCount, 0),
+        doneSteps: entries.reduce((total, entry) => total + entry.doneSteps, 0),
+      };
+    });
 
     return {
       scenarioCount: runnable.length,

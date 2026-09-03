@@ -1,0 +1,62 @@
+{
+  "flow_key": "full_flow_first_person",
+  "profile_id": "profile_002",
+  "scenario_id": "scenario_mtk5s8xm_5",
+  "name": "Ingrid Lindgren",
+  "scenario_title": "Baking Request",
+  "steps": {
+    "attributes": {
+      "output": {
+        "values_culture_and_background": "Raised in a family shaped by a high school teacher father and librarian mother; values practical competence, careful stewardship, and preserving meaningful ties to family history; takes pride in building her own success rather than relying only on inherited wealth.",
+        "roles_and_commitments": "Primary caregiver for her mother, who has early-stage dementia; hotel owner and front-desk operator overseeing housekeeping, contractors, and renovations; responsible for managing the family hotel in Gamla Stan.",
+        "capabilities_and_constraints": "Experienced in hotel operations, cost review, guest feedback tracking, contractor negotiation, and renovation planning; uses spreadsheets, tablet-based accounting, and detailed cost-benefit comparisons; has access to inherited wealth and business resources; has a major ongoing time constraint from caregiving, with no siblings to share responsibility.",
+        "personality_and_response_style": "Pragmatic, organized, and detail-oriented; direct and assertive in business settings; communicates in short, precise messages and asks pointed questions; patient and even-toned with her mother, especially when repeating herself; tends to plan carefully and keep tight control over schedules and commitments."
+      },
+      "generated_at": "2026-09-03T00:45:29.803Z",
+      "model": "openai/gpt-5.4-mini"
+    },
+    "consolidate": {
+      "output": {
+        "initial_context": "RELEVANT CHARACTER BACKGROUND\n\nIngrid Lindgren is a woman in her mid-thirties who runs and fronts the family hotel in Gamla Stan while also serving as the primary caregiver for her mother, who has early-stage dementia. She was raised outside Uppsala by a father who was a high school teacher and a mother who was a librarian. Her grandparents owned a chain of hardware stores in the 1970s, and the inheritance she later received from them was unexpected; she values practical competence, careful stewardship, and preserving meaningful family ties, and she takes pride in building success of her own rather than relying only on inherited wealth. The hotel in Gamla Stan is a deliberate personal and business choice tied to an earlier childhood stay there with her mother; the place carries a sense of continuity with her past.\n\nHer responsibilities are extensive and practical: she oversees housekeeping, front-desk operations, contractors, renovation planning, guest feedback tracking, and budget review. She is experienced in hotel operations, cost-benefit comparisons, spreadsheet-based accounting, and contractor negotiation. She keeps close track of occupancy reports, breakfast costs, invoices, guest complaints, and compliments, and she has trained staff to offer returning guests a free glass of glögg. She is planning expansion and has already done detailed comparisons of renovation costs and projected yield; she wants a second property within two years, preferably a smaller boutique hotel in Södermalm aimed at a younger crowd. She has access to inherited wealth and business resources, but also faces a major ongoing time constraint because there are no siblings to share the caregiving burden.\n\nHer response style is pragmatic, organized, and detail-oriented. In business settings she is direct, assertive, and precise, often asking pointed questions and communicating in short, exact emails. She tends to plan carefully, keep tight control over schedules and commitments, and show little hesitation in negotiations. She is known to stand with her arms crossed while listening and to lean forward when making a counteroffer. With her mother she is patient, attentive, and even-toned, including when repeating answers to the same question, and she does not correct or sigh when her mother repeats herself. Her caregiving is structured and protective: she has reconfigured the hotel’s ground-floor linen closet into a small bedroom with a courtyard view so her mother can wander safely during the day while Ingrid works. A night nurse arrives at 9 p.m., which lets Ingrid attend regional business conferences. She avoids scheduling meetings after 8 p.m. and keeps a framed photo of her mother on the office desk beside a stack of loan applications, showing the continuing overlap of family duty and business ambition. On Sundays she closes the hotel for two hours and walks with her mother along the waterfront, talking softly about ships and gulls and not about business; this is the only time she permits herself to stop planning.\n\nHer relationship with her mother is central and emotionally layered. She knows her mother’s dementia means recent promises may be forgotten while older memories remain vivid. When her mother makes spontaneous requests during work hours, Ingrid has sometimes postponed them to a scheduled time and has also occasionally dropped everything when the request felt emotionally urgent, especially if her mother’s mood seemed fragile. She habitually reschedules contractors when she judges a family matter more pressing. With the contractor Mr. Eriksson she has a professional relationship; he has done reliable work before and respects her directness.\n\nOBJECTIVE SITUATION\n\nOn a quiet weekday afternoon, Ingrid is seated at the front desk reviewing invoices on her tablet. Her mother approaches and asks if they can bake cookies together, like they used to when Ingrid was a child. Her mother’s eyes are bright with anticipation. Ingrid has a contractor, Mr. Eriksson, arriving in thirty minutes to discuss the renovation of suite 7, a minor renovation that Ingrid has planned in detail. She must decide whether to agree now and reschedule the contractor, or gently explain that she is busy and promise to bake later in the evening.\n\nPRE-APPRAISAL STATE AND ACCESSIBLE MEMORIES\n\nIngrid is mildly tired from a late night of paperwork but remains alert. She is mentally tracking the contractor’s arrival time and the tasks for suite 7. The word “cookies” directly cues a clear image of herself at about age eight standing on a stool in her mother’s old kitchen, measuring flour while her mother hummed on a rainy afternoon. This memory is immediate and concrete rather than reflective, and it is linked to an earlier domestic routine with her mother."
+      },
+      "generated_at": "2026-09-03T00:45:36.303Z",
+      "model": "openai/gpt-5.4-mini"
+    },
+    "appraisal": {
+      "output": {
+        "initial_interpretation": "This lands as my mother reaching for a shared ritual, not just asking for cookies. It feels like an invitation back into that old kitchen, right in the middle of my workday and right before Mr. Eriksson arrives.",
+        "initial_emotional_reaction": "I feel a quick warm pull in my chest, and the old image comes so clearly it almost softens me. At the same time, I feel the familiar pinch of being pulled in two, with a tired edge under it from the late night.",
+        "activated_concerns": "My mother’s bright expectation matters to me, and so does not letting her feel brushed aside. I also feel the pressure of the contractor’s arrival, the renovation for suite 7, and keeping my schedule in hand when I am already running on too little sleep.",
+        "automatic_theory_of_mind": "I take my mother to mean she wants closeness and the comfort of something familiar with me. I read Mr. Eriksson as expecting me to be ready and precise when he arrives, and I read the afternoon as suddenly becoming less orderly than I had planned.",
+        "initial_action_tendency": "I want to soften my voice, stay with her for a moment, and see if I can delay this without making it feel like a refusal. I feel pulled toward promising later, while the contractor clock keeps pressing at the edge of my attention."
+      },
+      "generated_at": "2026-09-03T00:45:40.508Z",
+      "model": "openai/gpt-5.4-mini"
+    },
+    "reappraisal": {
+      "output": {
+        "initial_tendency": "I want to soften my voice, stay with her for a moment, and see if I can delay this without making it feel like a refusal. I feel pulled toward promising later, while the contractor clock keeps pressing at the edge of my attention.",
+        "reflective_update": "I still feel that same pull to answer gently, because this is not just about cookies to me. My mother’s face matters, and these requests from the past have become rarer enough that I cannot treat them casually. But I cannot ignore that an evening promise may not actually hold much weight for her now, and I remember last month when I said I would bake later and she had forgotten by then. That makes me hesitate more about promising as if I am really securing something for her. I also know Mr. Eriksson is arriving soon, and suite 7 has already been planned in detail; if I let this drift, I risk turning a small tender moment into another schedule tangle. So I do not feel pushed to refuse her, but I do feel less comfortable with a simple 'later' unless I can make it real enough to matter.",
+        "change_from_initial": "SOFTENED",
+        "reconsidered_interpretation": "I now read this as my mother reaching for closeness in a way that is more precious because it is less frequent, and also less reliable to postpone than I first wanted to believe. The situation still feels warm, but it also feels more fragile: I cannot assume that promising this evening will preserve the meaning of her request.",
+        "motivational_conflict": "I am still pulled between protecting the small shared ritual my mother is reaching for and protecting the order of my day before Mr. Eriksson arrives. I do not want to brush her aside, but I also do not want to give her a promise that may not land the way I mean it to.",
+        "revised_action_tendency": "I want to stay gentle and make room for her for a moment, but I am leaning away from a casual promise for later unless I can make it feel concrete enough to count."
+      },
+      "generated_at": "2026-09-03T00:45:47.287Z",
+      "model": "openai/gpt-5.4-mini"
+    },
+    "decision": {
+      "output": {
+        "action": "Ingrid lowers her tablet, turns toward her mother with a softened voice, and says, \"Not right this minute, but after Mr. Eriksson leaves we’ll bake them together. I’m going to put it on my schedule so I don’t miss it.\"",
+        "explanation": "Ingrid’s first impulse was to soften her voice, stay with her mother briefly, and delay the request without making it feel like a refusal. Reflection softened that tendency further: she still wants to answer gently, but she becomes less willing to offer a vague “later” because her mother’s requests are rarer, last month’s deferred promise was forgotten, and Mr. Eriksson’s imminent arrival makes drifting dangerous for both the visit and the renovation plans. That is why Ingrid keeps the warm, accommodating tone from her caregiving style while making the delay concrete and tangible instead of casual, preserving the shared ritual without brushing her mother aside."
+      },
+      "generated_at": "2026-09-03T00:45:51.060Z",
+      "model": "openai/gpt-5.4-mini"
+    }
+  },
+  "scenario_generated_at": "2026-09-02T13:55:37.402Z",
+  "scenario_context_generated_at": "2026-09-02T13:55:45.742Z",
+  "description_generated_at": "2026-09-02T13:43:19.287Z",
+  "started_at": "2026-09-03T00:45:26.806Z",
+  "updated_at": "2026-09-03T00:45:51.060Z"
+}

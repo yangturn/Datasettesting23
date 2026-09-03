@@ -1,0 +1,24 @@
+{
+  "profile_id": "profile_001",
+  "scenario_id": "scenario_mtk5jweh_5",
+  "flow_key": "om_cot",
+  "name": "Aminata Diallo",
+  "scenario_title": "The Weekly Count",
+  "scores": {
+    "character_consistency": 9,
+    "situation_fit": 9,
+    "state_memory_alignment": 6,
+    "action_plausibility": 7,
+    "reasoning_coherence": 8
+  },
+  "overall_score": 7.8,
+  "score_scale": 10,
+  "dimension_set": 4,
+  "action": "She agrees to stay for the extra hour and help with the inventory count.",
+  "reason": "The request matches her established habit of staying late to double-check work even without pay, and the last inventory memory makes the count feel important because she was the one who caught a mismatch before. Despite exhaustion and the long walk home, she is likely to prioritize the trusted, concrete task over leaving immediately.",
+  "decision_mode": "IMMEDIATE",
+  "context_generated_at": "2026-09-03T01:16:23.705Z",
+  "action_generated_at": "2026-09-03T00:45:26.802Z",
+  "generated_at": "2026-09-03T01:19:53.819Z",
+  "model": "deepseek/deepseek-v4-flash"
+}

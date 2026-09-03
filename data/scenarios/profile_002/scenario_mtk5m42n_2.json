@@ -1,0 +1,21 @@
+{
+  "id": "scenario_mtk5m42n_2",
+  "profile_id": "profile_002",
+  "name": "Ingrid Lindgren",
+  "headline": "34-year-old owner of a boutique hotel, caring for her mother in Stockholm, Sweden",
+  "title": "Morning Tea or Hand Soap",
+  "situation_type": "NORMAL",
+  "life_domain": "PERSONAL_ROUTINES",
+  "situation": "It is 7:00 AM. Ingrid has just finished her morning review and her mother is settled with a puzzle in the converted linen closet. The night nurse has left. Ingrid usually takes 10 minutes to herself with a cup of tea before the front desk opens at 8. But this morning, she remembers she forgot to order refills for the third-floor bathroom hand soap. The supplier closes at noon. Her mother is calm and content. Ingrid can either order the soap now, using her tea break, or wait until the day's tasks are underway, risking a guest complaint.",
+  "context": {
+    "relationship_profiles": "Ingrid has a cordial but transactional relationship with the soap supplier, who reliably processes orders placed before noon and once delivered a rush order when she forgot last year. She feels a quiet obligation to guests, knowing from complaint logs that missing amenities like soap prompt negative online reviews within hours.",
+    "tendencies": "Most mornings she uses her tea break to handle small operational tasks, such as restocking printer paper or emailing the gardener; she rarely postpones a task until later unless interrupted by a guest emergency. However, when her mother is unsettled, she has delayed non-urgent orders to stay nearby, trusting staff to manage later.",
+    "current_state": "Ingrid is slightly fatigued from a restless night, during which her mother woke twice asking about the post, but she feels a mild satisfaction that her mother is now calmly doing a puzzle. She is aware of the quiet in the lobby and the faint smell of brewing tea from the kitchen.",
+    "immediate_memories": "The sight of the empty soap dispenser in suite 7 last Tuesday flashes to mind, because she had to apologize to a guest who complained at checkout, and the memory of that apology carries a twinge of irritation.",
+    "reflective_memories": "She recalls a pattern from her grandfather's hardware stores: he always said a small forgotten order snowballed into two angry customers by noon, and he taught her to 'fix the leak before it floods.'"
+  },
+  "context_generated_at": "2026-09-02T13:50:59.082Z",
+  "description_generated_at": "2026-09-02T13:43:19.287Z",
+  "generated_at": "2026-09-02T13:50:51.167Z",
+  "model": "deepseek/deepseek-v4-flash"
+}

@@ -44,6 +44,7 @@ function stripCodeFence(text: string): string {
 async function callOpenRouter(
   messages: { role: "system" | "user"; content: string }[],
   signal?: AbortSignal,
+  temperature?: number,
 ): Promise<string> {
   const { apiKey, model, proxyUrl } = openRouterConfig();
 
@@ -57,6 +58,13 @@ async function callOpenRouter(
       model,
       messages,
       response_format: { type: "json_object" },
+      // Every stage runs through this one client, so the benchmark compares
+      // flows at a fixed reasoning budget rather than letting a reasoning model
+      // spend more on whichever stage it finds hard.
+      reasoning: { effort: "low" },
+      // Omitted rather than defaulted, so a caller that says nothing keeps the
+      // model's own default instead of one this client invented.
+      ...(temperature === undefined ? {} : { temperature }),
     }),
     dispatcher: dispatcherFor(proxyUrl),
     signal,
@@ -93,11 +101,18 @@ export async function generateJson<T extends z.ZodType>({
   system,
   prompt,
   signal,
+  temperature,
 }: {
   schema: T;
   system: string;
   prompt: string;
   signal?: AbortSignal;
+  /**
+   * Per-stage, because only some stages want it pinned. Stages 3 and 4 pass 0 —
+   * a flow's action and a judge's score have to be reproducible for the grid to
+   * be re-runnable; the earlier generative stages want the variety.
+   */
+  temperature?: number;
 }): Promise<z.infer<T>> {
   const messages: { role: "system" | "user"; content: string }[] = [
     { role: "system", content: system },
@@ -108,7 +123,7 @@ export async function generateJson<T extends z.ZodType>({
   let lastError: unknown;
 
   for (let attempt = 0; attempt < ATTEMPTS; attempt++) {
-    const raw = await callOpenRouter(messages, signal);
+    const raw = await callOpenRouter(messages, signal, temperature);
 
     try {
       return schema.parse(JSON.parse(stripCodeFence(raw)));

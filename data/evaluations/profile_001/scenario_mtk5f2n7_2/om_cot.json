@@ -1,0 +1,24 @@
+{
+  "profile_id": "profile_001",
+  "scenario_id": "scenario_mtk5f2n7_2",
+  "flow_key": "om_cot",
+  "name": "Aminata Diallo",
+  "scenario_title": "A Tea Offer After Class",
+  "scores": {
+    "character_consistency": 9,
+    "situation_fit": 9,
+    "state_memory_alignment": 8,
+    "action_plausibility": 9,
+    "reasoning_coherence": 9
+  },
+  "overall_score": 8.8,
+  "score_scale": 10,
+  "dimension_set": 4,
+  "action": "She politely declines the offer and keeps walking home.",
+  "reason": "She does not accept gifts or favors from men she does not know well, and she usually avoids stopping on her way home so she can reach her room before dark. Even though she is tired and thirsty, the stranger’s smile also reminds her of being asked for free help before, so she is likely to refuse the tea and continue on her way.",
+  "decision_mode": "IMMEDIATE",
+  "context_generated_at": "2026-09-03T01:43:47.982Z",
+  "action_generated_at": "2026-09-03T00:46:10.048Z",
+  "generated_at": "2026-09-03T01:45:01.175Z",
+  "model": "deepseek/deepseek-v4-flash"
+}

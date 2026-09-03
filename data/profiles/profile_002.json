@@ -1,7 +1,7 @@
 {
-  "name": "Elin Johansson",
-  "headline": "35-year-old owner of a printing shop in Stockholm",
-  "description": "Elin inherited her father's offset printing company after his death and now runs it while coordinating part-time nurses for her mother, who has dementia. She is ambitiously pivoting the business into eco-friendly packaging, setting quarterly revenue targets and cold-calling corporate clients in her second language.",
+  "name": "Ingrid Lindgren",
+  "headline": "34-year-old owner of a boutique hotel, caring for her mother in Stockholm, Sweden",
+  "description": "Ingrid inherited a fortune from her grandparents and used part of it to buy a small hotel in Gamla Stan, which she runs with a sharp eye for profit margins and guest satisfaction. She lives with her mother, who has early-stage dementia, and has hired a night nurse so she can attend regional business conferences. Her competitiveness drives her to expand into a second property within two years, even if it means negotiating aggressively with contractors.",
   "id": "profile_002",
   "seed": {
     "region": "the Nordic countries",
@@ -12,6 +12,6 @@
     "domain": "small business ownership",
     "temperament": "ambitious and competitive"
   },
-  "generated_at": "2026-08-25T15:54:05.647Z",
+  "generated_at": "2026-09-02T13:42:29.480Z",
   "model": "deepseek/deepseek-v4-flash"
 }

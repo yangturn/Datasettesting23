@@ -1,5 +1,6 @@
 import "server-only";
 
+import { IMMEDIATE_STEPS } from "@/server/flows/immediate-flow";
 import {
   appraisalStep,
   consolidateStep,
@@ -25,10 +26,21 @@ import type { Flow, FlowStep, StepInput } from "@/server/flows/types";
  * Immediate Flow is the same spine without any of that, which is what makes the
  * pair a comparison of reflection rather than of two unrelated pipelines.
  *
+ * All of that describes the reflective branch. On a time-sensitive scenario
+ * this flow has no reflective memories to work with and runs Immediate Flow's
+ * four parts instead — see `stepsFor` at the bottom of this file, which is also
+ * where the consequences for Stage 4 are set out.
+ *
  * Later parts read earlier ones through `input.prior.<step key>`.
  */
 
-const STEP_REAPPRAISAL = "reappraisal";
+/**
+ * Exported because Full Flow, First Person keys its own reappraisal to the same
+ * part. The other step keys live in `shared.ts`; this one stays here because
+ * reflection is what distinguishes this flow, and a flow without a reappraisal
+ * has no use for it.
+ */
+export const STEP_REAPPRAISAL = "reappraisal";
 
 const attributesStep = makeAttributesStep(true);
 
@@ -261,18 +273,57 @@ const decisionStep: FlowStep = {
   buildPrompt: buildDecisionPrompt,
 };
 
+/**
+ * The reflective pipeline — what this flow runs when there are reflective
+ * memories to reflect on.
+ *
+ * Exported apart from the flow built on it, for the same reason
+ * `IMMEDIATE_STEPS` is: another flow runs these exact parts rather than a second
+ * assembly of them. Full Flow, First Person starts here and will replace entries
+ * one at a time as its parts are rewritten in first person — until then, sharing
+ * the array is what keeps "it is the same flow for now" literally true instead
+ * of merely intended.
+ */
+export const REFLECTIVE_STEPS = [
+  attributesStep,
+  consolidateStep,
+  appraisalStep,
+  reappraisalStep,
+  decisionStep,
+];
+
 export const fullFlow: Flow = {
   key: "full_flow",
   label: "Full Flow",
   description:
-    "The full character decision model: extract, consolidate, appraise fast, then reappraise deliberately with reflective memories before deciding.",
-  steps: [
-    attributesStep,
-    consolidateStep,
-    appraisalStep,
-    reappraisalStep,
-    decisionStep,
-  ],
+    "The full character decision model: extract, consolidate, appraise fast, then reappraise deliberately with reflective memories before deciding. On a time-sensitive scenario, where there are no reflective memories to draw on, it runs Immediate Flow's four parts instead.",
+  steps: REFLECTIVE_STEPS,
+  /**
+   * Time-sensitive scenarios run the immediate pipeline instead.
+   *
+   * A situation that forces a response now leaves no room for the deliberate
+   * thought that makes reflective memories accessible, so there is nothing for
+   * part 4 to reappraise with. Running it anyway would hand the reappraisal
+   * prompt an empty reflective-memories block and still get a confident
+   * reappraisal back — reasoning from a hole, presented as reflection.
+   *
+   * The fallback is Immediate Flow's own steps, not a rebuild of them, so it
+   * also withholds reflective memories from part 1. That matters: attributes
+   * extracted with reflective material in view carry it forward into
+   * consolidation, and the flow would be reasoning from memories this branch
+   * says the character cannot reach.
+   *
+   * Consequence worth knowing when reading Stage 4: on a time-sensitive
+   * scenario this flow and Immediate Flow run identical prompts over identical
+   * input, so any difference between their results there is model
+   * nondeterminism rather than a finding about reflection. The comparison
+   * between the two is only meaningful on NORMAL and CULTURE_RELEVANT
+   * scenarios.
+   */
+  stepsFor: (scenario) =>
+    scenario.situation_type === "TIME_SENSITIVE"
+      ? IMMEDIATE_STEPS
+      : REFLECTIVE_STEPS,
   // What this flow is ultimately claiming. Named rather than inferred, so the
   // page can lead with the prediction instead of burying it under the nineteen
   // intermediate fields, and so a later evaluation stage knows what to score.

@@ -1,0 +1,62 @@
+{
+  "flow_key": "full_flow_v2",
+  "profile_id": "profile_001",
+  "scenario_id": "scenario_mtk5mtfl_6",
+  "name": "Aminata Diallo",
+  "scenario_title": "A Walk to See School Bags",
+  "steps": {
+    "attributes": {
+      "output": {
+        "values_culture_and_background": "Raised to rely on careful counting, double-checking, and personal verification after witnessing her mother lose a market stall to a miscalculated loan; believes spoken plans become vulnerable to being borrowed against; internalized her mother’s habit that showing up is half the work.",
+        "roles_and_commitments": "Construction worker on a masonry crew; accounting student preparing for an exam; guardian and sole family for her younger sister Fatoumata, providing guidance and support.",
+        "capabilities_and_constraints": "Skilled at mental calculation, measurement checking, and careful bookkeeping; maintains an emergency fund and studies accounting while working long hours; lives in rented housing without tap water and must walk to the community center because she cannot afford bus fare both ways; has limited lamp oil and limited free time outside heavy labor and study.",
+        "personality_and_response_style": "Quiet and reserved in public; precise, meticulous, and verification-oriented; disciplined about money and records; self-controlled and reluctant to ask for advances or speak openly about personal plans; persistent and hardworking despite physical fatigue."
+      },
+      "generated_at": "2026-09-03T00:45:04.188Z",
+      "model": "openai/gpt-5.4-mini"
+    },
+    "consolidate": {
+      "output": {
+        "initial_context": "RELEVANT CHARACTER BACKGROUND\n\nAminata Diallo is a young woman living in a rented room in a bustling district on the outskirts of Bamako. She works six days a week on a construction site as a masonry laborer, where she is the youngest person on the crew and the only woman. Her master mason, Sékou, is an older man who lost two fingers to a faulty crane and teases her by calling her \"la petite comptable\" because she mentally recalculates load-bearing estimates before lifting a trowel. She is skilled at mental calculation, measurement checking, and careful bookkeeping. She is also an accounting student preparing for an exam, and she saves carefully for that course while working long hours of physical labor.\n\nAminata is her younger sister Fatoumata’s guardian and sole family. She has raised Fatoumata since their mother’s death, and Fatoumata depends on her for guidance and rarely makes decisions without her approval. Aminata also carries the burden of family history and financial insecurity: she was twelve when her mother died, and she learned to double-check everything after watching her mother lose a market stall to a miscalculated loan. She internalized the habit of counting and verifying personal calculations, including bricks, rice costs, weeks until exams, and regular deposits into an emergency fund hidden under a loose floorboard near her mattress. She does not count that fund in daylight and does not touch it.\n\nHer father once sold his tools to pay for a funeral and never used a trowel again, a memory associated with loss of stability and of work. Aminata herself holds onto the trowel every day and tends to verify measurements twice. She believes spoken plans become vulnerable to being borrowed against, so she keeps her plans private and speaks little about them. She also internalized her mother’s habit that showing up is half the work. In public she is quiet and reserved, precise, meticulous, verification-oriented, disciplined with money and records, self-controlled, and reluctant to ask for advances or disclose personal plans. She is persistent and hardworking despite physical fatigue.\n\nHer living and work conditions impose practical constraints: she has no tap water and must fetch water from a communal stand two blocks away; she owns only one pair of work trousers; she cannot afford bus fare both ways to the community center where her accounting course meets, so she walks. She often studies at night by the light of a kerosene lamp after long workdays. Her resources are limited, and she maintains an emergency fund while balancing study, labor, and family responsibility.\n\nOBJECTIVE SITUATION\n\nOn a Sunday afternoon, Aminata is sitting on her mat reviewing accounting notes. Her younger sister Fatoumata appears at the door and asks whether Aminata will walk with her to the market to look at school bags. Fatoumata is not buying one herself; she wants Aminata’s opinion on which bag looks sturdy enough to last the year. The market is a forty-minute walk each way. Aminata still has several pages of practice problems she wanted to finish before the lamp oil runs out. She could put down her notebook and go with her sister, or ask Fatoumata to go alone and come back later.\n\nPRE-APPRAISAL STATE AND ACCESSIBLE MEMORIES\n\nAminata has been reviewing for two hours and has six practice problems left. The lamp oil will last another ninety minutes. Her shoulders ache from the week’s labor, and she is focused but not urgent. The request about school bags directly cues a memory of the cheap canvas bag she carried as a child, which tore after two months and forced her to carry books in her arms. This memory is immediately accessible in the moment and is tied to the present topic without requiring deliberate reflection."
+      },
+      "generated_at": "2026-09-03T00:45:09.724Z",
+      "model": "openai/gpt-5.4-mini"
+    },
+    "appraisal": {
+      "output": {
+        "initial_interpretation": "Aminata takes Fatoumata’s request as a sign that the bag matters more than a quick look; this is not just shopping but choosing something that should hold up through the year. The ask also feels like one of those moments where her opinion carries weight for Fatoumata.",
+        "initial_emotional_reaction": "Aminata feels a small pull of warmth at being asked, mixed with a tired drag from her shoulders and a slight tightening at the thought of losing the evening’s study time. The memory of a flimsy bag stirs a sharp, practical irritation at anything that would fail quickly.",
+        "activated_concerns": "Aminata’s study time, lamp oil, and the six practice problems left feel immediately at stake, along with the ache in her body after work. At the same time, Fatoumata’s school needs, sturdiness, and Aminata’s role as the one who judges what lasts feel important and close to her.",
+        "automatic_theory_of_mind": "Aminata reads Fatoumata as wanting her guidance and trust, not just company, and as caring about getting a bag that will not tear the way weak ones do. Fatoumata’s request feels like she expects Aminata to know what is worth the walk and what will survive the year.",
+        "initial_action_tendency": "Aminata feels a brief impulse to set the notebook aside and go with Fatoumata, while still feeling the tug to linger over the problems before leaving. The wanting to check the bags herself comes up immediately, even before any clear choice settles."
+      },
+      "generated_at": "2026-09-03T00:45:13.878Z",
+      "model": "openai/gpt-5.4-mini"
+    },
+    "reappraisal": {
+      "output": {
+        "initial_tendency": "Aminata feels a brief impulse to set the notebook aside and go with Fatoumata, while still feeling the tug to linger over the problems before leaving. The wanting to check the bags herself comes up immediately, even before any clear choice settles.",
+        "reflective_update": "Aminata’s first pull still holds: Fatoumata is asking for her judgment, and the request is about something that has to last, not a trivial errand. The old memory of carrying torn schoolbooks in her arms makes the bag matter feel real, and it fits the habit she has carried for years of checking what will hold and what will fail. At the same time, the Sunday work is not trivial either. She has six practice problems left, the lamp oil will not last forever, and her shoulders already ache from the week. Going now would cost her study time, but asking Fatoumata to go alone would leave the choice without the careful eye Fatoumata came for. The memory of walking with her mother to the market stall before the loan default also steadies the feeling that showing up is part of what her family does. That memory does not erase the fatigue, but it makes the walk feel less like an interruption and more like one of those ordinary acts of being present that have always mattered in her family. Reflection makes her hesitation more practical than doubtful: the study can be resumed later, but the bag decision is tied to Fatoumata’s school year and to Aminata’s role as the one who judges what lasts.",
+        "change_from_initial": "STRENGTHENED",
+        "reconsidered_interpretation": "Aminata now sees Fatoumata’s request as a real family responsibility rather than a mere interruption of study. The situation feels like a choice between postponable homework and a needed act of guidance that fits Aminata’s long habit of verifying what is durable and her mother’s lesson that showing up matters.",
+        "motivational_conflict": "The main tension is between Aminata’s protectiveness of her remaining study time and lamp oil, and her stronger pull to accompany Fatoumata because the bag must be sturdy and Fatoumata wants Aminata’s judgment. Fatigue and unfinished practice problems still press on her, but they no longer outweigh the sense that her presence is useful and expected.",
+        "revised_action_tendency": "Aminata feels more firmly inclined to set the notebook aside and go with Fatoumata to look at the bags, while still carrying awareness of the study time she would be giving up."
+      },
+      "generated_at": "2026-09-03T00:45:18.858Z",
+      "model": "openai/gpt-5.4-mini"
+    },
+    "decision": {
+      "output": {
+        "action": "Aminata closes her notebook, rises from her mat, and tells Fatoumata, \"Let’s go look.\"",
+        "explanation": "Aminata’s first impulse was to keep studying and linger over the remaining problems, but reflection STRENGTHENED her pull toward going with Fatoumata. The memory of carrying torn schoolbooks, her habit of checking what will last, and the family lesson that showing up matters made the bag search feel like a real responsibility rather than a distraction. Even though her sore shoulders, the six unfinished practice problems, and the limited lamp oil still pressed on her, the revised tendency was to accompany Fatoumata and give the careful judgment she was asked for, so she puts the notebook aside and goes with her."
+      },
+      "generated_at": "2026-09-03T00:45:21.666Z",
+      "model": "openai/gpt-5.4-mini"
+    }
+  },
+  "scenario_generated_at": "2026-09-02T13:51:24.033Z",
+  "scenario_context_generated_at": "2026-09-02T13:51:58.813Z",
+  "description_generated_at": "2026-09-02T13:42:55.096Z",
+  "started_at": "2026-09-03T00:45:00.845Z",
+  "updated_at": "2026-09-03T00:45:21.666Z"
+}

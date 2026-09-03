@@ -1,0 +1,50 @@
+{
+  "flow_key": "full_flow_first_person",
+  "profile_id": "profile_001",
+  "scenario_id": "scenario_mtk5f2n7_2",
+  "name": "Aminata Diallo",
+  "scenario_title": "A Tea Offer After Class",
+  "steps": {
+    "attributes": {
+      "output": {
+        "values_culture_and_background": "She learned to double-check calculations from watching her mother lose a market stall to a miscalculated loan. She values careful counting, self-verification, and financial caution. She grew up in a poor household shaped by loss: her mother died when she was twelve, and her father once sold his tools to pay for a funeral and never worked as a trowel user again.",
+        "roles_and_commitments": "She is a construction worker on a crew in Bamako. She is enrolled in accounting exam preparation at a community center and is saving for an accounting course. She supports a younger sister and is saving for a proper room with running water so the sister can live with her and attend school.",
+        "capabilities_and_constraints": "She can do construction labor, including hauling cement, stacking blocks, and using a trowel. She is skilled with numbers and recalculates load-bearing estimates in her head. She keeps an emergency fund and a small notebook of figures and dates. She has no tap water at home, lives in a rented room, cannot afford bus fare both ways to the community center, and therefore walks. She has only one pair of work trousers. She has the ability to study by lamp at night after long workdays.",
+        "personality_and_response_style": "She is precise, methodical, and habitually double-checks measurements. She is quiet and reserved, does not laugh at teasing, and keeps personal plans private. She is disciplined and self-controlled, never asking for an advance on her wage, and she prefers to rely on what she has counted herself."
+      },
+      "generated_at": "2026-09-03T00:46:08.076Z",
+      "model": "openai/gpt-5.4-mini"
+    },
+    "consolidate": {
+      "output": {
+        "initial_context": "RELEVANT CHARACTER BACKGROUND\n\nAminata Diallo is a young woman living in a rented room in a bustling district on the outskirts of Bamako, where the walls are packed earth and the roof is corrugated tin. She rises before dawn and manages daily life without tap water, filling a bucket each morning at a communal stand two blocks away and carrying it back carefully so she does not splash her only pair of work trousers. She works six days a week on a construction crew as the youngest person there and the only woman. Her master mason, Sékou, an older man who lost two fingers to a faulty crane, teases her by calling her la petite comptable because she mentally recalculates load-bearing estimates before lifting a trowel. She is quiet and reserved; she typically responds to teasing with a nod rather than laughter and checks measurements again rather than relying on a first pass.\n\nHer background is shaped by poverty, loss, and financial caution. She learned to double-check calculations from watching her mother lose a market stall to a miscalculated loan. Her mother died when Aminata was twelve. She also remembers that her father once sold his tools to pay for a funeral and never worked with a trowel again. She has counted everything ever since: bricks, rice costs, weeks until an accounting exam. She keeps a small notebook tucked inside her shirt with figures and dates, and she hides an emergency fund under the loosest floorboard near her mattress. She adds the same amount each month, does not touch it, and does not count it in daylight. She values careful counting, self-verification, and financial caution, and she prefers to rely on what she has counted herself.\n\nAminata is enrolled in accounting exam preparation at a community center and is saving for an accounting course. She studies at night by the light of a kerosene lamp after long workdays, even when her eyes burn. She cannot afford bus fare both ways to the community center, so she walks. She is disciplined and self-controlled, never asks for an advance on her wage, and keeps personal plans private. She is also saving for a proper room with running water so her younger sister can live with her and attend school. She does not speak of this plan aloud because she believes such plans can be borrowed against. Her coworkers respect her silence, precision, and reliability. She is skilled with construction labor, including hauling cement, stacking blocks, and using a trowel, and she is skilled with numbers, often recalculating estimates in her head.\n\nOBJECTIVE SITUATION\n\nIt is nearly dusk. Aminata is walking back from the community center after her accounting exam prep. She passes a small tea stall. A young man she has seen several times at the center, and who often smiles at her, raises his hand and offers to buy her a glass of sweet tea. The stall is warm and lit, and a vendor is pouring another glass. The man is waiting for her answer. Aminata is tired, her soles ache, and she still has a long walk ahead to her room.\n\nPRE-APPRAISAL STATE AND ACCESSIBLE MEMORIES\n\nAminata’s legs ache from hauling cement and from the walk to the center. She is thirsty and has not eaten since early afternoon. Her mind remains heavy with the accounting problems from the prep session. The warm lamp in the stall reminds her of studying by her own kerosene lamp late at night. The young man’s smile recalls a boy at the market who smiled before asking her to carry his goods for free. The scent of sweet tea reminds her of the glass her mother bought her on market days before she died. She knows the young man only by sight from the exam prep class at the community center. He has smiled at her before, but they have never spoken, and she has no other connection to him. She has never accepted a gift or favor from a man she does not know well. When offered a free drink by a stall owner once, she politely declined and bought her own. She habitually avoids stopping on her walk home because delays mean arriving after dark."
+      },
+      "generated_at": "2026-09-03T00:46:13.706Z",
+      "model": "openai/gpt-5.4-mini"
+    },
+    "appraisal": {
+      "output": {
+        "initial_interpretation": "This looks like a small offer, but it still feels like something being put in front of me by a man I do not know well. It reads as attention from him as much as tea from the stall.",
+        "initial_emotional_reaction": "I feel tired and thirsty, and the warm stall and sweet smell pull at me. At the same time, I feel a quick tightening of caution, with that old discomfort of not wanting to owe anyone.",
+        "activated_concerns": "My need to get home before dark is strong, and I do not want to lose time on the walk. I also feel my usual care about accepting gifts from men I do not know, and I want to keep myself steady and unborrowed.",
+        "automatic_theory_of_mind": "I read his smile as interest in me, and I read his offer as wanting a response from me, not just wanting to be kind. He seems to expect I may stop and accept what he is offering.",
+        "initial_action_tendency": "I want to keep moving and give a polite refusal or a brief answer without lingering."
+      },
+      "generated_at": "2026-09-03T00:46:17.309Z",
+      "model": "openai/gpt-5.4-mini"
+    },
+    "decision": {
+      "output": {
+        "action": "Aminata gives a small polite nod without stopping and says, \"No, thank you.\"",
+        "explanation": "The offer lands for Aminata as attention from a man she does not know well, which तुरंत activates her habit of avoiding gifts or favors from unfamiliar men and her discomfort with owing anyone. Her fatigue, thirst, and the warm tea stall pull at her, but her stronger immediate concern is getting home before dark, so her initial tendency is to keep moving. That impulse becomes a brief, courteous refusal with no lingering at the stall."
+      },
+      "generated_at": "2026-09-03T00:46:19.677Z",
+      "model": "openai/gpt-5.4-mini"
+    }
+  },
+  "scenario_generated_at": "2026-09-02T13:45:22.723Z",
+  "scenario_context_generated_at": "2026-09-02T13:46:42.236Z",
+  "description_generated_at": "2026-09-02T13:42:55.096Z",
+  "started_at": "2026-09-03T00:46:04.221Z",
+  "updated_at": "2026-09-03T00:46:19.677Z"
+}

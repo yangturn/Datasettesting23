@@ -1,0 +1,24 @@
+{
+  "profile_id": "profile_001",
+  "scenario_id": "scenario_mtk5eczl_1",
+  "flow_key": "full_flow_first_person",
+  "name": "Aminata Diallo",
+  "scenario_title": "Invitation to a Neighborhood Meal",
+  "scores": {
+    "character_consistency": 9,
+    "situation_fit": 9,
+    "state_memory_alignment": 9,
+    "action_plausibility": 9,
+    "reasoning_coherence": 9
+  },
+  "overall_score": 9,
+  "score_scale": 10,
+  "dimension_set": 4,
+  "action": "Aminata pauses with her tools in hand, then gives Fatoumata a polite, brief refusal, saying she has to get home to study and cannot join them tonight.",
+  "reason": "Aminata’s first impulse was a cautious pause between a careful refusal and a guarded acceptance, because the invitation felt warm but also like a possible drain on her money and evening. Reflection strengthened that reluctance by making the meal seem less like a harmless pause and more like time and spending that could expand beyond what she planned. She remained pulled by hunger and Fatoumata’s friendliness, but her habitual discipline, financial caution, and commitment to the chapter waiting at home outweighed that pull. The revised action tendency toward a careful refusal therefore becomes a polite, brief decline rather than a sharp rebuff or a longer social detour.",
+  "decision_mode": "REFLECTION_AVAILABLE",
+  "context_generated_at": "2026-09-03T01:47:38.543Z",
+  "action_generated_at": "2026-09-03T00:46:39.302Z",
+  "generated_at": "2026-09-03T01:48:13.540Z",
+  "model": "deepseek/deepseek-v4-flash"
+}

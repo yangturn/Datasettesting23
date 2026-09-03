@@ -1,0 +1,13 @@
+{
+  "id": "run_executions_mtk9wh3x_e5b482",
+  "stage": "executions",
+  "status": "cancelled",
+  "total": 42,
+  "done": 39,
+  "failed": 0,
+  "errors": [],
+  "model": "deepseek/deepseek-v4-flash",
+  "started_at": "2026-09-02T15:50:53.085Z",
+  "finished_at": "2026-09-02T16:00:26.239Z",
+  "message": "Cancelled. Everything generated before the cancel was kept."
+}

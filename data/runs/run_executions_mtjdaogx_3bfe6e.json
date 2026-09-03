@@ -1,0 +1,114 @@
+{
+  "id": "run_executions_mtjdaogx_3bfe6e",
+  "stage": "executions",
+  "status": "succeeded",
+  "total": 508,
+  "done": 433,
+  "failed": 25,
+  "errors": [
+    {
+      "id": "profile_003 · full_flow",
+      "error": "consolidate: OpenRouter returned no content."
+    },
+    {
+      "id": "profile_005 · immediate_flow",
+      "error": "consolidate: OpenRouter returned no content."
+    },
+    {
+      "id": "profile_006 · immediate_flow",
+      "error": "consolidate: OpenRouter returned no content."
+    },
+    {
+      "id": "profile_004 · her_dual_layered_thinking",
+      "error": "decision: OpenRouter returned no content."
+    },
+    {
+      "id": "profile_008 · immediate_flow",
+      "error": "attributes: terminated"
+    },
+    {
+      "id": "profile_004 · full_flow",
+      "error": "appraisal: OpenRouter returned no content."
+    },
+    {
+      "id": "profile_009 · immediate_flow",
+      "error": "consolidate: terminated"
+    },
+    {
+      "id": "profile_004 · direct_zero_shot",
+      "error": "decision: OpenRouter returned no content."
+    },
+    {
+      "id": "profile_007 · immediate_flow",
+      "error": "consolidate: OpenRouter returned no content."
+    },
+    {
+      "id": "profile_001 · immediate_flow",
+      "error": "consolidate: OpenRouter returned no content."
+    },
+    {
+      "id": "profile_010 · immediate_flow",
+      "error": "attributes: OpenRouter returned no content."
+    },
+    {
+      "id": "profile_008 · immediate_flow",
+      "error": "attributes: terminated"
+    },
+    {
+      "id": "profile_004 · immediate_flow",
+      "error": "consolidate: OpenRouter returned no content."
+    },
+    {
+      "id": "profile_009 · immediate_flow",
+      "error": "attributes: OpenRouter returned no content."
+    },
+    {
+      "id": "profile_006 · full_flow",
+      "error": "attributes: OpenRouter returned no content."
+    },
+    {
+      "id": "profile_007 · full_flow",
+      "error": "consolidate: OpenRouter returned no content."
+    },
+    {
+      "id": "profile_007 · immediate_flow",
+      "error": "consolidate: OpenRouter returned no content."
+    },
+    {
+      "id": "profile_007 · immediate_flow",
+      "error": "consolidate: terminated"
+    },
+    {
+      "id": "profile_008 · her_dual_layered_thinking",
+      "error": "system_thinking: OpenRouter returned no content."
+    },
+    {
+      "id": "profile_006 · full_flow",
+      "error": "appraisal: Model did not return schema-valid JSON after 2 attempts: [\n  {\n    \"expected\": \"string\",\n    \"code\": \"invalid_type\",\n    \"path\": [\n      \"initial_interpretation\"\n    ],\n    \"message\": \"Invalid input: expected string, received undefined\"\n  },\n  {\n    \"expected\": \"string\",\n    \"code\": \"invalid_type\",\n    \"path\": [\n      \"initial_emotional_reaction\"\n    ],\n    \"message\": \"Invalid input: expected string, received undefined\"\n  },\n  {\n    \"expected\": \"string\",\n    \"code\": \"invalid_type\",\n    \"path\": [\n      \"activated_concerns\"\n    ],\n    \"message\": \"Invalid input: expected string, received undefined\"\n  },\n  {\n    \"expected\": \"string\",\n    \"code\": \"invalid_type\",\n    \"path\": [\n      \"automatic_theory_of_mind\"\n    ],\n    \"message\": \"Invalid input: expected string, received undefined\"\n  },\n  {\n    \"expected\": \"string\",\n    \"code\": \"invalid_type\",\n    \"path\": [\n      \"initial_action_tendency\"\n    ],\n    \"message\": \"Invalid input: expected string, received undefined\"\n  }\n]"
+    },
+    {
+      "id": "profile_010 · immediate_flow",
+      "error": "consolidate: OpenRouter returned no content."
+    },
+    {
+      "id": "profile_007 · full_flow",
+      "error": "consolidate: terminated"
+    },
+    {
+      "id": "profile_007 · immediate_flow",
+      "error": "consolidate: terminated"
+    },
+    {
+      "id": "profile_001 · om_cot",
+      "error": "decision: terminated"
+    },
+    {
+      "id": "profile_010 · full_flow",
+      "error": "consolidate: OpenRouter returned no content."
+    }
+  ],
+  "model": "deepseek/deepseek-v4-pro-0813",
+  "started_at": "2026-09-02T00:38:08.482Z",
+  "finished_at": "2026-09-02T02:21:35.916Z",
+  "message": null
+}

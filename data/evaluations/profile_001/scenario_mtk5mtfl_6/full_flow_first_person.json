@@ -1,0 +1,24 @@
+{
+  "profile_id": "profile_001",
+  "scenario_id": "scenario_mtk5mtfl_6",
+  "flow_key": "full_flow_first_person",
+  "name": "Aminata Diallo",
+  "scenario_title": "A Walk to See School Bags",
+  "scores": {
+    "character_consistency": 7,
+    "situation_fit": 6,
+    "state_memory_alignment": 7,
+    "action_plausibility": 7,
+    "reasoning_coherence": 8
+  },
+  "overall_score": 7,
+  "score_scale": 10,
+  "dimension_set": 4,
+  "action": "Aminata marks her place in the notebook, looks up at Fatoumata, and says, \"Show me which ones you mean; let me finish these two problems first, then I’ll see if I can walk with you.\"",
+  "reason": "Aminata’s first impulse was to pause over her notebook and lean toward going with Fatoumata right away, because the request touches school, durability, and Fatoumata’s dependence on her. Reflection SOFTENED that impulse by making her consider more clearly the unfinished problems, the limited lamp oil, and her habit of finishing a defined amount of work before switching tasks. The revised tendency kept her inclined to help, but in a guarded, practical way, so she responds by briefly acknowledging the request, marking her place, and asking for a little time before deciding on the walk. That fits her quiet, methodical style and her usual balancing of family obligation with disciplined study.",
+  "decision_mode": "REFLECTION_AVAILABLE",
+  "context_generated_at": "2026-09-03T01:02:08.868Z",
+  "action_generated_at": "2026-09-03T00:45:27.663Z",
+  "generated_at": "2026-09-03T01:05:19.399Z",
+  "model": "deepseek/deepseek-v4-flash"
+}

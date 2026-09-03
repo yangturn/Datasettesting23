@@ -1,0 +1,62 @@
+{
+  "flow_key": "full_flow_first_person",
+  "profile_id": "profile_002",
+  "scenario_id": "scenario_mtk5dz2k_0",
+  "name": "Ingrid Lindgren",
+  "scenario_title": "Fika Invitation from an Old Friend",
+  "steps": {
+    "attributes": {
+      "output": {
+        "values_culture_and_background": "She values building something of her own and proving herself after inheriting family wealth. She keeps a strong attachment to her past and to Gamla Stan, which she chose because of childhood memories with her mother. She internalized a family norm that youth friendships are worth preserving. She grew up outside Uppsala in a household shaped by a high school teacher father and a librarian mother.",
+        "roles_and_commitments": "She is the owner and operator of a hotel in Gamla Stan. She is the primary caregiver for her mother, who has early-stage dementia. She works at the front desk, oversees housekeeping, and manages contractors and hotel operations. She maintains a night nurse arrangement for her mother and keeps her mother’s schedule central to her planning.",
+        "capabilities_and_constraints": "She is skilled in hotel management, financial review, and expansion planning, including revenue analysis, renovation-cost comparison, and handling contractor negotiations. She is knowledgeable about hospitality metrics and local tax incentives for historic property renovations. She has inherited substantial wealth and can consider expansion plans. Her mother’s dementia and need for supervision constrain her schedule, and she avoids meetings after 8 p.m.",
+        "personality_and_response_style": "She is pragmatic, precise, and businesslike. She communicates in short, exact emails and asks pointed questions in meetings. She stays composed and even-toned under repetition or minor frustration. She is competitive and confident in negotiations, often listening with arms crossed and leaning forward when countering. She is methodical and detail-oriented, keeping spreadsheets of complaints, compliments, and renovation estimates."
+      },
+      "generated_at": "2026-09-03T00:46:13.789Z",
+      "model": "openai/gpt-5.4-mini"
+    },
+    "consolidate": {
+      "output": {
+        "initial_context": "RELEVANT CHARACTER BACKGROUND\n\nIngrid Lindgren is a woman in her mid-thirties who owns and operates a hotel in Gamla Stan. She is responsible for front-desk work, housekeeping oversight, contractor coordination, and broader hotel operations. She is also the primary caregiver for her mother, who has early-stage dementia, and she maintains a night-nurse arrangement so her mother can be supervised at night while Ingrid works. Her mother’s schedule remains central to her planning, and Ingrid has already reconfigured the hotel’s ground-floor linen closet into a small bedroom with a view of the courtyard so her mother can wander safely during the day while Ingrid works nearby.\n\nShe grew up outside Uppsala in a household shaped by a high school teacher father and a librarian mother. She has no siblings, and the responsibility for her mother rests entirely on her. She inherited substantial wealth from her grandparents, whose fortune came from a chain of hardware stores owned by her grandfather in the 1970s. The inheritance was unexpected, and she values building something of her own and proving herself beyond that inherited position. She chose the hotel in Gamla Stan deliberately because she had stayed there as a child with her mother, and she has a strong attachment to her past and to that place.\n\nIngrid is pragmatic, precise, and businesslike. She is skilled in hotel management, financial review, revenue analysis, renovation-cost comparison, and contractor negotiations. She is knowledgeable about hospitality metrics and local tax incentives for historic property renovations. She keeps spreadsheets of guest complaints, compliments, and renovation estimates, and she has trained staff to offer a free glass of glögg to returning visitors. In business settings she is known for short, exact emails, pointed questions, a composed and even tone, and a habit of standing with her arms crossed while listening before leaning forward to counteroffer. She is competitive and confident in negotiations, and she tends to conceal hesitation even when privately calculating whether margins will hold.\n\nHer role as caregiver and business owner creates a standing need for structure and restraint: she usually prioritizes her mother’s schedule over last-minute plans and avoids meetings after 8 p.m. She often continues working during free evenings. She is methodical, detail-oriented, and inclined toward planning, with a strong preference for practical order. At the same time, she has an internal family norm that youth friendships are worth preserving. Her relationships with her mother and her past carry significant weight, and her routine includes a Sunday two-hour closure during which she takes her mother for a waterfront walk and does not discuss business.\n\nOBJECTIVE SITUATION\n\nIngrid’s phone buzzes with a text from Karin, a friend from her Uppsala childhood who now lives abroad. Karin is in Stockholm for the day and suggests meeting for fika at a café near Gamla Stan. Ingrid has no pressing meetings. Her mother is calmly reading in the courtyard. The night nurse will arrive at 9 p.m., leaving Ingrid a few hours free. Ingrid is considering whether to accept the invitation or politely decline and continue reviewing her hotel expansion estimates.\n\nPRE-APPRAISAL STATE AND ACCESSIBLE MEMORIES\n\nIngrid’s shoulders are tight from hours spent hunched over financial estimates. She has no pressing meetings, but the expansion estimates still need another pass. Karin was Ingrid’s closest friend in secondary school, and they now meet only during Karin’s infrequent visits to Stockholm. Karin’s name on the phone immediately brings to mind skipping class together by the river in Uppsala, and the café suggestion evokes the almond pastry they shared on Karin’s last visit."
+      },
+      "generated_at": "2026-09-03T00:46:19.561Z",
+      "model": "openai/gpt-5.4-mini"
+    },
+    "appraisal": {
+      "output": {
+        "initial_interpretation": "Karin is in Stockholm, and this reads like one of those rare openings where my old life reaches me unexpectedly in the middle of the workday. It feels less like a casual text and more like a small invitation back into something familiar and tied to where I came from.",
+        "initial_emotional_reaction": "I feel a quick lift of warmth at her name, along with a pull of nostalgia that makes the hotel spreadsheets seem farther away for a moment. My shoulders still feel tight, so the warmth lands beside a tired reluctance rather than wiping it out.",
+        "activated_concerns": "I want to keep hold of my work time and not lose the thread of the expansion estimates. I also feel the weight of my mother’s calm routine, and at the same time the old part of me that values keeping childhood friendships alive wakes up hard.",
+        "automatic_theory_of_mind": "I read Karin as wanting to see me while she is here and making a simple, friendly offer without much fuss. I take it as her expecting that I’ll understand the importance of making time when our visits are so rare.",
+        "initial_action_tendency": "I feel an impulse to answer warmly and lean toward saying yes before I talk myself out of it, while keeping one part of me already braced around the unfinished estimates."
+      },
+      "generated_at": "2026-09-03T00:46:23.250Z",
+      "model": "openai/gpt-5.4-mini"
+    },
+    "reappraisal": {
+      "output": {
+        "initial_tendency": "I feel an impulse to answer warmly and lean toward saying yes before I talk myself out of it, while keeping one part of me already braced around the unfinished estimates.",
+        "reflective_update": "I still feel that quick pull toward Karin, and the more I sit with it, the more it seems like one of the few chances I get to keep a thread to that earlier part of my life. She is only in Stockholm for the day, and our conversations have always sat apart from my hotel work, which makes this feel unusually clean and uncomplicated. My mother’s routine is steady for the moment, the night nurse is not due until later, and I do have a few hours that are actually free. At the same time, the estimates are still waiting, and I know how easily I can let one small interruption pull me off the work entirely when my shoulders are already tight. What weighs more now is that Karin has never treated my inheritance like the center of me, and that has always made her feel safe to be around. I also hear my mother’s old line in my head that youth friendships are worth preserving, and that makes this feel less optional than it first did. I do not feel fully free of the work pressure, but I feel more willing to let this invitation take priority for a little while, as long as I keep the outing contained and do not pretend the estimates have stopped mattering.",
+        "change_from_initial": "STRENGTHENED",
+        "reconsidered_interpretation": "I now read Karin’s text as more than a pleasant interruption; it feels like a rare, low-friction chance to preserve something that has stayed important without asking much of me. The invitation still competes with my unfinished work, but it no longer feels like a simple distraction from it. It feels like one of the few times my past, my mother’s values, and my present life can sit in the same afternoon without forcing a choice that matters more than the moment itself.",
+        "motivational_conflict": "I still feel the tug between wanting to protect my work time and wanting to answer Karin while she is actually here. The estimates are real, and I know I am tired, but the friendship feels rare and worth not letting slip again. What unsettles me is not whether I care, but how easily I can turn a small yes into losing the rest of the evening to work guilt.",
+        "revised_action_tendency": "I feel more firmly inclined to answer warmly and say yes to meeting Karin, while keeping it brief enough that I do not let the unfinished estimates disappear from my mind."
+      },
+      "generated_at": "2026-09-03T00:46:28.927Z",
+      "model": "openai/gpt-5.4-mini"
+    },
+    "decision": {
+      "output": {
+        "action": "Ingrid replies to Karin’s text with a warm acceptance, saying that she would be happy to meet for fika and asking Karin to name the café.",
+        "explanation": "Ingrid’s first impulse was to answer warmly and lean toward saying yes while still braced around the unfinished estimates. Reflection strengthened that tendency by making Karin feel like a rare chance to preserve an important childhood friendship, especially because the visit is only for the day and the meeting can stay separate from hotel work. The update also made her mother’s steady routine and the free hours before the night nurse arrive feel reassuring rather than limiting, while the competing pressure of the expansion estimates remained in the background. Because Ingrid is usually careful and businesslike but also values keeping youth friendships alive, she responds with a cordial acceptance that commits to seeing Karin without overextending the invitation."
+      },
+      "generated_at": "2026-09-03T00:46:31.599Z",
+      "model": "openai/gpt-5.4-mini"
+    }
+  },
+  "scenario_generated_at": "2026-09-02T13:44:31.436Z",
+  "scenario_context_generated_at": "2026-09-02T13:45:32.057Z",
+  "description_generated_at": "2026-09-02T13:43:19.287Z",
+  "started_at": "2026-09-03T00:46:10.052Z",
+  "updated_at": "2026-09-03T00:46:31.599Z"
+}

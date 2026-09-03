@@ -116,8 +116,9 @@ export default async function Stage4Page(props: PageProps<"/stage-4">) {
             the evaluator into IMMEDIATE mode, so it is precisely where
             reflection cannot help, and an average over all three types hides
             that. "Normal + Culture" is the other side of it: the situations
-            that did run in REFLECTIVE mode, pooled. Links rather than a client control — the filter belongs in the
-            URL beside the page and size, and the page is server-rendered. */}
+            that did run in REFLECTION_AVAILABLE mode, pooled. Links rather
+            than a client control — the filter belongs in the URL beside the
+            page and size, and the page is server-rendered. */}
         <div className="flex flex-wrap items-center gap-2">
           <span className="text-sm text-ink-subtle">Situation</span>
           {SITUATION_FILTERS.map((option) => {

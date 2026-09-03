@@ -1,0 +1,24 @@
+{
+  "profile_id": "profile_001",
+  "scenario_id": "scenario_mtk5mtfl_6",
+  "flow_key": "om_cot",
+  "name": "Aminata Diallo",
+  "scenario_title": "A Walk to See School Bags",
+  "scores": {
+    "character_consistency": 7,
+    "situation_fit": 7,
+    "state_memory_alignment": 7,
+    "action_plausibility": 7,
+    "reasoning_coherence": 7
+  },
+  "overall_score": 7,
+  "score_scale": 10,
+  "dimension_set": 4,
+  "action": "She sets aside her notebook and walks with Fatoumata to the market.",
+  "reason": "Aminata is Fatoumata’s guardian and usually gives her approval, and this request is for guidance on an important school item. Although she still has practice problems left and limited lamp oil, the situation is not urgent, and her prior pattern includes sometimes putting study aside to avoid disappointing her sister. The memory of carrying a torn school bag as a child and of walking with her mother to the market also makes accompanying Fatoumata the most fitting response.",
+  "decision_mode": "REFLECTION_AVAILABLE",
+  "context_generated_at": "2026-09-03T01:02:08.868Z",
+  "action_generated_at": "2026-09-03T00:45:11.185Z",
+  "generated_at": "2026-09-03T01:10:58.859Z",
+  "model": "deepseek/deepseek-v4-flash"
+}

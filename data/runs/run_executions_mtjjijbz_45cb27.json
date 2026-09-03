@@ -1,0 +1,26 @@
+{
+  "id": "run_executions_mtjjijbz_45cb27",
+  "stage": "executions",
+  "status": "succeeded",
+  "total": 13,
+  "done": 4,
+  "failed": 3,
+  "errors": [
+    {
+      "id": "profile_007 · immediate_flow",
+      "error": "consolidate: terminated"
+    },
+    {
+      "id": "profile_007 · immediate_flow",
+      "error": "consolidate: terminated"
+    },
+    {
+      "id": "profile_007 · immediate_flow",
+      "error": "consolidate: terminated"
+    }
+  ],
+  "model": "deepseek/deepseek-v4-pro-0813",
+  "started_at": "2026-09-02T03:32:12.768Z",
+  "finished_at": "2026-09-02T04:04:15.557Z",
+  "message": "Skipped 196 cell(s) already complete."
+}

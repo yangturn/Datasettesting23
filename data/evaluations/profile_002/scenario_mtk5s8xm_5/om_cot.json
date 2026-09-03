@@ -1,0 +1,24 @@
+{
+  "profile_id": "profile_002",
+  "scenario_id": "scenario_mtk5s8xm_5",
+  "flow_key": "om_cot",
+  "name": "Ingrid Lindgren",
+  "scenario_title": "Baking Request",
+  "scores": {
+    "character_consistency": 8,
+    "situation_fit": 8,
+    "state_memory_alignment": 8,
+    "action_plausibility": 8,
+    "reasoning_coherence": 7
+  },
+  "overall_score": 7.8,
+  "score_scale": 10,
+  "dimension_set": 4,
+  "action": "She picks up the phone to reschedule Mr. Eriksson's visit.",
+  "reason": "Ingrid has a strong pattern of putting family matters ahead of contractors, and this request is an emotionally loaded, rare memory from her mother’s past. Her mother’s bright anticipation and the specific cookie memory make the request feel especially urgent, so Ingrid is likely to prioritize it and move the renovation meeting.",
+  "decision_mode": "REFLECTION_AVAILABLE",
+  "context_generated_at": "2026-09-03T01:20:40.422Z",
+  "action_generated_at": "2026-09-03T00:45:35.534Z",
+  "generated_at": "2026-09-03T01:23:57.063Z",
+  "model": "deepseek/deepseek-v4-flash"
+}

@@ -1,0 +1,37 @@
+{
+  "flow_key": "her_dual_layered_thinking",
+  "profile_id": "profile_002",
+  "scenario_id": "scenario_mtk5dz2k_0",
+  "name": "Ingrid Lindgren",
+  "scenario_title": "Fika Invitation from an Old Friend",
+  "steps": {
+    "system_thinking": {
+      "output": {
+        "system_thinking": "I need to portray Ingrid as briefly torn but ultimately warm and deliberate, because Karin’s invitation touches a genuine old friendship while Ingrid still has unfinished expansion estimates and a habitual pull toward work. Her immediate interpretation should be that Karin’s message is a welcome surprise from someone whose company feels separate from her hotel obligations, reinforced by the remembered childhood fika and by her mother’s advice that youth friendships are worth preserving. She should also remain aware that her mother is calmly occupied in the courtyard and that there is no pressing meeting, so accepting is feasible without violating her usual priority of not disrupting her mother’s schedule.\n\nHer observable behavior should reflect that internal pause: a quick look at the phone, a moment of consideration with tight shoulders from work, then a small release rather than visible excitement. Because she is pragmatic and careful, she should not overcommit or dramatize; she would likely choose a concise, calm reply that accepts the fika if the timing works, while acknowledging that she has been buried in estimates. Her speech should be short and precise, matching her established style, but softened by familiarity with Karin—something like agreeing to meet near Gamla Stan and suggesting a time, with a brief note that she is free before the night nurse arrives. The tone should hint that this is a deliberate exception to work, not a spontaneous abandonment of responsibility, and it should carry a quiet warmth grounded in shared history rather than sentimentality."
+      },
+      "generated_at": "2026-09-03T00:46:13.772Z",
+      "model": "openai/gpt-5.4-mini"
+    },
+    "role_response": {
+      "output": {
+        "role_thinking": "Karin’s name catches me off guard in a good way. I’m tired, and the estimates are still waiting, but my mother is settled in the courtyard and there’s nothing pressing before the nurse comes. I don’t want to let this drift by; some things are worth making time for.",
+        "action": "Ingrid looks at the text for a moment, then types back: “Yes—fika sounds nice. I’m free this afternoon before 9. Near Gamla Stan works; tell me where.”"
+      },
+      "generated_at": "2026-09-03T00:46:15.879Z",
+      "model": "openai/gpt-5.4-mini"
+    },
+    "decision": {
+      "output": {
+        "action": "Ingrid looks at the text for a moment, then types back: “Yes—fika sounds nice. I’m free this afternoon before 9. Near Gamla Stan works; tell me where.”",
+        "explanation": "Karin’s name catches Ingrid off guard in a good way. Even though she is tired and the estimates are still waiting, her mother is settled in the courtyard and nothing pressing is due before the nurse comes. She does not want to let the invitation drift by, because she feels some things are worth making time for, and that leads her to accept and reply with a meeting time and place."
+      },
+      "generated_at": "2026-09-03T00:46:17.860Z",
+      "model": "openai/gpt-5.4-mini"
+    }
+  },
+  "scenario_generated_at": "2026-09-02T13:44:31.436Z",
+  "scenario_context_generated_at": "2026-09-02T13:45:32.057Z",
+  "description_generated_at": "2026-09-02T13:43:19.287Z",
+  "started_at": "2026-09-03T00:46:10.395Z",
+  "updated_at": "2026-09-03T00:46:17.860Z"
+}

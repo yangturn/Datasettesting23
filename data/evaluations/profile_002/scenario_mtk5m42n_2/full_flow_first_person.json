@@ -1,0 +1,24 @@
+{
+  "profile_id": "profile_002",
+  "scenario_id": "scenario_mtk5m42n_2",
+  "flow_key": "full_flow_first_person",
+  "name": "Ingrid Lindgren",
+  "scenario_title": "Morning Tea or Hand Soap",
+  "scores": {
+    "character_consistency": 9,
+    "situation_fit": 9,
+    "state_memory_alignment": 8,
+    "action_plausibility": 9,
+    "reasoning_coherence": 9
+  },
+  "overall_score": 8.8,
+  "score_scale": 10,
+  "dimension_set": 4,
+  "action": "Ingrid sets down her tea, opens the supplier’s order channel, and places the soap refill order immediately before the front desk opens.",
+  "reason": "Her initial tendency was to handle the forgotten refill during the tea break rather than let it wait. Reflection STRENGTHENED that impulse by making the timing risk more salient: the supplier closes at noon, the day could easily crowd the task out, and the empty-dispenser memory from suite 7 reinforces her habit of fixing small problems before they become guest complaints. Ingrid’s practical, detail-focused style, her dislike of avoidable service failures, and her grandfather’s “fix the leak before it floods” lesson all support acting at once. The main competing influence was her wish to keep a few calm minutes with tea after a restless night, but that preference was outweighed by the stronger pull to close out the omission before the morning gets noisy, so she places the order immediately.",
+  "decision_mode": "REFLECTION_AVAILABLE",
+  "context_generated_at": "2026-09-03T01:39:56.029Z",
+  "action_generated_at": "2026-09-03T00:46:21.969Z",
+  "generated_at": "2026-09-03T01:41:46.816Z",
+  "model": "deepseek/deepseek-v4-flash"
+}

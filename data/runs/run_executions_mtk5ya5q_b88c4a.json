@@ -1,0 +1,46 @@
+{
+  "id": "run_executions_mtk5ya5q_b88c4a",
+  "stage": "executions",
+  "status": "succeeded",
+  "total": 164,
+  "done": 138,
+  "failed": 8,
+  "errors": [
+    {
+      "id": "profile_002 · full_flow_first_person",
+      "error": "appraisal: OpenRouter returned no content."
+    },
+    {
+      "id": "profile_002 · full_flow_first_person",
+      "error": "attributes: OpenRouter returned no content."
+    },
+    {
+      "id": "profile_001 · full_flow_v2",
+      "error": "attributes: Model did not return schema-valid JSON after 2 attempts: [\n  {\n    \"expected\": \"string\",\n    \"code\": \"invalid_type\",\n    \"path\": [\n      \"roles_and_commitments\"\n    ],\n    \"message\": \"Invalid input: expected string, received undefined\"\n  }\n]"
+    },
+    {
+      "id": "profile_002 · full_flow_v2",
+      "error": "appraisal: OpenRouter returned no content."
+    },
+    {
+      "id": "profile_002 · full_flow_v2",
+      "error": "appraisal: OpenRouter returned no content."
+    },
+    {
+      "id": "profile_001 · direct_zero_shot",
+      "error": "decision: OpenRouter returned no content."
+    },
+    {
+      "id": "profile_001 · full_flow_v2",
+      "error": "reappraisal: OpenRouter returned no content."
+    },
+    {
+      "id": "profile_002 · full_flow_first_person",
+      "error": "consolidate: OpenRouter returned no content."
+    }
+  ],
+  "model": "deepseek/deepseek-v4-flash",
+  "started_at": "2026-09-02T14:00:18.926Z",
+  "finished_at": "2026-09-02T14:18:12.438Z",
+  "message": null
+}

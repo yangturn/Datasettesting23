@@ -1,9 +1,10 @@
 import "server-only";
 
-import { mkdir, readdir, readFile, writeFile } from "node:fs/promises";
+import { mkdir, readdir, readFile } from "node:fs/promises";
 import path from "node:path";
 
 import { runRecordSchema, type RunRecord, type RunStage } from "@/lib/run";
+import { writeJsonFile } from "@/server/storage/write-json";
 
 /**
  * Run records live at `data/runs/<id>.json`, one file per run. Flat rather than
@@ -42,9 +43,12 @@ export async function readRun(id: string): Promise<RunRecord | null> {
 
 /**
  * Serialises writes per run id. A run's workers all call in concurrently as
- * their items land, and two overlapping `writeFile` calls on one path can
- * interleave into a truncated file — chaining them keeps the last write the
- * one that survives.
+ * their items land, and two overlapping writes on one path can land out of
+ * order — chaining them keeps the last write the one that survives.
+ *
+ * Still needed now that the write itself is atomic: `writeJsonFile` stops a
+ * reader seeing a half-written record, but two unchained writers would still
+ * race to rename, and the older record could win.
  */
 const writeChains = new Map<string, Promise<void>>();
 
@@ -58,11 +62,7 @@ export async function writeRun(run: RunRecord): Promise<void> {
     .catch(() => {})
     .then(async () => {
       await mkdir(RUNS_DIR, { recursive: true });
-      await writeFile(
-        pathFor(run.id),
-        `${JSON.stringify(run, null, 2)}\n`,
-        "utf8",
-      );
+      await writeJsonFile(pathFor(run.id), run);
     });
 
   writeChains.set(run.id, next);

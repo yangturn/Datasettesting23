@@ -1,0 +1,24 @@
+{
+  "profile_id": "profile_002",
+  "scenario_id": "scenario_mtk5v1kg_7",
+  "flow_key": "full_flow_v2",
+  "name": "Ingrid Lindgren",
+  "scenario_title": "An Invitation for Coffee",
+  "scores": {
+    "character_consistency": 8,
+    "situation_fit": 8,
+    "state_memory_alignment": 8,
+    "action_plausibility": 8,
+    "reasoning_coherence": 7
+  },
+  "overall_score": 7.8,
+  "score_scale": 10,
+  "dimension_set": 4,
+  "action": "Ingrid pulls out her phone to check the nurse reminder, then looks back up and says, \"Yes—coffee sounds good. Let me just make sure the nurse is confirmed for tonight.\"",
+  "reason": "Her initial action tendency was to pause and check the nurse reminder while staying measured and open, with a polite acceptance if the timing worked. Reflection kept that tendency intact, but made the opportunity feel more clearly like a worthwhile professional opening rather than a casual interruption, while also making her home-care responsibility more salient. Because Ingrid is practical, organized, and reluctant to miss useful business contact, she does not dismiss the invitation; because she remains accountable for her mother’s evening care, she checks the reminder before committing. The retained tendency therefore becomes a controlled, conditional acceptance that fits her direct style and her habit of keeping both business opportunity and caregiving obligations in view.",
+  "decision_mode": "REFLECTION_AVAILABLE",
+  "context_generated_at": "2026-09-03T00:55:33.736Z",
+  "action_generated_at": "2026-09-03T00:45:16.814Z",
+  "generated_at": "2026-09-03T00:58:15.055Z",
+  "model": "deepseek/deepseek-v4-flash"
+}

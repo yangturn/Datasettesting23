@@ -1,0 +1,18 @@
+{
+  "id": "run_executions_mtk4oath_0fbb49",
+  "stage": "executions",
+  "status": "succeeded",
+  "total": 34,
+  "done": 31,
+  "failed": 1,
+  "errors": [
+    {
+      "id": "profile_003 · full_flow_first_person",
+      "error": "consolidate: OpenRouter returned no content."
+    }
+  ],
+  "model": "deepseek/deepseek-v4-pro-0813",
+  "started_at": "2026-09-02T13:24:33.606Z",
+  "finished_at": "2026-09-02T13:35:35.098Z",
+  "message": "Stopped at the 3-scenario limit; 37 scenario(s) with work left for a later run."
+}

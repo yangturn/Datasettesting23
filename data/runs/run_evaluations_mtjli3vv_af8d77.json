@@ -1,0 +1,13 @@
+{
+  "id": "run_evaluations_mtjli3vv_af8d77",
+  "stage": "evaluations",
+  "status": "cancelled",
+  "total": 210,
+  "done": 3,
+  "failed": 0,
+  "errors": [],
+  "model": "deepseek/deepseek-v4-pro-0813",
+  "started_at": "2026-09-02T04:27:51.979Z",
+  "finished_at": "2026-09-02T04:53:55.818Z",
+  "message": "Cancelled. Everything generated before the cancel was kept."
+}

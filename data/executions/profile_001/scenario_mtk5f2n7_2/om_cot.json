@@ -1,0 +1,22 @@
+{
+  "flow_key": "om_cot",
+  "profile_id": "profile_001",
+  "scenario_id": "scenario_mtk5f2n7_2",
+  "name": "Aminata Diallo",
+  "scenario_title": "A Tea Offer After Class",
+  "steps": {
+    "decision": {
+      "output": {
+        "action": "She politely declines the offer and keeps walking home.",
+        "explanation": "She does not accept gifts or favors from men she does not know well, and she usually avoids stopping on her way home so she can reach her room before dark. Even though she is tired and thirsty, the stranger’s smile also reminds her of being asked for free help before, so she is likely to refuse the tea and continue on her way."
+      },
+      "generated_at": "2026-09-03T00:46:10.048Z",
+      "model": "openai/gpt-5.4-mini"
+    }
+  },
+  "scenario_generated_at": "2026-09-02T13:45:22.723Z",
+  "scenario_context_generated_at": "2026-09-02T13:46:42.236Z",
+  "description_generated_at": "2026-09-02T13:42:55.096Z",
+  "started_at": "2026-09-03T00:46:08.145Z",
+  "updated_at": "2026-09-03T00:46:10.048Z"
+}

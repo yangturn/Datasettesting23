@@ -1,0 +1,62 @@
+{
+  "flow_key": "full_flow_first_person",
+  "profile_id": "profile_001",
+  "scenario_id": "scenario_mtk5mtfl_6",
+  "name": "Aminata Diallo",
+  "scenario_title": "A Walk to See School Bags",
+  "steps": {
+    "attributes": {
+      "output": {
+        "values_culture_and_background": "She has internalized extreme caution with money and plans from watching her mother lose a market stall to a miscalculated loan. She values careful counting, double-checking, and trusting only what she has verified herself. She treats speaking plans aloud as risky because she believes plans can be borrowed against.",
+        "roles_and_commitments": "She is a construction worker on a masonry crew. She is the guardian and sole family support for her younger sister Fatoumata. She is saving for an accounting course and for a proper room with running water so her sister can live with her and go to school.",
+        "capabilities_and_constraints": "She can do construction labor, including hauling cement, stacking blocks, and using a trowel and plumb line. She is studying accounting and keeps figures and dates in a notebook. She has no tap water at home, must fetch water from a communal stand, cannot afford bus fare both ways to her accounting course, and lives on a tight budget with a hidden emergency fund she does not touch.",
+        "personality_and_response_style": "She is precise, methodical, and highly detail-oriented. She is quiet and reserved, does not respond to teasing, and rarely speaks about her plans. She is disciplined and self-controlled, with a strong habit of checking measurements and counting carefully. She persists despite physical strain and long workdays."
+      },
+      "generated_at": "2026-09-03T00:45:04.568Z",
+      "model": "openai/gpt-5.4-mini"
+    },
+    "consolidate": {
+      "output": {
+        "initial_context": "RELEVANT CHARACTER BACKGROUND\n\nAminata Diallo is a young woman living in a rented room in a bustling district on the outskirts of Bamako. Her room has packed-earth walls, a corrugated tin roof, no tap water, and is lit at night by a kerosene lamp. She rises before dawn, fetches water daily from a communal stand two blocks away, and carries it carefully so as not to splash her only pair of work trousers. She works six days a week on a masonry construction crew, where she is the youngest person and the only woman. Her master mason is Sékou, an older man who lost two fingers to a faulty crane and teases her by calling her la petite comptable because she recalculates load-bearing estimates in her head before lifting a trowel. She does not engage in teasing and is typically quiet, reserved, and nonreactive in the moment, instead nodding and checking measurements again.\n\nHer background has shaped a strong, habitual caution around money, planning, and verification. She internalized careful counting and double-checking after watching her mother lose a market stall to a miscalculated loan. Her mother died when Aminata was twelve, and since then she has counted and tracked nearly everything: bricks in a pallet, the cost of rice, the weeks until an accounting exam. She keeps figures and dates in a small notebook tucked inside her shirt and maintains an emergency fund hidden under a loose floorboard near her mattress, adding the same amount each month and never touching it or counting it in daylight. She rarely speaks about plans aloud because she believes spoken plans can be borrowed against. Her father once sold his tools to pay for a funeral and never returned to masonry, a history that reinforces her tendency to trust only what she has personally counted or verified.\n\nAminata is saving for an accounting course at a community center on the other side of the city. Because she cannot afford bus fare both ways, she walks there. She is also saving for a proper room with running water so her younger sister can live with her and attend school. She has not spoken this goal aloud. She carries significant practical burdens while persisting through long workdays: hauling cement, stacking blocks, and studying by lamp light at night until her eyes burn. She is disciplined, self-controlled, methodical, highly detail-oriented, and persistent despite physical strain. She tends to check measurements twice, trust her own verification, and avoid unnecessary disclosure of plans. She is experienced with construction labor, the use of a trowel and plumb line, and accounting study, and she lives under a tight budget with no tap water and limited transport options.\n\nAminata is Fatoumata’s guardian and sole family, having raised her since their mother’s death. Fatoumata depends on her for guidance and rarely makes decisions without her approval. Aminata sometimes responds to conflicts between study time and Fatoumata’s requests by finishing a set number of problems before leaving, but at other times she sets her notebook aside to avoid disappointing her sister. This creates a standing tension between discipline and family obligation, with both patterns already established in her behavior.\n\nOBJECTIVE SITUATION\n\nOn a Sunday afternoon, Aminata is seated on her mat reviewing accounting notes. She is two hours into studying and has six practice problems left. The lamp oil will last another ninety minutes. Her shoulders ache from the week’s labor, but she is focused and not urgent. Fatoumata appears at the door and asks Aminata to walk with her to the market to look at school bags. Fatoumata is not buying one; she wants Aminata’s opinion on which bag looks sturdy enough to last the year. The market is a forty-minute walk each way. Aminata still has unfinished practice problems and must consider the limited lamp oil and the time required for the trip. She could put down her notebook and go with her sister, or tell Fatoumata to go alone and come back later.\n\nPRE-APPRAISAL STATE AND ACCESSIBLE MEMORIES\n\nAminata is physically tired from the week’s labor, with sore shoulders, but remains focused while studying. She has several practice problems still unfinished and only enough lamp oil for another ninety minutes. The present request immediately cues a childhood memory of a cheap canvas school bag she carried when she was young, which tore after two months and forced her to carry books in her arms. That memory is directly available because the discussion of school bags calls it to mind. She also has her standing concerns about preserving study time, managing scarce resources, and responding to Fatoumata’s dependence within the limits of her own discipline and obligations. Her established habits of caution, verification, and reserved communication are available background conditions, along with her prior tendency in similar conflicts to either complete a defined amount of work before leaving or to set the notebook aside to avoid disappointing Fatoumata."
+      },
+      "generated_at": "2026-09-03T00:45:12.040Z",
+      "model": "openai/gpt-5.4-mini"
+    },
+    "appraisal": {
+      "output": {
+        "initial_interpretation": "Fatoumata is asking for my judgment on something that matters to school and to how long it will last, and it comes right when I am still in the middle of my work. It feels like one of those moments where I have to choose between finishing what I started and being with her now.",
+        "initial_emotional_reaction": "I feel a tired pull in my shoulders and a small tightening in me from the interruption, but also a quick softening at the thought of her needing my eye on something practical. The bag memory makes me feel a little uneasy and alert.",
+        "activated_concerns": "My unfinished problems matter, and so does my lamp oil. I also feel the weight of being the one Fatoumata depends on, and I do not want her to end up with something cheap that falls apart like my old bag did.",
+        "automatic_theory_of_mind": "I read Fatoumata as wanting my help and my approval more than wanting me to buy anything with her. She seems to expect me to know which bag is sturdy and to come with her instead of leaving her to decide alone.",
+        "initial_action_tendency": "I want to pause over my notebook and lean toward going with her, or at least giving her a quick answer before I settle back into the problems."
+      },
+      "generated_at": "2026-09-03T00:45:15.858Z",
+      "model": "openai/gpt-5.4-mini"
+    },
+    "reappraisal": {
+      "output": {
+        "initial_tendency": "I want to pause over my notebook and lean toward going with her, or at least giving her a quick answer before I settle back into the problems.",
+        "reflective_update": "When I sit with it, I still feel pulled toward going with Fatoumata, because she is not asking for money or for me to do the choosing alone, only for my eye on something that affects school and whether it lasts. The bag matters, and I know too well what it is like to carry a weak one until it fails. That memory makes this request feel serious, not small. At the same time, I cannot ignore that I am already in the middle of my notes, with six problems left and only ninety minutes of lamp oil. If I leave now, I may lose the rest of this study stretch, and my body is already tired from the week. I can feel the old habit of weighing what is in front of me instead of speaking too fast. Because Fatoumata depends on me, I do not want to dismiss her, but I also know I do best when I finish a clear amount of work before I move on. I keep coming back to that balance: showing up for her without abandoning the part of the evening I have set aside for study. That makes me less certain about simply dropping everything, but it does not push me away from helping her at all. It makes me want to answer in a way that acknowledges her request quickly and still protects the little time and oil I have left.",
+        "change_from_initial": "SOFTENED",
+        "reconsidered_interpretation": "I see this less as a choice between caring about Fatoumata and caring about my work, and more as a test of how I hold both together without wasting the scarce time I have. Her request still feels important, but I also understand that my study time and lamp oil are not endless, so I cannot treat this as if either side does not matter.",
+        "motivational_conflict": "I still feel the tension between my duty to Fatoumata and my discipline with study and resources. I want to be present for her because she depends on me and because I know the cost of a bad bag, but I also resent losing the only quiet stretch I have for these problems and for the oil I am trying not to waste.",
+        "revised_action_tendency": "I want to lean toward helping Fatoumata with this, but in a more guarded way, by giving her a quick, practical answer first and only then deciding whether I can spare the walk without giving up too much of my study time."
+      },
+      "generated_at": "2026-09-03T00:45:21.652Z",
+      "model": "openai/gpt-5.4-mini"
+    },
+    "decision": {
+      "output": {
+        "action": "Aminata marks her place in the notebook, looks up at Fatoumata, and says, \"Show me which ones you mean; let me finish these two problems first, then I’ll see if I can walk with you.\"",
+        "explanation": "Aminata’s first impulse was to pause over her notebook and lean toward going with Fatoumata right away, because the request touches school, durability, and Fatoumata’s dependence on her. Reflection SOFTENED that impulse by making her consider more clearly the unfinished problems, the limited lamp oil, and her habit of finishing a defined amount of work before switching tasks. The revised tendency kept her inclined to help, but in a guarded, practical way, so she responds by briefly acknowledging the request, marking her place, and asking for a little time before deciding on the walk. That fits her quiet, methodical style and her usual balancing of family obligation with disciplined study."
+      },
+      "generated_at": "2026-09-03T00:45:27.663Z",
+      "model": "openai/gpt-5.4-mini"
+    }
+  },
+  "scenario_generated_at": "2026-09-02T13:51:24.033Z",
+  "scenario_context_generated_at": "2026-09-02T13:51:58.813Z",
+  "description_generated_at": "2026-09-02T13:42:55.096Z",
+  "started_at": "2026-09-03T00:45:01.477Z",
+  "updated_at": "2026-09-03T00:45:27.663Z"
+}

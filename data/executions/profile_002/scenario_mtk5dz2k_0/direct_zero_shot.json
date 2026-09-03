@@ -1,0 +1,22 @@
+{
+  "flow_key": "direct_zero_shot",
+  "profile_id": "profile_002",
+  "scenario_id": "scenario_mtk5dz2k_0",
+  "name": "Ingrid Lindgren",
+  "scenario_title": "Fika Invitation from an Old Friend",
+  "steps": {
+    "decision": {
+      "output": {
+        "action": "Ingrid will text Karin back to accept the fika and arrange to meet her at the café near Gamla Stan.",
+        "explanation": "Karin is a close childhood friend who visits only infrequently, and Ingrid has no pressing meetings while her mother is calmly reading with the night nurse coming later. The memories of their past together and her mother’s view that youth friendships are worth preserving make a brief meet-up more likely than continuing to work."
+      },
+      "generated_at": "2026-09-03T00:46:14.695Z",
+      "model": "openai/gpt-5.4-mini"
+    }
+  },
+  "scenario_generated_at": "2026-09-02T13:44:31.436Z",
+  "scenario_context_generated_at": "2026-09-02T13:45:32.057Z",
+  "description_generated_at": "2026-09-02T13:43:19.287Z",
+  "started_at": "2026-09-03T00:46:12.903Z",
+  "updated_at": "2026-09-03T00:46:14.695Z"
+}

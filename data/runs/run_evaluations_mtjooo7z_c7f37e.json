@@ -1,0 +1,66 @@
+{
+  "id": "run_evaluations_mtjooo7z_c7f37e",
+  "stage": "evaluations",
+  "status": "succeeded",
+  "total": 157,
+  "done": 99,
+  "failed": 13,
+  "errors": [
+    {
+      "id": "profile_002",
+      "error": "om_cot: terminated"
+    },
+    {
+      "id": "profile_001",
+      "error": "her_dual_layered_thinking: terminated"
+    },
+    {
+      "id": "profile_001",
+      "error": "direct_zero_shot: fetch failed"
+    },
+    {
+      "id": "profile_001",
+      "error": "om_cot: fetch failed"
+    },
+    {
+      "id": "profile_002",
+      "error": "context: fetch failed"
+    },
+    {
+      "id": "profile_003",
+      "error": "context: fetch failed"
+    },
+    {
+      "id": "profile_004",
+      "error": "context: fetch failed"
+    },
+    {
+      "id": "profile_005",
+      "error": "context: fetch failed"
+    },
+    {
+      "id": "profile_006",
+      "error": "context: fetch failed"
+    },
+    {
+      "id": "profile_007",
+      "error": "context: fetch failed"
+    },
+    {
+      "id": "profile_008",
+      "error": "context: fetch failed"
+    },
+    {
+      "id": "profile_009",
+      "error": "context: fetch failed"
+    },
+    {
+      "id": "profile_010",
+      "error": "context: fetch failed"
+    }
+  ],
+  "model": "deepseek/deepseek-v4-pro-0813",
+  "started_at": "2026-09-02T05:56:57.119Z",
+  "finished_at": "2026-09-02T07:16:05.245Z",
+  "message": "Built 17 context(s) (13 reflective, 4 immediate) and scored 82 prediction(s)."
+}

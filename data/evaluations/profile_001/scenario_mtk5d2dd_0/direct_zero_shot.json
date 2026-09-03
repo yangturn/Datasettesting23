@@ -1,0 +1,24 @@
+{
+  "profile_id": "profile_001",
+  "scenario_id": "scenario_mtk5d2dd_0",
+  "flow_key": "direct_zero_shot",
+  "name": "Aminata Diallo",
+  "scenario_title": "A Cousin’s Request for Help",
+  "scores": {
+    "character_consistency": 2,
+    "situation_fit": 3,
+    "state_memory_alignment": 2,
+    "action_plausibility": 2,
+    "reasoning_coherence": 2
+  },
+  "overall_score": 2.2,
+  "score_scale": 10,
+  "dimension_set": 4,
+  "action": "Aminata agrees to help Fatoumata prepare the traditional dishes the day before the naming ceremony.",
+  "reason": "Her quiet obligation to Fatoumata, who has helped her after her mother died, and the strong family-duty pressure in the situation outweigh her reluctance to refuse. She is also highly sensitive to family expectations and the memories tied to showing up for relatives, even though it disrupts her study plan.",
+  "decision_mode": "REFLECTION_AVAILABLE",
+  "context_generated_at": "2026-09-03T01:49:51.434Z",
+  "action_generated_at": "2026-09-03T00:46:28.485Z",
+  "generated_at": "2026-09-03T01:50:55.409Z",
+  "model": "deepseek/deepseek-v4-flash"
+}

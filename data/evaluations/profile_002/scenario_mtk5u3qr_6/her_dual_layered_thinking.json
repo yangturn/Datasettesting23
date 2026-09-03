@@ -1,0 +1,24 @@
+{
+  "profile_id": "profile_002",
+  "scenario_id": "scenario_mtk5u3qr_6",
+  "flow_key": "her_dual_layered_thinking",
+  "name": "Ingrid Lindgren",
+  "scenario_title": "Sillunch Invitation",
+  "scores": {
+    "character_consistency": 7,
+    "situation_fit": 8,
+    "state_memory_alignment": 7,
+    "action_plausibility": 7,
+    "reasoning_coherence": 7
+  },
+  "overall_score": 7.2,
+  "score_scale": 10,
+  "dimension_set": 4,
+  "action": "Ingrid pauses a moment, then says, \"Yes—I’d like to come. Let me confirm a neighbor can check in on my mother, and I’ll be there Saturday at noon.\"",
+  "reason": "Ingrid feels the pull of the cellar restaurant and the old songs, which seem close to her mother and herself, and she is tired of saying no. Because her mother is calm and a neighbor check-in should make it possible, she decides she can probably go and does not want this to become another missed winter ritual.",
+  "decision_mode": "REFLECTION_AVAILABLE",
+  "context_generated_at": "2026-09-03T01:11:35.275Z",
+  "action_generated_at": "2026-09-03T00:45:24.450Z",
+  "generated_at": "2026-09-03T01:13:48.359Z",
+  "model": "deepseek/deepseek-v4-flash"
+}

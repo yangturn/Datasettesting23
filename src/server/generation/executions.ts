@@ -4,7 +4,12 @@ import type { Description } from "@/lib/stage-1";
 import type { Scenario, Stage2Config } from "@/lib/stage-2";
 import type { Execution } from "@/lib/stage-3";
 import { FLOWS, flowByKey } from "@/server/flows";
-import { stepSchema, type Flow, type FlowStep } from "@/server/flows/types";
+import {
+  flowStepsFor,
+  stepSchema,
+  type Flow,
+  type FlowStep,
+} from "@/server/flows/types";
 import type { RunContext } from "@/server/generation/runs";
 import {
   MAX_CONCURRENT_REQUESTS,
@@ -119,6 +124,7 @@ async function runCell({
           ),
         }),
         signal: run?.signal,
+        temperature: 0,
       });
 
       const finishedAt = new Date().toISOString();
@@ -337,7 +343,9 @@ export async function planFlowRun({
        * reasoning it was drawn from had been replaced underneath it.
        */
       let rerunFromHere = false;
-      const steps = flow.steps.filter((step) => {
+      // The steps this scenario actually gets: a flow that branches on the
+      // situation type runs a different pipeline here than the one it declares.
+      const steps = flowStepsFor(flow, scenario).filter((step) => {
         const done =
           skipExisting && !rerunFromHere && stepIsComplete(existing, step);
         if (!done) rerunFromHere = true;

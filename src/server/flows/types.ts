@@ -42,8 +42,30 @@ export type Flow = {
   key: string;
   label: string;
   description: string;
-  /** Run in order; each step sees the outputs of the ones before it. */
+  /**
+   * Every step this flow can run, in order — the union of its branches, not
+   * necessarily what any one scenario gets.
+   *
+   * This is the flow as described rather than as executed: the page's legend,
+   * the registry's validation, and `flowMeta` all read it, so it must name every
+   * step key a branch can produce. What a *particular* scenario runs comes from
+   * `stepsFor`.
+   */
   steps: FlowStep[];
+  /**
+   * The steps this scenario actually gets, when the flow branches on it.
+   *
+   * Omitted by a flow that runs the same pipeline every time — the common case,
+   * and `flowStepsFor` falls back to `steps` for it. A branching flow must
+   * return steps whose keys are all declared in `steps`, which the registry
+   * checks at load against one scenario of each situation type.
+   *
+   * Two branches may share a step key while differing in prompt: that is how a
+   * flow substitutes a variant of a part rather than dropping it. Keys and
+   * fields are what the execution record and the page are keyed by, so a
+   * substituted step stays comparable with the one it replaces.
+   */
+  stepsFor?: (scenario: Scenario) => FlowStep[];
   /**
    * The step and field holding what this flow ultimately claims — the thing a
    * reader wants first and an evaluation stage would score. Omitted by a flow
@@ -51,6 +73,40 @@ export type Flow = {
    */
   outcome?: FlowOutcome;
 };
+
+/**
+ * The steps a flow runs for one scenario.
+ *
+ * Every scenario-scoped reader goes through this rather than `flow.steps` — the
+ * planner, the runner, the grid, and the coverage totals. Reading `flow.steps`
+ * directly where a scenario is in hand is the bug this exists to prevent: a
+ * branching flow would be scheduled for four parts and then reported as four of
+ * five done, so the grid could never read complete and every run would find work
+ * left to do.
+ */
+export function flowStepsFor(flow: Flow, scenario: Scenario): FlowStep[] {
+  return flow.stepsFor ? flow.stepsFor(scenario) : flow.steps;
+}
+
+/**
+ * A pipeline with some of its parts swapped for variants, keyed by step key.
+ *
+ * How a flow that is a *variation* of another one is built: it takes the base
+ * flow's own step objects and replaces only the parts it actually rewrote, so
+ * everything it has not deliberately changed stays literally the same object
+ * rather than a copy that drifts. A step key with no override passes through
+ * untouched.
+ *
+ * Applied to every branch a flow runs, so a rewritten part is rewritten
+ * everywhere — otherwise a flow would quietly use the base version of a part on
+ * whichever situation types take a different branch.
+ */
+export function substituteSteps(
+  steps: FlowStep[],
+  overrides: Map<string, FlowStep>,
+): FlowStep[] {
+  return steps.map((step) => overrides.get(step.key) ?? step);
+}
 
 /**
  * A step's output schema, built from its declared fields: every key must be

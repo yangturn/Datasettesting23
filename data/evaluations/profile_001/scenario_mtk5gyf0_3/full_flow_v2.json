@@ -1,0 +1,24 @@
+{
+  "profile_id": "profile_001",
+  "scenario_id": "scenario_mtk5gyf0_3",
+  "flow_key": "full_flow_v2",
+  "name": "Aminata Diallo",
+  "scenario_title": "The Friday Tea Stop",
+  "scores": {
+    "character_consistency": 9,
+    "situation_fit": 8,
+    "state_memory_alignment": 8,
+    "action_plausibility": 9,
+    "reasoning_coherence": 8
+  },
+  "overall_score": 8.4,
+  "score_scale": 10,
+  "dimension_set": 4,
+  "action": "Aminata pauses for a moment at the corner, then keeps walking past the tea vendor toward home without buying the tea or using the bus ticket.",
+  "reason": "Her initial tendency was to linger between the tea and the road home, hesitating over whether to spend the coins or keep the ticket. Reflection STRENGTHENED that restraint by making the small cup feel like a possible source of another avoidable loss, especially against her memory of having to borrow from emergency savings after buying tea before, and by bringing back her habit of checking costs against consequences. Because she is disciplined, frugal, and used to protecting every small margin for study, transport, and future needs, the revised action tendency becomes to keep both the coins and the ticket for later. The remaining conflict is her tired, thirsty body, so the response still includes a brief pause before she commits to leaving the stand and continuing home.",
+  "decision_mode": "REFLECTION_AVAILABLE",
+  "context_generated_at": "2026-09-03T01:38:03.490Z",
+  "action_generated_at": "2026-09-03T00:46:09.140Z",
+  "generated_at": "2026-09-03T01:38:19.918Z",
+  "model": "deepseek/deepseek-v4-flash"
+}

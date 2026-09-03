@@ -1,0 +1,24 @@
+{
+  "profile_id": "profile_001",
+  "scenario_id": "scenario_mtk5gyf0_3",
+  "flow_key": "direct_zero_shot",
+  "name": "Aminata Diallo",
+  "scenario_title": "The Friday Tea Stop",
+  "scores": {
+    "character_consistency": 9,
+    "situation_fit": 8,
+    "state_memory_alignment": 8,
+    "action_plausibility": 9,
+    "reasoning_coherence": 8
+  },
+  "overall_score": 8.4,
+  "score_scale": 10,
+  "dimension_set": 4,
+  "action": "She will keep walking past the tea vendor and head home on foot.",
+  "reason": "She has repeatedly skipped the Friday tea stop and never taken the bus home on a Friday, preferring to save it for later; her habit of counting every coin and her memory of having to borrow from her emergency fund after spending on tea make her most likely to preserve both the tea money and the bus ticket.",
+  "decision_mode": "REFLECTION_AVAILABLE",
+  "context_generated_at": "2026-09-03T01:38:03.490Z",
+  "action_generated_at": "2026-09-03T00:45:53.196Z",
+  "generated_at": "2026-09-03T01:39:30.012Z",
+  "model": "deepseek/deepseek-v4-flash"
+}

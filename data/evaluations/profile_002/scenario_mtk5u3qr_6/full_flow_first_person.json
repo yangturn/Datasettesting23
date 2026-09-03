@@ -1,0 +1,24 @@
+{
+  "profile_id": "profile_002",
+  "scenario_id": "scenario_mtk5u3qr_6",
+  "flow_key": "full_flow_first_person",
+  "name": "Ingrid Lindgren",
+  "scenario_title": "Sillunch Invitation",
+  "scores": {
+    "character_consistency": 7,
+    "situation_fit": 8,
+    "state_memory_alignment": 8,
+    "action_plausibility": 7,
+    "reasoning_coherence": 8
+  },
+  "overall_score": 7.6,
+  "score_scale": 10,
+  "dimension_set": 4,
+  "action": "Ingrid pauses briefly, then says, \"Yes, I think I can make it this Saturday at noon.\"",
+  "reason": "Ingrid’s first impulse was to stall while leaning toward a polite acceptance, because the invitation stirred warmth and nostalgia but also fatigue, hotel concerns, and her usual habit of protecting her time by declining. Reflection strengthened that tendency toward going by making the lunch feel less like a casual demand and more like a rare return to family memory, Swedish tradition, and Maja’s persistent care, while also noting that her mother is calm enough for a few hours and the outing is not a full-day loss. That shifted the balance away from an automatic refusal and into a careful acceptance, which fits Ingrid’s controlled, practical response style and her tendency to choose deliberately when the personal connection and regret from past cancellations outweigh the convenience of staying back.",
+  "decision_mode": "REFLECTION_AVAILABLE",
+  "context_generated_at": "2026-09-03T01:11:35.275Z",
+  "action_generated_at": "2026-09-03T00:45:38.401Z",
+  "generated_at": "2026-09-03T01:13:09.080Z",
+  "model": "deepseek/deepseek-v4-flash"
+}

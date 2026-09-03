@@ -1,0 +1,13 @@
+{
+  "id": "run_executions_mtitsm0d_598133",
+  "stage": "executions",
+  "status": "succeeded",
+  "total": 8,
+  "done": 8,
+  "failed": 0,
+  "errors": [],
+  "model": "deepseek/deepseek-v4-pro-0813",
+  "started_at": "2026-09-01T15:32:12.782Z",
+  "finished_at": "2026-09-01T15:34:09.930Z",
+  "message": "Skipped 22 cell(s) already complete."
+}

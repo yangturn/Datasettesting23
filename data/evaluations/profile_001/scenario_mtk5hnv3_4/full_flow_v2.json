@@ -1,0 +1,24 @@
+{
+  "profile_id": "profile_001",
+  "scenario_id": "scenario_mtk5hnv3_4",
+  "flow_key": "full_flow_v2",
+  "name": "Aminata Diallo",
+  "scenario_title": "Evening Invitation After Work",
+  "scores": {
+    "character_consistency": 8,
+    "situation_fit": 7,
+    "state_memory_alignment": 7,
+    "action_plausibility": 8,
+    "reasoning_coherence": 8
+  },
+  "overall_score": 7.6,
+  "score_scale": 10,
+  "dimension_set": 4,
+  "action": "Aminata pauses, then gives a small polite nod and says, \"Thank you, Sékou. Please tell your wife I’m grateful, but I have to go home and study tonight.\"",
+  "reason": "Aminata’s first impulse was to hesitate, stay small, and give a careful polite answer rather than commit at once, with an immediate pull to decline so she would not seem disrespectful. Reflection SOFTENED that impulse by making the Korité meal feel more like a meaningful family inclusion, especially through the memory of later regret over refusing a holiday meal, but it also kept the competing cost of fatigue, hunger, bus fare, and lost study time in view. Because her habits are quiet, restrained, and careful, and because she treats exam preparation and verified priorities as serious obligations, the revised tendency remained a hesitant lean toward declining rather than an outright refusal. That is why she answers with gratitude and apology, politely turning down the invitation while acknowledging its kindness instead of speaking abruptly or committing to attend.",
+  "decision_mode": "REFLECTION_AVAILABLE",
+  "context_generated_at": "2026-09-03T01:24:10.973Z",
+  "action_generated_at": "2026-09-03T00:45:56.925Z",
+  "generated_at": "2026-09-03T01:29:36.409Z",
+  "model": "deepseek/deepseek-v4-flash"
+}

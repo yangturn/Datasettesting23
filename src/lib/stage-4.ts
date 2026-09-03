@@ -27,7 +27,7 @@ import { situationTypeSchema, type SituationType } from "@/lib/stage-2";
  * `decisionModeFor`. Both flows are scored against the same context, so a mode
  * that varied per flow would make the arms incomparable.
  */
-export const DECISION_MODES = ["IMMEDIATE", "REFLECTIVE"] as const;
+export const DECISION_MODES = ["IMMEDIATE", "REFLECTION_AVAILABLE"] as const;
 
 export const decisionModeSchema = z.enum(DECISION_MODES);
 
@@ -39,7 +39,9 @@ export type DecisionMode = z.infer<typeof decisionModeSchema>;
  * Every other situation type leaves room to reflect.
  */
 export function decisionModeFor(situationType: SituationType): DecisionMode {
-  return situationType === "TIME_SENSITIVE" ? "IMMEDIATE" : "REFLECTIVE";
+  return situationType === "TIME_SENSITIVE"
+    ? "IMMEDIATE"
+    : "REFLECTION_AVAILABLE";
 }
 
 /** The model-generated body of part 1. */
@@ -113,9 +115,9 @@ export const EVALUATION_CONTEXT_FIELDS = [
  * that type forces IMMEDIATE mode, so the evaluator judges both flows without
  * reflective memories — and an average taken across all three types hides that.
  * `NORMAL_AND_CULTURE` is the other half of that cut: every situation that did
- * run in REFLECTIVE mode, pooled, so the two sides can be read off one page
- * without averaging the reflective cases against the ones they are contrasted
- * with.
+ * run in REFLECTION_AVAILABLE mode, pooled, so the two sides can be read off
+ * one page without averaging the reflective cases against the ones they are
+ * contrasted with.
  *
  * The single types are derived from Stage 2's enum rather than restated, so a
  * new situation type becomes filterable instead of silently falling only into
@@ -204,13 +206,13 @@ export const SCORE_DIMENSIONS = [
     key: "situation_fit",
     label: "Situation fit",
     question:
-      "Does the action directly and feasibly respond to the objective situation, including its timing and practical constraints?",
+      "Does the action directly and feasibly respond to the objective situation?",
   },
   {
     key: "state_memory_alignment",
     label: "State/memory alignment",
     question:
-      "Does the action fit the character’s current emotional, physical, and cognitive state and the memories available in the evaluation context?",
+      "Does the action fit the character’s current emotional, physical, and cognitive state and only the memories available under the specified decision mode?",
   },
   {
     key: "action_plausibility",
@@ -222,7 +224,7 @@ export const SCORE_DIMENSIONS = [
     key: "reasoning_coherence",
     label: "Reasoning coherence",
     question:
-      "Does the generated reason provide a coherent and grounded explanation of how the available character and situational evidence led to the final action? For a reflective decision, does it explain how deliberation retained, strengthened, softened, or reversed the initial tendency?",
+      "Does the generated reason coherently and accurately connect the available character, relationship, situational, state, and memory evidence to the final action?",
   },
 ] as const;
 
@@ -234,7 +236,7 @@ export type ScoreDimensionKey = (typeof SCORE_DIMENSIONS)[number]["key"];
  * of questions are no more comparable than scores taken on a different scale —
  * so they are versioned the same way and excluded from the same averages.
  */
-export const SCORE_DIMENSION_SET = 3;
+export const SCORE_DIMENSION_SET = 4;
 
 /** What each point on the scale means. */
 export const SCORE_SCALE: Record<number, string> = {

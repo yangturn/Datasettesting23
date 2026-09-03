@@ -1,0 +1,37 @@
+{
+  "flow_key": "her_dual_layered_thinking",
+  "profile_id": "profile_002",
+  "scenario_id": "scenario_mtk5u3qr_6",
+  "name": "Ingrid Lindgren",
+  "scenario_title": "Sillunch Invitation",
+  "steps": {
+    "system_thinking": {
+      "output": {
+        "system_thinking": "I need to portray Ingrid as weighing a genuine cultural/personal pull against her habitual caution about leaving her mother. Her immediate interpretation should be that Maja’s invitation is warm, persistent, and meaningful, not merely social; the mention of the cellar restaurant, sillunch, and snapsvisor should trigger the supported memories of her first visit there with her mother and of family ritual, which makes the invitation feel rooted in her past. At the same time, Ingrid is just off a good week financially and her mother is calm and dozing, so the scene supports a brief opening toward acceptance rather than an automatic refusal. Her low-level fatigue from the heating complaint should remain present as a slight drag, but not dominate. The strongest motivation to express is her quiet regret about repeatedly skipping rituals and her mother’s remark about sillunch slowing down winter, which nudges her toward making time if it can be done safely. Her interpersonal stance toward Maja should be warm but measured: she values Maja’s persistence and history with her, and should not sound dismissive. The observable behavior should be restrained—likely a short pause while she considers the logistics, perhaps a glance toward her mother’s room or a practical mental check about the neighbor/check-in—followed by a polite, concise acceptance or conditional acceptance that acknowledges the invitation and notes the need to confirm her mother’s coverage. The speech should sound like Ingrid: even, precise, understated, with a faint softening because this is a personal rather than business matter. She should avoid overexplaining, but can give a brief yes framed around checking the practical details, reflecting both responsibility and the tentative opening to reconnect with her roots."
+      },
+      "generated_at": "2026-09-03T00:45:20.278Z",
+      "model": "openai/gpt-5.4-mini"
+    },
+    "role_response": {
+      "output": {
+        "role_thinking": "I feel the pull of it more than I want to admit. The cellar restaurant, the old songs—those things sit close to my mother and to me, and I’m tired of saying no. Mother is calm, and if I can arrange a neighbor check-in, I can probably go. I should not let this become another missed winter ritual.",
+        "action": "I pause a moment, then say, “Yes—I’d like to come. Let me confirm a neighbor can check in on my mother, and I’ll be there Saturday at noon.”"
+      },
+      "generated_at": "2026-09-03T00:45:22.506Z",
+      "model": "openai/gpt-5.4-mini"
+    },
+    "decision": {
+      "output": {
+        "action": "Ingrid pauses a moment, then says, \"Yes—I’d like to come. Let me confirm a neighbor can check in on my mother, and I’ll be there Saturday at noon.\"",
+        "explanation": "Ingrid feels the pull of the cellar restaurant and the old songs, which seem close to her mother and herself, and she is tired of saying no. Because her mother is calm and a neighbor check-in should make it possible, she decides she can probably go and does not want this to become another missed winter ritual."
+      },
+      "generated_at": "2026-09-03T00:45:24.450Z",
+      "model": "openai/gpt-5.4-mini"
+    }
+  },
+  "scenario_generated_at": "2026-09-02T13:57:03.987Z",
+  "scenario_context_generated_at": "2026-09-02T13:57:39.057Z",
+  "description_generated_at": "2026-09-02T13:43:19.287Z",
+  "started_at": "2026-09-03T00:45:16.320Z",
+  "updated_at": "2026-09-03T00:45:24.450Z"
+}

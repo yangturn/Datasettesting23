@@ -1,0 +1,50 @@
+{
+  "flow_key": "full_flow_v2",
+  "profile_id": "profile_001",
+  "scenario_id": "scenario_mtk5f2n7_2",
+  "name": "Aminata Diallo",
+  "scenario_title": "A Tea Offer After Class",
+  "steps": {
+    "attributes": {
+      "output": {
+        "values_culture_and_background": "She internalizes careful accounting and self-reliance as protective habits, shaped by her mother losing a market stall to a miscalculated loan and by her father selling his tools for a funeral. She values saving, exact counting, and keeping plans private. She is committed to helping a younger sister live with her and attend school.",
+        "roles_and_commitments": "She works on a construction crew as a laborer, is the youngest person on the crew, and is the only woman there. She is a student preparing for accounting exams at a community center.",
+        "capabilities_and_constraints": "She can do construction labor, recalculate load-bearing estimates in her head, and keep precise records of figures and dates in a notebook. She has very limited finances, rents a room, lacks tap water, cannot afford bus fare both ways to the community center, and walks long distances instead. She maintains an emergency fund hidden under her floorboard and does not touch it.",
+        "personality_and_response_style": "She is precise, cautious, and disciplined. She double-checks measurements, keeps her plans private, avoids asking for wage advances, and prefers not to stop during her walk home. She responds to teasing with silence or a nod rather than joking back, and she keeps her eyes down and stays reserved with strangers."
+      },
+      "generated_at": "2026-09-03T00:46:06.609Z",
+      "model": "openai/gpt-5.4-mini"
+    },
+    "consolidate": {
+      "output": {
+        "initial_context": "RELEVANT CHARACTER BACKGROUND\n\nAminata Diallo is a young woman living in a rented room in a bustling district on the outskirts of Bamako. Her room is plain and cramped, with packed-earth walls, a corrugated tin roof, and no tap water. Each morning she fetches water from a communal stand two blocks away and carries it carefully home. She works six days a week on a construction crew as a laborer, where she is the youngest person on the crew and the only woman. Her master mason, Sékou, is an older man who lost two fingers to a faulty crane and teasingly calls her la petite comptable because she repeatedly recalculates load-bearing estimates in her head before working. Aminata is disciplined, precise, and cautious in her work and daily life; she double-checks measurements, keeps exact records of figures and dates in a small notebook tucked inside her shirt, and avoids asking for wage advances. She is also a student preparing for accounting exams at a community center across the city, and she studies at night by kerosene lamp after long workdays.\n\nHer background has shaped a strong reliance on careful accounting, self-reliance, and privacy. She internalizes exact counting and saving as protective habits after seeing her mother lose a market stall because of a miscalculated loan and after her father sold his tools to pay for a funeral and never again held a trowel. Her mother died when Aminata was twelve. Since then, she has counted many things closely, including bricks, rice costs, and the weeks until exams. Under the loosest floorboard near her mattress she keeps an emergency fund, always the same amount each month, never touched and never counted in daylight. She also keeps longer-term savings for a proper room with running water so that her younger sister can live with her and attend school. She does not speak about that plan aloud, in keeping with her belief that spoken plans become vulnerable to being borrowed against.\n\nAminata’s typical response style is reserved and controlled. She tends to respond to teasing with silence or a nod rather than joking back. She keeps her eyes down around strangers, avoids stopping on her walk home, and prefers to continue moving because delays can mean arriving after dark. She is accustomed to walking long distances because she cannot afford bus fare both ways to the community center. She has very limited finances, rents her room, and sustains herself through careful budgeting and disciplined routines. She is physically capable of demanding construction labor and mentally adept at checking calculations and maintaining precise records, but her circumstances require constant attention to cost, time, and safety.\n\nOBJECTIVE SITUATION\n\nIt is nearly dusk. Aminata is walking back from the community center after accounting exam preparation. She passes a small tea stall. A young man she has seen several times at the community center, who often smiles at her, raises his hand and offers to buy her a glass of sweet tea. The stall is warm and lit. He appears to be waiting for her answer while the vendor pours another glass. Aminata is still on foot with a long walk ahead to her room.\n\nPRE-APPRAISAL STATE AND ACCESSIBLE MEMORIES\n\nAminata is tired from hauling cement and from the walk to the community center. Her legs ache, her soles hurt, and she is thirsty. She has not eaten since early afternoon. Her mind is still occupied with the accounting problems from the prep session. The warm lamp at the tea stall is visually reminiscent of the kerosene lamp she uses for studying at night. The young man’s smile evokes a memory of a boy at the market who once smiled before asking her to carry his goods for free. The scent of sweet tea recalls a glass her mother bought her on market days before she died. She knows the young man only by sight from the exam prep class at the community center; he has smiled at her before, but they have never spoken and she has no other connection to him. She has never accepted a gift or favor from a man she does not know well, and when offered a free drink by a stall owner once, she politely declined and bought her own."
+      },
+      "generated_at": "2026-09-03T00:46:13.064Z",
+      "model": "openai/gpt-5.4-mini"
+    },
+    "appraisal": {
+      "output": {
+        "initial_interpretation": "Aminata reads the offer as a small, pointed interruption in her walk home: a familiar face from the community center trying to start something by buying her tea. It feels like a gesture that carries more meaning than the words alone, set in a place where she is being watched for an answer.",
+        "initial_emotional_reaction": "She feels tired and thirsty first, with a brief pull toward the warmth and sweetness. At the same time, a guarded tightness comes up in her, mixed with a flicker of unease and a distant soft ache from the smell and light reminding her of older, gentler things.",
+        "activated_concerns": "Her money feels immediately important, along with her habit of not taking favors from men she does not know well. Her privacy and caution feel exposed in the open stall, and her need to keep moving home before dark remains pressing. The small warmth and drink also tug at her hunger and thirst.",
+        "automatic_theory_of_mind": "Aminata takes the young man as wanting her attention and waiting for a response, with the smile and the offer feeling deliberate. She reads the vendor as simply serving the moment, and the man’s friendliness as something that may be a bid to get closer rather than just kindness.",
+        "initial_action_tendency": "She feels an impulse to slow, keep her eyes lowered, and decline politely while continuing on her way. The offer invites a brief pause, but her first movement is toward preserving distance and not accepting the drink."
+      },
+      "generated_at": "2026-09-03T00:46:16.755Z",
+      "model": "openai/gpt-5.4-mini"
+    },
+    "decision": {
+      "output": {
+        "action": "Aminata keeps walking, lowers her eyes, and gives a small polite refusal: \"No, thank you.\"",
+        "explanation": "Her tiredness and thirst create a brief pull toward the tea, but her stronger immediate habits of caution, privacy, and not taking favors from men she does not know well push her toward distance. The open stall and the young man’s deliberate smile feel to her like a pointed approach that requires an answer, while her need to keep moving home before dark keeps her from lingering. That combination turns her initial impulse into a quiet, respectful decline without stopping her walk."
+      },
+      "generated_at": "2026-09-03T00:46:19.186Z",
+      "model": "openai/gpt-5.4-mini"
+    }
+  },
+  "scenario_generated_at": "2026-09-02T13:45:22.723Z",
+  "scenario_context_generated_at": "2026-09-02T13:46:42.236Z",
+  "description_generated_at": "2026-09-02T13:42:55.096Z",
+  "started_at": "2026-09-03T00:46:03.491Z",
+  "updated_at": "2026-09-03T00:46:19.186Z"
+}

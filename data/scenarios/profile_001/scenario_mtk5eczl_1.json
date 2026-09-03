@@ -1,0 +1,21 @@
+{
+  "id": "scenario_mtk5eczl_1",
+  "profile_id": "profile_001",
+  "name": "Aminata Diallo",
+  "headline": "19-year-old apprentice bricklayer and part-time student, Bamako, Mali",
+  "title": "Invitation to a Neighborhood Meal",
+  "situation_type": "NORMAL",
+  "life_domain": "FRIENDSHIP",
+  "situation": "After a long day at the construction site, Aminata is packing her tools when Fatoumata, one of the few other women on a nearby crew, calls out to her. Fatoumata is heading with three other women to a small stall that serves grilled fish and rice, and invites Aminata to join them. The meal would cost about the same as a single bus fare. Aminata is tired and has a chapter of her accounting textbook waiting at home. The group is friendly and often shares news and advice. Aminata has not socialized with them in weeks.",
+  "context": {
+    "relationship_profiles": "Aminata knows Fatoumata from the construction site but usually only exchanges brief greetings, never lingering for conversation. The other three women are acquaintances; she has not shared a meal with them before. Fatoumata has never asked for a favor, which Aminata respects.",
+    "tendencies": "When invited to after-work social events, Aminata nearly always declines, preferring to study or rest early. On the few occasions she joined, she left after a short while, uncomfortable spending money she considers optional.",
+    "current_state": "Physically exhausted from hauling cement and stacking blocks for ten hours, with aching shoulders and burning eyes. She has eaten only a small breakfast and feels the familiar hunger she has learned to ignore. Her accounting textbook sits open at home, with a chapter on cash flow she must review before the weekend exam.",
+    "immediate_memories": "The smell of grilled fish drifting from the stall flashes back to evenings when her mother would bring home one small fish and divide it between Aminata and her sister. Fatoumata's warm invitation also recalls the neighbor women who often called her mother for tea, conversations that sometimes ended in shared loans.",
+    "reflective_memories": "Aminata has internalized that socializing frequently leads to unplanned spending, and that her mother's generosity with time and money contributed to their financial collapse. The only security she trusts is the hours she pours into her own education."
+  },
+  "context_generated_at": "2026-09-02T13:45:17.115Z",
+  "description_generated_at": "2026-09-02T13:42:55.096Z",
+  "generated_at": "2026-09-02T13:44:49.473Z",
+  "model": "deepseek/deepseek-v4-flash"
+}

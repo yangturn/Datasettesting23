@@ -1,0 +1,13 @@
+{
+  "id": "run_evaluations_mtjkue4z_93d332",
+  "stage": "evaluations",
+  "status": "succeeded",
+  "total": 30,
+  "done": 30,
+  "failed": 0,
+  "errors": [],
+  "model": "deepseek/deepseek-v4-pro-0813",
+  "started_at": "2026-09-02T04:09:25.524Z",
+  "finished_at": "2026-09-02T04:24:36.709Z",
+  "message": "Built 5 context(s) (4 reflective, 1 immediate) and scored 25 prediction(s). Stopped at the 5-scenario limit; 35 left for a later run."
+}

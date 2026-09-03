@@ -1,0 +1,24 @@
+{
+  "profile_id": "profile_002",
+  "scenario_id": "scenario_mtk5dz2k_0",
+  "flow_key": "her_dual_layered_thinking",
+  "name": "Ingrid Lindgren",
+  "scenario_title": "Fika Invitation from an Old Friend",
+  "scores": {
+    "character_consistency": 7,
+    "situation_fit": 9,
+    "state_memory_alignment": 8,
+    "action_plausibility": 8,
+    "reasoning_coherence": 7
+  },
+  "overall_score": 7.8,
+  "score_scale": 10,
+  "dimension_set": 4,
+  "action": "Ingrid looks at the text for a moment, then types back: “Yes—fika sounds nice. I’m free this afternoon before 9. Near Gamla Stan works; tell me where.”",
+  "reason": "Karin’s name catches Ingrid off guard in a good way. Even though she is tired and the estimates are still waiting, her mother is settled in the courtyard and nothing pressing is due before the nurse comes. She does not want to let the invitation drift by, because she feels some things are worth making time for, and that leads her to accept and reply with a meeting time and place.",
+  "decision_mode": "REFLECTION_AVAILABLE",
+  "context_generated_at": "2026-09-03T01:45:17.265Z",
+  "action_generated_at": "2026-09-03T00:46:17.860Z",
+  "generated_at": "2026-09-03T01:46:25.021Z",
+  "model": "deepseek/deepseek-v4-flash"
+}

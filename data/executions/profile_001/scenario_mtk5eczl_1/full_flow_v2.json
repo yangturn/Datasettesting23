@@ -1,0 +1,62 @@
+{
+  "flow_key": "full_flow_v2",
+  "profile_id": "profile_001",
+  "scenario_id": "scenario_mtk5eczl_1",
+  "name": "Aminata Diallo",
+  "scenario_title": "Invitation to a Neighborhood Meal",
+  "steps": {
+    "attributes": {
+      "output": {
+        "values_culture_and_background": "Values careful accounting, double-checking, and self-reliance; learned to distrust uncounted plans and borrowed resources after her mother lost a market stall to a miscalculated loan; grew up in poverty and financial instability after her mother died when she was twelve and her father later sold his tools to pay for a funeral; treats education as her main path to security and mobility.",
+        "roles_and_commitments": "Construction worker on a crew in Bamako; student in an accounting course and preparing for an accounting exam; older sister who is saving for a proper room so her younger sister can live with her and attend school.",
+        "capabilities_and_constraints": "Skilled at mental calculation and precise measurement; experienced with construction work, hauling cement, stacking blocks, and using tools such as a trowel and plumb line; keeps a written notebook of figures and dates; has very limited money, pays for rent and food carefully, and cannot afford bus fare both ways to class; lives in a rented room without running water and must fetch water from a communal stand; works long days and studies at night by lamp light.",
+        "personality_and_response_style": "Quiet, reserved, and not verbally expressive; highly precise and detail-oriented, with a strong habit of checking work twice; cautious about money and uncomfortable with spending on optional social activities; private about personal plans and reluctant to speak about them aloud; disciplined and persistent, maintaining study and work routines despite exhaustion."
+      },
+      "generated_at": "2026-09-03T00:46:20.589Z",
+      "model": "openai/gpt-5.4-mini"
+    },
+    "consolidate": {
+      "output": {
+        "initial_context": "RELEVANT CHARACTER BACKGROUND\n\nAminata Diallo is a young construction worker in a bustling district on the outskirts of Bamako and the youngest person on her crew, as well as the only woman on it. She lives in a rented room with packed-earth walls and a corrugated tin roof, with no tap; each morning she fetches water from a communal stand two blocks away. She works six days a week hauling cement, stacking blocks, and using tools such as a trowel and plumb line. Her master mason is an older man named Sékou, who calls her la petite comptable because she mentally recalculates load-bearing estimates before lifting. She is skilled at mental calculation, precise measurement, and construction work, and she keeps a small notebook tucked inside her shirt for figures and dates. She is quiet, reserved, not verbally expressive, highly precise, detail-oriented, disciplined, and persistent. She tends to check work twice, is cautious with money, uncomfortable with spending on optional social activities, private about personal plans, and reluctant to speak them aloud. She has a strong habit of self-reliance and distrusts uncounted plans and borrowed resources. Education is her main path to security and mobility, and she is preparing for an accounting course and an accounting exam. She studies at night by lamp light after long workdays and maintains routines despite exhaustion. She cannot afford bus fare both ways to class and therefore walks across the city. She pays for rent and food carefully and keeps an emergency fund hidden under a loose floorboard near her mattress; the fund is kept at exactly the same amount each month, never touched, and never counted in daylight. She is also saving for a proper room with running water so her younger sister can live with her and go to school. She does not speak of this plan aloud. Her background includes poverty and financial instability after her mother died when Aminata was twelve, her mother having previously lost a market stall to a miscalculated loan. Her father later sold his tools to pay for a funeral and never again held a trowel. These experiences have made careful accounting, double-checking, and self-reliance central values. She has learned to count everything that matters to her and to trust only what she has counted herself.\n\nOBJECTIVE SITUATION\n\nAfter a long day at the construction site, Aminata is packing her tools. Fatoumata, one of the few other women on a nearby crew, calls out to her and invites her to join her and three other women at a small stall that serves grilled fish and rice. The meal would cost about the same as a single bus fare. The group is friendly and often shares news and advice. Aminata has not socialized with them in weeks. She is tired, and she has a chapter of her accounting textbook waiting at home. The invitation comes from a woman she knows from the site, along with three acquaintances she has not shared a meal with before. Fatoumata has never asked her for a favor.\n\nPRE-APPRAISAL STATE AND ACCESSIBLE MEMORIES\n\nAminata is physically exhausted from ten hours of hauling cement and stacking blocks, with aching shoulders and burning eyes. She has eaten only a small breakfast and feels familiar hunger that she has learned to ignore. Her accounting textbook is open at home, and a chapter on cash flow must be reviewed before the weekend exam. The smell of grilled fish from the stall brings forward an immediate sensory association with evenings when her mother brought home one small fish and divided it between Aminata and her sister. Fatoumata’s warm invitation also cues memories of neighbor women who used to call her mother for tea, with conversations that sometimes ended in shared loans. These memories are directly available in the moment because of the invitation and the smell of food."
+      },
+      "generated_at": "2026-09-03T00:46:25.986Z",
+      "model": "openai/gpt-5.4-mini"
+    },
+    "appraisal": {
+      "output": {
+        "initial_interpretation": "To Aminata, this feels like a simple invitation that is also more than that: a small opening into the women’s circle at the site, a chance to sit with them instead of staying apart. At the same time, the smell and the price make it feel like a trade between one needed meal and the money and time that are already tightly spoken for.",
+        "initial_emotional_reaction": "Aminata feels tired almost to the bone, with hunger sharpening under the exhaustion. The smell of grilled fish stirs a warm, aching pull that sits beside caution and a faint tightening in her chest.",
+        "activated_concerns": "Her rest, her hunger, and the money she measures so carefully all feel immediately at stake. So does her evening study, the chapter waiting at home, and the private discipline she has kept around spending. The invitation also brushes against a quieter need not to remain shut off from the other women.",
+        "automatic_theory_of_mind": "Aminata reads Fatoumata and the others as being friendly and genuinely trying to include her, not asking her for anything in return. The invitation feels to her like they expect a simple shared meal and conversation, with news and advice flowing easily among them.",
+        "initial_action_tendency": "Aminata’s first impulse is to hesitate and glance inward, half drawn toward the stall and half pulled back toward home and her books. She feels the urge to stall for a moment, weighing the invitation against her fatigue and the cost."
+      },
+      "generated_at": "2026-09-03T00:46:29.481Z",
+      "model": "openai/gpt-5.4-mini"
+    },
+    "reappraisal": {
+      "output": {
+        "initial_tendency": "Aminata’s first impulse is to hesitate and glance inward, half drawn toward the stall and half pulled back toward home and her books. She feels the urge to stall for a moment, weighing the invitation against her fatigue and the cost.",
+        "reflective_update": "Aminata thinks the invitation is still genuinely kind, and that matters to her, but she also knows how often a small social meal becomes money leaving her hand for more than just the food. The smell of grilled fish and the memory of her mother spliting a small fish between the children pull at her, yet the newer, harder memory is that socializing has too often led to unplanned spending, and her mother’s generosity did not protect the family from collapse. Here, the choice is not only between hunger and company; it is also between one evening of ease and the discipline that has kept her steady, paid her rent, and protected the money she refuses to touch. The women’s circle could bring news and a little belonging, and Fatoumata has not asked her for anything, so the invitation does not feel dangerous in itself. Still, Aminata’s strongest trust remains with the hours she has already promised to her accounting study, and her fatigue makes any extra stop feel more costly, not less. Reflection does not make the pull disappear; it makes the price of yielding feel clearer. Her first hesitation remains, now steadier and less romantic about what the meal would mean.",
+        "change_from_initial": "RETAINED",
+        "reconsidered_interpretation": "Aminata now understands the moment less as a harmless shared meal and more as a small test of whether she will keep her hard-earned boundaries intact. The invitation still looks friendly, but it also carries the familiar risk of letting hunger, warmth, and company loosen the strict accounting she relies on for security.",
+        "motivational_conflict": "Aminata still feels a real pull between wanting brief warmth and inclusion with the other women and wanting to preserve money, energy, and the evening study that she sees as her safest path forward. The social side of the invitation is attractive, but the cost, her fatigue, and her distrust of unplanned spending keep the tension unresolved.",
+        "revised_action_tendency": "Aminata remains inclined to pause and lean away from the stall unless something changes, holding to the instinct to protect her money, her time, and her study while still feeling the draw of the women’s company."
+      },
+      "generated_at": "2026-09-03T00:46:34.299Z",
+      "model": "openai/gpt-5.4-mini"
+    },
+    "decision": {
+      "output": {
+        "action": "Aminata pauses with her tools in hand, then gives Fatoumata a small apologetic shake of the head and says, \"Not tonight, Fatoumata. I have to go home and study.\"",
+        "explanation": "Aminata’s first impulse was to hesitate, pulled between the stall and home while weighing fatigue, hunger, and cost. Reflection kept that hesitation in place but made the risk of unplanned spending and lost study time feel sharper, so the initial tendency was RETAINED. Because she is disciplined, cautious with money, and strongly committed to her accounting exam, the revised inclination to lean away from the meal becomes a brief, polite refusal rather than a prolonged debate. The friendly invitation still matters to her, and the pull of warmth and company remains, but her stronger trust in the hours already promised to study and her habit of protecting her money and energy lead her to decline immediately and head home."
+      },
+      "generated_at": "2026-09-03T00:46:37.124Z",
+      "model": "openai/gpt-5.4-mini"
+    }
+  },
+  "scenario_generated_at": "2026-09-02T13:44:49.473Z",
+  "scenario_context_generated_at": "2026-09-02T13:45:17.115Z",
+  "description_generated_at": "2026-09-02T13:42:55.096Z",
+  "started_at": "2026-09-03T00:46:17.076Z",
+  "updated_at": "2026-09-03T00:46:37.124Z"
+}

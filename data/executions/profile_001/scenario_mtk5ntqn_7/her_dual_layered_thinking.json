@@ -1,0 +1,37 @@
+{
+  "flow_key": "her_dual_layered_thinking",
+  "profile_id": "profile_001",
+  "scenario_id": "scenario_mtk5ntqn_7",
+  "name": "Aminata Diallo",
+  "scenario_title": "Invitation to a Neighborhood Celebration",
+  "steps": {
+    "system_thinking": {
+      "output": {
+        "system_thinking": "I need to portray Aminata as tired, cautious with her time and energy, but still attentive to the value of Moussa’s goodwill. Her immediate interpretation is that the celebration is socially meaningful and that declining may risk missing an opportunity to strengthen a coworker relationship, especially because Moussa has covered for her before and asked nothing in return. At the same time, she remembers the practical cost from last year—being asked to serve tea and losing the last bus home—and that memory should make her visibly hesitant and careful rather than immediately accepting. She should also be constrained by her current condition: aching shoulders, empty stomach, and no extra kerosene, so she has real reasons to consider studying and going home instead of lingering. Her emotional stance should mix gratitude toward Moussa with fatigue and guarded practicality.\n\nIn this next turn, her observable behavior should be small and economical: pausing over her tools, perhaps tightening her grip or looking briefly toward the ground as she weighs the invitation. Her speech should be respectful and concise, not bluntly dismissive. She can acknowledge Moussa’s invitation and express appreciation, while setting a cautious boundary or asking for practical details that help her judge whether she can come without compromising her walk, rest, or study time. The tone should show that she values his invitation and his past kindness, but she is not willing to ignore the realities of the evening. She should not overexplain or mention any knowledge she does not have; she only knows the invitation, the likely expectations from such gatherings, her own fatigue, and the prior bus experience. The response should preserve her established pattern of deciding based on whether the goodwill is worth the lost study time, with an undertone of protecting her scarce resources and her evening schedule."
+      },
+      "generated_at": "2026-09-03T00:45:00.443Z",
+      "model": "openai/gpt-5.4-mini"
+    },
+    "role_response": {
+      "output": {
+        "role_thinking": "My shoulders hurt, and I still need to study when I get home. But Moussa has covered for me before, and I do not want to dismiss his invitation lightly. I remember last year—I stayed too long and walked home in the dark. I should find out what the evening will demand before I decide.",
+        "action": "Aminata pauses with one hand on her tools and looks down briefly before meeting Moussa’s eyes. “Thank you, Moussa. I’m honored. Will I be expected to stay late or help serve tea?”"
+      },
+      "generated_at": "2026-09-03T00:45:02.685Z",
+      "model": "openai/gpt-5.4-mini"
+    },
+    "decision": {
+      "output": {
+        "action": "Aminata pauses with one hand on her tools and looks down briefly before meeting Moussa’s eyes. “Thank you, Moussa. I’m honored. Will I be expected to stay late or help serve tea?”",
+        "explanation": "Aminata’s shoulders hurt and she still needs to study when she gets home, but she does not want to dismiss Moussa’s invitation lightly because he has covered for her before. She also remembers last year, when she stayed too long and had to walk home in the dark. Those concerns lead her to ask what the evening will require before deciding."
+      },
+      "generated_at": "2026-09-03T00:45:04.622Z",
+      "model": "openai/gpt-5.4-mini"
+    }
+  },
+  "scenario_generated_at": "2026-09-02T13:52:11.087Z",
+  "scenario_context_generated_at": "2026-09-02T13:54:19.412Z",
+  "description_generated_at": "2026-09-02T13:42:55.096Z",
+  "started_at": "2026-09-03T00:44:55.096Z",
+  "updated_at": "2026-09-03T00:45:04.622Z"
+}
