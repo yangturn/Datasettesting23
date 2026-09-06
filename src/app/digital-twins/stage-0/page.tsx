@@ -95,8 +95,8 @@ export default async function DigitalTwinStage0Page(
         stage="Stage 1"
         title="Person / Population Creation"
         description="Transform each participant's survey evidence into a DatasetTesting persona."
+        href="/digital-twins/stage-1"
       />
     </main>
   );
 }
-

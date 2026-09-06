@@ -3,6 +3,11 @@ import { z } from "zod";
 
 import { paginate, paginationInputSchema } from "@/lib/pagination";
 import {
+  digitalTwinStage1MaxConcurrent,
+  digitalTwinStage1TargetWords,
+  generateDigitalTwinStage1,
+} from "@/server/generation/digital-twin-stage-1";
+import {
   digitalTwinDatasetSize,
   importDigitalTwinProfiles,
 } from "@/server/generation/digital-twin-profiles";
@@ -11,9 +16,12 @@ import {
   startRun,
 } from "@/server/generation/runs";
 import { readCurrentDigitalTwinSelection } from "@/server/storage/digital-twin-profiles";
+import { listDigitalTwinStage1Records } from "@/server/storage/digital-twin-stage-1";
+import { configuredModel } from "@/server/llm/openrouter";
 import { createTRPCRouter, publicProcedure } from "@/server/trpc";
 
 const RUN_STAGE = "digital-twin-profiles" as const;
+const STAGE_1_RUN = "digital-twin-personas" as const;
 
 export const digitalTwinsRouter = createTRPCRouter({
   config: publicProcedure.query(async () => ({
@@ -30,6 +38,57 @@ export const digitalTwinsRouter = createTRPCRouter({
         ...selection,
         profiles: undefined,
         ...paginate(selection.profiles, input),
+      };
+    }),
+
+  stage1Config: publicProcedure.query(() => ({
+    targetNarrativeWords: digitalTwinStage1TargetWords(),
+    maxConcurrent: digitalTwinStage1MaxConcurrent(),
+    model: configuredModel(),
+  })),
+
+  stage1List: publicProcedure
+    .input(paginationInputSchema)
+    .query(async ({ input }) => {
+      const selection = await readCurrentDigitalTwinSelection();
+      if (!selection) {
+        return {
+          selection: null,
+          generatedCount: 0,
+          ...paginate([], input),
+        };
+      }
+
+      const records = await listDigitalTwinStage1Records(selection.id);
+      const byProfile = new Map(
+        records.map((record) => [record.profile_id, record]),
+      );
+      const rows = selection.profiles.map((profile) => {
+        const persona = byProfile.get(profile.id) ?? null;
+        const claimCount = persona
+          ? persona.demographic_context.length +
+            persona.values_and_beliefs.length +
+            persona.personality_and_social_style.length +
+            persona.decision_patterns.length +
+            persona.risk_and_financial_preferences.length +
+            persona.uncertainties_and_tensions.length
+          : 0;
+        return {
+          profileId: profile.id,
+          participantId: profile.participant_id,
+          persona,
+          claimCount,
+        };
+      });
+
+      return {
+        selection: {
+          id: selection.id,
+          seed: selection.seed,
+          selectedCount: selection.selected_count,
+        },
+        generatedCount: records.length,
+        ...paginate(rows, input),
       };
     }),
 
@@ -52,6 +111,14 @@ export const digitalTwinsRouter = createTRPCRouter({
         });
       }
 
+      const stage1Active = activeRunForStage(STAGE_1_RUN);
+      if (stage1Active) {
+        throw new TRPCError({
+          code: "CONFLICT",
+          message: "Stage 1 is generating personas. Cancel it before replacing the selection.",
+        });
+      }
+
       return startRun({
         stage: RUN_STAGE,
         model: "local Twin-2K-500 dataset",
@@ -64,5 +131,44 @@ export const digitalTwinsRouter = createTRPCRouter({
         },
       });
     }),
-});
 
+  generateStage1: publicProcedure
+    .input(z.object({ skipExisting: z.boolean() }))
+    .mutation(async ({ input }) => {
+      const selection = await readCurrentDigitalTwinSelection();
+      if (!selection) {
+        throw new TRPCError({
+          code: "PRECONDITION_FAILED",
+          message: "Select Digital Twin participants in Stage 0 first.",
+        });
+      }
+      if (activeRunForStage(RUN_STAGE)) {
+        throw new TRPCError({
+          code: "CONFLICT",
+          message: "Stage 0 is selecting participants. Wait for it to finish.",
+        });
+      }
+      const active = activeRunForStage(STAGE_1_RUN);
+      if (active) {
+        throw new TRPCError({
+          code: "CONFLICT",
+          message: `A Digital Twin Stage 1 run is already going (${active.done} of ${active.total ?? "?"}).`,
+        });
+      }
+
+      return startRun({
+        stage: STAGE_1_RUN,
+        model: configuredModel(),
+        task: async (run) => {
+          const summary = await generateDigitalTwinStage1({
+            selection,
+            skipExisting: input.skipExisting,
+            run,
+          });
+          return summary.skipped > 0
+            ? `Skipped ${summary.skipped} existing Stage 1 persona(s).`
+            : undefined;
+        },
+      });
+    }),
+});

@@ -17,6 +17,7 @@ import { z } from "zod";
 export const RUN_STAGES = [
   "profiles",
   "digital-twin-profiles",
+  "digital-twin-personas",
   "descriptions",
   "scenarios",
   "executions",

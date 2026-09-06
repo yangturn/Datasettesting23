@@ -43,6 +43,24 @@ export async function writeDigitalTwinProfile(
   await writeJsonFile(path.join(profilesDir, `${parsed.id}.json`), parsed);
 }
 
+export async function readDigitalTwinProfile(
+  selectionId: string,
+  profileId: string,
+): Promise<DigitalTwinProfile | null> {
+  if (!SAFE_ID.test(profileId)) return null;
+
+  try {
+    const raw = await readFile(
+      path.join(selectionDir(selectionId), "profiles", `${profileId}.json`),
+      "utf8",
+    );
+    return digitalTwinProfileSchema.parse(JSON.parse(raw));
+  } catch (error) {
+    if (isNotFound(error)) return null;
+    throw error;
+  }
+}
+
 export async function activateDigitalTwinSelection(
   selection: DigitalTwinSelection,
 ): Promise<void> {
@@ -79,4 +97,3 @@ export async function readCurrentDigitalTwinSelection(): Promise<DigitalTwinSele
     throw error;
   }
 }
-

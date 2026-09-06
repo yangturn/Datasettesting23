@@ -19,6 +19,7 @@ const STAGES = [
     title: "Person / Population Creation",
     description:
       "Transform each participant's survey evidence into a DatasetTesting persona.",
+    href: "/digital-twins/stage-1",
   },
   {
     stage: "Stage 2",

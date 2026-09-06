@@ -24,6 +24,8 @@
 /data/digital-twins/stage-0/selections/
 /data/digital-twins/stage-0/current.json
 /data/runs/run_digital-twin-profiles_*.json
+/data/digital-twins/stage-1/
+/data/runs/run_digital-twin-personas_*.json
 
 # misc
 .DS_Store
