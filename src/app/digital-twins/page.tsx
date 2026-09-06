@@ -25,6 +25,7 @@ const STAGES = [
     stage: "Stage 2",
     title: "Episode Creation",
     description: "Build the decision context used by the DatasetTesting flows.",
+    href: "/digital-twins/stage-2",
   },
   {
     stage: "Stage 3",

@@ -114,8 +114,8 @@ export default async function DigitalTwinStage1Page(
         stage="Stage 2"
         title="Episode Creation"
         description="Build decision context from the generated persona and its source evidence."
+        href="/digital-twins/stage-2"
       />
     </main>
   );
 }
-

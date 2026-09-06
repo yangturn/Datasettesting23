@@ -8,6 +8,11 @@ import {
   generateDigitalTwinStage1,
 } from "@/server/generation/digital-twin-stage-1";
 import {
+  digitalTwinStage2MaxConcurrent,
+  digitalTwinTargetStats,
+  generateDigitalTwinStage2,
+} from "@/server/generation/digital-twin-stage-2";
+import {
   digitalTwinDatasetSize,
   importDigitalTwinProfiles,
 } from "@/server/generation/digital-twin-profiles";
@@ -17,11 +22,16 @@ import {
 } from "@/server/generation/runs";
 import { readCurrentDigitalTwinSelection } from "@/server/storage/digital-twin-profiles";
 import { listDigitalTwinStage1Records } from "@/server/storage/digital-twin-stage-1";
+import {
+  listDigitalTwinEpisodeRefs,
+  readDigitalTwinEpisode,
+} from "@/server/storage/digital-twin-stage-2";
 import { configuredModel } from "@/server/llm/openrouter";
 import { createTRPCRouter, publicProcedure } from "@/server/trpc";
 
 const RUN_STAGE = "digital-twin-profiles" as const;
 const STAGE_1_RUN = "digital-twin-personas" as const;
+const STAGE_2_RUN = "digital-twin-episodes" as const;
 
 export const digitalTwinsRouter = createTRPCRouter({
   config: publicProcedure.query(async () => ({
@@ -92,6 +102,66 @@ export const digitalTwinsRouter = createTRPCRouter({
       };
     }),
 
+  stage2Config: publicProcedure.query(async () => ({
+    ...(await digitalTwinTargetStats()),
+    maxConcurrent: digitalTwinStage2MaxConcurrent(),
+    model: configuredModel(),
+  })),
+
+  stage2List: publicProcedure
+    .input(paginationInputSchema)
+    .query(async ({ input }) => {
+      const selection = await readCurrentDigitalTwinSelection();
+      const stats = await digitalTwinTargetStats();
+      if (!selection) {
+        return {
+          selection: null,
+          personaCount: 0,
+          currentCount: 0,
+          staleCount: 0,
+          targetQuestionCount: stats.questionCount,
+          targetColumnCount: stats.targetColumnCount,
+          ...paginate([], input),
+        };
+      }
+
+      const [personas, refs] = await Promise.all([
+        listDigitalTwinStage1Records(selection.id),
+        listDigitalTwinEpisodeRefs(selection.id),
+      ]);
+      const personaDates = new Map(
+        personas.map((persona) => [persona.profile_id, persona.generated_at]),
+      );
+      const allEpisodes = (
+        await Promise.all(
+          refs.map((ref) =>
+            readDigitalTwinEpisode(selection.id, ref.profileId, ref.episodeId),
+          ),
+        )
+      ).filter((episode) => episode !== null);
+      const rows = allEpisodes.map((episode) => ({
+        ...episode,
+        contextItemCount: Object.values(episode.context).reduce(
+          (count, value) =>
+            count + value.split("\n").filter((line) => line.trim()).length,
+          0,
+        ),
+        stale:
+          personaDates.get(episode.profile_id) !== episode.stage1_generated_at,
+      }));
+      const currentCount = rows.filter((row) => !row.stale).length;
+
+      return {
+        selection: { id: selection.id, seed: selection.seed },
+        personaCount: personas.length,
+        currentCount,
+        staleCount: rows.length - currentCount,
+        targetQuestionCount: stats.questionCount,
+        targetColumnCount: stats.targetColumnCount,
+        ...paginate(rows, input),
+      };
+    }),
+
   processProfiles: publicProcedure
     .input(z.object({ count: z.number().int().min(1) }))
     .mutation(async ({ input }) => {
@@ -116,6 +186,12 @@ export const digitalTwinsRouter = createTRPCRouter({
         throw new TRPCError({
           code: "CONFLICT",
           message: "Stage 1 is generating personas. Cancel it before replacing the selection.",
+        });
+      }
+      if (activeRunForStage(STAGE_2_RUN)) {
+        throw new TRPCError({
+          code: "CONFLICT",
+          message: "Stage 2 is generating episodes. Cancel it before replacing the selection.",
         });
       }
 
@@ -155,6 +231,12 @@ export const digitalTwinsRouter = createTRPCRouter({
           message: `A Digital Twin Stage 1 run is already going (${active.done} of ${active.total ?? "?"}).`,
         });
       }
+      if (activeRunForStage(STAGE_2_RUN)) {
+        throw new TRPCError({
+          code: "CONFLICT",
+          message: "Stage 2 is generating episodes. Cancel it before regenerating Stage 1.",
+        });
+      }
 
       return startRun({
         stage: STAGE_1_RUN,
@@ -167,6 +249,53 @@ export const digitalTwinsRouter = createTRPCRouter({
           });
           return summary.skipped > 0
             ? `Skipped ${summary.skipped} existing Stage 1 persona(s).`
+            : undefined;
+        },
+      });
+    }),
+
+  generateStage2: publicProcedure
+    .input(z.object({ skipExisting: z.boolean() }))
+    .mutation(async ({ input }) => {
+      const selection = await readCurrentDigitalTwinSelection();
+      if (!selection) {
+        throw new TRPCError({
+          code: "PRECONDITION_FAILED",
+          message: "Select Digital Twin participants in Stage 0 first.",
+        });
+      }
+      if (activeRunForStage(RUN_STAGE) || activeRunForStage(STAGE_1_RUN)) {
+        throw new TRPCError({
+          code: "CONFLICT",
+          message: "An earlier Digital Twins stage is still running.",
+        });
+      }
+      const personas = await listDigitalTwinStage1Records(selection.id);
+      if (personas.length === 0) {
+        throw new TRPCError({
+          code: "PRECONDITION_FAILED",
+          message: "Generate at least one Stage 1 persona first.",
+        });
+      }
+      const active = activeRunForStage(STAGE_2_RUN);
+      if (active) {
+        throw new TRPCError({
+          code: "CONFLICT",
+          message: `A Digital Twin Stage 2 run is already going (${active.done} of ${active.total ?? "?"}).`,
+        });
+      }
+
+      return startRun({
+        stage: STAGE_2_RUN,
+        model: configuredModel(),
+        task: async (run) => {
+          const summary = await generateDigitalTwinStage2({
+            selection,
+            skipExisting: input.skipExisting,
+            run,
+          });
+          return summary.skipped > 0
+            ? `Skipped ${summary.skipped} current episode(s).`
             : undefined;
         },
       });

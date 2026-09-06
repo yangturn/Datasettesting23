@@ -221,7 +221,7 @@ Return exactly one JSON object:
  * rather than the text, so the one number worth tuning stays editable alongside
  * the sections it governs.
  */
-function contextSystemPrompt(config: Stage2Config): string {
+export function contextSystemPrompt(config: Stage2Config): string {
   return `You generate compact, decision-relevant character context for a behavioral-prediction benchmark.
 
 You are given a character description and a situation. Expand them with plausible information about the character that could matter to their response in this specific situation.
@@ -293,7 +293,7 @@ Return JSON only:
 }
 
 /** Call 2: the decision-relevant context around a situation that now exists. */
-function buildContextPrompt({
+export function buildContextPrompt({
   description,
   config,
   title,
@@ -354,12 +354,42 @@ const situationContentSchema = z.object({
  * plausible can be generated for, and rejecting that would turn an honest blank
  * into a retry loop.
  */
-function buildContextSchema(config: Stage2Config) {
+export function buildContextSchema(config: Stage2Config) {
   return z.object(
     Object.fromEntries(
       config.context_sections.map((section) => [section.key, z.string()]),
     ),
   );
+}
+
+/** Shared by Generator and benchmark adapters so context generation stays identical. */
+export async function generateScenarioContext({
+  description,
+  config,
+  title,
+  situation,
+  situationType,
+  signal,
+}: {
+  description: Description;
+  config: Stage2Config;
+  title: string;
+  situation: string;
+  situationType: SituationType;
+  signal?: AbortSignal;
+}) {
+  return generateJson({
+    schema: buildContextSchema(config),
+    system: contextSystemPrompt(config),
+    prompt: buildContextPrompt({
+      description,
+      config,
+      title,
+      situation,
+      situationType,
+    }),
+    signal,
+  });
 }
 
 export type ScenarioResult =
@@ -428,16 +458,12 @@ async function generateOne({
     await writeScenario(scenario);
 
     // ---- Call 2: what that situation puts in play, given the person and it.
-    const context = await generateJson({
-      schema: buildContextSchema(config),
-      system: contextSystemPrompt(config),
-      prompt: buildContextPrompt({
-        description,
-        config,
-        title,
-        situation,
-        situationType,
-      }),
+    const context = await generateScenarioContext({
+      description,
+      config,
+      title,
+      situation,
+      situationType,
       signal: run?.signal,
     });
 

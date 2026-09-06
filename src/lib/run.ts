@@ -18,6 +18,7 @@ export const RUN_STAGES = [
   "profiles",
   "digital-twin-profiles",
   "digital-twin-personas",
+  "digital-twin-episodes",
   "descriptions",
   "scenarios",
   "executions",
