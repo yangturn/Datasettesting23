@@ -20,6 +20,9 @@
 # production
 /build
 
+# generated Digital Twin participant selections
+/data/digital-twins/stage-0/selections/
+
 # misc
 .DS_Store
 *.pem
