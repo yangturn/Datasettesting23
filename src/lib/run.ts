@@ -16,6 +16,7 @@ import { z } from "zod";
 /** The stages that can be run. One generator each. */
 export const RUN_STAGES = [
   "profiles",
+  "digital-twin-profiles",
   "descriptions",
   "scenarios",
   "executions",

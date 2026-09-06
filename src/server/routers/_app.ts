@@ -1,4 +1,5 @@
 import { descriptionsRouter } from "@/server/routers/descriptions";
+import { digitalTwinsRouter } from "@/server/routers/digital-twins";
 import { personsRouter } from "@/server/routers/persons";
 import { evaluationsRouter } from "@/server/routers/evaluations";
 import { executionsRouter } from "@/server/routers/executions";
@@ -14,6 +15,7 @@ export const appRouter = createTRPCRouter({
   })),
 
   profiles: profilesRouter,
+  digitalTwins: digitalTwinsRouter,
   descriptions: descriptionsRouter,
   persons: personsRouter,
   scenarios: scenariosRouter,
