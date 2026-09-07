@@ -22,12 +22,20 @@ export type DigitalTwinTaskScore = {
   >;
 };
 
-export type DigitalTwinStage4Report = {
-  selectionId: string;
-  selectedParticipants: number;
+export type DigitalTwinEvaluationView = {
+  key: "wave4" | "wave1_3";
+  label: string;
+  description: string;
+  groundTruth: "wave4" | "wave1_3";
   heldOutAnswers: number;
   methods: DigitalTwinMethodScore[];
   tasks: DigitalTwinTaskScore[];
+};
+
+export type DigitalTwinStage4Report = {
+  selectionId: string;
+  selectedParticipants: number;
+  evaluations: DigitalTwinEvaluationView[];
   baseline: {
     available: boolean;
     sourceUrl: string;

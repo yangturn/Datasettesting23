@@ -5,11 +5,15 @@ import path from "node:path";
 import { fetch as undiciFetch, ProxyAgent, type Dispatcher } from "undici";
 
 import type {
+  DigitalTwinEvaluationView,
   DigitalTwinMethodScore,
   DigitalTwinStage4Report,
   DigitalTwinTaskScore,
 } from "@/lib/digital-twin-stage-4";
-import type { DigitalTwinTargetQuestion } from "@/lib/digital-twin-stage-2";
+import {
+  DIGITAL_TWIN_INPUT_ADAPTER_VERSION,
+  type DigitalTwinTargetQuestion,
+} from "@/lib/digital-twin-stage-2";
 import { FLOWS } from "@/server/flows";
 import { DIGITAL_TWIN_TASKS } from "@/server/generation/digital-twin-stage-2";
 import { listDigitalTwinEpisodeRefs, readDigitalTwinEpisode } from "@/server/storage/digital-twin-stage-2";
@@ -18,6 +22,15 @@ import { listAllDigitalTwinExecutions } from "@/server/storage/digital-twin-stag
 const DATA_DIR = path.join(process.cwd(), "datasets", "digital-twin", "question_catalog");
 const CACHE_DIR = path.join(process.cwd(), "data", "digital-twins", "stage-4", "cache");
 const BASELINE_FILE = path.join(CACHE_DIR, "published-gpt-4.1-mini.csv");
+// The official MAD evaluator scores the four numeric anchoring estimates after
+// decile conversion. The preceding binary high/low anchor checks are presented
+// to participants, but are deliberately absent from its scoring ranges.
+const OFFICIAL_UNSCORED_COLUMNS = new Set([
+  "QID163",
+  "QID165",
+  "QID167",
+  "QID169",
+]);
 export const PUBLISHED_REVISION = "f883165a3026fde855dfd448e0cd16443ab257b6";
 export const PUBLISHED_RESULTS_URL =
   `https://huggingface.co/datasets/LLM-Digital-Twin/Twin-2K-500/resolve/${PUBLISHED_REVISION}/` +
@@ -235,6 +248,80 @@ function taskScores(methodScores: Map<string, Map<number, AnswerScore[]>>, label
   }));
 }
 
+function heldOutAnswerCount(
+  truth: Map<number, CsvRow>,
+  questionByColumn: Map<string, DigitalTwinTargetQuestion>,
+): number {
+  return [...truth.values()].reduce(
+    (count, row) =>
+      count +
+      [...questionByColumn.keys()].filter(
+        (column) => number(row[column]) !== null,
+      ).length,
+    0,
+  );
+}
+
+function evaluationView({
+  key,
+  label,
+  description,
+  truth,
+  predictionsByMethod,
+  questionByColumn,
+  taskByColumn,
+  taskLabels,
+  anchorCutoffs,
+}: {
+  key: DigitalTwinEvaluationView["key"];
+  label: string;
+  description: string;
+  truth: Map<number, CsvRow>;
+  predictionsByMethod: Map<string, MethodAnswers>;
+  questionByColumn: Map<string, DigitalTwinTargetQuestion>;
+  taskByColumn: Map<string, string>;
+  taskLabels: Map<string, string>;
+  anchorCutoffs: Record<string, number[]>;
+}): DigitalTwinEvaluationView {
+  const scored = new Map<string, Map<number, AnswerScore[]>>();
+  for (const [method, predictions] of predictionsByMethod) {
+    scored.set(
+      method,
+      scoreMethod({
+        predictions,
+        truth,
+        questionByColumn,
+        taskByColumn,
+        anchorCutoffs,
+      }),
+    );
+  }
+  return {
+    key,
+    label,
+    description,
+    groundTruth: key,
+    heldOutAnswers: heldOutAnswerCount(truth, questionByColumn),
+    methods: [
+      ...FLOWS.map((flow) =>
+        summarize(
+          flow.key,
+          flow.label,
+          "dataset-testing",
+          scored.get(flow.key) ?? new Map(),
+        ),
+      ),
+      summarize(
+        "digital_twin_simulation",
+        "Digital-Twin-Simulation (published GPT-4.1-mini)",
+        "published-baseline",
+        scored.get("digital_twin_simulation") ?? new Map(),
+      ),
+    ],
+    tasks: taskScores(scored, taskLabels),
+  };
+}
+
 export async function buildDigitalTwinStage4Report(selectionId: string): Promise<DigitalTwinStage4Report> {
   const [wave1Rows, wave4Rows, refs, executions] = await Promise.all([
     readLocalCsv("wave1_3_response.csv"),
@@ -242,13 +329,24 @@ export async function buildDigitalTwinStage4Report(selectionId: string): Promise
     listDigitalTwinEpisodeRefs(selectionId),
     listAllDigitalTwinExecutions(selectionId),
   ]);
-  const episodes = (await Promise.all(refs.map((ref) => readDigitalTwinEpisode(selectionId, ref.profileId, ref.episodeId)))).filter((episode) => episode !== null);
+  const episodes = (
+    await Promise.all(
+      refs.map((ref) =>
+        readDigitalTwinEpisode(selectionId, ref.profileId, ref.episodeId),
+      ),
+    )
+  ).filter(
+    (episode): episode is NonNullable<typeof episode> =>
+      episode !== null &&
+      episode.input_adapter_version === DIGITAL_TWIN_INPUT_ADAPTER_VERSION,
+  );
   const questionByColumn = new Map<string, DigitalTwinTargetQuestion>();
   const taskByColumn = new Map<string, string>();
   const taskLabels = new Map<string, string>();
   for (const episode of episodes) {
     taskLabels.set(episode.task_key, episode.task_label);
     for (const question of episode.questions) for (const column of question.csv_columns) {
+      if (OFFICIAL_UNSCORED_COLUMNS.has(column)) continue;
       questionByColumn.set(column, question);
       taskByColumn.set(column, episode.task_key);
     }
@@ -260,13 +358,22 @@ export async function buildDigitalTwinStage4Report(selectionId: string): Promise
     ]),
   );
   const selectedIds = new Set(episodes.map((episode) => episode.participant_id));
-  const truth = new Map(wave4Rows.map((row) => [Number(row.pid), row]).filter(([pid]) => selectedIds.has(pid as number)) as [number, CsvRow][]);
-  const anchor164 = thresholds(wave1Rows, ["QID164_TEXT", "QID166_TEXT"]);
-  const anchor168 = thresholds(wave1Rows, ["QID168_TEXT", "QID170_TEXT"]);
-  const anchorCutoffs: Record<string, number[]> = {
-    QID164_TEXT: anchor164, QID166_TEXT: anchor164,
-    QID168_TEXT: anchor168, QID170_TEXT: anchor168,
-  };
+  const wave1Truth = new Map(wave1Rows.map((row) => [Number(row.pid), row]).filter(([pid]) => selectedIds.has(pid as number)) as [number, CsvRow][]);
+  const wave4Truth = new Map(wave4Rows.map((row) => [Number(row.pid), row]).filter(([pid]) => selectedIds.has(pid as number)) as [number, CsvRow][]);
+  // Match the official evaluator: filter to the evaluated respondents before
+  // deriving the Wave 1-3 anchoring deciles.
+  const evaluatedWave1Rows = [...wave1Truth.values()];
+  const anchorCutoffs: Record<string, number[]> = {};
+  if (evaluatedWave1Rows.length > 0) {
+    const anchor164 = thresholds(evaluatedWave1Rows, ["QID164_TEXT", "QID166_TEXT"]);
+    const anchor168 = thresholds(evaluatedWave1Rows, ["QID168_TEXT", "QID170_TEXT"]);
+    Object.assign(anchorCutoffs, {
+      QID164_TEXT: anchor164,
+      QID166_TEXT: anchor164,
+      QID168_TEXT: anchor168,
+      QID170_TEXT: anchor168,
+    });
+  }
 
   const predictionsByMethod = new Map<string, MethodAnswers>();
   for (const execution of executions) {
@@ -322,20 +429,35 @@ export async function buildDigitalTwinStage4Report(selectionId: string): Promise
     baselineError = error instanceof Error ? error.message : String(error);
   }
 
-  const scored = new Map<string, Map<number, AnswerScore[]>>();
-  for (const [key, predictions] of predictionsByMethod) {
-    scored.set(key, scoreMethod({ predictions, truth, questionByColumn, taskByColumn, anchorCutoffs }));
-  }
-  const methods = [
-    ...FLOWS.map((flow) => summarize(flow.key, flow.label, "dataset-testing", scored.get(flow.key) ?? new Map())),
-    summarize("digital_twin_simulation", "Digital-Twin-Simulation (published GPT-4.1-mini)", "published-baseline", scored.get("digital_twin_simulation") ?? new Map()),
-  ];
   return {
     selectionId,
     selectedParticipants: selectedIds.size,
-    heldOutAnswers: [...truth.values()].reduce((count, row) => count + [...questionByColumn.keys()].filter((column) => number(row[column]) !== null).length, 0),
-    methods,
-    tasks: taskScores(scored, taskLabels),
+    evaluations: [
+      evaluationView({
+        key: "wave4",
+        label: "Wave 4 prediction",
+        description:
+          "Primary experiment: both methods are rescored against the same later Wave 4 responses.",
+        truth: wave4Truth,
+        predictionsByMethod,
+        questionByColumn,
+        taskByColumn,
+        taskLabels,
+        anchorCutoffs,
+      }),
+      evaluationView({
+        key: "wave1_3",
+        label: "Paper-compatible holdout",
+        description:
+          "Compatibility view: both methods are scored against the Wave 1–3 held-out responses used as ground truth in the published paper.",
+        truth: wave1Truth,
+        predictionsByMethod,
+        questionByColumn,
+        taskByColumn,
+        taskLabels,
+        anchorCutoffs,
+      }),
+    ],
     baseline: { available: baselineError === null, sourceUrl: PUBLISHED_RESULTS_URL, revision: PUBLISHED_REVISION, error: baselineError },
   };
 }

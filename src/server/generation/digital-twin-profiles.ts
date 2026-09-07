@@ -40,6 +40,7 @@ type PersonaRow = Record<string, unknown> & {
   pid?: unknown;
   wave1_3_persona_text?: unknown;
   wave1_3_persona_json?: unknown;
+  wave4_Q_wave1_3_A?: unknown;
 };
 
 async function chunkFiles(): Promise<string[]> {
@@ -135,6 +136,39 @@ export async function digitalTwinDatasetSize(): Promise<number> {
   return total;
 }
 
+export async function readDigitalTwinAssignedEvaluationBlock(
+  profile: Pick<
+    DigitalTwinProfile,
+    | "participant_id"
+    | "source_file"
+    | "source_row"
+    | "wave4_Q_wave1_3_A"
+  >,
+): Promise<string> {
+  if (profile.wave4_Q_wave1_3_A) return profile.wave4_Q_wave1_3_A;
+  if (path.basename(profile.source_file) !== profile.source_file) {
+    throw new Error(`Unsafe Digital Twin source file: ${profile.source_file}`);
+  }
+
+  const file = await asyncBufferFromFile(
+    path.join(CHUNKS_DIR, profile.source_file),
+  );
+  const rows = (await parquetReadObjects({
+    file,
+    compressors,
+    columns: ["pid", "wave4_Q_wave1_3_A"],
+  })) as PersonaRow[];
+  const row = rows[profile.source_row];
+  const pid = participantId(row?.pid);
+  const block = row?.wave4_Q_wave1_3_A;
+  if (pid !== profile.participant_id || typeof block !== "string") {
+    throw new Error(
+      `Malformed assigned evaluation block for participant ${profile.participant_id} in ${profile.source_file}.`,
+    );
+  }
+  return block;
+}
+
 export async function importDigitalTwinProfiles({
   count,
   run,
@@ -171,7 +205,12 @@ export async function importDigitalTwinProfiles({
     const rows = (await parquetReadObjects({
       file,
       compressors,
-      columns: ["pid", "wave1_3_persona_text", "wave1_3_persona_json"],
+      columns: [
+        "pid",
+        "wave1_3_persona_text",
+        "wave1_3_persona_json",
+        "wave4_Q_wave1_3_A",
+      ],
     })) as PersonaRow[];
 
     for (const [sourceRow, location] of wantedRows) {
@@ -180,9 +219,15 @@ export async function importDigitalTwinProfiles({
       const row = rows[sourceRow];
       const text = row?.wave1_3_persona_text;
       const json = row?.wave1_3_persona_json;
+      const assignedEvaluationBlock = row?.wave4_Q_wave1_3_A;
       const pid = participantId(row?.pid);
 
-      if (pid !== location.participantId || typeof text !== "string" || typeof json !== "string") {
+      if (
+        pid !== location.participantId ||
+        typeof text !== "string" ||
+        typeof json !== "string" ||
+        typeof assignedEvaluationBlock !== "string"
+      ) {
         throw new Error(
           `Malformed persona row for participant ${location.participantId} in ${sourceFile}.`,
         );
@@ -205,6 +250,7 @@ export async function importDigitalTwinProfiles({
         selected_at: selectedAt,
         wave1_3_persona_text: text,
         wave1_3_persona_json: json,
+        wave4_Q_wave1_3_A: assignedEvaluationBlock,
       };
 
       await writeDigitalTwinProfile(profile);
@@ -235,4 +281,3 @@ export async function importDigitalTwinProfiles({
 
   return { selectionId, seed };
 }
-

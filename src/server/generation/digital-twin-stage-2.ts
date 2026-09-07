@@ -6,6 +6,7 @@ import path from "node:path";
 import type { Description } from "@/lib/stage-1";
 import type { DigitalTwinStage1Record } from "@/lib/digital-twin-stage-1";
 import {
+  DIGITAL_TWIN_INPUT_ADAPTER_VERSION,
   digitalTwinTargetQuestionSchema,
   type DigitalTwinEpisode,
   type DigitalTwinTargetQuestion,
@@ -18,6 +19,8 @@ import {
   mapWithConcurrency,
 } from "@/server/generation/runtime";
 import { configuredModel } from "@/server/llm/openrouter";
+import { readDigitalTwinAssignedEvaluationBlock } from "@/server/generation/digital-twin-profiles";
+import { readDigitalTwinProfile } from "@/server/storage/digital-twin-profiles";
 import { listDigitalTwinStage1Records } from "@/server/storage/digital-twin-stage-1";
 import {
   listDigitalTwinEpisodeRefs,
@@ -72,7 +75,11 @@ export function digitalTwinStage2MaxConcurrent(): number {
   return MAX_CONCURRENT_REQUESTS;
 }
 
-async function targetTasks(): Promise<
+let catalogTasksPromise: Promise<
+  { definition: TaskDefinition; questions: DigitalTwinTargetQuestion[] }[]
+> | null = null;
+
+async function loadCatalogTargetTasks(): Promise<
   { definition: TaskDefinition; questions: DigitalTwinTargetQuestion[] }[]
 > {
   const raw = JSON.parse(await readFile(QUESTION_CATALOG, "utf8")) as unknown;
@@ -118,8 +125,13 @@ async function targetTasks(): Promise<
   return tasks;
 }
 
+function catalogTargetTasks() {
+  catalogTasksPromise ??= loadCatalogTargetTasks();
+  return catalogTasksPromise;
+}
+
 export async function digitalTwinTargetStats() {
-  const tasks = await targetTasks();
+  const tasks = await catalogTargetTasks();
   const questions = tasks.flatMap((task) => task.questions);
   return {
     taskCount: tasks.length,
@@ -128,6 +140,110 @@ export async function digitalTwinTargetStats() {
       questions.flatMap((question) => question.csv_columns),
     ).size,
   };
+}
+
+function withoutAnswers(value: unknown): unknown {
+  if (Array.isArray(value)) return value.map(withoutAnswers);
+  if (typeof value !== "object" || value === null) return value;
+  return Object.fromEntries(
+    Object.entries(value)
+      .filter(([key]) => key !== "Answers")
+      .map(([key, child]) => [key, withoutAnswers(child)]),
+  );
+}
+
+function assignedQuestionRecords(
+  value: unknown,
+  output: Record<string, unknown>[] = [],
+): Record<string, unknown>[] {
+  if (Array.isArray(value)) {
+    for (const child of value) assignedQuestionRecords(child, output);
+    return output;
+  }
+  if (typeof value !== "object" || value === null) return output;
+  const record = value as Record<string, unknown>;
+  if (typeof record.QuestionID === "string") output.push(record);
+  for (const child of Object.values(record)) {
+    assignedQuestionRecords(child, output);
+  }
+  return output;
+}
+
+async function assignedTargetTasks(
+  selectionId: string,
+  profileId: string,
+): Promise<
+  { definition: TaskDefinition; questions: DigitalTwinTargetQuestion[] }[]
+> {
+  const [profile, catalogTasks] = await Promise.all([
+    readDigitalTwinProfile(selectionId, profileId),
+    catalogTargetTasks(),
+  ]);
+  if (!profile) throw new Error(`Digital Twin profile ${profileId} is missing.`);
+
+  const rawBlock = await readDigitalTwinAssignedEvaluationBlock(profile);
+  const parsedBlock = JSON.parse(rawBlock) as unknown;
+  const catalogById = new Map(
+    catalogTasks
+      .flatMap((task) => task.questions)
+      .map((question) => [question.QuestionID, question]),
+  );
+  const seen = new Set<string>();
+  const assigned = assignedQuestionRecords(parsedBlock).map((rawQuestion) => {
+    const questionId = rawQuestion.QuestionID as string;
+    if (seen.has(questionId)) {
+      throw new Error(
+        `Participant ${profile.participant_id} has duplicate assigned question ${questionId}.`,
+      );
+    }
+    seen.add(questionId);
+    const catalogQuestion = catalogById.get(questionId);
+    if (!catalogQuestion) {
+      throw new Error(
+        `Participant ${profile.participant_id} has unknown assigned question ${questionId}.`,
+      );
+    }
+    return digitalTwinTargetQuestionSchema.parse({
+      ...catalogQuestion,
+      ...(withoutAnswers(rawQuestion) as Record<string, unknown>),
+      BlockName: catalogQuestion.BlockName,
+      csv_columns: catalogQuestion.csv_columns,
+      source: catalogQuestion.source,
+    });
+  });
+
+  const tasks = DIGITAL_TWIN_TASKS.map((definition) => ({
+    definition,
+    questions: assigned.filter((question) =>
+      definition.questionIds.includes(question.QuestionID),
+    ),
+  }));
+  const emptyTasks = tasks.filter(
+    (task) =>
+      task.questions.length === 0 ||
+      task.questions.every((question) => question.csv_columns.length === 0),
+  );
+  if (emptyTasks.length > 0) {
+    throw new Error(
+      `Participant ${profile.participant_id} is missing assigned questions for: ${emptyTasks
+        .map((task) => task.definition.key)
+        .join(", ")}.`,
+    );
+  }
+
+  const assignedIds = new Set(assigned.map((question) => question.QuestionID));
+  const coveredIds = new Set(
+    tasks.flatMap((task) =>
+      task.questions.map((question) => question.QuestionID),
+    ),
+  );
+  const uncovered = [...assignedIds].filter((questionId) => !coveredIds.has(questionId));
+  if (uncovered.length > 0) {
+    throw new Error(
+      `Participant ${profile.participant_id} has unassigned held-out questions: ${uncovered.join(", ")}.`,
+    );
+  }
+  return tasks;
 }
 
 function renderQuestion(question: DigitalTwinTargetQuestion): string {
@@ -203,6 +319,7 @@ async function generateOne(
       target_columns: [
         ...new Set(questions.flatMap((question) => question.csv_columns)),
       ],
+      input_adapter_version: DIGITAL_TWIN_INPUT_ADAPTER_VERSION,
       context,
       stage1_generated_at: persona.generated_at,
       generated_at: new Date().toISOString(),
@@ -233,9 +350,8 @@ export async function generateDigitalTwinStage2({
   skipExisting: boolean;
   run?: RunContext;
 }) {
-  const [personas, tasks, refs] = await Promise.all([
+  const [personas, refs] = await Promise.all([
     listDigitalTwinStage1Records(selection.id),
-    targetTasks(),
     listDigitalTwinEpisodeRefs(selection.id),
   ]);
   const existing = new Map(
@@ -248,6 +364,11 @@ export async function generateDigitalTwinStage2({
           )
         )
           .filter((episode): episode is DigitalTwinEpisode => episode !== null)
+          .filter(
+            (episode) =>
+              episode.input_adapter_version ===
+              DIGITAL_TWIN_INPUT_ADAPTER_VERSION,
+          )
           .map((episode) => [
             `${episode.profile_id}/${episode.id}`,
             episode.stage1_generated_at,
@@ -255,8 +376,16 @@ export async function generateDigitalTwinStage2({
       : [],
   );
 
+  const tasksByProfile = new Map(
+    await Promise.all(
+      personas.map(async (persona) => [
+        persona.profile_id,
+        await assignedTargetTasks(selection.id, persona.profile_id),
+      ] as const),
+    ),
+  );
   const targets = personas.flatMap((persona) =>
-    tasks
+    (tasksByProfile.get(persona.profile_id) ?? [])
       .filter(
         ({ definition }) =>
           existing.get(`${persona.profile_id}/task_${definition.key}`) !==
@@ -274,10 +403,9 @@ export async function generateDigitalTwinStage2({
 
   return {
     personaCount: personas.length,
-    taskCount: tasks.length,
+    taskCount: DIGITAL_TWIN_TASKS.length,
     generated: results.filter((result) => result.ok).length,
     failed: results.filter((result) => !result.ok && !result.aborted).length,
-    skipped: personas.length * tasks.length - targets.length,
+    skipped: personas.length * DIGITAL_TWIN_TASKS.length - targets.length,
   };
 }
-

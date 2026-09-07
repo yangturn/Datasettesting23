@@ -4,7 +4,10 @@ import { z } from "zod";
 
 import type { DigitalTwinAnswer, DigitalTwinExecution } from "@/lib/digital-twin-stage-3";
 import type { DigitalTwinStage1Record } from "@/lib/digital-twin-stage-1";
-import type { DigitalTwinEpisode } from "@/lib/digital-twin-stage-2";
+import {
+  DIGITAL_TWIN_INPUT_ADAPTER_VERSION,
+  type DigitalTwinEpisode,
+} from "@/lib/digital-twin-stage-2";
 import type { Description } from "@/lib/stage-1";
 import type { Scenario } from "@/lib/stage-2";
 import { FLOWS, flowByKey } from "@/server/flows";
@@ -135,7 +138,12 @@ export async function planDigitalTwinStage3({ selectionId, flowKeys, skipExistin
   ]);
   const personaById = new Map(personas.map((persona) => [persona.profile_id, persona]));
   const loaded = (await Promise.all(refs.map((ref) => readDigitalTwinEpisode(selectionId, ref.profileId, ref.episodeId)))).filter((episode): episode is DigitalTwinEpisode => episode !== null);
-  const episodes = loaded.filter((episode) => personaById.get(episode.profile_id)?.generated_at === episode.stage1_generated_at);
+  const episodes = loaded.filter(
+    (episode) =>
+      personaById.get(episode.profile_id)?.generated_at ===
+        episode.stage1_generated_at &&
+      episode.input_adapter_version === DIGITAL_TWIN_INPUT_ADAPTER_VERSION,
+  );
   const stored = new Map(executions.map((execution) => [`${execution.profile_id}/${execution.episode_id}/${execution.flow_key}`, execution]));
   const flows = FLOWS.filter((flow) => flowKeys.includes(flow.key));
   const entries: DigitalTwinStage3Plan["entries"] = [];

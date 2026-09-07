@@ -18,6 +18,11 @@ export const digitalTwinProfileSchema = digitalTwinProfileSummarySchema.extend({
   selected_at: z.string(),
   wave1_3_persona_text: z.string().min(1),
   wave1_3_persona_json: z.string().min(1),
+  // New selections retain the participant-specific held-out block so Stage 2
+  // can preserve the exact condition and question order assigned by Twin-2K.
+  // Optional keeps selections imported before this field was added readable;
+  // the adapter reloads the same row from the pinned local Parquet chunk.
+  wave4_Q_wave1_3_A: z.string().min(1).optional(),
 });
 
 export const digitalTwinSelectionSchema = z.object({
@@ -37,4 +42,3 @@ export type DigitalTwinProfileSummary = z.infer<
   typeof digitalTwinProfileSummarySchema
 >;
 export type DigitalTwinSelection = z.infer<typeof digitalTwinSelectionSchema>;
-

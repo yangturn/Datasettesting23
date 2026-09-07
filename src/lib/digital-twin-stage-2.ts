@@ -1,5 +1,7 @@
 import { z } from "zod";
 
+export const DIGITAL_TWIN_INPUT_ADAPTER_VERSION = 2;
+
 export const digitalTwinTargetQuestionSchema = z
   .object({
     QuestionID: z.string().min(1),
@@ -21,6 +23,7 @@ export const digitalTwinEpisodeSchema = z.object({
   situation: z.string().min(1),
   questions: z.array(digitalTwinTargetQuestionSchema).min(1),
   target_columns: z.array(z.string()),
+  input_adapter_version: z.number().int().positive().default(1),
   context: z.record(z.string(), z.string()),
   stage1_generated_at: z.string(),
   generated_at: z.string(),

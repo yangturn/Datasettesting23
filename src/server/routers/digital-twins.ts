@@ -2,6 +2,7 @@ import { TRPCError } from "@trpc/server";
 import { z } from "zod";
 
 import { paginate, paginationInputSchema } from "@/lib/pagination";
+import { DIGITAL_TWIN_INPUT_ADAPTER_VERSION } from "@/lib/digital-twin-stage-2";
 import {
   digitalTwinStage1MaxConcurrent,
   digitalTwinStage1TargetWords,
@@ -131,6 +132,8 @@ export const digitalTwinsRouter = createTRPCRouter({
           staleCount: 0,
           targetQuestionCount: stats.questionCount,
           targetColumnCount: stats.targetColumnCount,
+          assignedQuestionCount: 0,
+          assignedColumnCount: 0,
           ...paginate([], input),
         };
       }
@@ -157,9 +160,12 @@ export const digitalTwinsRouter = createTRPCRouter({
           0,
         ),
         stale:
-          personaDates.get(episode.profile_id) !== episode.stage1_generated_at,
+          personaDates.get(episode.profile_id) !== episode.stage1_generated_at ||
+          episode.input_adapter_version !==
+            DIGITAL_TWIN_INPUT_ADAPTER_VERSION,
       }));
       const currentCount = rows.filter((row) => !row.stale).length;
+      const currentRows = rows.filter((row) => !row.stale);
 
       return {
         selection: { id: selection.id, seed: selection.seed },
@@ -168,6 +174,14 @@ export const digitalTwinsRouter = createTRPCRouter({
         staleCount: rows.length - currentCount,
         targetQuestionCount: stats.questionCount,
         targetColumnCount: stats.targetColumnCount,
+        assignedQuestionCount: currentRows.reduce(
+          (count, row) => count + row.questions.length,
+          0,
+        ),
+        assignedColumnCount: currentRows.reduce(
+          (count, row) => count + row.target_columns.length,
+          0,
+        ),
         ...paginate(rows, input),
       };
     }),
@@ -190,7 +204,13 @@ export const digitalTwinsRouter = createTRPCRouter({
       const personaDates = new Map(personas.map((persona) => [persona.profile_id, persona.generated_at]));
       const episodes = (await Promise.all(refs.map((ref) => readDigitalTwinEpisode(selection.id, ref.profileId, ref.episodeId))))
         .filter((episode) => episode !== null)
-        .filter((episode) => personaDates.get(episode.profile_id) === episode.stage1_generated_at)
+        .filter(
+          (episode) =>
+            personaDates.get(episode.profile_id) ===
+              episode.stage1_generated_at &&
+            episode.input_adapter_version ===
+              DIGITAL_TWIN_INPUT_ADAPTER_VERSION,
+        )
         .sort((a, b) => `${a.profile_id}/${a.task_key}`.localeCompare(`${b.profile_id}/${b.task_key}`));
       const allRows = await Promise.all(episodes.map(async (episode) => {
         const executions = await listDigitalTwinExecutionsForEpisode(selection.id, episode.profile_id, episode.id);
