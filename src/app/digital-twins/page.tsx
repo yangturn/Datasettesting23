@@ -31,6 +31,7 @@ const STAGES = [
     stage: "Stage 3",
     title: "Flow Execution",
     description: "Predict the participants' held-out survey responses.",
+    href: "/digital-twins/stage-3",
   },
   {
     stage: "Stage 4",

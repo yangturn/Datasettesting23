@@ -13,6 +13,13 @@ import {
   generateDigitalTwinStage2,
 } from "@/server/generation/digital-twin-stage-2";
 import {
+  callsInDigitalTwinPlanEntry,
+  generateDigitalTwinStage3,
+  planDigitalTwinStage3,
+} from "@/server/generation/digital-twin-stage-3";
+import { FLOWS, flowMeta } from "@/server/flows";
+import { MAX_CONCURRENT_REQUESTS } from "@/server/generation/runtime";
+import {
   digitalTwinDatasetSize,
   importDigitalTwinProfiles,
 } from "@/server/generation/digital-twin-profiles";
@@ -26,12 +33,14 @@ import {
   listDigitalTwinEpisodeRefs,
   readDigitalTwinEpisode,
 } from "@/server/storage/digital-twin-stage-2";
+import { listDigitalTwinExecutionsForEpisode } from "@/server/storage/digital-twin-stage-3";
 import { configuredModel } from "@/server/llm/openrouter";
 import { createTRPCRouter, publicProcedure } from "@/server/trpc";
 
 const RUN_STAGE = "digital-twin-profiles" as const;
 const STAGE_1_RUN = "digital-twin-personas" as const;
 const STAGE_2_RUN = "digital-twin-episodes" as const;
+const STAGE_3_RUN = "digital-twin-executions" as const;
 
 export const digitalTwinsRouter = createTRPCRouter({
   config: publicProcedure.query(async () => ({
@@ -162,6 +171,57 @@ export const digitalTwinsRouter = createTRPCRouter({
       };
     }),
 
+  stage3Config: publicProcedure.query(() => ({
+    flows: flowMeta(),
+    maxConcurrent: MAX_CONCURRENT_REQUESTS,
+    model: configuredModel(),
+  })),
+
+  stage3List: publicProcedure
+    .input(paginationInputSchema)
+    .query(async ({ input }) => {
+      const selection = await readCurrentDigitalTwinSelection();
+      if (!selection) return { selection: null, completeCells: 0, totalCells: 0, ...paginate([], input) };
+      const [personas, refs] = await Promise.all([
+        listDigitalTwinStage1Records(selection.id),
+        listDigitalTwinEpisodeRefs(selection.id),
+      ]);
+      const personaDates = new Map(personas.map((persona) => [persona.profile_id, persona.generated_at]));
+      const episodes = (await Promise.all(refs.map((ref) => readDigitalTwinEpisode(selection.id, ref.profileId, ref.episodeId))))
+        .filter((episode) => episode !== null)
+        .filter((episode) => personaDates.get(episode.profile_id) === episode.stage1_generated_at)
+        .sort((a, b) => `${a.profile_id}/${a.task_key}`.localeCompare(`${b.profile_id}/${b.task_key}`));
+      const allRows = await Promise.all(episodes.map(async (episode) => {
+        const executions = await listDigitalTwinExecutionsForEpisode(selection.id, episode.profile_id, episode.id);
+        const byFlow = new Map(executions.map((execution) => [execution.flow_key, execution]));
+        return {
+          episode,
+          cells: FLOWS.map((flow) => {
+            const execution = byFlow.get(flow.key) ?? null;
+            const stale = execution !== null && (execution.stage1_generated_at !== episode.stage1_generated_at || execution.episode_generated_at !== episode.generated_at);
+            const doneSteps = stale ? 0 : Object.keys(execution?.steps ?? {}).length + (execution?.answers ? 1 : 0);
+            return { flowKey: flow.key, flowLabel: flow.label, stale, doneSteps, stepCount: flow.steps.length, answers: stale ? null : execution?.answers ?? null };
+          }),
+        };
+      }));
+      const completeCells = allRows.flatMap((row) => row.cells).filter((cell) => cell.doneSteps === cell.stepCount).length;
+      return { selection: { id: selection.id, seed: selection.seed }, completeCells, totalCells: episodes.length * FLOWS.length, ...paginate(allRows, input) };
+    }),
+
+  stage3Plan: publicProcedure
+    .input(z.object({ flowKeys: z.array(z.string()), skipExisting: z.boolean() }))
+    .query(async ({ input }) => {
+      const selection = await readCurrentDigitalTwinSelection();
+      if (!selection || input.flowKeys.length === 0) return { episodeCount: 0, pendingCalls: [] as number[] };
+      const plan = await planDigitalTwinStage3({ selectionId: selection.id, ...input });
+      const grouped = new Map<string, number>();
+      for (const entry of plan.entries) {
+        const key = `${entry.episode.profile_id}/${entry.episode.id}`;
+        grouped.set(key, (grouped.get(key) ?? 0) + callsInDigitalTwinPlanEntry(entry));
+      }
+      return { episodeCount: plan.episodeCount, pendingCalls: [...grouped.values()] };
+    }),
+
   processProfiles: publicProcedure
     .input(z.object({ count: z.number().int().min(1) }))
     .mutation(async ({ input }) => {
@@ -193,6 +253,9 @@ export const digitalTwinsRouter = createTRPCRouter({
           code: "CONFLICT",
           message: "Stage 2 is generating episodes. Cancel it before replacing the selection.",
         });
+      }
+      if (activeRunForStage(STAGE_3_RUN)) {
+        throw new TRPCError({ code: "CONFLICT", message: "Stage 3 is running. Cancel it before replacing the selection." });
       }
 
       return startRun({
@@ -236,6 +299,9 @@ export const digitalTwinsRouter = createTRPCRouter({
           code: "CONFLICT",
           message: "Stage 2 is generating episodes. Cancel it before regenerating Stage 1.",
         });
+      }
+      if (activeRunForStage(STAGE_3_RUN)) {
+        throw new TRPCError({ code: "CONFLICT", message: "Stage 3 is running. Cancel it before regenerating Stage 1." });
       }
 
       return startRun({
@@ -284,6 +350,12 @@ export const digitalTwinsRouter = createTRPCRouter({
           message: `A Digital Twin Stage 2 run is already going (${active.done} of ${active.total ?? "?"}).`,
         });
       }
+      if (activeRunForStage(STAGE_3_RUN)) {
+        throw new TRPCError({
+          code: "CONFLICT",
+          message: "Stage 3 is running. Cancel it before regenerating Stage 2.",
+        });
+      }
 
       return startRun({
         stage: STAGE_2_RUN,
@@ -297,6 +369,27 @@ export const digitalTwinsRouter = createTRPCRouter({
           return summary.skipped > 0
             ? `Skipped ${summary.skipped} current episode(s).`
             : undefined;
+        },
+      });
+    }),
+
+  generateStage3: publicProcedure
+    .input(z.object({ flowKeys: z.array(z.string().min(1)).min(1), skipExisting: z.boolean(), limit: z.number().int().min(1).optional() }))
+    .mutation(async ({ input }) => {
+      const selection = await readCurrentDigitalTwinSelection();
+      if (!selection) throw new TRPCError({ code: "PRECONDITION_FAILED", message: "Select Digital Twin participants first." });
+      if (activeRunForStage(RUN_STAGE) || activeRunForStage(STAGE_1_RUN) || activeRunForStage(STAGE_2_RUN)) {
+        throw new TRPCError({ code: "CONFLICT", message: "An earlier Digital Twins stage is still running." });
+      }
+      const active = activeRunForStage(STAGE_3_RUN);
+      if (active) throw new TRPCError({ code: "CONFLICT", message: `A Digital Twin Stage 3 run is already going (${active.done} of ${active.total ?? "?"}).` });
+      return startRun({
+        stage: STAGE_3_RUN,
+        model: configuredModel(),
+        task: async (run) => {
+          const summary = await generateDigitalTwinStage3({ selectionId: selection.id, ...input, run });
+          const notes = [summary.skipped > 0 && `Skipped ${summary.skipped} complete flow cells.`, summary.limitedOut > 0 && `Left ${summary.limitedOut} episode(s) for a later run.`].filter((note): note is string => Boolean(note));
+          return notes.length ? notes.join(" ") : undefined;
         },
       });
     }),

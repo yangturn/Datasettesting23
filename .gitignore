@@ -28,6 +28,8 @@
 /data/runs/run_digital-twin-personas_*.json
 /data/digital-twins/stage-2/
 /data/runs/run_digital-twin-episodes_*.json
+/data/digital-twins/stage-3/
+/data/runs/run_digital-twin-executions_*.json
 
 # misc
 .DS_Store

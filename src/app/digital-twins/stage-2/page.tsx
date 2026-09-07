@@ -118,6 +118,7 @@ export default async function DigitalTwinStage2Page(
         stage="Stage 3"
         title="Flow Execution"
         description="Run DatasetTesting's candidate reasoning flows against each episode."
+        href="/digital-twins/stage-3"
       />
     </main>
   );
