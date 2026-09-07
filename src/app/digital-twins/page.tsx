@@ -37,6 +37,7 @@ const STAGES = [
     stage: "Stage 4",
     title: "Evaluation",
     description: "Compare predictions using the Digital Twin benchmark scorer.",
+    href: "/digital-twins/stage-4",
   },
 ] as const;
 

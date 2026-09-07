@@ -72,7 +72,7 @@ export default async function DigitalTwinStage3Page(props: {
         </>
       )}
 
-      <NextStagePointer stage="Stage 4" title="Evaluation" description="Compare each flow's predictions with the held-out participant answers." />
+      <NextStagePointer stage="Stage 4" title="Evaluation" description="Compare each flow's predictions with the held-out participant answers." href="/digital-twins/stage-4" />
     </main>
   );
 }

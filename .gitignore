@@ -30,6 +30,7 @@
 /data/runs/run_digital-twin-episodes_*.json
 /data/digital-twins/stage-3/
 /data/runs/run_digital-twin-executions_*.json
+/data/digital-twins/stage-4/
 
 # misc
 .DS_Store

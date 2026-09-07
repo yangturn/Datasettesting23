@@ -36,6 +36,7 @@ import {
 import { listDigitalTwinExecutionsForEpisode } from "@/server/storage/digital-twin-stage-3";
 import { configuredModel } from "@/server/llm/openrouter";
 import { createTRPCRouter, publicProcedure } from "@/server/trpc";
+import { buildDigitalTwinStage4Report } from "@/server/evaluation/digital-twin-stage-4";
 
 const RUN_STAGE = "digital-twin-profiles" as const;
 const STAGE_1_RUN = "digital-twin-personas" as const;
@@ -221,6 +222,11 @@ export const digitalTwinsRouter = createTRPCRouter({
       }
       return { episodeCount: plan.episodeCount, pendingCalls: [...grouped.values()] };
     }),
+
+  stage4Report: publicProcedure.query(async () => {
+    const selection = await readCurrentDigitalTwinSelection();
+    return selection ? buildDigitalTwinStage4Report(selection.id) : null;
+  }),
 
   processProfiles: publicProcedure
     .input(z.object({ count: z.number().int().min(1) }))
