@@ -388,9 +388,9 @@ const V2_IMMEDIATE_STEPS = substituteSteps(
 
 export const fullFlowV2Flow: Flow = {
   key: "full_flow_v2",
-  label: "Full Flow v2",
+  label: "Second Thought, 3rd person",
   description:
-    "Full Flow with the revised appraisal and reappraisal: the extracted personality is put to work, each verdict on how reflection moved the first impulse is explicitly defined, and the initial tendency is carried forward verbatim rather than paraphrased. Third person throughout — the control arm for Full Flow, First Person, which runs these same revisions in first person. On a time-sensitive scenario, where there are no reflective memories to draw on, the reappraisal is skipped: it runs Immediate Flow's four parts instead, carrying the revised appraisal and a decision built on the first impulse.",
+    "Full Flow with the revised appraisal and reappraisal: the extracted personality is put to work, each verdict on how reflection moved the first impulse is explicitly defined, and the initial tendency is carried forward verbatim rather than paraphrased. Third person throughout — the control arm for Second Thought, 1st person, which runs these same revisions in first person. On a time-sensitive scenario, where there are no reflective memories to draw on, the reappraisal is skipped: it runs Immediate Flow's four parts instead, carrying the revised appraisal and a decision built on the first impulse.",
   steps: V2_REFLECTIVE_STEPS,
   /**
    * The same time-sensitive fallback as Full Flow, taking the revised parts with

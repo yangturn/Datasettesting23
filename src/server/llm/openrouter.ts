@@ -26,9 +26,51 @@ function dispatcherFor(proxyUrl: string | undefined): Dispatcher | undefined {
 }
 
 type ChatCompletion = {
-  choices?: { message?: { content?: string } }[];
+  choices?: {
+    message?: { content?: string; reasoning?: string; refusal?: string };
+    finish_reason?: string | null;
+    native_finish_reason?: string | null;
+    /** A provider failure OpenRouter reports inside a 200 response. */
+    error?: { code?: number | string; message?: string };
+  }[];
   error?: { message?: string };
+  provider?: string;
+  usage?: {
+    completion_tokens?: number;
+    completion_tokens_details?: { reasoning_tokens?: number };
+  };
 };
+
+/**
+ * Says why a 200 response carried no content, from what the response does hold.
+ *
+ * An empty reply has several unrelated causes — the provider failing mid-stream,
+ * the output budget spent entirely on reasoning, a refusal — and they call for
+ * different fixes, so the bare fact that content was empty is not enough to act
+ * on.
+ */
+function describeEmptyCompletion(payload: ChatCompletion): string {
+  const choice = payload.choices?.[0];
+  const details = [
+    choice === undefined && "no choices",
+    choice?.error &&
+      `provider error ${choice.error.code ?? ""}: ${choice.error.message ?? "unknown"}`,
+    choice?.finish_reason && `finish_reason ${choice.finish_reason}`,
+    choice?.native_finish_reason &&
+      choice.native_finish_reason !== choice.finish_reason &&
+      `native_finish_reason ${choice.native_finish_reason}`,
+    choice?.message?.refusal &&
+      `refusal: ${choice.message.refusal.slice(0, 200)}`,
+    choice?.message?.reasoning && "reasoning present",
+    payload.usage?.completion_tokens !== undefined &&
+      `${payload.usage.completion_tokens} completion tokens`,
+    payload.usage?.completion_tokens_details?.reasoning_tokens !== undefined &&
+      `${payload.usage.completion_tokens_details.reasoning_tokens} reasoning tokens`,
+    payload.provider && `provider ${payload.provider}`,
+  ].filter((detail): detail is string => Boolean(detail));
+
+  return details.length > 0 ? ` (${details.join("; ")})` : "";
+}
 
 /**
  * Strips ```json fences some models emit despite being asked for raw JSON.
@@ -46,7 +88,7 @@ async function callOpenRouter(
   signal?: AbortSignal,
   temperature?: number,
 ): Promise<string> {
-  const { apiKey, model, proxyUrl } = openRouterConfig();
+  const { apiKey, model, proxyUrl, providers } = openRouterConfig();
 
   const response = await undiciFetch(ENDPOINT, {
     method: "POST",
@@ -65,6 +107,12 @@ async function callOpenRouter(
       // Omitted rather than defaulted, so a caller that says nothing keeps the
       // model's own default instead of one this client invented.
       ...(temperature === undefined ? {} : { temperature }),
+      // An open model is hosted by many providers at different quantizations,
+      // and OpenRouter picks among them per call. Restricting the set — with no
+      // fallback outside it — is what makes two calls reach the same weights.
+      ...(providers.length === 0
+        ? {}
+        : { provider: { only: providers, allow_fallbacks: false } }),
     }),
     dispatcher: dispatcherFor(proxyUrl),
     signal,
@@ -86,7 +134,9 @@ async function callOpenRouter(
 
   const content = payload.choices?.[0]?.message?.content;
   if (!content) {
-    throw new Error("OpenRouter returned no content.");
+    throw new Error(
+      `OpenRouter returned no content${describeEmptyCompletion(payload)}.`,
+    );
   }
   return content;
 }

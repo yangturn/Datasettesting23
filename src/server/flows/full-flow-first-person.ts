@@ -422,7 +422,7 @@ const FIRST_PERSON_IMMEDIATE_STEPS = substituteSteps(
 
 export const fullFlowFirstPersonFlow: Flow = {
   key: "full_flow_first_person",
-  label: "Full Flow, First Person",
+  label: "Second Thought, 1st person (primary)",
   description:
     "Full Flow with the character reasoning in first person: extract, consolidate, appraise fast, then reappraise deliberately with reflective memories before deciding. The appraisal, reappraisal and decision are rewritten; extraction and consolidation still run Full Flow's own prompts. The decided action is reported from outside, since observable behaviour has no first person. On a time-sensitive scenario, where there are no reflective memories to draw on, the reappraisal is skipped: it runs Immediate Flow's four parts instead, in the same first-person voice, deciding from the first impulse.",
   steps: FIRST_PERSON_REFLECTIVE_STEPS,

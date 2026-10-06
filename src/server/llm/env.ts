@@ -24,5 +24,10 @@ export function openRouterConfig() {
     apiKey,
     model,
     proxyUrl: process.env.OPENROUTER_PROXY_URL || undefined,
+    /** Provider slugs to restrict routing to. Empty means route freely. */
+    providers: (process.env.OPENROUTER_PROVIDERS ?? "")
+      .split(",")
+      .map((provider) => provider.trim())
+      .filter((provider) => provider !== ""),
   };
 }
