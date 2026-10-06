@@ -1,6 +1,6 @@
-# Character-decision flow benchmark
+# Second Thought: Reflective Reappraisal for Persona Behavior Prediction
 
-A pipeline for comparing *flows* — candidate ways of prompting a language model to predict what a specific person does in a specific situation. It generates a synthetic population, puts each person in situations, runs every flow over every situation, and scores each flow's predicted action with a reference-free judge.
+Code for the paper. A pipeline for comparing *flows* — candidate ways of prompting a language model to predict what a specific person does in a specific situation. It generates a synthetic population, puts each person in situations, runs every flow over every situation, and scores each flow's predicted action with a reference-free judge.
 
 Everything runs through a local web app. All records are plain JSON files under `data/`; there is no database.
 
