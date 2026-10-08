@@ -1,0 +1,37 @@
+{
+  "flow_key": "her_dual_layered_thinking",
+  "profile_id": "profile_001",
+  "scenario_id": "scenario_muzldiwy_1",
+  "name": "Aminata Diallo",
+  "scenario_title": "Evening Tea Invitation",
+  "steps": {
+    "system_thinking": {
+      "output": {
+        "system_thinking": "I need to portray Aminata in a brief moment of decision at the gate, with Mariam waiting for an answer. She is tired, hungry, and carrying the day's earnings, and her established pattern is to decline such invitations with a polite excuse. Her private thought should weigh the visible pull of Mariam's friendliness and the tea stall against the concrete costs: the memory of the plantain evening where she stayed late and felt drowsy at morning practice, the past tea-stall outing where she spent more than intended, her father's rule of finishing work before celebrating, and the recollection that evenings spent reviewing her wall photos led to real improvement. She should not dwell on her savings or family, because she never shares those particulars; instead her reasoning stays practical and contained. Observably, she should pause, shift her weight, perhaps touch the pouch at her waist, glance toward the road home, and then give Mariam a polite, apologetic smile. Her speech should be short and measured: she will decline without making a strong promise, saying she is tired, has not eaten yet, and wants to go home to rest and review her wall photos. She can soften the refusal with a small thank-you to Mariam, but the tone should remain gentle and firm. The turn ends with her beginning to move toward home after the exchange; no later events should be written."
+      },
+      "generated_at": "2026-10-08T14:11:42.480Z",
+      "model": "deepseek/deepseek-v4-flash-0731"
+    },
+    "role_response": {
+      "output": {
+        "role_thinking": "Mariam's voice sounds warm, and for a moment I feel the pull of sitting down, of letting my back rest against something. But I remember two weeks ago—how I stayed too long over plantains and woke heavy the next morning, my trowel slipping in my hand. And last time at the tea stall, I bought a sweet I hadn't planned and felt the coin leave my pouch. My father always finished the millet before he would sit with anyone. I have not eaten since midday, and my wall photos are waiting. I want to go home, eat, and see where my strokes were uneven. That is what helps me improve. Mariam is kind to ask, but I know what happens when I put off the work.",
+        "action": "Aminata pauses at the gate, shifting her weight and pressing her hand briefly against the pouch at her waist. She glances toward the road home, then gives Mariam a small, apologetic smile. \"Thank you, Mariam,\" she says quietly. \"I am tired, and I have not eaten yet. I need to go home, rest, and look at my wall photos.\" She gives a gentle nod and starts walking toward the road."
+      },
+      "generated_at": "2026-10-08T14:11:49.277Z",
+      "model": "deepseek/deepseek-v4-flash-0731"
+    },
+    "decision": {
+      "output": {
+        "action": "Aminata pauses at the gate, shifting her weight and pressing her hand briefly against the pouch at her waist. She glances toward the road home, then gives Mariam a small, apologetic smile. \"Thank you, Mariam,\" she says quietly. \"I am tired, and I have not eaten yet. I need to go home, rest, and look at my wall photos.\" She gives a gentle nod and starts walking toward the road.",
+        "explanation": "Aminata felt a brief pull to accept Mariam's warm invitation and rest her aching back, but memories of a recent outing where she stayed too long over plantains and woke heavy the next morning, as well as an earlier tea-stall visit where she spent an unplanned coin, reminded her of her father's rule to finish work before celebrating. Hungry since midday and wanting to review her wall photos to improve her plastering, she chose to decline politely and head home to eat and study."
+      },
+      "generated_at": "2026-10-08T14:12:01.836Z",
+      "model": "deepseek/deepseek-v4-flash-0731"
+    }
+  },
+  "scenario_generated_at": "2026-10-08T13:48:19.330Z",
+  "scenario_context_generated_at": "2026-10-08T13:48:41.030Z",
+  "description_generated_at": "2026-10-08T13:41:57.136Z",
+  "started_at": "2026-10-08T14:11:13.098Z",
+  "updated_at": "2026-10-08T14:12:01.836Z"
+}

@@ -1,0 +1,62 @@
+{
+  "flow_key": "full_flow_first_person",
+  "profile_id": "profile_009",
+  "scenario_id": "scenario_muzletkf_0",
+  "name": "Kim Min-jun",
+  "scenario_title": "The Noodle Shop Invitation",
+  "steps": {
+    "attributes": {
+      "output": {
+        "values_culture_and_background": "He values being an involved, present father, a commitment formed in reaction to his own father's frequent absence. He values financial security derived from verifiable data, learned from the collapse of his startup. He values family-friendly workplace benefits as a signal of employer respect.",
+        "roles_and_commitments": "He is the primary caregiver for his fourteen-month-old daughter and manages the household budget and operations. He is married to a nurse who works double shifts.",
+        "capabilities_and_constraints": "He has experience as a junior software developer and is proficient in spreadsheet-based financial tracking and budgeting. He is skilled at infant caregiving. He operates under tight financial constraints, tracking every expense to keep the monthly deficit under 300,000 won.",
+        "personality_and_response_style": "He approaches decisions analytically, weighing costs, benefits, and probabilities. He maintains strict personal discipline as a way to manage uncertainty, such as waking at 5 a.m. to study. He experiences self-doubt and impostor feelings about his caregiving role, measuring his worth by benchmarks and productivity."
+      },
+      "generated_at": "2026-10-08T14:23:49.443Z",
+      "model": "deepseek/deepseek-v4-flash-0731"
+    },
+    "consolidate": {
+      "output": {
+        "initial_context": "RELEVANT CHARACTER BACKGROUND\n\nKim Min-jun, twenty-nine, lives in a cramped but immaculate one-bedroom apartment in Seoul's Nowon district with his wife, Ji-woo, a nurse at a university hospital, and their fourteen-month-old daughter, Seo-yeon. Six months ago, the fintech startup where Min-jun had spent three years as a junior developer collapsed overnight, leaving him with a final paycheck and a severance package that evaporated within two weeks. Since then, Ji-woo has worked double shifts to cover health insurance and rent, while Min-jun has become the household's primary caregiver and de facto operations manager. He manages a strict household budget, tracking every expense in color-coded spreadsheets, cross-referencing sales at two discount supermarkets, and factoring in Seo-yeon's changing formula intake. He buys baby clothes in bulk from a resale app and resells them when she outgrows them, carefully photographing each item to maximize resale value. He keeps the monthly deficit under 300,000 won, a number he quotes with precision.\n\nHis job search is methodical and analytical. He maintains a spreadsheet of potential employers—every Seoul-based tech company with a public parental leave policy—and ranks them by salary band, flexible hours, and family benefits. He has rejected promising interviews at companies offering only statutory minimum leave and declined a recruiter's call because the job description listed \"paternity leave: none.\" He views a company's benefits package as its most honest codebase, a signal of whether they value the person behind the screen. He treats each application like a bid in an auction, weighing time cost against probability of response and long-term payoff.\n\nMin-jun was raised by a father who worked six days a week and was rarely home, and he committed to being a different kind of father—involved and present. He values financial security derived from verifiable data, a lesson learned from the startup's collapse. He sometimes feels like an impostor in his own life, measuring his worth in benchmarks and break-even points rather than in the soft weight of his daughter's sleep. He wakes at 5 a.m. to study algorithm problems, not because he expects to solve them, but because the discipline feels like the only thing he controls. He envies his wife's clear professional identity. He experiences self-doubt about his caregiving role and wonders if he is more than a cost line. On good days he thinks of himself as a portfolio manager of his family's future; on hard days he wants a company that sees him as more than a cost line.\n\nHe is experienced as a junior software developer and proficient in spreadsheet-based financial tracking. He is skilled at infant caregiving. He operates under tight financial constraints. His personality is analytical, disciplined, and methodical; he copes with uncertainty through strict personal discipline and by weighing costs, benefits, and probabilities. He often chooses delivery when Seo-yeon naps, reheating one-handed, and sometimes takes her on short outings in the carrier to stay active. He mentally weighs walking cost versus delivery cost each time. Ji-woo works double shifts; late-night calls are their only adult conversation. When her shift ends early, she texts from the hospital and he knows she wants time out with him. He feels guilty about her earnings and does not want to refuse her.\n\nOBJECTIVE SITUATION\n\nAt 10 p.m., Min-jun is finishing a spreadsheet. His wife, Ji-woo, calls from the hospital. Her shift ended early, and she suggests they meet at the 24-hour noodle shop around the corner for a late dinner. Seo-yeon is fast asleep in her carrier. The apartment is quiet. Min-jun has two immediate options: he could strap Seo-yeon to his chest and walk the five minutes to the shop, or he could suggest ordering delivery and eating together at the kitchen table.\n\nPRE-APPRAISAL STATE AND ACCESSIBLE MEMORIES\n\nMin-jun has been awake since 5 a.m. and spent the day on childcare and chores. He skipped dinner to finish updating his job spreadsheet. His back aches from rocking Seo-yeon. He is tired but hungry. He knows either choice would please Ji-woo and feels guilty about her earnings.\n\nThe noodle shop's sign recalls a past quiet dinner there with Ji-woo and a sleeping baby. The kitchen table recalls last week's cold delivery order. He remembers the noodle shop's quiet corner booth where they talked freely."
+      },
+      "generated_at": "2026-10-08T14:24:36.923Z",
+      "model": "deepseek/deepseek-v4-flash-0731"
+    },
+    "appraisal": {
+      "output": {
+        "initial_interpretation": "Ji-woo is off early and wants a real dinner together, not another late-night delivery at the kitchen table. This is her reaching for the normal, quiet time we used to have, and the noodle shop’s corner booth is the place for that.",
+        "initial_emotional_reaction": "I feel a tug of warmth and hope, but also a heavier weight of guilt—she worked double shifts while I was home all day—and my back aches and my eyes burn from the spreadsheet, and I’m hungry, and part of me just wants to collapse.",
+        "activated_concerns": "I want to give her something good, not another reminder of my failed job search or a cold meal on plastic plates. I’m worried about the cost, but more than that, I’m worried about letting her down, and about this small voice that says I’m only a cost line unless I produce something verifiable.",
+        "automatic_theory_of_mind": "She’s offering me a break, not testing me—she wants us to feel like a couple again, even for an hour. I read her tone as hopeful, and I think she’d understand either choice, but I sense she’s quietly asking for the version of us that talks freely in a booth, not across a spreadsheet.",
+        "initial_action_tendency": "I want to say yes to the shop. I’ll strap Seo-yeon to my chest and walk over, even though my back hurts, because the five minutes of night air feels like the right cost to pay for that quiet time with her."
+      },
+      "generated_at": "2026-10-08T14:24:51.012Z",
+      "model": "deepseek/deepseek-v4-flash-0731"
+    },
+    "reappraisal": {
+      "output": {
+        "initial_tendency": "I want to say yes to the shop. I’ll strap Seo-yeon to my chest and walk over, even though my back hurts, because the five minutes of night air feels like the right cost to pay for that quiet time with her.",
+        "reflective_update": "Remembering my father's empty chair at every meal, I know how much these moments matter—how a table with people around it is the thing I swore I'd never take for granted. That noodle shop was our place before Seo-yeon, where Ji-woo and I would sit in the corner booth and talk about everything and nothing, and I've been avoiding it ever since the startup died, hiding in this apartment like I have something to be ashamed of. But I don't want to hide tonight. The delivery option feels like the coward's choice: it's easier on my back, it doesn't risk waking Seo-yeon, and I wouldn't have to walk past people who might know I'm unemployed. But it's also the choice that keeps me stuck in this loop of spreadsheets and self-loathing. Walking to the shop is only five minutes, the noodle shop is cheap, and Seo-yeon sleeps through everything in this carrier. Ji-woo is asking me to be her husband again, not her struggling job-seeker, and I think I owe it to both of us to say yes. The cost isn't the noodles—it's the effort to step outside this shame, and I've been paying that cost in silence for six months.",
+        "change_from_initial": "STRENGTHENED",
+        "reconsidered_interpretation": "This isn't just a late-night dinner suggestion—it's an invitation back to our real life. The noodle shop is where we were a couple before everything fell apart, and Ji-woo is reaching for that again. Going there isn't about food or even about pleasing her; it's about refusing to let my failed startup, my unemployment, and this gnawing sense of being a cost line steal the one thing my father never gave us: a family that actually sits together. I see now that my first instinct to go wasn't just about giving her a nice break—it was the part of me that still believes I'm more than my job title.",
+        "motivational_conflict": "The real fight is inside me: the exhausted, shame-heavy part wants to stay home, collapse on the couch, and order delivery so I don't have to walk into a public place as a man without a job. But the other part, the father who swore to be present and the husband who loves that corner booth, knows that if I say delivery tonight, I'm cementing my shame as a habit. There's also the nagging worry about waking Seo-yeon or spending even a few thousand won more than the budget, but those are small compared to the choice of who I want to be for my family.",
+        "revised_action_tendency": "I'm going to tell Ji-woo yes, we'll meet at the shop. I'll strap Seo-yeon on, grab my wallet, and walk those five minutes, even if my back protests. I'm doing it for her, for us, and for the version of myself that doesn't hide."
+      },
+      "generated_at": "2026-10-08T14:25:15.163Z",
+      "model": "deepseek/deepseek-v4-flash-0731"
+    },
+    "decision": {
+      "output": {
+        "action": "Min-jun tells Ji-woo, 'Yes, let's do the shop. I'll be there in five minutes,' then straps Seo-yeon into the carrier and grabs his wallet from the counter.",
+        "explanation": "Min-jun’s initial tendency was to accept Ji-woo’s invitation to the noodle shop, strapping Seo-yeon on despite his aching back, because the five-minute walk felt like the right cost for quiet time with her. Reflecting on his father’s empty chair and the corner booth as their pre-collapse place, he recognized that choosing delivery would mean hiding from his unemployment and shame. This recognition strengthened his initial tendency—he moved from wanting to go to actively refusing to let the delivery option cement his shame as a habit. The final action of telling Ji-woo yes and physically preparing to leave follows directly from that strengthened resolve: he commits to being her husband again and to the version of himself that does not hide, even with the competing pull of exhaustion and self-doubt."
+      },
+      "generated_at": "2026-10-08T14:25:28.541Z",
+      "model": "deepseek/deepseek-v4-flash-0731"
+    }
+  },
+  "scenario_generated_at": "2026-10-08T13:49:19.791Z",
+  "scenario_context_generated_at": "2026-10-08T13:49:58.250Z",
+  "description_generated_at": "2026-10-08T13:42:02.480Z",
+  "started_at": "2026-10-08T14:23:15.122Z",
+  "updated_at": "2026-10-08T14:25:28.541Z"
+}

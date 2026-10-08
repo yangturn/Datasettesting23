@@ -1,0 +1,62 @@
+{
+  "flow_key": "full_flow_v2",
+  "profile_id": "profile_002",
+  "scenario_id": "scenario_muzlcet1_0",
+  "name": "Ingrid Solberg",
+  "scenario_title": "Harbor Invitation",
+  "steps": {
+    "attributes": {
+      "output": {
+        "values_culture_and_background": "Motivated to prove she is a legitimate industry figure rather than a wealthy daughter playing at business. Learned ruthlessness from her grandmother, who ran a salting shed. Grew up on the docks as the only girl among boys after her mother left when she was twelve. Learned the fish business from her father's hands. Values quality and margins, re-smoking batches for even slight color deviations. Believes success comes from one vision, quietly subverting the traditional collective ethos of dugnad. Embraces a stoic Nordic coastal producer culture: fiercely vocal about business, yet utterly private about family hardships.",
+        "roles_and_commitments": "Owner and manager of a fish processing business employing nine people. Responsible for managing her father's care, including caregiver logs and medical oversight. Committed to preparing for the national food competition.",
+        "capabilities_and_constraints": "Has financial resources from inheritance that funded the loft, chillers, and smokehouses. Possesses expert knowledge of fish processing, pricing, and quality control. Holds direct authority over employees and strategic decisions. Only trusts two of nine employees with financial and strategic information. Speaks her hometown dialect and refuses to soften it. Constrained by her father's vascular dementia, requiring her ongoing management of his care.",
+        "personality_and_response_style": "Perfectionistic and demanding, re-smoking batches for minor color flaws. Driven and self-sacrificing, working early hours and long days. Ruthless and cold in business confrontations, such as with suppliers. Private about family erosion, avoiding discussion of it. Tender and protective toward her father, reading him poetry despite his nonrecognition. Distrustful of most employees' numerical competence, masking her strategic plans. Ambitious, persistently seeking to prove herself as an outsider who must earn her place."
+      },
+      "generated_at": "2026-10-08T14:18:58.797Z",
+      "model": "deepseek/deepseek-v4-flash-0731"
+    },
+    "consolidate": {
+      "output": {
+        "initial_context": "RELEVANT CHARACTER BACKGROUND\n\nIngrid Solberg is a fish processing business owner and manager of nine employees, operating from a loft with industrial chillers and modern smokehouses. She inherited money from her grandmother, a formidable woman who ran a salting shed in the 1960s; that inheritance funded her facilities. This inheritance sparked a quiet war with her father, now seventy-four and living with vascular dementia in a flat down the road. She manages his caregivers and medical oversight, including auditing caregiver logs and verifying insulin doses. She sold his battered fjord cruiser to pay for the loft, and he hates that; she keeps an engine bolt from that boat on her windowsill and touches it each morning.\n\nShe grew up on the docks as the only girl among boys after her mother left when she was twelve. She learned the fish business from her father's hands but learned ruthlessness from her grandmother. She is fiercely vocal about margins and quality, yet utterly private about her family's erosion. She is driven to prove she is not merely a wealthy daughter playing at industry; she behaves like an outsider who must prove herself daily. She tests brine at 4 AM, re-smokes batches for a half-shade color flaw, and confronts suppliers with a coldness that silences warehouses. However, she is tender with her father, reading him Norwegian poetry even when he does not recognize her. She manages operations through logbooks, spreadsheets, and the smell of smoked fish. She reminds workers of the traditional dugnad but quietly subverts it, believing a national title comes from one vision, not collaboration. She runs pricing spreadsheets that go only to Håkon and Mette, the two of nine employees she trusts with numbers; the other seven she masks strategy from. She speaks the clipped dialect of her hometown and refuses to soften it even for major critics. Her ambition is to win the national food competition.\n\nRelationship history: Lars is an old dock friend who still treats her as Ingrid rather than \"the Solberg girl\"; they have traded favors since shared tuna-rigging seasons with no standing obligation. The rest of the old group has drifted to Christmas cards and funerals; Lars is the keeper of shared history. She has cancelled the last three proposed gatherings with the excuse of smokehouse scheduling and once mailed a smoked salmon box as apology. On the rare occasions she said yes, she arrived late and left within ninety minutes, checklist in hand.\n\nOBJECTIVE SITUATION\n\nOn a Saturday afternoon, Ingrid is at the harbor picking up a fresh batch of ice for the smokehouse. Lars, an old friend from her dock days, calls out and walks over. He is smiling, a bit gray in the beard, and says a few of their old group are meeting at his boat later for coffee and fresh herring. He knows she is busy but tells her it has been two years. Ingrid's truck is loaded, and her checklist for the evening is already set. She pauses, with salt air mixing with the smell of her own smoked fish.\n\nPRE-APPRAISAL STATE AND ACCESSIBLE MEMORIES\n\nIngrid has been up since 4 AM testing brine batches; the evening re-smoke order is already written on her clipboard. Her shoulders are tight from loading ice, and the cold air in the truck cab still smells of last night's smoked fish. The fresh herring calls up a July afternoon on her father's fjord cruiser when she first filleted a mackerel under his exacting gaze. Lars's graying beard reminds her of the last dock gathering two years ago, where he asked after her father and she changed the subject. The salt smell carries the memory of watching the boat she sold being towed away, with the engine bolt still in her palm. She considers saying yes or making her usual excuses."
+      },
+      "generated_at": "2026-10-08T14:19:30.568Z",
+      "model": "deepseek/deepseek-v4-flash-0731"
+    },
+    "appraisal": {
+      "output": {
+        "initial_interpretation": "Lars's invitation reads to Ingrid as an attempt to pull her back into the old dock circle, a direct reminder that two years have passed since she last sat with them. The fresh herring and coffee make her feel as though the past is reaching for her right here at the harbor.",
+        "initial_emotional_reaction": "Ingrid feels a warmth at Lars's familiar smile and his plain treatment of her as Ingrid, but it sours into guilt as the salt smell drags up the memory of the sold boat and her father's face. Her tight shoulders and the unfinished evening checklist keep a guarded edge in place.",
+        "activated_concerns": "What is at stake is her promise to the smokehouse tonight — the re-smoke order and the checklist already set — along with proving she is not a wealthy daughter resting on her grandmother's money. The herring also stirs her care for her father and the loss of the boat he hates, and she feels the weight of how many gatherings she has cancelled.",
+        "automatic_theory_of_mind": "She reads Lars as genuinely hoping she will say yes, coaxing her with the note that it has been two years, but also as knowing her well enough to suspect she might decline. His smile and graying beard make her feel that he wants the old group whole again, the way he once asked after her father.",
+        "initial_action_tendency": "Her first impulse is to make her usual excuses — the smokehouse scheduling, the evening re-smoke — but the pull of the herring and the old memories holds her there a moment, as if to accept."
+      },
+      "generated_at": "2026-10-08T14:19:59.543Z",
+      "model": "deepseek/deepseek-v4-flash-0731"
+    },
+    "reappraisal": {
+      "output": {
+        "initial_tendency": "Her first impulse is to make her usual excuses — the smokehouse scheduling, the evening re-smoke — but the pull of the herring and the old memories holds her there a moment, as if to accept.",
+        "reflective_update": "Weighing the evening re-smoke and her loaded truck against Lars's open invitation, Ingrid begins to deliberate less as a manager and more as someone who has let too many gatherings go. Her grandmother's ledger discipline still argues that a national title is won without coffee interruptions, but her father's old words about a crew that shares herring becoming a crew worth trusting keep returning to her, and she has lately felt the truth of that more sharply. She measures the consequences: if she falls back on the smokehouse excuse, she protects the evening's discipline but loses a chance to sit with people who knew her before she became this guarded version of herself; if she goes, she risks bending her schedule and maybe her reputation, but she also gets back something of the person who used to fish for fun. The thought that every cancelled gathering has slipped a little more of that Ingrid away makes the ledger feel less decisive. She has not made a choice, but her mind is no longer reaching automatically for the excuse; it is holding on to Lars's invitation and considering how to make it fit before the re-smoke.",
+        "change_from_initial": "REVERSED",
+        "reconsidered_interpretation": "Ingrid now understands Lars's invitation less as an interruption and more as a last visible bridge to the life and people that shaped her before the smokehouse became her full identity. The herring and coffee have become tokens of the father's wisdom about trust, not just nostalgia. The re-smoke is still real, but it no longer feels like an absolute wall; the harbor moment now carries a meaning that the checklist cannot fully cancel.",
+        "motivational_conflict": "Her principal unresolved tension is between the grandmother's hard rule that excellence demands no coffee interruptions and the father's quieter conviction that shared herring builds the kind of trust that matters; this is deepened by the fear that declining again will erase more of the Ingrid who fished for fun. She remains uncertain whether she can accept without betraying her work discipline or whether refusing will cost her something she will never recover.",
+        "revised_action_tendency": "After reflecting, Ingrid is leaning toward accepting Lars's invitation, at least for a short while by the boat, before returning to the re-smoke; the pull of the herring and the father's old saying have outweighed her first impulse to hide behind the checklist, though she has not yet said yes aloud."
+      },
+      "generated_at": "2026-10-08T14:21:12.043Z",
+      "model": "deepseek/deepseek-v4-flash-0731"
+    },
+    "decision": {
+      "output": {
+        "action": "Ingrid sets down her clipboard on the truck seat, looks at Lars for a long moment, and says, \"I can come for a short while — before the re-smoke. But I can't stay long.\" She gives a small, tired smile and steps toward his boat.",
+        "explanation": "Ingrid's initial impulse was to fall back on her usual smokehouse excuse, driven by her tight schedule and her guarded, work-first identity. But her reflection — stirred by the fresh herring, Lars's familiar warmth, and her father's old words about shared herring building trust — reversed that tendency. The father's quiet conviction about trust outweighed her grandmother's disciplined ledger mindset, and the fear of losing more of the Ingrid who fished for fun made the checklist feel less absolute. Her revised tendency to accept for a short while, before returning to the re-smoke, leads her to set down the clipboard and verbally accept, while still setting a clear boundary of limited time. This preserves the unresolved tension between her work discipline and her longing for connection, and reflects her characteristic guardedness even in moments of openness."
+      },
+      "generated_at": "2026-10-08T14:21:18.798Z",
+      "model": "deepseek/deepseek-v4-flash-0731"
+    }
+  },
+  "scenario_generated_at": "2026-10-08T13:47:27.349Z",
+  "scenario_context_generated_at": "2026-10-08T13:48:00.778Z",
+  "description_generated_at": "2026-10-08T13:42:27.501Z",
+  "started_at": "2026-10-08T14:18:30.247Z",
+  "updated_at": "2026-10-08T14:21:18.798Z"
+}

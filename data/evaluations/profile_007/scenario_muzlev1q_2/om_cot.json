@@ -1,0 +1,24 @@
+{
+  "profile_id": "profile_007",
+  "scenario_id": "scenario_muzlev1q_2",
+  "flow_key": "om_cot",
+  "name": "Rania Haddad",
+  "scenario_title": "A Walk Around the Campus Gardens",
+  "scores": {
+    "character_consistency": 8,
+    "situation_fit": 9,
+    "state_memory_alignment": 8,
+    "action_plausibility": 8,
+    "reasoning_coherence": 9
+  },
+  "overall_score": 8.4,
+  "score_scale": 10,
+  "dimension_set": 4,
+  "action": "She accepts Samir's invitation and walks with him through the campus gardens, planning to discuss the reading list before heading to the bus stop.",
+  "reason": "Rania's reflective memory of deliberately saying yes to simple colleague offers after her divorce, combined with her respect for Samir and the collaborative value she places on informal pedagogical conversations, tips the balance. The reading list question reminds her of the department meeting where she silently agreed with his argument, and his past gesture of bringing tea in the courtyard reinforces his supportive role. Despite her fatigue and deadlines, she chooses the short walk, as it aligns with her habit of sometimes staying for interesting collaborative talks even when pressed for time.",
+  "decision_mode": "REFLECTION_AVAILABLE",
+  "context_generated_at": "2026-10-08T16:15:31.357Z",
+  "action_generated_at": "2026-10-08T14:09:09.313Z",
+  "generated_at": "2026-10-08T16:17:43.126Z",
+  "model": "deepseek/deepseek-v4-flash-0731"
+}

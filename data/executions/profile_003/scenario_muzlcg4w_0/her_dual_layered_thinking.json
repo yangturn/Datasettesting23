@@ -1,0 +1,37 @@
+{
+  "flow_key": "her_dual_layered_thinking",
+  "profile_id": "profile_003",
+  "scenario_id": "scenario_muzlcg4w_0",
+  "name": "Dara Sok",
+  "scenario_title": "Invitation After the Shift",
+  "steps": {
+    "system_thinking": {
+      "output": {
+        "system_thinking": "Dara's immediate interpretation is that Jess is offering a spontaneous, low-pressure invitation after weeks of silent goodwill. The word 'diner' triggers a memory of Phnom Penh roadside coffee stalls, and Jess's open smile recalls the cheerful young dispatcher who used to approach Dara with route-change requests, softening Dara's usual resolve. Emotionally, Dara is weary but satisfied from the completed count, and the quiet of the dock makes the invitation feel like a rare, harmless opening. Their motivation is normally to preserve routine, but the warm memory and Jess's consistent friendliness tip them toward accepting this once. Interpersonally, Dara views Jess as a reliable, kind coworker rather than a threat. Their personality shows in a slow, deliberate consideration rather than an impulsive yes. In the next turn, Dara will pause, look from their clipboard to Jess, then set the clipboard down and give a small nod. They will reply with a short, unhurried acceptance—something like, 'I usually walk home, but ... yes. Coffee would be fine.' Dara's body language stays reserved: they tuck the clipboard under one arm and take a slight step toward Jess, allowing the invitation to break routine without making a display of it."
+      },
+      "generated_at": "2026-10-08T14:20:07.116Z",
+      "model": "deepseek/deepseek-v4-flash-0731"
+    },
+    "role_response": {
+      "output": {
+        "role_thinking": "The count is done, numbers all matched, and the quiet feels different tonight. Jess's keys are jangling, and her voice is easy, like she has nowhere to be but somewhere warmer. The word 'diner' pulls me back—not Vancouver, but the roadside stalls in Phnom Penh, the tin cups of sweet coffee, the truckers laughing before the sun came up. And her smile, open and unhurried, reminds me of that young dispatcher who always approached with a cheerful lilt, never asking for much, just a route change or a favor, and I never minded. I should say no. I always say no. The walk home, the porridge, the window—they are fixed, they are mine. But my shoulders are sore, and the dock is empty, and coffee is only coffee. It doesn't ask me to give up anything. Just the walk home, maybe once. It's only a conversation, not a change in the ledger.",
+        "action": "Dara pauses, looking from the clipboard to Jess's face, then back down at the numbers. They set the clipboard down on the pallet, tuck it under one arm, and give a small nod. 'I usually walk home, but ... yes. Coffee would be fine.' They take a slight step toward Jess, keeping their voice unhurried, the way they'd accept a route change from an old dispatcher."
+      },
+      "generated_at": "2026-10-08T14:20:15.411Z",
+      "model": "deepseek/deepseek-v4-flash-0731"
+    },
+    "decision": {
+      "output": {
+        "action": "Dara pauses, looking from the clipboard to Jess's face, then back down at the numbers. They set the clipboard down on the pallet, tuck it under one arm, and give a small nod. 'I usually walk home, but ... yes. Coffee would be fine.' They take a slight step toward Jess, keeping their voice unhurried.",
+        "explanation": "Dara's completed count and the unusual quiet of the dock made the moment feel different. The word 'diner' and Jess's easy smile evoked memories of pleasant roadside coffee stalls in Phnom Penh and a cheerful dispatcher whose requests Dara had never minded. Although Dara's fixed routine of walking home and reheating porridge pulled them to refuse, their sore shoulders, the empty dock, and the thought that coffee was only a conversation—not a change in the ledger—led them to pause, set down the clipboard, and accept with a small nod and an unhurried voice."
+      },
+      "generated_at": "2026-10-08T14:20:34.665Z",
+      "model": "deepseek/deepseek-v4-flash-0731"
+    }
+  },
+  "scenario_generated_at": "2026-10-08T13:47:29.072Z",
+  "scenario_context_generated_at": "2026-10-08T13:48:01.044Z",
+  "description_generated_at": "2026-10-08T13:41:49.493Z",
+  "started_at": "2026-10-08T14:19:30.651Z",
+  "updated_at": "2026-10-08T14:20:34.665Z"
+}

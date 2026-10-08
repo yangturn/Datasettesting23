@@ -1,0 +1,37 @@
+{
+  "flow_key": "her_dual_layered_thinking",
+  "profile_id": "profile_009",
+  "scenario_id": "scenario_muzlh1zl_2",
+  "name": "Kim Min-jun",
+  "scenario_title": "Badminton Invitation",
+  "steps": {
+    "system_thinking": {
+      "output": {
+        "system_thinking": "In this turn, Min-jun's private thinking will swing between two poles: the habitual cost-benefit calculus that tells him Saturday evening is protected job-search time, and a quieter, human pull toward the game he loved and the casual social contact that has actually produced useful leads. The memory of the college semifinal with his roommate surfaces as a rare unalloyed pleasure, while the image of his father's end-of-workday phone calls reminds him what he swore not to repeat. Observably, he will continue the gentle rocking motion with Seo-yeon, glance down at her, then let his gaze drift to his phone tucked in his pocket—a visible gesture of checking whether he can afford the time. When he speaks to Mr. Park, he won't refuse or accept outright; he'll ask practical questions—when exactly and how long—to slot the event into his mental spreadsheet. His tone will be friendly but slightly hesitant, betraying the wish to say yes against the anxiety of losing an evening of applications. He may also reflexively frame it as a potential networking opportunity, then immediately undercut that rationalization by acknowledging he hasn't played in years. The turn ends with him saying he'll check and let Mr. Park know, a non-committal answer that protects his need for control while leaving the door open—and internally leaning toward going if the timing works before Seo-yeon's bedtime."
+      },
+      "generated_at": "2026-10-08T14:10:20.615Z",
+      "model": "deepseek/deepseek-v4-flash-0731"
+    },
+    "role_response": {
+      "output": {
+        "role_thinking": "Saturday evening. That's my application block—the open positions refresh Sunday morning, and I told myself I'd have two more drafts sent by then. But badminton... the semifinal with my roommate, the lights going out while we kept rallying. I haven't thought about that in years. And the last real lead I got was from a father at this very playground, not from the spreadsheet. Still, I can't just say yes without knowing what it costs. If it ends before Seo-yeon's bedtime and doesn't eat the whole block, maybe. A part of me wants to go, wants to feel like a person who plays a game for no reason. God, that's been rare lately. I'll ask him the details first—timing, duration—so I can decide properly.",
+        "action": "Min-jun rocks Seo-yeon gently, glancing down at her sleeping face before his gaze drifts to his phone in his pocket. He looks back at Mr. Park with a friendly but hesitant smile. \"That sounds nice, actually. What time does it start, and how long do people usually stay? I want to make sure it fits before Seo-yeon's bedtime. I haven't played since college, so I'd be rusty—but I've been meaning to get out a bit more.\" He pauses, rubbing his thumb along the carrier strap. \"I'll check my schedule and let you know by the end of the week, if that's all right.\""
+      },
+      "generated_at": "2026-10-08T14:10:30.896Z",
+      "model": "deepseek/deepseek-v4-flash-0731"
+    },
+    "decision": {
+      "output": {
+        "action": "Min-jun rocks Seo-yeon gently, glances down at her sleeping face, then his gaze drifts to his phone in his pocket. He looks back at Mr. Park with a friendly but hesitant smile and says, \"That sounds nice, actually. What time does it start, and how long do people usually stay? I want to make sure it fits before Seo-yeon's bedtime. I haven't played since college, so I'd be rusty—but I've been meaning to get out a bit more.\" He pauses, rubbing his thumb along the carrier strap, and adds, \"I'll check my schedule and let you know by the end of the week, if that's all right.\"",
+        "explanation": "Min-jun's Saturday evening was his application block, and he had planned to send two more job drafts. But badminton reminded him of a college semifinal with his roommate, and he recalled that his best job lead had come from a casual playground conversation, not his spreadsheet. He wanted to go and feel like someone who plays for no reason, but he needed to assess the cost first. So he asked Mr. Park about the start time and duration to see if it would end before Seo-yeon's bedtime and not consume his whole block, and said he would check his schedule before committing."
+      },
+      "generated_at": "2026-10-08T14:10:54.762Z",
+      "model": "deepseek/deepseek-v4-flash-0731"
+    }
+  },
+  "scenario_generated_at": "2026-10-08T13:51:04.017Z",
+  "scenario_context_generated_at": "2026-10-08T13:51:40.883Z",
+  "description_generated_at": "2026-10-08T13:42:02.480Z",
+  "started_at": "2026-10-08T14:10:03.125Z",
+  "updated_at": "2026-10-08T14:10:54.762Z"
+}

@@ -1,0 +1,50 @@
+{
+  "flow_key": "full_flow_v2",
+  "profile_id": "profile_001",
+  "scenario_id": "scenario_muzle45n_2",
+  "name": "Aminata Diallo",
+  "scenario_title": "An Invitation at the Gate",
+  "steps": {
+    "attributes": {
+      "output": {
+        "values_culture_and_background": "Values independence and self-reliance, having chosen to learn a trade that would make her independent. Values education and diligent self-improvement, attending a plastering trade school and deliberately reviewing her work. Values financial prudence and security, refusing credit and keeping savings hidden after witnessing a bank collapse. Takes responsibility for her younger sister's school supplies. Formative background includes a farming village, a failed harvest, and her mother's encouragement for her training.",
+        "roles_and_commitments": "Apprentice plasterer at a government-run trade school; porridge vendor at a construction site; provider of school supplies for her younger sister.",
+        "capabilities_and_constraints": "Skilled in plastering with a practiced technique; capable of running a small cash business, including precise measuring and refusing credit; uses a secondhand cellphone to photograph and review her work; does not trust banks and keeps savings in a hidden tin box; has limited financial resources and lives in a cramped shared room.",
+        "personality_and_response_style": "Cautious and guarded in speech and personal disclosure, speaking in short, measured sentences and never revealing her savings or family matters. Methodical and patient, observing others closely and learning from her mistakes. Self-disciplined and improvement-focused, practicing regularly and noting areas to correct. Polite but firm in business dealings, smiling while refusing credit. Kind and helpful when it does not risk her financial security, sharing food with a stray dog and helping a roommate."
+      },
+      "generated_at": "2026-10-08T14:04:49.148Z",
+      "model": "deepseek/deepseek-v4-flash-0731"
+    },
+    "consolidate": {
+      "output": {
+        "initial_context": "RELEVANT CHARACTER BACKGROUND\n\nAminata Diallo is a young woman from a farming village who left two years ago after a failed harvest. Her eldest uncle had intended for her to go to the city to marry, but she convinced her mother to let her learn a trade; her mother had once seen a woman plastering walls and Aminata said she could do that too. She now works as both a porridge vendor and an apprentice plasterer.\n\nEvery morning she wakes at 4:30, prepares millet porridge, and sells it at a construction site gate. She is careful with money, never gives credit even to foremen, and keeps her savings in a tin box hidden under her mattress because she does not trust banks—she witnessed a bank collapse when she was twelve and saw a neighbor lose her funeral savings. She sends a portion of her earnings to pay for her younger sister's school supplies back home.\n\nShe attends a government-run trade school where she studies plastering, practicing diligently and photographing her work with a secondhand cellphone to review her technique. She keeps a folder labeled \"walls\" and makes notes and sketches to correct imperfections. She is methodical and patient, observing instructors and peers closely—Serge, learning plumbing, and Mariam, learning tiling, share her cramped rented room. She helps Mariam with heavy burdens and occasionally shares her porridge with a stray dog, but she is guarded with her words and never reveals her savings or family circumstances.\n\nShe values punctuality and self-discipline; she has never missed a class since enrollment and usually leaves the construction site as soon as her pot is empty, following a fixed route to school. When workers have offered her gifts or invitations in the past, she has politely declined and moved on. She speaks in short, measured sentences and is cautious in personal relationships. She is polite but firm in business, smiling while refusing credit.\n\nShe knows the young mason's helper only by sight and a nod; he sometimes buys porridge on busy mornings. She has not exchanged more than greetings with him and knows only that he is friendly with other workers.\n\nOBJECTIVE SITUATION\n\nAminata is packing her empty porridge pot at the construction site gate. A young mason's helper steps closer, holding out a small paper bag of roasted groundnuts. He says, \"There's a new tea stall by the market, just ten minutes away. I have a break now—come with me before your class.\" The afternoon sun is hot. Her trade school starts in under an hour. He waits, smiling, while she adjusts the pot on her head.\n\nPRE-APPRAISAL STATE AND ACCESSIBLE MEMORIES\n\nShe is tired from waking at 4:30 and has been standing in the hot sun since early morning. Her cloth pouch of coins is heavy, and she wants a cool drink before class. She calculates that a detour to the tea stall would leave her only a short walk to school. The sight of the groundnuts reminds her of the roasted peanuts her mother packed for her as a child in the village. The tea stall at the market is something she passed yesterday on her way to school, and she noticed its new sign."
+      },
+      "generated_at": "2026-10-08T14:05:24.137Z",
+      "model": "deepseek/deepseek-v4-flash-0731"
+    },
+    "appraisal": {
+      "output": {
+        "initial_interpretation": "He wants her to go with him to the new tea stall, and he brought groundnuts, so it feels like a friendly invitation meant to get her to say yes.",
+        "initial_emotional_reaction": "She feels a tired, hot ache for a cool drink, and the roasted groundnuts bring a brief warm pang of her mother, but she also feels wary and a little pressured because he is waiting for an answer.",
+        "activated_concerns": "Her class starts in under an hour, and she has never missed one; she also guards herself with people she barely knows and does not accept gifts or invitations from workers, yet the heat and the memory of her mother make the tea stall tempting.",
+        "automatic_theory_of_mind": "His smile reads as if he expects her to accept, and he probably does not realize she is on a strict schedule; he seems genuinely friendly, but she cannot tell whether he wants more than just a quick drink.",
+        "initial_action_tendency": "Her first impulse is to politely decline and walk to school, but she lingers for a second, tempted by the thought of sitting down for a cool drink before class."
+      },
+      "generated_at": "2026-10-08T14:05:43.239Z",
+      "model": "deepseek/deepseek-v4-flash-0731"
+    },
+    "decision": {
+      "output": {
+        "action": "Aminata gives a small polite smile, shifts the pot on her head, and shakes her head. She says, \"Thank you, but I must go to class now.\" Then she turns and begins walking toward the school without taking the groundnuts.",
+        "explanation": "Aminata's immediate impulse is to decline and walk to school, even though the heat and the roasted groundnuts briefly tempt her with the thought of a cool drink and a memory of her mother. Her strict habit of never missing class, her wariness of accepting gifts or invitations from workers she barely knows, and her sense of being pressured by his waiting smile all reinforce her polite refusal. The hesitation in her pause reflects the momentary temptation, but her disciplined routine and guarded nature move her to decline firmly and leave."
+      },
+      "generated_at": "2026-10-08T14:05:50.269Z",
+      "model": "deepseek/deepseek-v4-flash-0731"
+    }
+  },
+  "scenario_generated_at": "2026-10-08T13:48:46.859Z",
+  "scenario_context_generated_at": "2026-10-08T13:49:10.572Z",
+  "description_generated_at": "2026-10-08T13:41:57.136Z",
+  "started_at": "2026-10-08T14:04:09.894Z",
+  "updated_at": "2026-10-08T14:05:50.269Z"
+}

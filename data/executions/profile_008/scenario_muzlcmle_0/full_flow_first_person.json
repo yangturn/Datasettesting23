@@ -1,0 +1,62 @@
+{
+  "flow_key": "full_flow_first_person",
+  "profile_id": "profile_008",
+  "scenario_id": "scenario_muzlcmle_0",
+  "name": "Sasha Kovalenko",
+  "scenario_title": "Grandmother's Birthday Dinner",
+  "steps": {
+    "attributes": {
+      "output": {
+        "values_culture_and_background": "Identifies as non-binary. Values precision and accuracy in professional work, particularly legal detail and due diligence. Treats inherited wealth as a sacred obligation to preserve for the next generation and invests in Ukrainian war bonds. Internalized a strong work ethic from a family-founded legal practice and from their grandfather’s influence.",
+        "roles_and_commitments": "Attorney at Kovalenko & Associates, the law firm founded by their grandfather; responsible for reviewing client files and overseeing junior associates. Steward of their grandfather’s trust fund, committed to managing it for the next generation.",
+        "capabilities_and_constraints": "Has extensive legal expertise, including knowledge of precedent citations and due-diligence procedures, and can cite the recent gender-recognition ruling. Has a stiff right leg and slight limp from a femur fracture, requiring a cane on stairs and limiting physical mobility.",
+        "personality_and_response_style": "Calm and composed on the surface, with a patient, legalistic communication style when correcting pronoun misassumptions. Diligent and persistent, continuing prescribed exercises and work despite pain and medical advice. Feels anxiety that surfaces as a tight jaw but suppresses it to maintain control. Relies on methodical problem-solving to feel in control and has difficulty allowing themselves true rest."
+      },
+      "generated_at": "2026-10-08T14:23:32.363Z",
+      "model": "deepseek/deepseek-v4-flash-0731"
+    },
+    "consolidate": {
+      "output": {
+        "initial_context": "RELEVANT CHARACTER BACKGROUND\n\nSasha Kovalenko is a non-binary attorney at Kovalenko & Associates, the Lviv law firm founded by their grandfather. They spent decades refining legal due-diligence checklists and reviewing client files, and they are responsible for supervising junior associates. They taught history at a university in Kyiv for a decade before their grandfather, a stern man who witnessed Soviet crackdowns and later defended dissidents, pushed them toward the bar. The grandfather's trust fund would allow Sasha to retire, but Sasha treats the principal as a sacred obligation to preserve for the next generation and invests in Ukrainian war bonds.\n\nSasha values precision and accuracy. They carry a patient, legalistic communication style and, in professional settings, have corrected pronoun misassumptions by citing the recent gender-recognition court ruling. In one interaction with a client who mispronounced them, Sasha gave a brief correction and continued the negotiation. Their non-binary status is rarely discussed in the firm's corridors, but Sasha corrects younger colleagues who assume their pronouns without irritation—calmly and with matter-of-fact precision. At earlier family gatherings, Sasha has allowed gendered terms to pass to avoid a scene and later discussed the matter privately with the host.\n\nSasha is recovering from a bicycle accident that fractured their femur and bruised their ribs. Their right leg remains stiff, they have a slight limp, and they keep a cane for stairs. A doctor instructed them to rest for eight weeks without work, but Sasha continues reviewing documents and performing their physical-therapy routine. They record each exercise in a hardcover ledger with columns for repetitions, pain level, and assessment. Their diligence persists despite pain and medical advice. Anxiety surfaces as a tight jaw, but Sasha usually keeps a calm and composed surface. They rely on methodical problem-solving to feel in control and have difficulty allowing themselves genuine rest.\n\nOksana is Sasha's close friend from university and has repeatedly invited Sasha to family events, quietly supporting their identity. Oksana's grandmother, a traditional host who follows old Ukrainian customs, met Sasha once at Oksana's engagement party and used feminine terms without prompting. Sasha regards the grandmother as an elder with sincere hospitality and polite respect.\n\nOBJECTIVE SITUATION\n\nSasha arrives at the grandmother's 80th birthday dinner in Lviv at Oksana's invitation. The grandmother has arranged the table with men and women seated apart and has been greeting each guest with gendered terms. Seeing Sasha in a tailored blazer, she smiles, gestures toward the women's side, and addresses Sasha as 'donka.' Oksana stands nearby, looking anxious; she is aware of Sasha's non-binary identity but is uncertain how to intervene. Sasha has not yet responded.\n\nPRE-APPRAISAL STATE AND ACCESSIBLE MEMORIES\n\nSasha's right leg is tired from the morning stretching routine, and they are leaning on the cane more than usual. Their jaw is slightly tight from the long walk to the restaurant, but they are otherwise composed. They feel a lingering worry about an undelivered client file but have resolved to stay present for the evening.\n\nThe word 'donka' brings to mind a deposition in which a junior associate called Sasha 'miss' and Sasha made a one-sentence correction. The grandmother's gesture toward the women's side echoes a birthday dinner two years ago, when an aunt directed Sasha to sit with the women."
+      },
+      "generated_at": "2026-10-08T14:24:25.627Z",
+      "model": "deepseek/deepseek-v4-flash-0731"
+    },
+    "appraisal": {
+      "output": {
+        "initial_interpretation": "The grandmother is greeting me as a daughter and pointing me to the women's side, so she reads me as a woman in her traditional frame. It's the same pattern as the engagement party and that earlier birthday dinner.",
+        "initial_emotional_reaction": "My jaw tightens, and I feel a familiar flat weariness; the pain in my leg and the effort of the walk make the moment heavier, but I'm not angry at her.",
+        "activated_concerns": "I don't want to make a scene at an elder's birthday, and I respect her hospitality, but being put with the women erases who I am and echoes how I've let it pass before. I also care about Oksana and don't want her to feel caught in the middle.",
+        "automatic_theory_of_mind": "Oksana looks anxious and uncertain; I take that as her wanting to help but not knowing how to intervene without upsetting her grandmother. The grandmother probably has no ill intent—just old customs—but she assumes I'm a woman.",
+        "initial_action_tendency": "My first impulse is to stay composed, offer a polite smile, and make a brief, calm correction or gesture that signals I'm not going to the women's side, without turning it into a confrontation."
+      },
+      "generated_at": "2026-10-08T14:24:32.202Z",
+      "model": "deepseek/deepseek-v4-flash-0731"
+    },
+    "reappraisal": {
+      "output": {
+        "initial_tendency": "My first impulse is to stay composed, offer a polite smile, and make a brief, calm correction or gesture that signals I'm not going to the women's side, without turning it into a confrontation.",
+        "reflective_update": "As I stand here, the weight of my grandfather's words settles on me. He taught me never to shame an elder in front of guests—that would be cruel and disrespectful. But he also lived by the belief that silence lets wrong assumptions fester. I've let 'donka' and being waved to the women's side slide before, and each time it only cemented the idea that I'm someone I'm not. This isn't about winning a debate or embarrassing anyone. It's about being honest in a way that doesn't wound. I think of the times I corrected a junior associate or a client with one flat sentence—most took it in stride, and the conversation moved on. Some didn't, but I didn't set out to humiliate them. I can do that here. Oksana is anxious, and I don't want her to feel caught between me and her grandmother. But if I stay silent and shuffle to the women's table, I'm not just making myself invisible—I'm telling Oksana and everyone else that my identity is less important than a moment's comfort. My leg aches, my jaw is tight, but I can manage a few calm words. The real question is whether I can make this correction without turning it into a scene. I think I can—if I smile, keep my voice low, and don't over-explain. Sitting with the women would be a lie. I'd rather make a gentle, brief stand and stay where I belong.",
+        "change_from_initial": "STRENGTHENED",
+        "reconsidered_interpretation": "This isn't just an old woman's slip of custom—it's a moment where my silence would be as loud as any correction. The grandmother probably means no harm, but her assumption is the same assumption I've let pass before because I didn't want to make waves. After thinking about it, I realize that not making a scene cannot mean erasing myself. I can respect her hospitality and still be clear about who I am. My grandfather's wisdom isn't against that; it's against cruelty. A polite, matter-of-fact correction isn't cruelty. So I see this as a chance to uphold my integrity without disrupting her birthday, and that makes me more certain of what I need to do.",
+        "motivational_conflict": "The tension is still there: I don't want to cause a fuss for Oksana's sake or hurt the grandmother's feelings, and I don't want to pretend to be someone I'm not. My fatigue and pain make me want to just go along to save energy, but that feels like betrayal to myself. The conflict isn't about whether to correct—I know I should—but about how to do it so that it lands gently enough not to humiliate her while still being unmistakable. I'm not fully sure I can thread that needle, but I'm not willing to stay silent.",
+        "revised_action_tendency": "I'll stay put for a moment longer, give a polite smile, and then say something calm and brief—maybe that I'm not a daughter and I'd rather sit with the men or somewhere neutral—while making clear I'm not going to the women's side. I won't raise my voice or lecture; I'll just state it matter-of-factly and then move toward the other seats, trusting that the moment will pass without a real confrontation."
+      },
+      "generated_at": "2026-10-08T14:24:56.793Z",
+      "model": "deepseek/deepseek-v4-flash-0731"
+    },
+    "decision": {
+      "output": {
+        "action": "Sasha remains by the cane for a beat, returns the grandmother's smile, and says in a low, even tone, \"I'm not your daughter, but thank you for the welcome. I'll sit with the men tonight.\" Then Sasha gives a slight nod and begins walking toward the men's side of the table.",
+        "explanation": "Sasha's initial impulse was to stay composed and signal noncompliance without confrontation. Reflection strengthened that impulse: recalling their grandfather's teaching not to shame an elder, but also that silence lets wrong assumptions fester, and remembering prior occasions when letting 'donka' pass made them invisible, Sasha decided that a calm, matter-of-fact correction was not cruelty. The lingering wish to spare Oksana and the grandmother produced a gentle delivery—smile, low voice, no lecture—while the commitment to integrity required an unmistakable refusal to take the women's seat. This matches Sasha's legalistic one-sentence corrective style and their care for elders, so after a brief pause they state the correction and move to the men's side."
+      },
+      "generated_at": "2026-10-08T14:25:11.659Z",
+      "model": "deepseek/deepseek-v4-flash-0731"
+    }
+  },
+  "scenario_generated_at": "2026-10-08T13:47:37.442Z",
+  "scenario_context_generated_at": "2026-10-08T13:47:57.377Z",
+  "description_generated_at": "2026-10-08T13:41:54.618Z",
+  "started_at": "2026-10-08T14:22:54.546Z",
+  "updated_at": "2026-10-08T14:25:11.659Z"
+}

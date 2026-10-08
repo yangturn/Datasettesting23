@@ -1,0 +1,22 @@
+{
+  "flow_key": "om_cot",
+  "profile_id": "profile_003",
+  "scenario_id": "scenario_muzle9vo_2",
+  "name": "Dara Sok",
+  "scenario_title": "A Sunday Invitation to the Community",
+  "steps": {
+    "decision": {
+      "output": {
+        "action": "Dara politely declines the clerk's invitation, thanks him for the suggestion, buys the ginger, and continues their usual walk home to reheat the porridge.",
+        "explanation": "Dara has a consistent tendency to decline social gatherings in Vancouver and keep to their fixed Sunday routine. Their current tiredness and craving for the stillness of home reinforce this, while memories of sitting silent at communal events and keeping their inner life private make the unfamiliar group unappealing. So they maintain their familiar pattern."
+      },
+      "generated_at": "2026-10-08T14:05:57.797Z",
+      "model": "deepseek/deepseek-v4-flash-0731"
+    }
+  },
+  "scenario_generated_at": "2026-10-08T13:48:54.276Z",
+  "scenario_context_generated_at": "2026-10-08T13:49:24.553Z",
+  "description_generated_at": "2026-10-08T13:41:49.493Z",
+  "started_at": "2026-10-08T14:05:50.277Z",
+  "updated_at": "2026-10-08T14:05:57.797Z"
+}

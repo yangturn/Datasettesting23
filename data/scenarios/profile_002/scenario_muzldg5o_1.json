@@ -1,0 +1,21 @@
+{
+  "id": "scenario_muzldg5o_1",
+  "profile_id": "profile_002",
+  "name": "Ingrid Solberg",
+  "headline": "34, owner of a smoked-fish company, Bergen",
+  "title": "Evening Sail Invitation",
+  "situation_type": "TIME_SENSITIVE",
+  "life_domain": "ROMANTIC",
+  "situation": "At 9 PM, Ingrid is in the processing loft, triple-checking the brine concentrations for tomorrow's batch, when her partner Kjersti calls. Kjersti is at the harbor, about to take her small boat out for a sunset cruise and has room for one more. She asks Ingrid to join her for the next hour. Ingrid still has three trays of salmon that need monitoring, and the night crew is short-staffed. Kjersti's boat leaves in ten minutes. Ingrid must decide now whether to set down her clipboard and run to the harbor, or stay and finish the brine check alone.",
+  "context": {
+    "relationship_profiles": "Kjersti is Ingrid's partner of six years, the only person who sees her away from the smokehouse; she knows the production calendar by heart and does not take refusals personally.\nKjersti owns the twenty-foot boat moored near the old warehouse, and they have sailed together several times, though Ingrid usually brings a notebook.\nThere is a quiet pattern: Ingrid's father and the loft come first, and Kjersti accepts this while still hoping for an hour alone with her.",
+    "tendencies": "On nights before a critical batch, Ingrid has repeatedly stayed late to recheck brine herself, leaving the night crew only routine monitoring.\nWith Kjersti's last-minute invitations, she has joined when a trusted worker was on shift and declined when she felt the batch was at risk.\nWhen she does step away from the loft, she sets a timer and returns early.",
+    "current_state": "She has been on her feet since before dawn and feels the day in her lower back, with a salt haze making her eyes sting.\nShe ate a cold potato patty over the sink and has had three cups of coffee since dinner.\nThis week's supplier shipment arrived with a half-percent brine deviation, so she has been re-measuring everything today.",
+    "immediate_memories": "Kjersti's 'sunset cruise' brings back a July evening when the light on the tidal flats looked just as it did during Ingrid's childhood summers.\nThe boat engine's hum over the speaker reminds her of standing on her father's fjord cruiser and listening for the prop's pitch.\nThe clipboard's brine chart calls up her grandmother's habit of marking doubtful barrels with chalk.",
+    "reflective_memories": "She remembers her father's saying that fish is patient but salt is not, and that he always checked the barrels twice before leaving the dock.\nOver fifteen years in the trade, she has seen a single rushed batch cost a producer a national title.\nShe also remembers a spring evening when she skipped a sail with Kjersti to adjust a smokehouse damper, and Kjersti later joked that the damper could have waited until morning."
+  },
+  "context_generated_at": "2026-10-08T13:48:57.796Z",
+  "description_generated_at": "2026-10-08T13:42:27.501Z",
+  "generated_at": "2026-10-08T13:48:15.756Z",
+  "model": "deepseek/deepseek-v4-flash-0731"
+}

@@ -1,0 +1,24 @@
+{
+  "profile_id": "profile_010",
+  "scenario_id": "scenario_muzlijor_3",
+  "flow_key": "full_flow_first_person",
+  "name": "Ciarán Walsh",
+  "scenario_title": "Sister's Quick Stop",
+  "scores": {
+    "character_consistency": 7,
+    "situation_fit": 8,
+    "state_memory_alignment": 8,
+    "action_plausibility": 8,
+    "reasoning_coherence": 8
+  },
+  "overall_score": 7.8,
+  "score_scale": 10,
+  "dimension_set": 4,
+  "action": "Ciarán sets down the soldering iron, wipes his hands on a rag, and says, \"Aye, I can do that. Give me ten minutes—I'm in the middle of a job.\"",
+  "reason": "Aoife's unexpected call while he is deep in a delicate solder job pulls Ciarán out of his routine and makes him feel exposed, sweaty, and unready. The memory of her waiting at the station before stirs guilt and a desire not to disappoint her, but his dislike of being seen looking scrappy and his need to maintain his self-contained rhythm make him stall. His initial action tendency is to ask for ten minutes so he can wash his face and make the visit seem less disruptive, which he expresses by agreeing to meet her but requesting that short delay.",
+  "decision_mode": "IMMEDIATE",
+  "context_generated_at": "2026-10-08T15:49:16.031Z",
+  "action_generated_at": "2026-10-08T14:05:43.329Z",
+  "generated_at": "2026-10-08T15:50:52.752Z",
+  "model": "deepseek/deepseek-v4-flash-0731"
+}

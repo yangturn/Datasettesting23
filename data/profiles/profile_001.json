@@ -1,0 +1,17 @@
+{
+  "name": "Aminata Diallo",
+  "headline": "19, apprentice plasterer, Dakar",
+  "description": "Aminata sells breakfast porridge at a construction site in the mornings and attends a government-run trade school in the afternoon. She is learning plastering and takes cellphone photos of every sample wall so she can compare her trowel strokes later. She rents a single room with two other apprentices and saves her wages in cash because she does not trust banks.",
+  "id": "profile_001",
+  "seed": {
+    "region": "West Africa",
+    "gender": "a woman",
+    "age_band": "late teens",
+    "socioeconomic": "poor, with unstable income",
+    "life_stage": "still studying or training",
+    "domain": "manual trades or construction",
+    "temperament": "cautious and methodical"
+  },
+  "generated_at": "2026-10-08T13:41:00.586Z",
+  "model": "deepseek/deepseek-v4-flash-0731"
+}

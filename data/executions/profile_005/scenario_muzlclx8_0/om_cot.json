@@ -1,0 +1,22 @@
+{
+  "flow_key": "om_cot",
+  "profile_id": "profile_005",
+  "scenario_id": "scenario_muzlclx8_0",
+  "name": "Adriano Santos",
+  "scenario_title": "Sunday Samba Invitation",
+  "steps": {
+    "decision": {
+      "output": {
+        "action": "He sets down the drumhead and tells Maria he'll bring his tools over Sunday morning to check and tune the surdo.",
+        "explanation": "Adriano's established pattern is to help individuals with concrete repairs, as he did for the widow and baker, while refusing organized-group invitations. Maria is an individual asking for a specific repair, and he recalls successfully fixing a surdo before, which reinforces his willingness. Though he distrusts the residents' association, this request is personal, so he agrees to help her directly without committing to the organization."
+      },
+      "generated_at": "2026-10-08T14:21:31.521Z",
+      "model": "deepseek/deepseek-v4-flash-0731"
+    }
+  },
+  "scenario_generated_at": "2026-10-08T13:47:36.572Z",
+  "scenario_context_generated_at": "2026-10-08T13:47:50.467Z",
+  "description_generated_at": "2026-10-08T13:41:52.144Z",
+  "started_at": "2026-10-08T14:21:09.420Z",
+  "updated_at": "2026-10-08T14:21:31.521Z"
+}

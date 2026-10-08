@@ -1,0 +1,24 @@
+{
+  "profile_id": "profile_001",
+  "scenario_id": "scenario_muzlexr1_3",
+  "flow_key": "direct_zero_shot",
+  "name": "Aminata Diallo",
+  "scenario_title": "Evening Invitation",
+  "scores": {
+    "character_consistency": 9,
+    "situation_fit": 9,
+    "state_memory_alignment": 9,
+    "action_plausibility": 9,
+    "reasoning_coherence": 6
+  },
+  "overall_score": 8.4,
+  "score_scale": 10,
+  "dimension_set": 4,
+  "action": "She politely declines the card game, stays on her mattress, and zooms into the photo of the wall's flaw near the window, then sketches a correction note in her notebook.",
+  "reason": "She has declined the past three card invitations to review her photos, and her mother's story about a neighbor losing money from playing cards reinforces her caution, so she continues her established routine of reviewing and noting corrections.",
+  "decision_mode": "REFLECTION_AVAILABLE",
+  "context_generated_at": "2026-10-08T15:20:36.377Z",
+  "action_generated_at": "2026-10-08T13:57:42.581Z",
+  "generated_at": "2026-10-08T15:22:35.959Z",
+  "model": "deepseek/deepseek-v4-flash-0731"
+}

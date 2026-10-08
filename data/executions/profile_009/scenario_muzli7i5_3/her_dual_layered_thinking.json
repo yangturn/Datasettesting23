@@ -1,0 +1,37 @@
+{
+  "flow_key": "her_dual_layered_thinking",
+  "profile_id": "profile_009",
+  "scenario_id": "scenario_muzli7i5_3",
+  "name": "Kim Min-jun",
+  "scenario_title": "Interview Conflict",
+  "steps": {
+    "system_thinking": {
+      "output": {
+        "system_thinking": "Min-jun's private thinking starts from the concrete trigger: the recruiter's form email and the company name connect to the benefits page he circled three weeks ago, so the offer feels like a verified asset rather than a random shot. The second date immediately collides with Seo-yeon's vaccination, and the memory of his father missing vaccine appointments surfaces—along with his own earlier canceled assessment when Seo-yeon was sick. He is tired from a week of teething nights, but the quiet apartment gives him room to think methodically. His immediate interpretation is that this is a scheduling conflict he has to solve alone, because his wife is on a double shift and he does not want to add a problem to her day. He will briefly consider his mother-in-law, but the sigh he recalls from the last time she swapped shifts makes him reluctant, and he still treats her as a last resort. Then his established pattern takes over: when an interview clashes with Seo-yeon's needs, he asks to reschedule rather than accept the slot. He also remembers that mentioning childcare early has cost him one opportunity, so he will not mention Seo-yeon to the recruiter. His motivation is to protect his daughter's schedule without making himself look like a burden before the interview. He will decide to email the recruiter and request a one-day shift of the second day, framing it as a personal scheduling conflict and offering flexibility in return. Observable behavior: he rocks the sleeping carrier, rubs his eyes, reopens his calendar and spreadsheet to verify the date, then opens the reply window. He drafts and deletes a version or two, then settles on a short, neutral message. His tone is courteous but clinical—no over-explanation, no apology-heavy framing, just a clear ask and a professional willingness to accommodate. He will not call his mother-in-law yet, and he leaves the decision in his own hands rather than forwarding the problem to his wife."
+      },
+      "generated_at": "2026-10-08T14:03:30.702Z",
+      "model": "deepseek/deepseek-v4-flash-0731"
+    },
+    "role_response": {
+      "output": {
+        "role_thinking": "The email is from that company—the one I circled on the benefits page three weeks ago, extended parental leave, flexible hours. That felt like a real asset, something verifiable. But then I see the second date, and my stomach drops. Seo-yeon's vaccination. Red marker on the calendar, already booked, and my wife is on a double shift that day. She can't take her, and I'm not going to make her scramble for this. She's exhausted enough.\n\nMy father missed every one of my appointments. Work came first, always. I swore I'd be different, and I've already canceled one assessment when Seo-yeon was sick. The pattern's clear: clashes with her schedule, I move the interview. I did it last month.\n\nI could call my mother-in-law, but last time she swapped shifts for a doctor's visit, there was a sigh in her voice. She needs notice. This isn't notice. She's the last resort, not the first.\n\nI won't mention Seo-yeon to the recruiter. Last time I brought up parental leave early, the conversation just stopped. So I'll ask for a one-day shift, keep it clinical—a personal scheduling conflict, nothing more. Offer flexibility in return. If they really value flexibility, they'll understand. If they don't, I don't want that job anyway.\n\nI'm tired. Three-hour stretches all week because of her teeth. But this is a scheduling problem, and I can solve those. I'll just move the date.",
+        "action": "He rocks the carrier slowly as Seo-yeon's breathing evens out, then rubs his eyes with one hand. He reopens his calendar and the spreadsheet, confirming the vaccination date and the emailed test dates side by side. Satisfied, he opens the reply window and begins to type. He writes a few lines, deletes them, writes again, pauses. Finally he settles on a short message and presses send: 'Thank you for the invitation. The second day of the on-site test conflicts with a personal commitment I cannot move. Would it be possible to shift both days by one day, or move only the second day to the following Monday? I am happy to work around your schedule; the originally proposed dates are otherwise flexible for me. Best regards, Kim Min-jun.' He closes the laptop, glances at the red circle on the wall calendar, and lets out a slow breath."
+      },
+      "generated_at": "2026-10-08T14:03:52.981Z",
+      "model": "deepseek/deepseek-v4-flash-0731"
+    },
+    "decision": {
+      "output": {
+        "action": "Kim Min-jun rocks the carrier slowly as Seo-yeon’s breathing evens out, then rubs his eyes with one hand. He reopens his calendar and spreadsheet, confirming the vaccination date and the emailed test dates side by side. Satisfied, he opens the reply window and types, deletes, retypes, pauses, then sends a short message: 'Thank you for the invitation. The second day of the on-site test conflicts with a personal commitment I cannot move. Would it be possible to shift both days by one day, or move only the second day to the following Monday? I am happy to work around your schedule; the originally proposed dates are otherwise flexible for me. Best regards, Kim Min-jun.' He closes the laptop, glances at the red circle on the wall calendar, and lets out a slow breath.",
+        "explanation": "Min-jun recognized the company as the one whose extended parental leave and flexible hours he had circled on its benefits page three weeks ago and regarded as a verifiable asset. The second test date colliding with Seo-yeon’s vaccination triggered his determination that her schedule matter more than work, shaped by his father having missed his appointments and by his own previous decision to cancel an assessment when Seo-yeon was sick. Seeing that his wife was on a double shift that day and unwilling to make her scramble, he felt his mother-in-law was the last resort because she needed notice and had sighed when swapping shifts before. He also remembered that raising parental leave early in a prior process had made the conversation stop, so he deliberately avoided mentioning Seo-yeon to the recruiter. Exhausted from Seo-yeon’s teething, he framed the issue as a scheduling problem he could solve and asked the recruiter for a one-day shift framed as a personal commitment, offering flexibility in return while reasoning that if the company genuinely valued flexibility they would accommodate him, and if not he did not want the job anyway."
+      },
+      "generated_at": "2026-10-08T14:04:06.862Z",
+      "model": "deepseek/deepseek-v4-flash-0731"
+    }
+  },
+  "scenario_generated_at": "2026-10-08T13:51:57.821Z",
+  "scenario_context_generated_at": "2026-10-08T13:52:28.156Z",
+  "description_generated_at": "2026-10-08T13:42:02.480Z",
+  "started_at": "2026-10-08T14:02:44.130Z",
+  "updated_at": "2026-10-08T14:04:06.862Z"
+}

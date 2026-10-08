@@ -1,0 +1,62 @@
+{
+  "flow_key": "full_flow_first_person",
+  "profile_id": "profile_001",
+  "scenario_id": "scenario_muzldiwy_1",
+  "name": "Aminata Diallo",
+  "scenario_title": "Evening Tea Invitation",
+  "steps": {
+    "attributes": {
+      "output": {
+        "values_culture_and_background": "Values hard work and self-discipline; believes work must come before leisure. Holds that being independent and self-sufficient is important, and that saving money is essential for family and education. Distrusts banks due to a childhood experience with a bank collapse, preferring to keep money in her own hands.",
+        "roles_and_commitments": "Apprentice plasterer at a government trade school. Porridge vendor at a construction site. Responsible for paying her own school fees and sending money for her younger sister's school supplies back home.",
+        "capabilities_and_constraints": "Skilled in plastering and porridge making. Able to manage finances carefully by counting and saving cash. Constrained by a strict daily schedule starting at 4:30 a.m. and limited financial resources that require careful budgeting.",
+        "personality_and_response_style": "Methodical and patient, preferring to observe and learn before acting. Reserved and cautious in speech, guarding personal information. Self-disciplined, prioritizing study and practice over socializing; tends to decline social invitations in favor of work and rest."
+      },
+      "generated_at": "2026-10-08T14:11:10.668Z",
+      "model": "deepseek/deepseek-v4-flash-0731"
+    },
+    "consolidate": {
+      "output": {
+        "initial_context": "RELEVANT CHARACTER BACKGROUND\n\nAminata Diallo is a young woman who left her village two years ago after a failed harvest, when her eldest uncle suggested she go to the city to earn money for the family, intending marriage, but she instead convinced her mother to let her learn a trade. She now lives in a cramped rented room with two other apprentices, Serge (learning plumbing) and Mariam (learning tiling), and works six days a week. Each morning at 4:30, she boils millet porridge over a kerosene stove, walks to a construction site, and sells it to workers, never giving credit, counting coins carefully into a cloth pouch tied to her waist. In the afternoons she attends a government trade school to learn plastering, practicing on half-finished walls. She is responsible for paying her own school fees and sending money for her younger sister's school supplies back home. She values hard work and self-discipline, believing work must come before leisure, and prioritizes independence and self-sufficiency. She distrusts banks due to a childhood experience of a bank collapse and keeps her savings in a tin box hidden in a hole in her floor, counting them weekly and burning the record.\n\nShe is methodical and patient, preferring to observe others and learn before acting. She is reserved and cautious in speech, guarding personal information, and rarely talks about her family or savings. She is self-disciplined and prioritizes study and practice over socializing; she has almost always declined after-class gatherings with a polite excuse about needing rest or study, usually going straight home to eat and review photos. She once joined a market outing with her roommates but left early to practice a corner technique she had missed in class. She shares a room with Mariam, who is lighthearted and often jokes with her, and who has helped her carry heavy tile bags. Aminata appreciates this but keeps her distance, never revealing how much she saves or anything about her family. She also shares porridge occasionally with a stray dog and helps Mariam when needed, but she never confides in her.\n\nShe takes photos of her plastered walls with a secondhand cellphone, stores them in a folder labeled \"walls,\" and reviews them each evening, making mental notes and sketching in a notebook. She is careful with her budget and limited financial resources, constrained by a strict daily schedule that starts at 4:30 a.m. and requires balancing porridge selling, plastering practice, and studying.\n\nOBJECTIVE SITUATION\n\nAfter the plastering workshop ends, Aminata is at the gate of the trade school. Mariam approaches her and says that some apprentices are going to the tea stall near the market to celebrate finishing the week's walls. Mariam invites Aminata to join them, saying it won't be late and that she can still review her photos afterward.\n\nPRE-APPRAISAL STATE AND ACCESSIBLE MEMORIES\n\nAminata is physically tired from waking at 4:30, stirring porridge for hours, and plastering for two hours; her back and shoulders ache from the long strokes. She has not eaten since midday, so hunger is beginning to pull at her. The cloth pouch of coins is heavy against her waist, reminding her of the day's sales. At the gate, Mariam's voice recalls an evening two weeks ago when Mariam coaxed her into sharing a bowl of fried plantains near the market, and she stayed later than planned, feeling drowsy the next morning during plaster practice. The sight of the metal gate also brings back the last tea-stall outing when she paid for her own cup and then spent extra on a sweet she had not intended to buy."
+      },
+      "generated_at": "2026-10-08T14:11:42.071Z",
+      "model": "deepseek/deepseek-v4-flash-0731"
+    },
+    "appraisal": {
+      "output": {
+        "initial_interpretation": "Mariam's invitation feels like the same pull as the last time, another chance to linger near the market instead of going home to review my photos and rest.",
+        "initial_emotional_reaction": "I'm tired and hungry, and the idea of a warm cup and company tugs at me, but I also feel a flash of guilt and caution remembering how I stayed too long and spent extra on that sweet.",
+        "activated_concerns": "My savings are precious, meant for school fees and my sister's supplies, and I can't let a pleasant evening cost me money or a sharp mind tomorrow. I also don't want to seem ungrateful to Mariam, who has been kind to me.",
+        "automatic_theory_of_mind": "Mariam means well and honestly wants me to share the moment with the group, but I read her as not really sensing how tightly I must hold my budget and my time.",
+        "initial_action_tendency": "I feel the urge to give my usual polite excuse and head straight home, though a small part of me wishes I could just sit with them for a little while."
+      },
+      "generated_at": "2026-10-08T14:11:50.017Z",
+      "model": "deepseek/deepseek-v4-flash-0731"
+    },
+    "reappraisal": {
+      "output": {
+        "initial_tendency": "I feel the urge to give my usual polite excuse and head straight home, though a small part of me wishes I could just sit with them for a little while.",
+        "reflective_update": "Standing here at the gate, I feel the pull of that warm cup and easy laughter, but my father's example comes back to me—he always finished the millet harvest before joining any celebration, and I've held that same rule for myself: work first, rest later. I also remember my own quiet evenings looking at my wall photos, how those nights often showed up in better plaster the next practice, while the times I went out only left me tired and a little poorer. Last time I told myself one cup wouldn't hurt, and I ended up buying a sweet I hadn't planned for. If I join them, I risk spending coins from my pouch and waking up heavy tomorrow, missing the sharpness I need to practice. My hunger is real, but I can go home and eat my own porridge and still review my photos before bed. Mariam is kind and I don't want to seem ungrateful, but she doesn't know how tightly I hold my money or my hours. So I think the best response is still to give my polite excuse and head home, even though a small part of me lingers on the idea of sitting with them.",
+        "change_from_initial": "STRENGTHENED",
+        "reconsidered_interpretation": "I see this invitation not just as a friendly gesture but as another test of the rule I've been taught and chosen: work before pleasure. The tea stall is pleasant, but it pulls me away from what I've committed to. My memory of my father finishing the harvest before celebrating reminds me that my savings and my practice are the harvest I'm owed for, and every time I linger, I pay for it the next day. So while I still read Mariam's kindness as genuine, I also see more clearly that this is my chance to hold firm.",
+        "motivational_conflict": "The unresolved pull is still there—I want to feel part of the group and not push Mariam away, but my savings, my early mornings, and my need to improve all point the other way. I don't think Mariam would be angry if I declined, but I still hate the thought of disappointing her after she's helped me carry heavy tile bags. That tension between gratitude and my own discipline is real, but it doesn't shake what I know I need to do.",
+        "revised_action_tendency": "I feel I should give my polite excuse and head straight home, more firmly than before, despite the small wish to sit with them for a while."
+      },
+      "generated_at": "2026-10-08T14:12:06.853Z",
+      "model": "deepseek/deepseek-v4-flash-0731"
+    },
+    "decision": {
+      "output": {
+        "action": "Aminata gives a small, tired smile and says, \"Thank you, Mariam, but I need to get home and rest. I have an early morning again.\" She adjusts the pouch of coins at her waist, nods once to the group, and turns to walk out of the gate, heading toward her room without looking back.",
+        "explanation": "Aminata's initial tendency was to decline Mariam's invitation with her usual polite excuse, despite a flicker of desire to join. Reflection strengthened this tendency: her father's example of finishing work before celebrating, her memory of feeling tired and poorer after the last outing, and her commitment to her savings and next-day practice all reinforced her resolve. The unresolved tension between gratitude toward Mariam and her own discipline remains, but it does not alter her decision. Her final action reflects this strengthened resolve: she politely but firmly declines, cites the need to rest for her early morning, and physically leaves, consistent with her self-disciplined, frugal nature and her pattern of prioritizing practice and savings over socializing."
+      },
+      "generated_at": "2026-10-08T14:12:15.249Z",
+      "model": "deepseek/deepseek-v4-flash-0731"
+    }
+  },
+  "scenario_generated_at": "2026-10-08T13:48:19.330Z",
+  "scenario_context_generated_at": "2026-10-08T13:48:41.030Z",
+  "description_generated_at": "2026-10-08T13:41:57.136Z",
+  "started_at": "2026-10-08T14:11:01.487Z",
+  "updated_at": "2026-10-08T14:12:15.249Z"
+}

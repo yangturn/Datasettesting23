@@ -1,0 +1,24 @@
+{
+  "profile_id": "profile_009",
+  "scenario_id": "scenario_muzli7i5_3",
+  "flow_key": "full_flow_first_person",
+  "name": "Kim Min-jun",
+  "scenario_title": "Interview Conflict",
+  "scores": {
+    "character_consistency": 7,
+    "situation_fit": 7,
+    "state_memory_alignment": 7,
+    "action_plausibility": 7,
+    "reasoning_coherence": 8
+  },
+  "overall_score": 7.2,
+  "score_scale": 10,
+  "dimension_set": 4,
+  "action": "Kim Min-jun opens his email client and writes a concise, professional message to the recruiter asking whether the second day of the on-site coding test could be moved by one day due to a scheduling conflict with his daughter's vaccination appointment. He types, \"I have a scheduling conflict with my daughter's vaccination appointment that day; would it be possible to shift the second day by one day?\" He reviews the wording once, keeps it factual, and clicks send.",
+  "reason": "Kim Min-jun's initial impulse was to draft an email asking the recruiter to shift the test by a day, but he paused out of fear of losing the opportunity and uncertainty about how to word it. Reflective reappraisal strengthened that impulse: it reframed the collision as an ordinary scheduling conflict rather than a cosmic test, and made salient his long-standing promise to be present for Seo-yeon in ways his absent father was not. He weighed his spreadsheet-driven hope in this company against the fixed vaccination schedule and his mother-in-law's already-strained goodwill, and he concluded that asking for one day would genuinely test the company's advertised flexibility—something he distrusts after his startup's collapse taught him that mission talk is cheap. The financial pressure of the 282,000-won monthly deficit and the possibility that the recruiter might withdraw remained competing influences, but he decided not to preemptively choose the fallback of having his mother-in-law cover the appointment. Change from initial is STRENGTHENED: the character moved from a paused drafting impulse to firmly sending a concise, professional shift request. The final action matches his revised tendency to ask for the one-day shift while keeping the email unemotional and framed strictly as a scheduling conflict, carrying the residual nervousness only in his brief review of the wording before sending.",
+  "decision_mode": "REFLECTION_AVAILABLE",
+  "context_generated_at": "2026-10-08T15:44:34.027Z",
+  "action_generated_at": "2026-10-08T14:04:53.055Z",
+  "generated_at": "2026-10-08T15:46:04.273Z",
+  "model": "deepseek/deepseek-v4-flash-0731"
+}

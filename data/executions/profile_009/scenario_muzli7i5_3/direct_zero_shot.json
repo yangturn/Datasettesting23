@@ -1,0 +1,22 @@
+{
+  "flow_key": "direct_zero_shot",
+  "profile_id": "profile_009",
+  "scenario_id": "scenario_muzli7i5_3",
+  "name": "Kim Min-jun",
+  "scenario_title": "Interview Conflict",
+  "steps": {
+    "decision": {
+      "output": {
+        "action": "He emails the recruiter asking to move the two-day on-site coding test by one day, citing a prior commitment without mentioning childcare.",
+        "explanation": "He has a pattern of rescheduling interviews when they clash with Seo-yeon's needs, and he avoids raising childcare early in recruitment, so he will request the shift while concealing the reason."
+      },
+      "generated_at": "2026-10-08T14:03:08.627Z",
+      "model": "deepseek/deepseek-v4-flash-0731"
+    }
+  },
+  "scenario_generated_at": "2026-10-08T13:51:57.821Z",
+  "scenario_context_generated_at": "2026-10-08T13:52:28.156Z",
+  "description_generated_at": "2026-10-08T13:42:02.480Z",
+  "started_at": "2026-10-08T14:03:00.051Z",
+  "updated_at": "2026-10-08T14:03:08.627Z"
+}

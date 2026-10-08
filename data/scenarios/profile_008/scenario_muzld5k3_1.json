@@ -1,0 +1,21 @@
+{
+  "id": "scenario_muzld5k3_1",
+  "profile_id": "profile_008",
+  "name": "Sasha Kovalenko",
+  "headline": "54, lawyer on medical leave, trust fund manager, Lviv",
+  "title": "An Evening Invitation",
+  "situation_type": "NORMAL",
+  "life_domain": "ROMANTIC",
+  "situation": "Sasha's physical therapist, Marta, stops by after her last appointment on Friday, carrying a bottle of homemade cherry liqueur. She mentions a small concert at the Lviv Philharmonic that evening—a string quartet playing Ukrainian folk arrangements—and says she has an extra ticket. Her hand rests on the edge of the coffee table, near the ledger with today's 'improved' entry. Sasha's phone buzzes with a client email about a missing signature, and the stack of files waits on the sofa. Marta adds, 'You could use a break. I'll even help you carry that cane if you want.'",
+  "context": {
+    "relationship_profiles": "Marta has been Sasha's physical therapist for about four months, with a warm but firm rapport; she has dropped off homemade preserves before and often lingers after sessions to chat. She knows about Sasha's workload and has occasionally joked about the cane staying by the door. Sasha appreciates her directness and trusts her assessments, though they sometimes hide how much they push themselves.",
+    "tendencies": "When recovering from injuries, Sasha consistently returns to client files within an hour of any therapy session, redlining drafts even when told to rest. On previous weekday evenings, Sasha has declined social invitations from colleagues and neighbors, citing pending work, after initially saying they might come. After noting an improvement in the ledger, Sasha tends to double the next day's weight-bearing repetitions despite the therapist's caution.",
+    "current_state": "Sasha's right leg is stiff but today's session allowed a full extra degree of ankle flexion, with pain at a 3 rather than the usual 5. Mentally, Sasha is alert but tense; the client email about a missing signature adds a familiar sense of urgency. There is a low-grade weariness from spending the entire day on the sofa, and the stack of files remains untouched since morning.",
+    "immediate_memories": "Marta's mention of the philharmonic brings back a chamber concert Sasha attended with their grandfather years ago, sitting in the balcony and sharing a small flask. Seeing the 'improved' entry in the ledger reminds Sasha of the first time they flexed the ankle a full degree two weeks prior, which felt like a quiet victory. The cherry liqueur's label, with a hand-drawn heart, recalls Marta sharing a similar bottle last month after a difficult session.",
+    "reflective_memories": "Sasha remembers law-school summers when they worked through weekends while peers went hiking, and the sense of control that followed. Their grandfather often said a lawyer must sometimes close the file to see the world outside the office, but Sasha has rarely acted on that advice. Over the years, Sasha has repeatedly told themselves leisure will come after the current matter is resolved, yet the pile never empties."
+  },
+  "context_generated_at": "2026-10-08T13:48:20.928Z",
+  "description_generated_at": "2026-10-08T13:41:54.618Z",
+  "generated_at": "2026-10-08T13:48:02.019Z",
+  "model": "deepseek/deepseek-v4-flash-0731"
+}

@@ -1,0 +1,22 @@
+{
+  "flow_key": "direct_zero_shot",
+  "profile_id": "profile_006",
+  "scenario_id": "scenario_muzle8uf_2",
+  "name": "Meenakshi Raman",
+  "scenario_title": "The Offer to Join the Evening Gathering",
+  "steps": {
+    "decision": {
+      "output": {
+        "action": "Meenakshi politely declines Kamakshi's invitation, saying she has to prepare lunch and that she is not comfortable in large gatherings, then picks up her file folder and heads home.",
+        "explanation": "Meenakshi has historically avoided temple women's groups, declining prior similar invitations, and she feels shy about leading in front of peers. Her immediate concern about lunch time and her reflective memory that she learns best without an audience strongly support her deflecting the invitation with a practical excuse."
+      },
+      "generated_at": "2026-10-08T14:07:57.879Z",
+      "model": "deepseek/deepseek-v4-flash-0731"
+    }
+  },
+  "scenario_generated_at": "2026-10-08T13:48:52.935Z",
+  "scenario_context_generated_at": "2026-10-08T13:49:09.580Z",
+  "description_generated_at": "2026-10-08T13:41:52.092Z",
+  "started_at": "2026-10-08T14:07:51.468Z",
+  "updated_at": "2026-10-08T14:07:57.879Z"
+}

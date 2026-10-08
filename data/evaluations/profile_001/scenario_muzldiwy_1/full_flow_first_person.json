@@ -1,0 +1,24 @@
+{
+  "profile_id": "profile_001",
+  "scenario_id": "scenario_muzldiwy_1",
+  "flow_key": "full_flow_first_person",
+  "name": "Aminata Diallo",
+  "scenario_title": "Evening Tea Invitation",
+  "scores": {
+    "character_consistency": 9,
+    "situation_fit": 9,
+    "state_memory_alignment": 9,
+    "action_plausibility": 9,
+    "reasoning_coherence": 8
+  },
+  "overall_score": 8.8,
+  "score_scale": 10,
+  "dimension_set": 4,
+  "action": "Aminata gives a small, tired smile and says, \"Thank you, Mariam, but I need to get home and rest. I have an early morning again.\" She adjusts the pouch of coins at her waist, nods once to the group, and turns to walk out of the gate, heading toward her room without looking back.",
+  "reason": "Aminata's initial tendency was to decline Mariam's invitation with her usual polite excuse, despite a flicker of desire to join. Reflection strengthened this tendency: her father's example of finishing work before celebrating, her memory of feeling tired and poorer after the last outing, and her commitment to her savings and next-day practice all reinforced her resolve. The unresolved tension between gratitude toward Mariam and her own discipline remains, but it does not alter her decision. Her final action reflects this strengthened resolve: she politely but firmly declines, cites the need to rest for her early morning, and physically leaves, consistent with her self-disciplined, frugal nature and her pattern of prioritizing practice and savings over socializing.",
+  "decision_mode": "REFLECTION_AVAILABLE",
+  "context_generated_at": "2026-10-08T16:27:47.023Z",
+  "action_generated_at": "2026-10-08T14:12:15.249Z",
+  "generated_at": "2026-10-08T16:28:17.116Z",
+  "model": "deepseek/deepseek-v4-flash-0731"
+}

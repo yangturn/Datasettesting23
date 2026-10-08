@@ -1,0 +1,22 @@
+{
+  "flow_key": "direct_zero_shot",
+  "profile_id": "profile_006",
+  "scenario_id": "scenario_muzlesdn_3",
+  "name": "Meenakshi Raman",
+  "scenario_title": "An Unexpected Invitation",
+  "steps": {
+    "decision": {
+      "output": {
+        "action": "She politely refuses the tea, saying she must get home, and continues walking without stopping.",
+        "explanation": "Her established tendency is to never sit alone with men since widowhood, and she avoided Subramani last month by taking a different path; her daughters would worry if she were seen alone with a man."
+      },
+      "generated_at": "2026-10-08T14:00:44.165Z",
+      "model": "deepseek/deepseek-v4-flash-0731"
+    }
+  },
+  "scenario_generated_at": "2026-10-08T13:49:18.251Z",
+  "scenario_context_generated_at": "2026-10-08T13:50:21.115Z",
+  "description_generated_at": "2026-10-08T13:41:52.092Z",
+  "started_at": "2026-10-08T14:00:37.493Z",
+  "updated_at": "2026-10-08T14:00:44.165Z"
+}

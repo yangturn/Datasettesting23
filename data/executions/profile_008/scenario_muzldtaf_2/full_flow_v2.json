@@ -1,0 +1,50 @@
+{
+  "flow_key": "full_flow_v2",
+  "profile_id": "profile_008",
+  "scenario_id": "scenario_muzldtaf_2",
+  "name": "Sasha Kovalenko",
+  "scenario_title": "A Walk Before the Ledger",
+  "steps": {
+    "attributes": {
+      "output": {
+        "values_culture_and_background": "Values meticulousness, precision, and legal accuracy, demonstrated by keeping detailed ledgers and redlining contracts. Treats the family trust fund as a sacred obligation to preserve for the next generation, investing conservatively in Ukrainian war bonds. Internalized a strong work ethic and sense of duty from his grandfather, a dissident-defending lawyer. Views problem-solving as the primary way to feel in control.",
+        "roles_and_commitments": "Senior lawyer at Kovalenko & Associates, the law firm founded by his grandfather. Trustee of the family trust fund, obligated to manage and preserve it for future generations.",
+        "capabilities_and_constraints": "Possesses thirty years of legal expertise in due diligence and contract review. Has memorized physical therapy routines through repetition. Physical limitation: right leg stiffness and a limp from a fractured femur, requiring a cane on stairs only.",
+        "personality_and_response_style": "Patient and methodical, persisting with exercises even without immediate progress. Anxious about potential errors, showing tension when documents are flawed. Needs a sense of control through completing tasks and solving problems. Prefers finishing routines before accepting interruptions, as he has repeatedly postponed errands and declined social invites to complete therapy. When interrupted, he becomes tense and compensates with extra care."
+      },
+      "generated_at": "2026-10-08T14:09:30.469Z",
+      "model": "deepseek/deepseek-v4-flash-0731"
+    },
+    "consolidate": {
+      "output": {
+        "initial_context": "RELEVANT CHARACTER BACKGROUND\n\nSasha Kovalenko is a senior lawyer at Kovalenko & Associates, the law firm founded by their grandfather, where they spent thirty years refining due-diligence checklists and contract review. They carry a strong work ethic and sense of duty internalized from their grandfather, a dissident-defending lawyer; they view problem-solving as the primary way to feel in control. Sasha is meticulous and precision-driven, applying legal accuracy to all areas of life. They maintain a detailed hardcover ledger for physical therapy, with columns for date, exercise, repetitions, pain level, and subjective assessment, mirroring their professional checklists. Sasha treats the family trust fund as a sacred obligation, never touching the principal, investing conservatively in Ukrainian war bonds and scrutinizing annual reports.\n\nSasha sustained a bicycle accident resulting in a fractured femur and deep rib bruise. Their right leg remains stiff, and they have a slight limp; they use a carved oak cane (a gift from their grandfather) only on stairs. Physical therapy is a central part of their morning routine: every day at 7:30 they clear the coffee table, lay out a towel, and stretch, memorizing the sequences rather than consulting the laminated card. After each repetition, they note the session in the ledger, writing 'improved' only when they can flex the ankle an extra degree or stand without gripping the table for a full minute; otherwise they write 'no change' but persist the next day. The doctor ordered eight weeks of rest, but Sasha reviews client files anyway, worrying about junior associates' errors. The files are delivered in sealed folders every Tuesday, and Sasha reviews each document, scribbling amendments and running a finger over the type. Their anxiety manifests as a tight jaw when spotting flaws such as missing notarizations.\n\nSasha is non-binary and dresses in dark blazers and tailored trousers. They correct colleagues who assume their pronouns with patient, legalistic precision, citing recent court rulings. They live in an apartment that smells of ink, old paper, and menthol massage gel, decorated with bookshelves, a desk with a photograph of their grandfather, a bronze scales of justice, and a stack of unread novels they plan to start when 'fully healed.' Sasha knows they will always find a file to open or a clause to reword because rest feels like a problem to solve.\n\nSasha’s relationship with Marta, a neighbor who brought borscht the first week after the accident, is characterized by gratitude and awareness of Marta’s tendency to linger with small talk. Sasha has joined Marta for brief walks twice, cutting both outings short to return to the ledgers. Sasha has repeatedly postponed errands, phone calls, and meals to finish therapy sequences and ledger entries. During earlier recovery weeks, they declined three similar walk invitations, citing the Tuesday file drop or the therapist’s schedule. On rare occasions when they accepted an interruption, they returned tense and rewrote the day’s assessment with extra care.\n\nOBJECTIVE SITUATION\n\nIt is 8:10 a.m. Sasha is on the living room floor, midway through their stretching routine, with their right leg lifted onto a folded towel. The doorbell rings. Marta from upstairs, who knows about Sasha’s recovery, is at the door. She is heading to the farmers’ market and says she can wait ten minutes if Sasha wants to join her for a slow walk in the sun. The air would be good, and she is ready to leave now. Sasha still needs to finish the remaining repetitions and write today’s ledger entry before the Tuesday files arrive at nine. Marta is waiting for an answer.\n\nPRE-APPRAISAL STATE AND ACCESSIBLE MEMORIES\n\nSasha’s right quadriceps is mildly aching from the repetitions done so far, and the bruise along the ribs still twinges when they twist. Their morning coffee is half-finished and cold on the side table. They have been awake since 6:45, and the anticipation of the Tuesday files has already tightened their jaw slightly.\n\nThe doorbell sound reminds Sasha of the morning Marta first came down with the borscht, when Sasha had to pause mid-stretch and ended up forgetting the exact number of repetitions for that day’s set. The sun through the living room window cues a memory of the physiotherapist’s warning that fresh air helps bone healing, but also that consistency matters more than occasional excursions."
+      },
+      "generated_at": "2026-10-08T14:09:55.540Z",
+      "model": "deepseek/deepseek-v4-flash-0731"
+    },
+    "appraisal": {
+      "output": {
+        "initial_interpretation": "The doorbell and Marta's invitation break into the middle of the stretching routine, an interruption that feels like a choice between completing the rest of the repetitions and keeping the day's schedule intact.",
+        "initial_emotional_reaction": "Sasha feels a flare of irritation at the interruption, but the mention of fresh air and the memory of Marta's earlier kindness soften it into a brief, uneasy warmth.",
+        "activated_concerns": "The unfinished repetitions and the need to write the ledger entry before the Tuesday files arrive feel pressing; consistency in therapy seems more urgent than a walk, and the thought of losing track of the set count again is unsettling.",
+        "automatic_theory_of_mind": "Marta appears to mean well, knowing about the recovery and offering the walk as a friendly gesture; it feels to Sasha as though Marta does not fully grasp how rigid the morning routine is and sees the sun as a simple benefit.",
+        "initial_action_tendency": "Sasha's first impulse is to decline, finish the remaining repetitions, and note the session in the ledger; a secondary urge to acknowledge Marta's kindness with a brief explanation or thanks lingers but does not override the pull to stay on schedule."
+      },
+      "generated_at": "2026-10-08T14:10:07.777Z",
+      "model": "deepseek/deepseek-v4-flash-0731"
+    },
+    "decision": {
+      "output": {
+        "action": "Sasha sets down the folded towel, reaches for the carved oak cane, and moves to the door. Opening it, Sasha says, “Thank you, Marta, but I can’t today. I still need to finish the rest of the repetitions and write up the ledger entry before the Tuesday files arrive. I appreciate the offer, though.” Then Sasha closes the door and returns to the stretching spot, standing over the towel for a moment before lowering the leg again.",
+        "explanation": "Sasha interprets Marta's invitation as an interruption to the stretching routine, and the unfinished repetitions and the need to record the ledger before the Tuesday files feel urgent. The initial irritation at the interruption is softened by the memory of Marta's earlier kindness and the mention of fresh air, but consistency in therapy outweighs the appeal of the walk. Marta is assumed to mean well but not fully grasp how rigid the morning routine is. The initial action tendency to decline and finish the repetitions leads Sasha to politely refuse, acknowledge the kindness briefly, and return to the remaining exercises."
+      },
+      "generated_at": "2026-10-08T14:10:16.331Z",
+      "model": "deepseek/deepseek-v4-flash-0731"
+    }
+  },
+  "scenario_generated_at": "2026-10-08T13:48:32.775Z",
+  "scenario_context_generated_at": "2026-10-08T13:48:41.434Z",
+  "description_generated_at": "2026-10-08T13:41:54.618Z",
+  "started_at": "2026-10-08T14:09:09.318Z",
+  "updated_at": "2026-10-08T14:10:16.331Z"
+}

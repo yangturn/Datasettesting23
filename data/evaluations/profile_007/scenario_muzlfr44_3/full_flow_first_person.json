@@ -1,0 +1,24 @@
+{
+  "profile_id": "profile_007",
+  "scenario_id": "scenario_muzlfr44_3",
+  "flow_key": "full_flow_first_person",
+  "name": "Rania Haddad",
+  "scenario_title": "An Interruption at the Kitchen Table",
+  "scores": {
+    "character_consistency": 9,
+    "situation_fit": 9,
+    "state_memory_alignment": 9,
+    "action_plausibility": 9,
+    "reasoning_coherence": 9
+  },
+  "overall_score": 9,
+  "score_scale": 10,
+  "dimension_set": 4,
+  "action": "Rania rises fully from her chair, sets down the bread, and gestures the student inside. She clears a space at the table, pushes her translation notes aside, and holds out her hand for the crumpled draft. She says, \"Come in, sit down. Let me see what you've got.\"",
+  "reason": "Rania's immediate interpretation is that the student is desperate to arrive unannounced, and her automatic read of his apology and worn notebook is that he feels guilty for intruding. This activates her established caregiving role as a teacher who never turns away a student, especially one she remembers as having a broken printer and rare requests for help. Her body was already half-risen before she consciously decided, and her initial action tendency is to wave him in, make room at the table, and examine his draft. Although her translation deadline presses on her, that concern does not override the familiar warmth and momentum of helping; she immediately follows the tendency by welcoming him and reaching for the paper.",
+  "decision_mode": "IMMEDIATE",
+  "context_generated_at": "2026-10-08T15:38:46.712Z",
+  "action_generated_at": "2026-10-08T14:02:28.632Z",
+  "generated_at": "2026-10-08T15:39:36.573Z",
+  "model": "deepseek/deepseek-v4-flash-0731"
+}

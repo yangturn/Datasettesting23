@@ -1,0 +1,24 @@
+{
+  "profile_id": "profile_010",
+  "scenario_id": "scenario_muzlijor_3",
+  "flow_key": "om_cot",
+  "name": "Ciarán Walsh",
+  "scenario_title": "Sister's Quick Stop",
+  "scores": {
+    "character_consistency": 6,
+    "situation_fit": 9,
+    "state_memory_alignment": 8,
+    "action_plausibility": 7,
+    "reasoning_coherence": 8
+  },
+  "overall_score": 7.6,
+  "score_scale": 10,
+  "dimension_set": 4,
+  "action": "He switches off the soldering iron, washes his hands, and walks to the petrol station to meet Aoife.",
+  "reason": "The direct request from his sister, combined with the memory that she once waited an hour hoping he would come out, outweighs his usual reluctance to interrupt a job. He is unlikely to let her wait again, so he chooses to meet her briefly despite the unfinished solder work.",
+  "decision_mode": "IMMEDIATE",
+  "context_generated_at": "2026-10-08T15:49:16.031Z",
+  "action_generated_at": "2026-10-08T14:04:24.028Z",
+  "generated_at": "2026-10-08T15:53:19.441Z",
+  "model": "deepseek/deepseek-v4-flash-0731"
+}

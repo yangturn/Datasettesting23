@@ -1,0 +1,24 @@
+{
+  "profile_id": "profile_008",
+  "scenario_id": "scenario_muzldtaf_2",
+  "flow_key": "om_cot",
+  "name": "Sasha Kovalenko",
+  "scenario_title": "A Walk Before the Ledger",
+  "scores": {
+    "character_consistency": 9,
+    "situation_fit": 9,
+    "state_memory_alignment": 9,
+    "action_plausibility": 9,
+    "reasoning_coherence": 8
+  },
+  "overall_score": 8.8,
+  "score_scale": 10,
+  "dimension_set": 4,
+  "action": "Politely declines Marta's walk invitation and resumes the remaining stretching repetitions.",
+  "reason": "Sasha's focus on completing the physical therapy routine and ledger entry before the Tuesday files arrive takes precedence. The memory of losing count when Marta interrupted mid-stretch previously, combined with the physiotherapist's warning that consistency matters more than occasional outings, reinforces Sasha's established tendency to decline such invitations during incomplete sessions.",
+  "decision_mode": "IMMEDIATE",
+  "context_generated_at": "2026-10-08T16:18:00.227Z",
+  "action_generated_at": "2026-10-08T14:10:00.163Z",
+  "generated_at": "2026-10-08T16:20:18.887Z",
+  "model": "deepseek/deepseek-v4-flash-0731"
+}

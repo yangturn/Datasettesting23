@@ -1,0 +1,22 @@
+{
+  "flow_key": "om_cot",
+  "profile_id": "profile_004",
+  "scenario_id": "scenario_muzlglrg_3",
+  "name": "Tyler Hoffman",
+  "scenario_title": "Sunday Dinner Invitation",
+  "steps": {
+    "decision": {
+      "output": {
+        "action": "Agrees to come to the potluck and says he'll bring a bag of ice.",
+        "explanation": "With Mom pressing for an answer and no real conflict, Tyler half-wants to show up after three weeks away. The Thanksgiving memory of showing up with only shredded cheese after forgetting his casserole, plus his admiration for his dad reliably bringing a full dish, nudges him to commit—but he picks the lowest-effort option, a bag of ice, which aligns with his habit of making easy promises he may or may not follow through on."
+      },
+      "generated_at": "2026-10-08T14:00:13.842Z",
+      "model": "deepseek/deepseek-v4-flash-0731"
+    }
+  },
+  "scenario_generated_at": "2026-10-08T13:50:42.988Z",
+  "scenario_context_generated_at": "2026-10-08T13:51:17.747Z",
+  "description_generated_at": "2026-10-08T13:41:42.912Z",
+  "started_at": "2026-10-08T13:59:59.047Z",
+  "updated_at": "2026-10-08T14:00:13.842Z"
+}

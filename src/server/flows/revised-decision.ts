@@ -29,6 +29,17 @@ import type { FlowStep, StepInput } from "@/server/flows/types";
  * cognition ran in, and the character's own voice survives only inside quoted
  * speech. This part therefore *reads* first person in one arm and third in the
  * other, and writes third person in both.
+ *
+ * Both explanation fields are written to *cite*: every influence the
+ * explanation names has to be a specific fact a reader could find in the
+ * consolidated context, and an appraisal-generated emotion or concern may
+ * appear only beside the fact that produced it. That follows from how Stage 4
+ * reads the reason. The judge holds the Stage 1 and Stage 2 material and
+ * nothing from the flow, so an influence that exists only in the appraisal is,
+ * from where it sits, unsupported — and it is told to penalise exactly that.
+ * The first Stage 4 run showed it doing so: on the same predicted action, a
+ * reason built from the appraisal's own constructs scored 4 on coherence where
+ * one built from the context's recorded behaviour scored 8.
  */
 
 /** Which voice the appraisal and reappraisal this part is handed were written in. */
@@ -110,20 +121,22 @@ Do not include:
 * events occurring after the immediate response.
 
 explanation:
-Provide a concise third-person causal explanation connecting the supplied character evidence and appraisal process to the final action.
+Provide a concise third-person causal explanation of the final action, grounded in cited evidence.
+
+Evidence means a specific fact stated in the consolidated initial context (a biography detail, relationship fact, established tendency, current-state item, immediate memory, or stated feature of the objective situation, including the time it allows for a response) or a reflective memory as the reflective reappraisal reports it. Name each piece of evidence specifically, in the terms the context uses, so that a reader holding only the context can locate it. Where the context states a disposition, cite the concrete biography detail or past behavior that demonstrates it rather than the disposition label.
 
 The explanation must:
 
-* describe the character’s initial action tendency without changing its meaning;
-* identify what deliberate reflection introduced, reconsidered, or made more salient;
-* state whether the initial tendency was \`RETAINED\`, \`STRENGTHENED\`, \`SOFTENED\`, or \`REVERSED\`, exactly matching the supplied \`change_from_initial\`;
-* explain why the resulting \`revised_action_tendency\` produced the final action;
-* connect the response to the most relevant character background, personality and response style, relationships, tendencies, current state, and memories;
-* acknowledge the most important competing influence when one remains.
+* cite the two to four pieces of evidence that most directly produced the final action, each as a specific fact rather than a summary or a trait label;
+* when it mentions an interpretation, emotion, concern, assumption, or inclination from the initial appraisal or reflective reappraisal, give it together with the cited evidence that produced it, never on its own;
+* cite what the objective situation states about the time available to respond (a deadline, a person waiting, or the absence of any pressure) and state that it left room for the deliberate reflection the explanation describes;
+* state in one sentence whether the initial tendency was \`RETAINED\`, \`STRENGTHENED\`, \`SOFTENED\`, or \`REVERSED\`, exactly matching the supplied \`change_from_initial\`, and how the resulting \`revised_action_tendency\` produced the final action;
+* when the final action departs from an established tendency in the context, cite the evidence that explains the departure;
+* acknowledge the most important competing influence when one remains, citing its evidence.
 
-Explain the causal progression from initial appraisal through reflective reappraisal to final behavior. Do not merely summarize every supplied field, repeat the entire context, or provide a generic post-hoc justification that could apply to any character.
+Keep the account of the appraisal process to that one sentence and spend the rest of the explanation on the evidence and how it produced the behavior. Normally three to five sentences. Do not provide a generic post-hoc justification that could apply to any character.
 
-Do not invent information, contradict the supplied appraisal process, expose private thoughts as observable behavior, or imply that reflection necessarily improved the character’s judgment.`;
+Do not invent information, contradict the supplied appraisal process, expose private thoughts as observable behavior, or imply that reflection necessarily improved the character’s judgment. Do not treat an interpretation, emotion, concern, or inclination generated in the appraisal or reappraisal as evidence in its own right.`;
 }
 
 function buildReflectiveDecisionPrompt(
@@ -157,7 +170,7 @@ The initial appraisal and reflective reappraisal are written in the character’
 
 Preserve the supplied \`change_from_initial\` classification and use \`revised_action_tendency\` as the character’s most recent provisional inclination. Do not redo the appraisal or reflective deliberation.
 
-The action must contain only externally observable behavior. The explanation must connect that behavior to the supplied character evidence and the progression from initial appraisal to reflective reappraisal.
+The action must contain only externally observable behavior. The explanation must cite the specific facts from the consolidated initial context, and the reflective memories as the reappraisal reports them, that produced that behavior, naming each in the terms the context uses, must cite the time the situation allowed for a response and that it left room to deliberate, and must state the progression from initial appraisal to reflective reappraisal in one sentence.
 
 Do not invent information, list alternative actions, or continue the scene beyond the character’s immediate response.
 
@@ -255,25 +268,24 @@ Do not include:
 * events occurring after the immediate response.
 
 explanation:
-Provide a concise third-person causal explanation connecting the supplied initial context and ${qualifier}initial appraisal to the final action.
-Identify only the strongest immediate influences, such as:
+Provide a concise third-person causal explanation of the immediate response, grounded in cited evidence.
+Evidence means a specific fact stated in the consolidated initial context: a biography detail, relationship fact, established tendency, current-state item, immediate memory, or stated feature of the objective situation, including the time it allows for a response. Name each piece of evidence specifically, in the terms the context uses, so that a reader holding only the context can locate it. Where the context states a disposition, cite the concrete biography detail or past behavior that demonstrates it rather than the disposition label.
+The explanation must:
 
-* the event’s initial subjective meaning;
-* the immediate emotional reaction;
-* an activated value, concern, role, relationship, or vulnerability;
-* an established personality disposition, habit, or behavioral tendency;
-* the character’s current emotional, physical, or cognitive condition;
-* a directly cued immediate memory;
-* an automatic subjective assumption about another person;
-* the initial action tendency.
+* cite the two to four pieces of evidence that most directly produced the response, each as a specific fact rather than a summary or a trait label;
+* when it mentions the event’s subjective meaning, the emotional reaction, an activated concern, an automatic assumption about another person, or the initial action tendency from the ${qualifier}initial appraisal, give it together with the cited evidence that produced it, never on its own;
+* when the response departs from an established tendency in the context, cite the evidence that explains the departure;
+* cite what the objective situation states about the time available to respond (a person waiting, the seconds or minutes allowed, or a demand for an answer now) and state that it left no room for deliberate reflection, so the response follows the first impulse;
+* state in one sentence how the cited evidence produced the initial action tendency and how that tendency produced the externally observable response.
 
-Explain how these influences produced the initial action tendency and how that tendency produced the externally observable response.
 When referencing \`automatic_theory_of_mind\`, preserve it as the character’s subjective assumption rather than presenting it as an objective fact.
+Normally three to five sentences.
 Do not:
 
 * introduce reflective memories;
 * conduct deliberative reconsideration;
 * compare alternative responses;
+* treat an interpretation, emotion, concern, or inclination generated in the appraisal as evidence in its own right;
 * repeat every appraisal field mechanically;
 * invent information;
 * expose private thoughts as observable behavior;
@@ -297,7 +309,7 @@ ${priorStepBlock(input, appraisalStep)}
 The situation requires an immediate or near-immediate response. Generate the single most plausible action the character takes without reflective memories or deliberate reappraisal, and explain why.
 The initial appraisal is written in the character’s ${qualifier}internal voice. Produce the externally observable action and causal explanation in third person. First-person language may appear only inside dialogue spoken by the character.
 Use \`initial_action_tendency\` as the character’s most recent provisional impulse. Do not redo or revise the initial appraisal.
-The action must contain only externally observable behavior. The explanation must connect that behavior to the strongest immediate influences in the supplied context and appraisal.
+The action must contain only externally observable behavior. The explanation must cite the specific facts from the consolidated initial context that produced that behavior, naming each in the terms the context uses, must cite the time the situation allowed for a response and that it left no room to deliberate, and must not treat the appraisal’s own interpretations, emotions, or concerns as evidence on their own.
 Do not introduce reflective information, compare alternative responses, invent information, or continue the scene beyond the character’s immediate response.
 Return JSON only:
 {

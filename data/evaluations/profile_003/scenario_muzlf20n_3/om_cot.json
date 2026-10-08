@@ -1,0 +1,24 @@
+{
+  "profile_id": "profile_003",
+  "scenario_id": "scenario_muzlf20n_3",
+  "flow_key": "om_cot",
+  "name": "Dara Sok",
+  "scenario_title": "Short Notice at the Dock",
+  "scores": {
+    "character_consistency": 8,
+    "situation_fit": 8,
+    "state_memory_alignment": 8,
+    "action_plausibility": 8,
+    "reasoning_coherence": 8
+  },
+  "overall_score": 8,
+  "score_scale": 10,
+  "dimension_set": 4,
+  "action": "Dara records the last counted pallet and its position on the clipboard, then politely tells the foreman they cannot cover Dock 7 because it is outside their usual routine, and resumes counting at Dock 4.",
+  "reason": "Dara's established pattern is to stick to fixed routines and only help within familiar docks, and Dock 7 is unfamiliar; the request would break the rest of the shift. The foreman's casual tone also recalls a Phnom Penh supervisor who expected favors, and Dara avoids that kind of compliance when not necessary. Dara first notes the interrupted count, preserving their inventory rhythm, then declines.",
+  "decision_mode": "IMMEDIATE",
+  "context_generated_at": "2026-10-08T15:26:55.357Z",
+  "action_generated_at": "2026-10-08T13:59:18.673Z",
+  "generated_at": "2026-10-08T15:29:28.830Z",
+  "model": "deepseek/deepseek-v4-flash-0731"
+}

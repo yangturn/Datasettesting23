@@ -1,0 +1,21 @@
+{
+  "id": "scenario_muzlexr1_3",
+  "profile_id": "profile_001",
+  "name": "Aminata Diallo",
+  "headline": "19, apprentice plasterer, Dakar",
+  "title": "Evening Invitation",
+  "situation_type": "NORMAL",
+  "life_domain": "PERSONAL_ROUTINES",
+  "situation": "It is evening in the cramped room she shares with Serge and Mariam. Dinner is finished, and Serge has pulled out a worn deck of cards, while Mariam is spreading a cloth on the floor. They both turn to Aminata, who is already sitting on her mattress with her cellphone in hand, the photo folder open. Mariam says, \"Come play a few rounds, you're always working.\" Aminata looks at the screen showing her last plastered wall, then at the inviting circle on the floor. She can either join them for the evening or continue her usual review of wall photos and notes before bed.",
+  "context": {
+    "relationship_profiles": "Serge and Mariam are her only close peers in the city; they share rent and chores, but neither knows about her savings or family.\nSerge teases her about her photo folder but lends her his trowel when hers dulls.\nMariam pushes her to rest and helped her carry tile after a backache last month.",
+    "tendencies": "On weekday evenings she usually reviews wall photos and sketches corrections for at least an hour before bed, even when invited to card games.\nShe has declined the past three card-game invitations to finish her notes.\nWhen she does join, she plays one round and returns to her mattress and phone.",
+    "current_state": "Her right shoulder aches from plastering practice, and she is fuller than usual from dinner.\nThe photo screen shows a wall she is proud of but knows has a flaw near the window.\nShe has not yet looked at tomorrow's assignment list.",
+    "immediate_memories": "The worn card deck brings back the deck her uncle used for betting at village harvests, a game she refused to learn.\nMariam's sing-song call echoes how her mother called her brothers in from fieldwork, pulling her attention.\nHer own photo of the wall reminds her of the instructor pointing out a dip while praising her corners.",
+    "reflective_memories": "She remembers her mother's story of a neighbor who lost her market stall money because she spent evenings playing cards instead of sewing.\nShe recalls one evening two weeks ago when she joined the game and the next day made a ceiling-corner mistake, setting her back.\nBut she also remembers that after a rare full evening of cards last month, she woke with clear focus and her porridge sales went well."
+  },
+  "context_generated_at": "2026-10-08T13:49:51.568Z",
+  "description_generated_at": "2026-10-08T13:41:57.136Z",
+  "generated_at": "2026-10-08T13:49:25.213Z",
+  "model": "deepseek/deepseek-v4-flash-0731"
+}

@@ -1,0 +1,62 @@
+{
+  "flow_key": "full_flow_v2",
+  "profile_id": "profile_001",
+  "scenario_id": "scenario_muzldiwy_1",
+  "name": "Aminata Diallo",
+  "scenario_title": "Evening Tea Invitation",
+  "steps": {
+    "attributes": {
+      "output": {
+        "values_culture_and_background": "She values independence and self-reliance, having pursued trade training instead of the marriage planned by her uncle. She believes in strict financial discipline, never gives credit, and is cautious with spending. She prioritizes practice and skill improvement over leisure, spending evenings reviewing her work. She is wary of banks and prefers tangible savings, based on witnessing a bank collapse as a child.",
+        "roles_and_commitments": "She is a plastering apprentice at a government trade school. She runs a porridge-selling business to fund her education and send money for her younger sister's school supplies. She shares a rented room with two other apprentices. She is committed to contributing to her family's support from the village.",
+        "capabilities_and_constraints": "She has skills in porridge making and plastering. She is practiced in careful observation and self-assessment through photo documentation. She has limited financial resources, relying on daily porridge sales. She maintains a demanding daily schedule of early-morning vending and afternoon training.",
+        "personality_and_response_style": "She is cautious with her words, speaking in short, measured sentences. She watches others before acting and is methodical and patient. She is reserved and guards personal information about her savings and family. She is kind but keeps emotional distance, helping others without sharing personal details. She is self-disciplined and dedicated to skill improvement, often focusing on practice over socializing."
+      },
+      "generated_at": "2026-10-08T14:11:37.564Z",
+      "model": "deepseek/deepseek-v4-flash-0731"
+    },
+    "consolidate": {
+      "output": {
+        "initial_context": "RELEVANT CHARACTER BACKGROUND\n\nAminata Diallo is a plastering apprentice at a government trade school in the city, where she moved two years ago after a failed harvest in her home village. Her family still farms peanuts and millet there; her mother and father remain, and she sends a small portion of her savings to support her younger sister's school supplies. Her uncle had planned marriage for her, but she convinced her mother to let her learn a trade instead. She values independence and self-reliance, and is building a life through her own efforts.\n\nShe supports herself by selling millet porridge every morning at a construction site, waking at 4:30 to prepare it. She never gives credit, even to foremen, and is strict about financial discipline. She keeps her savings in a tin box hidden under her mattress, counts them weekly, and burns the written totals. She distrusts banks because she witnessed a bank collapse as a child and saw a neighbor lose her savings. She prefers tangible money she can see and touch.\n\nShe is an apprentice in plastering, practicing daily in the workshop, photographing her work with a secondhand cellphone, and reviewing the photos each evening to identify flaws. She also takes notes and sketches in a notebook. She lives in a cramped rented room with two other apprentices: Serge (plumbing) and Mariam (tiling). She shares meals and occasional help with them, but never reveals details about her savings or family. She is cautious in speech, speaking in short, measured sentences, and observes others carefully before acting, learning from the instructor's wrist movements, Serge's posture, and Mariam's tile-tapping technique. She is methodical, patient, and self-disciplined, prioritizing practice and skill improvement over leisure. She has been invited to after-class gatherings in the past and has almost always declined with a polite excuse about rest or study, going straight home to eat and review photos. On the one occasion she joined a market outing, she left early because she felt she needed to practice a corner technique she had missed.\n\nShe is kind but guarded, helping Mariam carry heavy tile bags and occasionally sharing porridge with a stray dog, but she avoids revealing personal matters. Her daily schedule is demanding: porridge vending in the mornings, plastering training in the afternoons, and evening self-review. She has limited financial resources and relies on daily sales. She is committed to her family's support and to becoming skilled enough to shape her own life, stroke by stroke.\n\nOBJECTIVE SITUATION\n\nAfter the plastering workshop ends, Mariam catches Aminata at the gate and tells her that a few apprentices are going to the tea stall near the market to celebrate finishing the week's walls. Mariam asks Aminata to come along, saying it won't be late and she can still review her photos afterward. Aminata is standing at the gate, with her porridge money pouch heavy against her waist, and has to decide whether to accept.\n\nPRE-APPRAISAL STATE AND ACCESSIBLE MEMORIES\n\nAminata is physically tired from waking at 4:30, stirring porridge, and plastering for two hours; her back and shoulder ache. She has not eaten since midday and hunger is beginning to pull at her. The cloth pouch of coins is heavy against her waist, reminding her of the day's sales.\n\nMariam's voice at the gate recalls an evening two weeks ago when Mariam coaxed her into sharing a bowl of fried plantains near the market, and she stayed later than planned, feeling drowsy the next morning during plaster practice. The sight of the metal gate also brings back the last tea-stall outing, when she paid for her own cup and then spent extra on a sweet she had not intended to buy."
+      },
+      "generated_at": "2026-10-08T14:11:52.123Z",
+      "model": "deepseek/deepseek-v4-flash-0731"
+    },
+    "appraisal": {
+      "output": {
+        "initial_interpretation": "This invitation feels like another pull away from her routine, another chance to spend money and lose sleep, especially after the last time she went out and felt the cost the next day.",
+        "initial_emotional_reaction": "Aminata feels a tired reluctance, with hunger and aching muscles making the idea of sitting at a tea stall both tempting and annoying, but also a small pang of guilt because she knows she should be reviewing her work instead.",
+        "activated_concerns": "Her savings, her discipline, and her need to practice well tomorrow feel immediately at stake. The weight of the coin pouch reminds her of how easily money disappears, and she worries about being drowsy in the workshop again.",
+        "automatic_theory_of_mind": "Mariam seems to mean well, but the character reads her invitation as persistent and casual, not really understanding how much Aminata values her evening review or how tired she is.",
+        "initial_action_tendency": "Her first impulse is to decline quickly with a polite excuse about being tired and needing to review photos, and to step away from the gate toward home."
+      },
+      "generated_at": "2026-10-08T14:11:58.251Z",
+      "model": "deepseek/deepseek-v4-flash-0731"
+    },
+    "reappraisal": {
+      "output": {
+        "initial_tendency": "Her first impulse is to decline quickly with a polite excuse about being tired and needing to review photos, and to step away from the gate toward home.",
+        "reflective_update": "Standing at the gate, Aminata weighs the invitation more slowly. The tea stall would mean warm food, a place to sit, and friendly company, which her aching shoulders and empty stomach make genuinely tempting. But she has seen before what these outings cost: the last tea-stall trip ended with money spent on a sweet she had not planned, and two weeks ago a bowl of plantains with Mariam stretched into a late evening that left her drowsy through the next morning's plaster practice. Against that, she recalls her father finishing the millet harvest before ever joining a celebration, and she has carried that rule with her: work first, rest later. She also remembers the evenings she stayed in to study her wall photos, and how those nights reliably sharpened her work the next day, while social evenings never did. She could accept briefly, since Mariam promised it would not be late and she could still review afterward, but she knows her own tiredness and hunger will lengthen the evening once she is seated. Going would cost her savings, her sleep, and tomorrow's focus; declining costs only a moment of refusal. Mariam means well, and Aminata does not want to seem ungrateful, but her father's example, her discipline, and her own experience all reinforce her first inclination rather than weaken it.",
+        "change_from_initial": "STRENGTHENED",
+        "reconsidered_interpretation": "What first appeared as an annoying pull away from her routine now clarifies as a familiar fork in the road. Aminata recognizes the shape of it: her father finishing the millet before the neighbors' celebration, her evenings of photo review that produced visible improvement, and the two recent outings that cost her money and sleep. The invitation is kind, but it is also a small test of the order she has built for herself. She does not doubt her read of Mariam, who is friendly and persistent without really understanding how much the evening review matters. Her interpretation is firmer now: this is not just a distraction but a choice about who she is becoming, and she has already made this choice many times.",
+        "motivational_conflict": "The tension is real: Aminata is tired and hungry and would welcome a warm seat and easy conversation, and she genuinely likes Mariam and does not want to seem cold or ungrateful. But against that pull stand her father's steady rule, the weight of her coin pouch, her need to be sharp in the workshop, and the memory of how the last outing left her poorer and drowsier. The conflict does not fully vanish, but for Aminata it is clearly outweighed, because she knows from experience which choice improves her work and which one leaves her unsettled.",
+        "revised_action_tendency": "She will hold deliberately to her first impulse: give Mariam a courteous, brief refusal about needing to review her photos and rest, then turn toward home without lingering, keeping her savings, her sleep, and her routine intact."
+      },
+      "generated_at": "2026-10-08T14:12:41.117Z",
+      "model": "deepseek/deepseek-v4-flash-0731"
+    },
+    "decision": {
+      "output": {
+        "action": "Aminata gives Mariam a brief, courteous smile and says, \"Not tonight. I need to rest and go over my photos.\" Then she turns from the gate and walks toward home, not stopping to linger.",
+        "explanation": "Aminata's initial impulse was to decline the invitation out of tiredness and the need to review her work—an impulse rooted in her disciplined routine, her strict financial habits, and the memory of how previous outings cost her money and sleep. Reflective reappraisal strengthened this tendency rather than weakening it: weighing the warm food and company against her father's rule of finishing work before celebration, the heavy coin pouch that reminded her of losses, and the proven value of evening photo review, she concluded the cost of going outweighed any benefit. The brief, courteous refusal and immediate turn toward home directly express that strengthened resolve, preserving her savings, sleep, and tomorrow's sharpness while not offending Mariam. The lingering tension between friendliness and self-discipline remains, but for Aminata it is clearly outweighed by experience and her commitment to independence."
+      },
+      "generated_at": "2026-10-08T14:12:49.808Z",
+      "model": "deepseek/deepseek-v4-flash-0731"
+    }
+  },
+  "scenario_generated_at": "2026-10-08T13:48:19.330Z",
+  "scenario_context_generated_at": "2026-10-08T13:48:41.030Z",
+  "description_generated_at": "2026-10-08T13:41:57.136Z",
+  "started_at": "2026-10-08T14:10:54.767Z",
+  "updated_at": "2026-10-08T14:12:49.808Z"
+}

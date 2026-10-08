@@ -1,0 +1,37 @@
+{
+  "flow_key": "her_dual_layered_thinking",
+  "profile_id": "profile_004",
+  "scenario_id": "scenario_muzlchzh_0",
+  "name": "Tyler Hoffman",
+  "scenario_title": "Morning Gym Trial or Straight Home",
+  "steps": {
+    "system_thinking": {
+      "output": {
+        "system_thinking": "Tyler sits in his car in the gym parking lot, the engine idling and the free-week banner hanging in his peripheral vision. His eyelids are gritty and his lower back still protests from the night's transfers. He thinks about the banner—how it reminds him of that gym near his parents' house in 2021 that he used exactly once. He hears his father's voice about discipline being the same thing done even when you don't feel like it, and Roy's daily exercises that are non-negotiable. But his body is shouting for sleep, and his own history tells him he'll probably bail on this within a week anyway. He feels a familiar, uneasy flicker of self-knowledge: he's already convincing himself that this is a bad day, a reasonable exception. He lets the thought settle, then mutters quietly to himself, 'Tomorrow. I'll hit it tomorrow.' He doesn't quite believe it, but it's the easiest thing to say. He shifts the car into drive, pulls out of the lot, and heads home, leaving the gym behind. There is no further speech; just the quiet hum of the engine and the weight of his own pattern reasserting itself."
+      },
+      "generated_at": "2026-10-08T14:20:35.363Z",
+      "model": "deepseek/deepseek-v4-flash-0731"
+    },
+    "role_response": {
+      "output": {
+        "role_thinking": "My eyelids are heavy ash, and my lower back is a dull knot from those transfers. Roy's grip was good last night, steady on the walker, but the weight still traveled through my spine. I've got the free-week banner in the corner of my vision, and it flashes me back to that gym near my parents' house in 2021, the one I used exactly once. I can almost see the rows of treadmills through the front window. Dad's voice is in my head, the one about discipline being doing the same thing even when you don't feel like it. And Roy, who does his exercises every day like it's part of breathing. I should just go in. Thirty minutes. It's right there. But my head is a fog, and my bed is only ten minutes further down the road. I've already done this—joined two gyms, faded out after a week each time. There's a little voice in me doing the usual work, finding the reason this day is different, this day is allowed to be the exception. I can feel it taking shape, the comfortable slide toward not going. I tell myself I'll hit it tomorrow. I don't quite believe it, but it's the easiest thing to say, and it sounds good enough to get me home.",
+        "action": "Tyler mutters under his breath, 'Tomorrow. I'll hit it tomorrow.' He shifts the car into drive, pulls out of the gym lot, and heads home, leaving the banner shrinking in his rearview."
+      },
+      "generated_at": "2026-10-08T14:20:44.916Z",
+      "model": "deepseek/deepseek-v4-flash-0731"
+    },
+    "decision": {
+      "output": {
+        "action": "Tyler mutters under his breath, 'Tomorrow. I'll hit it tomorrow.' He shifts the car into drive, pulls out of the gym lot, and heads home, leaving the banner shrinking in his rearview.",
+        "explanation": "Tyler felt physically worn from the overnight shift—heavy eyelids and a stiff back from the transfers. The free-week banner triggered a memory of a gym trial he had used only once years ago. Though his father's words about discipline and Roy's daily exercise regimen pulled him toward going in, his fatigue and the proximity of his bed made staying home more tempting. He recalled his pattern of joining gyms and quickly fading out, and he felt himself starting to rationalize another exception. He told himself he would go tomorrow, a claim he did not fully believe, and that internal slide carried him out of the parking lot and toward home."
+      },
+      "generated_at": "2026-10-08T14:20:59.444Z",
+      "model": "deepseek/deepseek-v4-flash-0731"
+    }
+  },
+  "scenario_generated_at": "2026-10-08T13:47:31.469Z",
+  "scenario_context_generated_at": "2026-10-08T13:48:03.297Z",
+  "description_generated_at": "2026-10-08T13:41:42.912Z",
+  "started_at": "2026-10-08T14:20:12.363Z",
+  "updated_at": "2026-10-08T14:20:59.444Z"
+}

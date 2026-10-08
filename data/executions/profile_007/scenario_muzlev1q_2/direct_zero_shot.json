@@ -1,0 +1,22 @@
+{
+  "flow_key": "direct_zero_shot",
+  "profile_id": "profile_007",
+  "scenario_id": "scenario_muzlev1q_2",
+  "name": "Rania Haddad",
+  "scenario_title": "A Walk Around the Campus Gardens",
+  "steps": {
+    "decision": {
+      "output": {
+        "action": "She declines the walk and proposes to discuss the reading list with Samir after her next class, suggesting a specific time then.",
+        "explanation": "Rania has unmarked essays and a translation deadline, and her established tendency is to decline invitations that conflict with grading or translation deadlines while offering a concrete rain check. Despite valuing Samir's collaborative input and remembering his kindness, her fatigue and workload lead her to defer the conversation."
+      },
+      "generated_at": "2026-10-08T14:09:21.336Z",
+      "model": "deepseek/deepseek-v4-flash-0731"
+    }
+  },
+  "scenario_generated_at": "2026-10-08T13:49:21.710Z",
+  "scenario_context_generated_at": "2026-10-08T13:49:48.259Z",
+  "description_generated_at": "2026-10-08T13:46:42.093Z",
+  "started_at": "2026-10-08T14:09:00.058Z",
+  "updated_at": "2026-10-08T14:09:21.336Z"
+}

@@ -1,0 +1,50 @@
+{
+  "flow_key": "full_flow_first_person",
+  "profile_id": "profile_006",
+  "scenario_id": "scenario_muzlcist_0",
+  "name": "Meenakshi Raman",
+  "scenario_title": "Rain and the Healer's Name",
+  "steps": {
+    "attributes": {
+      "output": {
+        "values_culture_and_background": "Values giving credit to the original holder of medicinal plant knowledge, insisting that the healer's name be recorded rather than her own as a mere witness. Believes that knowledge is transmitted by persons, not books, and that acknowledgement must go to the healer. Values education for girls, demonstrated by personally paying for a village girl's school fees from her own stipend. Holds deep respect for local Tamil plant names and traditional healers, expressed through daily gratitude to the plants and grandmothers who taught her.",
+        "roles_and_commitments": "Serves as a field worker and local plant-knowledge expert for a university ethnobotany research team, responsible for recording observations and ensuring healer consent. Acts as a sponsor of a fifteen-year-old girl's education, paying her school fees from her stipend without telling the researchers.",
+        "capabilities_and_constraints": "Has extensive knowledge of local plants, their Tamil names, preparation methods (steeping, grinding), and exact dosages for remedies. Can write observations in Tamil cursive, which she taught herself at age forty-two. Possesses practical familiarity with these remedies from personal use and from her mother and local healers.",
+        "personality_and_response_style": "Consistently insists on proper attribution to the individual healer, refusing to write any name without permission and repeatedly halting documentation to ask who taught a remedy. Handles disagreement with principled firmness, dismissing concerns about complicated authorship. Shows idealistic dedication to traditional knowledge, evidenced by gratitude rituals toward plants and healers. Approaches her work with a self-identified fresh-start mindset, calling herself a student again and walking faster."
+      },
+      "generated_at": "2026-10-08T14:21:44.195Z",
+      "model": "deepseek/deepseek-v4-flash-0731"
+    },
+    "consolidate": {
+      "output": {
+        "initial_context": "RELEVANT CHARACTER BACKGROUND\n\nMeenakshi Raman is a seventy-six-year-old woman whose hands are mapped with the deep lines of a life spent scrubbing floors and wringing clothes. She still wears the same faded blue and green cotton saris and ties her grey hair in a tight bun. She works as a field worker and local plant-knowledge expert for a university ethnobotany research team, responsible for recording observations and ensuring healer consent. She writes her observations in Tamil, in a neat cursive she taught herself at age forty-two, after her youngest child started school and she was too ashamed to ask her daughters to read to her. She records the plants she knows by their local Tamil names—periya maruthu, seeraagam, nochi—noting the part used, how it is steeped or ground, and the exact amount a woman would take for a fever. She has used these remedies herself, and so did her mother, and so did the healers she now walks beside.\n\nShe consistently insists that the individual healer who taught a remedy be named on the record, telling the researchers, \"The healer must go on the paper. Her name. Not just mine,\" and \"Knowledge does not fall from the tree. It comes from a person who has been doing this longer than you.\" She will not write a name without permission, will not skip a single healer, and will not assume that a Western word for a plant is better than a Tamil one. During every recording session she insists that local names be written beside Latin ones, and she has twice halted documentation to ask who taught a remedy before allowing the Latin name to be written. On previous field days she waited through light rain to ensure a healer's name was included on a specimen label. The lead researcher respects her knowledge but treats name correction as a paperwork matter that can be fixed later. The healer who taught her periya maruthu is an elderly woman from a nearby hamlet named Kaveri, who trusts Meenakshi to keep her name attached.\n\nShe is idealistic and principled in a way that sometimes annoys co-workers. She gives half her stipend—six thousand rupees a month, more than she ever earned cleaning houses—to a fifteen-year-old girl in her village named Divya, paying her school fees from her own pocket without telling the researchers. She has raised four children of her own, all married now, and she knows that a girl's education is the only thing no one can take. She feels a tension inside: she loves this new work, loves the forest at dawn, loves being asked for her opinion, yet she also feels guilty, as if she is playing at something while her daughters still cook and clean. She is not religious in a loud way, but she touches the forest floor before she leaves, whispering a thank-you to the plants and to the grandmothers who taught her. She is old but starting out, and she tells herself she is a student again, walking faster.\n\nThe young researcher is a polite Chennai student who often defers to her but is impatient when rain threatens.\n\nOBJECTIVE SITUATION\n\nThe sky turned grey over the Palani hills. The university researchers are packing their clipboards and sample bags, muttering about the rain that is minutes away. A young researcher holds up a fresh plant specimen that Meenakshi recognizes as periya maruthu, and he is already writing the Latin name from his book on the label. He says, \"We have to move now, we can confirm it later,\" and waits, marker poised, expecting her quick nod. Meenakshi stands there in the wet leaves.\n\nPRE-APPRAISAL STATE AND ACCESSIBLE MEMORIES\n\nHer sandals are damp from walking on wet leaves, and her file folder feels heavy under her arm. She has been on her feet since before dawn, but her hands are still steady from years of work. The forest has gone quiet with the approaching storm, yet she is familiar and at ease in this space.\n\nSeeing periya maruthu brings back the morning Kaveri showed her how to strip the bark and steep it for fever. The researcher's marker recalls a past incident when a name was written without a healer's consent and she had to have it struck out. The gathering grey clouds remind her of another drenching walk when she carried a specimen home to protect it. She knows that if she does not speak up now, this name will be recorded without the healer who taught her the remedy."
+      },
+      "generated_at": "2026-10-08T14:22:17.687Z",
+      "model": "deepseek/deepseek-v4-flash-0731"
+    },
+    "appraisal": {
+      "output": {
+        "initial_interpretation": "The young researcher is about to write down the Latin name for periya maruthu without remembering who taught me this medicine. It feels like the knowledge is being cut off from the woman who gave it to us, and I see that if I don't say something now, her name will be lost from the record.",
+        "initial_emotional_reaction": "My chest tightens and my throat feels like it's closing, a familiar anger rising in me. I'm not just worried about the rain; I am furious at the thought of Kaveri being erased, and I feel the weight of my own years and responsibility pressing on me.",
+        "activated_concerns": "What matters most is that Kaveri's name is attached to this remedy, that her teaching is honored and not taken for granted. I cannot let the rush of the rain take away the credit she deserves or let the researchers treat this knowledge as something easy to replace.",
+        "automatic_theory_of_mind": "He just wants to pack up and move before the storm, treating the name as a small thing that can be fixed later. I can see he expects me to agree with him, but he doesn't understand that Kaveri's name is not a detail to us.",
+        "initial_action_tendency": "I want to hold up the plant and look him in the eye, asking whose name he is going to write on that label. I need to stop him before he puts down the Latin name without the healer's permission, even if it means we have to wait for the rain."
+      },
+      "generated_at": "2026-10-08T14:22:26.552Z",
+      "model": "deepseek/deepseek-v4-flash-0731"
+    },
+    "decision": {
+      "output": {
+        "action": "Meenakshi raises the periya maruthu specimen toward the young researcher and looks him directly in the eye. She says firmly, 'Whose name will you write on this label? Kaveri's name must be on it. We will not write the Latin name without her permission. We can wait for the rain.'",
+        "explanation": "The researcher's poised marker triggers Meenakshi's immediate interpretation that Kaveri is about to be erased from the record. The familiar anger tightens her chest, and her activated concern for honoring the healer's teaching overrides the urgency of the storm. She assumes he sees the name as a minor paperwork detail, so she acts on her initial tendency to stop him physically and verbally, demanding that Kaveri's name be attached before any Latin name is written, even if it means waiting in the rain."
+      },
+      "generated_at": "2026-10-08T14:22:38.038Z",
+      "model": "deepseek/deepseek-v4-flash-0731"
+    }
+  },
+  "scenario_generated_at": "2026-10-08T13:47:32.525Z",
+  "scenario_context_generated_at": "2026-10-08T13:47:51.108Z",
+  "description_generated_at": "2026-10-08T13:41:52.092Z",
+  "started_at": "2026-10-08T14:21:18.807Z",
+  "updated_at": "2026-10-08T14:22:38.038Z"
+}

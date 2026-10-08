@@ -1,0 +1,62 @@
+{
+  "flow_key": "full_flow_first_person",
+  "profile_id": "profile_004",
+  "scenario_id": "scenario_muzlchzh_0",
+  "name": "Tyler Hoffman",
+  "scenario_title": "Morning Gym Trial or Straight Home",
+  "steps": {
+    "attributes": {
+      "output": {
+        "values_culture_and_background": "Tyler internalized a Midwestern practical culture that avoids direct emotional confrontation; love was expressed through practical acts like paying for things and leaving coffee, not long talks. He values doing something real with his hands, as he stated about phlebotomy. He admires persistence in others, such as his father and Roy, and considers that a standard of behavior.",
+        "roles_and_commitments": "Tyler is an overnight home-care aide for Roy, a disabled veteran; he is responsible for transfers, medication, and monitoring vitals. He is enrolled in a weekend phlebotomy certificate program at a local vocational center.",
+        "capabilities_and_constraints": "Tyler has home-care skills including checking vitals, repositioning clients, and assisting with transfers. He has access to parental financial support; his parents cover his car insurance and phone plan and paid for his community college tuition, providing a cushion that reduces the need to follow through.",
+        "personality_and_response_style": "Tyler tends to start new projects and routines with enthusiasm but drops them once they become dull or difficult, as seen with the CNA class and computer science program. He mentally disengages long before formally quitting. He is self-aware about his own privilege and lack of follow-through, and acknowledges it openly without changing his pattern. He respects persistent people more than himself, feeling he falls short of that standard. He is drawn to quiet, structured, hands-on work, and finds satisfaction in the repetitive slow pace of overnight home-care. He avoids direct emotional confrontation, showing care through punctuality and practical actions rather than emotional discussion."
+      },
+      "generated_at": "2026-10-08T14:20:21.864Z",
+      "model": "deepseek/deepseek-v4-flash-0731"
+    },
+    "consolidate": {
+      "output": {
+        "initial_context": "RELEVANT CHARACTER BACKGROUND\n\nTyler Hoffman is a 22-year-old from a suburb outside Columbus, Ohio. He grew up in a middle-class household; his mother is a dental hygienist and his father a sales rep. His parents still cover his car insurance and phone plan and paid for his community college tuition, which he treats as a background fact rather than a gift requiring gratitude. He has a pattern of starting new projects with enthusiasm and dropping them once they become dull or difficult. He signed up for a CNA class last fall and dropped after three weeks because the textbook reminded him of high school biology, which he'd slept through. He dropped out of a computer science program last spring, not because he failed but because he spent more time reading forums than coding; he had been mentally checking out for months. He works as an overnight home-care aide for Roy, a disabled veteran in his sixties who needs help with transfers and medication but is sharp and dry-humored. Tyler took the job when his friend Jake backed out and asked him to fill in; he stayed because he likes the quiet of third shift and the slow repetition of checking vitals and repositioning. He has already rearranged his shift twice to start a weekend phlebotomy certificate program, saying he wants to do something real with his hands. He has a habit of filling small notebooks with lists (certification deadlines, shift trades, possible jobs) and leaving them half-used. He is self-aware about his privilege: he often says \"I know I'm privileged\" but acknowledges the problem without changing his pattern. He admires persistent people like his father, who has worked the same sales territory for twenty years, and Roy, who does daily exercises without anyone watching; he respects them more than himself and hasn't figured out what to do with that. His culture is Midwestern practical—weather talk, potluck dinners, avoidance of direct emotional confrontation. His parents expressed love through paying for things and leaving decaf coffee, not long talks. He shows care through punctuality and practical actions rather than emotional discussion. He has joined two gyms in the last three years, each for about a week before fading out. When he has less than five hours of sleep, he typically cancels any plan involving physical effort. After enrolling in a program, he tends to start a new routine with genuine energy but lets the first bad day shake it loose. He feels a low-key obligation to Jake, who moved to Cincinnati after the fall. Roy says his daily exercises are non-negotiable, and Tyler wants to match that standard.\n\nOBJECTIVE SITUATION\n\nTyler finishes his overnight shift with Roy at 7:15 a.m. His next shift is not until Friday night, leaving two full days off. On the drive home, he passes a new gym with a \"free week\" banner. He pulls into the parking lot and idles, facing the decision of whether to go in for a quick thirty-minute workout or keep driving and sleep until noon.\n\nPRE-APPRAISAL STATE AND ACCESSIBLE MEMORIES\n\nHe has been awake since 4 p.m. the previous day, and his eyelids feel gritty and heavy. His lower back is stiff from two transfers of Roy from bed to chair during the night. He has no other obligations scheduled, and the day is wide open. He had only four hours of sleep the day before. He has been telling himself he should get back into a routine now that he's enrolled in the phlebotomy program. Idling in the parking lot brings back many mornings he sat in driveways weighing whether to go inside or just leave. The \"free week\" banner reminds him of a free trial at a gym near his parents' house in 2021 that he used only once. The gym is next to a coffee shop where he once sat with Jake and talked about all the things they were going to start doing."
+      },
+      "generated_at": "2026-10-08T14:20:51.017Z",
+      "model": "deepseek/deepseek-v4-flash-0731"
+    },
+    "appraisal": {
+      "output": {
+        "initial_interpretation": "This is the same scene I've been in a hundred times: a free pass and an empty morning, and me telling myself this can be the start of something real. It feels like a chance to prove I can stick with a routine, but it also feels like the exact moment I usually drive away from.",
+        "initial_emotional_reaction": "My eyes are gritty and my back is stiff, and the weight of being up all night is pulling me toward sleep. There's a familiar low-level guilt about saying I'd get back into a routine and then hesitating again.",
+        "activated_concerns": "What matters here is whether I follow through on what I tell myself, and whether I'm okay with being someone who starts things and drops them. I don't want to be the guy who admires people like Roy and my dad from the outside.",
+        "automatic_theory_of_mind": "Roy would just decide it's non-negotiable and do it; that's what I read in how he treats his exercises. And I remember Jake and me at that coffee shop talking about all the things we'd start, which I took then as both of us wanting to be different.",
+        "initial_action_tendency": "My first pull is to put the car in drive and go home and sleep until noon, but there's also a tug to shut the engine off and walk in before I lose the nerve."
+      },
+      "generated_at": "2026-10-08T14:21:10.764Z",
+      "model": "deepseek/deepseek-v4-flash-0731"
+    },
+    "reappraisal": {
+      "output": {
+        "initial_tendency": "My first pull is to put the car in drive and go home and sleep until noon, but there's also a tug to shut the engine off and walk in before I lose the nerve.",
+        "reflective_update": "I know the tired part of me is real—I've been awake since four, my back is stiff, and I only got four hours yesterday. If I go in now, I might be dragging, and I could end up hating it and using that as proof that this isn't for me. But I've done that before. I dropped CNA and told my parents I'd wait until spring, and waiting just meant never doing it. I remember how I felt after I finished my first full shift with Roy—proud, because I hadn't bailed. And my dad's line about doing the same thing even when you don't feel like it is stuck in my head. If I drive away now, I'm not making a smart choice, I'm making the same choice I always make. I don't have to be great this morning. I just have to go in and do something.",
+        "change_from_initial": "REVERSED",
+        "reconsidered_interpretation": "This isn't a free week and a convenient workout. It's a test I set for myself, and I'm sitting here watching myself almost fail it again. I came here because I want to be someone who follows through, but the way I'm using my tiredness as an excuse is exactly the pattern I keep telling myself I'm done with. The gym is just the place; the real thing is whether I'll let my own excuses decide for me.",
+        "motivational_conflict": "The fight is still there between my body saying sleep and the part of me that wants to finally prove I'm not the guy who quits. I'm afraid if I go in now I'll be too worn out to do it right, and I'm afraid if I go home I'll never come back. The only thing louder than that right now is knowing I've let that second fear win too many times.",
+        "revised_action_tendency": "I'm going to shut the engine off and walk in, even if all I manage is a quick thirty minutes. I'm not making it into some big promise—just this one small thing that I don't bail on."
+      },
+      "generated_at": "2026-10-08T14:22:45.751Z",
+      "model": "deepseek/deepseek-v4-flash-0731"
+    },
+    "decision": {
+      "output": {
+        "action": "Tyler shuts off the engine, gets out of the car, and walks into the gym.",
+        "explanation": "Tyler's initial pull was to drive home and sleep until noon, but the reflective reappraisal reversed that tendency. He recognized that leaving would repeat his pattern of quitting and that his tiredness was being used as an excuse. Remembering his admiration for Roy's and his dad's persistence, and the guilt of having dropped previous commitments, he deliberately chose to act on his revised inclination: to go inside and do even a quick thirty minutes. This action reflects his ongoing struggle to stop being someone who starts things and drops them, and his decision to prioritize the small act of following through over his immediate physical discomfort."
+      },
+      "generated_at": "2026-10-08T14:22:54.538Z",
+      "model": "deepseek/deepseek-v4-flash-0731"
+    }
+  },
+  "scenario_generated_at": "2026-10-08T13:47:31.469Z",
+  "scenario_context_generated_at": "2026-10-08T13:48:03.297Z",
+  "description_generated_at": "2026-10-08T13:41:42.912Z",
+  "started_at": "2026-10-08T14:19:48.211Z",
+  "updated_at": "2026-10-08T14:22:54.538Z"
+}

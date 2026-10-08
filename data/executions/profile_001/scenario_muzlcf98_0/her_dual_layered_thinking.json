@@ -1,0 +1,37 @@
+{
+  "flow_key": "her_dual_layered_thinking",
+  "profile_id": "profile_001",
+  "scenario_id": "scenario_muzlcf98_0",
+  "name": "Aminata Diallo",
+  "scenario_title": "A Call About the Naming Ceremony",
+  "steps": {
+    "system_thinking": {
+      "output": {
+        "system_thinking": "Aminata's private thought begins with a pang of obligation as her mother mentions the naming ceremony, but it is quickly filtered through her strict financial framework. She recalls her savings total matching her year-end goal, the fixed commitment to her sister's school fees, and the neighbor who lost everything in the bank collapse. She remembers her mother's parting words, 'Learn well so you can be your own woman,' and interprets that as permission to prioritize her own training. She also notes the cousin's distance, never acknowledging her move, so she feels little personal duty. Her emotional state is a mix of quiet satisfaction and mild guilt, but her resolve is firm. Externally, she pauses, perhaps glances at her tin savings box, and takes a breath to steady her voice. She replies in short, measured sentences, politely declining to send money. She says she is saving for her plastering tools and her sister's school fees, and she offers her blessings to the cousin instead. She does not apologize excessively or become defensive, but rather states her decision calmly, trusting her mother's respect for her judgment. She ends the subject gently by asking after her sister or the cousin's health, redirecting the conversation without breaking the relationship."
+      },
+      "generated_at": "2026-10-08T14:18:36.756Z",
+      "model": "deepseek/deepseek-v4-flash-0731"
+    },
+    "role_response": {
+      "output": {
+        "role_thinking": "The money is already counted, and the total matches what I planned for tuition and new tools. My sister's school fees are set aside, and I will not touch that. I remember the woman whose savings vanished when the bank closed—paper promises burn, but what I hold in my hand is real. Mama said to learn well so I can be my own woman. That means I must not give away what keeps me on that path. The cousin never even asked where I went, and we only meet at funerals. I feel a small pull in my chest, the old habit of saying yes to kin, but I have learned to let that pass. I will tell Mama kindly, and then ask about the baby.",
+        "action": "Aminata pauses, her hand resting on the tin box beneath her mattress, then takes a slow breath. 'Mama, I cannot send money this time. I am saving for my plastering tools and for Sister's school fees.' She waits a moment, her voice soft but steady. 'But I will pray for the cousin and the little one. How is the baby doing? And is Sister well?'"
+      },
+      "generated_at": "2026-10-08T14:18:43.517Z",
+      "model": "deepseek/deepseek-v4-flash-0731"
+    },
+    "decision": {
+      "output": {
+        "action": "Aminata pauses, her hand resting on the tin box beneath her mattress, then takes a slow breath and says, 'Mama, I cannot send money this time. I am saving for my plastering tools and for Sister's school fees.' She waits a moment, her voice soft but steady, and continues, 'But I will pray for the cousin and the little one. How is the baby doing? And is Sister well?'",
+        "explanation": "Aminata had just counted her savings and saw that they matched her goals for tuition and new tools, with her sister's school fees already set aside. The memory of the neighbor who lost everything when the bank collapsed reinforced her belief that tangible money is safe, while paper promises can burn. Her mother's earlier words to learn well and be her own woman meant she could not give away what she needed to stay on that path. She also recalled that the cousin had never acknowledged her move to the city, and they only met at funerals. Although she felt a small pull of family expectation, she let it pass and decided to decline kindly, then ask about the baby."
+      },
+      "generated_at": "2026-10-08T14:18:55.019Z",
+      "model": "deepseek/deepseek-v4-flash-0731"
+    }
+  },
+  "scenario_generated_at": "2026-10-08T13:47:27.932Z",
+  "scenario_context_generated_at": "2026-10-08T13:48:11.355Z",
+  "description_generated_at": "2026-10-08T13:41:57.136Z",
+  "started_at": "2026-10-08T14:18:16.828Z",
+  "updated_at": "2026-10-08T14:18:55.019Z"
+}

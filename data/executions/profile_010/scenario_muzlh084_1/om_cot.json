@@ -1,0 +1,22 @@
+{
+  "flow_key": "om_cot",
+  "profile_id": "profile_010",
+  "scenario_id": "scenario_muzlh084_1",
+  "name": "Ciarán Walsh",
+  "scenario_title": "Saturday Invitation",
+  "steps": {
+    "decision": {
+      "output": {
+        "action": "He politely declines Tom's invitation with a brief thanks and returns to checking the mast fittings.",
+        "explanation": "Ciarán has consistently declined marina social invitations, including Tom's two previous offers, and prefers solitary sailing or boat work on clear Saturdays. His reflective memory of his father refusing a neighbour's help reinforces his independence, and his settled belief is that he owes his place useful repairs, not company. So he courteously turns down the cruise and resumes his task."
+      },
+      "generated_at": "2026-10-08T14:17:50.306Z",
+      "model": "deepseek/deepseek-v4-flash-0731"
+    }
+  },
+  "scenario_generated_at": "2026-10-08T13:51:01.732Z",
+  "scenario_context_generated_at": "2026-10-08T13:51:21.539Z",
+  "description_generated_at": "2026-10-08T13:42:06.870Z",
+  "started_at": "2026-10-08T14:17:45.733Z",
+  "updated_at": "2026-10-08T14:17:50.306Z"
+}

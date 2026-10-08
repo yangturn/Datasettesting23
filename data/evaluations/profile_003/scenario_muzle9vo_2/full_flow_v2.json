@@ -1,0 +1,24 @@
+{
+  "profile_id": "profile_003",
+  "scenario_id": "scenario_muzle9vo_2",
+  "flow_key": "full_flow_v2",
+  "name": "Dara Sok",
+  "scenario_title": "A Sunday Invitation to the Community",
+  "scores": {
+    "character_consistency": 8,
+    "situation_fit": 8,
+    "state_memory_alignment": 8,
+    "action_plausibility": 8,
+    "reasoning_coherence": 8
+  },
+  "overall_score": 8,
+  "score_scale": 10,
+  "dimension_set": 4,
+  "action": "Dara stands at the open door of the community hall, the bag of ginger in hand, and listens for a long moment to the faint sound of the tro from inside, their gaze fixed on the threshold. After a pause, Dara turns to the clerk, gives a small nod and a polite smile, and says, \"Not this Sunday. Thank you.\" Then Dara steps away from the door and begins the familiar walk home, the ginger in hand.",
+  "reason": "Dara's initial reaction was to decline the invitation and keep to the comfort of home, yet the echo of their mother's humming held them near the door, listening. Reflection did not reverse or strengthen that pull toward joining; rather, it confirmed the lifetime pattern of standing at the edge: Dara had never joined communal song even in Phnom Penh, had kept their private life guarded, and had long trusted duty and routine to hold a family together. The revised action tendency retains the initial inclination—still leaning toward home and porridge—but with a longer pause at the threshold, because the tro's echo and the memory of their mother's humming are genuine and honest pulls. Dara's final behavior expresses exactly that: a lingering listen at the open door, a polite refusal offered without friction, and a turning homeward, preserving the unbroken Sunday rhythm of remittance sent, ginger bought, and porridge waiting. The unresolved tension between longing for the music and the decades-old pattern of edge-watching remains visible in the moment of pause before they step away, but the walk home is the choice their reflection settled on.",
+  "decision_mode": "REFLECTION_AVAILABLE",
+  "context_generated_at": "2026-10-08T16:00:07.869Z",
+  "action_generated_at": "2026-10-08T14:07:42.964Z",
+  "generated_at": "2026-10-08T16:00:22.012Z",
+  "model": "deepseek/deepseek-v4-flash-0731"
+}

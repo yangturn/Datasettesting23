@@ -1,0 +1,24 @@
+{
+  "profile_id": "profile_010",
+  "scenario_id": "scenario_muzlhmoq_2",
+  "flow_key": "her_dual_layered_thinking",
+  "name": "Ciarán Walsh",
+  "scenario_title": "A Quick Call to Help the Intern",
+  "scores": {
+    "character_consistency": 8,
+    "situation_fit": 8,
+    "state_memory_alignment": 8,
+    "action_plausibility": 8,
+    "reasoning_coherence": 8
+  },
+  "overall_score": 8,
+  "score_scale": 10,
+  "dimension_set": 4,
+  "action": "He sets the mug down on the kitchen table, types a short reply into the team chat—pasting the documentation link, naming the flag to reset, and adding a single line answering the intern's Monday query—then presses enter. He picks up the mug, takes a sip, and returns his attention to the task on his laptop.",
+  "reason": "Reading the message mid-sip, he already knew the answer and saw a call as talk that takes longer than doing—a lesson he remembered from his father. He knew the fix was documented and that he had written the exact flag last Thursday, and he also recalled the intern's Monday query he had left unanswered, a loose thread he wanted to close. Choosing a short written reply let him address both without a conversation, much like quietly replacing the bridge step so it holds without anyone having to ask. That was enough for him, so after sending it he returned to his own task.",
+  "decision_mode": "REFLECTION_AVAILABLE",
+  "context_generated_at": "2026-10-08T16:24:22.232Z",
+  "action_generated_at": "2026-10-08T14:11:19.885Z",
+  "generated_at": "2026-10-08T16:26:22.256Z",
+  "model": "deepseek/deepseek-v4-flash-0731"
+}

@@ -1,0 +1,24 @@
+{
+  "profile_id": "profile_007",
+  "scenario_id": "scenario_muzlfr44_3",
+  "flow_key": "her_dual_layered_thinking",
+  "name": "Rania Haddad",
+  "scenario_title": "An Interruption at the Kitchen Table",
+  "scores": {
+    "character_consistency": 9,
+    "situation_fit": 9,
+    "state_memory_alignment": 9,
+    "action_plausibility": 9,
+    "reasoning_coherence": 9
+  },
+  "overall_score": 9,
+  "score_scale": 10,
+  "dimension_set": 4,
+  "action": "Rania sets the slice of bread onto the plate and wipes her fingers on the dish towel. She crosses the small kitchen and opens the door fully, her chin tilted in that attentive way. She gestures him inside. \"Don't apologize,\" she says. \"It's fine that you came. Sit—there, at the table. Show me the draft. I'll put on tea in a moment.\" She pushes the plate of bread and jam toward his side of the table as she settles back into her chair, leaving her translation notes face down but still open.",
+  "reason": "Rania recognized the quiet student who had once mentioned his broken printer and had accepted her spare notes with gratitude. She believed he would not have come without a genuine reason. Although her translation document was due by morning, she recalled that she had shifted deadlines before and felt that the kitchen table was meant for such moments. The smell of bread and jam evoked her grandmother's kitchen, where she had practiced patience by stumbling through poems until finding the rhythm, which reinforced her willingness to set aside her own work. This led her to set the bread down, open the door fully, invite him in, and offer tea while turning attention to his draft.",
+  "decision_mode": "IMMEDIATE",
+  "context_generated_at": "2026-10-08T15:38:46.712Z",
+  "action_generated_at": "2026-10-08T14:01:55.825Z",
+  "generated_at": "2026-10-08T15:40:15.955Z",
+  "model": "deepseek/deepseek-v4-flash-0731"
+}

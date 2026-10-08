@@ -1,0 +1,50 @@
+{
+  "flow_key": "full_flow_first_person",
+  "profile_id": "profile_005",
+  "scenario_id": "scenario_muzld3x8_1",
+  "name": "Adriano Santos",
+  "scenario_title": "A Buyer at the Gate",
+  "steps": {
+    "attributes": {
+      "output": {
+        "values_culture_and_background": "Values precision, truth, and the concrete over the abstract. Distrusts organized advocacy groups, believing they dilute authentic experience and misallocate funds. Values hands-on craft and honest, accurate work, as seen in meticulous listings with honest descriptions. Grew up in working-class Rio de Janeiro with samba culture, which shaped his connection to music and manual skill.",
+        "roles_and_commitments": "Retired on disability after a factory accident. Operates a drum repair and resale practice from his garage, listing and selling vintage kits. Runs a YouTube channel that fact-checks telenovela plots. Lives alone in the house his father left him.",
+        "capabilities_and_constraints": "Has significant partial hearing loss in both ears, which mutes his surroundings and makes him misread conversations. Has over two decades of experience as a percussionist and theater technician, including expert knowledge of drum mechanics and stage equipment. Can measure, describe, and repair drums with precision.",
+        "personality_and_response_style": "Contrarian and skeptical, especially toward abstract claims and organized groups. Meticulous and thorough in his work and arguments, as shown by long written replies and detailed fact-checking. Solitary, prefers working alone and keeping interactions minimal. Not sentimental about instruments; treats them as functional objects. Has a controlled bitterness that he uses as a tool to maintain clarity and precision."
+      },
+      "generated_at": "2026-10-08T14:14:15.339Z",
+      "model": "deepseek/deepseek-v4-flash-0731"
+    },
+    "consolidate": {
+      "output": {
+        "initial_context": "RELEVANT CHARACTER BACKGROUND\n\nAdriano Santos grew up in working-class Rio de Janeiro, steeped in samba culture. He began as a child banging on tin cans and later spent two decades as a percussionist and theater technician, developing expert knowledge of drum mechanics and stage equipment. His hands know the weight of a mallet, the tension of a drum skin, and the precise angle of a spotlight. He was never famous but was known locally for fixing broken pedals and keeping time even when a band was falling apart.\n\nTwo years ago, a factory accident—a side job taken to supplement unstable theater income—caused significant partial hearing loss in his left ear and a substantial portion in his right. The doctor described it as a shotgun blast of sound, a hydraulic press slamming near his head. Now the world is muffled and he often misreads conversations. He retired early on disability but does not sit still. Every weekday morning he works in his garage, repairing old drum kits. He lives alone in the two-bedroom house his father left him, with a rusted gate. Neighbors know him as the quiet guy who plays with drums but never plays music anymore.\n\nHis tool-of-trade is precision. He lists repaired kits on a classifieds site with meticulous detail—measurements, wood grain notes, honest descriptions of scratches and wobbles. He is not sentimental about instruments; he treats them as machines to be calibrated. In the evenings he runs a YouTube channel that fact-checks popular Brazilian telenovela plots. He dismantles scenes of gunshot survival and anachronistic phones with a deadpan expression and flat voice, speaking louder than necessary because he hears himself differently. He writes long comment replies, not only on his own channel but on others, explaining why he refuses to join arts advocacy groups. He believes such groups are all talk, do not understand actual craft, and direct funding to bureaucrats rather than to broken drummers like him. He has seen grants, galas, and self-congratulatory speeches. His skepticism is a controlled bitterness that he has turned into a tool. He values precision, truth, and the concrete over the abstract. He trusts the feel of a drum skin, the smell of wood glue, and the undeniable logic of a plot hole. His channel is his way of asserting that he still counts, that his damaged ears did not take his ability to hear falsehoods.\n\nHe grew up in community but refuses to join organized groups because he believes they dilute authentic experience. He is proud of his manual skill but struggles with being defined by his disability. He has built a solitary world of repair and critique, a way to remain useful without depending on anyone. His contrarian nature is a shield, but also a means of finding clarity in a world he perceives as noisy and false.\n\nHis exchange with past buyers has been transactional: mostly young studio musicians who expect quick inspections, and he offers drum specs but no small talk. Mid-repair, he has often told visitors to wait until the glue sets; twice a buyer left and never came back. He has also paused work at a safe point to show a kit, because he hates turning away a serious buyer. He always cleans his hands before handling a drum shell, even if it costs a minute.\n\nOBJECTIVE SITUATION\n\nAdriano is in his garage, re-skinning a tom that has a cracked lug. He hears a knock and finds a young man at the rusted gate, holding up his phone to show the listing for the vintage Ludwig kit Adriano posted two days ago. The man says he is on his way to a studio rehearsal and can only look now—if it's not right, he'll leave. He asks Adriano to pause his work for ten minutes. Adriano's hands are coated in glue, and the tom is half-assembled. He has to decide whether to wipe off his hands and show the kit right now, or tell the man to come back tomorrow.\n\nPRE-APPRAISAL STATE AND ACCESSIBLE MEMORIES\n\nHis fingers are tacky with glue; the tom's head is half-tensioned and needs constant monitoring. He has a faint headache from the fumes and hasn't eaten since breakfast. The Ludwig kit stands wrapped in a tarp near the door, already photographed and described in his listing.\n\nThe buyer's phone screen showing the listing's main photo reminds him of the afternoon he spent measuring the Ludwig's bearing edges. The knock on the rusted gate echoes the factory alarm that preceded the accident, but he quickly shakes it off. He remembers a previous buyer who rushed a decision and later returned the kit, haggling over a scratch Adriano had already described. He also remembers times he told mid-repair visitors to wait until glue set, and two such buyers left and never came back. He has also paused work at a safe point to show a kit because he hates turning away a serious buyer. He always cleans his hands before handling a drum shell, even if it costs a minute."
+      },
+      "generated_at": "2026-10-08T14:14:43.298Z",
+      "model": "deepseek/deepseek-v4-flash-0731"
+    },
+    "appraisal": {
+      "output": {
+        "initial_interpretation": "A buyer is at my gate, showing my listing photo and making a now-or-never claim about needing to see the kit before rehearsal. He wants me to drop my careful repair work and show him the Ludwig on his schedule.",
+        "initial_emotional_reaction": "The interruption pulls at me. I feel the pressure of his hurry, a flash of annoyance that he's interrupting a half-done skin job, and a flicker of unease that echoes the old factory alarm—but that's nonsense. I want this kit to sell, yet I resent being rushed while my hands are in the glue.",
+        "activated_concerns": "I care about the kit selling, but more so that it sells honestly and doesn't come back with haggling over a flaw I already listed. My precision matters. I will not handle a drum shell with tacky hands, even if it costs a sale. I also hate turning away a serious buyer, and this man sounds serious, even if he's in a hurry.",
+        "automatic_theory_of_mind": "I read him as a guy who wants a quick look and expects me to bend around his schedule. It feels like he thinks his ten minutes are more important than the state of my half-fixed tom. But I also sense he's ready to walk if it doesn't suit him, and he might not come back tomorrow.",
+        "initial_action_tendency": "I want to tell him to wait while I wipe off the glue and check the tom, but my body is already moving toward the tarp to show the kit now because I don't want to let a serious buyer slip away."
+      },
+      "generated_at": "2026-10-08T14:14:54.982Z",
+      "model": "deepseek/deepseek-v4-flash-0731"
+    },
+    "decision": {
+      "output": {
+        "action": "Adriano wipes his glue-coated hands on a rag as he walks toward the tarp-covered Ludwig kit, pulls the tarp back, and gestures to the kit, saying, 'Let me show you, but I need to clean my hands first—give me a minute.'",
+        "explanation": "Adriano's immediate interpretation is that the buyer is pressing his own schedule, which sparks annoyance but also a fear of losing a serious sale. His precision-driven habit of never touching a drum shell with tacky hands compels him to wipe his hands, while his body moves toward the kit to show it now rather than risk the buyer walking away. The gesture of wiping hands and uncovering the kit reflects his compromise between respecting his craft and seizing the moment."
+      },
+      "generated_at": "2026-10-08T14:15:10.442Z",
+      "model": "deepseek/deepseek-v4-flash-0731"
+    }
+  },
+  "scenario_generated_at": "2026-10-08T13:47:59.900Z",
+  "scenario_context_generated_at": "2026-10-08T13:48:46.262Z",
+  "description_generated_at": "2026-10-08T13:41:52.144Z",
+  "started_at": "2026-10-08T14:13:35.789Z",
+  "updated_at": "2026-10-08T14:15:10.442Z"
+}

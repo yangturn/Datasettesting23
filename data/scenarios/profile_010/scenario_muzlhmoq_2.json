@@ -1,0 +1,21 @@
+{
+  "id": "scenario_muzlhmoq_2",
+  "profile_id": "profile_010",
+  "name": "Ciarán Walsh",
+  "headline": "36, backend engineer, Galway",
+  "title": "A Quick Call to Help the Intern",
+  "situation_type": "NORMAL",
+  "life_domain": "WORK",
+  "situation": "On a Tuesday morning, the project lead sends a message to the team chat: the new intern is stuck on a build error that Ciarán fixed last Thursday. The lead suggests, “Ciarán, do you have five minutes to hop on a call and walk her through it?” Ciarán is in the middle of his usual quiet routine—coffee is hot, laptop on the kitchen table. He knows the fix is simple and already documented it. He could reply that he’ll send a note instead, or he could join the call and talk it through. The intern waits, and the lead expects an answer soon.",
+  "context": {
+    "relationship_profiles": "Transactional rapport with the lead, built on short ticket messages.\nIntern is a stranger; he knows her name and recurring build errors.\nHe prefers teammates who rarely need his direct help.",
+    "tendencies": "When asked in chat, he posts a documentation link and avoids calls.\nHe joined video calls twice this year, camera off, replies brief.\nHe attempts unfamiliar problems solo for an hour before consulting anyone.",
+    "current_state": "Mid-morning, freshly showered, coffee in hand, one task queued.\nMood steady; last week's fix still clear in memory.\nNo meetings until after lunch, morning feels open.",
+    "immediate_memories": "Intern's name recalls her Monday build-config query he left unanswered.\nThe phrase 'hop on a call' reminds him of a summer temp he assisted with a note.\nHe remembers writing the exact error and the flag that needed resetting.",
+    "reflective_memories": "He recalls his father fixing a tractor alone, saying explaining took longer than doing.\nAfter the shed collapse, the family avoided neighbourly help; that lesson stuck.\nHe thinks of the footbridge step he replaces quietly each month, unacknowledged but useful."
+  },
+  "context_generated_at": "2026-10-08T13:52:05.482Z",
+  "description_generated_at": "2026-10-08T13:42:06.870Z",
+  "generated_at": "2026-10-08T13:51:30.842Z",
+  "model": "deepseek/deepseek-v4-flash-0731"
+}

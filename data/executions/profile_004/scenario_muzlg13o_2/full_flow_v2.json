@@ -1,0 +1,50 @@
+{
+  "flow_key": "full_flow_v2",
+  "profile_id": "profile_004",
+  "scenario_id": "scenario_muzlg13o_2",
+  "name": "Tyler Hoffman",
+  "scenario_title": "Overnight Shift Request",
+  "steps": {
+    "attributes": {
+      "output": {
+        "values_culture_and_background": "Internalized Midwestern practical culture that avoids direct emotional confrontation and expresses care through actions and routines rather than words; values hands-on, real work over abstract study; admires people who persist and stick with commitments.",
+        "roles_and_commitments": "Works as the regular overnight home-care aide for Roy; enrolled in a phlebotomy certificate program with a scheduled first class.",
+        "capabilities_and_constraints": "Has practical home-care skills including checking vitals, repositioning clients, and assisting with transfers and medication; receives financial support from his parents, so he is not under financial pressure.",
+        "personality_and_response_style": "Tends to drop commitments when they become tedious or feel like school, as with the CNA class and computer science program; has a pattern of making plans and failing to follow through, leaving half-used notebooks; self-aware about his lack of follow-through but has not changed the pattern; avoids prying into others' personal stories."
+      },
+      "generated_at": "2026-10-08T14:06:22.855Z",
+      "model": "deepseek/deepseek-v4-flash-0731"
+    },
+    "consolidate": {
+      "output": {
+        "initial_context": "RELEVANT CHARACTER BACKGROUND\n\nTyler Hoffman is a twenty-two-year-old from a suburb outside Columbus, Ohio. He grew up in a split-level house with a half-finished deck project, his father's tools scattered on the patio. His mother works as a dental hygienist, his father as a sales rep for an industrial supply company. They paid for his community college tuition and still cover his car insurance and phone plan, which he treats as a background fact rather than a gift requiring gratitude. The family expresses care through practical actions and routines—like leaving decaf coffee in the pot—rather than direct emotional confrontation, typical of Midwestern culture. His father has worked the same sales territory for twenty years, a persistence Tyler admires.\n\nTyler has a pattern of starting commitments and letting them fade. He dropped a CNA class after three weeks because the textbook diagrams felt like high school biology, and he dropped out of his computer science program the past spring after months of mentally checking out, not due to academic failure. He has a habit of filling small notebooks with lists—certification deadlines, shift trade requests, possible jobs—and leaving them half-used in the glovebox or on the kitchen counter. He knows his parents' financial cushion means he never has to follow through, and he sometimes says, \"I know I'm privileged,\" acknowledging the problem without changing his pattern. He genuinely admires people who stick with things, like his father and Roy, and has started to respect them more than himself without figuring out what to do with that feeling.\n\nHe works as the regular overnight home-care aide for Roy, a disabled veteran in his sixties who needs help with transfers and medication. Tyler likes the quiet of third shift—the way the house settles, the slow repetition of checking vitals and repositioning. Roy has thanked him for showing up on time, and Tyler avoids prying into Roy's wartime stories unless Roy brings them up. Tyler has already rearranged his shift schedule twice with the agency to start a weekend phlebotomy certificate program at a local vocational center. He says he wants to do something real, something with his hands, and he also mentions the phlebotomy instructor has a reputation for being strict, which he thinks might be good for him, though he is not sure. He has not met the instructor yet. He doesn't know if he will finish the program and is curious to see if he can.\n\nOBJECTIVE SITUATION\n\nIt is 5:30 a.m. on a Tuesday. Tyler is on his overnight shift and has just finished repositioning Roy and checking his vitals. Roy is asleep. The phone rings; it is the agency coordinator, who says the daytime aide called in sick and asks Tyler to stay until noon. Tyler has his first phlebotomy class at the vocational center at 8 a.m. The coordinator asks right now if he can cover, and Tyler has only a few seconds to answer.\n\nPRE-APPRAISAL STATE AND ACCESSIBLE MEMORIES\n\nTyler is on hour seven of the overnight shift, physically tired but alert after repositioning Roy. He has been looking forward to the first phlebotomy class all week and left his notebook with the syllabus on the kitchen counter. His parents' coverage of his bills means no financial pressure is pushing him either way this morning. The agency coordinator's voice on the phone reminds him of the two calls he made to rearrange his shift for the phlebotomy program. The mention of the daytime aide calling in sick brings back the night Jake backed out and Tyler filled in for Roy on a whim."
+      },
+      "generated_at": "2026-10-08T14:06:50.856Z",
+      "model": "deepseek/deepseek-v4-flash-0731"
+    },
+    "appraisal": {
+      "output": {
+        "initial_interpretation": "The call is a demand to cover the morning shift, which collides with his first phlebotomy class.",
+        "initial_emotional_reaction": "Tyler feels a flash of irritation and anxiety as the request lands, tension building between the tired routine he's been in and the anticipation of the class he's been looking forward to.",
+        "activated_concerns": "He immediately worries about the class he has been eager to start, the pattern of letting commitments fade, and what it would mean to skip the first day. He also feels the weight of Roy's care and the agency's expectation that he is reliable.",
+        "automatic_theory_of_mind": "The coordinator's voice sounds like someone expecting a yes, especially since Tyler has rearranged his shift before. It feels to Tyler like the coordinator assumes he can just stay, maybe not remembering or caring about the class.",
+        "initial_action_tendency": "He wants to say he can't because of class, but the familiar impulse to just fill in is tugging at him, making him hesitate before answering."
+      },
+      "generated_at": "2026-10-08T14:07:03.128Z",
+      "model": "deepseek/deepseek-v4-flash-0731"
+    },
+    "decision": {
+      "output": {
+        "action": "Tyler hesitates, gripping the phone, then says, \"I can't—I've got my first phlebotomy class at eight.\" He doesn't offer to find coverage or ask to call back, just stands there with the phone pressed to his ear.",
+        "explanation": "The coordinator's request collides with the class Tyler has been anticipating all week, triggering a flash of irritation and anxiety. Tyler's immediate concern is that skipping the first day would restart his pattern of letting commitments fade, and that worry outweighs the familiar impulse to just fill in. The hesitation in his response reflects that impulse still tugging at him, but the concrete fact of the class at eight keeps him from agreeing."
+      },
+      "generated_at": "2026-10-08T14:07:12.565Z",
+      "model": "deepseek/deepseek-v4-flash-0731"
+    }
+  },
+  "scenario_generated_at": "2026-10-08T13:50:16.212Z",
+  "scenario_context_generated_at": "2026-10-08T13:50:30.578Z",
+  "description_generated_at": "2026-10-08T13:41:42.912Z",
+  "started_at": "2026-10-08T14:05:54.797Z",
+  "updated_at": "2026-10-08T14:07:12.565Z"
+}

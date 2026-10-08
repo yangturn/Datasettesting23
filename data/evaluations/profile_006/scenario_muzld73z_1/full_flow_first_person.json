@@ -1,0 +1,24 @@
+{
+  "profile_id": "profile_006",
+  "scenario_id": "scenario_muzld73z_1",
+  "flow_key": "full_flow_first_person",
+  "name": "Meenakshi Raman",
+  "scenario_title": "Sunday Afternoon with Grandchildren or Notes",
+  "scores": {
+    "character_consistency": 9,
+    "situation_fit": 9,
+    "state_memory_alignment": 9,
+    "action_plausibility": 9,
+    "reasoning_coherence": 9
+  },
+  "overall_score": 9,
+  "score_scale": 10,
+  "dimension_set": 4,
+  "action": "Meenakshi closes her notebook, sets it aside, and turns to the children. She takes each child by the hand and says, \"Come, let me show you the nochi plant,\" then looks at Lakshmi and adds, \"And I will tell you that story you asked for.\"",
+  "reason": "Meenakshi's initial impulse was to turn from the notebook and join the children, though she felt the pull of the Monday deadline. In reflection, this impulse was strengthened: she reminded herself that she has never missed a deadline and can finish the notes after the household quiets, just as she has done before. The memory of regret from past Sundays when she chose chores over her children, along with her belief that knowledge passes through people rather than books, made the family time outweigh the unfinished work. So she acts on her revised tendency by closing the notebook, taking the children outside to the nochi plant, and offering Lakshmi the requested story, while intending to sort the notes later that night.",
+  "decision_mode": "REFLECTION_AVAILABLE",
+  "context_generated_at": "2026-10-08T16:42:21.411Z",
+  "action_generated_at": "2026-10-08T14:17:11.981Z",
+  "generated_at": "2026-10-08T16:43:31.188Z",
+  "model": "deepseek/deepseek-v4-flash-0731"
+}

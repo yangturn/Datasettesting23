@@ -1,0 +1,24 @@
+{
+  "profile_id": "profile_008",
+  "scenario_id": "scenario_muzldtaf_2",
+  "flow_key": "her_dual_layered_thinking",
+  "name": "Sasha Kovalenko",
+  "scenario_title": "A Walk Before the Ledger",
+  "scores": {
+    "character_consistency": 9,
+    "situation_fit": 9,
+    "state_memory_alignment": 9,
+    "action_plausibility": 9,
+    "reasoning_coherence": 8
+  },
+  "overall_score": 8.8,
+  "score_scale": 10,
+  "dimension_set": 4,
+  "action": "Sasha lowers their right leg carefully onto the towel, exhales slowly, then pushes themselves up with a hand on the coffee table, favoring the left leg. They walk to the door with a slight limp and open it, face composed but warm. \"Marta, good morning. That's kind of you to think of me. I'm afraid I can't join you today—I still have a few repetitions left and I need to log the session before the Tuesday files arrive. But I appreciate the offer. Maybe another day, when the morning isn't so pressed?\" Sasha gives a small, genuine smile, then adds, \"Thank you for coming by,\" before gently closing the door and returning to the towel on the floor.",
+  "reason": "Sasha recognizes Marta's knock and feels the pull of the sun and the physiotherapist's advice that fresh air helps bone healing. But the memory of the first time Marta interrupted, when Sasha lost count mid-set and the ledger entry felt rushed and uncertain, makes them wary. With the Tuesday files arriving at nine, Sasha prioritizes finishing the repetitions and writing an honest assessment over a single walk. They decide consistency matters more, so they decline Marta's invitation gently, close the door, and return to the remaining session.",
+  "decision_mode": "IMMEDIATE",
+  "context_generated_at": "2026-10-08T16:18:00.227Z",
+  "action_generated_at": "2026-10-08T14:10:13.202Z",
+  "generated_at": "2026-10-08T16:19:35.209Z",
+  "model": "deepseek/deepseek-v4-flash-0731"
+}

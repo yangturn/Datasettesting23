@@ -1,0 +1,62 @@
+{
+  "flow_key": "full_flow_v2",
+  "profile_id": "profile_006",
+  "scenario_id": "scenario_muzlesdn_3",
+  "name": "Meenakshi Raman",
+  "scenario_title": "An Unexpected Invitation",
+  "steps": {
+    "attributes": {
+      "output": {
+        "values_culture_and_background": "Has internalized traditional gender expectations, feeling guilt when engaging in non-domestic work while her daughters cook and clean; values education and self-improvement, having taught herself to read and write Tamil at forty-two; values proper attribution of traditional knowledge, insisting that healers be credited rather than taking credit; values girls' education and supports a village girl's schooling; carries gratitude and respect for the plants and the grandmothers who taught her.",
+        "roles_and_commitments": "Mother of four married children; participant in a university ethnobotany documentation project, recording local plant knowledge; committed to ensuring that healers are credited and permissions are obtained; committed to funding the education of a village girl, Divya.",
+        "capabilities_and_constraints": "Literate in Tamil, self-taught from age forty-two; possesses detailed knowledge of local medicinal plants, their uses, preparation, and dosage; receives a stipend of six thousand rupees per month from the research project.",
+        "personality_and_response_style": "Principled and idealistic, unwilling to skip healers, write names without permission, or treat Western plant names as superior; assertive in correcting researchers when recording plant names; compassionate and generous, giving half her stipend to support a girl's education; humble, describing herself as a student and eager to learn."
+      },
+      "generated_at": "2026-10-08T14:01:31.991Z",
+      "model": "deepseek/deepseek-v4-flash-0731"
+    },
+    "consolidate": {
+      "output": {
+        "initial_context": "RELEVANT CHARACTER BACKGROUND\n\nMeenakshi Raman is a seventy-six-year-old woman whose hands are lined from scrubbing floors and wringing clothes. She wears faded cotton saris in blues and greens and ties her grey hair in a tight bun. She lives near the Palani hills and is a mother of four married children; her husband passed away ten years ago. She has internalized traditional gender expectations and feels guilt when engaging in non-domestic work while her daughters cook and clean. She values education and self-improvement; she taught herself to read and write Tamil at age forty-two, after her youngest child started school, because she was ashamed to ask her daughters to read to her. She is literate in Tamil and writes in neat cursive. She participates in a university ethnobotany documentation project, recording local medicinal plants by their Tamil names (such as periya maruthu, seeraagam, nochi), noting the part used, preparation method, and dosage for conditions like fever. She has detailed knowledge of these plants, having used them herself and learned from her mother and local healers. She is principled about proper attribution: she insists that the healer's name be written on the paper, not just her own, and she refuses to skip a healer, write a name without permission, or accept that Western plant names are superior to Tamil ones. She corrects researchers when they record only Latin names, asking \"Who told you this?\" and asserting that knowledge comes from the person who has been practicing it. She is idealistic and often annoys co-workers by her insistence. She receives a stipend of six thousand rupees per month, and she gives half of it to a fifteen-year-old girl named Divya to support her nurse training and school fees, without telling the researchers. She is committed to girls' education. She describes herself as a student and is eager to learn, walking faster despite her age. She is not loudly religious but touches the forest floor before leaving, thanking the plants and grandmothers who taught her. Since becoming a widow, she takes tea only with women and never sits alone with men; with male researchers, she always asks another woman to join. Subramani is a childhood friend who was close to her late husband; they used to drink tea together at the tea stall. He became a widower two years ago. Her daughters phone each morning and would worry if she were seen alone with a man.\n\nOBJECTIVE SITUATION\n\nOn her way back from the forest, Meenakshi passes the tea stall near the temple. Subramani, a widower who lost his wife two years ago and has known her since childhood, often walks the same path. He calls out to her, offers to buy her a cup of tea, and suggests they sit together for a while, as he sometimes does with other elders.\n\nPRE-APPRAISAL STATE AND ACCESSIBLE MEMORIES\n\nShe has just finished her forest round, is thirsty and warm, with the plant file under her arm; no one is waiting at home. Her knees ache a little, but she is quietly satisfied with the new plant. She enjoys Subramani's company but feels shy about being seen alone with a man. She has never thought of companionship before. His gentle smile makes her pause. The steam and Subramani's voice remind her of mornings when her late husband and he argued cheerfully on that bench. Last month he waved and she took the other path."
+      },
+      "generated_at": "2026-10-08T14:02:15.261Z",
+      "model": "deepseek/deepseek-v4-flash-0731"
+    },
+    "appraisal": {
+      "output": {
+        "initial_interpretation": "Subramani calling out and offering tea feels like a familiar, friendly gesture, but it also feels like a moment that could be seen as improper for a widow her age.",
+        "initial_emotional_reaction": "",
+        "activated_concerns": "",
+        "automatic_theory_of_mind": "",
+        "initial_action_tendency": ""
+      },
+      "generated_at": "2026-10-08T14:02:34.282Z",
+      "model": "deepseek/deepseek-v4-flash-0731"
+    },
+    "reappraisal": {
+      "output": {
+        "initial_tendency": "",
+        "reflective_update": "Meenakshi deliberately weighs Subramani's invitation against what she knows of widows' lives. The memory of her mother never leaving without a woman companion and the judgment widows face sits heavily with her. Yet she also remembers Subramani's wife leaving rice on her doorstep during hard times, and that kindness makes her want to respond warmly. But warmth cannot overcome the risk of being seen alone with a man; her daughters phone each morning and would worry, and she has always kept to this rule since she became a widow. So she considers that she can acknowledge his friendship without accepting the tea, perhaps by greeting him and hurrying on with a plausible excuse. The appealing alternative of sitting and talking, which she enjoys, would carry consequences she is not willing to face. Thus she concludes that declining the tea and continuing on her way is the only safe and respectable course, even though it means forgoing the comfort of his company.",
+        "change_from_initial": "REVERSED",
+        "reconsidered_interpretation": "After deliberation, Meenakshi continues to see Subramani's invitation as a friendly gesture, but the weight of widowhood and propriety makes it clearer that accepting would be a mistake. The memory of her mother and the judgment of widows confirms that she cannot sit alone with him, yet she also feels a pull of gratitude and warmth. So she understands the situation as one where she must balance kindness with respectability.",
+        "motivational_conflict": "Her desire to enjoy Subramani's company and repay the kindness shown by his family conflicts with the deeply internalized rule that a widow must not be seen alone with a man, and with the fear that her daughters would worry. She also feels shy about any possible perception of impropriety, which makes the decision to decline feel safe but also slightly sad.",
+        "revised_action_tendency": "She will politely decline Subramani's offer to sit for tea, telling him she must get home, and will continue walking, perhaps pausing briefly to exchange a few kind words but not sitting down."
+      },
+      "generated_at": "2026-10-08T14:04:13.214Z",
+      "model": "deepseek/deepseek-v4-flash-0731"
+    },
+    "decision": {
+      "output": {
+        "action": "Meenakshi pauses at the sound of Subramani's voice and turns toward him with a brief smile. She greets him kindly, then politely declines the tea, saying she must get home, and continues walking down the path without sitting down.",
+        "explanation": "Meenakshi's first impulse was to accept the invitation, since she was thirsty and tired, no one was waiting at home, and she enjoyed Subramani's company, especially with the memory of her late husband and him arguing cheerfully on that bench. Reflection reversed that impulse: the internalized rule that a widow must never be seen alone with a man, her mother's practice of never leaving without a woman companion, the judgment widows face, and the worry it would cause her daughters each morning all outweighed the warmth she felt. The gratitude she felt for his late wife's kindness, the rice left on her doorstep during hard times, made her want to respond warmly, but that competing pull could not overcome the risk of impropriety. So the revised tendency is a polite but firm decline, acknowledging the friendship with a few kind words while hurrying on with a plausible excuse. This fits her lifelong practice since widowhood of taking tea only with women, never sitting alone with men, and asking another woman to join her with male acquaintances, as well as her commitment to respectability and her daughters' peace of mind. The warmth toward Subramani remains as a competing influence, but propriety wins, so she declines the tea and continues on her way."
+      },
+      "generated_at": "2026-10-08T14:04:46.826Z",
+      "model": "deepseek/deepseek-v4-flash-0731"
+    }
+  },
+  "scenario_generated_at": "2026-10-08T13:49:18.251Z",
+  "scenario_context_generated_at": "2026-10-08T13:50:21.115Z",
+  "description_generated_at": "2026-10-08T13:41:52.092Z",
+  "started_at": "2026-10-08T14:00:24.520Z",
+  "updated_at": "2026-10-08T14:04:46.826Z"
+}

@@ -1,0 +1,21 @@
+{
+  "id": "scenario_muzlh1zl_2",
+  "profile_id": "profile_009",
+  "name": "Kim Min-jun",
+  "headline": "19, former junior developer, stay-at-home father, Seoul",
+  "title": "Badminton Invitation",
+  "situation_type": "NORMAL",
+  "life_domain": "LEISURE",
+  "situation": "At the neighborhood playground with Seo-yeon, Min-jun chats with Mr. Park, a retired neighbor, who mentions that a group of locals plays badminton at the community center every Saturday evening. It's free and casual, and Mr. Park invites him to come this weekend. Min-jun hasn't played since college and remembers liking the game, but he also has an open laptop at home with job applications and a grocery budget to update. He needs to decide whether to set that aside and go to the community center on Saturday.",
+  "context": {
+    "relationship_profiles": "Mr. Park is a friendly retired grandfather he sees daily at the playground; they chat about weather and Seo-yeon. Min-jun has no obligation to him but appreciates normal neighbor contact.",
+    "tendencies": "He has declined most weekend invitations since the collapse to protect his evening job-search block. The one community-center meetup he tried, he left early to check his phone. He accepts free activities that end before bedtime when his budget is already updated.",
+    "current_state": "He is sleep-deprived from Seo-yeon's restless night and his 5 a.m. algorithm session, and his back aches from carrying her. He feels both the pressure of an open application block and a quiet wish for adult conversation.",
+    "immediate_memories": "Badminton recalls a college intramural semifinal he lost with his roommate, when they rallied until the gym lights dimmed. The Saturday slot also reminds him of his father's end-of-workday calls asking about homework.",
+    "reflective_memories": "His best job leads have come from casual conversations, like a playground father mentioning a contract role. He also quit a hiking club years ago because it felt like a chore, and has since told himself networking activities feel forced."
+  },
+  "context_generated_at": "2026-10-08T13:51:40.883Z",
+  "description_generated_at": "2026-10-08T13:42:02.480Z",
+  "generated_at": "2026-10-08T13:51:04.017Z",
+  "model": "deepseek/deepseek-v4-flash-0731"
+}

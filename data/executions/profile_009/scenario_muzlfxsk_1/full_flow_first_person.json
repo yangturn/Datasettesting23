@@ -1,0 +1,50 @@
+{
+  "flow_key": "full_flow_first_person",
+  "profile_id": "profile_009",
+  "scenario_id": "scenario_muzlfxsk_1",
+  "name": "Kim Min-jun",
+  "scenario_title": "The Last-Minute Webinar",
+  "steps": {
+    "attributes": {
+      "output": {
+        "values_culture_and_background": "He values being a present parent, having sworn to be different from his father, who worked six days a week and was rarely home. He believes a company's benefits package is the clearest signal of whether it values employees, and he prioritizes family-friendly policies such as parental leave; he has rejected interviews and declined a recruiter call over insufficient leave policies. He believes loyalty to a mission is a trap and that security comes only from numbers he can verify. He values financial prudence and meticulously tracks spending to keep the family deficit low.",
+        "roles_and_commitments": "He is the primary caregiver for his fourteen-month-old daughter and the household's de facto operations manager. He is the husband of a nurse who works double shifts, and he handles family finances, budgeting, and reselling baby clothes. He is a job-seeking former junior developer looking for a stable, family-friendly role in Seoul's tech sector.",
+        "capabilities_and_constraints": "He has three years of experience as a junior developer and strong spreadsheet, budgeting, and job-market analysis skills, demonstrated by tracking every expense, ranking employers by salary and benefits, and calculating application response probabilities. He has no current income from work since his startup collapsed, and his wife's salary covers rent and health insurance. His role as the daytime caregiver limits the blocks of time he can devote to job hunting.",
+        "personality_and_response_style": "He is methodical and almost clinical in decision-making, using explicit criteria and spreadsheets rather than acting on urgency. He is highly disciplined and maintains routines because discipline feels like the only thing he controls. He evaluates opportunities transactionally, weighing time, probability of response, and long-term payoff. He measures his worth in benchmarks and break-even points and seeks security through verifiable numbers."
+      },
+      "generated_at": "2026-10-08T14:17:39.022Z",
+      "model": "deepseek/deepseek-v4-flash-0731"
+    },
+    "consolidate": {
+      "output": {
+        "initial_context": "RELEVANT CHARACTER BACKGROUND\n\nKim Min-jun, twenty-nine, lives in a cramped but immaculate one-bedroom apartment in Seoul's Nowon district with his wife Ji-ae and their fourteen-month-old daughter, Seo-yeon. Six months ago, the fintech startup where he worked for three years as a junior developer collapsed overnight, leaving him without a job and with a severance package that lasted two weeks. His wife, a nurse at a university hospital, now works double shifts to cover rent and health insurance, while Min-jun serves as the primary caregiver and de facto operations manager of the household.\n\nHe approaches job hunting methodically, maintaining a spreadsheet of potential employers—every Seoul-based tech company with a public parental leave policy—and ranking them by salary, flexible hours, and family benefits. He has rejected interviews at companies offering only statutory minimum leave and declined a recruiter call because the job description listed 'paternity leave: none.' He treats a company's benefits package as an honest signal of whether it values the person behind the screen, and he weighs each application like an auction bid, considering time cost, response probability, and long-term payoff.\n\nThis transactional mindset extends to finances. He has redesigned grocery spending into a color-coded spreadsheet, cross-referencing sales at two discount supermarkets and factoring Seo-yeon's formula intake. He buys baby clothes in bulk and resells them, photographing items under a desk lamp to maximize resale value. He proudly keeps the monthly family deficit under 300,000 won.\n\nBeneath the meticulousness lies a quiet tension. He was raised by a father who worked six days a week and was rarely home; he swore to be different. He envies his wife's clear professional identity while he struggles to describe his own day without sounding like a project status report. He sometimes feels like an impostor, measuring his worth in benchmarks and break-even points rather than the soft weight of his daughter's sleep. The startup's collapse taught him that loyalty to a mission is a trap and security comes only from verifiable numbers. He still wakes at 5 a.m. to study algorithm problems, not expecting to solve them but because discipline feels like the only thing he controls.\n\nHe is methodical, disciplined, and transactional in decision-making, using explicit criteria and spreadsheets rather than acting on urgency. He evaluates opportunities by weighing time, probability, and payoff, and he seeks security through verifiable numbers. He values being a present parent, prioritizes family-friendly policies, and believes in financial prudence. He has defended his nap-time study block against interruptions, shifting it only when Seo-yeon wakes early, and has skipped live webinars that conflicted with that block. He once abandoned a recruiter webinar after realizing it was a sales pitch.\n\nHis role as primary caregiver limits his focused job-hunting time, and his wife sometimes quietly asks about interview leads. His sleeping daughter's nap is the one fixed block he refuses to sacrifice.\n\nOBJECTIVE SITUATION\n\nAt 2:40 p.m., Seo-yeon has just dozed off in her carrier on Min-jun's chest. He is about to open his algorithm problem set—his usual nap-time slot. His phone buzzes with an alert: a live-only recruiting webinar on 'family-friendly tech workplaces' starts in five minutes, with no replay. He had scouted the webinar earlier but had not planned to attend. He must decide within the next minute whether to keep his study discipline as scheduled or switch to the webinar and lose the only focused hour he will have until after bedtime.\n\nPRE-APPRAISAL STATE AND ACCESSIBLE MEMORIES\n\nMin-jun has been awake since 5 a.m., already completed one algorithm set, and is running on his second coffee. His job search has yielded only one interview this month, leaving a low hum of restlessness. His study materials are open, and the phone is still buzzing.\n\nThe alert recalls a similar webinar three months ago that turned out to be a recruiter pitch. The phrase 'family-friendly' echoes a job posting he rejected for listing 'paternity leave: none.'"
+      },
+      "generated_at": "2026-10-08T14:17:53.446Z",
+      "model": "deepseek/deepseek-v4-flash-0731"
+    },
+    "appraisal": {
+      "output": {
+        "initial_interpretation": "This alert is a live-only webinar on 'family-friendly tech workplaces,' and there's no replay, so this feels like a one-shot chance I didn't plan for. It echoes that recruiter pitch from three months ago, but the phrase 'family-friendly' pulls at me because I remember rejecting that job posting with 'paternity leave: none.'",
+        "initial_emotional_reaction": "I'm already tired from a 5 a.m. start and running on my second coffee, so this buzz makes me wary and restless. It sparks a flicker of hope that gets tangled with cynicism, and I feel a familiar tightness in my chest—part of me hungry for any lead, part of me bracing for another sales pitch.",
+        "activated_concerns": "The only focused hour I have until bedtime is at stake, and my nap-time study block is the one thing I refuse to sacrifice. My job search has only yielded one interview this month, so every opportunity feels loaded, but I also can't shake the feeling that I need to protect the discipline that keeps me grounded—and Seo-yeon sleeping on me makes that hour feel precious.",
+        "automatic_theory_of_mind": "I read this as another recruiter trying to pull me into a pitch, the same as last time. I also think Ji-ae would see this as a chance I shouldn't waste, even though she quietly asks about leads and doesn't know how many dead ends I've already hit.",
+        "initial_action_tendency": "I'm leaning toward ignoring the webinar and sticking to my problem set, but the buzz makes me want to at least glance at the title to see if it's worth it. My first impulse is to keep my study discipline intact and not let another pitch steal my hour."
+      },
+      "generated_at": "2026-10-08T14:18:03.244Z",
+      "model": "deepseek/deepseek-v4-flash-0731"
+    },
+    "decision": {
+      "output": {
+        "action": "Min-jun glances down at the buzzing phone just long enough to read the webinar title. He then sets the phone face-down on the coffee table, shifts his weight to resettle Seo-yeon, and returns his gaze to the open algorithm problem set, picking up his pencil.",
+        "explanation": "Min-jun's immediate response is driven by his protective stance toward his nap-time study block and his wariness of recruiter pitches. The alert rekindles the memory of the previous webinar that turned out to be a sales pitch and echoes the rejected posting with 'paternity leave: none,' reinforcing his cynicism. Though tired and restless, his activated concern for the only focused hour he has until bedtime outweighs the flicker of hope. His transactional mindset prompts a quick glance at the title to assess its worth, but the automatic assumption that it's another pitch leads him to dismiss it and preserve the discipline he relies on. He physically turns away from the phone and re-engages with his problem set, keeping his study routine intact and his sleeping daughter undisturbed."
+      },
+      "generated_at": "2026-10-08T14:18:16.808Z",
+      "model": "deepseek/deepseek-v4-flash-0731"
+    }
+  },
+  "scenario_generated_at": "2026-10-08T13:50:11.924Z",
+  "scenario_context_generated_at": "2026-10-08T13:50:44.163Z",
+  "description_generated_at": "2026-10-08T13:42:02.480Z",
+  "started_at": "2026-10-08T14:16:40.730Z",
+  "updated_at": "2026-10-08T14:18:16.808Z"
+}

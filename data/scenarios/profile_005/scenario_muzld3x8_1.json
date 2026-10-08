@@ -1,0 +1,21 @@
+{
+  "id": "scenario_muzld3x8_1",
+  "profile_id": "profile_005",
+  "name": "Adriano Santos",
+  "headline": "48, retired percussionist and theater technician, Rio de Janeiro",
+  "title": "A Buyer at the Gate",
+  "situation_type": "TIME_SENSITIVE",
+  "life_domain": "WORK",
+  "situation": "Adriano is in his garage, re-skinning a tom that has a cracked lug. He hears a knock and finds a young man at the rusted gate, holding his phone up to show the listing for the vintage Ludwig kit Adriano posted two days ago. The man says he's on his way to a studio rehearsal and can only look now—if it's not right, he'll leave. He asks if Adriano can pause his work for ten minutes. Adriano's hands are coated in glue, and the tom is half-assembled. He has to decide whether to wipe off his hands and show him the kit right now, or tell him to come back tomorrow.",
+  "context": {
+    "relationship_profiles": "Had no prior contact with the buyer; he's one of several strangers who message through the classifieds.\nHis past buyers have been mostly young studio musicians who expect quick inspections.\nHe keeps the exchange transactional, offering drum specs but no small talk.",
+    "tendencies": "Mid-repair, he's often told visitors to wait until the glue sets; twice a buyer left and never came back.\nHe has also paused work at a safe point to show a kit, because he hates turning away a serious buyer.\nHe always cleans his hands before handling a drum shell, even if it costs a minute.",
+    "current_state": "His fingers are tacky with glue; the tom's head is half-tensioned and needs constant monitoring.\nHe has a faint headache from the fumes and hasn't eaten since breakfast.\nThe Ludwig kit stands wrapped in a tarp near the door, already photoed and described in his listing.",
+    "immediate_memories": "The buyer's phone screen showing the listing's main photo reminds him of the afternoon he spent measuring the Ludwig's bearing edges.\nThe knock on the rusted gate echoes the factory alarm that preceded the accident, but he quickly shakes it off.\nHe remembers a previous buyer who rushed a decision and later returned to return the kit, haggling over a scratch he had already described.",
+    "reflective_memories": "He's always believed that craft requires unhurried attention; he learned this from his father, who fixed car engines in the neighborhood.\nHe also remembers years of loading drums into vans for carnival rehearsals, where time always pressed and the musicians were grateful for any help.\nHis skepticism of advocacy groups grew from seeing grants go to people who never got their hands dirty."
+  },
+  "context_generated_at": "2026-10-08T13:48:46.262Z",
+  "description_generated_at": "2026-10-08T13:41:52.144Z",
+  "generated_at": "2026-10-08T13:47:59.900Z",
+  "model": "deepseek/deepseek-v4-flash-0731"
+}

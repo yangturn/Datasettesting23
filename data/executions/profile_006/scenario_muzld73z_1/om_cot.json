@@ -1,0 +1,22 @@
+{
+  "flow_key": "om_cot",
+  "profile_id": "profile_006",
+  "scenario_id": "scenario_muzld73z_1",
+  "name": "Meenakshi Raman",
+  "scenario_title": "Sunday Afternoon with Grandchildren or Notes",
+  "steps": {
+    "decision": {
+      "output": {
+        "action": "She closes the notebook and leads the children out to the backyard to show them the plants, telling them the local names and a story.",
+        "explanation": "Past visits show she has set aside chores to walk the children through the plants, and she recalls wishing she had lingered with her children on old working Sundays. The children's eager request and Lakshmi's presence trigger that memory, so she chooses family time over the half-sorted notes, planning to finish them later as she always has."
+      },
+      "generated_at": "2026-10-08T14:15:11.018Z",
+      "model": "deepseek/deepseek-v4-flash-0731"
+    }
+  },
+  "scenario_generated_at": "2026-10-08T13:48:04.031Z",
+  "scenario_context_generated_at": "2026-10-08T13:48:42.253Z",
+  "description_generated_at": "2026-10-08T13:41:52.092Z",
+  "started_at": "2026-10-08T14:15:03.449Z",
+  "updated_at": "2026-10-08T14:15:11.018Z"
+}

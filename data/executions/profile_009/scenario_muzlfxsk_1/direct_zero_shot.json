@@ -1,0 +1,22 @@
+{
+  "flow_key": "direct_zero_shot",
+  "profile_id": "profile_009",
+  "scenario_id": "scenario_muzlfxsk_1",
+  "name": "Kim Min-jun",
+  "scenario_title": "The Last-Minute Webinar",
+  "steps": {
+    "decision": {
+      "output": {
+        "action": "He silences the phone and opens his algorithm problem set, continuing his nap-time study block.",
+        "explanation": "He has repeatedly protected this study block and skipped live webinars that conflict with it, and the alert resembles a recruiter pitch he once abandoned, so he prioritizes his established routine."
+      },
+      "generated_at": "2026-10-08T14:17:15.805Z",
+      "model": "deepseek/deepseek-v4-flash-0731"
+    }
+  },
+  "scenario_generated_at": "2026-10-08T13:50:11.924Z",
+  "scenario_context_generated_at": "2026-10-08T13:50:44.163Z",
+  "description_generated_at": "2026-10-08T13:42:02.480Z",
+  "started_at": "2026-10-08T14:17:11.990Z",
+  "updated_at": "2026-10-08T14:17:15.805Z"
+}

@@ -1,0 +1,62 @@
+{
+  "flow_key": "full_flow_v2",
+  "profile_id": "profile_003",
+  "scenario_id": "scenario_muzle9vo_2",
+  "name": "Dara Sok",
+  "scenario_title": "A Sunday Invitation to the Community",
+  "steps": {
+    "attributes": {
+      "output": {
+        "values_culture_and_background": "Prioritizes duty and routine as guiding principles; believes that staying active brings mental rest. Maintains a strong sense of family obligation, expressed through a weekly remittance to a younger brother. Honors parents through a home altar and by preserving their taught traditions, such as the mother's porridge recipe. Retains Cambodian cultural practices, including counting in Khmer and maintaining ties to Phnom Penh.",
+        "roles_and_commitments": "Father to daughter Mei. Older brother with an ongoing weekly commitment to send a fixed remittance to a younger brother. Night-shift warehouse worker at the Vancouver port.",
+        "capabilities_and_constraints": "Has 30 years of experience in logistics, enabling precise inventory counting and dealing with unreliable records. Physically capable of walking long distances and working night shifts. Proficient in Khmer language.",
+        "personality_and_response_style": "Prefers fixed routines and consistency in daily activities. Avoids conflict and lets minor slights pass to conserve energy. Keeps inner life and identity private. Tends toward solitary behavior, walking alone and not seeking social engagement. Dutiful and self-disciplined."
+      },
+      "generated_at": "2026-10-08T14:05:39.027Z",
+      "model": "deepseek/deepseek-v4-flash-0731"
+    },
+    "consolidate": {
+      "output": {
+        "initial_context": "RELEVANT CHARACTER BACKGROUND\n\nDara Sok, a non-binary person, is a father to daughter Mei and an older brother. They live in a basement suite in Vancouver and work night shifts at the port warehouse, having previously run a logistics company in Phnom Penh for thirty years. They maintain fixed routines: every evening they walk three kilometers from their suite to the port, arrive an hour early, walk the perimeter noting details such as a new chip on Loading Dock 4’s door, and count boxes by touch, whispering numbers in Khmer. At 5 a.m. they reheat rice porridge made from their mother’s recipe (jasmine rice, ginger, a hint of fish sauce), eat it standing by the kitchen window while watching sunrise, then check the time in Phnom Penh where their younger brother is starting his day. Every Sunday they walk to a money transfer shop near Granville Market, where the clerk greets them by name, and send the exact remittance amount to their brother. When Mei worries about overwork, Dara says, \"A body that moves is a mind that rests.\" When Mei says \"But you are here, Pa,\" Dara touches her shoulder without answering. Dara told no one in Phnom Penh about being non-binary; in Vancouver they find it easier to simply be Dara. They keep an altar with photos of their late parents and a copy of their old company ledger. They value duty and routine, family obligation, and preserving their mother’s traditions. They habitually count in Khmer and maintain ties to Phnom Penh. In their current work, they nod politely when the union foreman calls them \"Sok\" and assumes they are a man, letting it pass to avoid friction. They have a history of politely declining social invitations in Vancouver and sticking to their routine walk. With the clerk at the money transfer shop, the relationship is cordial and transactional: the clerk knows Dara’s name and the exact amount transferred but nothing of Dara’s life. With their daughter, the bond is warm but worried; Mei encourages Dara to socialize, and Dara gently deflects. Dara has passed the community hall often but never entered. They are physically capable of long walks and night shifts and have extensive logistics experience.\n\nOBJECTIVE SITUATION\n\nOn a Sunday, after having sent the remittance, Dara stops by Granville Market to buy ginger. The clerk, who knows Dara by name, mentions that a group of Cambodian elders gathers at the community hall every Sunday afternoon to play traditional music and share stories, and invites Dara to join, saying Dara is welcome to listen or even try the tro. Dara has never attended this gathering. The invitation carries no pressure. Dara could accept and spend an hour with the group, or politely decline and keep to the familiar Sunday rhythm.\n\nPRE-APPRAISAL STATE AND ACCESSIBLE MEMORIES\n\nAfter the remittance, Dara feels a familiar distance from Phnom Penh but also a quiet sense of duty fulfilled. They are physically tired from the night shift and crave warm porridge and the stillness of home. Curiosity about the music is present but dulled by the weight of unfamiliar interaction. The clerk’s mention of the tro brings back a memory of their mother humming to similar instruments at family feasts. Seeing the hall’s open door recalls a childhood village meeting where Dara sat silent among elders. The smell of ginger from the market reminds them of their mother’s porridge and her stories."
+      },
+      "generated_at": "2026-10-08T14:06:14.078Z",
+      "model": "deepseek/deepseek-v4-flash-0731"
+    },
+    "appraisal": {
+      "output": {
+        "initial_interpretation": "Dara sees this invitation as a friendly door opened into a scene that echoes Phnom Penh, but one they have never entered here. The open hall and the mention of the tro feel like a quiet summons to the past, yet also a foreign place where Dara would be a newcomer among elders.",
+        "initial_emotional_reaction": "Weariness and a craving for porridge tug at Dara, but the thought of the tro stirs a soft warmth from memory of their mother's humming. A flicker of longing rises, only to be dulled by the weight of unfamiliar faces and the familiar pull toward stillness.",
+        "activated_concerns": "The duty to keep the Sunday rhythm—remittance sent, ginger bought, homeward walk—feels at stake, along with the need for rest after the night shift. The memory of their mother's music and the tradition of family gatherings pulls at Dara, while the thought of sitting silent among unknown elders again brings a quiet sense of exposure.",
+        "automatic_theory_of_mind": "The clerk's warm, name-knowing manner reads as genuine kindness with no expectation, just an offer to share something of Dara's heritage. The elders' gathering seems to Dara a circle of people who belong to each other, and Dara reads their own potential presence as an outsider's watchful pause rather than an easy fit.",
+        "initial_action_tendency": "Dara's first impulse is to offer a polite refusal and keep walking home to the familiar comfort of porridge and silence. Yet the echo of their mother's humming holds them a moment, hovering near the door as if to listen before deciding whether to step inside or pass by."
+      },
+      "generated_at": "2026-10-08T14:06:30.975Z",
+      "model": "deepseek/deepseek-v4-flash-0731"
+    },
+    "reappraisal": {
+      "output": {
+        "initial_tendency": "Dara's first impulse is to offer a polite refusal and keep walking home to the familiar comfort of porridge and silence. Yet the echo of their mother's humming holds them a moment, hovering near the door as if to listen before deciding whether to step inside or pass by.",
+        "reflective_update": "Standing near the hall with the ginger in hand, Dara turns the clerk's invitation over more slowly. Stepping inside would honor the echo of their mother's humming and reclaim a thread of Phnom Penh, but it would also mean sitting among elders who already belong to one another while Dara remains a guest, exposed in a way they have never learned to be. Walking home, by contrast, keeps the Sunday rhythm unbroken: remittance sent, ginger bought, porridge waiting, and the quiet duty to their brother and their mother's memory fulfilled from a familiar distance. Lingering at the threshold to listen costs nothing and honors the memory without the weight of joining. The reflective knowledge that Dara never joined communal singing even in Cambodia, that they kept their inner life private especially around identity, and that they have long trusted routine and duty to hold a family together, settles the question: the invitation is kind and genuine, but Dara's place has always been at the edge, and that pattern is not tiredness—it is who they are.",
+        "change_from_initial": "RETAINED",
+        "reconsidered_interpretation": "With reflection, Dara sees the invitation not as a simple friendly door into a new community, but as an echo of a lifelong pattern: they have always stood at the edge of communal song, kept their inner life guarded, and anchored themselves in duty and routine. The tro still calls to their mother's memory, and the warmth is genuine, but the hall remains a circle of belonging they have never known how to enter—and the silence at its edge is as familiar as the porridge at home.",
+        "motivational_conflict": "The pull remains between the mother's humming, stirred by the tro and the scent of ginger, and the deep, decades-long pattern of privacy, edge-watching, and devotion to routine that has kept Dara whole across continents. The longing to hear the music is real, but it is outmatched by a self-knowledge that they have never joined such circles, even in Phnom Penh, and by a tired body craving stillness. The tension is not resolved—Dara hovers because both pulls are honest—but it leans toward home without ever silencing the song.",
+        "revised_action_tendency": "Dara still leans toward offering a polite refusal and turning homeward toward the porridge and silence, but the tro's echo and their mother's humming keep them paused at the threshold, listening a little longer before any step is taken."
+      },
+      "generated_at": "2026-10-08T14:07:33.928Z",
+      "model": "deepseek/deepseek-v4-flash-0731"
+    },
+    "decision": {
+      "output": {
+        "action": "Dara stands at the open door of the community hall, the bag of ginger in hand, and listens for a long moment to the faint sound of the tro from inside, their gaze fixed on the threshold. After a pause, Dara turns to the clerk, gives a small nod and a polite smile, and says, \"Not this Sunday. Thank you.\" Then Dara steps away from the door and begins the familiar walk home, the ginger in hand.",
+        "explanation": "Dara's initial reaction was to decline the invitation and keep to the comfort of home, yet the echo of their mother's humming held them near the door, listening. Reflection did not reverse or strengthen that pull toward joining; rather, it confirmed the lifetime pattern of standing at the edge: Dara had never joined communal song even in Phnom Penh, had kept their private life guarded, and had long trusted duty and routine to hold a family together. The revised action tendency retains the initial inclination—still leaning toward home and porridge—but with a longer pause at the threshold, because the tro's echo and the memory of their mother's humming are genuine and honest pulls. Dara's final behavior expresses exactly that: a lingering listen at the open door, a polite refusal offered without friction, and a turning homeward, preserving the unbroken Sunday rhythm of remittance sent, ginger bought, and porridge waiting. The unresolved tension between longing for the music and the decades-old pattern of edge-watching remains visible in the moment of pause before they step away, but the walk home is the choice their reflection settled on."
+      },
+      "generated_at": "2026-10-08T14:07:42.964Z",
+      "model": "deepseek/deepseek-v4-flash-0731"
+    }
+  },
+  "scenario_generated_at": "2026-10-08T13:48:54.276Z",
+  "scenario_context_generated_at": "2026-10-08T13:49:24.553Z",
+  "description_generated_at": "2026-10-08T13:41:49.493Z",
+  "started_at": "2026-10-08T14:05:02.025Z",
+  "updated_at": "2026-10-08T14:07:42.964Z"
+}

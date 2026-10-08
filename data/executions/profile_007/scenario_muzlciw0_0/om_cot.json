@@ -1,0 +1,22 @@
+{
+  "flow_key": "om_cot",
+  "profile_id": "profile_007",
+  "scenario_id": "scenario_muzlciw0_0",
+  "name": "Rania Haddad",
+  "scenario_title": "The Family Dinner and the Pending Translation",
+  "steps": {
+    "decision": {
+      "output": {
+        "action": "Rania tells Layla she'll manage, carries her satchel into the kitchen, and joins the family meal to help with the toddler and serving.",
+        "explanation": "Rania's immediate memory of last month's dinner when the toddler slept on her shoulder and her reflective memory of her grandmother's saying that meals are for tending to people, not tasks, push her to stay despite the pending translation. Her established tendency to join family meals even when deadlines loom and to say 'I'll manage' while carrying her satchel to wherever she is needed reinforces this choice, as does her desire not to repeat the coldness of her marriage by skipping family time."
+      },
+      "generated_at": "2026-10-08T14:22:53.394Z",
+      "model": "deepseek/deepseek-v4-flash-0731"
+    }
+  },
+  "scenario_generated_at": "2026-10-08T13:47:32.640Z",
+  "scenario_context_generated_at": "2026-10-08T13:48:17.467Z",
+  "description_generated_at": "2026-10-08T13:46:42.093Z",
+  "started_at": "2026-10-08T14:22:44.885Z",
+  "updated_at": "2026-10-08T14:22:53.394Z"
+}

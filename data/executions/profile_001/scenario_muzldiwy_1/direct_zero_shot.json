@@ -1,0 +1,22 @@
+{
+  "flow_key": "direct_zero_shot",
+  "profile_id": "profile_001",
+  "scenario_id": "scenario_muzldiwy_1",
+  "name": "Aminata Diallo",
+  "scenario_title": "Evening Tea Invitation",
+  "steps": {
+    "decision": {
+      "output": {
+        "action": "She politely declines Mariam's invitation with a brief excuse about needing rest and reviewing her wall photos, then turns and walks home alone.",
+        "explanation": "Aminata has almost always declined after-class gatherings in the past, preferring to go home and study her photos, and her current fatigue, hunger, and the memory that social outings made her drowsy and did not improve her practice reinforce this established pattern."
+      },
+      "generated_at": "2026-10-08T14:11:24.773Z",
+      "model": "deepseek/deepseek-v4-flash-0731"
+    }
+  },
+  "scenario_generated_at": "2026-10-08T13:48:19.330Z",
+  "scenario_context_generated_at": "2026-10-08T13:48:41.030Z",
+  "description_generated_at": "2026-10-08T13:41:57.136Z",
+  "started_at": "2026-10-08T14:11:19.893Z",
+  "updated_at": "2026-10-08T14:11:24.773Z"
+}

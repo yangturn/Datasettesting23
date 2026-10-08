@@ -1,0 +1,22 @@
+{
+  "flow_key": "direct_zero_shot",
+  "profile_id": "profile_008",
+  "scenario_id": "scenario_muzle6zy_3",
+  "name": "Sasha Kovalenko",
+  "scenario_title": "An Evening in the Reading Room",
+  "steps": {
+    "decision": {
+      "output": {
+        "action": "Sasha declines Oksana's invitation, citing the unfinished files, and returns to reviewing the client documents.",
+        "explanation": "Sasha has repeatedly postponed evening invitations when files remain unfinished, and a past memory of a junior associate's error from ignoring a file pile reinforces the priority of completing work before leisure."
+      },
+      "generated_at": "2026-10-08T14:02:36.843Z",
+      "model": "deepseek/deepseek-v4-flash-0731"
+    }
+  },
+  "scenario_generated_at": "2026-10-08T13:48:50.542Z",
+  "scenario_context_generated_at": "2026-10-08T13:49:07.672Z",
+  "description_generated_at": "2026-10-08T13:41:54.618Z",
+  "started_at": "2026-10-08T14:02:28.641Z",
+  "updated_at": "2026-10-08T14:02:36.843Z"
+}

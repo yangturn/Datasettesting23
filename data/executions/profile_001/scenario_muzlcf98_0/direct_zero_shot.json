@@ -1,0 +1,22 @@
+{
+  "flow_key": "direct_zero_shot",
+  "profile_id": "profile_001",
+  "scenario_id": "scenario_muzlcf98_0",
+  "name": "Aminata Diallo",
+  "scenario_title": "A Call About the Naming Ceremony",
+  "steps": {
+    "decision": {
+      "output": {
+        "action": "She politely tells her mother that she cannot send money for the naming ceremony because her savings are already set aside for her school fees and new plastering tools, and she asks her mother to convey her congratulations to the cousin.",
+        "explanation": "Aminata has consistently refused requests for extra money, never gives credit, and sends only her sister's fixed school amount, prioritizing her training savings over family gestures, so she declines the contribution while staying polite and respectful."
+      },
+      "generated_at": "2026-10-08T14:18:30.239Z",
+      "model": "deepseek/deepseek-v4-flash-0731"
+    }
+  },
+  "scenario_generated_at": "2026-10-08T13:47:27.932Z",
+  "scenario_context_generated_at": "2026-10-08T13:48:11.355Z",
+  "description_generated_at": "2026-10-08T13:41:57.136Z",
+  "started_at": "2026-10-08T14:18:22.211Z",
+  "updated_at": "2026-10-08T14:18:30.239Z"
+}

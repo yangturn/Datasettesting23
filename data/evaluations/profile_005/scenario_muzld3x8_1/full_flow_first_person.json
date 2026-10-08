@@ -1,0 +1,24 @@
+{
+  "profile_id": "profile_005",
+  "scenario_id": "scenario_muzld3x8_1",
+  "flow_key": "full_flow_first_person",
+  "name": "Adriano Santos",
+  "scenario_title": "A Buyer at the Gate",
+  "scores": {
+    "character_consistency": 8,
+    "situation_fit": 8,
+    "state_memory_alignment": 7,
+    "action_plausibility": 8,
+    "reasoning_coherence": 8
+  },
+  "overall_score": 7.8,
+  "score_scale": 10,
+  "dimension_set": 4,
+  "action": "Adriano wipes his glue-coated hands on a rag as he walks toward the tarp-covered Ludwig kit, pulls the tarp back, and gestures to the kit, saying, 'Let me show you, but I need to clean my hands first—give me a minute.'",
+  "reason": "Adriano's immediate interpretation is that the buyer is pressing his own schedule, which sparks annoyance but also a fear of losing a serious sale. His precision-driven habit of never touching a drum shell with tacky hands compels him to wipe his hands, while his body moves toward the kit to show it now rather than risk the buyer walking away. The gesture of wiping hands and uncovering the kit reflects his compromise between respecting his craft and seizing the moment.",
+  "decision_mode": "IMMEDIATE",
+  "context_generated_at": "2026-10-08T16:38:57.106Z",
+  "action_generated_at": "2026-10-08T14:15:10.442Z",
+  "generated_at": "2026-10-08T16:40:11.811Z",
+  "model": "deepseek/deepseek-v4-flash-0731"
+}

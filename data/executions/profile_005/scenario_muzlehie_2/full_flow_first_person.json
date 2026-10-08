@@ -1,0 +1,62 @@
+{
+  "flow_key": "full_flow_first_person",
+  "profile_id": "profile_005",
+  "scenario_id": "scenario_muzlehie_2",
+  "name": "Adriano Santos",
+  "scenario_title": "Sunday Dinner Invitation",
+  "steps": {
+    "attributes": {
+      "output": {
+        "values_culture_and_background": "He grew up in working-class Rio de Janeiro, where samba and neighborhood community were formative. He values precision, truth, and concrete craft over abstract talk. He values community but refuses to join organized groups, believing organized groups dilute authentic experience. He is proud of manual skill and skeptical of arts advocacy and funding bureaucracy.",
+        "roles_and_commitments": "He is a former percussionist and theater technician with two decades of experience, now retired early on disability. He works as a drum repairer and seller, and runs a YouTube channel fact-checking telenovela plots.",
+        "capabilities_and_constraints": "He has significant hearing loss—most hearing in his left ear and a significant portion in the right—from a factory accident, which makes him misread conversations. He has extensive hands-on skill with percussion instruments and theater equipment, including repairing drums, fixing pedals, and calibrating lighting. He retired on disability after the accident.",
+        "personality_and_response_style": "He is self-reliant and solitary, preferring to work with his hands alone and to avoid depending on others. He is contrarian and skeptical, especially of organizations and abstract talk, and uses controlled skepticism as a tool. He is meticulous and thorough, deadpan in expression, and comfortable spending long periods online arguing factual points. He is quiet and keeps to himself, having built a solitary life around repair and critique."
+      },
+      "generated_at": "2026-10-08T14:07:54.534Z",
+      "model": "deepseek/deepseek-v4-flash-0731"
+    },
+    "consolidate": {
+      "output": {
+        "initial_context": "RELEVANT CHARACTER BACKGROUND\n\nAdriano Santos grew up in the working-class neighborhoods of Rio de Janeiro, where samba and community life were formative. He spent two decades as a percussionist and theater technician, with extensive hands-on skill repairing drums, fixing pedals, and calibrating lighting. Two years ago, a factory accident cost him most of his hearing in his left ear and a significant portion in his right, leaving him misreading conversations. He retired early on disability. He now repairs old drum kits in his garage, sells them online with meticulous listings, and runs a YouTube channel fact-checking telenovela plots. His values include precision, truth, and concrete craft over abstract talk. He values community but refuses to join organized groups, believing they dilute authentic experience. He is skeptical of arts advocacy and funding bureaucracy. He is self-reliant, solitary, contrarian, meticulous, deadpan, and speaks louder than necessary. He lives alone in the house his father left him. His sister Marina calls weekly despite his rare pickups, and has covered for him with their mother more times than he can count. Their mother's house is small and always full of cousins. At family events, he typically declines with a vague work excuse, or shows up late and leaves after one plate. He has skipped the last three Sundays without calling ahead.\n\nOBJECTIVE SITUATION\n\nAdriano is in his garage, carefully aligning the lugs on a vintage snare when his phone buzzes. It is his sister Marina, calling to remind him of the family's weekly Sunday lunch at their mother's house. She says they have missed him the past three weeks and asks if he is coming this time. He genuinely likes them, but the gatherings are loud, and with his hearing loss he often ends up nodding at jokes he did not catch. He has a turquoise wrap on the drum shell that he hopes to finish today. He hears the hope in Marina's voice, and he must answer now.\n\nPRE-APPRAISAL STATE AND ACCESSIBLE MEMORIES\n\nHe has been hunched over the snare since 7 a.m., and the turquoise wrap is giving him trouble at one lug. His left ear is ringing a little from the morning's earlier drill work, and he is slightly hungry because he forgot breakfast. He is not wearing his hearing aids, because they irritate him when he is concentrating. The buzz of the phone brings back the last Sunday lunch he attended, when his nephew kept shouting a joke and he had to smile without understanding it. Marina's hopeful tone reminds him of the time she brought him a cake from their mother's kitchen and held it up so he could read her lips."
+      },
+      "generated_at": "2026-10-08T14:08:12.195Z",
+      "model": "deepseek/deepseek-v4-flash-0731"
+    },
+    "appraisal": {
+      "output": {
+        "initial_interpretation": "Marina is calling to pull me back into the Sunday routine, and the question is not really about lunch—it's about whether I'll show up or disappear again.",
+        "initial_emotional_reaction": "The hope in her voice makes me feel a sting of guilt, but it also grates against my irritation at being interrupted while I'm wrestling with this lug.",
+        "activated_concerns": "I don't want to let Marina down again, but I also don't want to lose my focus on this drum wrap, and the thought of that loud table makes my ringing ear feel sharper.",
+        "automatic_theory_of_mind": "She's expecting me to say yes, and she's trying to keep the family together; I read her tone as careful, as if she's afraid I'll make another excuse.",
+        "initial_action_tendency": "I want to stall, to tell her I'm in the middle of something, but I also feel a pull to just say I'll come to spare her the worry."
+      },
+      "generated_at": "2026-10-08T14:08:17.166Z",
+      "model": "deepseek/deepseek-v4-flash-0731"
+    },
+    "reappraisal": {
+      "output": {
+        "initial_tendency": "I want to stall, to tell her I'm in the middle of something, but I also feel a pull to just say I'll come to spare her the worry.",
+        "reflective_update": "Sitting here, the first thing I still want to do is give her some excuse about the wrap and my ear. But that table isn't just noise—it's where I grew up passing feijoada, and the noise used to be easy before the accident. I also remember my father slipping out to the backyard when arguments got too much—he didn't stay away entirely, he just found a way to step back. I do the same thing with this garage. If I tell Marina I'm busy, she'll hear another disappearance, and she's already covered for me more times than I can count. I can go, sit near her, eat, and then maybe slip out early if it gets too loud. That feels more honest than making an excuse and leaves the day less empty for her.",
+        "change_from_initial": "STRENGTHENED",
+        "reconsidered_interpretation": "This was never just about a Sunday lunch. It's about whether I keep letting my hearing and my work turn me into someone who disappears. Marina's hope in her voice isn't a trap—it's her asking if I'm still part of the family. I'm still annoyed about the lug and my ringing ear, but I can't pretend that's the real reason I've stayed away the last three weeks.",
+        "motivational_conflict": "Part of me still wants to stay here and finish this snare without interruptions, and the thought of that loud table makes my ear ring sharper. But another part knows I'll regret another missed Sunday, especially after Marina made the effort to call. I can't fully shake the urge to stall, even when I'm leaning toward going. The conflict is between protecting my peace and showing up for her—and I'm still not sure I can do both without slipping out early like my father used to.",
+        "revised_action_tendency": "I'm leaning toward telling her I'll come, but being straight that I can't stay the whole afternoon—I've got the wrap to finish and my ears are giving me trouble. I'll go, sit near her, eat, and if it gets too much I'll step out to the garage for a bit. I won't promise to stay until the end, but I won't make another excuse this time."
+      },
+      "generated_at": "2026-10-08T14:09:26.697Z",
+      "model": "deepseek/deepseek-v4-flash-0731"
+    },
+    "decision": {
+      "output": {
+        "action": "Adriano sets down the lug wrench, straightens up from the snare, and answers the phone. He speaks in his usual loud, flat tone: \"Marina. Alright, I'll come. But I'm not staying the whole afternoon—the wrap is giving me trouble and my ears are ringing. I'll be there for lunch, sit near you, and if the noise gets to me I'll step out to the garage for a while. Don't save me any dessert.\"",
+        "explanation": "Adriano's initial impulse was to stall—to give an excuse about the drum and his ear—but he also felt a pull to say yes to spare Marina's worry. In reflection, he recognized the call as a test of whether he would keep disappearing, and he remembered the family table and his father's pattern of stepping out rather than staying away entirely. This strengthened his inclination to go, but he kept a boundary rooted in his legitimate physical discomfort and unfinished work. The revised tendency—committing to attend but clearly limiting his stay—shows in his spoken answer: he says he will come, acknowledges the wrap and his ears, and signals that he may slip out to the garage if overwhelmed. He does not make another excuse, but he does not promise full participation, preserving the conflict between protecting his peace and honoring family connection."
+      },
+      "generated_at": "2026-10-08T14:09:43.178Z",
+      "model": "deepseek/deepseek-v4-flash-0731"
+    }
+  },
+  "scenario_generated_at": "2026-10-08T13:49:04.166Z",
+  "scenario_context_generated_at": "2026-10-08T13:49:19.800Z",
+  "description_generated_at": "2026-10-08T13:41:52.144Z",
+  "started_at": "2026-10-08T14:07:10.208Z",
+  "updated_at": "2026-10-08T14:09:43.178Z"
+}

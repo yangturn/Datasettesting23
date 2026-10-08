@@ -1,0 +1,62 @@
+{
+  "flow_key": "full_flow_first_person",
+  "profile_id": "profile_003",
+  "scenario_id": "scenario_muzle9vo_2",
+  "name": "Dara Sok",
+  "scenario_title": "A Sunday Invitation to the Community",
+  "steps": {
+    "attributes": {
+      "output": {
+        "values_culture_and_background": "Duty to family and precise reliability are core values; Dara never misses a Sunday remittance to his brother and sends the exact amount. Routine and order are deeply valued; Dara has always been a person of fixed routines. Physical activity is a means of mental rest, as expressed in his saying 'a body that moves is a mind that rests.' Khmer cultural teachings from his mother are internalized, reflected in his use of Khmer numbers, his mother's porridge recipe, and an altar honoring his parents.",
+        "roles_and_commitments": "Father to daughter Mei; brother to younger brother; committed to a weekly Sunday remittance to his brother; employed as a night-shift inventory counter at a Vancouver port warehouse.",
+        "capabilities_and_constraints": "Has 30 years of logistics experience, including running a company in Phnom Penh; possesses precise counting and inventory skills; physically disciplined, able to walk 3 km daily and work night shifts; speaks Khmer; knows his mother's porridge recipe.",
+        "personality_and_response_style": "Fixed routines and predictability are strongly preferred; Dara maintains a rigid schedule. Conflict is avoided; Dara lets misgendering pass without comment to keep peace. Inner life is private; Dara never revealed his non-binary identity in Phnom Penh. Solitary tendencies are evident; Dara walks alone and minimizes social engagement. Methodical and detail-oriented; Dara counts exactly and notices small changes like a chip in paint. Deflects concern from family with casual proverbs, such as 'a body that moves is a mind that rests.'"
+      },
+      "generated_at": "2026-10-08T14:06:03.316Z",
+      "model": "deepseek/deepseek-v4-flash-0731"
+    },
+    "consolidate": {
+      "output": {
+        "initial_context": "RELEVANT CHARACTER BACKGROUND\n\nDara Sok is a person of fixed routines and precise habits, shaped by thirty years of running a logistics company in Phnom Penh before relocating to Vancouver, where they now work night shifts as an inventory counter at a port warehouse. They are non-binary but never disclosed this in Cambodia; in Vancouver they find it easier to simply be Dara. Their core values center on duty to family and reliable precision: every Sunday without fail, they walk to a money transfer shop near Granville Market and send an exact remittance amount to their younger brother in Phnom Penh, never rounding up or down. They are a father to daughter Mei, who worries about their workload, and Dara deflects her concerns with a proverb: \"A body that moves is a mind that rests.\" They maintain a rigid daily schedule: each evening they walk three kilometers from their basement suite to the port, arriving an hour early to circle the perimeter and notice small changes such as a new chip in paint; they count boxes by touch, whispering numbers in Khmer, a habit from their logistics background. At 5 a.m., they reheat rice porridge made before leaving, following their mother's recipe of jasmine rice, ginger, and a hint of fish sauce, and eat standing by the kitchen window, watching the sunrise and checking the time in Phnom Penh. At home they keep a small altar with photos of their late parents and an old company ledger. Their personality is marked by a strong preference for routine and predictability, conflict avoidance (they let the union foreman call them 'Sok' and assume they are a man, nodding politely rather than correcting), and a private, solitary inner life—they walk alone and minimize social engagement. They are methodical and detail-oriented, with 30 years of logistics experience and disciplined physical endurance. They speak Khmer and know their mother's porridge recipe. Their relationship with the money transfer clerk is cordial and transactional: the clerk knows Dara's name and the exact amount of the weekly remittance but nothing about Dara's life. With Mei, the bond is warm but laced with worry; Mei encourages socializing, but Dara gently deflects. Dara has a pattern of politely declining social invitations in Vancouver, preferring to keep to routine walks.\n\nOBJECTIVE SITUATION\n\nOn a Sunday, after Dara has sent the weekly remittance at the money transfer shop, they stop by Granville Market to buy ginger. The clerk, who knows Dara by name, mentions that a group of Cambodian elders gathers at the community hall every Sunday afternoon to play traditional music and share stories. The clerk invites Dara to join, saying they are welcome to listen or even try the tro. Dara has never attended such a gathering. The invitation carries no pressure. The situation presents Dara with an option: to accept and spend an hour with the group, or to politely decline and carry on with their usual Sunday rhythm of walking home and eating porridge.\n\nPRE-APPRAISAL STATE AND ACCESSIBLE MEMORIES\n\nAfter the remittance, Dara feels a familiar distance from Phnom Penh but also a quiet sense of duty fulfilled. They are physically tired from the night shift and crave their warm porridge and the stillness of home. Curiosity about the music is present but dulled by the weight of unfamiliar interaction. The clerk's mention of the tro immediately brings back a memory of their mother humming to similar instruments at family feasts. Seeing the hall's open door recalls a childhood village meeting where Dara sat silent among elders. The smell of ginger from the market reminds them of their mother's porridge and her stories."
+      },
+      "generated_at": "2026-10-08T14:06:44.245Z",
+      "model": "deepseek/deepseek-v4-flash-0731"
+    },
+    "appraisal": {
+      "output": {
+        "initial_interpretation": "The clerk's invitation offers a rare chance to hear the tro again, the instrument my mother hummed to, in the company of Cambodian elders. It feels like a bridge to the world I left behind, but also a disruption to my carefully ordered Sunday.",
+        "initial_emotional_reaction": "I feel a flicker of curiosity and warmth at the thought of that music, but it's immediately dulled by my exhaustion and a familiar heaviness about meeting new people. The memory of my mother makes me ache, but my tiredness makes me want to retreat home.",
+        "activated_concerns": "My duty to my family and the need to maintain my routine feel paramount; my Sunday rhythm of walking home and having porridge is important to me. There is also a quieter tug of wanting to honor my mother's memory and explore this connection, but it feels risky.",
+        "automatic_theory_of_mind": "I think the clerk is genuinely welcoming and means no pressure; they seem to be extending a kindness, wanting to share something from their own community. They are not pushing, just inviting.",
+        "initial_action_tendency": "My first impulse is to decline politely and continue on my usual path home, to the quiet stillness I crave, despite the pull of the music pulling me toward the open door."
+      },
+      "generated_at": "2026-10-08T14:06:52.990Z",
+      "model": "deepseek/deepseek-v4-flash-0731"
+    },
+    "reappraisal": {
+      "output": {
+        "initial_tendency": "My first impulse is to decline politely and continue on my usual path home, to the quiet stillness I crave, despite the pull of the music pulling me toward the open door.",
+        "reflective_update": "Standing here with the ginger in my hand, I feel the invitation pulling at me, but the more I turn it over, the clearer it is that this is not just one hour. It is about who I have always been. In Phnom Penh I learned to keep my inner life guarded, and even back home I never joined the singing—I watched from the edge, and that was where I belonged. Routine and duty are what hold my family together, and my Sunday walk home and my mother's porridge are part of that same thread. If I go in, I might hear the tro the way my mother hummed it, but I would also have to sit among strangers, guard myself, and let them see me. I am too tired for that tonight. The clerk is kind and means no pressure, but the cost to my quiet is heavier than the warmth I would gain. I could thank them and go, and the ache of missing my mother would stay with me either way. Staying on my path is not running from the music; it is keeping the one thing that still feels steady when so much else is unfamiliar.",
+        "change_from_initial": "STRENGTHENED",
+        "reconsidered_interpretation": "I thought at first that this was a rare bridge to the world I left behind, and part of that is still true—the tro and the elders are tied to my mother. But now I also see it is another version of the same choice I have made many times: stand at the edge and watch, or step in and let myself be known. I do not think I can step in lightly, and I do not think that is weakness. My routine is not just habit; it is the way I have carried my duty and my private self for years. The open door still holds the music, but it also holds the weight of being seen, and I am not ready for that.",
+        "motivational_conflict": "The real tension is between the part of me that wants to sit among those elders and hear my mother's instrument again, and the larger part that knows I would not feel at ease there—I would be silent, guarded, and tired, not truly joining. I also carry my parents' memory with me every day, and I wonder if declining shames that memory. But I have never needed a group to hold my family close; I hold it in the exact amount I send each week, in the porridge I make, in the altar at home. That is the conflict, and tonight the pull home is stronger.",
+        "revised_action_tendency": "My inclination remains to thank the clerk politely, tell them I am too tired today, and keep walking home to my porridge. I will let the memory of the tro stay with me, but I will not go through that door now."
+      },
+      "generated_at": "2026-10-08T14:07:24.221Z",
+      "model": "deepseek/deepseek-v4-flash-0731"
+    },
+    "decision": {
+      "output": {
+        "action": "Dara thanks the clerk with a small nod and a polite smile, says, “Thank you, but I am too tired today,” and then turns from the community hall, carries the ginger, and resumes walking home along their usual Sunday route.",
+        "explanation": "Dara’s first inclination was to politely decline and continue home, and reflection strengthened that inclination without reversing it. The reflective reappraisal made more salient that stepping into the hall would mean being seen among strangers and guarding a private self, while the steady Sunday routine of walking home and eating porridge is how Dara carries duty and family memory. Dara’s fatigue after the night shift, long-standing preference for routine, and habit of avoiding unfamiliar social exposure all reinforce the decision. The memory of the tro and the ache for their mother remain a competing pull, but the reflective conclusion is that the cost to Dara’s quiet outweighs the warmth, so Dara acts on the revised tendency by thanking the clerk, declining on the grounds of tiredness, and continuing home."
+      },
+      "generated_at": "2026-10-08T14:07:36.049Z",
+      "model": "deepseek/deepseek-v4-flash-0731"
+    }
+  },
+  "scenario_generated_at": "2026-10-08T13:48:54.276Z",
+  "scenario_context_generated_at": "2026-10-08T13:49:24.553Z",
+  "description_generated_at": "2026-10-08T13:41:49.493Z",
+  "started_at": "2026-10-08T14:05:07.486Z",
+  "updated_at": "2026-10-08T14:07:36.049Z"
+}

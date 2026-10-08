@@ -1,0 +1,24 @@
+{
+  "profile_id": "profile_005",
+  "scenario_id": "scenario_muzlf12v_3",
+  "flow_key": "direct_zero_shot",
+  "name": "Adriano Santos",
+  "scenario_title": "The Roda de Samba Invitation",
+  "scores": {
+    "character_consistency": 8,
+    "situation_fit": 8,
+    "state_memory_alignment": 8,
+    "action_plausibility": 8,
+    "reasoning_coherence": 8
+  },
+  "overall_score": 8,
+  "score_scale": 10,
+  "dimension_set": 4,
+  "action": "Adriano accepts Marcos's invitation but says he will come only for an hour and will not play, just listen.",
+  "reason": "Marcos is his trusted oldest friend, and the informal roda matches Adriano's cherished memory of the best sound check he ever had—an unstructured circle without leadership. His established pattern with close friends is to accept but set a strict time limit, so he agrees with a clear boundary.",
+  "decision_mode": "REFLECTION_AVAILABLE",
+  "context_generated_at": "2026-10-08T15:33:19.450Z",
+  "action_generated_at": "2026-10-08T14:00:24.508Z",
+  "generated_at": "2026-10-08T15:35:25.221Z",
+  "model": "deepseek/deepseek-v4-flash-0731"
+}

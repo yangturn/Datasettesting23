@@ -1,0 +1,24 @@
+{
+  "profile_id": "profile_002",
+  "scenario_id": "scenario_muzldg5o_1",
+  "flow_key": "direct_zero_shot",
+  "name": "Ingrid Solberg",
+  "scenario_title": "Evening Sail Invitation",
+  "scores": {
+    "character_consistency": 8,
+    "situation_fit": 8,
+    "state_memory_alignment": 8,
+    "action_plausibility": 8,
+    "reasoning_coherence": 8
+  },
+  "overall_score": 8,
+  "score_scale": 10,
+  "dimension_set": 4,
+  "action": "She declines Kjersti's invitation and stays in the loft to finish monitoring the brine.",
+  "reason": "With the supplier's brine deviation still on her mind and the night crew short-staffed, Ingrid follows her established pattern of staying late to recheck brine before a critical batch, prioritizing the loft over Kjersti's invitation.",
+  "decision_mode": "IMMEDIATE",
+  "context_generated_at": "2026-10-08T16:29:27.830Z",
+  "action_generated_at": "2026-10-08T14:12:22.790Z",
+  "generated_at": "2026-10-08T16:31:36.313Z",
+  "model": "deepseek/deepseek-v4-flash-0731"
+}

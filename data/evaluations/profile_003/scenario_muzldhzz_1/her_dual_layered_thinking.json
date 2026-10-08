@@ -1,0 +1,24 @@
+{
+  "profile_id": "profile_003",
+  "scenario_id": "scenario_muzldhzz_1",
+  "flow_key": "her_dual_layered_thinking",
+  "name": "Dara Sok",
+  "scenario_title": "The Detour at the Market",
+  "scores": {
+    "character_consistency": 9,
+    "situation_fit": 8,
+    "state_memory_alignment": 8,
+    "action_plausibility": 8,
+    "reasoning_coherence": 8
+  },
+  "overall_score": 8.2,
+  "score_scale": 10,
+  "dimension_set": 4,
+  "action": "Dara stands still for a few seconds, eyes fixed on the dark mouth of the side street, then turns deliberately toward the festival. They walk around the edge of the crowd, not stopping at any stall, keeping the clipboard tucked against their side, letting the band's music fade behind them as they circle toward the port road.",
+  "reason": "The festival music stirred a nostalgic pull, evoking the fairs near Dara's old warehouse in Phnom Penh, but they reminded themselves that their purpose was the inventory count, the perimeter check, and the evening walk that was theirs. Considering the dark side street, Dara recalled Mei's warning about poorly lit areas; having never taken that street, they would not start now merely to save ten minutes, believing the longer path to be the smoother one. These considerations led Dara to turn deliberately toward the festival, walk around the edge of the crowd without stopping, keep the clipboard tucked close, and continue toward the port road while the band's music faded behind them.",
+  "decision_mode": "REFLECTION_AVAILABLE",
+  "context_generated_at": "2026-10-08T16:32:16.119Z",
+  "action_generated_at": "2026-10-08T14:13:11.366Z",
+  "generated_at": "2026-10-08T16:33:41.420Z",
+  "model": "deepseek/deepseek-v4-flash-0731"
+}

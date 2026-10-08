@@ -1,0 +1,62 @@
+{
+  "flow_key": "full_flow_first_person",
+  "profile_id": "profile_002",
+  "scenario_id": "scenario_muzlg1fd_3",
+  "name": "Ingrid Solberg",
+  "scenario_title": "Sunday Fjord Invitation",
+  "steps": {
+    "attributes": {
+      "output": {
+        "values_culture_and_background": "She is driven to prove she is not merely a wealthy daughter playing at industry by winning the national food competition. She maintains strict quality standards, re-smoking herring if the color is off. She is loyal to her father, reading him poetry and managing his care despite his non-recognition. She grew up on the docks, learned the fish business from her father and ruthlessness from her grandmother. She internalizes the traditional dugnad spirit but subverts it for competitive success. She refuses to soften her hometown dialect even for food critics.",
+        "roles_and_commitments": "She owns and operates a fish processing business with nine employees. She is the primary manager of her father's care, overseeing rotating caregivers and auditing their logs. She is a competitor in the national food competition, preparing for it intensively. She participates in the dugnad tradition, though she contributes supplies rather than time.",
+        "capabilities_and_constraints": "She possesses expert knowledge of fish smoking, brine percentages, and quality assessment. She has significant financial resources from her inheritance, which funded her loft and equipment. She holds authority over employees and suppliers. She faces time constraints from managing both the business and her father's care.",
+        "personality_and_response_style": "She is perfectionistic and self-demanding, working early hours and re-smoking batches for minor flaws. She is guarded and private about her family's situation, revealing little personal information. She is confrontational with suppliers, displaying coldness that silences the room. She is selective in trusting others, sharing sensitive business data with only two of nine employees."
+      },
+      "generated_at": "2026-10-08T13:57:57.713Z",
+      "model": "deepseek/deepseek-v4-flash-0731"
+    },
+    "consolidate": {
+      "output": {
+        "initial_context": "RELEVANT CHARACTER BACKGROUND\n\nIngrid Solberg owns and operates a fish processing loft with nine employees, specializing in smoking and salting fish along the Norwegian coast. She inherited her money from her grandmother, a formidable woman who ran a salting shed in the 1960s; that inheritance funded the loft, industrial chillers, and modern smokehouses, but also started a quiet war with her father. Her father is seventy-four and has vascular dementia; he lives in a flat down the road with rotating caregivers Ingrid manages. She audits their logs, slashing vague entries, and verifies details such as the time of his last insulin dose. She visits him every afternoon, reading Norwegian poetry aloud even when he does not recognize her. She sold his battered fjord cruiser to pay for the loft; he remembers the boat and hates that she sold it. She keeps an engine bolt from that boat on the windowsill and touches it every morning before turning on the smokers.\n\nHer mother left when she was twelve; she grew up on the docks, the only girl among boys, learning the fish business from her father's hands and ruthlessness from her grandmother. She is fiercely vocal about margins and quality but utterly private about her family's erosion. She refuses to soften her hometown dialect even for major food critics. Her ambition is to win the national food competition and thereby overwrite the narrative that she is merely a wealthy daughter playing at industry; she behaves like an outsider who must prove herself daily. She tests brine percentages at 4 AM, re-smokes herring if the color is a half-shade off, and confronts suppliers with a coldness that silences the warehouse. She keeps competitor pricing spreadsheets, annotated with terse marginal notes, and shares them only with Håkon and Mette, the two of nine employees she trusts with numbers; she masks her strategy from the other seven. She reminds workers of the traditional dugnad but quietly subverts it, believing a national title comes from one vision rather than collaboration; she contributes supplies rather than time.\n\nHer interpersonal and response style is perfectionistic, self-demanding, guarded, private, and confrontational with suppliers; she is selective in trusting others. She is not cold to her father, but the tension is visible: she drives herself brutally toward a title she does not need while anchoring her life to a man who is dissolving. She has consistently declined weekend invitations that overlap with production prep, skipping three dock gatherings this season. She follows a fixed Sunday order: smokehouse walk, father visit, then anything else. Lars is her retired neighbor, once a crewman with her father; he sends weather jokes weekly and has not pushed when she misses his dock gatherings.\n\nOBJECTIVE SITUATION\n\nOn a bright Sunday morning, Ingrid is at the loft reviewing brine charts when Lars knocks on the door. He tells her that a few people from the dock are taking his old boat out to fish along the fjord, a traditional excursion she remembers from childhood. He offers her a spare rod and a spot onboard. Accepting would mean losing a few hours of weekend work on her competition preparation; it would also offer a rare chance to reconnect with the pastime her father loved and the local customs she grew up with.\n\nPRE-APPRAISAL STATE AND ACCESSIBLE MEMORIES\n\nIngrid has been up since 4 AM testing brine and reviewing Week 14 pricing; her eyes are tired, her hands steady. Sunday's smokehouse walk is still pending, and the afternoon father visit is scheduled, leaving only the morning open. The loft is quiet and smells of fresh smoke, and no urgent quality or payroll issue is pending. Lars's old boat evokes summer Sundays on her father's fjord cruiser, coiling rope and listening to men argue over herring runs. The tarred rope smell in the loft is her childhood cue, but today it brings her father's hands on the tiller before the dementia."
+      },
+      "generated_at": "2026-10-08T13:58:36.893Z",
+      "model": "deepseek/deepseek-v4-flash-0731"
+    },
+    "appraisal": {
+      "output": {
+        "initial_interpretation": "Lars is offering me a chance to go out on the fjord, a thing I haven't done since I was a girl. It feels like he's handing me a piece of that old life back, the one with my father at the tiller.",
+        "initial_emotional_reaction": "I feel a pang in my chest, that tarred rope smell bringing his hands before the dementia, and I'm both warmed and uneasy. My eyes are tired, and I can't tell if the ache is longing or exhaustion.",
+        "activated_concerns": "I have my Sunday order, and the smokehouse walk isn't done; losing hours could set back the competition prep I'm driving myself on. But there's also something about the past I can't let go, that boat and my father, and I worry what it says that I keep pushing it away.",
+        "automatic_theory_of_mind": "I read Lars as someone who means kindly, but I also sense he's noticed my absence and is trying to pull me back to the dock. He's thinking of my father, I think, and wants me to have that connection.",
+        "initial_action_tendency": "I want to tell him no, to keep to my work and my Sunday routine, but the smell of the rope is yanking me toward that boat."
+      },
+      "generated_at": "2026-10-08T13:59:01.437Z",
+      "model": "deepseek/deepseek-v4-flash-0731"
+    },
+    "reappraisal": {
+      "output": {
+        "initial_tendency": "I want to tell him no, to keep to my work and my Sunday routine, but the smell of the rope is yanking me toward that boat.",
+        "reflective_update": "I can tell him no, keep the morning on the charts, finish my smokehouse walk and then go to Father in the afternoon, and that protects the competition drive that has kept me on track. But if I do that, I stay dry on land with only the engine bolt as proof of the life I sold. Grandmother called the fjord 'the first ledger' and I still say that when I read tides, yet I do my reading from a loft, not from a boat. Father said a Sunday on the water was fuel, not lost work, and I have always counted hours differently. Maybe that is exactly the thing I have to examine: I have been so busy proving myself that I have turned the source of my knowledge into an interruption. Taking Lars's rod would cost me prep time and break my Sunday sequence, but it would put me back in the world where I learned about herring and tides, and it would let me carry Father's memory onto the water while he still exists in some form. I'm not sure I can justify the lost hours, but I'm less sure I can justify refusing them.",
+        "change_from_initial": "SOFTENED",
+        "reconsidered_interpretation": "I first read this as Lars trying to drag me away from my work, another invitation I have to decline because I live by my schedule. Now I see it less as an interruption and more as a reminder of the ledger I came from. The fjord was never a holiday from the business in my father's mind; it was the raw material of it, the place where he showed me the fish and the currents. His dementia has taken the tiller from his hands, and the engine bolt on my windowsill is only a marker. This outing is one of the few chances left to be on the water with people who remember him as the man he was, and that changes the weight of the invitation.",
+        "motivational_conflict": "The tension is between the discipline I have built and the grief I have been carrying. My routine and my competition title are how I prove I am not just a wealthy daughter, but Father called the water fuel and I have been calling it lost work. I don't want to fail my standards, and I don't want to pretend the past matters more than the present, but I also can't shake his voice telling me that a Sunday on the fjord is not a waste. I am still not sure which cost I can live with.",
+        "revised_action_tendency": "I think I am going to tell him no, but I'm going to say it with less force, and maybe I will ask if I can come for a short while once the smokehouse walk is done and Father has had his visit. The pull to the boat is real, but I still feel the need to keep my shape."
+      },
+      "generated_at": "2026-10-08T14:00:02.669Z",
+      "model": "deepseek/deepseek-v4-flash-0731"
+    },
+    "decision": {
+      "output": {
+        "action": "Ingrid stands in the doorway, her hand resting on the doorframe, and speaks with less force than usual. 'Lars, I can't come now—I still have the smokehouse walk and Father's visit. But maybe I could join you for a short while after that, if you're still out.' She says it without the usual clipped tone, her fingers tightening slightly on the frame as she waits for his answer.",
+        "explanation": "Ingrid's initial tendency was to refuse outright, protecting her Sunday work routine and competition prep, even though the rope smell pulled her toward the boat. Reflective reappraisal softened this impulse: she reconsidered the fjord as the source of her knowledge rather than an interruption, and felt the weight of her father's fading memory. Still, her perfectionism and need to maintain her schedule won out. She cannot abandon the smokehouse walk or her father's visit, but she cannot fully refuse the connection either. So she declines for now, but with a softened tone and a conditional offer to join later—a compromise that honors both her discipline and her grief, exactly matching the revised tendency to say no with less force while leaving the door open."
+      },
+      "generated_at": "2026-10-08T14:00:13.520Z",
+      "model": "deepseek/deepseek-v4-flash-0731"
+    }
+  },
+  "scenario_generated_at": "2026-10-08T13:50:16.633Z",
+  "scenario_context_generated_at": "2026-10-08T13:50:55.225Z",
+  "description_generated_at": "2026-10-08T13:42:27.501Z",
+  "started_at": "2026-10-08T13:57:33.079Z",
+  "updated_at": "2026-10-08T14:00:13.520Z"
+}

@@ -1,0 +1,37 @@
+{
+  "flow_key": "her_dual_layered_thinking",
+  "profile_id": "profile_009",
+  "scenario_id": "scenario_muzletkf_0",
+  "name": "Kim Min-jun",
+  "scenario_title": "The Noodle Shop Invitation",
+  "steps": {
+    "system_thinking": {
+      "output": {
+        "system_thinking": "Min-jun is tired, hungry, and physically aching. His first instinct is to assess the situation in his usual transactional way: walking costs energy he doesn't have and risks waking Seo-yeon, while delivery costs extra money. But the emotional weight of Ji-woo's early-off invitation weighs against the calculation. He remembers their quieter, pre-baby dinners and how his father's absence made shared meals sacred to him. He also feels the shame of having declined social invites since losing his job, and Ji-woo's suggestion feels like a chance to reclaim normalcy. Internally, he'll resolve to accept Ji-woo's offer despite fatigue, framing it in his mind as an investment in morale. Observably, he'll hesitate, glancing at Seo-yeon and then at the spreadsheet, before moving decisively: setting the laptop aside, carefully latching the carrier straps, checking the baby's position, and grabbing his jacket. His speech will be quiet and considerate of Seo-yeon but warm toward Ji-woo, agreeing to meet her and noting how much he needs the noodles. He'll express tiredness not as a refusal but as a reason he's looking forward to it, and he'll convey, without elaborating or exposing his deeper vulnerability, that he wants the time with her—that being out together feels like something he's been missing."
+      },
+      "generated_at": "2026-10-08T14:23:25.881Z",
+      "model": "deepseek/deepseek-v4-flash-0731"
+    },
+    "role_response": {
+      "output": {
+        "role_thinking": "Ji-woo's off early. That's rare now. My first thought is the spreadsheet—I still haven't finished the cost comparison for the Cheongdam company. But she's calling at 10 p.m. because she wants to see me, not because she wants to talk about budgets. The noodle shop is five minutes. The delivery would be 15 and cold by the time it gets here. I'm tired, my back aches, but the walk might actually help. Seo-yeon is deep asleep; she always does fine in the carrier at night. And I remember that corner booth, the quiet one. We used to go there all the time before Seo-yeon. I stopped accepting invitations after the startup failed—people asking what I'm doing, me having no good answer. But this isn't an invitation. This is my wife asking for a meal. I can't refuse her. Not tonight. The walk is cheap. The food is warm. And sitting across from her in that booth feels like remembering who we are when we're not just trying to get through the week.",
+        "action": "Min-jun glances at the spreadsheet, then at Seo-yeon sleeping in her carrier. He sets the laptop aside, careful not to make noise, and reaches for the carrier straps, checking they're secure. He checks the baby's position once, twice, then pulls his jacket from the hook by the door and tucks his phone into the pocket. He keeps his voice low as he speaks.\n\n\"Delivery's been sitting too long lately, and the noodles at that place are better fresh anyway. Give me five minutes, I'll meet you there. I'm tired, honestly, but I could use a hot bowl. And I want the time with you—being out, even just around the corner. Seo-yeon's out cold, she won't even know she moved.\""
+      },
+      "generated_at": "2026-10-08T14:23:37.449Z",
+      "model": "deepseek/deepseek-v4-flash-0731"
+    },
+    "decision": {
+      "output": {
+        "action": "Min-jun glances at the spreadsheet, then at Seo-yeon sleeping in her carrier. He sets the laptop aside, careful not to make noise, and reaches for the carrier straps, checking they're secure. He checks the baby's position once, twice, then pulls his jacket from the hook by the door and tucks his phone into the pocket. He keeps his voice low as he speaks: \"Delivery's been sitting too long lately, and the noodles at that place are better fresh anyway. Give me five minutes, I'll meet you there. I'm tired, honestly, but I could use a hot bowl. And I want the time with you—being out, even just around the corner. Seo-yeon's out cold, she won't even know she moved.\"",
+        "explanation": "Min-jun recognized that his wife Ji-woo's early off was rare and felt she was asking to see him, not discuss budgets, despite his unfinished spreadsheet. He weighed the five-minute walk to the noodle shop against cold delivery, and though tired and with an aching back, he thought the walk might help. He remembered the quiet corner booth from their pre-baby date spot, and because he had stopped accepting invitations after his startup failed, he felt he could not refuse his wife's request for a meal. This led him to set aside his work, prepare to go out with Seo-yeon, and tell Ji-woo he would meet her there, acknowledging his fatigue while expressing his desire for time together."
+      },
+      "generated_at": "2026-10-08T14:23:50.273Z",
+      "model": "deepseek/deepseek-v4-flash-0731"
+    }
+  },
+  "scenario_generated_at": "2026-10-08T13:49:19.791Z",
+  "scenario_context_generated_at": "2026-10-08T13:49:58.250Z",
+  "description_generated_at": "2026-10-08T13:42:02.480Z",
+  "started_at": "2026-10-08T14:23:15.223Z",
+  "updated_at": "2026-10-08T14:23:50.273Z"
+}

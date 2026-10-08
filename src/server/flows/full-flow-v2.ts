@@ -73,6 +73,7 @@ Rules:
 * Do not use analyst or model-planning language such as “the character should,” “I need to portray,” “the context suggests,” or “a plausible response is.”
 * Ground every interpretation, emotion, concern, assumption, and impulse in the supplied context.
 * Allow the supplied personality and response style to shape what the character notices, how strongly they react, what feels personally significant, and which impulse arises.
+* The first impulse is habitual. Where the consolidated context records established tendencies, how the character has behaved under comparable conditions, the initial action tendency follows the closest such pattern unless a current-state item or an immediate memory directly cues a different response. Personality and response style shape how the impulse is felt and expressed, not whether it departs from recorded behavior.
 * Do not mechanically restate personality descriptions, values, memories, tendencies, or other context. Express their immediate psychological effect.
 * Keep subjective interpretations distinct from objective facts.
 * Do not present assumptions about another person’s internal state as verified knowledge.
@@ -107,7 +108,7 @@ automatic_theory_of_mind:
 Express the character’s immediate, automatic reading of what other relevant people want, expect, feel, believe, or intend. Frame these as the character’s subjective impressions based on available cues, not as verified access to another person’s mind. Do not deliberate over multiple possible explanations.
 
 initial_action_tendency:
-Express the character’s first behavioral impulse in the third person, such as approaching, avoiding, accepting, refusing, delaying, questioning, reassuring, defending, appeasing, confronting, or withdrawing. Connect the impulse to the immediate appraisal without comparing alternatives, committing to it, or treating it as a final decision.`;
+Express the character’s first behavioral impulse in the third person, such as approaching, avoiding, accepting, refusing, delaying, questioning, reassuring, defending, appeasing, confronting, or withdrawing. Begin from the established tendency in the consolidated context that most closely matches the situation. Depart from it only when a current-state item or an immediate memory directly cues a different response, and name that cue. Connect the impulse to the immediate appraisal without comparing alternatives, committing to it, or treating it as a final decision.`;
 
 function buildV2AppraisalPrompt(input: StepInput): string {
   return `Consolidated initial context:
@@ -119,6 +120,8 @@ ${priorField(input, STEP_CONSOLIDATE, "initial_context")}
 Generate the character’s immediate appraisal of the situation before deliberate reflection.
 
 Write each field as a rendering of the character’s own inner experience in the third person, referring to the character by name or with appropriate third-person pronouns. Do not comment on the character as an outside observer or use model-planning language.
+
+Let the first impulse follow the character’s established tendencies unless a current-state item or an immediate memory directly cues a different response.
 
 Use only the supplied initial context. Do not introduce reflective memories, conduct extended reasoning, systematically compare responses, resolve competing concerns, or make the final decision.
 
@@ -137,7 +140,7 @@ const v2AppraisalStep: FlowStep = {
   key: STEP_APPRAISAL,
   label: "Initial appraisal",
   description:
-    "Reads only part 2's account and produces the person's fast, intuitive first read of the moment — what it seems to mean, what it stirs up, what suddenly feels at stake, how they read the other people, and the first impulse. The revised version of this part: it engages the extracted personality, bans weighing pros and cons, and caps each field at a few sentences. Competing concerns are left unresolved and the impulse stays provisional.",
+    "Reads only part 2's account and produces the person's fast, intuitive first read of the moment — what it seems to mean, what it stirs up, what suddenly feels at stake, how they read the other people, and the first impulse. The revised version of this part: it engages the extracted personality, starts the first impulse from the person's established tendencies and lets only a current-state item or an immediate memory pull it away, bans weighing pros and cons, and caps each field at a few sentences. Competing concerns are left unresolved and the impulse stays provisional.",
   requiresContext: [],
   fields: [
     {

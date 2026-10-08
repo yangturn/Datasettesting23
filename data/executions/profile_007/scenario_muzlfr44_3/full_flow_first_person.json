@@ -1,0 +1,50 @@
+{
+  "flow_key": "full_flow_first_person",
+  "profile_id": "profile_007",
+  "scenario_id": "scenario_muzlfr44_3",
+  "name": "Rania Haddad",
+  "scenario_title": "An Interruption at the Kitchen Table",
+  "steps": {
+    "attributes": {
+      "output": {
+        "values_culture_and_background": "Believes in education as a door and as a discipline. Values independence and the work that makes her feel real; refused to stop teaching after marriage. Values listening to others because she knows what it is to have words ignored. Values resourcefulness and conservation, writing on used envelopes and saving paper. Learned patience and teaching by coaxing her grandmother through Arabic poetry.",
+        "roles_and_commitments": "Teaches three sections of academic writing on a per-course contract. Runs free kitchen-table tutorials three evenings a week for students who cannot afford internet. Works as a freelance Arabic-to-English translator of legal documents. Contributes financially to her brother's household.",
+        "capabilities_and_constraints": "Skilled in academic writing instruction and explaining thesis statements. Has patience and the ability to help students untangle drafts. Translates legal documents from Arabic to English. Has no office, no health insurance, and a paycheck that evaporates by mid-month. Relies on unpredictable freelance income for part of her livelihood. Habitually conserves paper and other materials.",
+        "personality_and_response_style": "Warm but not indiscriminately; remembers which students need specific help. Struggles with accepting help, keeping a ledger of debts including kindness. Can be impatient with sloppy thinking, but never turns away a student who wants to talk. Listens fully even when pressed for time, as when the hallway is emptying and her bus ticket is already in her pocket. Shows up with bread and answers rather than lecturing about effort or responsibility."
+      },
+      "generated_at": "2026-10-08T14:01:27.617Z",
+      "model": "deepseek/deepseek-v4-flash-0731"
+    },
+    "consolidate": {
+      "output": {
+        "initial_context": "RELEVANT CHARACTER BACKGROUND\n\nRania Haddad teaches three sections of academic writing at a university on a per-course contract, which means she has no office, no health insurance, and a paycheck that evaporates by mid-month. She does not mention these constraints to her students. She shares a two-bedroom apartment in Amman with her younger brother, his wife, and their toddler, and she runs free kitchen-table tutorials three evenings a week for students who cannot afford internet. She writes on used envelopes, saves every scrap of paper, and explains thesis statements with the same patience she once used to coax her grandmother through Arabic poetry.\n\nHer marriage ended quietly two years ago. Her ex-husband's family had expected her to stop teaching after the wedding; she did not, and when it became clear that her independence threatened his authority, they separated. She returned to Amman with two suitcases and a determination to never again surrender the work that made her feel real. Moving in with her brother was meant to be temporary but has stretched into a permanent arrangement. She contributes what she can to the household from her freelance Arabic-to-English translation of legal documents, income that is unpredictable, so she translates at night.\n\nShe is warm, but not indiscriminately. She remembers every student who once mentioned a sick mother or a broken printer, and she carries a mental roster of who needs a quiet word or a copy of her lecture notes. She does not lecture about effort or responsibility; she shows up with bread and answers. She struggles with accepting help and keeps a small ledger of her debts, even debts in kindness. She believes in education as a door and as a discipline. She can be impatient with sloppy thinking, but she never turns away a student who wants to talk. She knows what it is to have your words ignored, so she listens fully, even when pressed for time.\n\nHer established patterns with students include setting aside her own work when they arrive unexpectedly, making tea and cutting bread, and rearranging evening translation hours for students facing deadlines. She avoids turning away anyone who sits down with a notebook, even when her own schedule is tight.\n\nOne of her regular tutorial students is a quiet young man who attends her kitchen-table sessions with borrowed textbooks and apologizes for taking her time. He once told her his printer broke, and she lent him a spare copy of her notes. They have had a few short conversations about his writing struggles. He is respectful and rarely asks for help.\n\nOBJECTIVE SITUATION\n\nRania is at the kitchen table, spreading jam on a slice of bread and arranging her translation notes for the evening, when a knock comes at the door. The student from her kitchen-table tutorials is there, holding a crumpled draft. He apologizes for coming unannounced, but his essay is due tomorrow and he cannot figure out how to fix the thesis. He says he won't stay long. Rania sees his worn notebook. Her translation work, a legal document due by morning, sits open on the table.\n\nPRE-APPRAISAL STATE AND ACCESSIBLE MEMORIES\n\nShe is tired from a full day of teaching and the commute, but the bread-and-jam routine is her usual way of settling into evening work. Her translation ledger is open, with a legal document due by morning. She is mildly surprised by the knock but not annoyed; her body is half-risen before she thinks about it.\n\nThe crumpled draft and worn notebook call up the memory of his earlier comment about the broken printer and of giving him a spare copy of her lecture notes. The smell of jam on bread recalls her grandmother's kitchen, where she practised patience teaching Arabic poetry. The knock at the kitchen table reminds her of other evenings when students arrived with last-minute requests after she had finished her own plans."
+      },
+      "generated_at": "2026-10-08T14:02:10.979Z",
+      "model": "deepseek/deepseek-v4-flash-0731"
+    },
+    "appraisal": {
+      "output": {
+        "initial_interpretation": "He's here because his essay is due tomorrow and he can't fix the thesis on his own. He's apologizing for coming unannounced, but he must be desperate to show up like this.",
+        "initial_emotional_reaction": "I feel a warm, familiar tug—he needs me, and I'm already half-risen to help. I'm tired and my translation is waiting, but I'm not annoyed, just quietly settling into the role I know so well.",
+        "activated_concerns": "My translation deadline is pressing, and I need to finish that document. But I also see his crumpled draft and remember his broken printer and my spare notes—he rarely asks for help, and I don't want to turn him away. I feel the weight of my own commitments and his need at once.",
+        "automatic_theory_of_mind": "I read his apology and his worn notebook as signs that he feels guilty for intruding and doesn't want to take my time. I think he genuinely believes he can't fix the thesis alone and is hoping I'll say yes, even though he's trying not to impose.",
+        "initial_action_tendency": "I find myself already half-risen, and my first impulse is to wave him in, make room at the table, and take a look at his draft. I'm not deciding yet, but my body is already moving toward helping him."
+      },
+      "generated_at": "2026-10-08T14:02:19.705Z",
+      "model": "deepseek/deepseek-v4-flash-0731"
+    },
+    "decision": {
+      "output": {
+        "action": "Rania rises fully from her chair, sets down the bread, and gestures the student inside. She clears a space at the table, pushes her translation notes aside, and holds out her hand for the crumpled draft. She says, \"Come in, sit down. Let me see what you've got.\"",
+        "explanation": "Rania's immediate interpretation is that the student is desperate to arrive unannounced, and her automatic read of his apology and worn notebook is that he feels guilty for intruding. This activates her established caregiving role as a teacher who never turns away a student, especially one she remembers as having a broken printer and rare requests for help. Her body was already half-risen before she consciously decided, and her initial action tendency is to wave him in, make room at the table, and examine his draft. Although her translation deadline presses on her, that concern does not override the familiar warmth and momentum of helping; she immediately follows the tendency by welcoming him and reaching for the paper."
+      },
+      "generated_at": "2026-10-08T14:02:28.632Z",
+      "model": "deepseek/deepseek-v4-flash-0731"
+    }
+  },
+  "scenario_generated_at": "2026-10-08T13:50:03.268Z",
+  "scenario_context_generated_at": "2026-10-08T13:50:17.792Z",
+  "description_generated_at": "2026-10-08T13:46:42.093Z",
+  "started_at": "2026-10-08T14:01:07.291Z",
+  "updated_at": "2026-10-08T14:02:28.632Z"
+}

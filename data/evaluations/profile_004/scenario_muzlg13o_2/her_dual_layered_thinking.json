@@ -1,0 +1,24 @@
+{
+  "profile_id": "profile_004",
+  "scenario_id": "scenario_muzlg13o_2",
+  "flow_key": "her_dual_layered_thinking",
+  "name": "Tyler Hoffman",
+  "scenario_title": "Overnight Shift Request",
+  "scores": {
+    "character_consistency": 7,
+    "situation_fit": 8,
+    "state_memory_alignment": 7,
+    "action_plausibility": 7,
+    "reasoning_coherence": 3
+  },
+  "overall_score": 6.4,
+  "score_scale": 10,
+  "dimension_set": 4,
+  "action": "Tyler pauses, glancing over at Roy's sleeping form, then speaks into the phone in a lower voice. \"Uh, sorry, I can't stay until noon. I've got my first phlebotomy class at 8 and I really need to be there. I can stay until seven though, if that helps you find someone.\" He shifts his weight, rubbing his eyes with his free hand.",
+  "reason": "Tyler anticipated the coordinator's request and initially felt inclined to say yes out of loyalty to Roy and to avoid inconveniencing the agency. But he caught himself, noting that Roy was asleep and stable and that he had already rearranged his shifts twice for the phlebotomy class. He reflected on his pattern of dropping commitments like the CNA course and computer science program, and he felt tired and tempted to cave because staying would be easy. However, the thought of the strict instructor and the possibility that some external pressure might help him follow through made him decide that skipping the first class would mean letting the commitment fade. So he declined to stay until noon but offered to stay until seven.",
+  "decision_mode": "IMMEDIATE",
+  "context_generated_at": "2026-10-08T16:02:06.588Z",
+  "action_generated_at": "2026-10-08T14:07:19.766Z",
+  "generated_at": "2026-10-08T16:05:43.287Z",
+  "model": "deepseek/deepseek-v4-flash-0731"
+}

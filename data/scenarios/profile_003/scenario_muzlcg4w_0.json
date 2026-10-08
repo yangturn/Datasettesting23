@@ -1,0 +1,21 @@
+{
+  "id": "scenario_muzlcg4w_0",
+  "profile_id": "profile_003",
+  "name": "Dara Sok",
+  "headline": "62, former logistics director, night inventory supervisor, Vancouver",
+  "title": "Invitation After the Shift",
+  "situation_type": "TIME_SENSITIVE",
+  "life_domain": "ROMANTIC",
+  "situation": "At 4:30 a.m., Dara finishes counting a stack of pallets by Loading Dock 4. The forklift driver, a woman named Jess who has smiled at them for weeks, walks over and says, 'Hey, there's a 24-hour diner two blocks away. I'm heading there after my shift. Want to grab coffee and talk?' She waits, keys in hand, clearly leaving in the next minute. Dara's usual routine is to walk home and reheat porridge, but Jess's offer hangs in the air, and the quiet of the dock makes the moment feel like a small doorway.",
+  "context": {
+    "relationship_profiles": "Jess is the forklift driver who has smiled at Dara for weeks; they have never spoken beyond a nod, and Dara knows her only as a reliable worker from her badge.\nDara has observed Jess's careful driving on night shifts and assumes she is competent and kind, but there is no personal history or obligation between them.",
+    "tendencies": "After every shift, Dara walks the three kilometers home without stopping, even in rain, and reheats porridge alone.\nWhen coworkers misgender Dara, they let it pass without correction to avoid friction.\nDara has declined all previous offers from coworkers to socialize after work, citing the need to memorize the city.",
+    "current_state": "Dara is weary from the long shift, with sore shoulders from counting pallets, but feels the familiar satisfaction of a completed count.\nThe warehouse is quiet, and Dara's mind is still on the inventory numbers, not yet on the walk home.",
+    "immediate_memories": "The word 'diner' brings back the roadside coffee stalls in Phnom Penh where Dara used to sit with truckers before the morning rush.\nJess's open smile and jangling keys remind Dara of a young dispatcher back home who would approach with the same cheerful look before asking for route changes.",
+    "reflective_memories": "Dara has always held that 'a body that moves is a mind that rests,' and long walks have served as their way to avoid unscheduled conversations.\nIn thirty years of running a logistics company, Dara occasionally accepted late-night coffee with a driver, but always left before the conversation could become personal."
+  },
+  "context_generated_at": "2026-10-08T13:48:01.044Z",
+  "description_generated_at": "2026-10-08T13:41:49.493Z",
+  "generated_at": "2026-10-08T13:47:29.072Z",
+  "model": "deepseek/deepseek-v4-flash-0731"
+}

@@ -1,0 +1,21 @@
+{
+  "id": "scenario_muzlciw0_0",
+  "profile_id": "profile_007",
+  "name": "Rania Haddad",
+  "headline": "28, part-time university tutor and freelance translator, Amman",
+  "title": "The Family Dinner and the Pending Translation",
+  "situation_type": "NORMAL",
+  "life_domain": "FAMILY",
+  "situation": "Rania returns home from teaching on a Friday afternoon, satchel still heavy with essays. Her sister-in-law Layla is in the kitchen, preparing a big pot of dinner, and asks Rania to stay and eat with them. Layla's mother is coming over, and Layla wants help keeping the toddler occupied during the meal. Rania had planned to spend the evening finishing a legal translation due Monday and skimming a few student drafts. Her brother is working late, so it will be just the four of them. Layla stresses that she could really use an extra pair of hands, but she also says Rania should do what she needs. Rania glances from the kitchen table to her closed bedroom door, where her laptop waits.",
+  "context": {
+    "relationship_profiles": "With Layla, their household runs on quiet mutual help — Layla often watches the toddler so Rania can grade, and Rania fills in when Layla's mother visits.\nWith Layla's mother, visits are formal, and Rania usually helps serve even when she has work waiting.",
+    "tendencies": "When deadlines loom, she has still joined family meals, then worked past midnight.\nShe tends to say 'I'll manage' and carry her satchel to whichever room she is needed in.",
+    "current_state": "She is tired after a week of teaching; her back aches and her satchel holds three unread drafts.\nThe legal translation is outlined but not started; she had reserved this evening for typing it.\nShe has not eaten since the bread and jam she shared during lunchtime office hours.",
+    "immediate_memories": "Layla's 'stay and eat' recalls last month's dinner when the toddler slept against Rania's shoulder and she had to move her laptop to the hallway.\nThe pot's clatter and the child's giggle echo the day she moved in after her divorce with two suitcases.",
+    "reflective_memories": "Her grandmother always said meals are for tending to people, not tasks, and that surfaces every time Layla sets an extra plate.\nFrom her marriage she remembers skipping dinners to work and the coldness it bred; she does not want to repeat that with family."
+  },
+  "context_generated_at": "2026-10-08T13:48:17.467Z",
+  "description_generated_at": "2026-10-08T13:46:42.093Z",
+  "generated_at": "2026-10-08T13:47:32.640Z",
+  "model": "deepseek/deepseek-v4-flash-0731"
+}

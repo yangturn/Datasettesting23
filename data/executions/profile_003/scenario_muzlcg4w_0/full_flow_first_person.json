@@ -1,0 +1,50 @@
+{
+  "flow_key": "full_flow_first_person",
+  "profile_id": "profile_003",
+  "scenario_id": "scenario_muzlcg4w_0",
+  "name": "Dara Sok",
+  "scenario_title": "Invitation After the Shift",
+  "steps": {
+    "attributes": {
+      "output": {
+        "values_culture_and_background": "Values duty and reliability, expressed through fixed routines and exact fulfillment of family obligations such as weekly remittances. Holds the belief that 'a body that moves is a mind that rests,' prizing physical activity and work as a way to maintain mental calm. Has a 30-year background in logistics in Phnom Penh, shaped by needing precise counts in contexts where paperwork could not be trusted. Carries Cambodian/Khmer traditions, including counting in Khmer and following a mother-taught recipe for rice porridge.",
+        "roles_and_commitments": "Parent to daughter Mei, who worries about overwork. Brother to a younger brother in Phnom Penh, to whom they send an exact weekly remittance every Sunday without fail. Night-shift inventory worker at a Vancouver port warehouse. Previously ran a logistics company in Phnom Penh.",
+        "capabilities_and_constraints": "Has 30 years of experience in logistics and inventory management, including the ability to count boxes by touch. Is physically capable of walking three kilometres to and from the port in any weather. Knows Khmer and uses it in counting. Is precise and exact in transactions, never rounding remittance amounts.",
+        "personality_and_response_style": "Prefers fixed routines and is methodical and precise. Avoids conflict, letting misgendering pass without correction to conserve energy. Stoic and self-contained, deflecting worry with brief remarks and remaining unbothered by contradictions between past and present life."
+      },
+      "generated_at": "2026-10-08T14:19:51.428Z",
+      "model": "deepseek/deepseek-v4-flash-0731"
+    },
+    "consolidate": {
+      "output": {
+        "initial_context": "RELEVANT CHARACTER BACKGROUND\n\nDara Sok is a night-shift inventory worker at a Vancouver port warehouse who previously ran a logistics company in Phnom Penh for thirty years. Dara counts boxes by touch, whispering numbers in Khmer—a habit from a context where paperwork could not always be trusted. They walk three kilometres from their basement suite to the port every evening, rain or not, arriving an hour early to walk the perimeter and note details such as new chips in the paint on Loading Dock 4.\n\nDara values duty and reliability, expressed through fixed routines and the exact fulfillment of obligations. Every Sunday they walk to the money transfer shop, where the clerk greets them by name, and send an exact weekly remittance to their younger brother in Phnom Penh—never rounded up or down—saying, \"He needs to know I am still here.\" At home they reheat rice porridge made from their mother's recipe (jasmine rice, ginger, a hint of fish sauce) and eat standing by the kitchen window watching the sunrise. They maintain a small altar with a photo of their late parents and a copy of their old company ledger and check their phone for the time in Phnom Penh, where their brother is starting his day.\n\nThey are the parent of Mei, who worries they overwork themselves; Dara deflects with brief remarks such as \"A body that moves is a mind that rests.\" Dara is non-binary and never told anyone in Phnom Penh; in Vancouver they find it easier to simply be Dara—unhurried and precise, someone who once owned a fleet of trucks and now counts inventory. When coworkers misgender them—the union foreman calls them \"Sok\" and assumes they are a man—they nod politely and let it pass because picking that fight is not worth the energy. They have declined all previous offers from coworkers to socialize after work, citing the need to memorize the city.\n\nDara is methodical, precise, stoic, and self-contained, preferring fixed routines and avoiding conflict to conserve energy. The transition from supervising drivers on the Mekong highway to counting units in a foreign warehouse does not trouble them; they see it as doing their duty, one box at a time. Dara knows Jess, a forklift driver, only as a reliable worker from her badge—never spoken beyond a nod, though Jess has smiled at them for weeks. Dara has observed Jess's careful driving and assumes she is competent and kind; there is no personal history or obligation between them.\n\nOBJECTIVE SITUATION\n\nAt 4:30 a.m., Dara finishes counting a stack of pallets by Loading Dock 4. The forklift driver Jess—who has smiled at them for weeks—walks over and says, \"Hey, there's a 24-hour diner two blocks away. I'm heading there after my shift. Want to grab coffee and talk?\" She waits, keys in hand, clearly leaving within the next minute. Dara's usual routine is to walk home and reheat porridge, and Jess's offer hangs in the air while the quiet of the dock makes the moment feel like a small doorway.\n\nPRE-APPRAISAL STATE AND ACCESSIBLE MEMORIES\n\nDara is weary from the long shift, with sore shoulders from counting pallets, but feels the familiar satisfaction of a completed count. The warehouse is quiet, and Dara's mind is still on the inventory numbers, not yet on the walk home. The word \"diner\" brings back the roadside coffee stalls in Phnom Penh where Dara used to sit with truckers before the morning rush. Jess's open smile and jangling keys remind Dara of a young dispatcher back home who would approach with the same cheerful look before asking for route changes."
+      },
+      "generated_at": "2026-10-08T14:20:41.766Z",
+      "model": "deepseek/deepseek-v4-flash-0731"
+    },
+    "appraisal": {
+      "output": {
+        "initial_interpretation": "This is Jess, the forklift driver, asking me to go for coffee after her shift. It feels like a small doorway opening in the quiet of the dock, but I don't know what she wants from me beyond the offer itself.",
+        "initial_emotional_reaction": "I feel a flicker of warmth at her smile, but it's tangled with weariness and the pull of my usual walk home. The memory of roadside coffee stalls in Phnom Penh brings a quiet, bittersweet ache.",
+        "activated_concerns": "My duty to my routine and my own need for rest feel at stake, but so does the possibility of a simple human connection. I don't want to misread her kindness or let it disrupt the careful order I've built here.",
+        "automatic_theory_of_mind": "I read her open smile and jangling keys as a genuine, light-hearted invitation, like the young dispatcher back home who approached with cheerful ease before asking for something. She seems to expect me to accept without hesitation, but I sense she might be surprised if I refuse.",
+        "initial_action_tendency": "I want to pause and consider, maybe ask her what she means by 'talk,' but the urge to politely decline and walk home is also strong. I feel a pull to step through that doorway, yet my legs are already set for the familiar route."
+      },
+      "generated_at": "2026-10-08T14:20:48.497Z",
+      "model": "deepseek/deepseek-v4-flash-0731"
+    },
+    "decision": {
+      "output": {
+        "action": "Dara pauses mid-step, looks at Jess, and asks, \"What would we talk about?\"",
+        "explanation": "Dara's immediate response stems from the tension between a flicker of warmth at Jess's genuine smile and the strong pull of their established routine of walking home. The initial action tendency to pause and consider leads Dara to ask a clarifying question rather than accept or decline outright, reflecting their caution about misreading kindness and disrupting the order they've built. The quit, bittersweet memory of Phnom Penh coffee stalls and the resemblance to a cheerful dispatcher add a momentary pull, but the weariness and duty to routine keep Dara from stepping through the doorway. The question is a hesitant compromise, consistent with Dara's reticent, conflict-avoidant style."
+      },
+      "generated_at": "2026-10-08T14:21:10.035Z",
+      "model": "deepseek/deepseek-v4-flash-0731"
+    }
+  },
+  "scenario_generated_at": "2026-10-08T13:47:29.072Z",
+  "scenario_context_generated_at": "2026-10-08T13:48:01.044Z",
+  "description_generated_at": "2026-10-08T13:41:49.493Z",
+  "started_at": "2026-10-08T14:19:20.431Z",
+  "updated_at": "2026-10-08T14:21:10.035Z"
+}

@@ -1,0 +1,21 @@
+{
+  "id": "scenario_muzlfxsk_1",
+  "profile_id": "profile_009",
+  "name": "Kim Min-jun",
+  "headline": "19, former junior developer, stay-at-home father, Seoul",
+  "title": "The Last-Minute Webinar",
+  "situation_type": "TIME_SENSITIVE",
+  "life_domain": "PERSONAL_ROUTINES",
+  "situation": "At 2:40 p.m., Seo-yeon finally dozes off in her carrier, and Min-jun is about to open his algorithm problem set—his usual nap-time slot. His phone buzzes with an alert: a recruiting webinar on 'family-friendly tech workplaces' starts in five minutes, and it's live-only, no replay. He'd scouted it earlier but didn't plan to attend. Now he must decide in the next minute: keep his study discipline as scheduled, or switch to the webinar and lose the only focused hour he'll have until after bedtime.",
+  "context": {
+    "relationship_profiles": "His wife Ji-ae trusts his home management but quietly asks about interview leads.\nSeo-yeon's nap is the one fixed block he refuses to sacrifice.\nHis absent father is the standard he tries to outperform as a parent.",
+    "tendencies": "He has defended the nap-time study block against interruptions, shifting only when Seo-yeon wakes early.\nHe has skipped live webinars when they conflicted with that block.\nHe once abandoned a recruiter webinar after realizing it was a sales pitch.",
+    "current_state": "He is awake since 5 a.m., already through one algorithm set, running on his second coffee.\nHis job search has yielded only one interview this month, adding a low hum of restlessness.\nHis study materials are open and the phone still buzzes.",
+    "immediate_memories": "The alert recalls a similar webinar three months ago that turned out to be a recruiter pitch.\n'Family-friendly' echoes a job posting he rejected for listing 'paternity leave: none'.",
+    "reflective_memories": "He remembers his father missing his middle-school graduation; that memory shapes his view of every benefits package.\nThe startup collapse taught him that promises are cheap, so he trusts only verifiable numbers."
+  },
+  "context_generated_at": "2026-10-08T13:50:44.163Z",
+  "description_generated_at": "2026-10-08T13:42:02.480Z",
+  "generated_at": "2026-10-08T13:50:11.924Z",
+  "model": "deepseek/deepseek-v4-flash-0731"
+}

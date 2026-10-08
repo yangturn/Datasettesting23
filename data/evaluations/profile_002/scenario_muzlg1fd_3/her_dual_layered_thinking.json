@@ -1,0 +1,24 @@
+{
+  "profile_id": "profile_002",
+  "scenario_id": "scenario_muzlg1fd_3",
+  "flow_key": "her_dual_layered_thinking",
+  "name": "Ingrid Solberg",
+  "scenario_title": "Sunday Fjord Invitation",
+  "scores": {
+    "character_consistency": 9,
+    "situation_fit": 8,
+    "state_memory_alignment": 8,
+    "action_plausibility": 8,
+    "reasoning_coherence": 7
+  },
+  "overall_score": 8,
+  "score_scale": 10,
+  "dimension_set": 4,
+  "action": "Ingrid looks up from the brine charts, her tired eyes steady. She pauses, glancing at the blackened engine bolt on the windowsill before straightening her shoulders. 'Lars.' Her voice is clipped, in the local dialect. 'I appreciate the offer. But I have the smokehouse walk ahead, and the charts won't read themselves.' She gives a small, firm nod. 'Say hello to the crew for me. Tell me how the catch goes.' She turns back to the table, her hand settling on the edge of a spreadsheet.",
+  "reason": "The tar and salt smell pulls Ingrid back to childhood Sundays on the fjord with her father, but she has been up since 4 AM, the brine charts are still open, and the smokehouse walk is pending. She has skipped three gatherings this season and knows that joining Lars would cost the whole morning. The engine bolt reminds her of the only piece of the boat she kept and of her grandmother's saying that the fjord was the first ledger, but she now keeps her ledgers in spreadsheets. Driven by the need to prove herself daily, she concludes she cannot go, yet she recognizes Lars means well and does not want to be short with him, so she declines politely and sends her regards.",
+  "decision_mode": "REFLECTION_AVAILABLE",
+  "context_generated_at": "2026-10-08T15:23:57.731Z",
+  "action_generated_at": "2026-10-08T13:58:02.633Z",
+  "generated_at": "2026-10-08T15:25:45.825Z",
+  "model": "deepseek/deepseek-v4-flash-0731"
+}

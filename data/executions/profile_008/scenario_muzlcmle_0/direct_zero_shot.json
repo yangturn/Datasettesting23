@@ -1,0 +1,22 @@
+{
+  "flow_key": "direct_zero_shot",
+  "profile_id": "profile_008",
+  "scenario_id": "scenario_muzlcmle_0",
+  "name": "Sasha Kovalenko",
+  "scenario_title": "Grandmother's Birthday Dinner",
+  "steps": {
+    "decision": {
+      "output": {
+        "action": "Sasha takes the offered seat on the women's side without correcting the grandmother, letting the misgendering pass to avoid a public scene.",
+        "explanation": "Sasha's established tendency at family gatherings is to allow gendered terms to pass without comment and later discuss privately, and their grandfather's principle against humiliating an elder in front of guests supports this choice."
+      },
+      "generated_at": "2026-10-08T14:23:07.768Z",
+      "model": "deepseek/deepseek-v4-flash-0731"
+    }
+  },
+  "scenario_generated_at": "2026-10-08T13:47:37.442Z",
+  "scenario_context_generated_at": "2026-10-08T13:47:57.377Z",
+  "description_generated_at": "2026-10-08T13:41:54.618Z",
+  "started_at": "2026-10-08T14:23:03.835Z",
+  "updated_at": "2026-10-08T14:23:07.768Z"
+}

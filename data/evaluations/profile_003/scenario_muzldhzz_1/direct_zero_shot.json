@@ -1,0 +1,24 @@
+{
+  "profile_id": "profile_003",
+  "scenario_id": "scenario_muzldhzz_1",
+  "flow_key": "direct_zero_shot",
+  "name": "Dara Sok",
+  "scenario_title": "The Detour at the Market",
+  "scores": {
+    "character_consistency": 9,
+    "situation_fit": 8,
+    "state_memory_alignment": 8,
+    "action_plausibility": 9,
+    "reasoning_coherence": 8
+  },
+  "overall_score": 8.4,
+  "score_scale": 10,
+  "dimension_set": 4,
+  "action": "Dara walks through the festival and circles around to the port, accepting the extra ten minutes.",
+  "reason": "Dara's established tendency is to choose a longer, well-lit detour over an unfamiliar alley, as seen in past street repairs. The side street is poorly lit and unfamiliar, and Mei's warning against such areas is recalled. The festival route, though disrupted, is illuminated and more familiar in spirit, aligning with Dara's preference for known paths and routine.",
+  "decision_mode": "REFLECTION_AVAILABLE",
+  "context_generated_at": "2026-10-08T16:32:16.119Z",
+  "action_generated_at": "2026-10-08T14:12:48.529Z",
+  "generated_at": "2026-10-08T16:33:59.261Z",
+  "model": "deepseek/deepseek-v4-flash-0731"
+}

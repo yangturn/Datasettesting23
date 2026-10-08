@@ -1,0 +1,24 @@
+{
+  "profile_id": "profile_004",
+  "scenario_id": "scenario_muzlglrg_3",
+  "flow_key": "full_flow_first_person",
+  "name": "Tyler Hoffman",
+  "scenario_title": "Sunday Dinner Invitation",
+  "scores": {
+    "character_consistency": 6,
+    "situation_fit": 8,
+    "state_memory_alignment": 7,
+    "action_plausibility": 7,
+    "reasoning_coherence": 8
+  },
+  "overall_score": 7.2,
+  "score_scale": 10,
+  "dimension_set": 4,
+  "action": "Tyler tells his mother he'll be there and will bring a bag of ice, then writes \"bag of ice\" on a sticky note and sticks it to the cover of his phlebotomy workbook.",
+  "reason": "Tyler's initial impulse to say yes just to end the call is strengthened by reflection. He recalls his pattern of dodging family commitments—like showing up with only shredded cheese last Thanksgiving—and his admiration for his dad and Roy, who stick with things. Recognizing this as a small test of dependability, he decides to actually commit rather than just end the conversation. He says yes and writes down the reminder, turning his initial tendency into a concrete follow-through action that breaks his usual half-forgetting pattern.",
+  "decision_mode": "REFLECTION_AVAILABLE",
+  "context_generated_at": "2026-10-08T15:29:58.722Z",
+  "action_generated_at": "2026-10-08T14:01:18.954Z",
+  "generated_at": "2026-10-08T15:31:16.070Z",
+  "model": "deepseek/deepseek-v4-flash-0731"
+}

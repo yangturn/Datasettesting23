@@ -1,0 +1,24 @@
+{
+  "profile_id": "profile_002",
+  "scenario_id": "scenario_muzleu3u_2",
+  "flow_key": "om_cot",
+  "name": "Ingrid Solberg",
+  "scenario_title": "The Empty Coffee Tin",
+  "scores": {
+    "character_consistency": 8,
+    "situation_fit": 8,
+    "state_memory_alignment": 7,
+    "action_plausibility": 8,
+    "reasoning_coherence": 8
+  },
+  "overall_score": 7.8,
+  "score_scale": 10,
+  "dimension_set": 4,
+  "action": "She sets the empty coffee tin on the table and walks to her laptop to begin the spreadsheet review without coffee.",
+  "reason": "Ingrid values quiet and avoids idle talk, reinforced by her grandmother's rule against wasting daylight on chatter. The bakery owner would draw her into family talk, which she avoids. Her immediate memory of skipping coffee three weeks ago to do productive work, combined with her tendency to work through dawn rather than step outside, leads her to forgo the bakery trip and start her spreadsheet review early despite the cold and dry throat.",
+  "decision_mode": "REFLECTION_AVAILABLE",
+  "context_generated_at": "2026-10-08T15:56:15.848Z",
+  "action_generated_at": "2026-10-08T14:05:07.463Z",
+  "generated_at": "2026-10-08T15:59:10.377Z",
+  "model": "deepseek/deepseek-v4-flash-0731"
+}

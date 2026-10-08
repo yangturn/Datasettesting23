@@ -1,0 +1,24 @@
+{
+  "profile_id": "profile_010",
+  "scenario_id": "scenario_muzlhmoq_2",
+  "flow_key": "direct_zero_shot",
+  "name": "Ciarán Walsh",
+  "scenario_title": "A Quick Call to Help the Intern",
+  "scores": {
+    "character_consistency": 9,
+    "situation_fit": 8,
+    "state_memory_alignment": 8,
+    "action_plausibility": 8,
+    "reasoning_coherence": 7
+  },
+  "overall_score": 8,
+  "score_scale": 10,
+  "dimension_set": 4,
+  "action": "He sends a concise chat message to the intern with the documentation link and the exact flag to reset, and does not join the call.",
+  "reason": "Ciarán consistently avoids calls and instead posts documentation links when asked for help, as shown in his established tendencies. He knows the exact fix and prefers to solve problems quietly without direct interaction, aligning with his independent nature and his preference to give help without being asked.",
+  "decision_mode": "REFLECTION_AVAILABLE",
+  "context_generated_at": "2026-10-08T16:24:22.232Z",
+  "action_generated_at": "2026-10-08T14:10:53.636Z",
+  "generated_at": "2026-10-08T16:27:12.430Z",
+  "model": "deepseek/deepseek-v4-flash-0731"
+}

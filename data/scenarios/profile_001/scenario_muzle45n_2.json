@@ -1,0 +1,21 @@
+{
+  "id": "scenario_muzle45n_2",
+  "profile_id": "profile_001",
+  "name": "Aminata Diallo",
+  "headline": "19, apprentice plasterer, Dakar",
+  "title": "An Invitation at the Gate",
+  "situation_type": "TIME_SENSITIVE",
+  "life_domain": "ROMANTIC",
+  "situation": "Aminata is packing her empty porridge pot at the construction site gate when a young mason's helper, whom she has nodded to many mornings, steps closer. He holds out a small paper bag of roasted groundnuts and says, \"There's a new tea stall by the market, just ten minutes away. I have a break now—come with me before your class.\" The afternoon sun is hot, and her trade school starts in under an hour. He waits, smiling, while she adjusts the pot on her head.",
+  "context": {
+    "relationship_profiles": "She knows the mason's helper only by sight and nod, never having exchanged more than a greeting. He sometimes buys porridge from her on busy mornings. She has noticed he is friendly with other workers but knows nothing else about him.",
+    "tendencies": "She usually leaves the site as soon as her pot is empty, keeping to her fixed route to the trade school. When workers have offered her small gifts or invitations before, she has politely declined and moved on. She values punctuality and has never missed a class since she enrolled.",
+    "current_state": "She is tired from waking at 4:30 and has been standing in the hot sun since early morning. Her cloth pouch of coins is heavy, and she wants a cool drink before class. She calculates that a detour to the tea stall would leave her only a short walk to school.",
+    "immediate_memories": "The sight of the groundnuts reminds her of the roasted peanuts her mother would pack for her as a child in the village. The tea stall at the market is something she passed yesterday on her way to school, and she noticed its new sign.",
+    "reflective_memories": "She once accepted a bowl of rice from a neighbor in the city and later felt obliged to give her money, which taught her to be careful with kindness. She has also seen her roommates waste time at social stalls and then rush to evening classes, and she has told herself she will not do that."
+  },
+  "context_generated_at": "2026-10-08T13:49:10.572Z",
+  "description_generated_at": "2026-10-08T13:41:57.136Z",
+  "generated_at": "2026-10-08T13:48:46.859Z",
+  "model": "deepseek/deepseek-v4-flash-0731"
+}

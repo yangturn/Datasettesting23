@@ -1,0 +1,24 @@
+{
+  "profile_id": "profile_003",
+  "scenario_id": "scenario_muzldhzz_1",
+  "flow_key": "full_flow_first_person",
+  "name": "Dara Sok",
+  "scenario_title": "The Detour at the Market",
+  "scores": {
+    "character_consistency": 10,
+    "situation_fit": 10,
+    "state_memory_alignment": 10,
+    "action_plausibility": 10,
+    "reasoning_coherence": 9
+  },
+  "overall_score": 9.8,
+  "score_scale": 10,
+  "dimension_set": 4,
+  "action": "Dara turns away from the dark side street and walks into the festival, following the fencing around the blocked route. They move through the lit crowd, past the stalls and the band, keeping their clipboard tucked under one arm, and continue along the waterfront toward the port.",
+  "reason": "Dara's initial impulse was to avoid the dark side street and take the festival detour even if it added ten minutes. Reflection strengthened this tendency: the side street felt like an unknown risk, while the festival, though disruptive, offered a lit and populated buffer near familiar territory. Dara's long-standing preference for known routes, verification, and avoiding poorly lit places—especially with Mei's warning in mind—made the detour the safer choice. The nostalgic sounds and smells also made the extra time feel acceptable, despite Dara's precise concern about shortening their buffer. The final action follows the strengthened inclination: Dara accepts the ten-minute delay, stays near people and light, and proceeds through the festival rather than gambling on the unfamiliar alley.",
+  "decision_mode": "REFLECTION_AVAILABLE",
+  "context_generated_at": "2026-10-08T16:32:16.119Z",
+  "action_generated_at": "2026-10-08T14:14:51.081Z",
+  "generated_at": "2026-10-08T16:33:20.026Z",
+  "model": "deepseek/deepseek-v4-flash-0731"
+}

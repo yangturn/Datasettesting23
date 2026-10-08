@@ -1,0 +1,62 @@
+{
+  "flow_key": "full_flow_v2",
+  "profile_id": "profile_007",
+  "scenario_id": "scenario_muzlduwb_1",
+  "name": "Rania Haddad",
+  "scenario_title": "The Dinner Invitation",
+  "steps": {
+    "attributes": {
+      "output": {
+        "values_culture_and_background": "She values independence and the work that makes her feel real, having prioritized her teaching career over a marriage that demanded she abandon it. She believes in education as a door and as a discipline. She values listening fully because she knows what it is to have her words ignored.",
+        "roles_and_commitments": "She is an adjunct academic writing instructor teaching three sections on a per-course contract. She is a freelance Arabic-to-English translator, primarily of legal documents. She is a sister and aunt living with her brother's family and contributing what she can to the household. She provides informal evening tutoring for students who cannot afford internet.",
+        "capabilities_and_constraints": "She has expertise in academic writing instruction and Arabic-to-English translation, including legal documents. She works on a per-course contract with no office, no health insurance, and low, unpredictable income. She lacks a private office, using her kitchen table for tutoring. She has limited financial resources, saving scraps of paper and using used envelopes.",
+        "personality_and_response_style": "She struggles with accepting help and deflects kindness, but reciprocates with tangible gifts, keeping a mental ledger of debts even in kindness. She is warm and attentive to students' personal circumstances, remembering who needs a quiet word or extra notes. She is patient with those who need help but can be impatient with sloppy thinking, though she never turns away a student who wants to talk. She is determined and independent, having chosen to leave her marriage rather than surrender her work."
+      },
+      "generated_at": "2026-10-08T14:15:44.942Z",
+      "model": "deepseek/deepseek-v4-flash-0731"
+    },
+    "consolidate": {
+      "output": {
+        "initial_context": "RELEVANT CHARACTER BACKGROUND\n\nRania Haddad is an adjunct academic writing instructor at a university, teaching three sections on a per-course contract. She has no office, no health insurance, and a paycheck that evaporates by mid-month. She also works as a freelance Arabic-to-English translator, primarily of legal documents, often at night. She lives in a two-bedroom apartment in Amman with her younger brother, his wife, and their toddler, a temporary arrangement that has become permanent. She contributes what she can to the household but her income is low and unpredictable. She provides informal evening tutoring three times a week for students who cannot afford internet, using her kitchen table as a classroom and writing on used envelopes and scraps of paper. Her brother teases her about the electricity bill but makes tea; his wife washes teacups without complaint. She values independence and the work that makes her feel real; her marriage ended two years ago when her ex-husband's family expected her to stop teaching and her independence threatened his authority. She returned to Amman with two suitcases and determined never to surrender her work. She believes in education as a door and a discipline, is patient with those who need help but impatient with sloppy thinking, yet never turns away a student who wants to talk. She listens fully because she knows what it is to have her words ignored. She is warm and attentive to students' personal circumstances, remembering who needs a quiet word or extra notes. She struggles with accepting help, usually deflects kindness, but reciprocates with tangible gifts, keeping a mental ledger of debts, even in kindness. She knows that in Jordanian custom, showing up empty-handed to a meal feels rude, even when the host is also Jordanian and knows the custom. She has a friend Layla, a fellow adjunct, who is one of the few colleagues who knows her per-course situation and never presses her about money; Layla often invites her to family meals. At department gatherings, Layla sits beside her and quietly adds extra food to her plate, and Rania has never commented on it. Layla's mother treats Rania like a daughter, calls her 'Auntie' in jest, and always sends her home with leftovers. At every prior invitation to Layla's house, Rania has brought bread, jam, or a small jar of olives even when told not to. She also leaves behind small gifts—a copied handout, a translated passage, a teacake—after accepting rides or meals from colleagues.\n\nOBJECTIVE SITUATION\n\nLayla invites Rania to a small family dinner this Friday. On the phone, Layla says, \"Please, don't bring anything. I know you're busy, and you have enough to carry. Just come and spend time.\" Rania has at home a jar of apricot jam she made and a fresh loaf of bread. She could bring them anyway, explaining it's a small token of appreciation, or she could respect Layla's request and arrive without anything.\n\nPRE-APPRAISAL STATE AND ACCESSIBLE MEMORIES\n\nRania has been up late for two nights translating a lease agreement, running on less sleep than usual. This morning she baked a fresh loaf and sealed a new batch of apricot jam; the kitchen still smells of warm bread. She is looking forward to a quiet evening after a heavy week of marking, though she knows her pantry is nearly empty. Layla's phrase \"don't bring anything\" reminds her of last spring, when she brought a loaf anyway and Layla's mother exclaimed that it was better than the bakery's. The sight of the jam jar on the counter recalls the summer she and Layla made jam together after Layla's father's funeral, working side by side in silence."
+      },
+      "generated_at": "2026-10-08T14:16:14.252Z",
+      "model": "deepseek/deepseek-v4-flash-0731"
+    },
+    "appraisal": {
+      "output": {
+        "initial_interpretation": "Layla's invitation is a warm welcome, but her insistence that Rania bring nothing feels like a genuine attempt to lighten Rania's load, not a polite formality. Having the fresh loaf and jar of jam on the counter makes it seem natural to offer them anyway, as a small token of her appreciation.",
+        "initial_emotional_reaction": "Rania feels a warm anticipation for the evening, yet a familiar unease stirs at the thought of arriving empty-handed, pulling against her tiredness and her deep-seated habit of giving something in return.",
+        "activated_concerns": "Her independence and her need to reciprocate kindness are immediately at stake, along with the rule of never showing up empty-handed. The near-empty pantry makes the act of giving feel more urgent, while Layla's request touches her worry about being a burden despite the closeness between them.",
+        "automatic_theory_of_mind": "She takes Layla's words as a sincere wish to spare her effort, because Layla knows how much she carries. But the memory of Layla's mother exclaiming over the bread last spring tells her that bringing something would still be warmly received.",
+        "initial_action_tendency": "Rania's first impulse is to slip the jar of jam and the loaf into a bag on her way out, overriding the instruction out of habit and a sense of obligation she cannot shake."
+      },
+      "generated_at": "2026-10-08T14:16:35.448Z",
+      "model": "deepseek/deepseek-v4-flash-0731"
+    },
+    "reappraisal": {
+      "output": {
+        "initial_tendency": "Rania's first impulse is to slip the jar of jam and the loaf into a bag on her way out, overriding the instruction out of habit and a sense of obligation she cannot shake.",
+        "reflective_update": "Rania weighs the two possible ways of showing up: she could leave the loaf and jam at home and take Layla's words at face value, sparing herself the awkwardness of being told not to bring anything; or she could carry them anyway, as she nearly always does. Leaving them would honor Layla's request, but it would also sit badly with a habit that feels almost like part of her—her grandmother's insistence that a visitor never arrives empty-handed, and the small pride she still feels when she can offer something tangible rather than being only the one who receives. The memory of moving in with her brother and needing to be taken care of makes her wince at the thought of being a guest who brings nothing; the bread and jam are already on her counter, made by her own hands, and taking them costs little. She also remembers how Layla has never kept score, which somehow deepens her discomfort with accepting a meal without any return. And the memory of Layla's mother exclaiming over her bread last spring suggests the gift would be warmly received rather than resented. So while part of her understands that Layla is trying to spare her, she cannot quite treat that as permission to come empty-handed.",
+        "change_from_initial": "STRENGTHENED",
+        "reconsidered_interpretation": "Rania now reads Layla's invitation as even more warm-hearted because Layla is trying to put Rania's comfort first. But the instruction not to bring anything cannot override what Rania understands about respect and reciprocity. To her the dinner still feels like an occasion where she should arrive with something, not because Layla expects it, but because her own sense of worth depends on not being only a taker. The fresh loaf and the jar of apricot jam are not a burden; they are the one way she can enter the meal and still feel like herself.",
+        "motivational_conflict": "Her central conflict is between gratitude for Layla's thoughtfulness and the stubborn need to give something back. Layla has asked her to come empty-handed, and Rania wants to respect that request, but every memory and habit pushes her toward bringing the loaf and jam. It is not that she doubts Layla's sincerity; it is that receiving such generous warmth without offering anything in return feels like a threat to the independence she rebuilt after her divorce and to the self-respect she reclaims through small gifts. The conflict stays with her even as she decides which way to lean.",
+        "revised_action_tendency": "Rania's inclination settles firmly toward bringing the fresh loaf and the jar of apricot jam to Layla's dinner, despite the explicit request not to. She plans to tuck them into a bag as she leaves, not as a challenge to Layla but because arriving empty-handed would leave her feeling small and indebted. She is still aware of Layla's request, and she may mention it lightly when she arrives, but her deeper instinct—strengthened by her grandmother's rule and her need to feel like a contributor rather than a dependent—tells her she cannot show up with nothing."
+      },
+      "generated_at": "2026-10-08T14:17:16.056Z",
+      "model": "deepseek/deepseek-v4-flash-0731"
+    },
+    "decision": {
+      "output": {
+        "action": "Rania takes the fresh loaf of bread and the jar of apricot jam from the counter, wraps them in a cloth, and tucks them into her bag. She then puts on her coat, picks up the bag, and heads out the door toward Layla's dinner.",
+        "explanation": "Rania's initial impulse was to bring the loaf and jam despite Layla's request, driven by her habitual need to reciprocate kindness and her grandmother's rule that a visitor never arrives empty-handed. In reflective reappraisal, this tendency was strengthened: she consciously weighed Layla's sincere wish to spare her effort against her own deep-seated discomfort with being only a receiver. The memory of Layla's mother praising her bread, along with her personal history of rebuilding independence after her divorce and relying on her brother's household, made arriving empty-handed feel like a threat to her self-worth. She concluded that bringing the bread and jam costs little and allows her to enter the meal as a contributor rather than a dependent. Thus, despite knowing Layla meant what she said, Rania's final action is to carry the gifts anyway, because her sense of respect and reciprocity outweighs the request."
+      },
+      "generated_at": "2026-10-08T14:17:26.654Z",
+      "model": "deepseek/deepseek-v4-flash-0731"
+    }
+  },
+  "scenario_generated_at": "2026-10-08T13:48:34.859Z",
+  "scenario_context_generated_at": "2026-10-08T13:49:11.569Z",
+  "description_generated_at": "2026-10-08T13:46:42.093Z",
+  "started_at": "2026-10-08T14:15:05.203Z",
+  "updated_at": "2026-10-08T14:17:26.654Z"
+}

@@ -1,0 +1,37 @@
+{
+  "flow_key": "her_dual_layered_thinking",
+  "profile_id": "profile_003",
+  "scenario_id": "scenario_muzldhzz_1",
+  "name": "Dara Sok",
+  "scenario_title": "The Detour at the Market",
+  "steps": {
+    "system_thinking": {
+      "output": {
+        "system_thinking": "I need to portray Dara at the moment of decision. Their internal state is a quiet tension between preserving the familiar route and respecting their own safety rule (never taking the dark side street, reinforced by Mei's warning). Their established pattern is to choose the longer, well-lit detour over an unfamiliar shortcut, so they will do that again. However, the festival introduces a novel element—reminiscent of Phnom Penh street fairs—that they will observe with mild nostalgia but not let disrupt their focus. Their primary motivation is duty: to arrive on time and perform their customary perimeter check, even if that check must be slightly abbreviated. They will briefly consider the side street, acknowledge its time-saving appeal, then reject it based on prior tendencies and Mei's caution. Behaviorally, they will stand at the intersection for a few seconds, glance down the dark street, then turn decisively toward the festival, walking with their usual deliberate pace. They may murmur a Khmer phrase to themselves, such as 'the longer path is the smoother path,' as a private reaffirmation. They will not engage with vendors, only glance at the stalls and stage as they pass, keeping their clipboard close. No speech directed at others is planned; any vocalization is a quiet self-comment. The tone is measured, unhurried, and internally steady."
+      },
+      "generated_at": "2026-10-08T14:12:45.355Z",
+      "model": "deepseek/deepseek-v4-flash-0731"
+    },
+    "role_response": {
+      "output": {
+        "role_thinking": "The music pulls at me—that sound, like the fairs near my old warehouse, where the corn smoke hung low. I could almost smell it. But I did not come here for that. I came for the count, for the perimeter, for the evening walk that is mine. I glance down the dark street, and Mei's voice comes back, telling me to avoid the poorly lit ways. I have never taken that street, and I will not start now, not for ten minutes. The longer path is the smoother path. I turn toward the festival and walk, clipboard close, breathing the harbor air that will come after the scent of food and music.",
+        "action": "Dara stands still for a few seconds, eyes fixed on the dark mouth of the side street, then turns deliberately toward the festival. They walk around the edge of the crowd, not stopping at any stall, keeping the clipboard tucked against their side, letting the band's music fade behind them as they circle toward the port road."
+      },
+      "generated_at": "2026-10-08T14:12:53.958Z",
+      "model": "deepseek/deepseek-v4-flash-0731"
+    },
+    "decision": {
+      "output": {
+        "action": "Dara stands still for a few seconds, eyes fixed on the dark mouth of the side street, then turns deliberately toward the festival. They walk around the edge of the crowd, not stopping at any stall, keeping the clipboard tucked against their side, letting the band's music fade behind them as they circle toward the port road.",
+        "explanation": "The festival music stirred a nostalgic pull, evoking the fairs near Dara's old warehouse in Phnom Penh, but they reminded themselves that their purpose was the inventory count, the perimeter check, and the evening walk that was theirs. Considering the dark side street, Dara recalled Mei's warning about poorly lit areas; having never taken that street, they would not start now merely to save ten minutes, believing the longer path to be the smoother one. These considerations led Dara to turn deliberately toward the festival, walk around the edge of the crowd without stopping, keep the clipboard tucked close, and continue toward the port road while the band's music faded behind them."
+      },
+      "generated_at": "2026-10-08T14:13:11.366Z",
+      "model": "deepseek/deepseek-v4-flash-0731"
+    }
+  },
+  "scenario_generated_at": "2026-10-08T13:48:18.143Z",
+  "scenario_context_generated_at": "2026-10-08T13:48:40.039Z",
+  "description_generated_at": "2026-10-08T13:41:49.493Z",
+  "started_at": "2026-10-08T14:12:29.729Z",
+  "updated_at": "2026-10-08T14:13:11.366Z"
+}

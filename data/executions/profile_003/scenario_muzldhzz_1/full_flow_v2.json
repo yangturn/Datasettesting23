@@ -1,0 +1,62 @@
+{
+  "flow_key": "full_flow_v2",
+  "profile_id": "profile_003",
+  "scenario_id": "scenario_muzldhzz_1",
+  "name": "Dara Sok",
+  "scenario_title": "The Detour at the Market",
+  "steps": {
+    "attributes": {
+      "output": {
+        "values_culture_and_background": "Duty to family is a core value, shown by never missing the weekly remittance to their brother. Precision and self-reliance over trusting paperwork are internalized from 30 years in logistics. Routine and physical movement are valued as a means of mental rest. Cambodian cultural heritage is maintained through speaking Khmer and following their mother's rice porridge recipe. Pragmatism over confrontation is valued, as seen in not correcting a union foreman who misgenders them.",
+        "roles_and_commitments": "Parent to daughter Mei. Sibling committed to sending an exact weekly remittance to their younger brother in Phnom Penh without fail. Former owner of a logistics company in Phnom Penh; currently an inventory counter at a port warehouse in Vancouver. Maintains a nightly walking routine to learn the city.",
+        "capabilities_and_constraints": "Has 30 years of logistics experience, including supervising drivers and dealing with customs officials. Skilled at precise inventory counting and detailed observation. Physically capable of walking three kilometres each evening in all weather. Speaks Khmer and uses it when counting.",
+        "personality_and_response_style": "Strong preference for fixed routines and familiar paths. Unhurried, precise, and methodical in actions. Avoids confrontation, allowing misassumptions to pass to conserve energy. Calm and untroubled by contradictions in life. Attentive to small environmental changes and details."
+      },
+      "generated_at": "2026-10-08T14:13:13.925Z",
+      "model": "deepseek/deepseek-v4-flash-0731"
+    },
+    "consolidate": {
+      "output": {
+        "initial_context": "RELEVANT CHARACTER BACKGROUND\n\nDara Sok is a former owner of a logistics company in Phnom Penh with 30 years of experience, now working as an inventory counter at a port warehouse in Vancouver. They live in a basement suite and maintain a strict nightly routine: walking three kilometres to the port every evening, rain or not, arriving an hour early to walk the perimeter and inspect details like a chip in a loading dock door. They count inventory by touch, whispering numbers in Khmer. At home, they reheat rice porridge made from their mother's recipe and watch the sunrise, then check the time in Phnom Penh. Every Sunday without fail, they visit a money transfer shop near Granville Market to send an exact remittance to their younger brother in Phnom Penh; the clerk knows them by name. Their daughter Mei worries they overwork themselves, but Dara dismisses this with 'A body that moves is a mind that rests.' They value duty to family, precision, and self-reliance, holding pragmatism over confrontation—evident when they let a union foreman misgender them rather than correct it. They are unbothered by the contradiction of their old life as a fleet owner and current life counting boxes. They speak Khmer, maintain a small altar with parents' photo and old company ledger. In personality, they are unhurried, precise, methodical, strongly prefer fixed routines and familiar paths, avoid conflict to conserve energy, and are attentive to small environmental changes. In past disruptions, when streets were blocked they chose longer well-lit detours over unfamiliar alleys, and on rainy nights they slow down on their standard route rather than take shortcuts. They have never taken the narrow side street near Granville Market despite passing its entrance many times.\n\nOBJECTIVE SITUATION\n\nOn a usual evening walk to the port, Dara reaches the corner near Granville Market and discovers a street festival has closed the route. A crowd gathers around a stage, and fencing blocks the familiar path to the waterfront. Dara has thirty minutes before their shift starts. Two options are available: walk through the festival and circle around, adding ten minutes but allowing a glimpse of stalls and music, or take the narrow side street that is poorly lit and unfamiliar, which would keep them on schedule. Dara stands at the intersection, facing the disruption.\n\nPRE-APPRAISAL STATE AND ACCESSIBLE MEMORIES\n\nDara is on their usual walk, carrying the clipboard used for inventory counts. Their legs feel fresh from the three-kilometre walk, and they have a mild hunger for the rice porridge waiting at home. They are aware of the 30-minute window before their shift and still intend to perform their customary perimeter check. The sound of the festival band triggers a memory of small street fairs near their old warehouse in Phnom Penh, where vendors sold grilled corn. The fencing at the intersection evokes a recollection from last month when a utility truck blocked this same corner, and Dara waited rather than detour. The dark mouth of the side street brings back a warning from Mei, who once told them to avoid poorly lit areas at night."
+      },
+      "generated_at": "2026-10-08T14:13:39.876Z",
+      "model": "deepseek/deepseek-v4-flash-0731"
+    },
+    "appraisal": {
+      "output": {
+        "initial_interpretation": "Dara sees the festival and fencing as another blockage of the familiar route to the port, a disruption that forces a choice he did not expect tonight. The closed path feels like an obstacle to the nightly routine, not a celebration he is part of.",
+        "initial_emotional_reaction": "A flicker of warmth rises at the band's music and the memory of Phnom Penh's street fairs, but it is quickly dampened by a low, steady unease at the change. Hunger for the porch and the tightness in his legs give the disruption a sharper edge than usual.",
+        "activated_concerns": "The duty to reach the shift on time and perform the customary perimeter check feels immediately at stake. His preference for familiar, well-lit paths and Mei's warning about poorly lit areas press against each other, while his self-reliance and pragmatism urge him to adapt without fuss.",
+        "automatic_theory_of_mind": "The festival crowd and organizers seem absorbed in their own event, indifferent to his schedule and his need to pass. Mei's caution from before lingers as a protective reminder, as if she is again watching over him from afar.",
+        "initial_action_tendency": "Dara's first impulse is to stand still, scanning the festival route for a clear, well-lit opening, rather than step toward the dark side street. He feels a pull to wait, as he did with the utility truck, but also a lean toward the longer, familiar detour through the festival to keep his perimeter check intact."
+      },
+      "generated_at": "2026-10-08T14:13:53.469Z",
+      "model": "deepseek/deepseek-v4-flash-0731"
+    },
+    "reappraisal": {
+      "output": {
+        "initial_tendency": "Dara's first impulse is to stand still, scanning the festival route for a clear, well-lit opening, rather than step toward the dark side street. He feels a pull to wait, as he did with the utility truck, but also a lean toward the longer, familiar detour through the festival to keep his perimeter check intact.",
+        "reflective_update": "Dara stands at the corner, weighing the two paths. The festival route adds ten minutes but stays on streets he has memorized, where every curb and crossing is known. The side street is an unknown, dark, and poorly lit; it feels like an unsolved ledger, a risk he cannot calculate. He recalls how in Phnom Penh he relied on his drivers to report conditions, but here there is no one to vouch for that alley. Mei's old warning echoes, and his own habit of preferring well-lit detours over shortcuts becomes decisive. Waiting, as he did with the utility truck, would not clear the festival; it would only eat into his time. He can still make his shift and his perimeter check by moving through the festival, keeping his eyes on the familiar storefronts and the glow of the stage lights. The alternative saves minutes but costs his peace of mind and his sense of safety. That is not a trade he can accept. So his first instinct to avoid the dark street solidifies into a clear plan: take the festival detour, no matter the extra ten minutes.",
+        "change_from_initial": "STRENGTHENED",
+        "reconsidered_interpretation": "Dara now interprets the festival not as a foreign obstruction but as a temporary crowding of ground he already knows. It is an inconvenience, not a danger, as long as he stays on main streets. The side street, however, is the true unknown—an unverified path whose risks outweigh its reward. He recognizes that his preference for the familiar route is not mere stubbornness but a learned discipline from decades of moving goods and people through uncertain conditions.",
+        "motivational_conflict": "The primary tension between his duty to arrive on time and his deep-seated need for familiar, well-lit ground resolves decisively in favor of safety and routine. A mild concern lingers about the added ten minutes, and whether it will leave enough room for his usual perimeter check, but it does not outweigh his aversion to the dark alley. No material conflict remains; his course is clear.",
+        "revised_action_tendency": "Dara's inclination is to walk through the festival, following the longer but familiar path that circles the stage and stalls, scanning for a clear opening, and he will not take the narrow side street."
+      },
+      "generated_at": "2026-10-08T14:14:29.141Z",
+      "model": "deepseek/deepseek-v4-flash-0731"
+    },
+    "decision": {
+      "output": {
+        "action": "Dara steps toward the festival fence, clipboard in hand, and walks along the well-lit main route, circling around the stage and stalls while scanning for a clear opening in the crowd. They do not turn toward the narrow side street.",
+        "explanation": "Dara's initial tendency was to pause at the corner and scan the festival for a well-lit route rather than enter the dark side street, while also feeling a pull toward waiting as they had with the utility truck. Reflection strengthened this impulse: the festival path was familiar and lit, whereas the side street was an uncalculated risk, and Mei's warning about poorly lit areas reinforced their long-standing preference for known detours over shortcuts. Waiting would not clear the festival, so Dara's resolve settled on the longer route, accepting the extra ten minutes to preserve their sense of safety and their ability to still perform the perimeter check. The final action directly follows that strengthened inclination: Dara moves through the festival along the main streets, keeping to the light and familiar ground, and resists the tempting side street."
+      },
+      "generated_at": "2026-10-08T14:14:41.044Z",
+      "model": "deepseek/deepseek-v4-flash-0731"
+    }
+  },
+  "scenario_generated_at": "2026-10-08T13:48:18.143Z",
+  "scenario_context_generated_at": "2026-10-08T13:48:40.039Z",
+  "description_generated_at": "2026-10-08T13:41:49.493Z",
+  "started_at": "2026-10-08T14:12:25.605Z",
+  "updated_at": "2026-10-08T14:14:41.044Z"
+}

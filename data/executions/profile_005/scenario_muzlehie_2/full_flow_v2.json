@@ -1,0 +1,62 @@
+{
+  "flow_key": "full_flow_v2",
+  "profile_id": "profile_005",
+  "scenario_id": "scenario_muzlehie_2",
+  "name": "Adriano Santos",
+  "scenario_title": "Sunday Dinner Invitation",
+  "steps": {
+    "attributes": {
+      "output": {
+        "values_culture_and_background": "Grew up in a working-class samba community, internalizing a value for authentic, hands-on craft. Values precision, truth, and the concrete over the abstract. Values community but rejects organized groups, believing they dilute authentic experience.",
+        "roles_and_commitments": "Retired percussionist and theater technician; currently a drum repairman and YouTube fact-checker.",
+        "capabilities_and_constraints": "Expert skill in percussion, drum repair, and theater technical work; meticulous attention to detail. Significant hearing loss in both ears (left ear most damaged, right ear partial) that impairs conversation comprehension, especially in noisy environments.",
+        "personality_and_response_style": "Skeptical and contrarian; distrusts organized groups and tends to avoid social situations where his hearing loss creates miscommunication. Prefers solitary work and has created a solitary life of repair and critique. Emotionally reserved, expressing himself through precise fact-checking and manual craft; approaches the world analytically, seeking truth and clarity."
+      },
+      "generated_at": "2026-10-08T14:07:33.615Z",
+      "model": "deepseek/deepseek-v4-flash-0731"
+    },
+    "consolidate": {
+      "output": {
+        "initial_context": "RELEVANT CHARACTER BACKGROUND\n\nAdriano Santos grew up in the working-class neighborhoods of Rio de Janeiro, where samba was a central cultural rhythm. For two decades he worked as a percussionist and theater technician, developing expert skill in drum repair, stage lighting, and precise technical performance. He was known for his ability to fix broken equipment and keep a band in time, though he never achieved fame. He values hands-on craft, precision, truth, and concrete facts over abstract ideas. He also values community, having been raised in a close-knit samba community, but he refuses to join organized groups, believing such groups dilute authentic experience and that their funding goes to bureaucrats rather than practitioners like him. He is skeptical and contrarian, distrustful of advocacy organizations, and tends to avoid social situations where his hearing loss leads to miscommunication. Emotionally reserved, he expresses himself through meticulous fact-checking and manual craft, approaching the world analytically.\n\nTwo years ago, a factory accident caused significant hearing loss: most of the hearing in his left ear and a substantial portion in his right. He retired early on disability but remains active. Every weekday he repairs old drum kits in his garage, selling them with painstakingly detailed online listings. In the evenings he runs a YouTube channel fact-checking popular Brazilian telenovela plots, explaining physics, anatomy, and historical inaccuracies with a deadpan delivery. He speaks louder than necessary because he hears himself differently, and he writes long replies to comments, often explaining why he refuses to join arts advocacy groups. He lives alone in the house his father left him. He is proud of his manual skill but struggles with being defined by his disability. His solitary world of repair and critique allows him to remain useful without depending on others.\n\nHis sister Marina is the one sibling who still calls every week, though he rarely picks up. She has covered for him with their mother numerous times. Their mother's house is small and always full of cousins, where he often struggles to follow conversation. He genuinely likes his family but has repeatedly declined family gatherings with vague excuses, or arrived late and left after one plate of food. He has skipped the last three Sunday lunches without calling ahead, letting the phone ring out. On weekends he tends to disappear into the garage for hours, only surfacing when a repair is finished.\n\nOBJECTIVE SITUATION\n\nAdriano is in his garage, carefully aligning the lugs on a vintage snare drum. His phone buzzes. It is his sister, Marina, calling to remind him of the family's weekly Sunday lunch at their mother's house. She says they have missed him for the past three weeks and asks if he is coming this time. He genuinely likes them, but the gatherings are loud, and with his hearing loss he often ends up nodding at jokes he did not catch. He has a turquoise wrap on the drum shell that he hopes to finish today. He hears the hope in Marina's voice, and he has to answer now.\n\nPRE-APPRAISAL STATE AND ACCESSIBLE MEMORIES\n\nHe has been hunched over the snare since 7 a.m., and the turquoise wrap is giving him trouble at one lug. His left ear is ringing a little from the morning's earlier drill work. He is slightly hungry because he forgot breakfast. He is not wearing his hearing aids, because they irritate him when he is concentrating.\n\nThe buzz of the phone brings back the last Sunday lunch he did attend, when his nephew kept shouting a joke and he had to smile without understanding it. Marina's hopeful tone reminds him of the time she brought him a cake from their mother's kitchen and held it up so he could read her lips."
+      },
+      "generated_at": "2026-10-08T14:07:50.541Z",
+      "model": "deepseek/deepseek-v4-flash-0731"
+    },
+    "appraisal": {
+      "output": {
+        "initial_interpretation": "Marina is calling to pin him down about the Sunday lunch after three weeks of silence, and her message is that they have noticed his absence and expect an answer.",
+        "initial_emotional_reaction": "The call pulls him out of concentration, and the ringing in his ear and the stubborn lug make him feel irritated and put upon. But Marina's hopeful voice and the memory of her bringing the cake stir a warmth that mixes with guilt over skipping the lunches, and the thought of the noisy house makes him uneasy.",
+        "activated_concerns": "What matters right now is finishing the turquoise wrap, and he does not want to break his focus. At the same time, he does not want to hurt Marina or be seen as unreliable, but the loud family gathering threatens his sense of comfort and competence because he struggles to keep up with conversation.",
+        "automatic_theory_of_mind": "He senses that Marina genuinely misses him and is trying to draw him back into the family, and he takes her hopeful tone as a sign that she expects him to make the effort this time. He also feels that she is protecting him from their mother's disappointment by calling ahead.",
+        "initial_action_tendency": "His first impulse is to avoid a direct answer, to say something like he has a deadline on the drum and cannot promise, or to give a vague 'I'll try' to satisfy her while keeping the door open. He is torn between wanting to reassure her and wanting to stay in the garage with his work."
+      },
+      "generated_at": "2026-10-08T14:08:22.487Z",
+      "model": "deepseek/deepseek-v4-flash-0731"
+    },
+    "reappraisal": {
+      "output": {
+        "initial_tendency": "His first impulse is to avoid a direct answer, to say something like he has a deadline on the drum and cannot promise, or to give a vague 'I'll try' to satisfy her while keeping the door open. He is torn between wanting to reassure her and wanting to stay in the garage with his work.",
+        "reflective_update": "Adriano lets the question sit instead of grabbing the first excuse. The drum wrap and the ringing in his ear still make him want to end the call quickly and get back to work, and a vague 'I'll try' would be the easiest way to get Marina off the phone. But he knows that reply would leave her waiting, and he has already skipped three Sundays. He thinks about the feijoada table where noise used to be easy, before the accident, and about his father who would slip out to the backyard when the arguments got heavy. He sees that he has been doing the same thing with the garage, except he has been skipping the meal entirely rather than showing up and stepping away when it gets too much. The honest options are to either promise to come and then sit through the strain, or to tell her plainly he cannot handle it. Both are uncomfortable. The drum gives him a convenient out, but using it feels like a lie, and Adriano has never liked lies. He begins to think that the least hurtful answer might be a qualified yes: he will come for a plate and stay only as long as he can follow the conversation, then leave before the noise overwhelms him.",
+        "change_from_initial": "SOFTENED",
+        "reconsidered_interpretation": "He no longer sees the call mainly as an interruption from a nagging reminder. Marina's voice and the memory of the cake make him realize she is trying to keep him connected to a family he genuinely belongs to, even if the crowded room makes him feel like an outsider. The situation is still a loud, unpleasant prospect, but he now understands his own hesitation as partly grief over what his hearing cost him and partly a pattern of escape he learned from his father, not as simple unwillingness.",
+        "motivational_conflict": "The tension that remains is between the garage, where he can control his surroundings and stay competent, and the family table, where he is loved but often lost in the noise. He wants to protect himself from the strain of mishearing jokes, but he also does not want to let Marina down or become someone who hides from the people who care about him. He has not resolved whether he can actually endure the lunch or whether he will slip away at the first opportunity.",
+        "revised_action_tendency": "He is now inclined to soften his first impulse: instead of giving Marina a vague excuse, he is leaning toward telling her he will try to come for a short while after he finishes the wrap, with the unspoken intention of leaving early if the noise becomes too much. He still has not fully committed to going, but he is less inclined to let the drum be an outright lie."
+      },
+      "generated_at": "2026-10-08T14:09:47.695Z",
+      "model": "deepseek/deepseek-v4-flash-0731"
+    },
+    "decision": {
+      "output": {
+        "action": "Adriano sets down the screwdriver, picks up the phone, and answers in his usual too-loud voice: \"Marina. I'm still on the drum. I can come for a while after I finish this lug, but I can't stay the whole time. Tell Mom I'll try.\"",
+        "explanation": "Adriano's first impulse was to give Marina a vague excuse and get back to the turquoise wrap, using the drum as a way to avoid the loud family lunch. Reflection softened that impulse: he recognized that a vague reply would leave her waiting, that he had already skipped three Sundays, and that his urge to hide in the garage echoed his father's old habit of slipping away when family life got heavy. Because he values honesty and dislikes lies, he could not bring himself to use the drum as an outright excuse. His revised tendency was to offer a qualified yes rather than a dodge, and he follows it by telling Marina he will come for a short while after finishing the wrap, without committing to the whole meal. The remaining conflict between his need to control his surroundings and his wish not to let Marina down is expressed in the hesitation and limits he puts on the promise, leaving room to leave early if the noise becomes too much."
+      },
+      "generated_at": "2026-10-08T14:10:03.113Z",
+      "model": "deepseek/deepseek-v4-flash-0731"
+    }
+  },
+  "scenario_generated_at": "2026-10-08T13:49:04.166Z",
+  "scenario_context_generated_at": "2026-10-08T13:49:19.800Z",
+  "description_generated_at": "2026-10-08T13:41:52.144Z",
+  "started_at": "2026-10-08T14:06:36.701Z",
+  "updated_at": "2026-10-08T14:10:03.113Z"
+}

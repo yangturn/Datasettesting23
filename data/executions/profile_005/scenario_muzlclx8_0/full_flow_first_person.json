@@ -1,0 +1,62 @@
+{
+  "flow_key": "full_flow_first_person",
+  "profile_id": "profile_005",
+  "scenario_id": "scenario_muzlclx8_0",
+  "name": "Adriano Santos",
+  "scenario_title": "Sunday Samba Invitation",
+  "steps": {
+    "attributes": {
+      "output": {
+        "values_culture_and_background": "Grew up in working-class Rio de Janeiro neighborhoods steeped in samba; values community from that upbringing but believes organized groups dilute authentic experience. Values precision, truth, and the concrete over the abstract; distrusts arts advocacy and bureaucratic funding as disconnected from actual craft.",
+        "roles_and_commitments": "Runs a self-directed drum-repair and resale operation from his garage, and hosts a YouTube channel fact-checking telenovela plots; he has no organizational memberships and refuses to join organized groups.",
+        "capabilities_and_constraints": "Has two decades of experience as a percussionist and theater technician, with demonstrated skill repairing drums, fixing pedals, and working with stage equipment; has a garage workshop with drum parts. Has significant hearing loss from a factory accident—most hearing in his left ear and a large portion in his right—causing muffled hearing, misread conversations, and louder speech.",
+        "personality_and_response_style": "Is contrarian and argumentative, especially toward organized groups; thorough, meticulous, and honest in his work; unsentimental, treating instruments as machines to calibrate. Is independent and solitary, preferring hands-on repair and critique over relying on others; proud of his manual skill and resistant to being defined by his disability; uses controlled skepticism as a tool for clarity."
+      },
+      "generated_at": "2026-10-08T14:22:02.135Z",
+      "model": "deepseek/deepseek-v4-flash-0731"
+    },
+    "consolidate": {
+      "output": {
+        "initial_context": "RELEVANT CHARACTER BACKGROUND\n\nAdriano Santos is a 50-something man who grew up in the working-class neighborhoods of Rio de Janeiro, where samba was ubiquitous. He spent two decades as a percussionist and theater technician, skilled at repairing drums, fixing pedals, and working with stage equipment. He is known for his hands and his meticulous approach to craft. Two years ago, a factory accident—a side job to supplement his unstable theater income—caused significant hearing loss: most hearing in his left ear and a large portion in his right. The world now sounds muffled, he often misreads conversations, and he speaks louder than he realizes. He retired early on disability but keeps busy: every weekday he repairs drum kits in his garage and sells them online with precise, honest descriptions. He also runs a YouTube channel fact-checking telenovela plots, delivering deadpan critiques with thorough explanations. He refuses to join any arts advocacy group, believing they are all talk, that funding goes to bureaucrats rather than working craftsmen, and that organized groups dilute authentic experience. He is contrarian, argumentative, and skeptical, but also precise, honest, and unsentimental—treating instruments as machines to be calibrated. He lives alone in the house his father left him. He values the concrete over the abstract, trusting the feel of drum skins and wood glue. He is proud of his manual skill and resists being defined by his disability. His skepticism is controlled and used as a tool for clarity. In his neighborhood, his pattern is to help individuals who ask directly for small, concrete repairs—he fixed a clothesline for a widow and re-glued a chair leg for a baker—but he has repeatedly turned down invitations from organized groups, including the residents' association's cleanup and a local arts collective's fundraiser. He has no organizational memberships. Maria is his neighbor of ten years, the only one who still stops to talk; she is kind but volunteers with the residents' association, which he quietly distrusts. He has no debt or grudge with her, and she has never asked him for anything before.\n\nOBJECTIVE SITUATION\n\nOn a Friday afternoon, Adriano is in his garage, re-skinning a floor tom. His neighbor Maria appears at the open door. A samba circle meets every Sunday in the courtyard of the local community center, organized by the residents' association. Maria says the group has an old surdo drum that has been wobbling, and she remembers Adriano's hands. She asks if he would come by this Sunday, with his tools, to help tune the surdo. She specifies he is not asked to play, only to lend his skill. The courtyard will be full of familiar faces from his childhood. He could say yes and spend a few hours helping, or he could make an excuse about his hearing and stay in his garage.\n\nPRE-APPRAISAL STATE AND ACCESSIBLE MEMORIES\n\nAdriano is mid-repair, with drumhead glue still drying on his fingers and a half-tensioned floor tom clamped to the bench. His left ear is ringing slightly from the humid afternoon, and he is a little tired from crouching over the shell. He is calm but guarded, expecting the invitation to carry an obligation he does not want. When Maria mentions the surdo's wobble, he remembers the last surdo he worked on—a broken bearing edge from a local bloco that he fixed two years ago. Seeing her at the garage door also brings back the Sunday afternoons of his childhood, when he would sit on the curb and watch the samba circle form, listening through the open windows of his father's house."
+      },
+      "generated_at": "2026-10-08T14:22:14.909Z",
+      "model": "deepseek/deepseek-v4-flash-0731"
+    },
+    "appraisal": {
+      "output": {
+        "initial_interpretation": "Maria is asking me to bring my tools to the community center on Sunday and fix that surdo for the samba circle. It's the residents' association's event, so even though she's the one asking, it's still tied to that organized group I've always avoided.",
+        "initial_emotional_reaction": "I feel a tightness in my chest, wary of being pulled into something I've refused before. But there's also a flicker of warmth thinking about the old samba circles from my childhood, and she's never asked me for anything until now.",
+        "activated_concerns": "My hearing and my independence matter—if I go, I'll be straining to catch instructions, and I don't want to be seen as the disabled guy. I also don't want to owe the residents' association anything, but I don't want to let Maria down since she's been kind to me.",
+        "automatic_theory_of_mind": "She believes in my skill and remembers my hands, and she's probably expecting me to say yes because I've helped individuals before. I read her tone as friendly but also a bit formal, like she's speaking on behalf of the association, not just herself.",
+        "initial_action_tendency": "I want to say I can't because of the hearing, to stay in my garage and finish this drum. But I also feel a pull to ask her more about the surdo, to get concrete details about what's wrong, before I let myself get hooked into that crowd."
+      },
+      "generated_at": "2026-10-08T14:22:28.221Z",
+      "model": "deepseek/deepseek-v4-flash-0731"
+    },
+    "reappraisal": {
+      "output": {
+        "initial_tendency": "I want to say I can't because of the hearing, to stay in my garage and finish this drum. But I also feel a pull to ask her more about the surdo, to get concrete details about what's wrong, before I let myself get hooked into that crowd.",
+        "reflective_update": "I stand here with glue on my fingers, and part of me still wants to finish this floor tom and not get tangled in Sunday. But thinking about that holiday event—how they talked over me, how I had to set up while they made speeches—makes my chest tighten all over again. I told my sister the truth: organized music isn't music, it's a meeting with drums. And my father knew it too; the courtyard was everyone's until they bolted down those chairs. So I keep coming back to the same answer: I shouldn't go. Yes, Maria is kind, and she's never asked me for anything. But this isn't Maria's request, it's the association's. If I go, I'll be one of their volunteers, and I'll spend the afternoon trying to hear instructions over the crowd, and I'll be the disabled guy they pity. The surdo itself I could probably fix—I remember that broken bearing edge from the bloco—but that's not enough. The cost isn't my time, it's my independence. Maybe I'll still ask her what exactly is wobbling, because I'm curious and it costs nothing to ask, but that doesn't mean I'm going to show up and be organized.",
+        "change_from_initial": "STRENGTHENED",
+        "reconsidered_interpretation": "Now I see this less as a simple neighbor asking for help and more as the association using Maria's friendly face to get me to volunteer. She may be sincere, but she's the front door for something I've never trusted. The concrete repair is real, but the package is the same as every other invitation: speeches, chairs, and being part of their thing. My hearing is a convenient excuse, but even if it weren't, I don't want to be claimed by that crowd.",
+        "motivational_conflict": "The hard part is Maria. I don't want to hurt her, and I know she's never pushed me before. But I can't separate her from the association she volunteers for. Another part of me still wants to ask about the surdo because fixing a drum is honest work and my hands know it. So I'm torn between not wanting to refuse her to her face and not wanting to let that group get its hooks into me.",
+        "revised_action_tendency": "I'm going to stay in my garage and finish this floor tom. I won't commit to Sunday. Maybe I'll let Maria down gently by using my hearing, but the real reason is I won't be part of their organized circle. I might still ask her about the surdo's wobble out of plain curiosity, but that doesn't mean I'll go."
+      },
+      "generated_at": "2026-10-08T14:22:59.967Z",
+      "model": "deepseek/deepseek-v4-flash-0731"
+    },
+    "decision": {
+      "output": {
+        "action": "Adriano sets down his tuning key and wipes the glue on his fingers against his work apron before looking at Maria. He says, \"Maria, I can't come Sunday. My hearing's not up to working in a crowded courtyard—I'd stand there straining and probably end up doing a worse job on your drum than if you left it wobbling.\" He pauses, then adds, \"What's actually wrong with it, though? Wobble in the shell or in the tension rods?\" He does not say he will come, and he turns back toward the floor tom clamped on the bench.",
+        "explanation": "Adriano's initial tendency was to refuse Sunday using his hearing as an excuse, while also feeling a pull to ask for concrete details about the surdo. Reflection strengthened that tendency rather than reversing it: the memory of the holiday event—being talked over, setting up while others made speeches—and his father's view of the courtyard as belonging to everyone until organized groups took it over reinforced his distrust of the residents' association. He concluded that Maria's request was the association's request in a friendly face, and that going would cost him his independence, not just his time. So he retained and strengthened his refusal, declining gently to spare Maria's feelings but using his hearing as the stated reason. At the same time, his precise craftsman's curiosity about the wobble—whether it was the bearing edge or the tension rods—survived the reflection, so he asked for the concrete details even while making no commitment. The action reflects his core pattern: he helps individuals who ask directly for small repairs, but he refuses to be pulled into organized groups, and he maintained that boundary without burning the bridge with the one neighbor who still talks to him."
+      },
+      "generated_at": "2026-10-08T14:23:15.185Z",
+      "model": "deepseek/deepseek-v4-flash-0731"
+    }
+  },
+  "scenario_generated_at": "2026-10-08T13:47:36.572Z",
+  "scenario_context_generated_at": "2026-10-08T13:47:50.467Z",
+  "description_generated_at": "2026-10-08T13:41:52.144Z",
+  "started_at": "2026-10-08T14:20:52.137Z",
+  "updated_at": "2026-10-08T14:23:15.185Z"
+}

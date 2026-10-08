@@ -1,0 +1,22 @@
+{
+  "flow_key": "direct_zero_shot",
+  "profile_id": "profile_010",
+  "scenario_id": "scenario_muzlh084_1",
+  "name": "Ciarán Walsh",
+  "scenario_title": "Saturday Invitation",
+  "steps": {
+    "decision": {
+      "output": {
+        "action": "Ciarán waves off Tom with a brief nod and says, \"Thanks, but I've my own sail planned,\" then returns to checking his mast fittings.",
+        "explanation": "For eight years, he has declined every marina social invitation, including Tom's previous two, with a brief thanks and a return to work, and he prefers sailing alone on clear Saturday mornings; his belief that he owes his place a useful hand, not his company, directly supports this courteous decline."
+      },
+      "generated_at": "2026-10-08T14:17:45.699Z",
+      "model": "deepseek/deepseek-v4-flash-0731"
+    }
+  },
+  "scenario_generated_at": "2026-10-08T13:51:01.732Z",
+  "scenario_context_generated_at": "2026-10-08T13:51:21.539Z",
+  "description_generated_at": "2026-10-08T13:42:06.870Z",
+  "started_at": "2026-10-08T14:17:41.746Z",
+  "updated_at": "2026-10-08T14:17:45.699Z"
+}

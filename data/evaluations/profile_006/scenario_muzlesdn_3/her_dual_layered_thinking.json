@@ -1,0 +1,24 @@
+{
+  "profile_id": "profile_006",
+  "scenario_id": "scenario_muzlesdn_3",
+  "flow_key": "her_dual_layered_thinking",
+  "name": "Meenakshi Raman",
+  "scenario_title": "An Unexpected Invitation",
+  "scores": {
+    "character_consistency": 9,
+    "situation_fit": 9,
+    "state_memory_alignment": 9,
+    "action_plausibility": 9,
+    "reasoning_coherence": 9
+  },
+  "overall_score": 9,
+  "score_scale": 10,
+  "dimension_set": 4,
+  "action": "Meenakshi steps a little closer, pressing the plastic file folder against her chest. She speaks with a warm, clear voice: \"I am thirsty, Subramani, truly. Your tea would be good. But I cannot sit alone with you. I remember your wife's kindness too well to be unkind now. If the other elders are there, I will sit with them. Otherwise, give me the cup, and I will drink it standing, and then go home.\" She gestures with the file toward the temple side, where the group usually gathers, rather than toward the bench.",
+  "reason": "Subramani's voice reminded Meenakshi of mornings when her late husband and he had argued cheerfully, and she felt the pull of that old ease, along with her thirst and the fact that no one waited at home. But her mother's rule that a widow must not sit alone with a man was deeply ingrained, and she feared her daughters would worry. At the same time, she carried gratitude for Subramani's late wife, who had left rice at her door without a word, and she could not refuse him outright. So she accepted the tea but declined the bench, speaking gently and gesturing toward the other elders to show it was not coldness.",
+  "decision_mode": "REFLECTION_AVAILABLE",
+  "context_generated_at": "2026-10-08T15:36:48.457Z",
+  "action_generated_at": "2026-10-08T14:01:20.800Z",
+  "generated_at": "2026-10-08T15:37:38.571Z",
+  "model": "deepseek/deepseek-v4-flash-0731"
+}

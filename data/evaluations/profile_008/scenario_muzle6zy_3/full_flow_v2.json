@@ -1,0 +1,24 @@
+{
+  "profile_id": "profile_008",
+  "scenario_id": "scenario_muzle6zy_3",
+  "flow_key": "full_flow_v2",
+  "name": "Sasha Kovalenko",
+  "scenario_title": "An Evening in the Reading Room",
+  "scores": {
+    "character_consistency": 8,
+    "situation_fit": 8,
+    "state_memory_alignment": 8,
+    "action_plausibility": 8,
+    "reasoning_coherence": 8
+  },
+  "overall_score": 8,
+  "score_scale": 10,
+  "dimension_set": 4,
+  "action": "Sasha pauses in the doorway, glances at the coffee table stacked with client files, and replies to Oksana, 'I'm sorry, I can't make it tonight—there's still work I need to finish. Maybe another time.'",
+  "reason": "Sasha's initial impulse was to hesitate and tentatively lean toward accepting Oksana's invitation, drawn by the historical topic and the neighbor's warmth. Reflective reappraisal, however, reversed this tendency: the memory of a past error that slipped through after setting aside work, combined with Sasha's disciplined habit of allowing leisure only after completing a full review block, made the unfinished files a pressing concern. Though they still feel the pull of the reading and appreciate Oksana's offer, the weight of responsibility and the need to protect the integrity of their legal work now overshadow the appeal of the outing. Sasha therefore declines for tonight, offering a future possibility as a compromise, but without fully resolving the lingering desire to attend.",
+  "decision_mode": "REFLECTION_AVAILABLE",
+  "context_generated_at": "2026-10-08T15:41:00.236Z",
+  "action_generated_at": "2026-10-08T14:03:45.731Z",
+  "generated_at": "2026-10-08T15:41:17.895Z",
+  "model": "deepseek/deepseek-v4-flash-0731"
+}

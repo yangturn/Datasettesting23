@@ -1,0 +1,24 @@
+{
+  "profile_id": "profile_003",
+  "scenario_id": "scenario_muzlf20n_3",
+  "flow_key": "full_flow_first_person",
+  "name": "Dara Sok",
+  "scenario_title": "Short Notice at the Dock",
+  "scores": {
+    "character_consistency": 8,
+    "situation_fit": 8,
+    "state_memory_alignment": 7,
+    "action_plausibility": 8,
+    "reasoning_coherence": 7
+  },
+  "overall_score": 7.6,
+  "score_scale": 10,
+  "dimension_set": 4,
+  "action": "Dara looks up from the clipboard, stops writing, and says in a steady, quiet voice, \"I am mid-count on Dock 4. I do not know Dock 7. I will finish my count here.\"",
+  "reason": "The foreman's casual request interrupts Dara's settled counting rhythm and evokes the memory of being pulled aside as an easy favor in Phnom Penh, producing quick irritation and wariness. Dara's fixed routine and precise method are paramount, and the unfinished count on Dock 4 is an immediate, pressing duty. The foreman's tone implies an expectation of compliance without considering why Dara might refuse, which amplifies Dara's impulse to hold ground. The steady, quiet refusal reflects Dara's stoic, reserved style and their tendency to adhere to established patterns, resulting in a direct but polite rejection.",
+  "decision_mode": "IMMEDIATE",
+  "context_generated_at": "2026-10-08T15:26:55.357Z",
+  "action_generated_at": "2026-10-08T13:59:59.036Z",
+  "generated_at": "2026-10-08T15:27:47.796Z",
+  "model": "deepseek/deepseek-v4-flash-0731"
+}

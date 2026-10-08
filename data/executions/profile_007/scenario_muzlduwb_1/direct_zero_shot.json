@@ -1,0 +1,22 @@
+{
+  "flow_key": "direct_zero_shot",
+  "profile_id": "profile_007",
+  "scenario_id": "scenario_muzlduwb_1",
+  "name": "Rania Haddad",
+  "scenario_title": "The Dinner Invitation",
+  "steps": {
+    "decision": {
+      "output": {
+        "action": "Rania arrives at Layla's family dinner carrying the fresh loaf of bread and the jar of apricot jam she made that morning, and offers them to Layla as a small token of appreciation.",
+        "explanation": "Rania has consistently brought bread, jam, or olives to Layla's house even when told not to, and her grandmother's rule that a visitor should never arrive empty-handed is a core value. With fresh bread and jam already prepared, she will bring them despite Layla's request."
+      },
+      "generated_at": "2026-10-08T14:15:22.968Z",
+      "model": "deepseek/deepseek-v4-flash-0731"
+    }
+  },
+  "scenario_generated_at": "2026-10-08T13:48:34.859Z",
+  "scenario_context_generated_at": "2026-10-08T13:49:11.569Z",
+  "description_generated_at": "2026-10-08T13:46:42.093Z",
+  "started_at": "2026-10-08T14:15:17.693Z",
+  "updated_at": "2026-10-08T14:15:22.968Z"
+}

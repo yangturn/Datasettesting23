@@ -1,0 +1,24 @@
+{
+  "profile_id": "profile_006",
+  "scenario_id": "scenario_muzle8uf_2",
+  "flow_key": "full_flow_v2",
+  "name": "Meenakshi Raman",
+  "scenario_title": "The Offer to Join the Evening Gathering",
+  "scores": {
+    "character_consistency": 8,
+    "situation_fit": 8,
+    "state_memory_alignment": 8,
+    "action_plausibility": 9,
+    "reasoning_coherence": 8
+  },
+  "overall_score": 8.2,
+  "score_scale": 10,
+  "dimension_set": 4,
+  "action": "Meenakshi steps back from the well, drying her hands on the edge of her sari, and gives Kamakshi a small apologetic smile. In a soft, steady voice she says, 'Kamakshi, I am grateful they want me. But I still have to make lunch before the heat gets worse. You all go on without me. If anyone wants to learn a remedy, they can come to my house and ask, and I will show them quietly.' She does not meet Kamakshi's eyes for long, but her words are firm.",
+  "reason": "Meenakshi's initial impulse was to step back and refuse with the lunch excuse, a familiar retreat from group settings. On reflection, she considered the honor Kamakshi offered, but her sense of being only a witness, her belief that healing knowledge passes privately woman to woman, her fear of ridicule, and her old discomfort with the temple women's circle all strengthened her resolve to decline. The reflective process RETAINED and STRENGTHENED her initial tendency, so her revised action tendency was to decline gently while still offering private teaching. Her action reflects this: she politely excuses herself, uses the practical need for lunch as a gentle buffer, and redirects her knowledge to one-to-one sharing, consistent with her lifelong habit of teaching individual healers rather than addressing crowds.",
+  "decision_mode": "REFLECTION_AVAILABLE",
+  "context_generated_at": "2026-10-08T16:11:26.746Z",
+  "action_generated_at": "2026-10-08T14:09:47.702Z",
+  "generated_at": "2026-10-08T16:11:48.324Z",
+  "model": "deepseek/deepseek-v4-flash-0731"
+}

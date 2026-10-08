@@ -1,0 +1,22 @@
+{
+  "flow_key": "om_cot",
+  "profile_id": "profile_010",
+  "scenario_id": "scenario_muzlfxvo_0",
+  "name": "Ciarán Walsh",
+  "scenario_title": "A Missing Saw",
+  "steps": {
+    "decision": {
+      "output": {
+        "action": "He leaves the shed and walks to the hardware store to buy a new handsaw, skipping his usual coffee so he can still repair the bridge step before the 9 a.m. call.",
+        "explanation": "The missing handsaw and the memory of forcing the bent hacksaw through a rusted shackle make him distrust the hacksaw for a clean cut. His careful checking of finished work and his history of skipping coffee on tight Fridays lead him to buy the right tool despite the schedule."
+      },
+      "generated_at": "2026-10-08T14:25:49.740Z",
+      "model": "deepseek/deepseek-v4-flash-0731"
+    }
+  },
+  "scenario_generated_at": "2026-10-08T13:50:12.036Z",
+  "scenario_context_generated_at": "2026-10-08T13:50:53.589Z",
+  "description_generated_at": "2026-10-08T13:42:06.870Z",
+  "started_at": "2026-10-08T14:24:35.521Z",
+  "updated_at": "2026-10-08T14:25:49.740Z"
+}

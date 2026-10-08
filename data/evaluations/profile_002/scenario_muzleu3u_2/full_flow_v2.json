@@ -1,0 +1,24 @@
+{
+  "profile_id": "profile_002",
+  "scenario_id": "scenario_muzleu3u_2",
+  "flow_key": "full_flow_v2",
+  "name": "Ingrid Solberg",
+  "scenario_title": "The Empty Coffee Tin",
+  "scores": {
+    "character_consistency": 8,
+    "situation_fit": 8,
+    "state_memory_alignment": 8,
+    "action_plausibility": 8,
+    "reasoning_coherence": 8
+  },
+  "overall_score": 8,
+  "score_scale": 10,
+  "dimension_set": 4,
+  "action": "Ingrid sets the empty coffee tin down on the counter beside the iron bolt, turns away from the east window, and walks to her desk. She sits down, opens the Rival Pricing – Week 14 spreadsheet, and begins her review, leaving the bakery and Marta's small talk out of her morning.",
+  "reason": "Ingrid's initial tendency was to skip the coffee and start the spreadsheet review early, treating the empty tin as an irritation. Reflective reappraisal strengthened that tendency: her grandmother's rule—that a producer never wastes daylight on idle talk—backed her instinct, while the memory of her father's thermos tugged softly toward the bakery but did not overturn her decision. The unresolved tension between the grandmother's solitary discipline and the father's communal coffee habit remained, but Ingrid overrode the father's pull with her schedule, her identity, and her tiredness. The revised action tendency was to set the tin down and work, and her final behavior follows that: she places the tin on the counter, leaves the bakery untaken, and moves to her desk to begin the spreadsheet review early, holding her order and routine.",
+  "decision_mode": "REFLECTION_AVAILABLE",
+  "context_generated_at": "2026-10-08T15:56:15.848Z",
+  "action_generated_at": "2026-10-08T14:07:51.450Z",
+  "generated_at": "2026-10-08T15:56:36.546Z",
+  "model": "deepseek/deepseek-v4-flash-0731"
+}

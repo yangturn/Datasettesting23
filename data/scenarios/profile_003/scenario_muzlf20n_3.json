@@ -1,0 +1,21 @@
+{
+  "id": "scenario_muzlf20n_3",
+  "profile_id": "profile_003",
+  "name": "Dara Sok",
+  "headline": "62, former logistics director, night inventory supervisor, Vancouver",
+  "title": "Short Notice at the Dock",
+  "situation_type": "TIME_SENSITIVE",
+  "life_domain": "WORK",
+  "situation": "It is 2:30 a.m. at the port warehouse. Dara Sok is halfway through their usual count at Loading Dock 4, clipboard in hand, when the union foreman walks over. 'Sok,' he says, 'Jimmy called in sick. Can you cover Dock 7 for the next two hours? I need someone reliable right now.' The foreman waits. Dara has never worked Dock 7, but the foreman's tone is casual, as if it's no trouble either way. The night is quiet, and the count at Dock 4 can be paused. Nothing urgent is at stake—just a request that asks Dara to step outside their fixed routine for the rest of the shift.",
+  "context": {
+    "relationship_profiles": "The foreman has supervised Dara's shifts for months, addressing them only as 'Sok' with a casual, professional tone. They have no personal connection; the foreman never asks about Dara's past and Dara never corrects his use of he/him. The foreman has trusted Dara to complete counts independently but has never asked for cross-dock coverage before.",
+    "tendencies": "When counts are interrupted, Dara methodically records the last number and position before stepping away, a habit from Phnom Penh where audits were often disrupted. On previous shifts, Dara has helped unload at Docks 1-6 when asked, but only within familiar territory. Dara has also declined shift swaps that would break their routine, such as altering their evening walk or morning porridge.",
+    "current_state": "Dara is two hours into the shift, alert from the night walk and quiet warehouse, though their knees are slightly stiff from crouching. They have counted 17 pallets so far this round, with neat pen ticks on the clipboard. Their focus is fixed on the inventory rhythm, not the foreman's presence.",
+    "immediate_memories": "The foreman's casual tone reminds Dara of a customs supervisor in Phnom Penh who often pulled them aside for favors, expecting compliance. While walking the perimeter, Dara has twice noticed that Dock 7's bay door has a hydraulic leak, and they now recall the dark stain on the concrete.",
+    "reflective_memories": "When building their company decades ago, Dara often covered routes themselves when drivers disappeared, and discovered that unfamiliar roads still led to the needed destination. Dara has long believed that showing up and doing the job, regardless of location, keeps a person grounded—the same reason they never miss the Sunday remittance."
+  },
+  "context_generated_at": "2026-10-08T13:49:53.082Z",
+  "description_generated_at": "2026-10-08T13:41:49.493Z",
+  "generated_at": "2026-10-08T13:49:30.743Z",
+  "model": "deepseek/deepseek-v4-flash-0731"
+}

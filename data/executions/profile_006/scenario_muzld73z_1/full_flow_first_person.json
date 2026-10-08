@@ -1,0 +1,62 @@
+{
+  "flow_key": "full_flow_first_person",
+  "profile_id": "profile_006",
+  "scenario_id": "scenario_muzld73z_1",
+  "name": "Meenakshi Raman",
+  "scenario_title": "Sunday Afternoon with Grandchildren or Notes",
+  "steps": {
+    "attributes": {
+      "output": {
+        "values_culture_and_background": "She values traditional Tamil plant knowledge and insists on crediting healers by name, believing knowledge comes from people, not books. She values girls' education, as shown by her personally funding a girl's school fees. She has internalized the cultural expectation that women's domestic work is primary, creating a tension with her newer intellectual work.",
+        "roles_and_commitments": "She is a mother of four married children. She is a research collaborator with a university team, documenting local plants and healers. She is a financial supporter of a fifteen-year-old girl's education.",
+        "capabilities_and_constraints": "She is literate in Tamil, having taught herself to write at age forty-two. She has extensive knowledge of local plant names and traditional herbal remedies. She can record observations and interact with researchers. She receives a modest monthly stipend, but gives half to a girl's education, leaving limited financial resources.",
+        "personality_and_response_style": "She is principled and insistent, unwilling to compromise on crediting healers. She experiences guilt when pursuing intellectual work while her daughters perform household labor, reflecting an internalized cultural conflict. She is dedicated and hardworking, waking early to walk and observe. She is idealistic about her work and takes it seriously."
+      },
+      "generated_at": "2026-10-08T14:15:37.944Z",
+      "model": "deepseek/deepseek-v4-flash-0731"
+    },
+    "consolidate": {
+      "output": {
+        "initial_context": "RELEVANT CHARACTER BACKGROUND\n\nMeenakshi Raman is a seventy-six-year-old woman who has lived in a village near the Palani hills, where she spent most of her life doing domestic labor such as scrubbing floors and wringing clothes. In recent years, she has become a research collaborator with a university team, documenting local plants and traditional herbal remedies. She records her observations in Tamil, using local plant names like periya maruthu, seeraagam, and nochi, noting the part used, preparation, and dosage. She taught herself to read and write at age forty-two, after her youngest child started school. She insists on crediting the healers who shared their knowledge by name, believing that knowledge comes from people, not books. She is dedicated to girls' education; she uses half of her monthly stipend of six thousand rupees to pay the school fees for a fifteen-year-old girl named Divya, who wants to become a nurse. Meenakshi has four married children. Her youngest daughter, Lakshmi, visits most Sunday afternoons with her two children, aged five and eight. Meenakshi and Lakshmi are close, though Lakshmi sometimes teases that her mother's notebook has become like a third child. On past visits, Meenakshi has set aside chores to walk the children through the plants in the yard. She also often stays up late after family interruptions to finish her field notes and has never missed a deadline. She is principled and insistent, sometimes to the annoyance of her co-workers, and she is dedicated and hardworking, waking early to walk the forest path at dawn. She experiences an internal conflict between her love of this intellectual work and guilt over pursuing it while her daughters continue to perform household labor, reflecting an internalized cultural expectation that women's domestic responsibilities are primary. She is idealistic about her work and takes it seriously. She has used the remedies herself, as did her mother and the healers she now walks beside. Though old, she sees herself as a student again and is determined to learn and contribute. She is not religious in a demonstrative way, but she touches the forest floor before leaving, whispering thanks to the plants and the grandmothers who taught her.\n\nOBJECTIVE SITUATION\n\nOn a Sunday afternoon, Meenakshi's youngest daughter Lakshmi arrives with her two children, ages five and eight. Meenakshi had planned to spend the afternoon organizing her field notes for the research team, but the children run in and ask her to show them the plants in the backyard. Lakshmi sits at the kitchen table, saying she would love to hear one of Meenakshi's old folk tales. Meenakshi's notebook lies open on the table, half-sorted. She can either sit with the children and share stories, or excuse herself to finish her work.\n\nPRE-APPRAISAL STATE AND ACCESSIBLE MEMORIES\n\nShe is a little tired from her dawn forest walk but calm. She had set aside this afternoon for notes because the team expects them Monday, and the notebook is only half sorted. The children's request recalls teaching her daughters to identify nochi leaves. Lakshmi's request for a tale recalls bedtime stories from when Lakshmi was small. The half-sorted page reminds her of a healer who wanted her name on the paper."
+      },
+      "generated_at": "2026-10-08T14:16:31.639Z",
+      "model": "deepseek/deepseek-v4-flash-0731"
+    },
+    "appraisal": {
+      "output": {
+        "initial_interpretation": "The children are asking for what they always ask for, and Lakshmi is asking for a story too—this is a family Sunday, not my work time.",
+        "initial_emotional_reaction": "My tiredness lifts a little when I see them, and I feel warmth, but there is also a pinch of worry because the notebook is only half-sorted and the team expects it Monday.",
+        "activated_concerns": "The work is important to me and I must not miss the deadline, but the children have become my companions and I showed my own daughters these plants. I also feel the old pull that women should put family before work.",
+        "automatic_theory_of_mind": "Lakshmi is smiling and asking warmly, and she seems to expect me to say yes; she will laugh and tease if I choose my notebook again. The children simply want my attention and believe I will play with them.",
+        "initial_action_tendency": "I want to turn from the notebook and take the children out to the nochi plant and tell Lakshmi a story, but I am also pulled to finish my sorting."
+      },
+      "generated_at": "2026-10-08T14:16:38.022Z",
+      "model": "deepseek/deepseek-v4-flash-0731"
+    },
+    "reappraisal": {
+      "output": {
+        "initial_tendency": "I want to turn from the notebook and take the children out to the nochi plant and tell Lakshmi a story, but I am also pulled to finish my sorting.",
+        "reflective_update": "Sitting here with the notebook half-sorted, I still feel the pull of the Monday deadline. But when I think about it slowly, I know I have never missed a deadline, and I have often finished my notes late at night after the house grew quiet. I learned to write when I was forty-two by waking early and stealing time, so I know I can balance study with family. My mother used to tell folk tales while she made medicines, and her stories and her work were not enemies. What I remember most clearly now is the wishing I felt on old Sundays when I chose work over my children—that regret stayed longer than any page I sorted. If I excuse myself now, I protect the deadline but lose what Lakshmi and the children are offering me this afternoon. They are here only today, and the notebook will still be here tonight. The healers who taught me also taught me that knowledge passes through people, and these children are people I want to pass something to. I think I can set the notebook aside and be with them now, and still honor my work later.",
+        "change_from_initial": "STRENGTHENED",
+        "reconsidered_interpretation": "I no longer see this as a simple choice between family and work. It is a question of what I will remember and what they will remember. The children are not interrupting my real work; they are asking for the kind of knowing that lives in stories and plants, the same knowing my mother gave me and the healers shared with me. The notes are important, but they are not alive the way these two children are. I still know the deadline is real, but the stronger truth is that Sundays with Lakshmi and the children are rare, and I have already seen what happens when I let work win those days.",
+        "motivational_conflict": "I still have a pinch inside me about the half-sorted notebook and the team waiting on Monday. Part of me believes a woman should put her family before everything, and part of me believes my research is also valuable. What pulls hardest now is the old regret of Sundays when I chose my chores over my children—that memory makes me want to stay with them more than the deadline makes me want to leave. The conflict is not gone, but it has tilted clearly toward the children because I know I can finish later, while I cannot bring this Sunday back.",
+        "revised_action_tendency": "I want to close the notebook for now, take the children out to the nochi plant, and tell Lakshmi the story she asked for. I will sort the notes tonight after everyone has gone, even if I stay up late, because I have done that before and I will not let the team down. For now, my hand is reaching for their hands instead of the pages."
+      },
+      "generated_at": "2026-10-08T14:17:01.963Z",
+      "model": "deepseek/deepseek-v4-flash-0731"
+    },
+    "decision": {
+      "output": {
+        "action": "Meenakshi closes her notebook, sets it aside, and turns to the children. She takes each child by the hand and says, \"Come, let me show you the nochi plant,\" then looks at Lakshmi and adds, \"And I will tell you that story you asked for.\"",
+        "explanation": "Meenakshi's initial impulse was to turn from the notebook and join the children, though she felt the pull of the Monday deadline. In reflection, this impulse was strengthened: she reminded herself that she has never missed a deadline and can finish the notes after the household quiets, just as she has done before. The memory of regret from past Sundays when she chose chores over her children, along with her belief that knowledge passes through people rather than books, made the family time outweigh the unfinished work. So she acts on her revised tendency by closing the notebook, taking the children outside to the nochi plant, and offering Lakshmi the requested story, while intending to sort the notes later that night."
+      },
+      "generated_at": "2026-10-08T14:17:11.981Z",
+      "model": "deepseek/deepseek-v4-flash-0731"
+    }
+  },
+  "scenario_generated_at": "2026-10-08T13:48:04.031Z",
+  "scenario_context_generated_at": "2026-10-08T13:48:42.253Z",
+  "description_generated_at": "2026-10-08T13:41:52.092Z",
+  "started_at": "2026-10-08T14:14:50.633Z",
+  "updated_at": "2026-10-08T14:17:11.981Z"
+}

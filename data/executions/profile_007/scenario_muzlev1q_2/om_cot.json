@@ -1,0 +1,22 @@
+{
+  "flow_key": "om_cot",
+  "profile_id": "profile_007",
+  "scenario_id": "scenario_muzlev1q_2",
+  "name": "Rania Haddad",
+  "scenario_title": "A Walk Around the Campus Gardens",
+  "steps": {
+    "decision": {
+      "output": {
+        "action": "She accepts Samir's invitation and walks with him through the campus gardens, planning to discuss the reading list before heading to the bus stop.",
+        "explanation": "Rania's reflective memory of deliberately saying yes to simple colleague offers after her divorce, combined with her respect for Samir and the collaborative value she places on informal pedagogical conversations, tips the balance. The reading list question reminds her of the department meeting where she silently agreed with his argument, and his past gesture of bringing tea in the courtyard reinforces his supportive role. Despite her fatigue and deadlines, she chooses the short walk, as it aligns with her habit of sometimes staying for interesting collaborative talks even when pressed for time."
+      },
+      "generated_at": "2026-10-08T14:09:09.313Z",
+      "model": "deepseek/deepseek-v4-flash-0731"
+    }
+  },
+  "scenario_generated_at": "2026-10-08T13:49:21.710Z",
+  "scenario_context_generated_at": "2026-10-08T13:49:48.259Z",
+  "description_generated_at": "2026-10-08T13:46:42.093Z",
+  "started_at": "2026-10-08T14:09:01.202Z",
+  "updated_at": "2026-10-08T14:09:09.313Z"
+}

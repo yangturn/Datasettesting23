@@ -1,0 +1,22 @@
+{
+  "flow_key": "direct_zero_shot",
+  "profile_id": "profile_006",
+  "scenario_id": "scenario_muzld73z_1",
+  "name": "Meenakshi Raman",
+  "scenario_title": "Sunday Afternoon with Grandchildren or Notes",
+  "steps": {
+    "decision": {
+      "output": {
+        "action": "Meenakshi sets her notebook aside and leads her grandchildren into the backyard to identify plants.",
+        "explanation": "She has consistently set aside chores on past visits to show the children the plants, and she remembers old Sundays spent working with regret over not lingering with family. She often finishes notes later at night, so she chooses family now."
+      },
+      "generated_at": "2026-10-08T14:15:03.435Z",
+      "model": "deepseek/deepseek-v4-flash-0731"
+    }
+  },
+  "scenario_generated_at": "2026-10-08T13:48:04.031Z",
+  "scenario_context_generated_at": "2026-10-08T13:48:42.253Z",
+  "description_generated_at": "2026-10-08T13:41:52.092Z",
+  "started_at": "2026-10-08T14:14:55.134Z",
+  "updated_at": "2026-10-08T14:15:03.435Z"
+}

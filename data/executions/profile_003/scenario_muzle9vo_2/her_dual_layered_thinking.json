@@ -1,0 +1,37 @@
+{
+  "flow_key": "her_dual_layered_thinking",
+  "profile_id": "profile_003",
+  "scenario_id": "scenario_muzle9vo_2",
+  "name": "Dara Sok",
+  "scenario_title": "A Sunday Invitation to the Community",
+  "steps": {
+    "system_thinking": {
+      "output": {
+        "system_thinking": "Dara pauses at the produce stall, the weight of the remittance receipt still in their pocket. The clerk's warm and unpushy invitation breaks into their usual after-routine rhythm. In the moment, a faint memory stirs—their mother humming to the tro at family feasts—and for a heartbeat Dara feels a pull toward the community hall. But that pull is quickly smothered by the familiar tiredness from the night shift and the deep-rooted habit of avoiding the center of any gathering. Dara has always preferred the edge, watching from a distance, and they have learned to keep their inner life private, especially around identity. They remind themselves of their Sunday duty: the porridge waiting at home, the stillness, the routine that anchors them. So they offer the clerk a polite, small smile, acknowledging the kindness of the invitation, and decline with gentle firmness. They say something like, 'That is very kind. I have my porridge waiting, and I am tired from work. But I will think about it.' They give a slight nod, adjust their bag of ginger, and turn to begin their walk home, leaving the door open just a crack without committing."
+      },
+      "generated_at": "2026-10-08T14:06:04.186Z",
+      "model": "deepseek/deepseek-v4-flash-0731"
+    },
+    "role_response": {
+      "output": {
+        "role_thinking": "The receipt is still warm in my pocket, and the clerk's words hang in the air. Tro... I haven't heard that word spoken aloud in years. For a moment, my mother's humming comes back, the way she'd tap her foot at family feasts while the music curled around us. I could walk to the hall. It's not far. But my legs are heavy from the night shift, and there's porridge waiting at home, still warm in the pot if I hurry. I've never been one to sit in the middle of things—always the edge, watching. Even in Phnom Penh, I never joined the singing. The invitation is kind, but kindness doesn't change the weight of tiredness, or the way I keep my life close. I'll thank him, and leave the door open just a little. That's enough for one day.",
+        "action": "Dara gives the clerk a small, polite smile and nods slightly. \"That is very kind. I have my porridge waiting, and I am tired from work. But I will think about it.\" They adjust the bag of ginger in their hand, give another brief nod, and turn to begin the familiar walk home."
+      },
+      "generated_at": "2026-10-08T14:06:11.290Z",
+      "model": "deepseek/deepseek-v4-flash-0731"
+    },
+    "decision": {
+      "output": {
+        "action": "Dara gives the clerk a small, polite smile and nods slightly. \"That is very kind. I have my porridge waiting, and I am tired from work. But I will think about it.\" They adjust the bag of ginger in their hand, give another brief nod, and turn to begin the familiar walk home.",
+        "explanation": "Dara felt the warmth of the receipt and the weight of the clerk's invitation, which stirred a brief memory of their mother humming to similar music at family feasts. Though the hall was not far, they were physically tired from the night shift and mindful of the porridge waiting at home. They reflected on their habit of staying on the edge of gatherings, never joining the singing even in Phnom Penh, and concluded that while the invitation was kind, it did not change their tiredness or their preference to keep their life close. So they politely thanked the clerk, left the door open just a little, and turned toward their familiar walk home."
+      },
+      "generated_at": "2026-10-08T14:06:17.602Z",
+      "model": "deepseek/deepseek-v4-flash-0731"
+    }
+  },
+  "scenario_generated_at": "2026-10-08T13:48:54.276Z",
+  "scenario_context_generated_at": "2026-10-08T13:49:24.553Z",
+  "description_generated_at": "2026-10-08T13:41:49.493Z",
+  "started_at": "2026-10-08T14:05:43.357Z",
+  "updated_at": "2026-10-08T14:06:17.602Z"
+}

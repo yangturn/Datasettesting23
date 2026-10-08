@@ -1,0 +1,37 @@
+{
+  "flow_key": "her_dual_layered_thinking",
+  "profile_id": "profile_001",
+  "scenario_id": "scenario_muzlexr1_3",
+  "name": "Aminata Diallo",
+  "scenario_title": "Evening Invitation",
+  "steps": {
+    "system_thinking": {
+      "output": {
+        "system_thinking": "Aminata sits on her mattress, thumb hovering over the photo of the plastered wall, noticing the faint dip near the window that the instructor had pointed out. The ache in her shoulder and the memory of a rare clear-headed morning after a full evening of cards whisper that rest might not betray her work, though her mother's warning about the neighbor who gambled away her stall money lingers. She distinguishes between betting and a few hands with trusted roommates, and decides a short break is a deliberate act, not a lapse. She locks her phone, sets it on the mattress, rises, and walks to the cloth circle, giving Serge's deck a calm glance and meeting Mariam's coaxing smile with a small nod. She speaks in her usual measured way, saying, 'One round. Then I need to see my wall.' She sits cross-legged, keeps her coin pouch pressed close against her waist, and waits for the deal, already setting her own limit in her head."
+      },
+      "generated_at": "2026-10-08T13:57:57.811Z",
+      "model": "deepseek/deepseek-v4-flash-0731"
+    },
+    "role_response": {
+      "output": {
+        "role_thinking": "There is a dip in that wall near the window. It is what the instructor pointed out when he praised my corners. I should zoom in and sketch it while it is fresh, but my shoulder is aching and Mariam is calling me the way my mother used to call my brothers in from the fields. My mother's story about the neighbor who lost her small market stall because she spent evenings playing cards instead of sewing—that was about betting, not a few hands with friends. Serge has his trowel to lend me when mine is dull, and Mariam carried the tile when my back gave out. Two weeks ago I joined one round and made a corner mistake the next day. But last month I spent a whole evening at cards and woke focused, and my porridge sold well. This is not the same as losing money. I can join them for one round and still see my wall before I sleep. I will keep my coin pouch close and my time measured.",
+        "action": "Aminata locks her phone and sets it down on the mattress, then rises and walks to the cloth circle. She meets Mariam's coaxing smile with a small nod and glances calmly at the worn deck in Serge's hands. \"One round,\" she says quietly. \"Then I need to see my wall.\" She sits down cross-legged on the cloth, keeps the coin pouch fastened against her waist, and waits for the deal."
+      },
+      "generated_at": "2026-10-08T13:58:19.035Z",
+      "model": "deepseek/deepseek-v4-flash-0731"
+    },
+    "decision": {
+      "output": {
+        "action": "Aminata locks her phone and sets it down on the mattress, then rises and walks to the cloth circle. She meets Mariam's coaxing smile with a small nod and glances calmly at the worn deck in Serge's hands. \"One round,\" she says quietly. \"Then I need to see my wall.\" She sits down cross-legged on the cloth, keeps the coin pouch fastened against her waist, and waits for the deal.",
+        "explanation": "Aminata felt the familiar tension between her commitment to studying her plasterwork and the warmth of her roommates' invitation. The flaw in the wall near the window called for her attention, but her aching shoulder and Mariam's familiar call softened her resolve. She recalled her mother's cautionary tale about a neighbor ruined by card-playing, yet reasoned that a friendly game was not the same as betting, and she remembered the kindnesses of Serge and Mariam. She also reflected on past experiences: one round led to a mistake the next day, but a full evening of cards last month was followed by clear focus and good porridge sales. Concluding that she could join for one round and still review her wall, she chose to sit with them while keeping her coin pouch secure and her time measured."
+      },
+      "generated_at": "2026-10-08T13:58:39.081Z",
+      "model": "deepseek/deepseek-v4-flash-0731"
+    }
+  },
+  "scenario_generated_at": "2026-10-08T13:49:25.213Z",
+  "scenario_context_generated_at": "2026-10-08T13:49:51.568Z",
+  "description_generated_at": "2026-10-08T13:41:57.136Z",
+  "started_at": "2026-10-08T13:57:33.071Z",
+  "updated_at": "2026-10-08T13:58:39.081Z"
+}

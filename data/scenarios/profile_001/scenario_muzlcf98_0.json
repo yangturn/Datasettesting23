@@ -1,0 +1,21 @@
+{
+  "id": "scenario_muzlcf98_0",
+  "profile_id": "profile_001",
+  "name": "Aminata Diallo",
+  "headline": "19, apprentice plasterer, Dakar",
+  "title": "A Call About the Naming Ceremony",
+  "situation_type": "CULTURE_RELEVANT",
+  "life_domain": "FAMILY",
+  "situation": "Aminata's phone buzzes on a Sunday evening while she is counting her savings. It is her mother calling from the village. After asking about her health and her training, her mother mentions that a cousin has had a baby and a naming ceremony is planned for next month. She hints that it would be respectful for Aminata to send a small contribution, even if she cannot attend. Aminata knows her mother will not be angry if she refuses, but she also feels the pull of family expectation. She must decide what to say and whether to send money from her carefully guarded savings.",
+  "context": {
+    "relationship_profiles": "Mother trusts Aminata's judgment but still upholds village customs of family reciprocity.\nCousin and Aminata are distant; they meet only at weddings and funerals, and the cousin never acknowledged her move to the city.\nHer younger sister depends on the school-fee remittances, so any extra spending competes with that fixed commitment.",
+    "tendencies": "She has twice declined coworker requests for casual loans by stating her strict savings plan.\nShe sends exactly the sister's school amount each term and nothing beyond, even when relatives ask for more.\nIn porridge sales she never gives credit, politely but firmly refusing everyone, and she applies the same rule to personal money requests.",
+    "current_state": "It is Sunday evening after a full week of early porridge sales and plastering practice, and her shoulders and wrists ache.\nShe has just totalled her savings and sees the amount matches her year-end goal for tuition and new tools.\nShe feels a quiet satisfaction in her growing skill, though her small room is hot and the kerosene stove still needs cleaning.",
+    "immediate_memories": "The mention of the naming ceremony recalls the one she attended as a child, when her mother had her carry a calabash of food to the compound.\nThe phone buzz interrupts her counting and brings back the market woman who lost everything when the bank collapsed.\nHer mother's voice on the line reminds her of the morning they stood at the bus station and her mother said, 'Learn well so you can be your own woman.'",
+    "reflective_memories": "She remembers the neighbor who lost her funeral savings in the bank collapse, a lesson that only tangible, guarded money can be trusted.\nShe reflects on how her mother defied the uncle to allow her to train, and she weighs each financial choice against that act of trust.\nAcross many nights she has sketched plans to become a master plasterer, and she often asks herself whether a family request fits into those plans."
+  },
+  "context_generated_at": "2026-10-08T13:48:11.355Z",
+  "description_generated_at": "2026-10-08T13:41:57.136Z",
+  "generated_at": "2026-10-08T13:47:27.932Z",
+  "model": "deepseek/deepseek-v4-flash-0731"
+}

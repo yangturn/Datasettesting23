@@ -1,0 +1,22 @@
+{
+  "flow_key": "om_cot",
+  "profile_id": "profile_010",
+  "scenario_id": "scenario_muzlhmoq_2",
+  "name": "Ciarán Walsh",
+  "scenario_title": "A Quick Call to Help the Intern",
+  "steps": {
+    "decision": {
+      "output": {
+        "action": "He replies in the team chat with a documentation link and a brief written explanation of the fix, declining the call.",
+        "explanation": "Ciarán consistently avoids synchronous calls, preferring to post documentation links and keep replies concise. His memory of his father fixing the tractor alone—explaining took longer than doing—reinforces his inclination to solve problems quietly and efficiently. Just as he repairs the footbridge step unacknowledged, he will give the intern the fix in writing without the intimacy of a call, preserving his independence while still offering useful help."
+      },
+      "generated_at": "2026-10-08T14:11:01.481Z",
+      "model": "deepseek/deepseek-v4-flash-0731"
+    }
+  },
+  "scenario_generated_at": "2026-10-08T13:51:30.842Z",
+  "scenario_context_generated_at": "2026-10-08T13:52:05.482Z",
+  "description_generated_at": "2026-10-08T13:42:06.870Z",
+  "started_at": "2026-10-08T14:10:53.643Z",
+  "updated_at": "2026-10-08T14:11:01.481Z"
+}

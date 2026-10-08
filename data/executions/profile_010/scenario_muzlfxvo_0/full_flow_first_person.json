@@ -1,0 +1,50 @@
+{
+  "flow_key": "full_flow_first_person",
+  "profile_id": "profile_010",
+  "scenario_id": "scenario_muzlfxvo_0",
+  "name": "Ciarán Walsh",
+  "scenario_title": "A Missing Saw",
+  "steps": {
+    "attributes": {
+      "output": {
+        "values_culture_and_background": "Values independence and self-reliance above all; learned from upbringing that dependency means vulnerability; prefers to give care without being asked and to fix what is broken without explanation; cannot stand to see a small failure go unrepaired; holds a sense of obligation to his community and place.",
+        "roles_and_commitments": "Works remotely as a software developer for a Dublin firm; owns and maintains a twenty-foot sailboat; has a weekly commitment to repair a footbridge step every Friday without fail.",
+        "capabilities_and_constraints": "Proficient in repairing mechanical and software systems; able to fix almost anything after careful study; knows every detail of his boat; efficient and thorough in his work; possesses a shed with tools and a workbench.",
+        "personality_and_response_style": "Self-contained and methodical; wary of attention; avoids social gatherings and informal interactions; prefers to work alone; gives help quietly without seeking acknowledgment; has a strong sense of duty to repair small failures; has made peace with solitude; dislikes asking for help and dependency."
+      },
+      "generated_at": "2026-10-08T14:24:41.293Z",
+      "model": "deepseek/deepseek-v4-flash-0731"
+    },
+    "consolidate": {
+      "output": {
+        "initial_context": "RELEVANT CHARACTER BACKGROUND\n\nCiarán Walsh is a self-contained, methodical man who values independence and self-reliance above all, and who dislikes asking for help or depending on others. Raised in a farming family inland from Galway, he learned early that dependency meant vulnerability: his father was quiet, repaired his own machinery, and said little at the dinner table. When Ciarán was fifteen, a summer storm collapsed the family cattle shed, and the family spent a week salvaging timber and re-setting the roof without asking neighbours for help. That week hardened something in him; he discovered he could fix almost anything if he studied it carefully, and that he preferred to solve his own problems. He is wary of attention, avoids social gatherings and informal interactions, and prefers to work alone, giving help quietly without seeking acknowledgment.\n\nHe has lived for eight years in a small stone house on the edge of Galway, with a kitchen that smells of diesel and solder and a back shed where he rewinds alternators and replaces shackles at a workbench. He works remotely for a Dublin software firm from a tidy corner of the kitchen, with a laptop propped on a stack of old sailing manuals; his colleagues know him only as an efficient voice on the line who never turns on his camera, and when a build fails he says little but pushes a cleanly documented fix within the hour. His work team lead depends on his 9am call but knows nothing of his shed or bridge. He is proficient at repairing mechanical and software systems, can fix almost anything after careful study, and is efficient and thorough. He is comfortable, with savings and a boat that needs new rigging, which he has no intention of buying.\n\nOn weekends he sails a twenty-foot sloop with a worn mainsail and a hull he patches himself, going out alone for hours; he knows every bolt, every seam, and every quirk of the engine. He never races, never joins the marina's social gatherings, and returns at dusk, securing the lines and walking home without a word to anyone. His neighbours receive only politeness—a raised hand or a brief nod; he attends no local festivals, no church committee, and does not stop for tea. The one act of care he permits himself is deliberate and unspoken: every Friday he walks to the footbridge at the edge of the tidal marsh and replaces the broken step he noticed the week before, carrying a spare piece of treated oak in his rucksack, cutting it to size with a handsaw kept in the shed, and fitting it while the morning mist is still low. No one sees him do it, but the step is always solid. He knows his neighbours use the bridge to reach the shops and will never ask him for help; he prefers to give without being asked and to fix what is broken without explanation.\n\nHis core tension is that he values independence above all yet cannot stand to see a small failure go unrepaired, and that he wants to be left alone but also wants to matter. The footbridge step is his compromise—a quiet proof that he is capable of kindness, so long as no one makes him speak it aloud. The years alone have not hardened him so much as sharpened his sense of what he owes his place; he has made peace with solitude, though a stranger might notice how his eyes follow a child crossing the bridge or how he lingers when the harbour lights come on. He has a strong sense of duty to repair small failures and a felt obligation to his community and place.\n\nIn past situations, when a shed tool has gone missing he has improvised with what hung nearby rather than break routine; he has delayed a repair when the right tool was essential for a clean cut; and he has skipped his morning coffee on tight Fridays to keep both the repair and the work call. The hardware store owner has served him for years and never asks what he buys.\n\nOBJECTIVE SITUATION\n\nIt is Friday morning, just after dawn. Ciarán is in the shed, packing his rucksack for his weekly repair of the footbridge step. He reaches for the handsaw he keeps on a hook by the door, but it is not there—only a bent hacksaw. He stands still for a moment, thinking. The hardware store opens at eight and is a ten-minute walk away; he has a nine o'clock video call for work. He could buy a new handsaw and still make it to the bridge before the call, but he would have to skip his usual coffee. Or he could use the hacksaw, which is slower and less precise, but the step would still be mended. The morning is calm, and the mist is low over the marsh.\n\nPRE-APPRAISAL STATE AND ACCESSIBLE MEMORIES\n\nCiarán is well-rested and calm, carrying his usual Friday purpose. He has not yet had his first coffee of the day, which he ordinarily sips as he walks, and he feels only a mild irritation at the empty hook.\n\nThe empty hook recalls a handsaw he let a neighbour use to cut a branch two weeks ago. The bent hacksaw reminds him of a rusted shackle last winter that he forced through it. The low marsh mist brings back a rainy Friday when he fitted a step and stayed afterwards to check his nails."
+      },
+      "generated_at": "2026-10-08T14:25:40.653Z",
+      "model": "deepseek/deepseek-v4-flash-0731"
+    },
+    "appraisal": {
+      "output": {
+        "initial_interpretation": "My handsaw is gone from its hook, and that neighbour who borrowed it two weeks ago hasn't brought it back. I'm left with a bent hacksaw that'll make a poor job of the step, and it's Friday—the repair has to be done today.",
+        "initial_emotional_reaction": "I feel a steady, familiar irritation at the empty hook, and a sour note when I think of that neighbour and his careless borrowing. It's not anger—just a quiet annoyance that I have to deal with someone else's neglect on a morning I'd rather keep to myself.",
+        "activated_concerns": "I need to mend that step properly, and I won't depend on anyone else to make it right. The bridge matters to the neighbours, and I've said nothing about it—that's my way. I also have the nine o'clock call, and I'd rather not break my stride or my routine, but the step has to be solid.",
+        "automatic_theory_of_mind": "I take the neighbour's silence as carelessness—he likely hasn't given the saw a second thought after he cut his branch. The hardware store owner won't ask questions; he never does.",
+        "initial_action_tendency": "I'm inclined to walk to the hardware store, buy a new handsaw even if it costs me my coffee, and still get to the bridge before the call. The hacksaw would leave a rougher edge, and I wouldn't want that on the step."
+      },
+      "generated_at": "2026-10-08T14:25:52.137Z",
+      "model": "deepseek/deepseek-v4-flash-0731"
+    },
+    "decision": {
+      "output": {
+        "action": "Ciarán turns from the empty hook, shoulders his rucksack, and walks out of the shed toward the hardware store, leaving the bent hacksaw hanging in place.",
+        "explanation": "The missing handsaw, tied to the memory of the neighbor who borrowed it and never returned it, stirs his familiar irritation and a refusal to depend on anyone else. His concern that the step be mended properly makes the bent hacksaw unacceptable, so his immediate tendency is to walk to the hardware store, buy a new saw, and keep the repair his own—even if it costs him his coffee. His habitual self-reliance and quiet commitment to the bridge drive this direct, unspoken action."
+      },
+      "generated_at": "2026-10-08T14:26:02.552Z",
+      "model": "deepseek/deepseek-v4-flash-0731"
+    }
+  },
+  "scenario_generated_at": "2026-10-08T13:50:12.036Z",
+  "scenario_context_generated_at": "2026-10-08T13:50:53.589Z",
+  "description_generated_at": "2026-10-08T13:42:06.870Z",
+  "started_at": "2026-10-08T14:23:55.479Z",
+  "updated_at": "2026-10-08T14:26:02.552Z"
+}

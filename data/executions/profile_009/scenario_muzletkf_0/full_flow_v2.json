@@ -1,0 +1,62 @@
+{
+  "flow_key": "full_flow_v2",
+  "profile_id": "profile_009",
+  "scenario_id": "scenario_muzletkf_0",
+  "name": "Kim Min-jun",
+  "scenario_title": "The Noodle Shop Invitation",
+  "steps": {
+    "attributes": {
+      "output": {
+        "values_culture_and_background": "He values being present for his family, having sworn to be different from his absentee father. He prioritizes family-friendly workplace policies and considers a company's benefits package a signal of its values. He believes loyalty to a mission is a trap and that security comes from verifiable numbers.",
+        "roles_and_commitments": "He is the primary caregiver for his fourteen-month-old daughter. He is the household's de facto operations manager, responsible for budgeting and logistics. He is a husband and co-breadwinner with a commitment to family financial stability.",
+        "capabilities_and_constraints": "He is skilled in systematic analysis, spreadsheet management, and financial tracking. He has limited financial resources, keeping the monthly deficit under 300,000 won. He is constrained by caregiving responsibilities for an infant, which structure his daily schedule.",
+        "personality_and_response_style": "He approaches decisions methodically and analytically, weighing costs and benefits in a transactional manner. He maintains a disciplined daily routine, waking at 5 a.m. to study. He measures his self-worth in terms of measurable benchmarks and experiences insecurity about his non-professional role."
+      },
+      "generated_at": "2026-10-08T14:23:32.912Z",
+      "model": "deepseek/deepseek-v4-flash-0731"
+    },
+    "consolidate": {
+      "output": {
+        "initial_context": "RELEVANT CHARACTER BACKGROUND\n\nKim Min-jun, a twenty-nine-year-old man, lives with his wife Ji-woo and their fourteen-month-old daughter Seo-yeon in a cramped but immaculate one-bedroom apartment in Seoul's Nowon district. Six months ago, the fintech startup where he had spent three years as a junior developer collapsed overnight, leaving him with a final paycheck and a severance package that evaporated within two weeks. Since then, he has become the household's primary caregiver and de facto operations manager, handling childcare, budgeting, and logistics while his wife, a nurse at a university hospital, works double shifts to cover rent and health insurance.\n\nHis approach to job hunting is methodical and analytical. He maintains a spreadsheet of potential employers, specifically Seoul-based tech companies with public parental leave policies, and ranks them by salary band, flexible hours, and the generosity of family benefits. He has rejected promising interviews at companies offering only statutory minimum leave and once declined a recruiter's call because the job description listed 'paternity leave: none' as a perk. He views a company's benefits package as its most honest codebase—a signal of whether they value the person behind the screen. He treats each application like a bid in an auction, weighing the cost of his time against the probability of a response and the long-term payoff of a stable, family-friendly role.\n\nThis transactional mindset extends to household budget management. He redesigned grocery spending into a color-coded spreadsheet tracking every won, cross-referencing sales at two discount supermarkets and factoring in Seo-yeon's changing formula intake. He buys baby clothes in bulk from a resale app and resells them when she outgrows them, carefully photographing each item under a desk lamp to maximize resale value. He is proud that he has kept the family's monthly deficit below 300,000 won, a figure he quotes with the precision of a CFO.\n\nBeneath the meticulousness is a quiet tension. Raised by a father who worked six days a week and was rarely home, Min-jun swore he would be different. He now envies his wife's clear professional identity while struggling to explain his own day in terms that do not sound like a project status report. He sometimes feels like an impostor in his own life, measuring his worth in benchmarks and break-even points rather than the soft weight of his daughter's sleep. The startup's collapse taught him that loyalty to a mission is a trap and that security comes only from numbers he can verify. He still wakes at 5 a.m. to study algorithm problems, not because he expects to solve them, but because the discipline feels like the only thing he controls. On good days, he thinks of himself as a portfolio manager of his family's future; on hard days, he just wants a company that sees him as more than a cost line.\n\nIn his relationship with Ji-woo, late-night calls are their only adult conversation due to her double shifts. He feels guilty about her earnings and does not want to refuse her requests. He values being present for his family, prioritizing family-friendly workplace policies and viewing benefits packages as signals of a company's values. He believes loyalty to a mission is a trap and that security comes from verifiable numbers.\n\nPersonality-wise, he approaches decisions methodically and analytically, weighing costs and benefits in a transactional manner. He maintains a disciplined daily routine and measures self-worth via measurable benchmarks, leading to insecurity about his non-professional role. In caregiving, he often chooses delivery when Seo-yeon naps, reheating one-handed, but also takes her on short outings in the carrier to stay active. He mentally weighs the cost of walking versus delivery each time.\n\nOBJECTIVE SITUATION\n\nAt 10 p.m., Min-jun is finishing a spreadsheet in the kitchen. His wife Ji-woo calls from the hospital; her shift ended early, and she suggests they meet at the 24-hour noodle shop around the corner for a late dinner. Seo-yeon is fast asleep in her carrier, and the apartment is quiet. The noodle shop is a five-minute walk away.\n\nPRE-APPRAISAL STATE AND ACCESSIBLE MEMORIES\n\nMin-jun has been awake since 5 a.m., having spent the day on childcare and chores. He skipped dinner to finish updating the job spreadsheet. His back aches from rocking the baby, and he is tired but hungry. The noodle shop sign recalls a past quiet dinner there with Ji-woo and a sleeping baby; the kitchen table recalls last week's cold delivery order. He remembers the noodle shop's quiet corner booth where they talked freely."
+      },
+      "generated_at": "2026-10-08T14:24:13.183Z",
+      "model": "deepseek/deepseek-v4-flash-0731"
+    },
+    "appraisal": {
+      "output": {
+        "initial_interpretation": "This call feels like an unexpected chance to be with Ji-woo outside the usual rush—a break from the spreadsheet and the apartment, just a short walk to the noodle shop where they once talked freely.",
+        "initial_emotional_reaction": "He is tired and hungry, but the invitation loosens something in his chest, a flicker of warmth mixed with relief at the thought of seeing her face across that quiet table.",
+        "activated_concerns": "His guilt about Ji-woo's double shifts makes him want to say yes without hesitation, and the memory of their last quiet dinner makes him crave that connection, even as his back aches and his spreadsheet still sits unfinished.",
+        "automatic_theory_of_mind": "He takes her suggestion as her reaching for him—she finished early and wants to share a meal, maybe to talk, and he reads it as a gentle pull toward the companionship they've been missing.",
+        "initial_action_tendency": "He feels an impulse to stand up, grab the carrier with Seo-yeon, and head out the door toward the noodle shop without overthinking it."
+      },
+      "generated_at": "2026-10-08T14:24:24.861Z",
+      "model": "deepseek/deepseek-v4-flash-0731"
+    },
+    "reappraisal": {
+      "output": {
+        "initial_tendency": "He feels an impulse to stand up, grab the carrier with Seo-yeon, and head out the door toward the noodle shop without overthinking it.",
+        "reflective_update": "Min-jun pauses and lets himself think beyond the first impulse. The noodle shop is not just a place to eat; it was their post-shift date spot before Seo-yeon, and the memory of that quiet corner booth carries weight. His father's absence taught him that family meals matter, and he has spent months measuring himself against spreadsheets and benchmarks, wondering if he is becoming the kind of absent presence he swore he would never be. Ji-woo finished early and reached out to him—that is not a request to weigh like a cost; it is an invitation to be present. Staying home would mean protecting his unfinished spreadsheet and the fragile sense of control it gives him, but it would also mean repeating the pattern of withdrawal he fell into after the startup failed. He could tell himself he is too tired or that the numbers need updating, but those are the same excuses that kept him isolated. The walk is short, Seo-yeon is already asleep, and Ji-woo is waiting. He knows that refusing her would sting in a way that no spreadsheet entry could offset.",
+        "change_from_initial": "STRENGTHENED",
+        "reconsidered_interpretation": "Min-jun now sees this invitation not merely as a welcome break but as an important chance to reconnect with Ji-woo and to honor the family rituals he valued growing up. The initial warmth he felt is reinforced by the recognition that this is exactly the kind of presence he wanted to offer—a deliberate choice to show up for his wife, rather than hide behind tasks and shame.",
+        "motivational_conflict": "The main tension is between his habit of retreating into measurable, controllable work and his deeper need for connection. Part of him still wants to stay in the apartment and finish the spreadsheet, because that feels safe and productive, and a quieter part remembers the shame that made him turn down invitations after losing his job. But the memory of family meals and the pull of Ji-woo's outstretched invitation keep pushing him toward the door, and that push is stronger now than his urge to protect his routine.",
+        "revised_action_tendency": "Min-jun is now more firmly inclined to set the spreadsheet aside, lift Seo-yeon in her carrier, and walk the short distance to the noodle shop to meet Ji-woo, treating this as a moment of connection he cannot afford to miss."
+      },
+      "generated_at": "2026-10-08T14:24:44.913Z",
+      "model": "deepseek/deepseek-v4-flash-0731"
+    },
+    "decision": {
+      "output": {
+        "action": "Kim Min-jun tells Ji-woo he'll be right there, saves and closes the spreadsheet, lifts Seo-yeon's carrier, and heads out the apartment door toward the noodle shop.",
+        "explanation": "Min-jun's initial impulse was to grab the carrier and head out without overthinking, driven by relief and guilt at Ji-woo's invitation. Reflection strengthened that impulse rather than dampening it: the noodle shop's memory as their post-shift date spot, his father's absence teaching him that family meals matter, and his fear of repeating the withdrawal pattern after the startup failed all made this more than a casual meal—it became a deliberate act of showing up for his wife. The competing pull of staying to finish the spreadsheet, which represents his fragile sense of control and measurable worth, was outweighed by his recognition that refusing Ji-woo would sting more than any unfinished task, especially given his guilt over her double shifts. So he sets aside the safe, productive work and walks the short distance, choosing presence over the routine that protects him."
+      },
+      "generated_at": "2026-10-08T14:25:03.968Z",
+      "model": "deepseek/deepseek-v4-flash-0731"
+    }
+  },
+  "scenario_generated_at": "2026-10-08T13:49:19.791Z",
+  "scenario_context_generated_at": "2026-10-08T13:49:58.250Z",
+  "description_generated_at": "2026-10-08T13:42:02.480Z",
+  "started_at": "2026-10-08T14:23:07.786Z",
+  "updated_at": "2026-10-08T14:25:03.968Z"
+}

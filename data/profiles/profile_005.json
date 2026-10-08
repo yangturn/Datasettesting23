@@ -1,0 +1,17 @@
+{
+  "name": "Adriano Santos",
+  "headline": "48, retired percussionist and theater technician, Rio de Janeiro",
+  "description": "Adriano spent twenty years as a percussionist and theater technician in Rio and retired this year after a factory accident damaged his hearing. On weekday mornings he repairs old drum kits in his garage and sells them on a classifieds site; on evenings he runs a YouTube channel where he fact-checks popular Brazilian telenovela plots. He refuses to join any arts advocacy groups and writes long comment replies explaining exactly why.",
+  "id": "profile_005",
+  "seed": {
+    "region": "Brazil",
+    "gender": "a man",
+    "age_band": "forties",
+    "socioeconomic": "lower middle class",
+    "life_stage": "newly retired",
+    "domain": "the arts or performance",
+    "temperament": "sceptical and contrarian"
+  },
+  "generated_at": "2026-10-08T13:41:00.586Z",
+  "model": "deepseek/deepseek-v4-flash-0731"
+}

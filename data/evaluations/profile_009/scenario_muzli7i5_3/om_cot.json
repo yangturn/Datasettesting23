@@ -1,0 +1,24 @@
+{
+  "profile_id": "profile_009",
+  "scenario_id": "scenario_muzli7i5_3",
+  "flow_key": "om_cot",
+  "name": "Kim Min-jun",
+  "scenario_title": "Interview Conflict",
+  "scores": {
+    "character_consistency": 9,
+    "situation_fit": 8,
+    "state_memory_alignment": 8,
+    "action_plausibility": 8,
+    "reasoning_coherence": 6
+  },
+  "overall_score": 7.8,
+  "score_scale": 10,
+  "dimension_set": 4,
+  "action": "He sends a reply to the recruiter asking if the second day of the on-site coding test can be moved to the following day to accommodate a pre-existing appointment, without mentioning that it is his daughter's vaccination.",
+  "reason": "Min-jun's established pattern is to prioritize Seo-yeon's schedule over interview slots, as when he moved a phone screen to the evening during her fever. He also carries the memory of his own father missing vaccine appointments, which reinforces his commitment. Although he avoids mentioning childcare early in recruitment, he will likely request a shift with a vague reason to avoid exposing that detail. His past experience includes one accommodation after a request, so he weighs the risk as acceptable. Thus, he chooses to ask for a reschedule rather than rely on his mother-in-law, whom he uses only after exhausting other options.",
+  "decision_mode": "REFLECTION_AVAILABLE",
+  "context_generated_at": "2026-10-08T15:44:34.027Z",
+  "action_generated_at": "2026-10-08T14:03:24.980Z",
+  "generated_at": "2026-10-08T15:48:46.876Z",
+  "model": "deepseek/deepseek-v4-flash-0731"
+}

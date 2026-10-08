@@ -1,0 +1,21 @@
+{
+  "id": "scenario_muzletkf_0",
+  "profile_id": "profile_009",
+  "name": "Kim Min-jun",
+  "headline": "19, former junior developer, stay-at-home father, Seoul",
+  "title": "The Noodle Shop Invitation",
+  "situation_type": "NORMAL",
+  "life_domain": "ROMANTIC",
+  "situation": "At 10 p.m., Min-jun is finishing a spreadsheet when his wife, Ji-woo, calls from the hospital. Her shift ended early, and she suggests they meet at the 24-hour noodle shop around the corner for a late dinner. Seo-yeon is fast asleep in her carrier, and the apartment is quiet. Min-jun has two options: he can strap the baby to his chest and walk the five minutes to the shop, or he can suggest ordering delivery and eating together at the kitchen table. He knows either choice would please her, but he also feels the pull of his own fatigue.",
+  "context": {
+    "relationship_profiles": "Ji-woo works double shifts; late-night calls are their only adult conversation.\nEarly off means she texts from the hospital; he knows she wants time out with him.\nHe feels guilty about her earnings, so he doesn't want to refuse her.",
+    "tendencies": "He often chooses delivery when Seo-yeon naps, reheating one-handed.\nHe sometimes takes her on short outings in the carrier to stay active.\nHe mentally weighs walking cost versus delivery cost each time.",
+    "current_state": "Awake since 5 a.m., he spent the day on childcare and chores.\nHe skipped dinner to finish updating the job spreadsheet.\nHis back aches from rocking; he's tired but hungry.",
+    "immediate_memories": "The noodle shop sign recalls a past quiet dinner there with Ji-woo and a sleeping baby.\nThe kitchen table recalls last week's cold delivery order.\nHe remembers the noodle shop's quiet corner booth where they talked freely.",
+    "reflective_memories": "His father's absence made family meals important to him.\nThat noodle shop was their post-shift date spot before Seo-yeon.\nAfter the startup failed, he stopped accepting social invitations out of shame."
+  },
+  "context_generated_at": "2026-10-08T13:49:58.250Z",
+  "description_generated_at": "2026-10-08T13:42:02.480Z",
+  "generated_at": "2026-10-08T13:49:19.791Z",
+  "model": "deepseek/deepseek-v4-flash-0731"
+}

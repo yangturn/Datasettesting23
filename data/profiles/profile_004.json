@@ -1,0 +1,17 @@
+{
+  "name": "Tyler Hoffman",
+  "headline": "23, overnight home-care aide, Columbus, Ohio",
+  "description": "Tyler dropped out of a computer science program in Columbus last spring and now works as an overnight home-care aide for a disabled veteran. He took the job on a whim after a friend backed out, and he has already rearranged his shifts twice to start a weekend phlebotomy certificate. His parents still cover his car and phone, which lets him abandon projects as soon as they bore him.",
+  "id": "profile_004",
+  "seed": {
+    "region": "the US Midwest",
+    "gender": "a man",
+    "age_band": "early twenties",
+    "socioeconomic": "comfortably middle class",
+    "life_stage": "changing direction entirely",
+    "domain": "healthcare or caregiving",
+    "temperament": "restless and impulsive"
+  },
+  "generated_at": "2026-10-08T13:41:00.586Z",
+  "model": "deepseek/deepseek-v4-flash-0731"
+}

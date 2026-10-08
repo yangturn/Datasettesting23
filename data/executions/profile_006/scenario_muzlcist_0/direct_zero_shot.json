@@ -1,0 +1,22 @@
+{
+  "flow_key": "direct_zero_shot",
+  "profile_id": "profile_006",
+  "scenario_id": "scenario_muzlcist_0",
+  "name": "Meenakshi Raman",
+  "scenario_title": "Rain and the Healer's Name",
+  "steps": {
+    "decision": {
+      "output": {
+        "action": "She steps forward and places her hand over the specimen label, telling the researcher to wait and insisting that the healer Kaveri's name be written before any Latin name.",
+        "explanation": "Meenakshi has twice halted documentation to ensure a healer's name is included, and she has a memory of a past incident where a name was written without consent, so she will intervene directly to prevent the same mistake."
+      },
+      "generated_at": "2026-10-08T14:21:48.895Z",
+      "model": "deepseek/deepseek-v4-flash-0731"
+    }
+  },
+  "scenario_generated_at": "2026-10-08T13:47:32.525Z",
+  "scenario_context_generated_at": "2026-10-08T13:47:51.108Z",
+  "description_generated_at": "2026-10-08T13:41:52.092Z",
+  "started_at": "2026-10-08T14:21:43.587Z",
+  "updated_at": "2026-10-08T14:21:48.895Z"
+}

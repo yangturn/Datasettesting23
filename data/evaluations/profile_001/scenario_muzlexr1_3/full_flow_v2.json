@@ -1,0 +1,24 @@
+{
+  "profile_id": "profile_001",
+  "scenario_id": "scenario_muzlexr1_3",
+  "flow_key": "full_flow_v2",
+  "name": "Aminata Diallo",
+  "scenario_title": "Evening Invitation",
+  "scores": {
+    "character_consistency": 9,
+    "situation_fit": 8,
+    "state_memory_alignment": 8,
+    "action_plausibility": 8,
+    "reasoning_coherence": 5
+  },
+  "overall_score": 7.6,
+  "score_scale": 10,
+  "dimension_set": 4,
+  "action": "Aminata stays on her mattress, looks from the cards to Mariam and Serge, and raises her phone slightly. “Not tonight—I need to finish looking at this wall. Maybe another evening.” She turns her attention back to the screen and opens her notebook to begin reviewing the photo.",
+  "reason": "Her initial impulse was to lift her phone and say no, though her body briefly shifted toward the floor. Reflection strengthened that impulse rather than reversing it: she weighed the warmth of joining Serge and Mariam against the dip near the window, recalling both her own ceiling-corner mistake after a card night and her mother’s story of the neighbor who lost market money to card evenings. Her commitment to her trade, her nightly review habit, and the money she sends home for her sister tipped the balance firmly toward work, but her care for her only close companions remained, so she softened the refusal by leaving open another evening. This matches her disciplined, goal-focused nature, her guarded but kind speech, and her wariness of anything resembling gambling. She turns down the game and keeps her phone on the photo, as the revised tendency indicated, while preserving the possibility of joining another time so Serge and Mariam do not feel pushed away.",
+  "decision_mode": "REFLECTION_AVAILABLE",
+  "context_generated_at": "2026-10-08T15:20:36.377Z",
+  "action_generated_at": "2026-10-08T14:00:13.604Z",
+  "generated_at": "2026-10-08T15:21:05.987Z",
+  "model": "deepseek/deepseek-v4-flash-0731"
+}

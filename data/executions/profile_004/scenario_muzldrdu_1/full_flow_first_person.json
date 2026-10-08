@@ -1,0 +1,62 @@
+{
+  "flow_key": "full_flow_first_person",
+  "profile_id": "profile_004",
+  "scenario_id": "scenario_muzldrdu_1",
+  "name": "Tyler Hoffman",
+  "scenario_title": "Saturday Kickoff",
+  "steps": {
+    "attributes": {
+      "output": {
+        "values_culture_and_background": "Midwestern practical culture centered on weather talk, potluck gatherings, and avoiding direct emotional confrontation; grew up in a household where love was shown through paying for things and everyday routines rather than long talks; treats parental financial support as an unremarkable given rather than a gift requiring gratitude; values hands-on, tangible work as 'something real'; admires people who stick with things over time.",
+        "roles_and_commitments": "Works as an overnight home-care aide for Roy, a disabled veteran, with responsibilities including transfers, medication, and repositioning; is enrolled in a weekend phlebotomy certificate program at a local vocational center.",
+        "capabilities_and_constraints": "Has practical caregiving skills: checking vitals, repositioning clients, and assisting with transfers and medication; works overnight shifts; has parental financial support covering tuition, car insurance, and phone, which removes financial pressure to follow through.",
+        "personality_and_response_style": "Starts new programs with initial enthusiasm and then loses interest and drops them, as with a CNA class and computer science program; habitually makes lists of plans and deadlines but leaves them incomplete; is self-aware that he does not follow through and acknowledges his privilege without changing his pattern; expresses care through punctuality and practical task completion rather than emotional probing; tends to mentally move on from planning conversations."
+      },
+      "generated_at": "2026-10-08T14:14:03.626Z",
+      "model": "deepseek/deepseek-v4-flash-0731"
+    },
+    "consolidate": {
+      "output": {
+        "initial_context": "RELEVANT CHARACTER BACKGROUND\n\nTyler Hoffman is a twenty-two-year-old from a suburban Ohio neighborhood. He grew up in a household where love was expressed through practical means—paying for things and everyday routines—rather than direct emotional conversations. He takes his parents' financial support for granted; they pay for his community college tuition, car insurance, and phone plan without complaint, and he does not treat this as a gift requiring gratitude. He has a pattern of starting new projects with enthusiasm and then losing interest and dropping them: he signed up for a CNA class and quit after three weeks, and he dropped out of a computer science program after mentally checking out for months. He is self-aware about this pattern and acknowledges his privilege, but he has not changed his behavior. He admires people who stick with things, such as his father, who has worked the same sales territory for twenty years, and Roy, a disabled veteran he cares for, who still does his daily exercises. Tyler works as an overnight home-care aide for Roy, performing transfers, medication, and repositioning, and he has come to appreciate the quiet rhythm of third shift. He expresses care through punctuality and practical task completion rather than emotional probing. He is also enrolled in a weekend phlebotomy certificate program, which he treats as something \"real.\" He has a habit of making lists of plans and deadlines but leaving them half-used.\n\nHis cultural background is Midwestern and practical, emphasizing weather talk, potluck gatherings, and avoiding direct emotional confrontation. In his relationships, his father leaves decisions open-ended, leaving Tyler to carry guilt if he skips events; his mother quietly files away absences and may mention them offhand later; and neighbors John and the Millers have known him since childhood and ask what he's \"doing now,\" which he finds gently uncomfortable. Historically at these watch parties, he arrives near kickoff, never misses one entirely, but drifts to the porch by the second quarter. He has previously texted his family to back out of plans, citing homework or errands, and they accepted it without pushback. His parental support removes financial pressure to follow through on commitments.\n\nOBJECTIVE SITUATION\n\nOn a September Saturday, Tyler's father phones to say that the neighbors are gathering at the house to watch the Ohio State game. He mentions that John is bringing chili and the Millers are bringing meatballs, then suggests, \"Grab a twelve-pack or a bag of chips if you want.\" The watch party has unwritten rules: guests should arrive before kickoff, make small talk during commercials, bring a contribution, and not slip out early. Empty-handed guests are noticed in the neighborhood, as is obvious disinterest in the game.\n\nPRE-APPRAISAL STATE AND ACCESSIBLE MEMORIES\n\nTyler is a few weeks into the phlebotomy certificate program and is unsure whether weekend classes will stick while he works third shift. He is running short on sleep from the week's overnight shifts. He had planned to spend the afternoon reviewing the phlebotomy course schedule online and running errands, which include picking up the course textbook. The invitation immediately brings to mind last year's party, when he arrived with pretzels and his mother handed him the chip bowl so he would look prepared. Also comes to mind his father's rule that no one answers their phone during the first half of the game."
+      },
+      "generated_at": "2026-10-08T14:15:20.335Z",
+      "model": "deepseek/deepseek-v4-flash-0731"
+    },
+    "appraisal": {
+      "output": {
+        "initial_interpretation": "This is the usual neighborhood watch party invite again, another expected gathering where I'm supposed to show up on time, bring something, and not disappear early. It's cutting into my planned afternoon of errands and catching up on rest.",
+        "initial_emotional_reaction": "I feel a mix of tiredness and flat obligation—part of me wants to just stay home, but there's a familiar pull to go through the motions again.",
+        "activated_concerns": "My fatigue from the week's night shifts and my unfinished errands—I still need to get the course textbook and check the schedule. Also the unwritten rule about bringing something and not slipping out early; empty-handed would be noticed, and I know I've drifted before.",
+        "automatic_theory_of_mind": "Dad is making it easy, suggesting a twelve-pack or chips, but he expects me to show up and participate. Mom probably notices if I’m unprepared again—she handed me the chip bowl last time, and I think she'd be quietly keeping track if I backed out.",
+        "initial_action_tendency": "I’m tempted to text that I’ve got homework or errands to dodge it, but I also feel a pull to just grab something on the way and go, to keep things simple."
+      },
+      "generated_at": "2026-10-08T14:15:34.037Z",
+      "model": "deepseek/deepseek-v4-flash-0731"
+    },
+    "reappraisal": {
+      "output": {
+        "initial_tendency": "I’m tempted to text that I’ve got homework or errands to dodge it, but I also feel a pull to just grab something on the way and go, to keep things simple.",
+        "reflective_update": "The easy out is still right there—one text and I’m done, and Dad and Mom wouldn’t push back. But thinking about Dad driving me to community college without ever mentioning the cost, that’s how they show it—they just do the thing for me. If I skip this, I’m not really getting homework done, I’m just hiding from the tiredness and the small talk. I could go, grab a twelve-pack, and stay at least for a while. Last year Mom handed me the chip bowl so I’d look prepared, and I don’t want to need that again. The errands can wait a few hours. And the Sunday dinner with just my parents was easier than these neighborhood parties, but this is what’s on offer. Going is the simpler move, and it keeps me from carrying that guilt later.",
+        "change_from_initial": "STRENGTHENED",
+        "reconsidered_interpretation": "This isn’t just another obligation to dodge—it’s a chance to show up the way my parents have always shown up for me, without them asking for anything. My fatigue is real, and the errands are sitting there, but I know my pattern: if I bail now, I’ll feel worse and probably still not get anything done. The party is part of being in this neighborhood, and I can manage a few hours of it.",
+        "motivational_conflict": "Part of me still wants the afternoon for myself—sleep, the textbook, checking the schedule—and I’m tired enough that the couch and the game sound like effort. But I also know backing out would be the easy version of me, and I don’t want to keep being that guy. So there’s a real pull between my own plans and the quiet sense that I owe it to Dad and Mom to be there.",
+        "revised_action_tendency": "I’m leaning toward going—I’ll grab a twelve-pack on the way and tell myself I’ll stay through at least halftime, and if I need to step out to the porch after that, so be it."
+      },
+      "generated_at": "2026-10-08T14:16:00.470Z",
+      "model": "deepseek/deepseek-v4-flash-0731"
+    },
+    "decision": {
+      "output": {
+        "action": "Tyler tells his dad, \"Yeah, I’ll be there—I’ll grab a twelve-pack on the way.\" He stops by the store, picks up a twelve-pack, and arrives at the house before kickoff, staying in through the first half instead of drifting outside early.",
+        "explanation": "Tyler’s initial response mixed a temptation to text an excuse with a pull to just show up. Reflecting on his dad’s habit of quietly covering community college costs and his mom handing him the chip bowl last year made the obligation feel less like a chore and more like a way to match how his parents show up for him. His fatigue and pending errands still pulled against going, but that conflict made backing out feel like the easy version of himself he didn’t want to keep being. The reflective reappraisal STRENGTHENED his leaning to attend, so he committed out loud, bought the twelve-pack, arrived before kickoff, and stayed through halftime—a choice that avoids the guilt of bailing even though his own plans remain unfinished."
+      },
+      "generated_at": "2026-10-08T14:16:21.167Z",
+      "model": "deepseek/deepseek-v4-flash-0731"
+    }
+  },
+  "scenario_generated_at": "2026-10-08T13:48:30.306Z",
+  "scenario_context_generated_at": "2026-10-08T13:50:00.545Z",
+  "description_generated_at": "2026-10-08T13:41:42.912Z",
+  "started_at": "2026-10-08T14:12:59.148Z",
+  "updated_at": "2026-10-08T14:16:21.167Z"
+}

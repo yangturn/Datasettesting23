@@ -1,0 +1,17 @@
+{
+  "name": "Sasha Kovalenko",
+  "headline": "54, lawyer on medical leave, trust fund manager, Lviv",
+  "description": "Sasha, a Ukrainian lawyer on medical leave after a bicycle accident, is slowly regaining mobility while managing a trust fund left by their grandfather. Every morning they review physical-therapy exercises with the same care they used to redlining contracts, noting each improvement in a ledger. They have also started reorganizing the law firm's client files from home, even though their doctor told them to rest.",
+  "id": "profile_008",
+  "seed": {
+    "region": "Eastern Europe",
+    "gender": "a non-binary or self-described person",
+    "age_band": "fifties",
+    "socioeconomic": "wealthy, with inherited money",
+    "life_stage": "recovering from illness or injury",
+    "domain": "law, finance, or administration",
+    "temperament": "anxious and conscientious"
+  },
+  "generated_at": "2026-10-08T13:41:00.586Z",
+  "model": "deepseek/deepseek-v4-flash-0731"
+}

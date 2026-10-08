@@ -1,0 +1,37 @@
+{
+  "flow_key": "her_dual_layered_thinking",
+  "profile_id": "profile_002",
+  "scenario_id": "scenario_muzlcet1_0",
+  "name": "Ingrid Solberg",
+  "scenario_title": "Harbor Invitation",
+  "steps": {
+    "system_thinking": {
+      "output": {
+        "system_thinking": "Portray Ingrid as caught between her compulsive discipline and a quiet longing. She sets down the ice hook, glances at the clipboard, and takes a breath. The fresh herring and Lars's graying beard pull up the memory of her father's boat and the girl who fished for fun, while her grandmother's ledger discipline warns against coffee interruptions. She feels the weight of having cancelled three times and notices that each refusal has chipped away at that version of herself. She decides to accept, not out of obligation but because she misses that self. Observable: she gives a short nod, a rare half-smile, and answers in her clipped dialect—she can come, but she'll be late because the ice has to go to the chillers first, and she can only stay an hour since the evening re-smoke is already written. She states the limits as facts, not apologies, and adds that she'll bring a box of smoked fish to share. This expresses her tension: she opens the door to connection, but only on her terms."
+      },
+      "generated_at": "2026-10-08T14:19:09.403Z",
+      "model": "deepseek/deepseek-v4-flash-0731"
+    },
+    "role_response": {
+      "output": {
+        "role_thinking": "The herring. Lars says fresh herring, and I can almost taste that July day on the cruiser, the mackerel flaking under my knife, his hands over mine. I haven't thought about that in months. He's grayer. We're all grayer. I cancelled last time because the smokehouse schedule was a mess, and the time before that because the supplier shorted us, and the time before that… I don't even remember the excuse. Just that I sent a box of fish instead. My grandmother would say a title is won without coffee interruptions. She'd be right. But Dad always said a crew that shares herring is a crew worth trusting. And the tightness in my shoulders isn't just from the ice. Every time I say no, I lose a little more of the girl who fished for fun. I can be late. I can leave early. But I can go.",
+        "action": "Ingrid sets the ice hook down on the tailgate and glances at the clipboard on the driver's seat. She takes a breath, the salt air sharp in her lungs. A short nod, and the corner of her mouth lifts just slightly. \"Ja. I can come. But the ice goes to the chillers first, so I'll be late. And I can only stay an hour—the evening re-smoke is already written. I'll bring a box of smoked fish.\" She says it flatly, as a statement of fact, not an apology."
+      },
+      "generated_at": "2026-10-08T14:19:19.473Z",
+      "model": "deepseek/deepseek-v4-flash-0731"
+    },
+    "decision": {
+      "output": {
+        "action": "Ingrid sets the ice hook down on the tailgate and glances at the clipboard on the driver's seat. She takes a breath, the salt air sharp in her lungs. A short nod, and the corner of her mouth lifts just slightly. \"Ja. I can come. But the ice goes to the chillers first, so I'll be late. And I can only stay an hour—the evening re-smoke is already written. I'll bring a box of smoked fish.\" She says it flatly, as a statement of fact, not an apology.",
+        "explanation": "Ingrid's agreement to Lars's invitation was triggered by the fresh herring, which brought back a vivid July memory on her father's cruiser and the girl who fished for fun. She acknowledged that she had canceled repeatedly with excuses and sent a fish box instead. Her grandmother's discipline told her a title is won without coffee interruptions, but her father's words about a crew that shares herring being trustworthy weighed on her. The tightness in her shoulders felt tied to losing that part of herself. She decided she could be late and leave early, but she could go, so she accepted flatly with practical conditions."
+      },
+      "generated_at": "2026-10-08T14:19:30.644Z",
+      "model": "deepseek/deepseek-v4-flash-0731"
+    }
+  },
+  "scenario_generated_at": "2026-10-08T13:47:27.349Z",
+  "scenario_context_generated_at": "2026-10-08T13:48:00.778Z",
+  "description_generated_at": "2026-10-08T13:42:27.501Z",
+  "started_at": "2026-10-08T14:18:50.833Z",
+  "updated_at": "2026-10-08T14:19:30.644Z"
+}

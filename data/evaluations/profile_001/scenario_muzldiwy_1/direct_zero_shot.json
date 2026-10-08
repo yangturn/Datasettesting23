@@ -1,0 +1,24 @@
+{
+  "profile_id": "profile_001",
+  "scenario_id": "scenario_muzldiwy_1",
+  "flow_key": "direct_zero_shot",
+  "name": "Aminata Diallo",
+  "scenario_title": "Evening Tea Invitation",
+  "scores": {
+    "character_consistency": 9,
+    "situation_fit": 9,
+    "state_memory_alignment": 9,
+    "action_plausibility": 9,
+    "reasoning_coherence": 9
+  },
+  "overall_score": 9,
+  "score_scale": 10,
+  "dimension_set": 4,
+  "action": "She politely declines Mariam's invitation with a brief excuse about needing rest and reviewing her wall photos, then turns and walks home alone.",
+  "reason": "Aminata has almost always declined after-class gatherings in the past, preferring to go home and study her photos, and her current fatigue, hunger, and the memory that social outings made her drowsy and did not improve her practice reinforce this established pattern.",
+  "decision_mode": "REFLECTION_AVAILABLE",
+  "context_generated_at": "2026-10-08T16:27:47.023Z",
+  "action_generated_at": "2026-10-08T14:11:24.773Z",
+  "generated_at": "2026-10-08T16:28:46.181Z",
+  "model": "deepseek/deepseek-v4-flash-0731"
+}

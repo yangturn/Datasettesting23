@@ -1,0 +1,24 @@
+{
+  "profile_id": "profile_001",
+  "scenario_id": "scenario_muzle45n_2",
+  "flow_key": "full_flow_v2",
+  "name": "Aminata Diallo",
+  "scenario_title": "An Invitation at the Gate",
+  "scores": {
+    "character_consistency": 9,
+    "situation_fit": 8,
+    "state_memory_alignment": 8,
+    "action_plausibility": 9,
+    "reasoning_coherence": 8
+  },
+  "overall_score": 8.4,
+  "score_scale": 10,
+  "dimension_set": 4,
+  "action": "Aminata gives a small polite smile, shifts the pot on her head, and shakes her head. She says, \"Thank you, but I must go to class now.\" Then she turns and begins walking toward the school without taking the groundnuts.",
+  "reason": "Aminata's immediate impulse is to decline and walk to school, even though the heat and the roasted groundnuts briefly tempt her with the thought of a cool drink and a memory of her mother. Her strict habit of never missing class, her wariness of accepting gifts or invitations from workers she barely knows, and her sense of being pressured by his waiting smile all reinforce her polite refusal. The hesitation in her pause reflects the momentary temptation, but her disciplined routine and guarded nature move her to decline firmly and leave.",
+  "decision_mode": "IMMEDIATE",
+  "context_generated_at": "2026-10-08T15:53:42.585Z",
+  "action_generated_at": "2026-10-08T14:05:50.269Z",
+  "generated_at": "2026-10-08T15:54:06.665Z",
+  "model": "deepseek/deepseek-v4-flash-0731"
+}

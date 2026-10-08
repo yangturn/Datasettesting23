@@ -1,0 +1,21 @@
+{
+  "id": "scenario_muzlh084_1",
+  "profile_id": "profile_010",
+  "name": "Ciarán Walsh",
+  "headline": "36, backend engineer, Galway",
+  "title": "Saturday Invitation",
+  "situation_type": "NORMAL",
+  "life_domain": "LEISURE",
+  "situation": "On a clear Saturday morning, Ciarán is in the marina, coiling a dock line and checking his sloop's mast fittings. Another sailor, Tom, walks over from the neighbouring berth and says a few of them are planning a leisurely afternoon cruise to the small island just beyond the bay—no racing, just drifting and a picnic on the beach. Tom asks if Ciarán would care to come along. The boat is ready, the tide is right, and Ciarán has no other plans for the day. He could wave it off with a brief thanks, as he usually does, or accept the invitation and join them.",
+  "context": {
+    "relationship_profiles": "Tom is a regular at the marina, known for casual friendliness and a habit of gathering a few boats for afternoon sails; he has asked Ciarán at least twice before, each time receiving a courteous no.\nCiarán and Tom have never sailed together, but Tom treats Ciarán with the easy indifference of a neighbour who accepts his solitary pattern.\nCiarán knows Tom's sloop is well-kept and that Tom's invitations are genuine, not a test.",
+    "tendencies": "For eight years, Ciarán has declined every marina social invitation, including Tom's previous two, with a brief thanks and a return to his work.\nOn clear Saturday mornings, he routinely sails alone or works on his boat, preferring the empty bay to the company of others.\nHe quietly helps others when asked indirectly, such as replacing the bridge step, but he avoids situations where he'd have to talk at length.",
+    "current_state": "He's already finished his morning coffee and feels rested after a week of remote work, with no pressing deadlines.\nHis boat is in good order; he'd re-rigged the mast last weekend and has been checking the fittings purely for habit.\nThe tide and wind are gentle, and he feels a mild satisfaction in the quiet marina before the Saturday crowd arrives.",
+    "immediate_memories": "Tom's voice and easy tone recall a similar morning last spring when Tom walked over and invited him to a weekend race; Ciarán had nodded, said he had work, and later watched the boats tack past his berth.\nThe sight of the island beyond the bay brings back a solo sail he took there a month ago, when he'd anchored alone and eaten his sandwiches on the beach, watching gulls dive.",
+    "reflective_memories": "He remembers his father turning down a neighbour's offer of a hay baler, saying he'd manage himself, and the family working through the evening to finish the field.\nHe recalls the week after the cattle shed collapsed, when he and his father rebuilt it without help, and the quiet pride they shared at the end.\nHe's held onto a belief that a man owes his place a useful hand—like the bridge step—but not his company."
+  },
+  "context_generated_at": "2026-10-08T13:51:21.539Z",
+  "description_generated_at": "2026-10-08T13:42:06.870Z",
+  "generated_at": "2026-10-08T13:51:01.732Z",
+  "model": "deepseek/deepseek-v4-flash-0731"
+}

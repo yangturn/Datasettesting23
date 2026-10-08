@@ -1,0 +1,24 @@
+{
+  "profile_id": "profile_005",
+  "scenario_id": "scenario_muzlf12v_3",
+  "flow_key": "full_flow_v2",
+  "name": "Adriano Santos",
+  "scenario_title": "The Roda de Samba Invitation",
+  "scores": {
+    "character_consistency": 7,
+    "situation_fit": 8,
+    "state_memory_alignment": 7,
+    "action_plausibility": 7,
+    "reasoning_coherence": 8
+  },
+  "overall_score": 7.4,
+  "score_scale": 10,
+  "dimension_set": 4,
+  "action": "Adriano sets down the lug wrench on the workbench, wipes his hands on his trousers, walks to the gate, and takes the beer from Marcos. He says, \"Fine, I'll come. But I'm not staying long—if my ear starts acting up, I'm slipping out without saying goodbye.\"",
+  "reason": "Adriano's initial impulse was to politely decline and retreat to his garage, but the sight of the beer and the memory of Marcos's silent visit stirred a counter-impulse. In reflection, he reconsidered the invitation as a concrete offer of authentic, informal samba—not the organized arts world he distrusts—and remembered his own stated belief that live samba must be experienced in person. The memory of Marcos's friendship after the accident and the low-pressure nature of the request tipped the balance. His change_from_initial is REVERSED: he now accepts the invitation, though he protects himself by planning to leave early if his hearing becomes too much. Thus, he sets down his tools, takes the beer, and agrees to go while setting a clear limit, balancing his long-standing solitude against his deep pull toward Marcos and the surdo.",
+  "decision_mode": "REFLECTION_AVAILABLE",
+  "context_generated_at": "2026-10-08T15:33:19.450Z",
+  "action_generated_at": "2026-10-08T14:02:44.121Z",
+  "generated_at": "2026-10-08T15:34:15.697Z",
+  "model": "deepseek/deepseek-v4-flash-0731"
+}

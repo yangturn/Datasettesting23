@@ -1,0 +1,24 @@
+{
+  "profile_id": "profile_001",
+  "scenario_id": "scenario_muzle45n_2",
+  "flow_key": "direct_zero_shot",
+  "name": "Aminata Diallo",
+  "scenario_title": "An Invitation at the Gate",
+  "scores": {
+    "character_consistency": 9,
+    "situation_fit": 9,
+    "state_memory_alignment": 8,
+    "action_plausibility": 9,
+    "reasoning_coherence": 8
+  },
+  "overall_score": 8.6,
+  "score_scale": 10,
+  "dimension_set": 4,
+  "action": "She politely shakes her head, smiles, declines the invitation, and continues on her fixed route to the trade school.",
+  "reason": "She consistently declines workers' gifts or invitations and has never missed class, prioritizing punctuality over the detour.",
+  "decision_mode": "IMMEDIATE",
+  "context_generated_at": "2026-10-08T15:53:42.585Z",
+  "action_generated_at": "2026-10-08T14:04:50.019Z",
+  "generated_at": "2026-10-08T15:55:36.769Z",
+  "model": "deepseek/deepseek-v4-flash-0731"
+}

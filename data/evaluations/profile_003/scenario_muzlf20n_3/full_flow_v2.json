@@ -1,0 +1,24 @@
+{
+  "profile_id": "profile_003",
+  "scenario_id": "scenario_muzlf20n_3",
+  "flow_key": "full_flow_v2",
+  "name": "Dara Sok",
+  "scenario_title": "Short Notice at the Dock",
+  "scores": {
+    "character_consistency": 3,
+    "situation_fit": 7,
+    "state_memory_alignment": 7,
+    "action_plausibility": 5,
+    "reasoning_coherence": 8
+  },
+  "overall_score": 6,
+  "score_scale": 10,
+  "dimension_set": 4,
+  "action": "Dara sets down the clipboard, makes a final pen tick beside the last counted pallet, then straightens up and says, \"I will cover Dock 7.\"",
+  "reason": "The foreman's casual request echoes the old customs supervisor's favors in Phnom Penh, making the request feel like an expected duty rather than an option. Dara's habit of securing the current count before stepping away from a task is strongest, so they first finish the last tally with a pen tick. Because being relied upon matters to Dara and they are conflict-averse, the reluctance about leaving Dock 4's familiar rhythm goes unspoken, and they accept the assignment directly.",
+  "decision_mode": "IMMEDIATE",
+  "context_generated_at": "2026-10-08T15:26:55.357Z",
+  "action_generated_at": "2026-10-08T13:59:53.756Z",
+  "generated_at": "2026-10-08T15:27:29.422Z",
+  "model": "deepseek/deepseek-v4-flash-0731"
+}

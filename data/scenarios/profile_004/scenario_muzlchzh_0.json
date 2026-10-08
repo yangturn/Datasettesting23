@@ -1,0 +1,21 @@
+{
+  "id": "scenario_muzlchzh_0",
+  "profile_id": "profile_004",
+  "name": "Tyler Hoffman",
+  "headline": "23, overnight home-care aide, Columbus, Ohio",
+  "title": "Morning Gym Trial or Straight Home",
+  "situation_type": "NORMAL",
+  "life_domain": "PERSONAL_ROUTINES",
+  "situation": "Tyler finishes his overnight shift with Roy at 7:15 a.m. His next shift isn't until Friday night, so he has two full days off. On the drive home, he passes a new gym with a “free week” banner. He's been telling himself he should get back into a routine now that he's enrolled in the phlebotomy program, but he only got four hours of sleep the day before and his bed is waiting. He pulls into the parking lot, idling, and has to decide whether to go in for a quick thirty-minute workout or keep driving and sleep until noon.",
+  "context": {
+    "relationship_profiles": "Tyler still feels a low-key obligation to Jake for handing him the home-care job, though Jake moved to Cincinnati after the fall.\nRoy often says his daily exercises are non-negotiable, and Tyler finds himself wanting to match that standard.\nHis father has run the same two miles before work for years, and Tyler has always thought of that as quiet proof that sticking with something is possible.",
+    "tendencies": "He has joined two gyms in the last three years and went regularly for about a week each time before fading out.\nWhen he’s running on less than five hours of sleep, he usually cancels any plan involving physical effort, as he did with a morning run last month.\nAfter enrolling in a program, he tends to start a new routine with genuine energy but lets the first bad day shake it loose, like with the CNA class.",
+    "current_state": "He has been up since 4 p.m. the previous day, and his eyelids feel gritty and heavy.\nHis lower back is stiff from two transfers of Roy from bed to chair during the night.\nHis next shift is two days away and he has no other obligations scheduled, so the day is wide open.",
+    "immediate_memories": "The “free week” banner reminds him of a free trial at a gym near his parents’ house in 2021 that he used only once.\nIdling in the parking lot brings back the many mornings he sat in driveways weighing whether to go inside or just leave.\nThe gym is next to a coffee shop where he once sat with Jake and talked about all the things they were going to start doing.",
+    "reflective_memories": "He remembers the pride he felt after completing his first full overnight shift with Roy, because it was one of the few things he didn’t bail on.\nHe can still hear his father saying that discipline is doing the same thing even when you don’t feel like it.\nHe often thinks about dropping the CNA program after only three weeks and then telling his parents he’d simply decided to wait until spring."
+  },
+  "context_generated_at": "2026-10-08T13:48:03.297Z",
+  "description_generated_at": "2026-10-08T13:41:42.912Z",
+  "generated_at": "2026-10-08T13:47:31.469Z",
+  "model": "deepseek/deepseek-v4-flash-0731"
+}

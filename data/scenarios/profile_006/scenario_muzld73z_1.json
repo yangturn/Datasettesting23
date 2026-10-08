@@ -1,0 +1,21 @@
+{
+  "id": "scenario_muzld73z_1",
+  "profile_id": "profile_006",
+  "name": "Meenakshi Raman",
+  "headline": "73, field associate for a university ethnobotany study, Kodaikanal",
+  "title": "Sunday Afternoon with Grandchildren or Notes",
+  "situation_type": "NORMAL",
+  "life_domain": "FAMILY",
+  "situation": "On a Sunday afternoon, Meenakshi's youngest daughter, Lakshmi, arrives with her two children, ages five and eight. Meenakshi had planned to spend the afternoon organizing her field notes for the research team, but the children run in and ask her to show them the plants in the backyard. Lakshmi sits at the kitchen table, saying she'd love to hear one of Meenakshi's old folk tales. Meenakshi's notebook lies open on the table, half-sorted. She can sit with the children and share stories, or excuse herself to finish her work.",
+  "context": {
+    "relationship_profiles": "Lakshmi, her youngest, visits most Sunday afternoons; she enjoys her mother's tales and the children love the yard.\nMeenakshi and Lakshmi are close, but Lakshmi sometimes teases that the notebook has become a third child.",
+    "tendencies": "On past visits she has set aside chores to walk the children through the plants.\nShe has often stayed up late to finish notes after family interruptions, and has never missed a deadline.",
+    "current_state": "She is a little tired from her dawn forest walk but calm.\nShe had set aside this afternoon for notes because the team expects them Monday, and the notebook is only half sorted.",
+    "immediate_memories": "The children's request recalls teaching her daughters to identify nochi leaves.\nLakshmi's request for a tale recalls bedtime stories from when Lakshmi was small, and the half-sorted page reminds her of a healer who wanted her name on the paper.",
+    "reflective_memories": "She learned to write at forty-two by waking early, and has since balanced study with family.\nHer mother told folk tales while making medicines, and old Sundays spent working sometimes left her wishing she had lingered with her children."
+  },
+  "context_generated_at": "2026-10-08T13:48:42.253Z",
+  "description_generated_at": "2026-10-08T13:41:52.092Z",
+  "generated_at": "2026-10-08T13:48:04.031Z",
+  "model": "deepseek/deepseek-v4-flash-0731"
+}

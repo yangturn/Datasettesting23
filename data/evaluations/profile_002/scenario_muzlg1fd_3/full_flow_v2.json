@@ -1,0 +1,24 @@
+{
+  "profile_id": "profile_002",
+  "scenario_id": "scenario_muzlg1fd_3",
+  "flow_key": "full_flow_v2",
+  "name": "Ingrid Solberg",
+  "scenario_title": "Sunday Fjord Invitation",
+  "scores": {
+    "character_consistency": 6,
+    "situation_fit": 8,
+    "state_memory_alignment": 7,
+    "action_plausibility": 7,
+    "reasoning_coherence": 8
+  },
+  "overall_score": 7.2,
+  "score_scale": 10,
+  "dimension_set": 4,
+  "action": "Ingrid sets down her brine chart, looks at Lars, and says, \"I'll get my coat. But I need to be back for Father's visit this afternoon.\" She picks up the spare rod he offers and steps out the loft door toward the dock.",
+  "reason": "Ingrid's initial action tendency was a fleeting desire to accept the rod, but it was quickly countered by her reflexive impulse to protect her morning for competition prep. On reflection, she reversed this tendency: she now frames Lars's invitation not as an interruption but as a rare opportunity to reconnect with the fjord, a part of her father's legacy and her own heritage that she has been avoiding since selling his boat. The reverie of childhood Sundays, her grandmother's words about the fjord as the first ledger, and her father's insistence that time on the water was fuel—not lost work—together weighted her decision toward acceptance. Although she still feels the pull of ambition and guilt over lost prep, the revised action tendency is to go. Her spoken condition about returning for the father visit reflects that lingering unease and her commitment to her routine caregiving, but the decisive act of taking the rod and stepping toward the dock shows she honors the revised inclination.",
+  "decision_mode": "REFLECTION_AVAILABLE",
+  "context_generated_at": "2026-10-08T15:23:57.731Z",
+  "action_generated_at": "2026-10-08T14:00:21.094Z",
+  "generated_at": "2026-10-08T15:24:27.240Z",
+  "model": "deepseek/deepseek-v4-flash-0731"
+}

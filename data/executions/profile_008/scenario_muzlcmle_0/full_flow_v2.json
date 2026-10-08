@@ -1,0 +1,62 @@
+{
+  "flow_key": "full_flow_v2",
+  "profile_id": "profile_008",
+  "scenario_id": "scenario_muzlcmle_0",
+  "name": "Sasha Kovalenko",
+  "scenario_title": "Grandmother's Birthday Dinner",
+  "steps": {
+    "attributes": {
+      "output": {
+        "values_culture_and_background": "Values meticulousness and legal precision; treats the family trust fund as a sacred obligation to manage for future generations; committed to accurate recognition of non-binary identity, as demonstrated by correcting pronoun misassumptions with patient, legalistic precision.",
+        "roles_and_commitments": "Senior lawyer at the family law firm Kovalenko & Associates; steward of the family trust fund for future generations.",
+        "capabilities_and_constraints": "Possesses extensive legal expertise, including familiarity with gender-recognition court rulings; has a slight limp and uses a carved wooden cane only on stairs due to a fractured femur.",
+        "personality_and_response_style": "Patient and methodical; calm and precise when correcting misassumptions; prone to anxiety about errors and work obligations, shown in a tight jaw; highly disciplined and driven, treats rest as a problem to solve and seeks control through problem-solving."
+      },
+      "generated_at": "2026-10-08T14:23:25.880Z",
+      "model": "deepseek/deepseek-v4-flash-0731"
+    },
+    "consolidate": {
+      "output": {
+        "initial_context": "RELEVANT CHARACTER BACKGROUND\n\nSasha Kovalenko is a senior lawyer at Kovalenko & Associates, a law firm founded by their grandfather, and the steward of a family trust fund they treat as a sacred obligation, investing in Ukrainian war bonds. Sasha is non-binary and dresses in dark blazers and tailored trousers, using a carved wooden cane from the Carpathians only on stairs due to a fractured femur from a bicycle accident that left a slight limp. Sasha values meticulousness and legal precision, as shown in their work habits: reviewing every client file personally, maintaining a detailed ledger of physical therapy exercises, and redlining contracts with patient, methodical force. They are prone to anxiety about errors and work obligations, which surfaces as a tight jaw. In professional settings, Sasha has consistently corrected pronoun misassumptions by citing the gender-recognition court ruling in a calm, matter-of-fact tone; at a deposition, they corrected a junior associate who called them 'miss' with a one-sentence correction. At prior family gatherings, Sasha has allowed gendered terms to pass without comment to avoid a scene, then privately discussed the matter with the host later. With a client who mispronouned them, Sasha gave a brief correction and continued the negotiation. Oksana is Sasha's close friend from university who has repeatedly invited Sasha to family events and quietly supported their identity. The grandmother is a traditional host whom Sasha met once briefly at Oksana's engagement party, where she used feminine terms without prompting; Sasha holds her in polite regard and sees her hospitality as sincere.\n\nOBJECTIVE SITUATION\n\nAt Oksana's invitation, Sasha arrives at her grandmother's 80th birthday dinner in Lviv. The grandmother has arranged the table with men and women seated apart and greets each guest with a gendered term. Seeing Sasha in a tailored blazer, the grandmother smiles, gestures toward the women's side, and calls them 'donka.' Oksana stands nearby, looking anxious, fully aware of Sasha's non-binary identity but unsure how to intervene. Sasha now has a brief moment to decide whether to gently correct the grandmother's assumption or simply take the offered seat and let the evening proceed without friction.\n\nPRE-APPRAISAL STATE AND ACCESSIBLE MEMORIES\n\nSasha's right leg is tired from the morning stretching routine, and they are leaning on the cane more than usual. Their jaw is slightly tight from the long walk to the restaurant, but they are otherwise composed. Sasha feels lingering worry about an undelivered client file but has resolved to stay present for the evening. The word 'donka' pulls up the memory of the junior associate calling Sasha 'miss' during a deposition and Sasha's one-sentence correction. The grandmother's gesture toward the women's side echoes a birthday dinner two years ago when an aunt directed Sasha to sit with the women."
+      },
+      "generated_at": "2026-10-08T14:23:39.222Z",
+      "model": "deepseek/deepseek-v4-flash-0731"
+    },
+    "appraisal": {
+      "output": {
+        "initial_interpretation": "Sasha sees this as another instance of being read as a woman, with the grandmother's 'donka' and gesture toward the women's side placing them in a gendered category that doesn't fit, echoing the earlier aunt's direction and the deposition mispronoun.",
+        "initial_emotional_reaction": "A sharp flare of discomfort and irritation tightens Sasha's jaw, mingled with weary resignation from their tired leg and the long walk; the warmth of the greeting feels undercut by the sting of being misgendered.",
+        "activated_concerns": "Sasha feels the weight of their identity being unseen, the desire to respect the grandmother's sincere hospitality and keep the evening peaceful, and worry about Oksana's visible anxiety; there is also a pull to uphold the dignity they assert at work, though family gatherings have always muted that impulse.",
+        "automatic_theory_of_mind": "Sasha reads the grandmother as genuinely warm but traditional, unaware of any need for gender distinction, simply following custom; Oksana appears anxious, as if fearing a scene and unsure how to intervene, perhaps expecting Sasha to either correct or let it pass.",
+        "initial_action_tendency": "Sasha's immediate impulse is to correct the grandmother with a brief, matter-of-fact statement like at the deposition, but the memory of past family dinners and Oksana's anxious face pulls them toward simply taking the offered seat, leaving them hesitating between the two."
+      },
+      "generated_at": "2026-10-08T14:24:05.210Z",
+      "model": "deepseek/deepseek-v4-flash-0731"
+    },
+    "reappraisal": {
+      "output": {
+        "initial_tendency": "Sasha's immediate impulse is to correct the grandmother with a brief, matter-of-fact statement like at the deposition, but the memory of past family dinners and Oksana's anxious face pulls them toward simply taking the offered seat, leaving them hesitating between the two.",
+        "reflective_update": "Sasha weighs the two paths more deliberately now. A public correction might spare future assumptions, but it risks humiliating an elder in front of her guests, directly violating the principle their grandfather instilled. The grandmother seems genuinely warm, following custom rather than intending disregard, and Oksana's anxiety suggests the correction would ripple uncomfortably through the evening. Silence, on the other hand, would let the misgendering stand, but Sasha remembers that family gatherings have always been a place where they let such things pass to preserve peace, and they can address it later in private, as they have done before. The deposition correction worked in a professional setting where precision was the norm; here, the setting calls for deference to the host's sincere hospitality.",
+        "change_from_initial": "SOFTENED",
+        "reconsidered_interpretation": "Sasha now sees the grandmother's 'donka' and gesture not as a deliberate rejection of their identity but as an unthinking expression of traditional custom, wrapped in genuine warmth. The situation is still painful—another instance of being read as a woman—but the sting is tempered by the recognition that a public correction at an elder's birthday would carry more weight than the moment itself, and the assumption would likely persist regardless unless addressed more gently later.",
+        "motivational_conflict": "The core tension remains between Sasha's professional impulse to assert their identity clearly and the family pattern of letting such moments pass to avoid scenes. The grandfather's principle against humiliating an elder pulls strongly toward silence, while the personal cost of silence—continuing to be unseen—tugs the other way. Oksana's visible anxiety and the grandmother's sincere warmth make the immediate choice feel less about Sasha's own dignity and more about the emotional weight of the occasion, leaving Sasha unsettled but leaning toward maintaining the peace.",
+        "revised_action_tendency": "Sasha is inclined to let the evening proceed by taking the offered seat without a corrective statement, feeling that a public correction would humiliate the grandmother and intensify Oksana's anxiety. The impulse to speak up still lingers, but it is now overshadowed by a resolve to avoid friction in this warm, traditional setting, possibly intending to address the misgendering privately with Oksana or the grandmother at a later, more appropriate moment."
+      },
+      "generated_at": "2026-10-08T14:24:38.861Z",
+      "model": "deepseek/deepseek-v4-flash-0731"
+    },
+    "decision": {
+      "output": {
+        "action": "Sasha takes a breath, tightens their jaw, and nods briefly to the grandmother with a small, polite smile. Without saying a word correcting 'donka,' they step toward the women's side of the table and take the offered seat.",
+        "explanation": "Sasha's initial tendency was to correct the grandmother as they would in a deposition, but the memory of past family dinners and Oksana's visible anxiety made them hesitate. On reflection, the urge to speak was softened by the recognition that a public correction would humiliate a sincere, traditional elder and intensify Oksana's discomfort, violating the grandfather's principle. Sasha has long allowed gendered terms to pass in family settings to preserve peace, planning to address the issue privately later. The resulting action—accepting the seat without correction—reflects that softened tendency, prioritizing the warmth of the occasion and the grandmother's hospitality over the lingering impulse to assert their identity publicly."
+      },
+      "generated_at": "2026-10-08T14:24:49.336Z",
+      "model": "deepseek/deepseek-v4-flash-0731"
+    }
+  },
+  "scenario_generated_at": "2026-10-08T13:47:37.442Z",
+  "scenario_context_generated_at": "2026-10-08T13:47:57.377Z",
+  "description_generated_at": "2026-10-08T13:41:54.618Z",
+  "started_at": "2026-10-08T14:22:53.403Z",
+  "updated_at": "2026-10-08T14:24:49.336Z"
+}

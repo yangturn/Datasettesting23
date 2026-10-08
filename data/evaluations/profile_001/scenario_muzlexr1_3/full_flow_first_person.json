@@ -1,0 +1,24 @@
+{
+  "profile_id": "profile_001",
+  "scenario_id": "scenario_muzlexr1_3",
+  "flow_key": "full_flow_first_person",
+  "name": "Aminata Diallo",
+  "scenario_title": "Evening Invitation",
+  "scores": {
+    "character_consistency": 9,
+    "situation_fit": 8,
+    "state_memory_alignment": 8,
+    "action_plausibility": 9,
+    "reasoning_coherence": 5
+  },
+  "overall_score": 7.8,
+  "score_scale": 10,
+  "dimension_set": 4,
+  "action": "Aminata stays on her mattress, keeps her phone open to the photo of the plastered wall, and says to Mariam and Serge, \"I’ll finish reviewing this first. Maybe one round after.\" She then turns her attention back to the photo and opens her notebook to sketch the correction near the window.",
+  "reason": "Aminata’s initial tendency was to hesitate, keep her hand on the phone, and prioritize checking her notes before joining the card game. Her reflective reappraisal strengthened that tendency rather than reversing it: she recalled one evening when joining did not hurt her work, but she weighed it against her mother’s warning about the neighbor who lost her stall money to card playing and her own ceiling-corner mistake after a game. Her shoulder ached, but she knew reviewing photos would not worsen it, and her thin savings and responsibility to her sister made discipline feel urgent. So when Mariam invited her, she did not put the phone down or join the circle; she stated she would finish reviewing first and might join for one round afterward, then continued with the photo and notebook. This matches her methodical routine, her protectiveness over her skills and independence, and her desire not to fully reject her friends while still keeping her work first.",
+  "decision_mode": "REFLECTION_AVAILABLE",
+  "context_generated_at": "2026-10-08T15:20:36.377Z",
+  "action_generated_at": "2026-10-08T13:59:42.019Z",
+  "generated_at": "2026-10-08T15:21:32.079Z",
+  "model": "deepseek/deepseek-v4-flash-0731"
+}

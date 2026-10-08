@@ -1,0 +1,18 @@
+{
+  "id": "run_executions_muzlpe2x_a89f2c",
+  "stage": "executions",
+  "status": "succeeded",
+  "total": 576,
+  "done": 571,
+  "failed": 1,
+  "errors": [
+    {
+      "id": "profile_004 · full_flow_v2",
+      "error": "attributes: Model did not return schema-valid JSON after 2 attempts: [\n  {\n    \"expected\": \"string\",\n    \"code\": \"invalid_type\",\n    \"path\": [\n      \"roles_and_commitments\"\n    ],\n    \"message\": \"Invalid input: expected string, received undefined\"\n  }\n]"
+    }
+  ],
+  "model": "deepseek/deepseek-v4-flash-0731",
+  "started_at": "2026-10-08T13:57:32.939Z",
+  "finished_at": "2026-10-08T14:26:02.565Z",
+  "message": null
+}

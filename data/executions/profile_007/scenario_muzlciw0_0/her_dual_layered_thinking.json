@@ -1,0 +1,37 @@
+{
+  "flow_key": "her_dual_layered_thinking",
+  "profile_id": "profile_007",
+  "scenario_id": "scenario_muzlciw0_0",
+  "name": "Rania Haddad",
+  "scenario_title": "The Family Dinner and the Pending Translation",
+  "steps": {
+    "system_thinking": {
+      "output": {
+        "system_thinking": "Rania will feel the familiar pull between the deadline in her bedroom and Layla's request. Her tiredness and hunger make the offer of a meal appealing, but her deeper instinct is to avoid the coldness she remembers from her marriage when work came before people. She will recall her grandmother's words about meals being for tending to people, and she will decide that staying is the right choice, even if it means working late. In the moment, she will glance once more at her closed bedroom door, then set her satchel down by the kitchen table as a signal of commitment. She will speak warmly but practically, agreeing to help and asking what Layla needs—likely offering to keep the toddler occupied or to set an extra place for Layla's mother. She will phrase it as 'I'll manage' to reassure Layla she is not sacrificing her work, and she will carry her satchel into the kitchen with her, ready to be useful while also mentally noting that she will start the translation after the meal."
+      },
+      "generated_at": "2026-10-08T14:22:42.454Z",
+      "model": "deepseek/deepseek-v4-flash-0731"
+    },
+    "role_response": {
+      "output": {
+        "role_thinking": "The translation is due Monday and I haven't started. I can feel my laptop waiting behind that closed door, and the drafts in my satchel still need my eyes. But the pot on the stove smells like home, and I can hear the toddler laughing. Last month she fell asleep against my shoulder and I had to work in the hallway. Layla does so much for me. My grandmother always said meals are for tending to people, not tasks. And I know what it cost me to put work before people before. I'm tired and hungry, and Layla asked for help. I'll manage — I'll stay, help her, and start the translation after dinner.",
+        "action": "Rania glances once at her closed bedroom door, then sets her satchel down by the kitchen table. She says softly, 'I'll manage. What do you need? I can keep her busy while you set an extra place for your mother.'"
+      },
+      "generated_at": "2026-10-08T14:22:52.127Z",
+      "model": "deepseek/deepseek-v4-flash-0731"
+    },
+    "decision": {
+      "output": {
+        "action": "Rania glances once at her closed bedroom door, then sets her satchel down by the kitchen table. She says softly, 'I'll manage. What do you need? I can keep her busy while you set an extra place for your mother.'",
+        "explanation": "Rania felt the pressure of the translation due Monday and the drafts needing her attention, but the warm smells and sounds of the family meal, along with the memory of the toddler sleeping on her shoulder last month, reminded her of how much Layla does for her. Her grandmother's saying that meals are for tending to people, not tasks, and the memory of putting work before people in the past, weighed on her. Feeling tired and hungry, she decided to stay and help, planning to manage the translation after dinner."
+      },
+      "generated_at": "2026-10-08T14:23:01.736Z",
+      "model": "deepseek/deepseek-v4-flash-0731"
+    }
+  },
+  "scenario_generated_at": "2026-10-08T13:47:32.640Z",
+  "scenario_context_generated_at": "2026-10-08T13:48:17.467Z",
+  "description_generated_at": "2026-10-08T13:46:42.093Z",
+  "started_at": "2026-10-08T14:22:30.996Z",
+  "updated_at": "2026-10-08T14:23:01.736Z"
+}

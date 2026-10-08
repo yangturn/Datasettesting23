@@ -1,0 +1,21 @@
+{
+  "id": "scenario_muzldhzz_1",
+  "profile_id": "profile_003",
+  "name": "Dara Sok",
+  "headline": "62, former logistics director, night inventory supervisor, Vancouver",
+  "title": "The Detour at the Market",
+  "situation_type": "NORMAL",
+  "life_domain": "PERSONAL_ROUTINES",
+  "situation": "On Dara's usual evening walk to the port, they reach the corner near Granville Market and find a street festival has closed the route. A crowd gathers around a stage, and the familiar path to the waterfront is blocked by fencing. Dara has thirty minutes before their shift starts. They can either walk through the festival and circle around, adding ten minutes to their walk, letting them glimpse the stalls and music, or take the narrow side street they've always avoided because it's poorly lit and unfamiliar, keeping them on schedule. They stand at the intersection, weighing the desire for the familiar routine against the disruption.",
+  "context": {
+    "relationship_profiles": "Dara's daughter Mei frequently reminds them to rest, but Dara maintains their nightly walking ritual as a point of pride. Their younger brother in Phnom Penh depends on the weekly remittance, a promise Dara has kept without fail. The clerk at the money shop greets them by name, making the transfer a small anchor of social connection.",
+    "tendencies": "When previous street repairs blocked Dara's usual walking path, they chose the longer, well-lit detour over an unfamiliar alley. On rainy nights, they still follow their standard route but slow down rather than switch to a shortcut. They have never taken the narrow side street near Granville Market despite passing its entrance many times.",
+    "current_state": "Dara is on their usual evening walk, carrying the clipboard they use for inventory counts. Their legs feel fresh from the three-kilometre walk, and they have a mild hunger for the rice porridge waiting at home. They are aware of the 30-minute window before their shift begins and still intend to do their customary perimeter check.",
+    "immediate_memories": "The sound of a festival band reminds Dara of the small street fairs near their old warehouse in Phnom Penh, where vendors sold grilled corn. The fencing at the intersection echoes a time last month when a utility truck blocked this same corner, and they waited rather than detour. The dark mouth of the side street brings back a warning from Mei, who once told them to avoid poorly lit areas at night.",
+    "reflective_memories": "Dara has spent decades trusting known routes, memorizing every pothole and checkpoint; unfamiliar paths in Vancouver still feel like an unsolved ledger. They recall learning the port district by walking its perimeter every evening for weeks, but they never ventured beyond the main streets. In Phnom Penh, they had a network of drivers who reported road conditions; here, they alone decide which streets are safe."
+  },
+  "context_generated_at": "2026-10-08T13:48:40.039Z",
+  "description_generated_at": "2026-10-08T13:41:49.493Z",
+  "generated_at": "2026-10-08T13:48:18.143Z",
+  "model": "deepseek/deepseek-v4-flash-0731"
+}

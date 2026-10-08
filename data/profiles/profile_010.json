@@ -1,0 +1,17 @@
+{
+  "name": "Ciarán Walsh",
+  "headline": "36, backend engineer, Galway",
+  "description": "Ciarán, a backend engineer in Galway, has lived alone in the same small stone house for eight years and works from home for a Dublin software firm. He spends his weekends single-handed sailing his aging boat and can fix most of its machinery himself. He keeps his neighbours at a polite distance, but every Friday he silently replaces the broken step on the footbridge near his house.",
+  "id": "profile_010",
+  "seed": {
+    "region": "the UK or Ireland",
+    "gender": "a man",
+    "age_band": "thirties",
+    "socioeconomic": "comfortably middle class",
+    "life_stage": "long-term single and settled",
+    "domain": "software or engineering",
+    "temperament": "guarded and self-reliant"
+  },
+  "generated_at": "2026-10-08T13:41:00.586Z",
+  "model": "deepseek/deepseek-v4-flash-0731"
+}
