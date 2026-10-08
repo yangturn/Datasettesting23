@@ -40,3 +40,12 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# generated pipeline data (config files at data/*.json stay tracked)
+/data/descriptions/
+/data/evaluation-contexts/
+/data/evaluations/
+/data/executions/
+/data/profiles/
+/data/runs/
+/data/scenarios/
