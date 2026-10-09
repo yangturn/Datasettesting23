@@ -87,8 +87,10 @@ export default async function Stage4Page(props: PageProps<"/stage-4">) {
           &apos;s flows predicted, in two parts. Part 1 consolidates the ground
           truth into a neutral account, without seeing any flow&apos;s output —
           one per scenario, shared by every flow. Part 2 scores each
-          flow&apos;s predicted action against it on three dimensions. Only the
-          action is shown to the judge, never the flow&apos;s own reasoning.
+          flow&apos;s predicted action and its explanation against it, and
+          against the Stage 2 episode blocks verbatim, on{" "}
+          {SCORE_DIMENSIONS.length} dimensions, writing a short rationale
+          before the scores.
         </p>
       </header>
 
@@ -102,14 +104,14 @@ export default async function Stage4Page(props: PageProps<"/stage-4">) {
           <p className="rounded-lg border border-line-strong bg-surface p-3 text-sm text-ink-muted">
             {scoreboard.superseded}{" "}
             {scoreboard.superseded === 1 ? "evaluation was" : "evaluations were"}{" "}
-            scored on a superseded scale or against a superseded set of
-            dimensions, and{" "}
+            scored on a superseded scale, set of dimensions, or scoring rules,
+            and{" "}
             {scoreboard.superseded === 1 ? "is" : "are"} left out of these
             averages — a 4 out of 5 and a 4 out of 10 are different judgements,
             and so are two 4s answering different questions. Re-run the
             evaluator below to score{" "}
             {scoreboard.superseded === 1 ? "it" : "them"} on the current
-            1–{scoreboard.scaleMax} scale and dimensions.
+            1–{scoreboard.scaleMax} scale and rules.
           </p>
         )}
         {/* Situation type is the cut that matters here: TIME_SENSITIVE forces
@@ -207,9 +209,16 @@ export default async function Stage4Page(props: PageProps<"/stage-4">) {
         )}
 
         <p className="text-sm text-ink-subtle">
-          Overall is the mean of the {SCORE_DIMENSIONS.length} dimensions,
-          computed here rather than asked for — a model that reports its own
-          average gets to disagree with its own scores.
+          Overall is a weighted mean of the {SCORE_DIMENSIONS.length}{" "}
+          dimensions, computed here rather than asked for — a model that
+          reports its own average gets to disagree with its own scores. The
+          dimensions judged from the explanation (
+          {SCORE_DIMENSIONS.filter((dimension) => dimension.weight > 1)
+            .map((dimension) => dimension.label)
+            .join(", ")}
+          ) count double: there is no gold action to score the action finely,
+          and the explanation is where the flows differ. The per-dimension
+          means beside it are unweighted.
         </p>
       </Section>
 
@@ -338,7 +347,7 @@ export default async function Stage4Page(props: PageProps<"/stage-4">) {
                                       {stale && (
                                         <p className="text-sm text-danger">
                                           Scored against an older context,
-                                          scale, or set of dimensions.
+                                          scale, dimensions, or scoring rules.
                                         </p>
                                       )}
                                       <dl className="space-y-1">
@@ -397,6 +406,19 @@ export default async function Stage4Page(props: PageProps<"/stage-4">) {
                                             : evaluation.reason}
                                         </p>
                                       </details>
+                                      {/* The judge's own account of its
+                                          numbers. Absent on evaluations made
+                                          before it was asked for one. */}
+                                      {evaluation.rationale !== "" && (
+                                        <details>
+                                          <summary className="cursor-pointer text-sm text-accent hover:underline">
+                                            Judge rationale
+                                          </summary>
+                                          <p className="mt-2 text-sm leading-relaxed text-ink">
+                                            {evaluation.rationale}
+                                          </p>
+                                        </details>
+                                      )}
                                     </>
                                   )}
                                 </div>

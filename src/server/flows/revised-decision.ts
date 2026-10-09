@@ -275,6 +275,7 @@ The explanation must:
 * cite the two to four pieces of evidence that most directly produced the response, each as a specific fact rather than a summary or a trait label;
 * when it mentions the event’s subjective meaning, the emotional reaction, an activated concern, an automatic assumption about another person, or the initial action tendency from the ${qualifier}initial appraisal, give it together with the cited evidence that produced it, never on its own;
 * when the response departs from an established tendency in the context, cite the evidence that explains the departure;
+* when the context contains an immediately present pull against the response (a cued memory, an active concern, a habit, or a current-state item), name it in one clause with its cited evidence and say what overrode it;
 * cite what the objective situation states about the time available to respond (a person waiting, the seconds or minutes allowed, or a demand for an answer now) and state that it left no room for deliberate reflection, so the response follows the first impulse;
 * state in one sentence how the cited evidence produced the initial action tendency and how that tendency produced the externally observable response.
 

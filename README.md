@@ -34,9 +34,9 @@ On a `TIME_SENSITIVE` scenario the two Second Thought flows skip the reappraisal
 
 ## Evaluation
 
-The judge scores five dimensions on a 1–10 integer scale: character consistency, situation fit, state/memory alignment, action plausibility, and reasoning coherence. The questions and the meaning of each scale point are in `src/lib/stage-4.ts`. The overall score is the mean of the five, computed in code rather than reported by the model.
+The judge scores seven dimensions on a 1–10 integer scale. Four are judged from the predicted action: character consistency, situation fit, state/memory alignment, and action plausibility. Three are judged from the flow's explanation: reasoning coherence, time consideration (does the explanation identify how much time the situation allowed and deliberate in proportion), and evidence weighing (does it account for the evidence that pulled against the action). The questions and the meaning of each scale point are in `src/lib/stage-4.ts`. The overall score is a weighted mean computed in code rather than reported by the model: the three explanation dimensions count double, since there is no gold action and the explanation is where the flows differ. Per-dimension means are reported unweighted alongside it.
 
-There is no gold action. The judge rates how well a predicted action is supported by the evaluation context, which is the same for every flow on a given scenario.
+There is no gold action. The judge rates how well a predicted action is supported by the evaluation context, which is the same for every flow on a given scenario. Beside the consolidated context it also receives the Stage 2 episode blocks verbatim (relationship profiles, tendencies, current state, immediate memories, and reflective memories when the mode allows), so a detail the consolidation dropped cannot be scored as unsupported. It writes a short rationale before its scores; the rationale is stored with the evaluation and never aggregated.
 
 ## Generation settings
 

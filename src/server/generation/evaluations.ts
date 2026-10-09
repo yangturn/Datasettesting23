@@ -6,7 +6,7 @@ import type { Execution } from "@/lib/stage-3";
 import {
   decisionModeFor,
   evaluationContextContentSchema,
-  evaluationScoresSchema,
+  evaluationJudgementSchema,
   overallScore,
   SCORE_DIMENSION_SET,
   SCORE_SCALE_MAX,
@@ -210,23 +210,44 @@ For an IMMEDIATE decision, does the reason focus on the most salient immediate c
 
 For a REFLECTION_AVAILABLE decision, does the reason demonstrate appropriate consideration of relevant reflective memories, broader experience, and competing evidence? Reflection may reinforce, qualify, or change the immediate considerations; it does not need to change the resulting action.
 
+time_consideration:
+Does the reason identify the time the situation allows for a response, and does the depth of its deliberation match that window?
+
+For an IMMEDIATE decision, does the reason name the cue that makes the response immediate (a person waiting, seconds to answer, a demand for an answer now) and explain the action from what was available in that moment: established habit, current state, immediately cued memories, and the first impulse?
+
+For a REFLECTION_AVAILABLE decision, does the reason recognize that the situation left room to think (a deadline that allows it, or the absence of pressure) and show deliberation proportionate to that room, weighing the relevant reflective evidence and competing considerations before the action?
+
+Calibration: the depth of deliberation is what is scored; naming the time cue is how a reason shows it. A reason that names the time available and matches its deliberation to it scores 8 to 10. A reason whose deliberation fits the window but that never states the time available scores 6 or 7. Scores of 1 to 3 are for a reason whose deliberation contradicts the window: one that depends on reflection or memories the window did not allow, or that treats an unpressured situation as a reflex.
+
+evidence_weighing:
+Does the reason identify the strongest evidence in the context that pulls against the chosen action and account for it: why it did not prevail, or how it shaped the form the action took?
+
+Calibration: a reason that names the competing evidence specifically, in the context’s own terms, and resolves it from the character’s own tendencies, state, or memories scores 8 to 10. A reason that does not mention competing evidence when the context contains only minor or indirect evidence against the action, or none, scores 6 or 7; do not penalize the absence of conflict. Scores of 1 to 3 are for a reason that ignores competing evidence that directly bears on the action and that the context plainly contains, or that manufactures conflict the context does not support.
+
+For an IMMEDIATE decision, the competing evidence is whatever was immediately present: a cued memory, an active concern, a habit, or a current-state item pulling the other way. A single clause that names it and says what overrode it is sufficient. Do not require consideration of long-term consequences or abstract alternatives, and do not penalize brevity. A competing cue the character had no time to register is not a failure to weigh; score 7 when the reason’s evidence is one-directional and immediate.
+
+For a REFLECTION_AVAILABLE decision, expect the reason to weigh the competing evidence in proportion to the time available, including relevant reflective memories, and to say why it did not prevail or how it qualified the action.
+
 General rules:
 
-* Treat the independent evaluation context as canonical.
+* Treat the independent evaluation context and the canonical episode context as canonical. The episode context is the scenario’s own record, supplied verbatim; where the consolidated context omits or compresses something the episode context states, the episode context governs, and a reason that cites it is supported.
 * Evaluate character_consistency, situation_fit, state_memory_alignment, and action_plausibility from the predicted action.
+* Evaluate reasoning_coherence, time_consideration, and evidence_weighing from the generated reason. For time_consideration, the time available is whatever the objective situation states; judge the reason against that, not against the decision mode label alone.
 * Do not allow the generated reason to justify or rescue an implausible action.
-* Complete the four action-related scores before evaluating reasoning_coherence.
+* Complete the four action-related scores before evaluating reasoning_coherence, time_consideration, and evidence_weighing.
 * Do not invent information to support the action or reason.
 * For reasoning_coherence, penalize reasons that introduce unsupported facts, memories, motives, goals, relationships, or circumstances.
+* An emotion, concern, interpretation, or motive counts as supported when it follows directly from a specific fact, tendency, memory, or state in the context. Penalize only claims with no such basis.
 * Judge each dimension only against its corresponding evidence.
 * When the context contains no evidence relevant to an action dimension, assign that dimension a neutral score of 5.
 * Do not reward moral correctness, politeness, safety, rationality, or optimality.
 * Multiple actions may be plausible.
+* When the context contains tendencies, memories, or description evidence supporting more than one response, an action that follows any of them scores at least 7 on character_consistency and action_plausibility. Reserve scores below 5 for an action that no supplied evidence supports or that a supplied constraint rules out.
 * Do not require the action to reflect every supplied detail.
 * A concise reason can score highly when it is coherent and sufficiently grounded.
 * Do not reward a reason merely for being detailed, persuasive, or psychologically elaborate.
 * Score each dimension independently; do not automatically assign similar scores.
-* Return scores only, without explanations or additional fields.
+* Before the scores, write a rationale of at most three sentences naming the specific evidence that decided any score below 7 or above 8.
 
 Decision-mode evaluation:
 
@@ -257,31 +278,75 @@ Use the full scale:
 4 = More inconsistent than consistent.
 5 = Neutral, underdetermined, or only minimally grounded.
 6 = Generally plausible or coherent with noticeable weaknesses.
-7 = Clearly plausible or coherent and adequately grounded.
-8 = Strongly plausible or coherent and well grounded.
-9 = Very strongly aligned with the relevant evidence.
-10 = Exceptionally well supported with no meaningful inconsistency.
+7 = Plausible or coherent and adequately grounded.
+8 = Well grounded, with at most minor weaknesses.
+9 = Strongly supported by the relevant evidence.
+10 = Fully supported, with no meaningful inconsistency.
 
 Important:
 
-* Do not default to scores between 7 and 9.
 * Use scores below 5 when the action or reason conflicts with relevant evidence.
 * Use 5 when the evidence does not meaningfully support or contradict an action dimension.
-* A merely reasonable action or explanation should receive 5 or 6, not 8 or 9.
-* Reserve 9 and 10 for unusually strong alignment with the evidence for that specific dimension.
+* A reasonable, adequately grounded action or explanation should receive 7 or 8.
+* Use 9 and 10 when the evidence strongly supports the action or reason and nothing in the context meaningfully contradicts it.
 * Return exactly one JSON object.`;
 
 export function buildScorePrompt({
   context,
+  scenario,
   action,
   reason,
   mode,
 }: {
   context: EvaluationContext;
+  scenario: Scenario;
   action: string;
   reason: string;
   mode: DecisionMode;
 }): string {
+  // The Stage 2 episode blocks go to the judge verbatim as well as through the
+  // consolidated context. Part 1 is told to preserve every material detail and
+  // does not always: one rebuilt context dropped the tendencies block whole,
+  // and the judge then scored every reason that cited those tendencies as
+  // inventing them. The blocks are canonical and contain nothing from any
+  // flow, so handing them over directly costs the judge none of its
+  // independence. Reflective memories follow the same mode gate as part 1.
+  const reflectiveBlock =
+    mode === "REFLECTION_AVAILABLE"
+      ? `
+
+Reflective memories:
+
+"""
+${contextBlock(scenario, "reflective_memories")}
+"""`
+      : "";
+  const episode = `Canonical episode context, verbatim from the scenario record:
+
+Relationship profiles:
+
+"""
+${contextBlock(scenario, "relationship_profiles")}
+"""
+
+Established tendencies:
+
+"""
+${contextBlock(scenario, "tendencies")}
+"""
+
+Current state:
+
+"""
+${contextBlock(scenario, "current_state")}
+"""
+
+Immediate memories:
+
+"""
+${contextBlock(scenario, "immediate_memories")}
+"""${reflectiveBlock}`;
+
   // The reason now reaches the judge, where it used to be withheld: it is
   // scored in its own right by reasoning_coherence. The old guarantee — that a
   // fluent explanation cannot talk up a poor action — is no longer structural,
@@ -317,6 +382,8 @@ State and available memories:
 ${context.state_and_available_memories}
 """
 
+${episode}
+
 Predicted action:
 
 """
@@ -329,16 +396,19 @@ Generated reason:
 ${reason}
 """
 
-Evaluate the action first without using the generated reason to improve its scores. Then evaluate the coherence of the generated reason under the requirements of the specified decision mode.
+Evaluate the action first without using the generated reason to improve its scores. Then evaluate the generated reason under the requirements of the specified decision mode: its coherence, whether it identifies the time the situation allowed and matches its deliberation to that window, and whether it accounts for the evidence that pulled against the action.
 
-Return scores only:
+Write the rationale first, then the scores:
 
 {
+  "rationale": "",
   "character_consistency": 1,
   "situation_fit": 1,
   "state_memory_alignment": 1,
   "action_plausibility": 1,
-  "reasoning_coherence": 1
+  "reasoning_coherence": 1,
+  "time_consideration": 1,
+  "evidence_weighing": 1
 }`;
 }
 
@@ -667,10 +737,12 @@ export async function runEvaluations({
       if (run?.signal.aborted) break;
 
       try {
-        const scores = await generateJson({
-          schema: evaluationScoresSchema,
+        // The rationale is split off here: `scores` stays a record of numbers
+        // for the averages, and the rationale is stored beside it as text.
+        const { rationale, ...scores } = await generateJson({
+          schema: evaluationJudgementSchema,
           system: SCORE_SYSTEM,
-          prompt: buildScorePrompt({ context, action, reason, mode }),
+          prompt: buildScorePrompt({ context, scenario, action, reason, mode }),
           signal: run?.signal,
           temperature: 0,
         });
@@ -687,6 +759,7 @@ export async function runEvaluations({
           dimension_set: SCORE_DIMENSION_SET,
           action,
           reason,
+          rationale,
           decision_mode: mode,
           context_generated_at: context.generated_at,
           action_generated_at: actionGeneratedAt,
