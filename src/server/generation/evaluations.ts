@@ -210,31 +210,44 @@ For an IMMEDIATE decision, does the reason focus on the most salient immediate c
 
 For a REFLECTION_AVAILABLE decision, does the reason demonstrate appropriate consideration of relevant reflective memories, broader experience, and competing evidence? Reflection may reinforce, qualify, or change the immediate considerations; it does not need to change the resulting action.
 
-time_consideration:
-Does the reason identify the time the situation allows for a response, and does the depth of its deliberation match that window?
+Two further considerations enter this score. They are not scored separately.
 
-For an IMMEDIATE decision, does the reason name the cue that makes the response immediate (a person waiting, seconds to answer, a demand for an answer now) and explain the action from what was available in that moment: established habit, current state, immediately cued memories, and the first impulse?
+Time. Does the reason register the time the objective situation allows for a response, and does the depth of its deliberation match that window? For an IMMEDIATE decision, the reason should name the cue that makes the response immediate (a person waiting, seconds to answer, a demand for an answer now) and explain the action from what was available in that moment: established habit, current state, immediately cued memories, and the first impulse. For a REFLECTION_AVAILABLE decision, the reason should recognize that the situation left room to think and show deliberation proportionate to that room. A reason that names the time available and matches its deliberation to it is better grounded. A reason whose deliberation fits the window but never states the time available is not penalized for the omission alone. A reason whose deliberation contradicts the window, depending on reflection or memories the window did not allow or treating an unpressured situation as a reflex, scores low. In REFLECTION_AVAILABLE mode the reflective memories are available to the character by construction; do not penalize a reason for drawing on them because the exchange in the situation is brief. Penalize only a claim of extended deliberation, weighing options at length or planning, that the exchange could not contain.
 
-For a REFLECTION_AVAILABLE decision, does the reason recognize that the situation left room to think (a deadline that allows it, or the absence of pressure) and show deliberation proportionate to that room, weighing the relevant reflective evidence and competing considerations before the action?
+Competing evidence. Does the reason name the strongest evidence in the context that pulls against the chosen action and account for it, why it did not prevail or how it shaped the action? Naming it specifically, in the context’s own terms, and resolving it from the character’s own tendencies, state, or memories is better grounded. When the context contains only minor or no evidence against the action, do not penalize the absence of conflict. Ignoring competing evidence that directly bears on the action and that the context plainly contains, or manufacturing conflict the context does not support, scores low. For an IMMEDIATE decision, the competing evidence is whatever was immediately present, a single clause naming it and what overrode it is sufficient, and a cue the character had no time to register is not a failure to weigh.
 
-Calibration: the depth of deliberation is what is scored; naming the time cue is how a reason shows it. A reason that names the time available and matches its deliberation to it scores 8 to 10. A reason whose deliberation fits the window but that never states the time available scores 6 or 7. Scores of 1 to 3 are for a reason whose deliberation contradicts the window: one that depends on reflection or memories the window did not allow, or that treats an unpressured situation as a reflex.
+How time and competing evidence bear on every dimension:
 
-evidence_weighing:
-Does the reason identify the strongest evidence in the context that pulls against the chosen action and account for it: why it did not prevail, or how it shaped the form the action took?
+The time the objective situation allows and the evidence pulling against the chosen action are not scored on their own. They enter every dimension: through the action for the four action dimensions, and through the reason for reasoning_coherence.
 
-Calibration: a reason that names the competing evidence specifically, in the context’s own terms, and resolves it from the character’s own tendencies, state, or memories scores 8 to 10. A reason that does not mention competing evidence when the context contains only minor or indirect evidence against the action, or none, scores 6 or 7; do not penalize the absence of conflict. Scores of 1 to 3 are for a reason that ignores competing evidence that directly bears on the action and that the context plainly contains, or that manufactures conflict the context does not support.
+Time, through the action:
 
-For an IMMEDIATE decision, the competing evidence is whatever was immediately present: a cued memory, an active concern, a habit, or a current-state item pulling the other way. A single clause that names it and says what overrode it is sufficient. Do not require consideration of long-term consequences or abstract alternatives, and do not penalize brevity. A competing cue the character had no time to register is not a failure to weigh; score 7 when the reason’s evidence is one-directional and immediate.
+* situation_fit: an action fits only if it can begin within the window the situation states. For an IMMEDIATE decision, an action that needs preparation, a plan, information the character does not have, or a weighing of options scores low here however sensible it is.
+* state_memory_alignment: for an IMMEDIATE decision, the action should follow from the current state and the immediately cued memories. For a REFLECTION_AVAILABLE decision, it may also reflect reflective memories, and an action that disregards a reflective memory bearing directly on it is less aligned.
+* character_consistency and action_plausibility: for an IMMEDIATE decision, a habitual, partial, scripted, or impulsive response is what this window produces for this character, and a polished or fully worked-out response is less believable for it. For a REFLECTION_AVAILABLE decision, the believable action is the one this character’s tendencies, state, and memories lead to once there is room to think, and an action that disregards what the character would notice with that time is less plausible.
 
-For a REFLECTION_AVAILABLE decision, expect the reason to weigh the competing evidence in proportion to the time available, including relevant reflective memories, and to say why it did not prevail or how it qualified the action.
+Competing evidence, through the action:
+
+* character_consistency: when the context’s tendencies, relationships, or memories pull in more than one direction, an action that visibly accommodates both pulls (a condition, a qualification, a compromise, a delay, or a chosen side with the cost acknowledged in what is said) is more consistent with this character than one that follows one pull and ignores the other, unless the context shows the character habitually ignores that other pull.
+* state_memory_alignment: an action that runs against a cued memory or a current-state item with nothing in the context overriding it is less aligned.
+* action_plausibility: believability includes the pulls the context establishes. An action that reflects only one cue when the context supplies several is less believable than one that reflects the balance, and an action that invents a conflict the context does not contain is less believable too.
+* reasoning_coherence: as defined above.
+
+Ceilings:
+
+* For an IMMEDIATE decision, an action that cannot begin within the stated window, or that requires deliberation the window does not allow, scores at most 4 on situation_fit and at most 5 on action_plausibility.
+* When the context supplies evidence pulling in more than one direction and the action follows one pull while ignoring the other, character_consistency and action_plausibility score at most 6, unless the context shows the character habitually ignores that other pull. This ceiling takes precedence over the floor of 7 in the general rules, which applies to an action that follows a supplied tendency without ignoring another pull the context plainly establishes.
+* A ceiling caps a score; it does not set it. An action under a ceiling is still scored on the rest of its evidence within that range.
+
+These considerations change how strongly an action is supported, not which action is correct. Multiple actions remain plausible, the floors in the general rules stand except where a ceiling says otherwise, and nothing here rewards rationality, politeness, or optimality.
 
 General rules:
 
 * Treat the independent evaluation context and the canonical episode context as canonical. The episode context is the scenario’s own record, supplied verbatim; where the consolidated context omits or compresses something the episode context states, the episode context governs, and a reason that cites it is supported.
 * Evaluate character_consistency, situation_fit, state_memory_alignment, and action_plausibility from the predicted action.
-* Evaluate reasoning_coherence, time_consideration, and evidence_weighing from the generated reason. For time_consideration, the time available is whatever the objective situation states; judge the reason against that, not against the decision mode label alone.
+* Evaluate reasoning_coherence from the generated reason. The time available is whatever the objective situation states; judge the reason against that, not against the decision mode label alone.
 * Do not allow the generated reason to justify or rescue an implausible action.
-* Complete the four action-related scores before evaluating reasoning_coherence, time_consideration, and evidence_weighing.
+* Complete the four action-related scores before evaluating reasoning_coherence.
 * Do not invent information to support the action or reason.
 * For reasoning_coherence, penalize reasons that introduce unsupported facts, memories, motives, goals, relationships, or circumstances.
 * An emotion, concern, interpretation, or motive counts as supported when it follows directly from a specific fact, tendency, memory, or state in the context. Penalize only claims with no such basis.
@@ -242,10 +255,9 @@ General rules:
 * When the context contains no evidence relevant to an action dimension, assign that dimension a neutral score of 5.
 * Do not reward moral correctness, politeness, safety, rationality, or optimality.
 * Multiple actions may be plausible.
-* When the context contains tendencies, memories, or description evidence supporting more than one response, an action that follows any of them scores at least 7 on character_consistency and action_plausibility. Reserve scores below 5 for an action that no supplied evidence supports or that a supplied constraint rules out.
+* When the context contains tendencies, memories, or description evidence supporting more than one response, an action that follows any of them scores at least 5 on character_consistency and action_plausibility, and at least 7 when it does not ignore another pull the context plainly establishes or when the context shows the character habitually ignores that pull. Reserve scores below 5 for an action that no supplied evidence supports or that a supplied constraint rules out.
 * Do not require the action to reflect every supplied detail.
 * A concise reason can score highly when it is coherent and sufficiently grounded.
-* Do not reward a reason merely for being detailed, persuasive, or psychologically elaborate.
 * Score each dimension independently; do not automatically assign similar scores.
 * Before the scores, write a rationale of at most three sentences naming the specific evidence that decided any score below 7 or above 8.
 
@@ -263,7 +275,7 @@ IMMEDIATE:
 REFLECTION_AVAILABLE:
 
 * Evaluate whether the reason meaningfully considers relevant reflective memories and broader evidence when such evidence exists.
-* Do not reward reflection merely for being lengthy or mentioning every supplied memory.
+* Do not reward reflection for length. A memory the reason mentions counts only when the reason says what it did to the inclination or the action.
 * Do not require reflection to change the action.
 * Do not penalize the reason for omitting a reflective memory that has no material relevance.
 * Do not penalize the reason when no supplied reflective evidence is materially relevant.
@@ -396,7 +408,7 @@ Generated reason:
 ${reason}
 """
 
-Evaluate the action first without using the generated reason to improve its scores. Then evaluate the generated reason under the requirements of the specified decision mode: its coherence, whether it identifies the time the situation allowed and matches its deliberation to that window, and whether it accounts for the evidence that pulled against the action.
+Evaluate the action first without using the generated reason to improve its scores, judging it against the time the situation allows and against every pull the context establishes. Then evaluate the generated reason under the requirements of the specified decision mode: its coherence, whether it identifies the time the situation allowed and matches its deliberation to that window, and whether it accounts for the evidence that pulled against the action.
 
 Write the rationale first, then the scores:
 
@@ -406,9 +418,7 @@ Write the rationale first, then the scores:
   "situation_fit": 1,
   "state_memory_alignment": 1,
   "action_plausibility": 1,
-  "reasoning_coherence": 1,
-  "time_consideration": 1,
-  "evidence_weighing": 1
+  "reasoning_coherence": 1
 }`;
 }
 

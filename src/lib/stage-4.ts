@@ -198,7 +198,7 @@ export const scoreSchema = z.number().int().min(1).max(SCORE_SCALE_MAX);
  * The dimensions part 2 scores, in the order the page shows them.
  *
  * `weight` is the dimension's share of the overall. The four judged from the
- * action carry 1; the three judged from the explanation carry 2. There is no
+ * action carry 1; the one judged from the explanation carries 2. There is no
  * gold action, so the action scores are coarse by construction — most land on
  * 8 — while the explanation is where the flows actually differ, and the
  * benchmark exists to compare the reasoning that produces the action. The
@@ -242,20 +242,6 @@ export const SCORE_DIMENSIONS = [
     question:
       "Does the generated reason coherently and accurately connect the available character, relationship, situational, state, and memory evidence to the final action?",
   },
-  {
-    key: "time_consideration",
-    label: "Time consideration",
-    weight: 2,
-    question:
-      "Does the reason identify the time the situation allows for a response, and does the depth of its deliberation match that window?",
-  },
-  {
-    key: "evidence_weighing",
-    label: "Evidence weighing",
-    weight: 2,
-    question:
-      "Does the reason identify the strongest evidence in the context that pulls against the chosen action and account for why it did not prevail, or how it shaped the action?",
-  },
 ] as const;
 
 export type ScoreDimensionKey = (typeof SCORE_DIMENSIONS)[number]["key"];
@@ -295,8 +281,46 @@ export type ScoreDimensionKey = (typeof SCORE_DIMENSIONS)[number]["key"];
  * receives the Stage 2 episode blocks verbatim beside the consolidated
  * context, after a rebuilt context dropped the tendencies block and the judge
  * scored every reason citing it as unsupported.
+ *
+ * 10: back to the five dimensions. time_consideration and evidence_weighing
+ * are no longer returned as scores; their guidance is folded into
+ * reasoning_coherence, which keeps weight 2. The overall is a weighted mean
+ * of five, so it is not comparable to a set-9 overall even where the five
+ * shared dimensions are.
+ *
+ * 11: the time window and the competing evidence now bear on the four action
+ * dimensions too, judged through the action itself: an immediate window
+ * makes a habitual or partial response the believable one, room to think
+ * makes the considered one believable, and an action that accommodates both
+ * of two pulls is more consistent than one that ignores the other.
+ *
+ * 12: ceilings. An immediate action that cannot begin within the window, or
+ * needs deliberation it does not allow, is capped at 4 on situation_fit and 5
+ * on action_plausibility; an action that follows one of two pulls and ignores
+ * the other is capped at 6 on character_consistency and action_plausibility
+ * unless the character habitually ignores that pull. The mixed-evidence floor
+ * is restated to yield to that ceiling: 5 for following any supplied
+ * tendency, 7 when the other pull is not ignored.
+ *
+ * 13: in REFLECTION_AVAILABLE mode, drawing on reflective memories is not
+ * penalized because the situation's exchange is brief; only a claim of
+ * extended deliberation the exchange could not contain is. The judge had
+ * been scoring reflective reasons on quick-exchange normal scenarios as
+ * inventing a pause the mode had in fact granted.
+ *
+ * 14: the rule against rewarding a reason for being detailed, persuasive, or
+ * psychologically elaborate is removed, at the user's direction. The judge
+ * may now credit elaboration; the complementary rule that a concise reason
+ * can score highly stays, as does the reflective-mode rule against rewarding
+ * length for its own sake.
+ *
+ * 15: the reflective-mode rule is reworded so that a memory the reason
+ * mentions counts when the reason says what it did, and length alone still
+ * earns nothing. The old wording, "mentioning every supplied memory", read
+ * against the decision prompt's instruction to cite every reflective memory
+ * that bears on the action.
  */
-export const SCORE_DIMENSION_SET = 9;
+export const SCORE_DIMENSION_SET = 15;
 
 /** What each point on the scale means. */
 export const SCORE_SCALE: Record<number, string> = {
@@ -319,8 +343,6 @@ export const evaluationScoresSchema = z.object({
   state_memory_alignment: scoreSchema,
   action_plausibility: scoreSchema,
   reasoning_coherence: scoreSchema,
-  time_consideration: scoreSchema,
-  evidence_weighing: scoreSchema,
 });
 
 export type EvaluationScores = z.infer<typeof evaluationScoresSchema>;

@@ -192,6 +192,7 @@ Rules:
 * Treat all supplied information as canonical.
 * Use only the supplied consolidated context, initial appraisal, and reflective memories.
 * Ground every interpretation, consideration, conflict, and revised impulse in the supplied information.
+* Every consideration that moves the deliberation must rest on a specific fact in the consolidated context, the initial appraisal, or the reflective memories, named in the terms it is stated in. Do not introduce a value, method, role, or commitment that none of them states.
 * Write every prose field in the first person, using “I,” “me,” and “my” for the character’s own interpretations, concerns, deliberation, and inclinations.
 * Refer to other people by name or with appropriate third-person pronouns.
 * Write as the character’s private inner reflection, not as spoken dialogue or an external description of the character.
@@ -216,6 +217,7 @@ Rules:
   * \`STRENGTHENED\`: the revised tendency remains in the same direction and becomes firmer or more compelling.
   * \`SOFTENED\`: the revised tendency remains in the same general direction but becomes weaker, more conditional, or more hesitant.
   * \`REVERSED\`: the revised tendency changes to an opposing or materially different response.
+* Before returning, check the label against the two tendencies as behaviour, not as feeling. If \`revised_action_tendency\` would produce a different action from \`initial_tendency\`, the label is \`REVERSED\`, however firm the deliberation felt. \`STRENGTHENED\` and \`RETAINED\` mean the same action would follow from both.
 * If the tendency changes, identify the supplied considerations that caused the change.
 * If the tendency remains, identify what reinforces it despite reflection.
 * Preserve uncertainty, ambivalence, or unresolved conflict when the available information does not clearly resolve it.
@@ -231,7 +233,7 @@ initial_tendency:
 Copy the character’s \`initial_action_tendency\` from the initial appraisal verbatim. Preserve its first-person wording and exact meaning.
 
 reflective_update:
-Express the character’s deliberate reconsideration in the first person using the complete available context. Briefly compare the main plausible responses and their personally meaningful consequences. Explain how relevant constraints, relationships, values, tendencies, current state, immediate memories, and reflective memories reinforce or modify the initial tendency. Do not merely summarize the reflective memories.
+Express the character’s deliberate reconsideration in the first person using the complete available context. Briefly compare the main plausible responses and their personally meaningful consequences. Explain how relevant constraints, relationships, values, tendencies, current state, immediate memories, and reflective memories reinforce or modify the initial tendency. Name the specific tendencies, memories, relationship facts, and state items that reinforce or modify it, in the terms the context uses. Do not merely summarize the reflective memories.
 
 change_from_initial:
 Return exactly one value:
@@ -248,7 +250,7 @@ motivational_conflict:
 Express in the first person the principal unresolved tension among the character’s relationships, tendencies, personality, current state, concerns, commitments, and anticipated consequences. Do not manufacture conflict when the evidence points consistently in one direction. If no material conflict remains, state that directly.
 
 revised_action_tendency:
-Express the character’s post-deliberation inclination in the first person. Connect it to the considerations that carried the most weight while keeping it provisional. Do not perform the action, present it as a final commitment, or repeat the full deliberation.`;
+Express the character’s post-deliberation inclination in the first person. Connect it to the named considerations that carried the most weight while keeping it provisional. Do not perform the action, present it as a final commitment, or repeat the full deliberation.`;
 
 function buildFirstPersonReappraisalPrompt(input: StepInput): string {
   return `Consolidated initial context:
@@ -360,7 +362,7 @@ const firstPersonReappraisalStep: FlowStep = {
 const firstPersonDecisionStep = reflectiveDecisionStep({
   voice: "first",
   description:
-    "Turns the person's private, reflected-on inclination into the one thing an onlooker would actually see or hear, and traces the causal path that produced it. Part 4's verdict is treated as binding — copied, not re-derived — and the deliberation is not redone. Written from outside, since an action is observable behaviour; the person's own voice appears only inside quoted speech.",
+    "Turns the person's private, reflected-on inclination into the one thing an onlooker would actually see or hear, and traces the causal path that produced it, with the Stage 2 blocks in view so the explanation cites them in their own words. Part 4's verdict is treated as binding — copied, not re-derived — and the deliberation is not redone. Written from outside, since an action is observable behaviour; the person's own voice appears only inside quoted speech.",
   appraisalStep: firstPersonAppraisalStep,
   reappraisalStep: firstPersonReappraisalStep,
 });
@@ -375,7 +377,7 @@ const firstPersonDecisionStep = reflectiveDecisionStep({
 const firstPersonImmediateDecisionStep = immediateDecisionStep({
   voice: "first",
   description:
-    "Turns the person's first impulse straight into the one thing an onlooker would see or hear, with no time to reflect. Habits, current state, cued memories and the first impulse carry the weight; the response may be impulsive, habitual or imperfect. Written from outside, since an action is observable behaviour.",
+    "Turns the person's first impulse straight into the one thing an onlooker would see or hear, with no time to reflect, and with the pre-reflection Stage 2 blocks in view so the explanation cites them in their own words. Habits, current state, cued memories and the first impulse carry the weight; the response may be impulsive, habitual or imperfect. Written from outside, since an action is observable behaviour.",
   appraisalStep: firstPersonAppraisalStep,
 });
 
