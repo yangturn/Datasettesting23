@@ -36,10 +36,57 @@ type ChatCompletion = {
   error?: { message?: string };
   provider?: string;
   usage?: {
+    prompt_tokens?: number;
     completion_tokens?: number;
     completion_tokens_details?: { reasoning_tokens?: number };
   };
 };
+
+/**
+ * What one call cost, as the provider reported it.
+ *
+ * Kept because "five calls" says nothing about computation: two flows with
+ * the same number of parts can spend very different token budgets, and a
+ * matched control is only matched if that is reported alongside the scores.
+ * `reasoning_tokens` is the share of `completion_tokens` spent thinking, when
+ * the provider breaks it out.
+ */
+export type TokenUsage = {
+  prompt_tokens: number;
+  completion_tokens: number;
+  reasoning_tokens?: number;
+};
+
+function usageOf(payload: ChatCompletion): TokenUsage | null {
+  const usage = payload.usage;
+  if (
+    usage?.prompt_tokens === undefined ||
+    usage.completion_tokens === undefined
+  ) {
+    return null;
+  }
+  const reasoning = usage.completion_tokens_details?.reasoning_tokens;
+  return {
+    prompt_tokens: usage.prompt_tokens,
+    completion_tokens: usage.completion_tokens,
+    ...(reasoning === undefined ? {} : { reasoning_tokens: reasoning }),
+  };
+}
+
+/** Two usages added, or whichever exists when a response reported none. */
+function addUsage(a: TokenUsage | null, b: TokenUsage | null): TokenUsage | null {
+  if (!a) return b;
+  if (!b) return a;
+  const reasoning =
+    a.reasoning_tokens === undefined && b.reasoning_tokens === undefined
+      ? undefined
+      : (a.reasoning_tokens ?? 0) + (b.reasoning_tokens ?? 0);
+  return {
+    prompt_tokens: a.prompt_tokens + b.prompt_tokens,
+    completion_tokens: a.completion_tokens + b.completion_tokens,
+    ...(reasoning === undefined ? {} : { reasoning_tokens: reasoning }),
+  };
+}
 
 /**
  * Says why a 200 response carried no content, from what the response does hold.
@@ -87,7 +134,7 @@ async function callOpenRouter(
   messages: { role: "system" | "user"; content: string }[],
   signal?: AbortSignal,
   temperature?: number,
-): Promise<string> {
+): Promise<{ content: string; usage: TokenUsage | null }> {
   const { apiKey, model, proxyUrl, providers } = openRouterConfig();
 
   const response = await undiciFetch(ENDPOINT, {
@@ -138,22 +185,10 @@ async function callOpenRouter(
       `OpenRouter returned no content${describeEmptyCompletion(payload)}.`,
     );
   }
-  return content;
+  return { content, usage: usageOf(payload) };
 }
 
-/**
- * Requests JSON and validates it against `schema`. A model that returns
- * malformed or off-schema JSON gets exactly one corrective retry — beyond that
- * the failure is real and should surface rather than be silently retried.
- */
-export async function generateJson<T extends z.ZodType>({
-  schema,
-  system,
-  prompt,
-  signal,
-  temperature,
-}: {
-  schema: T;
+type GenerateJsonOptions = {
   system: string;
   prompt: string;
   signal?: AbortSignal;
@@ -163,7 +198,27 @@ export async function generateJson<T extends z.ZodType>({
    * be re-runnable; the earlier generative stages want the variety.
    */
   temperature?: number;
-}): Promise<z.infer<T>> {
+};
+
+/**
+ * Requests JSON and validates it against `schema`. A model that returns
+ * malformed or off-schema JSON gets exactly one corrective retry — beyond that
+ * the failure is real and should surface rather than be silently retried.
+ *
+ * Returns the tokens spent alongside the value, summed over both attempts when
+ * the retry was needed: the first call was paid for whether or not it parsed.
+ * `usage` is null when the provider reported none.
+ */
+export async function generateJsonWithUsage<T extends z.ZodType>({
+  schema,
+  system,
+  prompt,
+  signal,
+  temperature,
+}: GenerateJsonOptions & { schema: T }): Promise<{
+  value: z.infer<T>;
+  usage: TokenUsage | null;
+}> {
   const messages: { role: "system" | "user"; content: string }[] = [
     { role: "system", content: system },
     { role: "user", content: prompt },
@@ -171,12 +226,21 @@ export async function generateJson<T extends z.ZodType>({
 
   const ATTEMPTS = 2;
   let lastError: unknown;
+  let spent: TokenUsage | null = null;
 
   for (let attempt = 0; attempt < ATTEMPTS; attempt++) {
-    const raw = await callOpenRouter(messages, signal, temperature);
+    const { content: raw, usage } = await callOpenRouter(
+      messages,
+      signal,
+      temperature,
+    );
+    spent = addUsage(spent, usage);
 
     try {
-      return schema.parse(JSON.parse(stripCodeFence(raw)));
+      return {
+        value: schema.parse(JSON.parse(stripCodeFence(raw))),
+        usage: spent,
+      };
     } catch (error) {
       lastError = error;
       // Only worth saying if another attempt will actually read it.
@@ -197,6 +261,14 @@ export async function generateJson<T extends z.ZodType>({
       lastError instanceof Error ? lastError.message : String(lastError)
     }`,
   );
+}
+
+/** `generateJsonWithUsage` for the stages that do not record what a call cost. */
+export async function generateJson<T extends z.ZodType>(
+  options: GenerateJsonOptions & { schema: T },
+): Promise<z.infer<T>> {
+  const { value } = await generateJsonWithUsage(options);
+  return value;
 }
 
 export function configuredModel(): string {

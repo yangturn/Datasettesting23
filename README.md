@@ -24,6 +24,7 @@ Flows are defined in code under `src/server/flows/` and registered in `src/serve
 | --- | --- | --- |
 | `full_flow_v2` | Second Thought, 3rd person | Attribute extraction → consolidation → initial appraisal → reflective reappraisal → final decision |
 | `full_flow_first_person` | Second Thought, 1st person (primary) | The same five steps, with the appraisal and reappraisal written in the character's first-person voice |
+| `five_call_control` | Five-call control | The primary arm's first three steps, copied from its execution rather than re-run → memory recollection (the same reflective memories, restated factually, no reconsideration) → final decision from the initial tendency |
 | `her_dual_layered_thinking` | Her Dual Layered Thinking | System thinking → role thinking and response → response conversion |
 | `direct_zero_shot` | Direct Zero Shot | One call, with staged reasoning forbidden |
 | `om_cot` | OM-COT | One call, with observation-then-memory reasoning prescribed inside it |
@@ -31,6 +32,18 @@ Flows are defined in code under `src/server/flows/` and registered in `src/serve
 On a `TIME_SENSITIVE` scenario the two Second Thought flows skip the reappraisal and run four steps: extraction, consolidation, initial appraisal, immediate decision. The two arms differ only in the voice of the appraisal and reappraisal; extraction, consolidation and the decision prompts are shared.
 
 `full-flow.ts` and `immediate-flow.ts` are not registered as flows of their own. They hold the reflective and immediate pipelines the two Second Thought flows are built from.
+
+### Five-call control
+
+A matched control for the reappraisal: five calls, the same memory-access timing and the same output requirements as the primary arm, but call 4 only restates the factual content of the reflective memories and call 5 decides from the initial tendency. If the primary arm still scores higher, the gain is from reconsidering, not from the extra call.
+
+- Calls 1–3 are the primary arm's own step objects, and their outputs are copied from the primary arm's execution of the same scenario (`copied_from` on the step record) instead of being re-run. A control cell is held back until the primary arm has produced those parts, so run `full_flow_first_person` first.
+- It does not run on `TIME_SENSITIVE` scenarios, where the primary arm skips its reappraisal. Stage 3 and Stage 4 show those cells as not applicable rather than as missing.
+- Every Stage 3 step now records the tokens its call cost (`usage` on the step record), and the Stage 3 flow catalogue totals them per flow. Five calls do not make equal computation; report the tokens beside the scores.
+
+`/api/export/episodes.csv` and `/api/export/episodes.json` download one row per episode with every flow's overall and dimension scores; the JSON adds the models used, episode counts and token usage per flow, and the control's part 4 and 5 prompts.
+
+Stage 4 reports a paired comparison beside the means: each flow against a reference flow (the primary arm by default, selectable with `?vs=<flow_key>`), differences averaged within each person and then across persons, with a 95% confidence interval across persons.
 
 ## Evaluation
 

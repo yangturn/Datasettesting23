@@ -2,9 +2,10 @@ import "server-only";
 
 import type { Description } from "@/lib/stage-1";
 import type { Scenario, Stage2Config } from "@/lib/stage-2";
-import type { Execution } from "@/lib/stage-3";
+import type { Execution, ExecutionStep } from "@/lib/stage-3";
 import { FLOWS, flowByKey } from "@/server/flows";
 import {
+  flowAppliesTo,
   flowStepsFor,
   stepSchema,
   type Flow,
@@ -16,7 +17,10 @@ import {
   interleaveByPerson,
   mapWithConcurrency,
 } from "@/server/generation/runtime";
-import { configuredModel, generateJson } from "@/server/llm/openrouter";
+import {
+  configuredModel,
+  generateJsonWithUsage,
+} from "@/server/llm/openrouter";
 import { listDescriptions } from "@/server/storage/descriptions";
 import { listAllExecutions, writeExecution } from "@/server/storage/executions";
 import { listAllScenarios, readStage2Config } from "@/server/storage/scenarios";
@@ -40,8 +44,15 @@ type Cell = {
   scenario: Scenario;
   description: Description;
   flow: Flow;
+  /** The whole pipeline this scenario gets, in order. */
+  steps: FlowStep[];
   /** Steps still to run, in flow order. Never empty — empty cells are dropped. */
   pending: FlowStep[];
+  /**
+   * Step records to copy in from the flow's seed source before anything runs,
+   * keyed by step key. Empty for a flow that seeds from nothing.
+   */
+  seeded: Record<string, ExecutionStep>;
   /** What is already on disk for this cell, if anything. */
   existing: Execution | null;
 };
@@ -99,6 +110,39 @@ async function runCell({
     updated_at: now,
   };
 
+  /**
+   * The record is cut back to the steps before the first pending one, plus
+   * whatever is being seeded, before anything runs. A step after the first
+   * pending one was built on an output that is about to be replaced; leaving
+   * it in place would let a run that dies partway show a stale decision as
+   * complete, and Stage 4 would score it as current.
+   */
+  const firstPending = cell.pending[0];
+  const keep = new Set(
+    firstPending
+      ? cell.steps
+          .slice(0, cell.steps.indexOf(firstPending))
+          .map((step) => step.key)
+      : cell.steps.map((step) => step.key),
+  );
+  const trimmed = Object.fromEntries(
+    Object.entries(execution.steps).filter(([key]) => keep.has(key)),
+  );
+  const seededKeys = Object.keys(cell.seeded);
+  const trimmedAway =
+    Object.keys(execution.steps).length !== Object.keys(trimmed).length;
+
+  if (seededKeys.length > 0 || trimmedAway) {
+    execution = {
+      ...execution,
+      steps: { ...trimmed, ...cell.seeded },
+      updated_at: now,
+    };
+    // Copied parts are persisted before the first call, so a run that dies on
+    // part 4 still leaves the shared prefix on disk, exactly as a call would.
+    await writeExecution(execution);
+  }
+
   let completed = 0;
 
   for (const step of cell.pending) {
@@ -108,7 +152,7 @@ async function runCell({
     if (run?.signal.aborted) break;
 
     try {
-      const output = await generateJson({
+      const { value: output, usage } = await generateJsonWithUsage({
         schema: stepSchema(step),
         system: step.system,
         prompt: step.buildPrompt({
@@ -132,7 +176,12 @@ async function runCell({
         ...execution,
         steps: {
           ...execution.steps,
-          [step.key]: { output, generated_at: finishedAt, model },
+          [step.key]: {
+            output,
+            generated_at: finishedAt,
+            model,
+            ...(usage ? { usage } : {}),
+          },
         },
         updated_at: finishedAt,
       };
@@ -223,7 +272,13 @@ export type ScenarioPlan = {
   scenario: Scenario;
   description: Description;
   /** Flows with something left to do. Flows already finished are dropped. */
-  work: { flow: Flow; pending: FlowStep[]; existing: Execution | null }[];
+  work: {
+    flow: Flow;
+    steps: FlowStep[];
+    pending: FlowStep[];
+    seeded: Record<string, ExecutionStep>;
+    existing: Execution | null;
+  }[];
 };
 
 export type RunPlan = {
@@ -237,6 +292,12 @@ export type RunPlan = {
   missingBiographyCount: number;
   /** Cells dropped because every step was already done and current. */
   skippedCells: number;
+  /**
+   * Cells of a seeding flow left out because the flow it copies its leading
+   * parts from has not produced them for that scenario yet, or produced them
+   * against a scenario or biography that has since changed.
+   */
+  blockedBySource: number;
 };
 
 /**
@@ -315,51 +376,121 @@ export async function planFlowRun({
   );
 
   let skippedCells = 0;
+  let blockedBySource = 0;
   const pending: ScenarioPlan[] = [];
+
+  /** The stored execution for a cell, if it was built from the current inputs. */
+  const currentExecution = (
+    scenario: Scenario,
+    description: Description,
+    flowKey: string,
+  ): Execution | null => {
+    const stored =
+      byCell.get(`${scenario.profile_id}/${scenario.id}/${flowKey}`) ?? null;
+    // An execution built from a scenario or a biography that has since moved
+    // on is not resumable — its finished steps read inputs that no longer
+    // exist, so it starts over rather than being extended.
+    const current =
+      stored !== null &&
+      stored.scenario_context_generated_at === scenario.context_generated_at &&
+      stored.description_generated_at === description.generated_at;
+    return current ? stored : null;
+  };
 
   for (const scenario of interleaveByPerson(runnable)) {
     const description = descriptions.get(scenario.profile_id)!;
     const work: ScenarioPlan["work"] = [];
 
     for (const flow of flows) {
-      const stored =
-        byCell.get(`${scenario.profile_id}/${scenario.id}/${flow.key}`) ?? null;
+      // A flow that does not run on this situation type has no cell here —
+      // not a skipped one, not a pending one.
+      if (!flowAppliesTo(flow, scenario)) continue;
 
-      // An execution built from a scenario or a biography that has since moved
-      // on is not resumable — its finished steps read inputs that no longer
-      // exist, so it starts over rather than being extended.
-      const current =
-        stored !== null &&
-        stored.scenario_context_generated_at ===
-          scenario.context_generated_at &&
-        stored.description_generated_at === description.generated_at;
+      const existing = currentExecution(scenario, description, flow.key);
 
-      const existing = current ? stored : null;
+      // The steps this scenario actually gets: a flow that branches on the
+      // situation type runs a different pipeline here than the one it declares.
+      const steps = flowStepsFor(flow, scenario);
+
+      /**
+       * The leading parts this flow takes from its seed source rather than
+       * running. A part is taken while it is the same step object in both
+       * pipelines and the source has a current record of it; the first part
+       * that is not shared ends the prefix. A shared part the source has not
+       * produced blocks the whole cell — running it here instead would give
+       * the two arms different outputs for what is meant to be one call.
+       *
+       * A copy already on disk is kept only while it still matches the
+       * source's record; a source re-run replaces it, and everything built on
+       * it is re-run too.
+       */
+      const seeded: Record<string, ExecutionStep> = {};
+      let blocked = false;
+      if (flow.seedFrom !== undefined) {
+        const source = flowByKey(flow.seedFrom)!;
+        const sourceExecution = currentExecution(
+          scenario,
+          description,
+          source.key,
+        );
+        const sourceSteps = flowStepsFor(source, scenario);
+
+        for (let i = 0; i < steps.length && steps[i] === sourceSteps[i]; i++) {
+          const step = steps[i];
+          if (!stepIsComplete(sourceExecution, step)) {
+            blocked = true;
+            break;
+          }
+          const record = sourceExecution!.steps[step.key];
+          const mine = existing?.steps[step.key];
+          if (
+            mine === undefined ||
+            mine.generated_at !== record.generated_at ||
+            mine.copied_from !== source.key
+          ) {
+            seeded[step.key] = { ...record, copied_from: source.key };
+          }
+        }
+      }
+
+      if (blocked) {
+        blockedBySource++;
+        continue;
+      }
 
       /**
        * Steps are a pipeline, so re-running one invalidates every step after
        * it: those read an output that no longer exists. Without this, editing
        * part 4 would leave part 5's judgement on disk looking current while the
        * reasoning it was drawn from had been replaced underneath it.
+       *
+       * A seeded step counts the same way: it is not run, but if it is being
+       * copied in afresh, whatever followed it was built on something else.
        */
       let rerunFromHere = false;
-      // The steps this scenario actually gets: a flow that branches on the
-      // situation type runs a different pipeline here than the one it declares.
-      const steps = flowStepsFor(flow, scenario).filter((step) => {
+      const pendingSteps = steps.filter((step) => {
+        if (step.key in seeded) {
+          rerunFromHere = true;
+          return false;
+        }
         const done =
           skipExisting && !rerunFromHere && stepIsComplete(existing, step);
         if (!done) rerunFromHere = true;
         return !done;
       });
 
-      if (steps.length === 0) {
+      // Nothing to call for: either every step is done, or the flow is wholly
+      // a copy of its source, which is not a flow worth a cell of its own.
+      if (pendingSteps.length === 0) {
         skippedCells++;
         continue;
       }
 
       work.push({
         flow,
-        pending: steps,
+        steps,
+        pending: pendingSteps,
+        seeded,
         // Rerunning without skip-existing rewrites the cell from scratch, so no
         // step of the old record survives to be mistaken for this run's.
         existing: skipExisting ? existing : null,
@@ -378,6 +509,7 @@ export async function planFlowRun({
     incompleteCount: scenarios.length - complete.length,
     missingBiographyCount: complete.length - runnable.length,
     skippedCells,
+    blockedBySource,
   };
 }
 
@@ -403,6 +535,8 @@ export type RunFlowsSummary = {
   failed: number;
   /** Cells skipped because every step was already done and current. */
   skipped: number;
+  /** Cells left out because the flow they copy their first parts from has not run them. */
+  blockedBySource: number;
   /** Model calls this run made — the figure that costs money. */
   steps: number;
   errors: { id: string; error: string }[];
@@ -436,11 +570,13 @@ export async function runFlows({
     limit === undefined ? plan.pending : plan.pending.slice(0, limit);
 
   const cells: Cell[] = taken.flatMap(({ scenario, description, work }) =>
-    work.map(({ flow, pending, existing }) => ({
+    work.map(({ flow, steps, pending, seeded, existing }) => ({
       scenario,
       description,
       flow,
+      steps,
       pending,
+      seeded,
       existing,
     })),
   );
@@ -479,6 +615,7 @@ export async function runFlows({
     completed,
     failed: failures.length,
     skipped: plan.skippedCells,
+    blockedBySource: plan.blockedBySource,
     steps: stepCount,
     errors: failures.map((failure) => ({
       id: `${failure.profileId} · ${failure.flowKey}`,

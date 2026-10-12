@@ -5,11 +5,15 @@ import { paginate, paginationInputSchema } from "@/lib/pagination";
 import { situationTypeSchema } from "@/lib/stage-2";
 import {
   decisionModeFor,
+  pairedDifference,
   SCORE_DIMENSIONS,
   SCORE_DIMENSION_SET,
   SCORE_SCALE_MAX,
+  type Evaluation,
+  type PairedDifference,
 } from "@/lib/stage-4";
-import { FLOWS } from "@/server/flows";
+import { FLOWS, flowByKey } from "@/server/flows";
+import { flowAppliesTo } from "@/server/flows/types";
 import {
   callsInWork,
   planEvaluations,
@@ -88,6 +92,12 @@ export const evaluationsRouter = createTRPCRouter({
     .input(
       z.object({
         situationTypes: z.array(situationTypeSchema).nonempty().optional(),
+        /**
+         * The flow every other flow is paired against. Unknown keys fall back
+         * to the registry's first flow rather than erroring, so a stale URL
+         * still renders a page.
+         */
+        reference: z.string().optional(),
       }),
     )
     .query(async ({ input }) => {
@@ -167,11 +177,75 @@ export const evaluationsRouter = createTRPCRouter({
         ]),
       ) as Record<string, number>;
 
+      /**
+       * The paired comparison: every flow against the reference, over the
+       * scenarios both scored, differences averaged within each person and
+       * the interval taken across persons. The reference row is the identity
+       * and is left out.
+       *
+       * Taken over the same in-scope evaluations as the means above, so the
+       * two tables answer the same filter — but note the pairing drops a
+       * scenario the reference has scored and the other flow has not, so a
+       * flow's paired `pairs` can be smaller than its `scored`.
+       */
+      // The primary arm by default — the flow the paper's claims are about,
+      // and the one every ablation and control is a comparison with.
+      const defaultReference =
+        flowByKey("full_flow_first_person") ?? FLOWS[0];
+      const reference =
+        (input.reference !== undefined
+          ? flowByKey(input.reference)
+          : undefined) ?? defaultReference;
+
+      const byCellInScope = new Map(
+        inScope.map((evaluation) => [
+          `${evaluation.profile_id}/${evaluation.scenario_id}/${evaluation.flow_key}`,
+          evaluation,
+        ]),
+      );
+      const referenceRows = inScope.filter(
+        (evaluation) => evaluation.flow_key === reference.key,
+      );
+
+      const pairedAgainst = (
+        flow: (typeof FLOWS)[number],
+        pick: (e: Evaluation) => number,
+      ): PairedDifference | null => {
+        const byPerson = new Map<string, number[]>();
+        for (const own of referenceRows) {
+          const other = byCellInScope.get(
+            `${own.profile_id}/${own.scenario_id}/${flow.key}`,
+          );
+          if (!other) continue;
+          const list = byPerson.get(own.profile_id) ?? [];
+          list.push(pick(own) - pick(other));
+          byPerson.set(own.profile_id, list);
+        }
+        return pairedDifference(byPerson.values());
+      };
+
+      const paired = FLOWS.filter((flow) => flow.key !== reference.key).map(
+        (flow) => ({
+          key: flow.key,
+          label: flow.label,
+          overall: pairedAgainst(flow, (e) => e.overall_score),
+          dimensions: Object.fromEntries(
+            SCORE_DIMENSIONS.map((dimension) => [
+              dimension.key,
+              pairedAgainst(flow, (e) => e.scores[dimension.key] ?? 0),
+            ]),
+          ) as Record<string, PairedDifference | null>,
+        }),
+      );
+
       return {
         flows,
         scored: inScope.length,
         byType,
         scaleMax: SCORE_SCALE_MAX,
+        reference: { key: reference.key, label: reference.label },
+        defaultReference: defaultReference.key,
+        paired,
         /**
          * Scored on a superseded scale or dimension set; excluded above, re-run
          * to include.
@@ -250,6 +324,8 @@ export const evaluationsRouter = createTRPCRouter({
               return {
                 flowKey: flow.key,
                 flowLabel: flow.label,
+                /** False where the flow does not run on this situation type. */
+                applicable: flowAppliesTo(flow, scenario),
                 evaluation,
                 /**
                  * Scored against a context that has since been rebuilt, or on a

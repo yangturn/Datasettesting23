@@ -4,11 +4,12 @@ import type { Scenario } from "@/lib/stage-2";
 import { situationTypeSchema } from "@/lib/stage-2";
 import type { FlowMeta } from "@/lib/stage-3";
 import { directZeroShotFlow } from "@/server/flows/direct-zero-shot";
+import { fiveCallControlFlow } from "@/server/flows/five-call-control";
 import { fullFlowFirstPersonFlow } from "@/server/flows/full-flow-first-person";
 import { fullFlowV2Flow } from "@/server/flows/full-flow-v2";
 import { herDualLayeredThinkingFlow } from "@/server/flows/her-dual-layered-thinking";
 import { omCotFlow } from "@/server/flows/om-cot";
-import type { Flow } from "@/server/flows/types";
+import { flowAppliesTo, flowStepsFor, type Flow } from "@/server/flows/types";
 
 /**
  * Every flow Stage 3 can run, in the order the page lists them.
@@ -34,6 +35,7 @@ import type { Flow } from "@/server/flows/types";
 export const FLOWS: Flow[] = [
   fullFlowV2Flow,
   fullFlowFirstPersonFlow,
+  fiveCallControlFlow,
   herDualLayeredThinkingFlow,
   directZeroShotFlow,
   omCotFlow,
@@ -128,8 +130,56 @@ const PROBE_SCENARIO: Scenario = {
      * fine, and then be invisible: the page's legend, the outcome lookup, and
      * `flowMeta` all read `steps`, so the part would do work nothing displays.
      */
+    /**
+     * The situation types the flow runs on at all, probed the same way. A flow
+     * that applied nowhere would be a column of "not applicable" cells, which
+     * is a removed flow wearing a label.
+     */
+    const applicableTypes = situationTypeSchema.options.filter((situationType) =>
+      flowAppliesTo(flow, { ...PROBE_SCENARIO, situation_type: situationType }),
+    );
+    if (applicableTypes.length === 0) {
+      throw new Error(`Flow "${flow.key}" applies to no situation type.`);
+    }
+
+    /**
+     * A flow that seeds its leading parts from another must actually share
+     * them. Checked by object identity on every situation type it runs on: a
+     * prefix that is merely equal text would not be copied, and the flow would
+     * quietly call the model for parts it claims to take from the source.
+     */
+    if (flow.seedFrom !== undefined) {
+      const source = FLOWS.find((candidate) => candidate.key === flow.seedFrom);
+      if (!source) {
+        throw new Error(
+          `Flow "${flow.key}" seeds from "${flow.seedFrom}", which is not registered.`,
+        );
+      }
+      if (source === flow) {
+        throw new Error(`Flow "${flow.key}" seeds from itself.`);
+      }
+      if (source.seedFrom !== undefined) {
+        throw new Error(
+          `Flow "${flow.key}" seeds from "${source.key}", which itself seeds from "${source.seedFrom}"; seeding does not chain.`,
+        );
+      }
+      for (const situationType of applicableTypes) {
+        const probe = { ...PROBE_SCENARIO, situation_type: situationType };
+        if (!flowAppliesTo(source, probe)) {
+          throw new Error(
+            `Flow "${flow.key}" runs on a ${situationType} scenario but its seed source "${source.key}" does not.`,
+          );
+        }
+        if (flowStepsFor(flow, probe)[0] !== flowStepsFor(source, probe)[0]) {
+          throw new Error(
+            `Flow "${flow.key}" seeds from "${source.key}" but its first step on a ${situationType} scenario is not the source's own step object, so nothing would be copied.`,
+          );
+        }
+      }
+    }
+
     if (flow.stepsFor) {
-      for (const situationType of situationTypeSchema.options) {
+      for (const situationType of applicableTypes) {
         const declared = new Map(flow.steps.map((step) => [step.key, step]));
         const branch = flow.stepsFor({
           ...PROBE_SCENARIO,

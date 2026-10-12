@@ -74,6 +74,7 @@ export function RunFlows({
     .slice(0, scenariosToRun)
     .reduce((total, steps) => total + steps, 0);
   const heldBack = pendingScenarios - scenariosToRun;
+  const blocked = plan.data?.blockedBySource ?? 0;
 
   const parallelism =
     scenariosToRun <= maxConcurrent
@@ -251,6 +252,19 @@ export function RunFlows({
           </>
         )}
       </p>
+
+      {/* A seeding flow copies its first parts from another flow's execution
+          and will not run a cell until that flow has produced them. Said here,
+          beside the count, because otherwise the cell is simply absent from
+          the run and the grid looks like it stalled. */}
+      {blocked > 0 && !plan.isPending && (
+        <p className="text-sm text-ink-muted">
+          {blocked} {blocked === 1 ? "cell is" : "cells are"} held back: the
+          flow {blocked === 1 ? "it copies" : "they copy"} the first parts from
+          has not run them on {blocked === 1 ? "that" : "those"} scenario
+          {blocked === 1 ? "" : "s"} yet. Run that flow first, then this one.
+        </p>
+      )}
 
       {generate.error && (
         <p className="text-sm text-danger">{generate.error.message}</p>

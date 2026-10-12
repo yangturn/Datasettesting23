@@ -74,7 +74,7 @@ const VOICE_QUALIFIER: Record<AppraisalVoice, string> = {
   third: "",
 };
 
-const DECISION_FIELDS = [
+export const DECISION_FIELDS = [
   { key: "action", label: "Action", render: "prose" },
   { key: "explanation", label: "Explanation", render: "prose" },
 ] as const;
@@ -82,9 +82,10 @@ const DECISION_FIELDS = [
 /**
  * The Stage 2 blocks a decision part may read, rendered verbatim under their
  * own headings. Reflective memories are included only on the reflective
- * branch; see the module comment.
+ * branch; see the module comment. Exported for the five-call control's
+ * decision, which reads the same blocks under the same headings.
  */
-function episodeContext(
+export function episodeContext(
   input: StepInput,
   withReflectiveMemories: boolean,
 ): string {

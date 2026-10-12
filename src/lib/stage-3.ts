@@ -99,6 +99,29 @@ export const executionStepSchema = z.object({
   generated_at: z.string(),
   /** Recorded per step, since a flow may yet mix models across its steps. */
   model: z.string(),
+  /**
+   * Tokens the call cost, as the provider reported them, summed over the
+   * corrective retry when one was needed. Optional: steps written before usage
+   * was recorded carry none, and a provider may report none. Kept so that two
+   * flows with the same number of parts can be compared on what they actually
+   * computed, not only on how many times they called the model.
+   */
+  usage: z
+    .object({
+      prompt_tokens: z.number(),
+      completion_tokens: z.number(),
+      reasoning_tokens: z.number().optional(),
+    })
+    .optional(),
+  /**
+   * Set when this step's output was copied from another flow's execution of
+   * the same scenario rather than produced by a call of this flow's own — the
+   * flow key it came from. A control whose leading parts are the same step
+   * objects as another flow's takes them from that flow, so the two arms are
+   * identical up to the part they are meant to differ in. `usage` is copied
+   * with it: the computation happened once, and this is its cost.
+   */
+  copied_from: z.string().optional(),
 });
 
 export type ExecutionStep = z.infer<typeof executionStepSchema>;

@@ -41,17 +41,20 @@ function formatScore(value: number): string {
 export default async function Stage4Page(props: PageProps<"/stage-4">) {
   // The slice is taken in the router; this page only forwards the requested
   // page, and keeps its position in the query string.
-  const { page, size, type } = await props.searchParams;
+  const { page, size, type, vs } = await props.searchParams;
   const pageSize = pageSizeFromParam(size);
   const filter = situationFilterFromParam(type);
   // The router takes situation types, not chips: `ALL` is the absence of a
   // filter, and a grouped chip is several types at once.
   const situationTypes = situationTypesFor(filter);
+  // The flow the paired comparison is taken against. Validated by the router,
+  // which falls back to the first flow for an unknown key.
+  const reference = Array.isArray(vs) ? vs[0] : vs;
 
   const trpc = await getServerCaller();
   const [coverage, scoreboard, listing] = await Promise.all([
     trpc.evaluations.coverage(),
-    trpc.evaluations.scoreboard({ situationTypes }),
+    trpc.evaluations.scoreboard({ situationTypes, reference }),
     trpc.evaluations.list({
       page: pageFromParam(page),
       pageSize,
@@ -59,16 +62,29 @@ export default async function Stage4Page(props: PageProps<"/stage-4">) {
     }),
   ]);
 
-  /** Keeps the filter and page size in the URL alongside the page number. */
-  const urlFor = (params: { page?: number; type?: string }) => {
+  /** Keeps the filter, reference flow and page size in the URL alongside the page number. */
+  const urlFor = (params: {
+    page?: number;
+    type?: string;
+    vs?: string;
+    anchor?: string;
+  }) => {
     const query = new URLSearchParams({ size: String(pageSize) });
     if (params.page !== undefined) query.set("page", String(params.page));
     const nextType = params.type ?? filter;
     if (nextType !== "ALL") query.set("type", nextType);
-    return `/stage-4?${query}#detail`;
+    const nextReference = params.vs ?? scoreboard.reference.key;
+    if (nextReference !== scoreboard.defaultReference) {
+      query.set("vs", nextReference);
+    }
+    return `/stage-4?${query}#${params.anchor ?? "detail"}`;
   };
 
   const hrefFor = (target: number) => urlFor({ page: target });
+
+  /** A signed difference with its interval, e.g. "+0.31 [+0.12, +0.50]". */
+  const formatDifference = (value: number) =>
+    `${value >= 0 ? "+" : "−"}${Math.abs(value).toFixed(2)}`;
 
   return (
     <main className="mx-auto flex w-full max-w-5xl flex-1 flex-col gap-10 px-6 py-12">
@@ -215,6 +231,138 @@ export default async function Stage4Page(props: PageProps<"/stage-4">) {
         </p>
       </Section>
 
+      {/* The comparison the means above cannot make on their own. Two flows
+          answer the same scenarios, so the honest question is the paired one:
+          per scenario, how much higher does one score than the other — averaged
+          within each person, since one biography's episodes are not
+          independent of each other, and then across persons, which is the unit
+          the interval is taken over. */}
+      <Section
+        id="paired"
+        title="Paired differences"
+        description={`Each flow against ${scoreboard.reference.label}, on the scenarios both have scored${filter === "ALL" ? "" : ` in ${SITUATION_FILTER_LABELS[filter]} situations`}. The difference is reference minus flow, averaged within each person and then across persons; the interval is a 95% confidence interval across persons (Student's t). A positive difference favours the reference.`}
+      >
+        <div className="flex flex-wrap items-center gap-2">
+          <span className="text-sm text-ink-subtle">Reference</span>
+          {coverage.flows.map((flow) => (
+            <Link
+              key={flow.key}
+              href={urlFor({ page: 1, vs: flow.key, anchor: "paired" })}
+              className={cn(
+                "rounded-md border px-2.5 py-1 text-sm",
+                flow.key === scoreboard.reference.key
+                  ? "border-accent bg-surface-raised text-accent"
+                  : "border-line-strong text-ink-muted hover:border-accent hover:text-accent",
+              )}
+            >
+              {flow.label}
+            </Link>
+          ))}
+        </div>
+
+        {scoreboard.paired.every((flow) => flow.overall === null) ? (
+          <p className="rounded-lg border border-dashed border-line-strong p-6 text-sm text-ink-muted">
+            No scenario has been scored by both {scoreboard.reference.label}{" "}
+            and another flow yet.
+          </p>
+        ) : (
+          <div className="overflow-x-auto">
+            <table className="w-full text-sm">
+              <thead>
+                <tr className="border-b border-line text-left text-ink-muted">
+                  <th className="py-2 pr-4 font-medium">Flow</th>
+                  <th className="py-2 pr-4 font-medium whitespace-nowrap">
+                    Overall Δ [95% CI]
+                  </th>
+                  {SCORE_DIMENSIONS.map((dimension) => (
+                    <th
+                      key={dimension.key}
+                      className="py-2 pr-4 font-medium whitespace-nowrap"
+                    >
+                      {dimension.label}
+                    </th>
+                  ))}
+                  <th className="py-2 pr-4 font-medium">Persons</th>
+                  <th className="py-2 font-medium">Pairs</th>
+                </tr>
+              </thead>
+              <tbody>
+                {scoreboard.paired.map((flow) => (
+                  <tr key={flow.key} className="border-b border-line">
+                    <td className="py-2 pr-4 font-medium text-ink">
+                      {flow.label}
+                    </td>
+                    <td className="py-2 pr-4 whitespace-nowrap text-ink">
+                      {flow.overall === null ? (
+                        "—"
+                      ) : (
+                        <>
+                          {formatDifference(flow.overall.mean)}{" "}
+                          <span className="text-ink-subtle">
+                            [{formatDifference(flow.overall.lower)},{" "}
+                            {formatDifference(flow.overall.upper)}]
+                          </span>
+                        </>
+                      )}
+                    </td>
+                    {SCORE_DIMENSIONS.map((dimension) => {
+                      const value = flow.dimensions[dimension.key] ?? null;
+                      return (
+                        <td
+                          key={dimension.key}
+                          className="py-2 pr-4 whitespace-nowrap text-ink-muted"
+                        >
+                          {value === null ? (
+                            "—"
+                          ) : (
+                            <>
+                              {formatDifference(value.mean)}{" "}
+                              <span className="text-ink-subtle">
+                                [{formatDifference(value.lower)},{" "}
+                                {formatDifference(value.upper)}]
+                              </span>
+                            </>
+                          )}
+                        </td>
+                      );
+                    })}
+                    <td className="py-2 pr-4 text-ink-subtle">
+                      {flow.overall?.persons ?? "—"}
+                    </td>
+                    <td className="py-2 text-ink-subtle">
+                      {flow.overall?.pairs ?? "—"}
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        )}
+
+        <p className="text-sm text-ink-subtle">
+          An interval that excludes zero is a difference the data supports at
+          the 95% level. One person yields a point with no interval; the
+          interval is only as wide as the number of persons makes it, so a
+          handful of people gives a wide one however many episodes each has.
+        </p>
+
+        {/* The episode-level table these intervals are computed from, for
+            anyone who wants to compute their own. Means cannot be unpacked
+            into pairs; the rows can. */}
+        <p className="text-sm text-ink-muted">
+          Episode-level scores for every flow:{" "}
+          <a href="/api/export/episodes.csv" className="text-accent hover:underline">
+            episodes.csv
+          </a>{" "}
+          or{" "}
+          <a href="/api/export/episodes.json" className="text-accent hover:underline">
+            episodes.json
+          </a>
+          . The JSON also carries the models used, episode counts and token
+          usage per flow, and the prompts of the control&apos;s own parts.
+        </p>
+      </Section>
+
       <Section
         id="detail"
         title={
@@ -315,7 +463,13 @@ export default async function Stage4Page(props: PageProps<"/stage-4">) {
                             }}
                           >
                             {scores.map(
-                              ({ flowKey, flowLabel, evaluation, stale }) => (
+                              ({
+                                flowKey,
+                                flowLabel,
+                                applicable,
+                                evaluation,
+                                stale,
+                              }) => (
                                 <div
                                   key={flowKey}
                                   className="space-y-2 rounded-lg border border-line bg-surface p-3"
@@ -331,7 +485,12 @@ export default async function Stage4Page(props: PageProps<"/stage-4">) {
                                     )}
                                   </div>
 
-                                  {evaluation === null ? (
+                                  {!applicable ? (
+                                    <p className="text-sm text-ink-subtle">
+                                      Not run on {scenario.situation_type}{" "}
+                                      scenarios, so nothing to score.
+                                    </p>
+                                  ) : evaluation === null ? (
                                     <p className="text-sm text-ink-subtle">
                                       Not scored yet.
                                     </p>

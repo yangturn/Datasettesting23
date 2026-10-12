@@ -15,7 +15,7 @@ import {
   type EvaluationContext,
 } from "@/lib/stage-4";
 import { FLOWS } from "@/server/flows";
-import type { Flow } from "@/server/flows/types";
+import { flowAppliesTo, type Flow } from "@/server/flows/types";
 import type { RunContext } from "@/server/generation/runs";
 import { interleaveByPerson } from "@/server/generation/runtime";
 import { configuredModel, generateJson } from "@/server/llm/openrouter";
@@ -559,6 +559,9 @@ export async function planEvaluations({
 
     for (const flow of FLOWS) {
       if (!flow.outcome) continue;
+      // A flow that does not run on this situation type has no prediction to
+      // miss: it is not an unpredicted cell, it is no cell.
+      if (!flowAppliesTo(flow, scenario)) continue;
 
       const execution: Execution | undefined = byFlow.get(flow.key);
       const step = execution?.steps[flow.outcome.stepKey];

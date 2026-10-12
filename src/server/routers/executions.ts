@@ -3,7 +3,7 @@ import { z } from "zod";
 
 import { paginate, paginationInputSchema } from "@/lib/pagination";
 import { FLOWS, flowMeta } from "@/server/flows";
-import { flowStepsFor } from "@/server/flows/types";
+import { flowAppliesTo, flowStepsFor } from "@/server/flows/types";
 import {
   planFlowRun,
   runFlows,
@@ -110,11 +110,18 @@ export const executionsRouter = createTRPCRouter({
             // columns whether or not that flow has run.
             cells: FLOWS.map((flow) => {
               const execution = byFlow.get(flow.key) ?? null;
+              /**
+               * Whether the flow runs on this situation type at all. A cell
+               * for a flow that does not is still returned, so every row has
+               * the same columns; the page shows it as not applicable rather
+               * than as a flow that has not run yet.
+               */
+              const applicable = flowAppliesTo(flow, scenario);
               // The steps this scenario actually gets. A flow that branches on
               // the situation type runs fewer parts here than it declares, and
               // listing the declared ones would show a finished cell as forever
               // short of its last part.
-              const steps = flowStepsFor(flow, scenario);
+              const steps = applicable ? flowStepsFor(flow, scenario) : [];
 
               /**
                * True when the execution was built from inputs that have since
@@ -139,6 +146,7 @@ export const executionsRouter = createTRPCRouter({
               return {
                 flowKey: flow.key,
                 flowLabel: flow.label,
+                applicable,
                 stale,
                 outcome: outcome === "" ? null : outcome,
                 outcomeLabel:
@@ -157,6 +165,9 @@ export const executionsRouter = createTRPCRouter({
                   label: step.label,
                   fields: step.fields,
                   output: execution?.steps[step.key]?.output ?? null,
+                  /** The flow this part's output was copied from, if it was. */
+                  copiedFrom: execution?.steps[step.key]?.copied_from ?? null,
+                  usage: execution?.steps[step.key]?.usage ?? null,
                 })),
                 // Counted by the same rule the planner schedules by, so the
                 // page cannot report a full grid while the runner reports work
@@ -199,7 +210,11 @@ export const executionsRouter = createTRPCRouter({
         );
         const description = byProfile.get(scenario.profile_id);
 
-        return FLOWS.map((flow) => {
+        return FLOWS.flatMap((flow) => {
+          // No cell at all where the flow does not run: it is not work left
+          // undone, so it belongs in neither the numerator nor the denominator.
+          if (!flowAppliesTo(flow, scenario)) return [];
+
           const execution = executions.find(
             (candidate) => candidate.flow_key === flow.key,
           );
@@ -210,16 +225,42 @@ export const executionsRouter = createTRPCRouter({
             execution.description_generated_at === description?.generated_at;
 
           const steps = flowStepsFor(flow, scenario);
+          const done = current
+            ? steps.filter((step) => stepIsComplete(execution, step))
+            : [];
 
-          return {
-            flowKey: flow.key,
-            /** Model calls this flow needs for this particular scenario. */
-            stepCount: steps.length,
-            // Steps that a skip-existing run would not have to redo.
-            doneSteps: current
-              ? steps.filter((step) => stepIsComplete(execution, step)).length
-              : 0,
-          };
+          /**
+           * Tokens the done steps cost, where the provider reported them.
+           * Counted with the number of steps that carry a figure, so a flow
+           * run before usage was recorded reads as "unknown" rather than as
+           * cheap.
+           */
+          const withUsage = done.filter(
+            (step) => execution?.steps[step.key]?.usage !== undefined,
+          );
+          const tokens = withUsage.reduce(
+            (sum, step) => {
+              const usage = execution!.steps[step.key].usage!;
+              return {
+                prompt: sum.prompt + usage.prompt_tokens,
+                completion: sum.completion + usage.completion_tokens,
+                reasoning: sum.reasoning + (usage.reasoning_tokens ?? 0),
+              };
+            },
+            { prompt: 0, completion: 0, reasoning: 0 },
+          );
+
+          return [
+            {
+              flowKey: flow.key,
+              /** Model calls this flow needs for this particular scenario. */
+              stepCount: steps.length,
+              // Steps that a skip-existing run would not have to redo.
+              doneSteps: done.length,
+              stepsWithUsage: withUsage.length,
+              tokens,
+            },
+          ];
         });
       }),
     );
@@ -250,6 +291,25 @@ export const executionsRouter = createTRPCRouter({
          */
         totalSteps: entries.reduce((total, entry) => total + entry.stepCount, 0),
         doneSteps: entries.reduce((total, entry) => total + entry.doneSteps, 0),
+        /**
+         * Token usage over the done steps that recorded it. `stepsWithUsage`
+         * against `doneSteps` says how much of the flow's computation the
+         * totals actually cover.
+         */
+        stepsWithUsage: entries.reduce(
+          (total, entry) => total + entry.stepsWithUsage,
+          0,
+        ),
+        tokens: entries.reduce(
+          (sum, entry) => ({
+            prompt: sum.prompt + entry.tokens.prompt,
+            completion: sum.completion + entry.tokens.completion,
+            reasoning: sum.reasoning + entry.tokens.reasoning,
+          }),
+          { prompt: 0, completion: 0, reasoning: 0 },
+        ),
+        /** The flow whose execution this one copies its first parts from. */
+        seedFrom: flow.seedFrom ?? null,
       };
     });
 
@@ -282,7 +342,7 @@ export const executionsRouter = createTRPCRouter({
       // pass through that state on the way to a different one, and a thrown
       // query would surface as an error message for a transient click.
       if (input.flowKeys.length === 0) {
-        return { pendingSteps: [], scenarioCount: 0 };
+        return { pendingSteps: [], scenarioCount: 0, blockedBySource: 0 };
       }
 
       const plan = await planFlowRun(input);
@@ -291,6 +351,8 @@ export const executionsRouter = createTRPCRouter({
         /** Model calls each pending scenario would cost, in run order. */
         pendingSteps: plan.pending.map(stepsInPlan),
         scenarioCount: plan.scenarioCount,
+        /** Cells waiting on the flow they copy their first parts from. */
+        blockedBySource: plan.blockedBySource,
       };
     }),
 
@@ -330,6 +392,8 @@ export const executionsRouter = createTRPCRouter({
               `Stopped at the ${input.limit}-scenario limit; ${summary.limitedOut} scenario(s) with work left for a later run.`,
             summary.skipped > 0 &&
               `Skipped ${summary.skipped} cell(s) already complete.`,
+            summary.blockedBySource > 0 &&
+              `Left out ${summary.blockedBySource} cell(s) whose first parts are copied from a flow that has not run them yet — run that flow first.`,
             summary.incompleteCount > 0 &&
               `Left out ${summary.incompleteCount} half-generated scenario(s) — re-run Stage 2 to finish them.`,
             summary.missingBiographyCount > 0 &&

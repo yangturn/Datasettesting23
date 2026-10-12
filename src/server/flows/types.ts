@@ -67,12 +67,42 @@ export type Flow = {
    */
   stepsFor?: (scenario: Scenario) => FlowStep[];
   /**
+   * Whether this flow runs on a scenario at all.
+   *
+   * Omitted by a flow that runs everywhere — every flow until the five-call
+   * control, which exists only to be compared with Second Thought where
+   * Second Thought reappraises, and so has nothing to say on a time-sensitive
+   * scenario. A flow that does not apply is neither run, counted, nor scored
+   * there: Stage 3 shows the cell as not applicable, and Stage 4 does not
+   * report it as an unpredicted cell.
+   */
+  appliesTo?: (scenario: Scenario) => boolean;
+  /**
+   * The flow whose execution this flow copies its shared leading parts from,
+   * instead of calling the model for them.
+   *
+   * For a control whose first parts are *the same step objects* as another
+   * flow's, calling the model again would at best reproduce the same output
+   * and at worst, since temperature 0 is not a determinism guarantee, produce
+   * a different one, so the two arms would diverge before the part they are
+   * meant to differ in. Copying makes the shared prefix identical by
+   * construction. Only steps that are identical by object identity, from the
+   * first step onward, are copied; the planner refuses to run the cell at all
+   * until the source flow has produced them.
+   */
+  seedFrom?: string;
+  /**
    * The step and field holding what this flow ultimately claims — the thing a
    * reader wants first and an evaluation stage would score. Omitted by a flow
    * that produces no single answer.
    */
   outcome?: FlowOutcome;
 };
+
+/** Whether a flow runs on this scenario at all. See `Flow.appliesTo`. */
+export function flowAppliesTo(flow: Flow, scenario: Scenario): boolean {
+  return flow.appliesTo ? flow.appliesTo(scenario) : true;
+}
 
 /**
  * The steps a flow runs for one scenario.

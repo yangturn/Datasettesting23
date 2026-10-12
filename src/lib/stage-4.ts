@@ -388,6 +388,97 @@ export function overallScore(scores: EvaluationScores): number {
   return total / totalWeight;
 }
 
+/**
+ * A paired comparison of two flows: the mean of per-person mean differences,
+ * with a 95% confidence interval across persons.
+ *
+ * Paired, because every flow answers the same scenarios, so the variation
+ * between scenarios and between people cancels out of the difference and
+ * what is left is the effect of the flow. Averaged within each person first,
+ * because a person's scenarios are not independent of one another — two or
+ * three episodes of the same biography agree with each other more than with a
+ * stranger's — so the unit the interval is taken across is the person, not the
+ * episode. The interval uses Student's t on `persons − 1` degrees of freedom.
+ */
+export type PairedDifference = {
+  /** Mean over persons of (reference − comparison), on the score's own scale. */
+  mean: number;
+  /** The 95% interval around it; equal to `mean` when it cannot be formed. */
+  lower: number;
+  upper: number;
+  /** Persons who contributed — those with at least one scenario scored by both. */
+  persons: number;
+  /** Scenarios scored by both flows, over all those persons. */
+  pairs: number;
+};
+
+/**
+ * The 0.975 quantile of Student's t with `df` degrees of freedom, so that
+ * `mean ± t · se` is a 95% interval.
+ *
+ * A Cornish–Fisher expansion in the normal quantile rather than an inverse
+ * incomplete beta: it matches the tabulated value to three decimals from four
+ * degrees of freedom up, and the comparison this serves is across tens of
+ * persons, not three. At one or two degrees of freedom it runs a little
+ * narrow (11.3 against 12.7 at one), which is to say: two persons is not a
+ * sample, and the interval will not pretend otherwise.
+ */
+export function tQuantile975(df: number): number {
+  const z = 1.959964;
+  if (!Number.isFinite(df) || df < 1) return Number.NaN;
+  const z2 = z * z;
+  const z3 = z2 * z;
+  const z5 = z3 * z2;
+  const z7 = z5 * z2;
+  const z9 = z7 * z2;
+  return (
+    z +
+    (z3 + z) / (4 * df) +
+    (5 * z5 + 16 * z3 + 3 * z) / (96 * df * df) +
+    (3 * z7 + 19 * z5 + 17 * z3 - 15 * z) / (384 * df ** 3) +
+    (79 * z9 + 776 * z7 + 1482 * z5 - 1920 * z3 - 945 * z) / (92160 * df ** 4)
+  );
+}
+
+/**
+ * The paired comparison itself, from per-person lists of per-scenario
+ * differences. A person with no shared scenario is not a pair and is left
+ * out; a single person yields a point with no interval.
+ */
+export function pairedDifference(
+  differencesByPerson: Iterable<number[]>,
+): PairedDifference | null {
+  const perPerson: number[] = [];
+  let pairs = 0;
+  for (const differences of differencesByPerson) {
+    if (differences.length === 0) continue;
+    pairs += differences.length;
+    perPerson.push(
+      differences.reduce((total, value) => total + value, 0) /
+        differences.length,
+    );
+  }
+
+  const persons = perPerson.length;
+  if (persons === 0) return null;
+
+  const mean = perPerson.reduce((total, value) => total + value, 0) / persons;
+  if (persons < 2) return { mean, lower: mean, upper: mean, persons, pairs };
+
+  const variance =
+    perPerson.reduce((total, value) => total + (value - mean) ** 2, 0) /
+    (persons - 1);
+  const halfWidth = tQuantile975(persons - 1) * Math.sqrt(variance / persons);
+
+  return {
+    mean,
+    lower: mean - halfWidth,
+    upper: mean + halfWidth,
+    persons,
+    pairs,
+  };
+}
+
 /** The persisted judgement of one flow's predicted action. */
 export const evaluationSchema = z.object({
   profile_id: z.string(),

@@ -136,7 +136,7 @@ Return JSON only:
  * the two are directly comparable cell by cell in Stage 3 and the later parts
  * read it without any change — the substitution is of voice, not of shape.
  */
-const firstPersonAppraisalStep: FlowStep = {
+export const firstPersonAppraisalStep: FlowStep = {
   key: STEP_APPRAISAL,
   label: "Initial appraisal",
   description:
@@ -416,7 +416,13 @@ const FIRST_PERSON_IMMEDIATE_OVERRIDES = new Map<string, FlowStep>([
   [STEP_DECISION, firstPersonImmediateDecisionStep],
 ]);
 
-const FIRST_PERSON_REFLECTIVE_STEPS = substituteSteps(
+/**
+ * Exported for the five-call control, which runs these exact objects as its
+ * first three parts — the same reason `REFLECTIVE_STEPS` is exported from
+ * `full-flow.ts`: the control is this pipeline up to the reappraisal, and
+ * sharing the array is what keeps that literally true.
+ */
+export const FIRST_PERSON_REFLECTIVE_STEPS = substituteSteps(
   REFLECTIVE_STEPS,
   FIRST_PERSON_REFLECTIVE_OVERRIDES,
 );

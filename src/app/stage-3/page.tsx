@@ -75,6 +75,15 @@ export default async function Stage3Page(props: PageProps<"/stage-3">) {
     (total, flow) => total + flow.doneSteps,
     0,
   );
+  // The catalogue is drawn from `config.flows`; the token totals live on the
+  // coverage rows, keyed the same way.
+  const coverageByFlow = new Map(
+    coverage.flows.map((flow) => [flow.key, flow]),
+  );
+  const labelByFlow = new Map(
+    config.flows.map((flow) => [flow.key, flow.label]),
+  );
+  const formatTokens = (value: number) => value.toLocaleString("en-US");
 
   // Wider than the other stages: a row here is one situation across every flow,
   // read across rather than down, so the columns need the room.
@@ -210,11 +219,23 @@ export default async function Stage3Page(props: PageProps<"/stage-3">) {
                                   <span className="text-sm font-medium text-ink">
                                     {cell.flowLabel}
                                   </span>
-                                  <span className="text-xs text-ink-subtle">
-                                    {cell.doneSteps} of {cell.stepCount}{" "}
-                                    {cell.stepCount === 1 ? "part" : "parts"}
-                                  </span>
+                                  {cell.applicable && (
+                                    <span className="text-xs text-ink-subtle">
+                                      {cell.doneSteps} of {cell.stepCount}{" "}
+                                      {cell.stepCount === 1 ? "part" : "parts"}
+                                    </span>
+                                  )}
                                 </div>
+
+                                {/* A flow that does not run on this situation
+                                    type. Said so, rather than shown as a flow
+                                    that has not run yet. */}
+                                {!cell.applicable && (
+                                  <p className="text-sm text-ink-subtle">
+                                    Not run on {scenario.situation_type}{" "}
+                                    scenarios.
+                                  </p>
+                                )}
 
                                 {cell.stale && (
                                   <p className="text-sm text-danger">
@@ -238,7 +259,8 @@ export default async function Stage3Page(props: PageProps<"/stage-3">) {
                                   </div>
                                 )}
 
-                                {cell.doneSteps === 0 ? (
+                                {!cell.applicable ? null : cell.doneSteps ===
+                                  0 ? (
                                   <p className="text-sm text-ink-subtle">
                                     Not run yet.
                                   </p>
@@ -253,6 +275,34 @@ export default async function Stage3Page(props: PageProps<"/stage-3">) {
                                           <span className="text-sm text-ink-muted">
                                             {step.label}
                                           </span>
+                                          {/* A part taken from another flow's
+                                              execution rather than called for
+                                              — the shared prefix of a control.
+                                              Marked so the identity is visible
+                                              on the record, not only in the
+                                              flow's description. */}
+                                          {step.copiedFrom !== null && (
+                                            <Tag>
+                                              copied from{" "}
+                                              {labelByFlow.get(step.copiedFrom) ??
+                                                step.copiedFrom}
+                                            </Tag>
+                                          )}
+                                          {step.usage !== null && (
+                                            <span
+                                              className="text-xs text-ink-subtle"
+                                              title="Tokens this call cost: prompt + completion, as the provider reported them."
+                                            >
+                                              {formatTokens(
+                                                step.usage.prompt_tokens,
+                                              )}{" "}
+                                              +{" "}
+                                              {formatTokens(
+                                                step.usage.completion_tokens,
+                                              )}{" "}
+                                              tokens
+                                            </span>
+                                          )}
                                         </div>
 
                                         {step.output === null ? (
@@ -394,6 +444,58 @@ export default async function Stage3Page(props: PageProps<"/stage-3">) {
 
               <div className="mt-3 space-y-3">
                 <p className="text-sm text-ink-muted">{flow.description}</p>
+
+                {/* What the flow has actually computed, where the provider said.
+                    Five parts do not make five parts' worth of tokens, and a
+                    control matched on calls is only matched if this is beside
+                    the scores. Parts run before usage was recorded count as
+                    unknown, not as free. */}
+                {(() => {
+                  const stats = coverageByFlow.get(flow.key);
+                  if (!stats || stats.doneSteps === 0) return null;
+                  return (
+                    <p className="text-sm text-ink-subtle">
+                      {stats.stepsWithUsage === 0 ? (
+                        <>
+                          Token usage: not recorded on any of the{" "}
+                          {stats.doneSteps} completed parts — they ran before
+                          usage was kept.
+                        </>
+                      ) : (
+                        <>
+                          Token usage over {stats.stepsWithUsage} of{" "}
+                          {stats.doneSteps} completed parts:{" "}
+                          {formatTokens(stats.tokens.prompt)} prompt,{" "}
+                          {formatTokens(stats.tokens.completion)} completion
+                          {stats.tokens.reasoning > 0 && (
+                            <>
+                              {" "}
+                              (of which {formatTokens(stats.tokens.reasoning)}{" "}
+                              reasoning)
+                            </>
+                          )}
+                          ; {formatTokens(
+                            Math.round(
+                              (stats.tokens.prompt + stats.tokens.completion) /
+                                stats.stepsWithUsage,
+                            ),
+                          )}{" "}
+                          per part on average.
+                          {stats.stepsWithUsage < stats.doneSteps &&
+                            ` The other ${stats.doneSteps - stats.stepsWithUsage} ran before usage was kept.`}
+                        </>
+                      )}
+                      {stats.seedFrom !== null && (
+                        <>
+                          {" "}
+                          Parts copied from{" "}
+                          {labelByFlow.get(stats.seedFrom) ?? stats.seedFrom}{" "}
+                          carry that flow&apos;s figures for them.
+                        </>
+                      )}
+                    </p>
+                  );
+                })()}
 
                 <ol className="space-y-2">
                   {flow.steps.map((step, index) => (
