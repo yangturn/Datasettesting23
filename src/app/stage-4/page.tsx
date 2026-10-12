@@ -209,16 +209,9 @@ export default async function Stage4Page(props: PageProps<"/stage-4">) {
         )}
 
         <p className="text-sm text-ink-subtle">
-          Overall is a weighted mean of the {SCORE_DIMENSIONS.length}{" "}
-          dimensions, computed here rather than asked for — a model that
-          reports its own average gets to disagree with its own scores. Weight
-          2 goes to{" "}
-          {SCORE_DIMENSIONS.filter((dimension) => dimension.weight > 1)
-            .map((dimension) => dimension.label)
-            .join(", ")}
-          , judged from the explanation: there is no gold action to score the
-          action finely, and the explanation is where the flows differ. The
-          per-dimension means beside it are unweighted.
+          Overall is the mean of the {SCORE_DIMENSIONS.length} dimensions,
+          computed here rather than asked for — a model that reports its own
+          average gets to disagree with its own scores.
         </p>
       </Section>
 

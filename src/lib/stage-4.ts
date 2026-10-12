@@ -197,14 +197,10 @@ export const scoreSchema = z.number().int().min(1).max(SCORE_SCALE_MAX);
 /**
  * The dimensions part 2 scores, in the order the page shows them.
  *
- * `weight` is the dimension's share of the overall. The four judged from the
- * action carry 1; the one judged from the explanation carries 2. There is no
- * gold action, so the action scores are coarse by construction — most land on
- * 8 — while the explanation is where the flows actually differ, and the
- * benchmark exists to compare the reasoning that produces the action. The
- * weighting is stated on the page and in the README, and the per-dimension
- * means are shown unweighted beside the overall so the choice can be undone
- * by a reader.
+ * `weight` is the dimension's share of the overall. Every dimension carries 1,
+ * so the overall is the plain mean of the five. The field stays so that a
+ * weighting is a one-line change if one is ever wanted; any such change alters
+ * what `overall_score` means and must bump `SCORE_DIMENSION_SET`.
  */
 export const SCORE_DIMENSIONS = [
   {
@@ -238,7 +234,7 @@ export const SCORE_DIMENSIONS = [
   {
     key: "reasoning_coherence",
     label: "Reasoning coherence",
-    weight: 2,
+    weight: 1,
     question:
       "Does the generated reason coherently and accurately connect the available character, relationship, situational, state, and memory evidence to the final action?",
   },
@@ -319,6 +315,12 @@ export type ScoreDimensionKey = (typeof SCORE_DIMENSIONS)[number]["key"];
  * earns nothing. The old wording, "mentioning every supplied memory", read
  * against the decision prompt's instruction to cite every reflective memory
  * that bears on the action.
+ *
+ * Still 15 after reasoning_coherence's weight went from 2 back to 1 on
+ * 2026-10-12: the judge's per-dimension scores were unaffected, and the
+ * `overall_score` stored on every set-15 evaluation was recomputed from its
+ * stored dimension scores at the same time, so no record carries the old
+ * weighting.
  */
 export const SCORE_DIMENSION_SET = 15;
 
